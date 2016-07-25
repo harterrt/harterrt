@@ -12,6 +12,9 @@ TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -27,14 +30,14 @@ AUTHOR_FEED_RSS = None
 
 # Social widget
 SOCIAL = (
-          ('Twitter', 'https://twitter.com/harterrt'),
+          ('github', 'https://github.com/harterrt'),
          )
 
 DEFAULT_PAGINATION = 10
 
-# Copy the CNAME into root dir
+# Copy the CNAME into root dir for GitHub
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# Theme Configuration
+# THEME = "themes/bootlex"
