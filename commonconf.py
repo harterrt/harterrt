@@ -14,13 +14,14 @@ DEFAULT_LANG = u'en'
 # Theme Config #
 ################
 THEME = "themes/Flex"
+
 AUTHOR = u'Ryan T. Harter'
 SITENAME = u'blog.harterrt.com'
 SITEURL = 'http://blog.harterrt.com'
 SITETITLE = 'Ryan T. Harter'
 SITESUBTITLE = 'Data Engineer @ Mozilla'
 SITEDESCRIPTION = 'Weblog for Ryan T. Harter'
-SITELOGO = 'https://secure.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69'
+SITELOGO = 'https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69'
 BROWSER_COLOR = '#333'
 
 MAIN_MENU = True
@@ -40,6 +41,14 @@ ROBOTS = 'index, follow'
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'),
 #          ('You can modify those links in your config file', '#'),)
+
+# Links on the side panel
+LINKS = (
+        )
+
+# Small links at the top of the page
+MENUITEMS = (
+            )
 
 # Social widget
 SOCIAL = (
