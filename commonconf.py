@@ -26,8 +26,6 @@ BROWSER_COLOR = '#333'
 
 MAIN_MENU = True
 COPYRIGHT_YEAR = 2016
-# TODO(harterrt) Figure out CC
-# CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa' }
 
 ROBOTS = 'index, follow'
 
