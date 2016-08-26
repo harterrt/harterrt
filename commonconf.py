@@ -70,6 +70,8 @@ SOCIAL = (
 #########
 # Admin #
 #########
+
+IGNORE_FILES = ['.*']
 DEFAULT_PAGINATION = 10
 
 # Copy the CNAME into root dir for GitHub
