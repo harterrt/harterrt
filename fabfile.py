@@ -66,27 +66,6 @@ def preview():
     """Build production version of site"""
     local('pelican -s publishconf.py')
 
-# def cf_upload():
-#     """Publish to Rackspace Cloud Files"""
-#     rebuild()
-#     with lcd(DEPLOY_PATH):
-#         local('swift -v -A https://auth.api.rackspacecloud.com/v1.0 '
-#               '-U {cloudfiles_username} '
-#               '-K {cloudfiles_api_key} '
-#               'upload -c {cloudfiles_container} .'.format(**env))
-# 
-# @hosts(production)
-# def publish():
-#     """Publish to production via rsync"""
-#     local('pelican -s publishconf.py')
-#     project.rsync_project(
-#         remote_dir=dest_path,
-#         exclude=".DS_Store",
-#         local_dir=DEPLOY_PATH.rstrip('/') + '/',
-#         delete=True,
-#         extra_opts='-c',
-#     )
-
 def publish():
     """Publish to GitHub Pages"""
     rebuild()

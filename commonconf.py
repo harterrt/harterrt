@@ -48,6 +48,11 @@ LINKS = (
 MENUITEMS = (
             )
 
+# PLUGINS:
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = []
+MD_EXTENSIONS = ['toc', 'codehilite','extra']
+
 # Social widget
 SOCIAL = (
           ('github', 'https://github.com/harterrt'),
