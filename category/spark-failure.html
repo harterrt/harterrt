@@ -36,7 +36,7 @@
 <meta property="og:url" content=".."/>
 <meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
 
-  <title>blog.harterrt.com &ndash; Category: Delete</title>
+  <title>blog.harterrt.com &ndash; Category: spark-failure</title>
 </head>
 <body>
   <aside>
@@ -45,7 +45,12 @@
         <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="Ryan T. Harter" title="Ryan T. Harter">
       </a>
       <h1><a href="..">Ryan T. Harter</a></h1>
-<p>Data Engineer @ Mozilla</p>      <ul class="social">
+<p>Data Engineer @ Mozilla</p>      <nav>
+        <ul class="list">
+          <li><a href="../pages/about.html#about">About</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
         <li><a class="sc-github" href="https://github.com/harterrt" target="_blank"><i class="fa fa-github"></i></a></li>
         <li><a class="sc-twitter" href="https://twitter.com/harterrt" target="_blank"><i class="fa fa-twitter"></i></a></li>
         <li><a class="sc-linkedin" href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -59,14 +64,28 @@
 
 <article>
   <header>
-    <h2><a href="../test.html#test">Test</a></h2>
+    <h2><a href="../strange-spark-error.html#strange-spark-error">Strange Spark Error</a></h2>
     <p>
-      Posted on Fri 22 July 2016 in <a href="../category/delete.html">Delete</a>
+      Posted on Fri 26 August 2016 in <a href="../category/spark-failure.html">spark-failure</a>
     </p>
   </header>
   <div>
-      <p>Test foo test</p>
-      <a class="btn" href="../test.html#test">Continue reading</a>
+      <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-bug">The Bug</a></li>
+<li><a href="#fixes">Fixes?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
+<h1 id="the-bug">The Bug</h1>
+<p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
+      <a class="btn" href="../strange-spark-error.html#strange-spark-error">Continue reading</a>
   </div>
 </article>
 

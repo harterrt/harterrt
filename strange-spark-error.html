@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="author" content="Ryan T. Harter" />
+<meta name="description" content="Introduction The Bug Fixes? Conclusion Introduction I spend the better part of last week debugging a Spark error, so I figure it's worth writing up. The Bug I added the this very simple view to our batch views repository. package com.mozilla.telemetry.views import org.apache.spark.{SparkConf ..." />
+<meta name="keywords" content="">
+<meta property="og:site_name" content="blog.harterrt.com"/>
+<meta property="og:title" content="Strange Spark Error"/>
+<meta property="og:description" content="Introduction The Bug Fixes? Conclusion Introduction I spend the better part of last week debugging a Spark error, so I figure it's worth writing up. The Bug I added the this very simple view to our batch views repository. package com.mozilla.telemetry.views import org.apache.spark.{SparkConf ..."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./strange-spark-error.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2016-08-26 00:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="./author/ryan-t-harter.html">
+<meta property="article:section" content="spark-failure"/>
+<meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
+  <title>blog.harterrt.com &ndash; Strange Spark Error</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href=".">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="Ryan T. Harter" title="Ryan T. Harter">
+      </a>
+      <h1><a href=".">Ryan T. Harter</a></h1>
+<p>Data Engineer @ Mozilla</p>      <nav>
+        <ul class="list">
+          <li><a href="./pages/about.html#about">About</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/harterrt" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/harterrt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-linkedin" href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <nav>
+      <a href=".">Home</a>
+    </nav>
+
+<article>
+  <header>
+    <h1 id="strange-spark-error">Strange Spark Error</h1>
+    <p>Posted on Fri 26 August 2016 in <a href="./category/spark-failure.html">spark-failure</a></p>
+  </header>
+  <div>
+    <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-bug">The Bug</a></li>
+<li><a href="#fixes">Fixes?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
+<h1 id="the-bug">The Bug</h1>
+<p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.spark.sql.hive.HiveContext</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Base</span> <span class="o">(</span>
+    <span class="n">client_id</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">)</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Target</span> <span class="o">(</span>
+    <span class="n">client_id</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">)</span>
+
+<span class="k">object</span> <span class="nc">FailingView</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">generateCrossSectional</span><span class="o">(</span><span class="n">base</span><span class="k">:</span> <span class="kt">Base</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="nc">Target</span><span class="o">(</span><span class="n">base</span><span class="o">.</span><span class="n">client_id</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">sparkConf</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SparkConf</span><span class="o">().</span><span class="n">setAppName</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">getClass</span><span class="o">.</span><span class="n">getName</span><span class="o">)</span>
+    <span class="n">sparkConf</span><span class="o">.</span><span class="n">setMaster</span><span class="o">(</span><span class="n">sparkConf</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="s">&quot;spark.master&quot;</span><span class="o">,</span> <span class="s">&quot;local[*]&quot;</span><span class="o">))</span>
+    <span class="k">val</span> <span class="n">sc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SparkContext</span><span class="o">(</span><span class="n">sparkConf</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">hiveContext</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">HiveContext</span><span class="o">(</span><span class="n">sc</span><span class="o">)</span>
+    <span class="k">import</span> <span class="nn">hiveContext.implicits._</span>
+
+    <span class="k">val</span> <span class="n">ds</span> <span class="k">=</span> <span class="n">hiveContext</span>
+      <span class="o">.</span><span class="n">sql</span><span class="o">(</span><span class="s">&quot;SELECT * FROM longitudinal&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">selectExpr</span><span class="o">(</span><span class="s">&quot;client_id&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">as</span><span class="o">[</span><span class="kt">Base</span><span class="o">]</span>
+    <span class="k">val</span> <span class="n">output</span> <span class="k">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">generateCrossSectional</span><span class="o">)</span>
+
+    <span class="n">println</span><span class="o">(</span><span class="s">&quot;=&quot;</span><span class="o">*</span><span class="mi">80</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span> <span class="o">+</span> <span class="n">output</span><span class="o">.</span><span class="n">count</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span> <span class="o">+</span> <span class="s">&quot;=&quot;</span><span class="o">*</span><span class="mi">80</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>When I run this on an ATMO cluster, I observe the following error:</p>
+<div class="codehilite"><pre><span></span><span class="x">Exception in thread &quot;main&quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2</span>
+<span class="x">    at org.apache.spark.util.Utils</span><span class="p">$.</span><span class="nv">tryOrIOException</span><span class="p">(</span><span class="err">Utils.scala</span><span class="p">:</span><span class="m">1222</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast._value</span><span class="p">$</span><span class="nv">lzycompute</span><span class="p">(</span><span class="err">TorrentBroadcast.scala</span><span class="p">:</span><span class="m">64</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)</span>
+<span class="x">    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)</span>
+<span class="x">    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)</span>
+<span class="x">    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)</span>
+<span class="x">    at org.apache.spark.scheduler.Task.run(Task.scala:89)</span>
+<span class="x">    at org.apache.spark.executor.Executor</span><span class="p">$</span><span class="nv">TaskRunner</span><span class="p">.</span><span class="nv">run</span><span class="p">(</span><span class="err">Executor.scala</span><span class="p">:</span><span class="m">214</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)</span>
+<span class="x">    at java.util.concurrent.ThreadPoolExecutor</span><span class="p">$</span><span class="nv">Worker</span><span class="p">.</span><span class="nv">run</span><span class="p">(</span><span class="err">ThreadPoolExecutor.java</span><span class="p">:</span><span class="m">615</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at java.lang.Thread.run(Thread.java:745)</span>
+<span class="x">Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="nv">org</span><span class="p">$</span><span class="nv">apache</span><span class="p">$</span><span class="nv">spark</span><span class="p">$</span><span class="nv">broadcast</span><span class="p">$</span><span class="nv">TorrentBroadcast</span><span class="p">$$</span><span class="nv">readBlocks</span><span class="p">$</span><span class="x">1</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="x">2.apply(TorrentBroadcast.scala:138)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="nv">org</span><span class="p">$</span><span class="nv">apache</span><span class="p">$</span><span class="nv">spark</span><span class="p">$</span><span class="nv">broadcast</span><span class="p">$</span><span class="nv">TorrentBroadcast</span><span class="p">$$</span><span class="nv">readBlocks</span><span class="p">$</span><span class="x">1</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="x">2.apply(TorrentBroadcast.scala:138)</span>
+<span class="x">...</span>
+</pre></div>
+
+
+<p>I don't get much information from this message, and searching for this error yields a variety of threads with half solved solutions.
+My hunch is this message pops up for a variety of issues.
+What's even more strange is that this function runs successfully when we read local data using a SQLContext.</p>
+<h1 id="fixes">Fixes?</h1>
+<p>I dug in for a while and I found two possible solutions.</p>
+<p>Instead of calling generateCrossSectional, we can just inline the meat of the function and everything works.
+This isn't a great solution, because this function is going to grow over the next month and I don't want to maintain the behemoth. </p>
+<p>After a few refactors, I found that the function will run if I change the scope of the HiveContext val.
+Take a look at <a href="https://github.com/harterrt/spark-failure/blob/master/fixed.scala">this solution</a>, which successfully runs.</p>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.spark.sql.hive.HiveContext</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Base</span> <span class="o">(</span>
+    <span class="n">client_id</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">)</span>
+
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Target</span> <span class="o">(</span>
+    <span class="n">client_id</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">)</span>
+
+<span class="k">object</span> <span class="nc">PassingView</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">generateCrossSectional</span><span class="o">(</span><span class="n">base</span><span class="k">:</span> <span class="kt">Base</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="nc">Target</span><span class="o">(</span><span class="n">base</span><span class="o">.</span><span class="n">client_id</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">sparkConf</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SparkConf</span><span class="o">().</span><span class="n">setAppName</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">getClass</span><span class="o">.</span><span class="n">getName</span><span class="o">)</span>
+    <span class="n">sparkConf</span><span class="o">.</span><span class="n">setMaster</span><span class="o">(</span><span class="n">sparkConf</span><span class="o">.</span><span class="n">get</span><span class="o">(</span><span class="s">&quot;spark.master&quot;</span><span class="o">,</span> <span class="s">&quot;local[*]&quot;</span><span class="o">))</span>
+    <span class="k">val</span> <span class="n">sc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SparkContext</span><span class="o">(</span><span class="n">sparkConf</span><span class="o">)</span>
+
+    <span class="k">val</span> <span class="n">hiveContext</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">HiveContext</span><span class="o">(</span><span class="n">sc</span><span class="o">)</span>
+    <span class="k">import</span> <span class="nn">hiveContext.implicits._</span>
+
+    <span class="k">val</span> <span class="n">ds</span> <span class="k">=</span> <span class="n">hiveContext</span>
+      <span class="o">.</span><span class="n">sql</span><span class="o">(</span><span class="s">&quot;SELECT * FROM longitudinal&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">selectExpr</span><span class="o">(</span><span class="s">&quot;client_id&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">as</span><span class="o">[</span><span class="kt">Base</span><span class="o">]</span>
+    <span class="k">val</span> <span class="n">output</span> <span class="k">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">generateCrossSectional</span><span class="o">)</span>
+
+    <span class="n">println</span><span class="o">(</span><span class="s">&quot;=&quot;</span><span class="o">*</span><span class="mi">80</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span> <span class="o">+</span> <span class="n">output</span><span class="o">.</span><span class="n">count</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span> <span class="o">+</span> <span class="s">&quot;=&quot;</span><span class="o">*</span><span class="mi">80</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<h1 id="conclusion">Conclusion</h1>
+<p>This solution isn't totally gratifying since I'm still unclear on what's causing the error, but I'm stopping here.
+The cluster this was tested on is still running Spark 1.6, which apparently has some known issues.
+Once we upgrade to 2.0 I may take another look.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+</article>
+
+    <footer>
+        <p>&copy; Ryan T. Harter 2016</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " blog.harterrt.com ",
+  "url" : ".",
+  "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
+  "description": "Weblog for Ryan T. Harter"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Strange Spark Error",
+  "headline": "Strange Spark Error",
+  "datePublished": "2016-08-26 00:00:00-07:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan T. Harter",
+    "url": "./author/ryan-t-harter.html"
+  },
+  "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
+  "url": "./strange-spark-error.html",
+  "description": "Introduction The Bug Fixes? Conclusion Introduction I spend the better part of last week debugging a Spark error, so I figure it's worth writing up. The Bug I added the this very simple view to our batch views repository. package com.mozilla.telemetry.views import org.apache.spark.{SparkConf ..."
+}
+</script></body>
+</html>
