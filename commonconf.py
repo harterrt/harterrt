@@ -62,7 +62,7 @@ SOCIAL = (
 
 # ADD_THIS_ID = 'ra-77hh6723hhjd'
 # DISQUS_SITENAME = 'yoursite'
-# GOOGLE_ANALYTICS = 'UA-1234-5678'
+GOOGLE_ANALYTICS = 'UA-83638505-1'
 # GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
 # STATUSCAKE = { 'trackid': 'your-id', 'days': 7, 'rumid': 1234 }
 

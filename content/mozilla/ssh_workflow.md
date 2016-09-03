@@ -2,6 +2,13 @@ title: Working over SSH
 date: 2016-08-25
 status: draft
 
+TODO:
+* Add links to tools
+* Mentions ssh tools?
+  * sshfs?
+  * auth forwarding
+  *
+
 [TOC]
 
 ## Introduction
@@ -12,7 +19,7 @@ I promised to write up my tools, which I think work pretty well.
 
 ## Tools
 
-### tmux
+### [tmux](https://tmux.github.io/)
 tmux is the single tool most important for me getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.
 
@@ -37,7 +44,7 @@ That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my test editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
 
-### Homeshick
+### [Homeshick](https://github.com/andsens/homeshick)
 Configuring a new machine is a PITA.
 For a while I refused to make custom configurations to the tools I used because I didn't want to have to configure everything again on my next machine.
 But, your tools should be a joy to use, and a customized system is much more enjoyable than a stock system.
