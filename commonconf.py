@@ -42,6 +42,7 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
+#         ('resume', 'resume.pdf'),
         )
 
 # Small links at the top of the page
@@ -75,8 +76,11 @@ IGNORE_FILES = ['.*', 'README.*']
 DEFAULT_PAGINATION = 10
 
 # Copy the CNAME into root dir for GitHub
-STATIC_PATHS = ['images', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/resume.pdf']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/resume.pdf': {'path':'resume.pdf'},
+}
 
 # EXTRA_PATH_METADATA = {
 #     'extra/custom.css': {'path': 'static/custom.css'},
