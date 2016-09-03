@@ -27,11 +27,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <meta name="author" content="Ryan T. Harter" />
-<meta name="description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster instances and most said that they weren't. I promised to ..." />
+<meta name="description" content="TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..." />
 <meta name="keywords" content="">
 <meta property="og:site_name" content="blog.harterrt.com"/>
 <meta property="og:title" content="Working over SSH"/>
-<meta property="og:description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster instances and most said that they weren't. I promised to ..."/>
+<meta property="og:description" content="TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="../drafts/working-over-ssh.html"/>
 <meta property="og:type" content="article"/>
@@ -72,7 +72,13 @@
     <p>Posted on Thu 25 August 2016 in <a href="../category/mozilla.html">mozilla</a></p>
   </header>
   <div>
-    <div class="toc">
+    <p>TODO:
+<em> Add links to tools
+</em> Mentions ssh tools?
+  * sshfs?
+  * auth forwarding
+  *</p>
+<div class="toc">
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#tools">Tools</a><ul>
@@ -91,7 +97,7 @@
 Over the recent London work week, I asked my teammates how they were configuring their cluster instances and most said that they weren't.
 I promised to write up my tools, which I think work pretty well. </p>
 <h2 id="tools">Tools</h2>
-<h3 id="tmux">tmux</h3>
+<h3 id="tmux"><a href="https://tmux.github.io/">tmux</a></h3>
 <p>tmux is the single tool most important for me getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.</p>
 <h4 id="session-persistence">Session Persistence</h4>
@@ -110,7 +116,7 @@ Here's a screen shot of how I developed this blog post:</p>
 <p>That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my test editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.</p>
-<h3 id="homeshick">Homeshick</h3>
+<h3 id="homeshick"><a href="https://github.com/andsens/homeshick">Homeshick</a></h3>
 <p>Configuring a new machine is a PITA.
 For a while I refused to make custom configurations to the tools I used because I didn't want to have to configure everything again on my next machine.
 But, your tools should be a joy to use, and a customized system is much more enjoyable than a stock system.</p>
@@ -130,7 +136,17 @@ Even better, the meaningful config changes I make on my work machine magically m
 <p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
   </main>
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-83638505-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 
 
@@ -159,7 +175,7 @@ Even better, the meaningful config changes I make on my work machine magically m
   },
   "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
   "url": "../drafts/working-over-ssh.html",
-  "description": "Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster instances and most said that they weren't. I promised to ..."
+  "description": "TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..."
 }
 </script></body>
 </html>
