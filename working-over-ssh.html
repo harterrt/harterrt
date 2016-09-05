@@ -3,10 +3,10 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/font-awesome.min.css">
 
 
 
@@ -27,17 +27,17 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <meta name="author" content="Ryan T. Harter" />
-<meta name="description" content="TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..." />
+<meta name="description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..." />
 <meta name="keywords" content="">
 <meta property="og:site_name" content="blog.harterrt.com"/>
 <meta property="og:title" content="Working over SSH"/>
-<meta property="og:description" content="TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..."/>
+<meta property="og:description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="../drafts/working-over-ssh.html"/>
+<meta property="og:url" content="./working-over-ssh.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2016-08-25 00:00:00-07:00"/>
+<meta property="article:published_time" content="2016-09-05 00:00:00-07:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="../author/ryan-t-harter.html">
+<meta property="article:author" content="./author/ryan-t-harter.html">
 <meta property="article:section" content="mozilla"/>
 <meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
   <title>blog.harterrt.com &ndash; Working over SSH</title>
@@ -45,13 +45,13 @@
 <body>
   <aside>
     <div>
-      <a href="..">
+      <a href=".">
         <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="Ryan T. Harter" title="Ryan T. Harter">
       </a>
-      <h1><a href="..">Ryan T. Harter</a></h1>
+      <h1><a href=".">Ryan T. Harter</a></h1>
 <p>Data Engineer @ Mozilla</p>      <nav>
         <ul class="list">
-          <li><a href="../pages/about.html#about">About</a></li>
+          <li><a href="./pages/about.html#about">About</a></li>
         </ul>
       </nav>
       <ul class="social">
@@ -63,22 +63,16 @@
   </aside>
   <main>
     <nav>
-      <a href="..">Home</a>
+      <a href=".">Home</a>
     </nav>
 
 <article>
   <header>
     <h1 id="working-over-ssh">Working over SSH</h1>
-    <p>Posted on Thu 25 August 2016 in <a href="../category/mozilla.html">mozilla</a></p>
+    <p>Posted on Mon 05 September 2016 in <a href="./category/mozilla.html">mozilla</a></p>
   </header>
   <div>
-    <p>TODO:
-<em> Add links to tools
-</em> Mentions ssh tools?
-  * sshfs?
-  * auth forwarding
-  *</p>
-<div class="toc">
+    <div class="toc">
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#tools">Tools</a><ul>
@@ -94,17 +88,35 @@
 </div>
 <h2 id="introduction">Introduction</h2>
 <p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
-Over the recent London work week, I asked my teammates how they were configuring their cluster instances and most said that they weren't.
-I promised to write up my tools, which I think work pretty well. </p>
+I promised my teammates a write-up how I work over ssh.
+Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
 <h2 id="tools">Tools</h2>
 <h3 id="tmux"><a href="https://tmux.github.io/">tmux</a></h3>
 <p>tmux is the single tool most important for me getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.</p>
 <h4 id="session-persistence">Session Persistence</h4>
 <p>tmux sessions can be detached and reattached at will.
-That means when you execute some long running command on an AWS cluster you can kill the ssh session and the command will keep running.
+That means when you execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running.
 Later, you can reconnect to the cluster and session, it will be as if you hadn't left.
 So much nicer than cussing out your flaky WiFi connection.</p>
+<p>For example:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Start a new session named &quot;foo&quot;</span>
+<span class="c1"># Opens a new shell as a subprocess</span>
+tmux new -s foo
+
+<span class="c1"># Do stuff ...</span>
+sleep 100
+
+<span class="c1"># Kill the session, returning you to the original shell</span>
+<span class="c1"># with ctrl-b d</span>
+
+<span class="c1"># Reconnect to the tmux session</span>
+tmux at -dt foo
+
+<span class="c1"># Still waiting!!</span>
+</pre></div>
+
+
 <p>More often, I use tmux just to save my place when I need to wrap up for the day.
 Next morning, I can reattach my session and I'm already looking at the most relevant files for today's work.</p>
 <h4 id="multiplexing">Multiplexing</h4>
@@ -112,14 +124,17 @@ Next morning, I can reattach my session and I'm already looking at the most rele
 It allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:</p>
-<p>{{TODO IMG}}</p>
+<p><img src="./images/example-tmux-session.png"></p>
 <p>That's all in one terminal window.
-On the left I have a process serving up drafts of this document and on the right I have my test editor.
-The extra context is indispensable when trying to figure out WTF is going on with a failing job.</p>
+On the left I have a process serving up drafts of this document and on the right I have my text editor.
+The extra context is indispensable when trying to figure out WTF is going on with a failing job.
+For example, monitoring an <code>sbt ~test</code> process on the left while making edits on the right.</p>
 <h3 id="homeshick"><a href="https://github.com/andsens/homeshick">Homeshick</a></h3>
 <p>Configuring a new machine is a PITA.
-For a while I refused to make custom configurations to the tools I used because I didn't want to have to configure everything again on my next machine.
-But, your tools should be a joy to use, and a customized system is much more enjoyable than a stock system.</p>
+For a while, I saw all configuration changes as a liability and refused to customize my environment.
+After all, I'd eventually have to redo all of these configs when I get a new machine.
+Eventually, I relented.
+Your tools should be a joy to use, after all, and Homeshick makes this a non-issue.</p>
 <p>Homeshick pulls all of your dotfiles into a central git repository and handles linking these files to the right location.
 Now, I can boot up a new Ubuntu instance on AWS and feel at home within ~5 minutes.
 When I connect to a machine for the first time, I grab <a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md">this snippet</a> and all of the initialization is done.
@@ -155,7 +170,7 @@ Even better, the meaningful config changes I make on my work machine magically m
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " blog.harterrt.com ",
-  "url" : "..",
+  "url" : ".",
   "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
   "description": "Weblog for Ryan T. Harter"
 }
@@ -166,16 +181,16 @@ Even better, the meaningful config changes I make on my work machine magically m
   "@type": "BlogPosting",
   "name": "Working over SSH",
   "headline": "Working over SSH",
-  "datePublished": "2016-08-25 00:00:00-07:00",
+  "datePublished": "2016-09-05 00:00:00-07:00",
   "dateModified": "",
   "author": {
     "@type": "Person",
     "name": "Ryan T. Harter",
-    "url": "../author/ryan-t-harter.html"
+    "url": "./author/ryan-t-harter.html"
   },
   "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
-  "url": "../drafts/working-over-ssh.html",
-  "description": "TODO: Add links to tools Mentions ssh tools? * sshfs? * auth forwarding * Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. Over the recent London work week, I asked my teammates how they were configuring their cluster ..."
+  "url": "./working-over-ssh.html",
+  "description": "Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..."
 }
 </script></body>
 </html>
