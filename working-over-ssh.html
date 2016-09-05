@@ -3,13 +3,15 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="./theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/font-awesome/css/font-awesome.min.css">
 
 
+    <link href="http://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom">
 
+    <link href="http://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS">
 
 
   <meta charset="utf-8" />
@@ -28,18 +30,17 @@
 
 <meta name="author" content="Ryan T. Harter" />
 <meta name="description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..." />
-<meta name="keywords" content="planet-mozilla, tools">
+<meta name="keywords" content="tools">
 <meta property="og:site_name" content="blog.harterrt.com"/>
 <meta property="og:title" content="Working over SSH"/>
 <meta property="og:description" content="Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./working-over-ssh.html"/>
+<meta property="og:url" content="http://blog.harterrt.com/working-over-ssh.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2016-09-05 00:00:00-07:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="./author/ryan-t-harter.html">
+<meta property="article:author" content="http://blog.harterrt.com/author/ryan-t-harter.html">
 <meta property="article:section" content="mozilla"/>
-<meta property="article:tag" content="planet-mozilla"/>
 <meta property="article:tag" content="tools"/>
 <meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
   <title>blog.harterrt.com &ndash; Working over SSH</title>
@@ -47,13 +48,13 @@
 <body>
   <aside>
     <div>
-      <a href=".">
+      <a href="http://blog.harterrt.com">
         <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="Ryan T. Harter" title="Ryan T. Harter">
       </a>
-      <h1><a href=".">Ryan T. Harter</a></h1>
+      <h1><a href="http://blog.harterrt.com">Ryan T. Harter</a></h1>
 <p>Data Engineer @ Mozilla</p>      <nav>
         <ul class="list">
-          <li><a href="./pages/about.html#about">About</a></li>
+          <li><a href="http://blog.harterrt.com/pages/about.html#about">About</a></li>
         </ul>
       </nav>
       <ul class="social">
@@ -65,13 +66,15 @@
   </aside>
   <main>
     <nav>
-      <a href=".">Home</a>
+      <a href="http://blog.harterrt.com">Home</a>
+      <a href="http://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      <a href="http://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
     </nav>
 
 <article>
   <header>
     <h1 id="working-over-ssh">Working over SSH</h1>
-    <p>Posted on Mon 05 September 2016 in <a href="./category/mozilla.html">mozilla</a></p>
+    <p>Posted on Mon 05 September 2016 in <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a></p>
   </header>
   <div>
     <div class="toc">
@@ -126,7 +129,7 @@ Next morning, I can reattach my session and I'm already looking at the most rele
 It allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:</p>
-<p><img src="./images/example-tmux-session.png"></p>
+<p><img src="http://blog.harterrt.com/images/example-tmux-session.png"></p>
 <p>That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my text editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
@@ -144,8 +147,7 @@ Even better, the meaningful config changes I make on my work machine magically m
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="./tag/planet-mozilla.html">planet-mozilla</a>
-      <a href="./tag/tools.html">tools</a>
+      <a href="http://blog.harterrt.com/tag/tools.html">tools</a>
     </p>
   </div>
 </article>
@@ -174,7 +176,7 @@ Even better, the meaningful config changes I make on my work machine magically m
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " blog.harterrt.com ",
-  "url" : ".",
+  "url" : "http://blog.harterrt.com",
   "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
   "description": "Weblog for Ryan T. Harter"
 }
@@ -190,10 +192,10 @@ Even better, the meaningful config changes I make on my work machine magically m
   "author": {
     "@type": "Person",
     "name": "Ryan T. Harter",
-    "url": "./author/ryan-t-harter.html"
+    "url": "http://blog.harterrt.com/author/ryan-t-harter.html"
   },
   "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
-  "url": "./working-over-ssh.html",
+  "url": "http://blog.harterrt.com/working-over-ssh.html",
   "description": "Introduction Tools tmux Session Persistence Multiplexing Homeshick Introduction Working over SSH can be impossibly frustrating if you're not using the right tools. I promised my teammates a write-up how I work over ssh. Using these tools will make it significantly easier / more fun to work with a remote linux ..."
 }
 </script></body>
