@@ -60,10 +60,11 @@ For example, monitoring an `sbt ~test` process on the left while making edits on
 Configuring a new machine is a PITA.
 For a while, I saw all configuration changes as a liability and refused to customize my environment.
 After all, I'd eventually have to redo all of these configs when I get a new machine.
-Eventually, I relented.
-Your tools should be a joy to use, after all, and Homeshick makes this a non-issue.
+But, your tools should be a joy to use, and Homeshick makes this a non-issue.
 
-Homeshick pulls all of your dotfiles into a central git repository and handles linking these files to the right location.
+Homeshick *pulls all of your dotfiles into a central git repository* and handles linking these files to the right location.
 Now, I can boot up a new Ubuntu instance on AWS and feel at home within ~5 minutes.
 When I connect to a machine for the first time, I grab [this snippet](https://github.com/harterrt/TIL/blob/master/linux/new-machine.md) and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple `git pull`.
+
+The [README](https://github.com/andsens/homeshick) is pretty good and it shouldn't take longer than ~15 minutes to set up.
