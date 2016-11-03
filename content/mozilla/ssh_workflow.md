@@ -13,12 +13,12 @@ Using these tools will make it significantly easier / more fun to work with a re
 ## Tools
 
 ### [tmux](https://tmux.github.io/)
-tmux is the single tool most important for me getting work done over SSH.
+For me, tmux is the single tool most important getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.
 
 #### Session Persistence
 tmux sessions can be detached and reattached at will.
-That means when you execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running.
+That means you can **execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running**.
 Later, you can reconnect to the cluster and session, it will be as if you hadn't left.
 So much nicer than cussing out your flaky WiFi connection.
 
@@ -44,8 +44,8 @@ More often, I use tmux just to save my place when I need to wrap up for the day.
 Next morning, I can reattach my session and I'm already looking at the most relevant files for today's work.
 
 #### Multiplexing
-This is probably tmux's primary purpose.
-It allows you to open a bunch of terminals in a single ssh connection.
+This is what tmux's was built to do. I think persistence is just a nice side effect.
+tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:
 
@@ -62,8 +62,8 @@ For a while, I saw all configuration changes as a liability and refused to custo
 After all, I'd eventually have to redo all of these configs when I get a new machine.
 But, your tools should be a joy to use, and Homeshick makes this a non-issue.
 
-Homeshick *pulls all of your dotfiles into a central git repository* and handles linking these files to the right location.
-Now, I can boot up a new Ubuntu instance on AWS and feel at home within ~5 minutes.
+Homeshick pulls all of your dotfiles into a central git repository and handles linking these files to the right location.
+Now, I can **setup a new Ubuntu machine within ~5 minutes** with all of my dotfiles intact.
 When I connect to a machine for the first time, I grab [this snippet](https://github.com/harterrt/TIL/blob/master/linux/new-machine.md) and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple `git pull`.
 
