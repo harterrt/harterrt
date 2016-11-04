@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://blog.harterrt.com/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="http://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom">
+
+    <link href="http://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS">
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="author" content="Ryan T. Harter" />
+<meta name="description" content="Better Process Better Tools One less tool The documentation sits next to the code Syncronization Discoverability Last week I finished a pull request that moved some documentation from mozilla's wiki to a github repository. It took a couple of hours of editing and toying with pandoc to get right ..." />
+<meta name="keywords" content="documentation, mozilla">
+<meta property="og:site_name" content="blog.harterrt.com"/>
+<meta property="og:title" content="Why Markdown?"/>
+<meta property="og:description" content="Better Process Better Tools One less tool The documentation sits next to the code Syncronization Discoverability Last week I finished a pull request that moved some documentation from mozilla's wiki to a github repository. It took a couple of hours of editing and toying with pandoc to get right ..."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://blog.harterrt.com/why-markdown.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2016-11-03 00:00:00-07:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://blog.harterrt.com/author/ryan-t-harter.html">
+<meta property="article:section" content="documentation"/>
+<meta property="article:tag" content="documentation"/>
+<meta property="article:tag" content="mozilla"/>
+<meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
+  <title>blog.harterrt.com &ndash; Why Markdown?</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="Ryan T. Harter" title="Ryan T. Harter">
+      </a>
+      <h1><a href="http://blog.harterrt.com">Ryan T. Harter</a></h1>
+<p>Data Engineer @ Mozilla</p>      <nav>
+        <ul class="list">
+          <li><a href="http://blog.harterrt.com/pages/about.html#about">About</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/harterrt" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/harterrt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-linkedin" href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <nav>
+      <a href="http://blog.harterrt.com">Home</a>
+      <a href="http://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      <a href="http://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+    </nav>
+
+<article>
+  <header>
+    <h1 id="why-markdown">Why Markdown?</h1>
+    <p>Posted on Thu 03 November 2016 in <a href="http://blog.harterrt.com/category/documentation.html">documentation</a></p>
+  </header>
+  <div>
+    <div class="toc">
+<ul>
+<li><a href="#better-process">Better Process</a></li>
+<li><a href="#better-tools">Better Tools</a><ul>
+<li><a href="#one-less-tool">One less tool</a></li>
+</ul>
+</li>
+<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
+<li><a href="#syncronization">Syncronization</a></li>
+<li><a href="#discoverability">Discoverability</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
+request</a> that moved
+some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
+wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
+repository</a>.
+It took a couple of hours of editing and toying with pandoc to get right, but
+when I was done, I realized the benefits were difficult to see.  So, I decided
+to write them out for posterity.</p>
+<h2 id="better-process">Better Process</h2>
+<p>The only way to edit our wiki is through the web front end which causes some
+major problems.</p>
+<p>For one, You're always editing the production version and there's no way to get
+review before publishing. That's obviously not great.</p>
+<p>Second, your edits need to be submitted quickly - like within an hour, usually.
+Since you're editing in a web form there's no good way to save your edits
+locally.  Even worse, there's no good way to settle merge conflicts.</p>
+<p>With markdown, I can develop my revisions over the course of weeks and preview
+them locally.  When it's time to publish I get review from my peers, which
+makes my documentation more readable and helps me improve as an engineer.</p>
+<h2 id="better-tools">Better Tools</h2>
+<p>I have powerful tools for manipulating text so using a simple web form to edit
+technical documentation seems absurd to me.  With markdown, I get the joy of
+using my favorite text editor in my favorite development environment</p>
+<h3 id="one-less-tool">One less tool</h3>
+<p>Our team is already using Markdown for our README's and Github provides a much
+better UX for revison control.  By moving to Markdown for our user facing
+documentation, we have one less tool and syntax we need to depend on.</p>
+<h2 id="the-documentation-sits-next-to-the-code">The documentation sits next to the code</h2>
+<p>Storing your documentation with your code has a lot of great benefits.</p>
+<h3 id="syncronization">Syncronization</h3>
+<p>Pull requests can include simultanious changes to code and documentation, which
+makes it more likely they'll stay in sync. Both because you don't need to go
+edit them elsewhere and because it can become a review requirement.</p>
+<h3 id="discoverability">Discoverability</h3>
+<p>Keeping the docs next to the code helps with discoverability. Your
+code and your documentation should supplement each other. Keeping them close
+together is only reasonable.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://blog.harterrt.com/tag/documentation.html">documentation</a>
+      <a href="http://blog.harterrt.com/tag/mozilla.html">mozilla</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+        <p>&copy; Ryan T. Harter 2016</p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83638505-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " blog.harterrt.com ",
+  "url" : "http://blog.harterrt.com",
+  "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
+  "description": "Weblog for Ryan T. Harter"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Why Markdown?",
+  "headline": "Why Markdown?",
+  "datePublished": "2016-11-03 00:00:00-07:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan T. Harter",
+    "url": "http://blog.harterrt.com/author/ryan-t-harter.html"
+  },
+  "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
+  "url": "http://blog.harterrt.com/why-markdown.html",
+  "description": "Better Process Better Tools One less tool The documentation sits next to the code Syncronization Discoverability Last week I finished a pull request that moved some documentation from mozilla's wiki to a github repository. It took a couple of hours of editing and toying with pandoc to get right ..."
+}
+</script></body>
+</html>
