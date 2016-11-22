@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2016-11-14T00:00:00-08:00</updated><entry><title>Announcing the Cross Sectional Dataset</title><link href="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html" rel="alternate"></link><published>2016-11-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</id><summary type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+&lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
+summary statistics for each client.  Like the Longitudinal table, there's one
+row for each client_id in a 1% sample of clients.  However, the Cross Sectional
+dataset simplifies your analysis by replacing the longitudinal arrays with
+summary statistics.&lt;/p&gt;
+&lt;p&gt;The dataset is now available in
+&lt;a href="https://sql.telemetry.mozilla.org/queries/1669/source"&gt;STMO&lt;/a&gt;.  You can find
+more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
+documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Take a look and let me know if you have any question or suggestions for new
+columns!&lt;/p&gt;</summary></entry><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;

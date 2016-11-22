@@ -28,17 +28,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="author" content="Ryan T. Harter" />
-    <meta name="description" content="Weblog for Ryan T. Harter" />
+<meta name="author" content="Ryan T. Harter" />
+<meta name="description" content="I'm happy to announce a new telemetry dataset! The Cross Sectional dataset makes it easy to describe our users by providing summary statistics for each client. Like the Longitudinal table, there's one row for each client_id in a 1% sample of clients. However, the Cross Sectional dataset simplifies ..." />
+<meta name="keywords" content="">
 <meta property="og:site_name" content="blog.harterrt.com"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="blog.harterrt.com"/>
-<meta property="og:description" content="Weblog for Ryan T. Harter"/>
+<meta property="og:title" content="Announcing the Cross Sectional Dataset"/>
+<meta property="og:description" content="I'm happy to announce a new telemetry dataset! The Cross Sectional dataset makes it easy to describe our users by providing summary statistics for each client. Like the Longitudinal table, there's one row for each client_id in a 1% sample of clients. However, the Cross Sectional dataset simplifies ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://blog.harterrt.com"/>
+<meta property="og:url" content="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2016-11-14 00:00:00-08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://blog.harterrt.com/author/ryan-t-harter.html">
+<meta property="article:section" content="mozilla"/>
 <meta property="og:image" content="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69">
-
-  <title>blog.harterrt.com &ndash; Category: mozilla</title>
+  <title>blog.harterrt.com &ndash; Announcing the Cross Sectional Dataset</title>
 </head>
 <body>
   <aside>
@@ -68,82 +72,28 @@
 
 <article>
   <header>
-    <h2><a href="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html#announcing-the-cross-sectional-dataset">Announcing the Cross Sectional Dataset</a></h2>
-    <p>
-      Posted on Mon 14 November 2016 in <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a>
-    </p>
+    <h1 id="announcing-the-cross-sectional-dataset">Announcing the Cross Sectional Dataset</h1>
+    <p>Posted on Mon 14 November 2016 in <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a></p>
   </header>
   <div>
-      <p>I'm happy to announce a new telemetry dataset!</p>
+    <p>I'm happy to announce a new telemetry dataset!</p>
 <p>The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies ...</p>
-      <a class="btn" href="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html#announcing-the-cross-sectional-dataset">Continue reading</a>
+dataset simplifies your analysis by replacing the longitudinal arrays with
+summary statistics.</p>
+<p>The dataset is now available in
+<a href="https://sql.telemetry.mozilla.org/queries/1669/source">STMO</a>.  You can find
+more information in <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional">the
+documentation</a>.</p>
+<p>Take a look and let me know if you have any question or suggestions for new
+columns!</p>
   </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="http://blog.harterrt.com/working-over-ssh.html#working-over-ssh">Working over SSH</a></h2>
+  <div class="tag-cloud">
     <p>
-      Posted on Mon 05 September 2016 in <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a>
-      &#8226; Tagged with
-      <a href="http://blog.harterrt.com/tag/tools.html">tools</a>    </p>
-  </header>
-  <div>
-      <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#tools">Tools</a><ul>
-<li><a href="#tmux">tmux</a><ul>
-<li><a href="#session-persistence">Session Persistence</a></li>
-<li><a href="#multiplexing">Multiplexing</a></li>
-</ul>
-</li>
-<li><a href="#homeshick">Homeshick</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="introduction">Introduction</h2>
-<p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
-I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux ...</p>
-      <a class="btn" href="http://blog.harterrt.com/working-over-ssh.html#working-over-ssh">Continue reading</a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="http://blog.harterrt.com/strange-spark-error.html#strange-spark-error">Strange Spark Error</a></h2>
-    <p>
-      Posted on Fri 26 August 2016 in <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a>
-      &#8226; Tagged with
-      <a href="http://blog.harterrt.com/tag/spark.html">spark</a>,      <a href="http://blog.harterrt.com/tag/scala.html">scala</a>    </p>
-  </header>
-  <div>
-      <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#the-bug">The Bug</a></li>
-<li><a href="#fixes">Fixes?</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</div>
-<h1 id="introduction">Introduction</h1>
-<p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1 id="the-bug">The Bug</h1>
-<p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
-
-<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
-      <a class="btn" href="http://blog.harterrt.com/strange-spark-error.html#strange-spark-error">Continue reading</a>
+    </p>
   </div>
 </article>
-
-  <div class="pagination">
-  </div>
 
     <footer>
         <p>&copy; Ryan T. Harter 2016</p>
@@ -174,5 +124,22 @@ Using these tools will make it significantly easier / more fun to work with a re
   "description": "Weblog for Ryan T. Harter"
 }
 </script>
-</body>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Announcing the Cross Sectional Dataset",
+  "headline": "Announcing the Cross Sectional Dataset",
+  "datePublished": "2016-11-14 00:00:00-08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan T. Harter",
+    "url": "http://blog.harterrt.com/author/ryan-t-harter.html"
+  },
+  "image": "https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69",
+  "url": "http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html",
+  "description": "I'm happy to announce a new telemetry dataset! The Cross Sectional dataset makes it easy to describe our users by providing summary statistics for each client. Like the Longitudinal table, there's one row for each client_id in a 1% sample of clients. However, the Cross Sectional dataset simplifies ..."
+}
+</script></body>
 </html>
