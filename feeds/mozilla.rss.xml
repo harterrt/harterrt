@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 14 Nov 2016 00:00:00 -0800</lastBuildDate><item><title>Announcing the Cross Sectional Dataset</title><link>http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html</link><description>&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+<rss version="2.0"><channel><title>harterrt.com</title><link>http://harterrt.com/</link><description></description><lastBuildDate>Mon, 14 Nov 2016 00:00:00 -0800</lastBuildDate><item><title>Announcing the Cross Sectional Dataset</title><link>http://harterrt.com/announcing-the-cross-sectional-dataset.html</link><description>&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
 &lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
@@ -10,7 +10,7 @@ summary statistics.&lt;/p&gt;
 more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
 documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</guid></item><item><title>Working over SSH</title><link>http://blog.harterrt.com/working-over-ssh.html</link><description>&lt;div class="toc"&gt;
+columns!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</guid></item><item><title>Working over SSH</title><link>http://harterrt.com/working-over-ssh.html</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#tools"&gt;Tools&lt;/a&gt;&lt;ul&gt;
@@ -62,7 +62,7 @@ Next morning, I can reattach my session and I'm already looking at the most rele
 tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://blog.harterrt.com/images/example-tmux-session.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://harterrt.com/images/example-tmux-session.png"&gt;&lt;/p&gt;
 &lt;p&gt;That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my text editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
@@ -76,7 +76,7 @@ But, your tools should be a joy to use, and Homeshick makes this a non-issue.&lt
 Now, I can &lt;strong&gt;setup a new Ubuntu machine within ~5 minutes&lt;/strong&gt; with all of my dotfiles intact.
 When I connect to a machine for the first time, I grab &lt;a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md"&gt;this snippet&lt;/a&gt; and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</guid><category>tools</category></item><item><title>Strange Spark Error</title><link>http://blog.harterrt.com/strange-spark-error.html</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:harterrt.com,2016-09-05:working-over-ssh.html</guid><category>tools</category></item><item><title>Strange Spark Error</title><link>http://harterrt.com/strange-spark-error.html</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#the-bug"&gt;The Bug&lt;/a&gt;&lt;/li&gt;
@@ -198,4 +198,4 @@ Take a look at &lt;a href="https://github.com/harterrt/spark-failure/blob/master
 &lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;This solution isn't totally gratifying since I'm still unclear on what's causing the error, but I'm stopping here.
 The cluster this was tested on is still running Spark 1.6, which apparently has some known issues.
-Once we upgrade to 2.0 I may take another look.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 26 Aug 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-08-26:strange-spark-error.html</guid><category>spark</category><category>scala</category></item></channel></rss>
+Once we upgrade to 2.0 I may take another look.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 26 Aug 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:harterrt.com,2016-08-26:strange-spark-error.html</guid><category>spark</category><category>scala</category></item></channel></rss>
