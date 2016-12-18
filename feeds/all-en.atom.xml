@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>harterrt.com</title><link href="http://harterrt.com/" rel="alternate"></link><link href="http://harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>http://harterrt.com/</id><updated>2016-11-14T00:00:00-08:00</updated><entry><title>Announcing the Cross Sectional Dataset</title><link href="http://harterrt.com/announcing-the-cross-sectional-dataset.html" rel="alternate"></link><published>2016-11-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</id><summary type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2016-11-14T00:00:00-08:00</updated><entry><title>Announcing the Cross Sectional Dataset</title><link href="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html" rel="alternate"></link><published>2016-11-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</id><summary type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
 &lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
@@ -10,7 +10,7 @@ summary statistics.&lt;/p&gt;
 more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
 documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</summary></entry><entry><title>Why Markdown?</title><link href="http://harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
+columns!&lt;/p&gt;</summary></entry><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
@@ -60,7 +60,7 @@ edit them elsewhere and because it can become a review requirement.&lt;/p&gt;
 &lt;h3 id="discoverability"&gt;Discoverability&lt;/h3&gt;
 &lt;p&gt;Keeping the docs next to the code helps with discoverability. Your
 code and your documentation should supplement each other. Keeping them close
-together is only reasonable.&lt;/p&gt;</summary><category term="documentation"></category><category term="mozilla"></category></entry><entry><title>Working over SSH</title><link href="http://harterrt.com/working-over-ssh.html" rel="alternate"></link><published>2016-09-05T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:harterrt.com,2016-09-05:working-over-ssh.html</id><summary type="html">&lt;div class="toc"&gt;
+together is only reasonable.&lt;/p&gt;</summary><category term="documentation"></category><category term="mozilla"></category></entry><entry><title>Working over SSH</title><link href="http://blog.harterrt.com/working-over-ssh.html" rel="alternate"></link><published>2016-09-05T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#tools"&gt;Tools&lt;/a&gt;&lt;ul&gt;
@@ -112,7 +112,7 @@ Next morning, I can reattach my session and I'm already looking at the most rele
 tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://harterrt.com/images/example-tmux-session.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://blog.harterrt.com/images/example-tmux-session.png"&gt;&lt;/p&gt;
 &lt;p&gt;That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my text editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
@@ -126,7 +126,7 @@ But, your tools should be a joy to use, and Homeshick makes this a non-issue.&lt
 Now, I can &lt;strong&gt;setup a new Ubuntu machine within ~5 minutes&lt;/strong&gt; with all of my dotfiles intact.
 When I connect to a machine for the first time, I grab &lt;a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md"&gt;this snippet&lt;/a&gt; and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</summary><category term="tools"></category></entry><entry><title>Strange Spark Error</title><link href="http://harterrt.com/strange-spark-error.html" rel="alternate"></link><published>2016-08-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:harterrt.com,2016-08-26:strange-spark-error.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</summary><category term="tools"></category></entry><entry><title>Strange Spark Error</title><link href="http://blog.harterrt.com/strange-spark-error.html" rel="alternate"></link><published>2016-08-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-08-26:strange-spark-error.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#the-bug"&gt;The Bug&lt;/a&gt;&lt;/li&gt;

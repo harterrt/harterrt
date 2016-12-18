@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>harterrt.com</title><link>http://harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Nov 2016 00:00:00 -0700</lastBuildDate><item><title>Why Markdown?</title><link>http://harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Nov 2016 00:00:00 -0700</lastBuildDate><item><title>Why Markdown?</title><link>http://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
@@ -49,4 +49,4 @@ edit them elsewhere and because it can become a review requirement.&lt;/p&gt;
 &lt;h3 id="discoverability"&gt;Discoverability&lt;/h3&gt;
 &lt;p&gt;Keeping the docs next to the code helps with discoverability. Your
 code and your documentation should supplement each other. Keeping them close
-together is only reasonable.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:harterrt.com,2016-11-03:why-markdown.html</guid><category>documentation</category><category>mozilla</category></item></channel></rss>
+together is only reasonable.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:why-markdown.html</guid><category>documentation</category><category>mozilla</category></item></channel></rss>
