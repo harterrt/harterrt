@@ -13,7 +13,8 @@ DEFAULT_LANG = u'en'
 ################
 # Theme Config #
 ################
-THEME = "themes/Flex"
+# Needs a image, and we need to change the social links
+THEME = "themes/svbhack"
 
 AUTHOR = u'Ryan T. Harter'
 SITENAME = u'blog.harterrt.com'
