@@ -57,11 +57,11 @@ PLUGINS = []
 MD_EXTENSIONS = ['toc', 'codehilite','extra']
 
 # Social widget
-SOCIAL = (
-          ('github', 'https://github.com/harterrt'),
-          ('twitter', 'https://twitter.com/harterrt'),
-          ('linkedin', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
-         )
+# SOCIAL = (
+#           ('github', 'https://github.com/harterrt'),
+#           ('twitter', 'https://twitter.com/harterrt'),
+#           ('linkedin', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
+#          )
 
 # ADD_THIS_ID = 'ra-77hh6723hhjd'
 # DISQUS_SITENAME = 'yoursite'
