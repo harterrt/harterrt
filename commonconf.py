@@ -22,7 +22,7 @@ SITEURL = 'http://blog.harterrt.com'
 SITETITLE = 'Ryan T. Harter'
 SITESUBTITLE = 'Senior Data Engineer @ Mozilla'
 SITEDESCRIPTION = 'Weblog for Ryan T. Harter'
-SITELOGO = 'https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69'
+USER_LOGO_URL = 'https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69'
 BROWSER_COLOR = '#333'
 
 MAIN_MENU = True
