@@ -52,7 +52,7 @@ MENUITEMS = (
 
 # PLUGINS:
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = []
+PLUGINS = ['asciidoc_reader']
 MD_EXTENSIONS = ['toc', 'codehilite','extra']
 
 # Social widget

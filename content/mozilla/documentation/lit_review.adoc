@@ -1,0 +1,81 @@
+Reading *About* Documentation
+=============================
+:author: Ryan Harter
+:date: 2017-01-10
+:status: draft
+:tags: mozilla,documentation
+
+I'm working on a big overhaul of my teams documentation.
+I don't have much expertice writing docs, though I do have some experience.
+I decided to review what's been written already about writing documentation.
+This is a summary of what I've found, 
+both for my own reference and to help others understand the decision I'm making.
+
+
+Most of my work so far has been for private corporations, 
+where documentation is private and I am always available to answer questions.
+
+At Mozilla, I'm working on building a data driven culture.
+I'm working with client teams to help drive data driven projects.
+
+:toc:
+
+== Findings
+
+I should note that all of the literature I could find focused on documenting softward products.
+I am willing to bet that a data product is going to have different documentation needs than most software products.
+But, this is as good a place as any to start.
+
+=== Structure
+
+Most seem to agree that a **README** is a critical piece of documentation.
+The README is usually comprised of two key parts:
+ 
+. A quick introduction explaining what this projet is, why the user should 
+  care, and whether it's worth investing some time to understand it better.
+. A simple tutorial to get the user started and give a feel for what the tool
+  actually does.
+
+If the user decides they want to learn more,
+there should be a set of **topical guides** that comprise the bulk of the documentation.
+Think of each of these guides as a class focused on teaching your student (new user) a single skill.
+Reading all of these guides should take someone who has never seen your product and make them an expert user. [link:#TDT[TDT]]
+With that in mind, make sure there's some sense of order to these lessons (easy to hard).
+
+If your new user gets this far, they are now very comfortable with your product.
+From here, they need high **quality reference material**.
+In my experience, this is the most common documentation provided by new products,
+but it is needed latest in the process!
+
+I have a hard time
+When I started this research, 
+I was having a hard time figuring out how we were going to separate our 
+end user documentation from our development notes.
+Now I see that these are just different stages in this learning process.
+First we explain what it is, then how to use it, and finally how to extend it.
+
+=== Style
+
+
+** Choose a style and stick with it
+** Be conversational
+** Use **markup**
+** Create a taxonomy (answer, "Where does this go?")
+** You need an editor
+
+=== Tools
+** Use plain text and version control
+** Wikis are the devil
+** Avoid Automatically generated documentation
+ 
+
+
+== TODO
+
+* Who is this documentation for? For my clients? If so, very broad.
+* Decide on documentation scope
+** Break down into componenets with a full structure for each component
+   (README, tutorial, guides, reference)
+
+'''
+[[TDT]] [TDT]: Teach, Don't Tell: http://stevelosh.com/blog/2013/09/teach-dont-tell/
