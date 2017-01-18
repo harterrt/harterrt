@@ -1,4 +1,4 @@
-Reading *About* Documentation
+Reading About Documentation
 =============================
 :author: Ryan Harter
 :date: 2017-01-10
@@ -26,7 +26,7 @@ I should note that all of the literature I could find focused on documenting sof
 I am willing to bet that a data product is going to have different documentation needs than most software products.
 But, this is as good a place as any to start.
 
-=== Structure
+=== Structure & What to Write
 
 Most seem to agree that a **README** is a critical piece of documentation.
 The README is usually comprised of two key parts:
@@ -47,7 +47,6 @@ From here, they need high **quality reference material**.
 In my experience, this is the most common documentation provided by new products,
 but it is needed latest in the process!
 
-I have a hard time
 When I started this research, 
 I was having a hard time figuring out how we were going to separate our 
 end user documentation from our development notes.
@@ -56,14 +55,41 @@ First we explain what it is, then how to use it, and finally how to extend it.
 
 === Style
 
+Most commentors includes some opinions on what style your documentation should take.
+The goal of style is to make it easy for your user to read your documentation.
+The writing should pull you through the document. It should feel natural.
 
-** Choose a style and stick with it
-** Be conversational
-** Use **markup**
-** Create a taxonomy (answer, "Where does this go?")
-** You need an editor
+If you want your documentation to read naturally, you should try to become a better writer.
+This comes as cold solace to most folks, since I need my documenation now
+and I can't wait 10,000 hours to become an expert writer, but it's worth mentioning.
+The overwhelming consensus is that the best way to become a better writer is to **write a lot**.
+If you want to write great documentation, consider building habits that will make you a great writer.
+
+As with programming, maintaining a consistent style will help your readers understand your documentation more naturally.
+Of course, the most important word here is "consistent".
+The most common advice I found is to **choose a style and stick with it**.
+This sounds obvious, but I rarely find corporate documentation with consistent style across tutorials.
+Have a style guide and enforce it.
+
+As you choose your style guide, be aware that most style guides are focused on
+physical media and your documentation is probably going to be read digitally.
+Your readers have a different expectation when reading online. 
+
+Specifically, readers are going to skim your writing, so make it easy to call out important information.
+Use **visual markup** like bold text, code blocks, callouts, and section headers.
+Similarly, avoid long paragraphs.
+These make it easy for the user to find the section immediately important to them.
+
+Most guides suggest keeping a **conversational tone**.
+This makes the guide more approachable and makes the documentation easier to read.
+
+Finally, everyone seems to agree that **you should have an editor**.
+In fact, Jacob Kaplan-Moss dedicated an entire article to this point [link:#YNAE[JKM 3]].
+If you don't have access to an editor,
+review your own work thrice then ask for someone else's review before publishing your work.
 
 === Tools
+** Create a taxonomy (answer, "Where does this go?")
 ** Use plain text and version control
 ** Wikis are the devil
 ** Avoid Automatically generated documentation
@@ -79,3 +105,4 @@ First we explain what it is, then how to use it, and finally how to extend it.
 
 '''
 [[TDT]] [TDT]: Teach, Don't Tell: http://stevelosh.com/blog/2013/09/teach-dont-tell/
+[[JKM 3]] [JKM 3]: You Need an Editor: https://jacobian.org/writing/editors/
