@@ -39,7 +39,7 @@ The README is usually comprised of two key parts:
 If the user decides they want to learn more,
 there should be a set of **topical guides** that comprise the bulk of the documentation.
 Think of each of these guides as a class focused on teaching your student (new user) a single skill.
-Reading all of these guides should take someone who has never seen your product and make them an expert user. [link:#TDT[TDT]]
+Reading all of these guides should take "someone who has never seen your product and make them an expert user". [link:#TDT[TDT]]
 With that in mind, make sure there's some sense of order to these lessons (easy to hard).
 
 If your new user gets this far, they are now very comfortable with your product.
@@ -52,6 +52,8 @@ I was having a hard time figuring out how we were going to separate our
 end user documentation from our development notes.
 Now I see that these are just different stages in this learning process.
 First we explain what it is, then how to use it, and finally how to extend it.
+
+** Create a taxonomy (answer, "Where does this go?")
 
 === Style
 
@@ -89,20 +91,74 @@ If you don't have access to an editor,
 review your own work thrice then ask for someone else's review before publishing your work.
 
 === Tools
-** Create a taxonomy (answer, "Where does this go?")
-** Use plain text and version control
-** Wikis are the devil
-** Avoid Automatically generated documentation
- 
 
+I'll start this section with a warning.
+Tools often recieve an undue amount of attention, especially from programmers.
+With documentation, **writing is the hard, important work**.
+It's important to use good tools, but make sure you're not bike shedding.
 
-== TODO
+You **should not use a wiki** for documentation.
+Wikis make it impossible to maintain a consistent voice throughout your documentation.
+For one, it's very difficult to get review for your work before publishing.
+More so, wikis make documentation "everyone's responsibility",
+which really means it's nobody's responsibility.
+Without this review and responsibility,
+wikis tend to decay into a web of assorted links without any sense of order or importance.
 
-* Who is this documentation for? For my clients? If so, very broad.
-* Decide on documentation scope
-** Break down into componenets with a full structure for each component
-   (README, tutorial, guides, reference)
+Your documentation should be stored in **plain text and in version control**.
+Most of your documentation is going to be written by programmers, 
+and programmers have powerful tools for manipulating text. 
+Using anything besides plain text is a frustration that makes it far less
+likely they'll enjoy writing documentation.
+
+// TODO: This should be expanded upon. Version control is hugely useful for
+// figuring out who to contact if you have questions, identifying the health
+// of the documentation, and attributing credit for the hard, thankless work
+// of writing the documentation. Wiki's do a particularly horrible job of all
+// of these things. 
+
+You should have a **process for reviewing changes** to the documentation.
+Review will help maintain a consistent voice across your documentation 
+and will provide useful feedback to the writer.
+Think of how useful code reviews are for improving your programming.
+I'd jump at the chance to get feedback from an expert writer.
+
+Finally, recognize that automatically generated documentation isn't a replacement for hand crafted prose.
+Remember that the bulk of your documentation should be tutorials meant to slowly ramp your users up to expert status.
+Docstrings have very little utility in this process.
+
 
 '''
-[[TDT]] [TDT]: Teach, Don't Tell: http://stevelosh.com/blog/2013/09/teach-dont-tell/
-[[JKM 3]] [JKM 3]: You Need an Editor: https://jacobian.org/writing/editors/
+== Resources
+
+Most of what I've summarized here came from very few sources.
+I highly recommend you read the following articles if you're interested in learning more:
+
+* [[SL]] [TDT]: http://stevelosh.com/blog/2013/09/teach-dont-tell/[Teach, Don't Tell] (Steve Losh)
+* [[JKM 1]] [JKM 1]: https://jacobian.org/writing/what-to-write/[What to Write] (Jacop Kaplan Moss)
+* [[JKM 2]] [JKM 2]: https://jacobian.org/writing/technical-style/[Technical Style] (Jacop Kaplan Moss)
+* [[JKM 3]] [JKM 3]: https://jacobian.org/writing/editors/[You Need an Editor] (Jacop Kaplan Moss)
+
+For later reference, I also reviewed these articles to form opinions about
+general consensus outside of the above primary sources:
+
+* http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx[The Science of Scientific Writing]
+  (George Gopen, Judith Swan): Good overview of how to structure a paper so 
+  readers find information where they expect it to be
+* http://www.writethedocs.org/[WriteTheDocs.org], specifically 
+  http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[A Beginner's Guide to Writing Docs]
+* https://github.com/noffle/art-of-readme[Art of README]: An arguement for 
+  writing good READMEs and a template to help you get started.
+* https://groups.google.com/forum/#!topic/scala-internals/r2GnzCFc3TY[Scala Documentation Discussion]
+  A discussion of why scala's official documentation is so bad.
+* http://r-pkgs.had.co.nz/vignettes.html[Vignettes] (Hadley Wickham): Hadley
+  is a rockstar in the R universe. This is an article from his style guide for
+  writing R package documentation. This is the closest I could come to finding
+  documentation advice for data products.
+* http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html[Programming's Dirtiest Little Secret]
+  (Steve Yegge): Steve Yegge on why it's important to type well
+* https://byrslf.co/writing-great-documentation-44d90367115a#.nenvaqeng[Writing Great Documentation]:
+  This article comments on documentation's propensity towards kippleization.
+* https://www.gnu.org/prep/standards/standards.html#GNU-Manuals[GNU Manual Style Guide]
+
+
