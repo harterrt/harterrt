@@ -15,7 +15,7 @@ both for my own reference and to help others understand my thought process.
 
 == Findings
 
-I should note, all the literature I could find focused on documenting softward products.
+I should note, all the literature I could find focused on documenting software products.
 I am willing to bet that a data product is going to have different documentation needs than most software products.
 But, this is as good a place to start as any.
 
@@ -24,7 +24,7 @@ But, this is as good a place to start as any.
 Most seem to agree that a **README** is a critical piece of documentation.
 The README is usually comprised of two key parts:
  
-. A quick introduction explaining what this projet is, why the reader should 
+. A quick introduction explaining what this project is, why the reader should 
   care, and whether it's worth investing time to understand it better.
 . A simple tutorial to get the reader started and give a feel for what the tool
   actually does.
@@ -52,7 +52,7 @@ Most articles suggest adopting a style guide to make it easier for a user to rea
 The writing should pull you through the document and feel natural.
 
 If you want your documentation to read naturally, you should try to become a better writer.
-This comes as cold solace to most folks, since I need my documenation now
+This comes as cold solace to most folks, since I need my documentation now
 and I can't wait 10,000 hours to become an expert writer, but it's worth mentioning.
 The overwhelming consensus is that the best way to become a better writer is to **write a lot**.
 If you want to write great documentation, consider building habits that will make you a great writer.
@@ -83,7 +83,7 @@ review your own work thrice then ask for someone else's review before publishing
 === Tools
 
 I'll start this section with a warning.
-Tools often recieve an undue amount of attention, especially from programmers.
+Tools often receive an undue amount of attention, especially from programmers.
 With documentation, **writing is the hard, important work**.
 It's important to use good tools, but make sure you're not bike shedding.
 
