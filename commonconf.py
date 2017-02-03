@@ -63,7 +63,7 @@ MD_EXTENSIONS = ['toc', 'codehilite','extra']
 #          )
 
 # ADD_THIS_ID = 'ra-77hh6723hhjd'
-# DISQUS_SITENAME = 'yoursite'
+DISQUS_SITENAME = 'blog-harterrt-com'
 GOOGLE_ANALYTICS = 'UA-83638505-1'
 # GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
 # STATUSCAKE = { 'trackid': 'your-id', 'days': 7, 'rumid': 1234 }
