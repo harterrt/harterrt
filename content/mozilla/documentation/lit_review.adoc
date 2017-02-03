@@ -36,15 +36,15 @@ Reading all of these guides should take "someone who has never seen your product
 With that in mind, make sure there's some sense of order to these lessons (easy to hard).
 
 If your reader gets this far, they are now very comfortable with your product.
-From here, they need high **quality reference material**.
-In my experience, this is the most common documentation provided by new products,
+From here, they need high-quality **reference material**.
+In my experience, this is the most common documentation provided,
 but it is needed latest in the process and only by the most advanced users!
 
 When I started this research, 
 I was having a hard time figuring out how we were going to separate our 
 prose documentation from our development notes.
 Now I see that these are just different stages in this learning process.
-First we explain what it is, then how to use it, and finally how to extend it.
+First we explain what it is, then how to use it, and finally, how to extend it.
 
 === Style
 
@@ -66,38 +66,36 @@ Have a style guide and enforce it.
 As you choose your style guide, be aware that most of the advice is focused on physical media.
 Your documentation is probably going to be read digitally,
 so your readers will have different expectations.
-
 Specifically, readers are going to skim your writing, so make it easy to identify important information.
-Use **visual markup** like bold text, code blocks, callouts, and section headers.
+
+Use **visual markup** like bold text, code blocks, call-outs
+(e.g http://www.methods.co.nz/asciidoc/chunked/ch16.html#X22[1],
+http://getbootstrap.com/components/#alerts[2]), and section headers.
 Similarly, avoid long paragraphs.
-Short paragraphs describing one concept each makes finding important information easier.
+Short paragraphs that describe one concept each makes finding important information easier.
 
 Most guides suggest keeping a **conversational tone**.
 This makes the guide more approachable and easier to read.
 
-Finally, everyone seems to agree that **you should have an editor**.
+Everyone seems to agree that **you should have an editor**.
 In fact, Jacob Kaplan-Moss dedicated an entire article to this point [link:#YNAE[JKM 3]].
 If you don't have access to an editor,
-review your own work thrice then ask for someone else's review before publishing your work.
+review your own work thrice then ask for someone else's review before publishing.
+Try adjusting your margins to force the text to re-flow.
+It's a very effective way to catch spelling or grammatical mistakes.
 
 === Tools
 
 I'll start this section with a warning.
 Tools often receive an undue amount of attention, especially from programmers.
 With documentation, **writing is the hard, important work**.
-It's important to use good tools, but make sure you're not bike shedding.
-
-You **should not use a wiki** for documentation.
-Wikis make documentation "everyone's responsibility",
-which really means it's nobody's responsibility.
-Without this responsibility, wikis tend to decay into a web of assorted links without any sense of order or importance.
-Wikis make it impossible to maintain a consistent voice throughout your documentation.
-Finally, it's difficult to get review for your work before publishing.
+It's important to use good tools, but make sure you're not 
+https://en.wikipedia.org/wiki/Law_of_triviality[bike shedding].
 
 Your documentation should be stored in **plain text and in version control**.
 Most of your documentation is going to be written by programmers, 
 and programmers have powerful tools for manipulating text. 
-Using anything besides plain text is a frustration that makes it far less
+Using anything besides plain text is a frustration that makes it less
 likely they'll enjoy writing documentation.
 
 // TODO: This should be expanded upon. Version control is hugely useful for
@@ -112,8 +110,15 @@ and will provide useful feedback to the writer.
 Think of how useful code reviews are for improving your programming.
 I'd jump at the chance to get feedback from an expert writer.
 
-Finally, recognize that automatically generated documentation isn't a replacement for hand crafted prose.
-Remember that the bulk of your documentation should be tutorials meant to slowly ramp your users up to expert status.
+You **should not use a wiki** for documentation.
+Wikis make documentation "everyone's responsibility",
+which really means it's nobody's responsibility.
+Without this responsibility, wikis tend to decay into a web of assorted links without any sense of order or importance.
+Wikis make it impossible to maintain a consistent voice throughout your documentation.
+Finally, it's difficult to get review for your work before publishing.
+
+Recognize that automatically-generated documentation isn't a replacement for hand-crafted prose.
+Remember that the bulk of your documentation should be tutorials meant to slowly ramp up your users to expert status.
 Docstrings have very little utility in this process.
 
 
@@ -124,12 +129,12 @@ Most of what I've summarized here came from very few sources.
 I highly recommend you read the following articles if you're interested in learning more:
 
 * [[SL]] [TDT]: http://stevelosh.com/blog/2013/09/teach-dont-tell/[Teach, Don't Tell] (Steve Losh)
-* [[JKM 1]] [JKM 1]: https://jacobian.org/writing/what-to-write/[What to Write] (Jacop Kaplan Moss)
-* [[JKM 2]] [JKM 2]: https://jacobian.org/writing/technical-style/[Technical Style] (Jacop Kaplan Moss)
-* [[JKM 3]] [JKM 3]: https://jacobian.org/writing/editors/[You Need an Editor] (Jacop Kaplan Moss)
+* [[JKM 1]] [JKM 1]: https://jacobian.org/writing/what-to-write/[What to Write] (Jacob Kaplan Moss)
+* [[JKM 2]] [JKM 2]: https://jacobian.org/writing/technical-style/[Technical Style] (Jacob Kaplan Moss)
+* [[JKM 3]] [JKM 3]: https://jacobian.org/writing/editors/[You Need an Editor] (Jacob Kaplan Moss)
 
 For later reference, I also reviewed these articles to form opinions about
-general consensus outside of the above primary sources:
+general consensus outside of the primary sources above:
 
 * http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx[The Science of Scientific Writing]
   (George Gopen, Judith Swan): Good overview of how to structure a paper so 
@@ -137,9 +142,9 @@ general consensus outside of the above primary sources:
 * http://www.writethedocs.org/[WriteTheDocs.org], specifically 
   http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[A Beginner's Guide to Writing Docs]
 * https://github.com/noffle/art-of-readme[Art of README]: An arguement for 
-  writing good READMEs and a template to help you get started.
+  writing good READMEs and a template to help you get started
 * https://groups.google.com/forum/#!topic/scala-internals/r2GnzCFc3TY[Scala Documentation Discussion]
-  A discussion of why scala's official documentation is so bad.
+  A discussion of why Scala's official documentation is so bad
 * http://r-pkgs.had.co.nz/vignettes.html[Vignettes] (Hadley Wickham): Hadley
   is a rockstar in the R universe. This is an article from his style guide for
   writing R package documentation. This is the closest I could come to finding
