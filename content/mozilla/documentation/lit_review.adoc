@@ -1,7 +1,7 @@
 Literature Review: Writing Great Documentation
 ==============================================
 :author: Ryan Harter
-:date: 2017-01-10
+:date: 2017-02-03
 :category: mozilla
 :slug: lit-review
 :tags: mozilla,documentation
