@@ -43,7 +43,8 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
-#         ('resume', 'resume.pdf'),
+            ('Work Snippets', 'https://github.com/harterrt/snippets'),
+            ('Resume', 'resume.pdf'),
         )
 
 # Small links at the top of the page
