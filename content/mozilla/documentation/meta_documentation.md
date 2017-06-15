@@ -1,7 +1,6 @@
 title: Meta Documentation
 date: 2016-11-03
 tags: documentation mozilla
-status: draft
 
 You'll see a lot of posts coming down the line on documentation.
 
