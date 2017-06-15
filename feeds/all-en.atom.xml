@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-02-03T00:00:00-08:00</updated><entry><title>Literature Review: Writing Great Documentation</title><link href="http://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-06-15T00:00:00-07:00</updated><entry><title>Bad Tools are Insidious</title><link href="http://blog.harterrt.com/bad-tools.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-06-15:bad-tools.html</id><summary type="html">&lt;p&gt;This is my first job making data tools that other people use.
+In the past, I've always been a data scientist -
+a consumer of these tools.
+I'm learning a lot.&lt;/p&gt;
+&lt;p&gt;Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
+I sum this up by saying that &lt;strong&gt;bad tools are insidious&lt;/strong&gt;.
+This may be &lt;a href="https://sivers.org/obvious"&gt;obvious to you&lt;/a&gt; but I'm excited by the insight.&lt;/p&gt;
+&lt;h2 id="bad-tools-are-hard-to-spot"&gt;Bad tools are hard to spot&lt;/h2&gt;
+&lt;p&gt;I spent some time working directly with analysts building ETL jobs.
+I found some big usability gaps with our tools
+and I was surprised I wasn't hearing about these problems from our analysts.&lt;/p&gt;
+&lt;p&gt;I looked back to previous jobs where I was on the other side of this equation.
+I remember being totally engrossed in a problem and excited to finding a solution.
+All I wanted were tools good enough to get the job done.
+I didn't care to reflect on how I could make the process smoother.
+I wanted to explore and interate.&lt;/p&gt;
+&lt;p&gt;When I dug into analyses this quarter, I had a different perspective.
+I was working with the intention of improving our tools
+and the analysis was secondary.
+It was much easier to find workflow improvements this way.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"&gt;Design of Everyday Things&lt;/a&gt; 
+Donald notes that users tend to blame themselves when they have difficulty with tools.
+That's probably part of the issue here as well.&lt;/p&gt;
+&lt;h2 id="bad-tools-hurt"&gt;Bad tools hurt&lt;/h2&gt;
+&lt;p&gt;If our users aren't complaining, is it really a problem that needs to get fixed?
+I think so.
+We all understand that bad tools hurt our productivity.
+However, I think we tend to underestimate the value of good tools when we do our mental accounting.&lt;/p&gt;
+&lt;p&gt;Say I'm working on a new ETL job that takes ~5 minutes to test by hand
+but ~1 minute to test programatically.
+By default, I'd value implementing good tests at 4 minutes per test run.&lt;/p&gt;
+&lt;p&gt;This is a huge underestimate!
+Testing by hand introduces a context shift, another chance to get distracted,
+and another chance to fall out of flow.
+I'll bet a 5 minute distraction can easily end up costing me 20 minutes of productivity on a good day.&lt;/p&gt;
+&lt;p&gt;Your tools should be a joy to use.
+The better they work, the easier it is to stay in flow, be creative, and stay excited.&lt;/p&gt;
+&lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
+&lt;p&gt;Don't expect your users to tell you how to improve your tools.
+You're probably going to need to
+&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Literature Review: Writing Great Documentation</title><link href="http://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
 I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
@@ -258,7 +298,27 @@ summary statistics.&lt;/p&gt;
 more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
 documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</summary></entry><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
+columns!&lt;/p&gt;</summary></entry><entry><title>Meta Documentation</title><link href="http://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+&lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
+It turns out the most painful part of using our data pipeline, is reading the documentation.
+I've been interesting in learning how to write great documentation for a while,
+so I volunteered to spend a significant amount of time reworking our documentation this quarter. &lt;/p&gt;
+&lt;p&gt;To summarize, our team tries to make telemetry data useful.
+Some of us build tools to make accessing the data easy,
+others work on processing the data and making it available in an efficient and understandable format.
+Last quarter I worked on the latter, pipelining hte data to make the format better.&lt;/p&gt;
+&lt;p&gt;This year, I'll be working as a data ambassador.mentor,
+going out to teams, identifying their data needs, and helping them reach their goals.&lt;/p&gt;
+&lt;p&gt;Data is an incredibly useful tool.
+It takes a lot of the guesswork out of building useful projects.
+However, even though we have a great product, it's useless if our users don't understand how to use it.&lt;/p&gt;
+&lt;p&gt;We have a great tool for our customers, but it's not worth the energy to learn about it. 
+It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
+&lt;p&gt;If you have a data product or tool without documentation, it's more likely than not that someone is misusing your data.
+The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
+&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;

@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 14 Dec 2016 00:00:00 -0800</lastBuildDate><item><title>Is moving to the Bay Area worth it?</title><link>http://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html</link><description>&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 15 Jun 2017 00:00:00 -0700</lastBuildDate><item><title>Bad Tools are Insidious</title><link>http://blog.harterrt.com/bad-tools.html</link><description>&lt;p&gt;This is my first job making data tools that other people use.
+In the past, I've always been a data scientist -
+a consumer of these tools.
+I'm learning a lot.&lt;/p&gt;
+&lt;p&gt;Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
+I sum this up by saying that &lt;strong&gt;bad tools are insidious&lt;/strong&gt;.
+This may be &lt;a href="https://sivers.org/obvious"&gt;obvious to you&lt;/a&gt; but I'm excited by the insight.&lt;/p&gt;
+&lt;h2 id="bad-tools-are-hard-to-spot"&gt;Bad tools are hard to spot&lt;/h2&gt;
+&lt;p&gt;I spent some time working directly with analysts building ETL jobs.
+I found some big usability gaps with our tools
+and I was surprised I wasn't hearing about these problems from our analysts.&lt;/p&gt;
+&lt;p&gt;I looked back to previous jobs where I was on the other side of this equation.
+I remember being totally engrossed in a problem and excited to finding a solution.
+All I wanted were tools good enough to get the job done.
+I didn't care to reflect on how I could make the process smoother.
+I wanted to explore and interate.&lt;/p&gt;
+&lt;p&gt;When I dug into analyses this quarter, I had a different perspective.
+I was working with the intention of improving our tools
+and the analysis was secondary.
+It was much easier to find workflow improvements this way.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"&gt;Design of Everyday Things&lt;/a&gt; 
+Donald notes that users tend to blame themselves when they have difficulty with tools.
+That's probably part of the issue here as well.&lt;/p&gt;
+&lt;h2 id="bad-tools-hurt"&gt;Bad tools hurt&lt;/h2&gt;
+&lt;p&gt;If our users aren't complaining, is it really a problem that needs to get fixed?
+I think so.
+We all understand that bad tools hurt our productivity.
+However, I think we tend to underestimate the value of good tools when we do our mental accounting.&lt;/p&gt;
+&lt;p&gt;Say I'm working on a new ETL job that takes ~5 minutes to test by hand
+but ~1 minute to test programatically.
+By default, I'd value implementing good tests at 4 minutes per test run.&lt;/p&gt;
+&lt;p&gt;This is a huge underestimate!
+Testing by hand introduces a context shift, another chance to get distracted,
+and another chance to fall out of flow.
+I'll bet a 5 minute distraction can easily end up costing me 20 minutes of productivity on a good day.&lt;/p&gt;
+&lt;p&gt;Your tools should be a joy to use.
+The better they work, the easier it is to stay in flow, be creative, and stay excited.&lt;/p&gt;
+&lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
+&lt;p&gt;Don't expect your users to tell you how to improve your tools.
+You're probably going to need to
+&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid></item><item><title>Is moving to the Bay Area worth it?</title><link>http://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html</link><description>&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
 but I have major &lt;strong&gt;issues with the analysis&lt;/strong&gt;.
@@ -63,7 +103,27 @@ summary statistics.&lt;/p&gt;
 more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
 documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</guid></item><item><title>Why Markdown?</title><link>http://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
+columns!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</guid></item><item><title>Meta Documentation</title><link>http://blog.harterrt.com/meta-documentation.html</link><description>&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+&lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
+It turns out the most painful part of using our data pipeline, is reading the documentation.
+I've been interesting in learning how to write great documentation for a while,
+so I volunteered to spend a significant amount of time reworking our documentation this quarter. &lt;/p&gt;
+&lt;p&gt;To summarize, our team tries to make telemetry data useful.
+Some of us build tools to make accessing the data easy,
+others work on processing the data and making it available in an efficient and understandable format.
+Last quarter I worked on the latter, pipelining hte data to make the format better.&lt;/p&gt;
+&lt;p&gt;This year, I'll be working as a data ambassador.mentor,
+going out to teams, identifying their data needs, and helping them reach their goals.&lt;/p&gt;
+&lt;p&gt;Data is an incredibly useful tool.
+It takes a lot of the guesswork out of building useful projects.
+However, even though we have a great product, it's useless if our users don't understand how to use it.&lt;/p&gt;
+&lt;p&gt;We have a great tool for our customers, but it's not worth the energy to learn about it. 
+It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
+&lt;p&gt;If you have a data product or tool without documentation, it's more likely than not that someone is misusing your data.
+The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
+&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:meta-documentation.html</guid><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>http://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Meta Documentation</title><link href="http://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+&lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
+It turns out the most painful part of using our data pipeline, is reading the documentation.
+I've been interesting in learning how to write great documentation for a while,
+so I volunteered to spend a significant amount of time reworking our documentation this quarter. &lt;/p&gt;
+&lt;p&gt;To summarize, our team tries to make telemetry data useful.
+Some of us build tools to make accessing the data easy,
+others work on processing the data and making it available in an efficient and understandable format.
+Last quarter I worked on the latter, pipelining hte data to make the format better.&lt;/p&gt;
+&lt;p&gt;This year, I'll be working as a data ambassador.mentor,
+going out to teams, identifying their data needs, and helping them reach their goals.&lt;/p&gt;
+&lt;p&gt;Data is an incredibly useful tool.
+It takes a lot of the guesswork out of building useful projects.
+However, even though we have a great product, it's useless if our users don't understand how to use it.&lt;/p&gt;
+&lt;p&gt;We have a great tool for our customers, but it's not worth the energy to learn about it. 
+It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
+&lt;p&gt;If you have a data product or tool without documentation, it's more likely than not that someone is misusing your data.
+The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
+&lt;div class="toc"&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="http://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
