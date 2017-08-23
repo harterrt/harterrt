@@ -18,10 +18,11 @@
   <link href="http://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="http://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
+<meta name="keywords" content="">
 
   <title>
     blog.harterrt.com
-&ndash; Archives  </title>
+&ndash; Beer and Probes  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -62,28 +63,53 @@
     </header>
 
 <article>
-  <div class="article_text">
-    <dl>
-      <dt>Wed 23 August 2017</dt>
-      <dd><a href="http://blog.harterrt.com/probes.html">Beer and Probes</a></dd>
-      <dt>Thu 15 June 2017</dt>
-      <dd><a href="http://blog.harterrt.com/bad-tools.html">Bad Tools are Insidious</a></dd>
-      <dt>Fri 03 February 2017</dt>
-      <dd><a href="http://blog.harterrt.com/lit-review.html">Literature Review: Writing Great Documentation</a></dd>
-      <dt>Wed 14 December 2016</dt>
-      <dd><a href="http://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html">Is moving to the Bay Area worth it?</a></dd>
-      <dt>Mon 14 November 2016</dt>
-      <dd><a href="http://blog.harterrt.com/announcing-the-cross-sectional-dataset.html">Announcing the Cross Sectional Dataset</a></dd>
-      <dt>Thu 03 November 2016</dt>
-      <dd><a href="http://blog.harterrt.com/meta-documentation.html">Meta Documentation</a></dd>
-      <dt>Thu 03 November 2016</dt>
-      <dd><a href="http://blog.harterrt.com/why-markdown.html">Why Markdown?</a></dd>
-      <dt>Mon 05 September 2016</dt>
-      <dd><a href="http://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></dd>
-      <dt>Fri 26 August 2016</dt>
-      <dd><a href="http://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></dd>
-    </dl>
+  <div class="article_title">
+    <h1><a href="http://blog.harterrt.com/probes.html">Beer and Probes</a></h1>
   </div>
+  <div class="article_text">
+    <p>Quick post to clear up some terminology.
+But first, an analogy to clear up my thinking:</p>
+<h2 id="analogy">Analogy</h2>
+<p>Temperature control is a big part of brewing beer.
+Throughout the brewing process I use a thermometer
+to measure the temperature of the soon-to-be beer.
+Because I take several temperature readings throughout the brewing process,
+one brew will result in a list of a half dozen temperature readings.
+For example, I take a mash temperature,
+then a sparge temperature,
+then a fermentation temperature.
+The units on these measurements are always in Fahrenheit,
+but their interpretation is different.</p>
+<h2 id="the-rub">The Rub</h2>
+<p>In this example, I would call the thermometer a "probe".
+The set of all temperature readings share a "data type".
+Each temperature reading is a "measurement" which is stored in a given "field".</p>
+<p>At the SFO workweek I uncovered some terminology I found confusing.
+Specifically, we use the word "probe" to refer to data we collect.
+I haven't encountered this usage outside of Mozilla.</p>
+<p>Instead, I'd suggest we call histograms and scalars "data types".
+A "probe" is a unit of client-side code that collects a measurement for us.
+A single "field" could be be a column in one of our datasets (like <code>normalized_channel</code>).
+A measurement would be a value from a single field from a single ping (like the string "release").</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Wed 23 August 2017</p>
+    <p>Category: <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "probes.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
 </article>
 
 

@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 15 Jun 2017 00:00:00 -0700</lastBuildDate><item><title>Bad Tools are Insidious</title><link>http://blog.harterrt.com/bad-tools.html</link><description>&lt;p&gt;This is my first job making data tools that other people use.
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 23 Aug 2017 00:00:00 -0700</lastBuildDate><item><title>Beer and Probes</title><link>http://blog.harterrt.com/probes.html</link><description>&lt;p&gt;Quick post to clear up some terminology.
+But first, an analogy to clear up my thinking:&lt;/p&gt;
+&lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
+&lt;p&gt;Temperature control is a big part of brewing beer.
+Throughout the brewing process I use a thermometer
+to measure the temperature of the soon-to-be beer.
+Because I take several temperature readings throughout the brewing process,
+one brew will result in a list of a half dozen temperature readings.
+For example, I take a mash temperature,
+then a sparge temperature,
+then a fermentation temperature.
+The units on these measurements are always in Fahrenheit,
+but their interpretation is different.&lt;/p&gt;
+&lt;h2 id="the-rub"&gt;The Rub&lt;/h2&gt;
+&lt;p&gt;In this example, I would call the thermometer a "probe".
+The set of all temperature readings share a "data type".
+Each temperature reading is a "measurement" which is stored in a given "field".&lt;/p&gt;
+&lt;p&gt;At the SFO workweek I uncovered some terminology I found confusing.
+Specifically, we use the word "probe" to refer to data we collect.
+I haven't encountered this usage outside of Mozilla.&lt;/p&gt;
+&lt;p&gt;Instead, I'd suggest we call histograms and scalars "data types".
+A "probe" is a unit of client-side code that collects a measurement for us.
+A single "field" could be be a column in one of our datasets (like &lt;code&gt;normalized_channel&lt;/code&gt;).
+A measurement would be a value from a single field from a single ping (like the string "release").&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 23 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-23:probes.html</guid></item><item><title>Bad Tools are Insidious</title><link>http://blog.harterrt.com/bad-tools.html</link><description>&lt;p&gt;This is my first job making data tools that other people use.
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.&lt;/p&gt;

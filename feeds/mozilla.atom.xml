@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-06-15T00:00:00-07:00</updated><entry><title>Bad Tools are Insidious</title><link href="http://blog.harterrt.com/bad-tools.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-06-15:bad-tools.html</id><summary type="html">&lt;p&gt;This is my first job making data tools that other people use.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-08-23T00:00:00-07:00</updated><entry><title>Beer and Probes</title><link href="http://blog.harterrt.com/probes.html" rel="alternate"></link><published>2017-08-23T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-23:probes.html</id><summary type="html">&lt;p&gt;Quick post to clear up some terminology.
+But first, an analogy to clear up my thinking:&lt;/p&gt;
+&lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
+&lt;p&gt;Temperature control is a big part of brewing beer.
+Throughout the brewing process I use a thermometer
+to measure the temperature of the soon-to-be beer.
+Because I take several temperature readings throughout the brewing process,
+one brew will result in a list of a half dozen temperature readings.
+For example, I take a mash temperature,
+then a sparge temperature,
+then a fermentation temperature.
+The units on these measurements are always in Fahrenheit,
+but their interpretation is different.&lt;/p&gt;
+&lt;h2 id="the-rub"&gt;The Rub&lt;/h2&gt;
+&lt;p&gt;In this example, I would call the thermometer a "probe".
+The set of all temperature readings share a "data type".
+Each temperature reading is a "measurement" which is stored in a given "field".&lt;/p&gt;
+&lt;p&gt;At the SFO workweek I uncovered some terminology I found confusing.
+Specifically, we use the word "probe" to refer to data we collect.
+I haven't encountered this usage outside of Mozilla.&lt;/p&gt;
+&lt;p&gt;Instead, I'd suggest we call histograms and scalars "data types".
+A "probe" is a unit of client-side code that collects a measurement for us.
+A single "field" could be be a column in one of our datasets (like &lt;code&gt;normalized_channel&lt;/code&gt;).
+A measurement would be a value from a single field from a single ping (like the string "release").&lt;/p&gt;</summary></entry><entry><title>Bad Tools are Insidious</title><link href="http://blog.harterrt.com/bad-tools.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-06-15:bad-tools.html</id><summary type="html">&lt;p&gt;This is my first job making data tools that other people use.
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.&lt;/p&gt;
