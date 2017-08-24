@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-08-23T00:00:00-07:00</updated><entry><title>Beer and Probes</title><link href="http://blog.harterrt.com/probes.html" rel="alternate"></link><published>2017-08-23T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-23:probes.html</id><summary type="html">&lt;p&gt;Quick post to clear up some terminology.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="http://blog.harterrt.com/" rel="alternate"></link><link href="http://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>http://blog.harterrt.com/</id><updated>2017-08-24T00:00:00-07:00</updated><entry><title>Documentation Style Guide</title><link href="http://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
+&lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
+The documentation is rendered using Gitbook and hosted on Github Pages.
+You can find the 
+&lt;a href="https://github.com/mozilla/firefox-data-docs/pull/41"&gt;PR here&lt;/a&gt;
+but I figured it's worth sharing here as well.&lt;/p&gt;
+&lt;h2 id="style-guide"&gt;Style Guide&lt;/h2&gt;
+&lt;p&gt;Articles should be written in
+&lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;
+(not &lt;a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"&gt;AsciiDoc&lt;/a&gt;).
+Markdown is usually powerful enough and is a more common technology than AsciiDoc.&lt;/p&gt;
+&lt;p&gt;Limit lines to &lt;strong&gt;100 characters&lt;/strong&gt; where possible.
+Try to split lines at the end of sentences.
+This makes it easier to reorganize your thoughts later.&lt;/p&gt;
+&lt;p&gt;This documentation is meant to be read digitally.
+Keep in mind that people read digital content much differently than other media.
+Specifically, readers are going to skim your writing,
+so make it easy to identify important information&lt;/p&gt;
+&lt;p&gt;Use &lt;strong&gt;visual markup&lt;/strong&gt; like &lt;strong&gt;bold text&lt;/strong&gt;, &lt;code&gt;code blocks&lt;/code&gt;, and section headers.
+Avoid long paragraphs.
+Short paragraphs that describe one concept each makes finding important information easier.&lt;/p&gt;
+&lt;p&gt;Please squash your changes  into meaningful commits  and follow these
+&lt;a href="https://chris.beams.io/posts/git-commit/"&gt;commit message guidelines&lt;/a&gt;.&lt;/p&gt;</summary><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>Beer and Probes</title><link href="http://blog.harterrt.com/probes.html" rel="alternate"></link><published>2017-08-23T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-23:probes.html</id><summary type="html">&lt;p&gt;Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:&lt;/p&gt;
 &lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
 &lt;p&gt;Temperature control is a big part of brewing beer.

@@ -18,10 +18,11 @@
   <link href="http://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="http://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
+<meta name="keywords" content="mozilla, documentation">
 
   <title>
     blog.harterrt.com
-&ndash; Tag: documentation  </title>
+&ndash; Documentation Style Guide  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -58,7 +59,6 @@
       <a href="http://blog.harterrt.com">Index</a> &brvbar; <a href="http://blog.harterrt.com/archives.html">Archives</a>
       &brvbar; <a href="http://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
       &brvbar; <a href="http://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
-&gt; Tag: documentation
       </p>
     </header>
 
@@ -77,58 +77,41 @@ but I figured it's worth sharing here as well.</p>
 <p>Articles should be written in
 <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
 (not <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">AsciiDoc</a>).
-Markdown ...</p>
+Markdown is usually powerful enough and is a more common technology than AsciiDoc.</p>
+<p>Limit lines to <strong>100 characters</strong> where possible.
+Try to split lines at the end of sentences.
+This makes it easier to reorganize your thoughts later.</p>
+<p>This documentation is meant to be read digitally.
+Keep in mind that people read digital content much differently than other media.
+Specifically, readers are going to skim your writing,
+so make it easy to identify important information</p>
+<p>Use <strong>visual markup</strong> like <strong>bold text</strong>, <code>code blocks</code>, and section headers.
+Avoid long paragraphs.
+Short paragraphs that describe one concept each makes finding important information easier.</p>
+<p>Please squash your changes  into meaningful commits  and follow these
+<a href="https://chris.beams.io/posts/git-commit/">commit message guidelines</a>.</p>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="http://blog.harterrt.com/lit-review.html">Literature Review: Writing Great Documentation</a></h1>
+  <div class="article_meta">
+    <p>Posted on: Thu 24 August 2017</p>
+    <p>Category: <a href="http://blog.harterrt.com/category/mozilla.html">mozilla</a>
+ &ndash; Tags:
+      <a href="http://blog.harterrt.com/tag/mozilla.html">mozilla</a>,      <a href="http://blog.harterrt.com/tag/documentation.html">documentation</a>    </p>
   </div>
-  <div class="article_text">
-    <div id="preamble">
-<div class="sectionbody">
-<div class="paragraph"><p>I&#8217;m working on a big overhaul of my team&#8217;s documentation.
-I&#8217;ve noticed writing documentation is a difficult thing to get right.
-I haven&#8217;t seen any great example for a data product, either.
-I don&#8217;t have much experience in this area,
-so I decided to review ...</p></div></div></div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "docs-style-guide.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="http://blog.harterrt.com/why-markdown.html">Why Markdown?</a></h1>
-  </div>
-  <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#better-process">Better Process</a></li>
-<li><a href="#better-tools">Better Tools</a><ul>
-<li><a href="#one-less-tool">One less tool</a></li>
-</ul>
-</li>
-<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
-<li><a href="#syncronization">Syncronization</a></li>
-<li><a href="#discoverability">Discoverability</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
-request</a> that moved
-some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
-wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
-repository</a>.
-It took a couple of hours of editing and toying with pandoc to get right ...</p>
-  </div>
+
 </article>
 
-<footer>
-<div id="paginator">
-
-</div>
-</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
