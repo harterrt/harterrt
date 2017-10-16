@@ -16,7 +16,7 @@ I'm not very active on social media, but you can find me on:
 * [Twitter](https://twitter.com/harterrt),
 * [LinkedIn](http://www.linkedin.com/pub/ryan-harter/11/a24/a21),
 
-## Colophone
+## Colophon
 
 This site is generated using [Pelican](http://blog.getpelican.com/) and hosted
 on [GitHub](https://github.com/).  You can find the complete source
