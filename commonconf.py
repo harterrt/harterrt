@@ -17,7 +17,7 @@ THEME = "themes/harterrt-svbhack"
 
 AUTHOR = u'Ryan T. Harter'
 SITENAME = u'blog.harterrt.com'
-SITEURL = 'http://blog.harterrt.com'
+SITEURL = 'https://blog.harterrt.com'
 SITETITLE = 'Ryan T. Harter'
 TAGLINE = 'Senior Data Engineer @ Mozilla'
 SITEDESCRIPTION = 'Weblog for Ryan T. Harter'
