@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>http://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Nov 2016 00:00:00 -0700</lastBuildDate><item><title>Meta Documentation</title><link>http://blog.harterrt.com/meta-documentation.html</link><description>&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Nov 2016 00:00:00 -0700</lastBuildDate><item><title>Meta Documentation</title><link>https://blog.harterrt.com/meta-documentation.html</link><description>&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
 I've been interesting in learning how to write great documentation for a while,
@@ -19,7 +19,7 @@ It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
 The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
 &lt;div class="toc"&gt;
 &lt;ul&gt;&lt;/ul&gt;
-&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:meta-documentation.html</guid><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>http://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:meta-documentation.html</guid><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>https://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
