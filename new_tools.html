@@ -64,37 +64,40 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/drafts/new_tools.html">Evaluating New Tools</a></h1>
+    <h1><a href="https://blog.harterrt.com/new_tools.html">Evaluating New Tools</a></h1>
   </div>
   <div class="article_text">
     <p>At Mozilla, we're still relatively early in our data science journey.
-We're evaluating tools to improve our analysis workflow
+As such, we're always evaluating new tools to improve our analysis workflow
 (<a href="http://jupyter.org/">jupyter</a> vs. <a href="http://rmarkdown.rstudio.com/">Rmd</a>),
 or make our infrastructure more usable
 (our home-rolled <a href="https://github.com/mozilla/telemetry-analysis-service">ATMO</a>
 vs. <a href="https://databricks.com/">databricks</a>),
-or <a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091">scale our knowledge</a>.
-Most of these tools look like they have compelling wins over existing solutions.
+or scale our knowledge
+(<a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091">knoledge-repo</a>.
+vs. <a href="https://www.gitbook.com/">gitbook</a>)</p>
+<p>Most of these tools look like they have compelling wins over our existing solutions.
 But when we build a demo,
-our users totally ignore some tools and rave about others.
+our users ignore some tools and rave about others.
 Why?
 I think it's because some of <strong>the costs of adopting a new tool are subtle</strong>.</p>
-<h2>Questions:</h2>
-<p>Unless your new tool is a perfect match for the problem at hand (rare)
+<p>Unless your new tool is a perfect match for the problem at hand (very rare)
 I need to spend time learning, coding, or configuring the tool to work for me. 
-most of these tools only promise productivity wins of minutes per week.
-<strong>I need to be sure your tool will be useful for a while</strong>.</p>
-<h3>What am I taking home?</h3>
+At the same time,
+I have <strong>work due today</strong> and an existing set of tools that are good enough.</p>
+<p>What follows are some thoughts I have when deciding whether to adopt a new tool.
+Maybe they will help you (or future me) <strong>debug problems with adoption</strong>.</p>
+<h2>What am I taking home?</h2>
 <p>If your new tool is internal-only, uncommon in the industry, or expensive
 I'm going to be less likely to adopt it.</p>
 <p>In this case, anything I learn while adopting your tool
-is unlikely to be valuable to future employers.
+is <strong>unlikely</strong> to be <strong>valuable to future employers</strong>.
 I think of my 
 <a href="https://esimoney.com/two-huge-reasons-why-your-career-matters/">career as an asset</a>,
-so if I get to do work that <strong>builds transferable skills</strong>,
+so if I get to do work that builds <strong>transferable skills</strong>,
 I count that as <strong>part of my compensation</strong>.
 On the other hand,
-if I'm writing helper scripts to deal with idiosyncrasies in an internal tool,
+if I'm writing glue scripts to deal with idiosyncrasies in an internal tool,
 I'm missing out.</p>
 <p>I think this is a major reason
 <strong>why large tech companies open source internal technologies</strong>. 
@@ -106,11 +109,15 @@ if they were internal-only?
 When you leave the company all of that skill becomes useless.
 By open-sourcing these technologies,
 you've just <strong>increased your employee compensation without spending a dollar</strong>.</p>
-<h3>How long will I have access?</h3>
+<h2>How long will I have access?</h2>
 <p>If your tool is closed source or expensive,
 I'm going to hesitate before spending any time with it.
 I depend on my tools and it hurts to lose them.</p>
-<h3>How long will it be relevant?</h3>
+<p>This is why I prefer Python or R to MATLAB.
+I can use my experience with Python or R build side projects
+that scratch my own itch.
+MATLAB is expensive, so I don't have that benefit.</p>
+<h2>How long will it be relevant?</h2>
 <p>Even if the tool is open source,
 I want it to be configurable and composable.
 This ensures it can grow with me.
@@ -119,6 +126,14 @@ but I do know it will be different.
 <strong>I want your tool to play nicely with technology that doesn't exist yet</strong>.</p>
 <p>Even better, if your tool is configurable and composable
 it is probably going to take me much less time to get comfortable with it.</p>
+<p>Composability is one of my bigger complaints about Jupyter.
+Jupyter is a great tool for exploratory analysis,
+but I don't want to use your GUI for editing code.
+I'm much happier when I get to use my own tool chain.</p>
+<p>However, Jupyter's saving grace is that it's configurable.
+I'm working on a tool that will make it easy to develop
+python packages and Jupyter notebooks side-by-side.
+Hopefully, this will give us the best of both worlds.</p>
 <h2>Conclusion</h2>
 <p>All this to say,
 I'm going to carefully gauge the lifetime value of any new tool I adopt.
@@ -127,6 +142,9 @@ If your users are ignoring a new tool you've created,
 <p>On the other hand,
 if your tool solves a critical enough problem,
 I'll stand barefoot in the snow to use it.</p>
+<p>Does this all make any sense?
+Am I missing something important?
+Why do you roll your eyes when someone tries to sell you a new tool?</p>
   </div>
   <div class="article_meta">
     <p>Posted on: Thu 26 October 2017</p>
@@ -137,7 +155,7 @@ I'll stand barefoot in the snow to use it.</p>
   <div id="article_comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        var disqus_identifier = "drafts/new_tools.html";
+        var disqus_identifier = "new_tools.html";
         (function() {
              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
              dsq.src = '//blog-harterrt-com.disqus.com/embed.js';

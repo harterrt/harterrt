@@ -21,7 +21,7 @@
 
   <title>
     blog.harterrt.com
-&ndash; Categories  </title>
+  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -62,15 +62,28 @@
     </header>
 
 <article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
+  </div>
   <div class="article_text">
-    <ul>
-      <li><a href="https://blog.harterrt.com/category/documentation.html">documentation</a> (2)</li>
-      <li><a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a> (8)</li>
-      <li><a href="https://blog.harterrt.com/category/random.html">random</a> (1)</li>
-    </ul>
+    <p>[TOC]</p>
+<h1>Introduction</h1>
+<p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
+<h1>The Bug</h1>
+<p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
+<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.spark …</span></pre></div>
   </div>
 </article>
 
+<footer>
+<div id="paginator">
+
+<a href="https://blog.harterrt.com/index.html" class="button_accent">Newer Posts &rarr;</a>
+</div>
+</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>

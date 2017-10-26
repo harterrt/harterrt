@@ -1,5 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-08-24T00:00:00-07:00</updated><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><updated>2017-08-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-10-26T00:00:00-07:00</updated><entry><title>Evaluating New Tools</title><link href="https://blog.harterrt.com/new_tools.html" rel="alternate"></link><published>2017-10-26T00:00:00-07:00</published><updated>2017-10-26T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-10-26:/new_tools.html</id><summary type="html">&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+As such, we're always evaluating new tools to improve our analysis workflow
+(&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
+or make our infrastructure more usable
+(our home-rolled &lt;a href="https://github.com/mozilla/telemetry-analysis-service"&gt;ATMO&lt;/a&gt;
+vs. &lt;a href="https://databricks.com/"&gt;databricks&lt;/a&gt;),
+or scale our knowledge
+(&lt;a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091"&gt;knoledge-repo&lt;/a&gt;.
+vs. &lt;a href="https://www.gitbook.com/"&gt;gitbook&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Most of these tools look like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+As such, we're always evaluating new tools to improve our analysis workflow
+(&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
+or make our infrastructure more usable
+(our home-rolled &lt;a href="https://github.com/mozilla/telemetry-analysis-service"&gt;ATMO&lt;/a&gt;
+vs. &lt;a href="https://databricks.com/"&gt;databricks&lt;/a&gt;),
+or scale our knowledge
+(&lt;a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091"&gt;knoledge-repo&lt;/a&gt;.
+vs. &lt;a href="https://www.gitbook.com/"&gt;gitbook&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Most of these tools look like they have compelling wins over our existing solutions.
+But when we build a demo,
+our users ignore some tools and rave about others.
+Why?
+I think it's because some of &lt;strong&gt;the costs of adopting a new tool are subtle&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Unless your new tool is a perfect match for the problem at hand (very rare)
+I need to spend time learning, coding, or configuring the tool to work for me. 
+At the same time,
+I have &lt;strong&gt;work due today&lt;/strong&gt; and an existing set of tools that are good enough.&lt;/p&gt;
+&lt;p&gt;What follows are some thoughts I have when deciding whether to adopt a new tool.
+Maybe they will help you (or future me) &lt;strong&gt;debug problems with adoption&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;What am I taking home?&lt;/h2&gt;
+&lt;p&gt;If your new tool is internal-only, uncommon in the industry, or expensive
+I'm going to be less likely to adopt it.&lt;/p&gt;
+&lt;p&gt;In this case, anything I learn while adopting your tool
+is &lt;strong&gt;unlikely&lt;/strong&gt; to be &lt;strong&gt;valuable to future employers&lt;/strong&gt;.
+I think of my 
+&lt;a href="https://esimoney.com/two-huge-reasons-why-your-career-matters/"&gt;career as an asset&lt;/a&gt;,
+so if I get to do work that builds &lt;strong&gt;transferable skills&lt;/strong&gt;,
+I count that as &lt;strong&gt;part of my compensation&lt;/strong&gt;.
+On the other hand,
+if I'm writing glue scripts to deal with idiosyncrasies in an internal tool,
+I'm missing out.&lt;/p&gt;
+&lt;p&gt;I think this is a major reason
+&lt;strong&gt;why large tech companies open source internal technologies&lt;/strong&gt;. 
+Consider 
+&lt;a href="https://code.facebook.com/projects/552007124892407/presto/"&gt;prestodb&lt;/a&gt;
+or &lt;a href="https://golang.org/"&gt;golang&lt;/a&gt;.
+How much would it suck to spend time learning these tools
+if they were internal-only?
+When you leave the company all of that skill becomes useless.
+By open-sourcing these technologies,
+you've just &lt;strong&gt;increased your employee compensation without spending a dollar&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;How long will I have access?&lt;/h2&gt;
+&lt;p&gt;If your tool is closed source or expensive,
+I'm going to hesitate before spending any time with it.
+I depend on my tools and it hurts to lose them.&lt;/p&gt;
+&lt;p&gt;This is why I prefer Python or R to MATLAB.
+I can use my experience with Python or R build side projects
+that scratch my own itch.
+MATLAB is expensive, so I don't have that benefit.&lt;/p&gt;
+&lt;h2&gt;How long will it be relevant?&lt;/h2&gt;
+&lt;p&gt;Even if the tool is open source,
+I want it to be configurable and composable.
+This ensures it can grow with me.
+I have no idea what the tech landscape will look like in 10 years,
+but I do know it will be different.
+&lt;strong&gt;I want your tool to play nicely with technology that doesn't exist yet&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Even better, if your tool is configurable and composable
+it is probably going to take me much less time to get comfortable with it.&lt;/p&gt;
+&lt;p&gt;Composability is one of my bigger complaints about Jupyter.
+Jupyter is a great tool for exploratory analysis,
+but I don't want to use your GUI for editing code.
+I'm much happier when I get to use my own tool chain.&lt;/p&gt;
+&lt;p&gt;However, Jupyter's saving grace is that it's configurable.
+I'm working on a tool that will make it easy to develop
+python packages and Jupyter notebooks side-by-side.
+Hopefully, this will give us the best of both worlds.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;All this to say,
+I'm going to carefully gauge the lifetime value of any new tool I adopt.
+If your users are ignoring a new tool you've created,
+&lt;strong&gt;look carefully for hidden restrictions to lifetime value&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On the other hand,
+if your tool solves a critical enough problem,
+I'll stand barefoot in the snow to use it.&lt;/p&gt;
+&lt;p&gt;Does this all make any sense?
+Am I missing something important?
+Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</content></entry><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><updated>2017-08-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
 &lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
 The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 

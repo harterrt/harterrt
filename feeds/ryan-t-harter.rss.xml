@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 24 Aug 2017 00:00:00 -0700</lastBuildDate><item><title>Documentation Style Guide</title><link>https://blog.harterrt.com/docs-style-guide.html</link><description>&lt;p&gt;I just wrote up a style guide for our 
+<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 26 Oct 2017 00:00:00 -0700</lastBuildDate><item><title>Evaluating New Tools</title><link>https://blog.harterrt.com/new_tools.html</link><description>&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+As such, we're always evaluating new tools to improve our analysis workflow
+(&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
+or make our infrastructure more usable
+(our home-rolled &lt;a href="https://github.com/mozilla/telemetry-analysis-service"&gt;ATMO&lt;/a&gt;
+vs. &lt;a href="https://databricks.com/"&gt;databricks&lt;/a&gt;),
+or scale our knowledge
+(&lt;a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091"&gt;knoledge-repo&lt;/a&gt;.
+vs. &lt;a href="https://www.gitbook.com/"&gt;gitbook&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Most of these tools look like …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-10-26:/new_tools.html</guid></item><item><title>Documentation Style Guide</title><link>https://blog.harterrt.com/docs-style-guide.html</link><description>&lt;p&gt;I just wrote up a style guide for our 
 &lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
 The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
