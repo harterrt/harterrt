@@ -85,7 +85,7 @@ if your tool solves a critical enough problem,
 I'll stand barefoot in the snow to use it.&lt;/p&gt;
 &lt;p&gt;Does this all make any sense?
 Am I missing something important?
-Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</content></entry><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><updated>2017-08-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
+Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</content><category term="tools"></category><category term="mozilla"></category></entry><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><updated>2017-08-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
 &lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
 The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
