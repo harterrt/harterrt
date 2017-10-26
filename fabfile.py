@@ -4,6 +4,8 @@ import os
 import shutil
 import sys
 import SocketServer
+from cookiecutter.main import cookiecutter
+from datetime import date
 
 from pelican.server import ComplexHTTPRequestHandler
 
@@ -72,3 +74,17 @@ def publish():
     preview()
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))
+
+# Publish alias
+deploy = publish
+
+
+# Post boilerplate
+def new_post():
+    cookiecutter(
+        'cookiecutter-post',
+        overwrite_if_exists=True,
+        extra_context={
+            'date': date.today().strftime('%Y-%m-%d')
+        }
+    )
