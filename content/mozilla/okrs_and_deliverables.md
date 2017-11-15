@@ -4,19 +4,22 @@ date: 2017-11-09
 
 I feel like I'm swimming in acronyms these days.
 
-My team adopted OKRs earlier this year and it's been a learning process.
+Earlier this year, my team adopted a new goal setting paradigm, Objectives and Key Results (OKRs)
+It's been a learning process.
+I had some prior experience with OKRs at Google,
+but I've never felt like I was fully taking advantage of the tool.
 I just recently started digging through 
 [The 4 Disciplines of Execution](https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1491517751)
-(4DX)
-and, surprisingly, it's making OKRs make a lot more sense.
+(4DX)<sup>1</sup>
+and, surprisingly, OKRs are starting to make a lot more sense.
 This post outlines some ideas I've picked up through my reading.
 
 ## Too many goals
 
 For the last few quarters, my team has had 4-5 Objectives.
-That's a little high, but it's within the recommended limits for OKRs.
-The problem is that I have a hard time prioritizing between the topline goals
-when I'm planning my work for a day, or for a week.
+That's a little high, but it's within the recommended limits.
+I usually have some work to do on each of these OKRs every week.
+Some weeks I have a hard time prioritizing which objective I should work on.
 Do I work on experimentation or search?
 `¯\_(ツ)_/¯`
 
@@ -28,22 +31,23 @@ That leads to an OKR process that goes something like this:
   order by importance,
   and **pack the quarter/year** until it's full.
 * Group our project work into **3-5 major themes**.
-* **Explain why** we're doing each class of projects (Objectives)
-* **Dream up metrics** to describe success and set Key Results
+* **Explain why** we're doing each class of project (Objectives)
+* **Dream up metrics** to describe "success" and set Key Results
 
-It's a useful excersize.
-We can clearly communicate to other teams what we're working on
+It's a useful exercise.
+We can clearly communicate what we are and aren't working on
 and why certain projects were deprioritized.
-In fact, I like this process a lot and I think we should keep it.
-But, I don't think it harnesses the true value of OKRs. 
+I like this process a lot and I think we should keep it,
+but I don't think it harnesses the true value of OKRs.
 
 Specifically, I think it 
 **encourages us to set goals for projects that don't need them**.
-For example, The last two quarters,
-I've set OKRs for consulting and answering questions for client teams.
-In no world am I going to start ignoring client teams because it doesn't match my OKRs.
-It's an obvious (to me) priority.
-The OKR isn't a goal anymore, it's a placeholder for the time commitment.
+For example, The last two quarters
+I've set OKRs for giving quick responses for client teams.
+In reality, I'm already responding quickly.
+In no world am I going to start ignoring questions because it's not in my OKRs.
+It's an obvious priority.
+This OKR isn't a good goal anymore, it's a placeholder for a time commitment.
 
 ## The Fix
 
@@ -65,16 +69,15 @@ In 4DX, they call this objective a **Wildly Important Goal** (WIG)
 
 ## The Benefits
 
-Emergencies flare up every now and then,
+Emergencies flare up every now and then;
 it happens.
-But, I hate it when I spend a week putting out a fire
+But, I hate spending a week to put out a fire
 just to realize I didn't make any progress on my OKRs.
 I call these *Zero Weeks*.
 In my experience, every week is crazy in it's own unique way,
-but, even in the midst of a crazy week
-it's **usually easy to sneak in an hour of work for a long term priority**.
+but it's **usually easy to sneak in an hour of work for a long-term priority**.
 On the other hand,
-It's not easy to sneak in an hour of work for four long term priorities.
+It's not easy to sneak in an hour of work for **four** long term priorities.
 **Focused objectives cut back on *Zero Weeks* **
 
 The most obvious benefit of focusing our goals
@@ -82,43 +85,44 @@ is being able to **build momentum behind important projects**.
 Sometimes, our projects lose steam near the finish line;
 The tool becomes "good enough" for day-to-day use or a stakeholder loses interest.
 Maybe the moment of urgency has passed.
-In any case, it feels like the project is drifting to completion instead of being driven.
+In any case, it feels like the project is drifting to completion.
 If we focus our team on one project, we'll be **able to execute faster**.
 This means:
 
-* It's less likely that shareholders will lose intrest
-* It will be easier to keep context because we've cut back on *Zero Weeks*.
-* It will be easier to remember our motivations.
+* Share holders are less likely to lose interest
+* We'll have fewer *Zero Weeks* so we'll be able to **maintain context**
+* We'll **stay motivated** because the problem will be fresh in our minds
   (Sometimes it's hard to remember why we're even working on a project)
-* We'll notice drift more quickly (because we'll have more eyes)
+* We'll stay on task and notice drift more quickly (because we'll have more eyes)
 
-If you and your team are all **working on the same big-scary goal**
-you'll also **feel more connected** - 
-even if you're only contributing an hour or two that week.
 Our team has a lot of projects going on at the same time 
-and we are distributed around the world.
+and we're distributed around the world.
 It's easy to feel disconnected from a teammate if you don't work on the same projects.
+**Working towards the same goal will make us feel more connected** -
+even if someone's only contributing an hour or two that week.
 
 ## But what about all the other work?
 
-In reality, we have dozens of responsibilites we have to execute on every day:
+In reality, we have dozens of responsibilities we have to execute on every day:
 code reviews, answering questions, meetings, interviews, actually coding...
 Setting a single wildly important goal
 can **feel like you're ignoring all of the other important work** that needs to get done.
 I get that, and I'm still a little suspicious of this methodology for that reason.
 
-However, I think I have a work around for this.
-I think we should continue to end our quarters
+However, I think I have a work-around for this.
+We should continue to end our quarters
 by prioritizing and packing the next quarter's work.
 That work should be called our **"Deliverables" not our OKRs**.
 
 We should **expect to get our deliverables done** every quarter
 (not 70% done, as recommended for OKRs).
-Truthfully, I think that's a much more useful and interesting metric for our partner teams.
+I think this is a much more useful and interesting metric for our partner teams.
 We have teams that depend on our work.
-I don't want them to have to **guess which 30% of our goals isn't going to get done** this quarter.
+I don't want them to have to 
+**guess at which 30% of our goals isn't going to get done**.
 
-Now this isn't great because we now have two rounds of planning and reporting.
+Of course,
+this isn't great because now we have two rounds of planning and reporting.
 It sounds like more busy work and more reporting.
 But, I think it's **actually less work that what we're doing now**.
 Compare the two workflows.
@@ -142,3 +146,12 @@ we're **only setting one objective with a few key results**.
 Also, this **makes workday deliverables useful**.
 If we're still required to add deliverables every quarter,
 we may as well get some use from them.
+
+What do you think?
+Am I missing something?
+
+
+<sup>1</sup>
+I first heard about this book in Cal Newport's
+[Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
+which I also recommend.
