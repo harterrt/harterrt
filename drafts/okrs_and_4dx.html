@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; OKRs and 4DX  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/drafts/okrs_and_4dx.html">OKRs and 4DX</a></h1>
+  </div>
+  <div class="article_text">
+    <p>I feel like I'm swimming in acronyms these days.</p>
+<p>Earlier this year, my team adopted a new goal setting paradigm, Objectives and Key Results (OKRs)
+It's been a learning process.
+I had some prior experience with OKRs at Google,
+but I've never felt like I was fully taking advantage of the tool.
+I just recently started digging through 
+<a href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1491517751">The 4 Disciplines of Execution</a>
+(4DX)<sup>1</sup>
+and, surprisingly, OKRs are starting to make a lot more sense.
+This post outlines some ideas I've picked up through my reading.</p>
+<h2 id="too-many-goals">Too many goals</h2>
+<p>For the last few quarters, my team has had 4-5 Objectives.
+That's a little high, but it's within the recommended limits.
+I usually have some work to do on each of these OKRs every week.
+Some weeks I have a hard time prioritizing which objective I should work on.
+Do I work on experimentation or search?
+<code>¯\_(ツ)_/¯</code></p>
+<p>When we set OKRs,
+it feels like we're scoping out what work we can get done in the next quarter.
+That leads to an OKR process that goes something like this:</p>
+<ul>
+<li>List out all the project work we could do,
+  order by importance,
+  and <strong>pack the quarter/year</strong> until it's full.</li>
+<li>Group our project work into <strong>3-5 major themes</strong>.</li>
+<li><strong>Explain why</strong> we're doing each class of project (Objectives)</li>
+<li><strong>Dream up metrics</strong> to describe "success" and set Key Results</li>
+</ul>
+<p>It's a useful exercise.
+We can clearly communicate what we are and aren't working on
+and why certain projects were deprioritized.
+I like this process a lot and I think we should keep it,
+but I don't think it harnesses the true value of OKRs.</p>
+<p>Specifically, I think it 
+<strong>encourages us to set goals for projects that don't need them</strong>.
+For example, The last two quarters
+I've set OKRs for giving quick responses for client teams.
+In reality, I'm already responding quickly.
+In no world am I going to start ignoring questions because it's not in my OKRs.
+It's an obvious priority.
+This OKR isn't a good goal anymore, it's a placeholder for a time commitment.</p>
+<h2 id="the-fix">The Fix</h2>
+<p>Instead, consider this process:
+<strong>Assume nothing changes in the next quarter</strong>.
+We keep executing on our day-to-day tasks just like we have in the past.
+We answer questions, fix bugs, improve our tools.
+All of it.</p>
+<p>Now, what <strong>one thing could we change</strong> to have the biggest marginal impact on the business?
+That's our new objective.</p>
+<p>This is totally different from before.
+We're <strong>not scoping out work</strong> for the next quarter.
+We're identifying the <strong>one improvement we're going to protect</strong>
+from the whirlwind of our daily work.</p>
+<p>In 4DX, they call this objective a <strong>Wildly Important Goal</strong> (WIG)</p>
+<h2 id="the-benefits">The Benefits</h2>
+<p>Emergencies flare up every now and then;
+it happens.
+But, I hate spending a week to put out a fire
+just to realize I didn't make any progress on my OKRs.
+I call these <em>Zero Weeks</em>.
+In my experience, every week is crazy in it's own unique way,
+but it's <strong>usually easy to sneak in an hour of work for a long-term priority</strong>.
+On the other hand,
+It's not easy to sneak in an hour of work for <strong>four</strong> long term priorities.
+<strong>Focused objectives cut back on <em>Zero Weeks</em> </strong></p>
+<p>The most obvious benefit of focusing our goals
+is being able to <strong>build momentum behind important projects</strong>.
+Sometimes, our projects lose steam near the finish line;
+The tool becomes "good enough" for day-to-day use or a stakeholder loses interest.
+Maybe the moment of urgency has passed.
+In any case, it feels like the project is drifting to completion.
+If we focus our team on one project, we'll be <strong>able to execute faster</strong>.
+This means:</p>
+<ul>
+<li>Share holders are less likely to lose interest</li>
+<li>We'll have fewer <em>Zero Weeks</em> so we'll be able to <strong>maintain context</strong></li>
+<li>We'll <strong>stay motivated</strong> because the problem will be fresh in our minds
+  (Sometimes it's hard to remember why we're even working on a project)</li>
+<li>We'll stay on task and notice drift more quickly (because we'll have more eyes)</li>
+</ul>
+<p>Our team has a lot of projects going on at the same time 
+and we're distributed around the world.
+It's easy to feel disconnected from a teammate if you don't work on the same projects.
+<strong>Working towards the same goal will make us feel more connected</strong> -
+even if someone's only contributing an hour or two that week.</p>
+<h2 id="but-what-about-all-the-other-work">But what about all the other work?</h2>
+<p>In reality, we have dozens of responsibilities we have to execute on every day:
+code reviews, answering questions, meetings, interviews, actually coding...
+Setting a single wildly important goal
+can <strong>feel like you're ignoring all of the other important work</strong> that needs to get done.
+I get that, and I'm still a little suspicious of this methodology for that reason.</p>
+<p>However, I think I have a work-around for this.
+We should continue to end our quarters
+by prioritizing and packing the next quarter's work.
+That work should be called our <strong>"Deliverables" not our OKRs</strong>.</p>
+<p>We should <strong>expect to get our deliverables done</strong> every quarter
+(not 70% done, as recommended for OKRs).
+I think this is a much more useful and interesting metric for our partner teams.
+We have teams that depend on our work.
+I don't want them to have to 
+<strong>guess at which 30% of our goals isn't going to get done</strong>.</p>
+<p>Of course,
+this isn't great because now we have two rounds of planning and reporting.
+It sounds like more busy work and more reporting.
+But, I think it's <strong>actually less work that what we're doing now</strong>.
+Compare the two workflows.</p>
+<p>Currently we:</p>
+<ul>
+<li>List all possible projects, order by priority, and pack the next quarter</li>
+<li>Group our project work into <strong>3-5 major themes</strong>.</li>
+<li>Set objectives for <strong>each of these major themes</strong> (3-5 objectives)</li>
+<li>Dream up metrics and key results for <strong>each of these objectives</strong></li>
+</ul>
+<p>What I'm suggesting we do:</p>
+<ul>
+<li>List all possible projects, order by priority, and pack the next quarter
+  Call these our <strong>"deliverables"</strong>.</li>
+<li>Step back and identify <strong>one wildly important objective</strong> we're going to focus on</li>
+<li>Set key results and metrics for that <strong>one objective</strong></li>
+</ul>
+<p>Instead of setting 3-5 objectives and tens of key results,
+we're <strong>only setting one objective with a few key results</strong>.
+Also, this <strong>makes workday deliverables useful</strong>.
+If we're still required to add deliverables every quarter,
+we may as well get some use from them.</p>
+<p>What do you think?
+Am I missing something?</p>
+<p><sup>1</sup>
+I first heard about this book in Cal Newport's
+<a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692">Deep Work</a>
+which I also recommend.</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Thu 09 November 2017</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "drafts/okrs_and_4dx.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

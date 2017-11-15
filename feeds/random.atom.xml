@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - random</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/random.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-12-14T00:00:00-08:00</updated><entry><title>Is moving to the Bay Area worth it?</title><link href="https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html" rel="alternate"></link><published>2016-12-14T00:00:00-08:00</published><updated>2016-12-14T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-12-14:/is-moving-to-the-bay-area-worth-it.html</id><summary type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
-The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
-The author pulls together some interesting data to make their point,
-but I have major &lt;strong&gt;issues with …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/random.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-12-14T00:00:00-08:00</updated><entry><title>Is moving to the Bay Area worth it?</title><link href="https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html" rel="alternate"></link><published>2016-12-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-12-14:is-moving-to-the-bay-area-worth-it.html</id><summary type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
 but I have major &lt;strong&gt;issues with the analysis&lt;/strong&gt;.
 In fact, the data seem to be &lt;strong&gt;showing the opposite trend&lt;/strong&gt;,&lt;/p&gt;
-&lt;h2&gt;Summary of findings&lt;/h2&gt;
+&lt;h2 id="summary-of-findings"&gt;Summary of findings&lt;/h2&gt;
 &lt;p&gt;Here's the important information from the article:&lt;/p&gt;
 &lt;p&gt;The author reviews median tech worker salaries from the BLS, Indeed, and GlassDoor and finds:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -23,7 +20,7 @@ higher in the Bay Area than in the Seattle metro area&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;higher Bay Area salaries at least cover the costs of higher rents.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2&gt;Taxes&lt;/h2&gt;
+&lt;h2 id="taxes"&gt;Taxes&lt;/h2&gt;
 &lt;p&gt;The most obvious error is that this analysis completely &lt;strong&gt;ignores all taxes&lt;/strong&gt;.
 I &lt;a href="https://news.ycombinator.com/item?id=13178880"&gt;pointed this out&lt;/a&gt; in the comments,
 but the conversation exclusively focused on the difference between WA and CA state taxes.
@@ -38,7 +35,7 @@ you'll also end up paying just a bit over $10k in state taxes.
 This drops the take home pay increase to $12k total.
 And, according to the data, this is at the high end of the scale!&lt;/p&gt;
 &lt;p&gt;In reality, there's no way we'll cover the $17k rent difference.&lt;/p&gt;
-&lt;h2&gt;Median Rental Price&lt;/h2&gt;
+&lt;h2 id="median-rental-price"&gt;Median Rental Price&lt;/h2&gt;
 &lt;p&gt;A few folks argued the use of a median isn't appropriate here.
 I agree to a point, but I think it's probably a good first approximation,
 especially since the author restricted their data to tech salaries in each market.&lt;/p&gt;
@@ -52,7 +49,7 @@ In economic terms, a consumer's demand for an apartment is not perfectly inelast
 Prices were generally higher than what I was used to, so I adapted by increasing my
 monthly rent, downsizing my apartment, and increasing my commute length.
 I also noticed more of my peers sharing apartments or houses who wouldn't do so in lower COL areas.&lt;/p&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;After accounting for taxes and reviewing the metrics used for rental costs, the
 salary increase from moving to the Bay Area is &lt;strong&gt;very unlikely to cover the
-increase in housing costs&lt;/strong&gt;, especially for similar housing.&lt;/p&gt;</content><category term="critique"></category></entry></feed>
+increase in housing costs&lt;/strong&gt;, especially for similar housing.&lt;/p&gt;</summary><category term="critique"></category></entry></feed>
