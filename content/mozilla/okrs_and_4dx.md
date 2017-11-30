@@ -1,14 +1,15 @@
 title: OKRs and 4DX
 slug: okrs_and_4dx
 date: 2017-11-09
-status:draft
 
 I feel like I'm swimming in acronyms these days.
 
-Earlier this year, my team adopted a new goal setting paradigm, Objectives and Key Results (OKRs)
+Earlier this year,
+my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.
 I had some prior experience with OKRs at Google,
 but I've never felt like I was fully taking advantage of the tool.
+
 I just recently started digging through 
 [The 4 Disciplines of Execution](https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1491517751)
 (4DX)<sup>1</sup>
@@ -33,7 +34,7 @@ That leads to an OKR process that goes something like this:
   and **pack the quarter/year** until it's full.
 * Group our project work into **3-5 major themes**.
 * **Explain why** we're doing each class of project (Objectives)
-* **Dream up metrics** to describe "success" and set Key Results
+* **Develop metrics** to describe "success" and set Key Results
 
 It's a useful exercise.
 We can clearly communicate what we are and aren't working on
@@ -44,7 +45,7 @@ but I don't think it harnesses the true value of OKRs.
 Specifically, I think it 
 **encourages us to set goals for projects that don't need them**.
 For example, The last two quarters
-I've set OKRs for giving quick responses for client teams.
+I've set OKRs for giving quick responses to client teams.
 In reality, I'm already responding quickly.
 In no world am I going to start ignoring questions because it's not in my OKRs.
 It's an obvious priority.
@@ -65,6 +66,9 @@ This is totally different from before.
 We're **not scoping out work** for the next quarter.
 We're identifying the **one improvement we're going to protect**
 from the whirlwind of our daily work.
+That means your single OKR
+**does not need to encompass all of the work you're going to do in a quarter**.
+
 
 In 4DX, they call this objective a **Wildly Important Goal** (WIG)
 
@@ -104,6 +108,9 @@ even if someone's only contributing an hour or two that week.
 
 ## But what about all the other work?
 
+Remember, your single OKR
+**does not need to encompass all of the work you're going to do in a quarter**.
+
 In reality, we have dozens of responsibilities we have to execute on every day:
 code reviews, answering questions, meetings, interviews, actually coding...
 Setting a single wildly important goal
@@ -133,7 +140,7 @@ Currently we:
 * List all possible projects, order by priority, and pack the next quarter
 * Group our project work into **3-5 major themes**.
 * Set objectives for **each of these major themes** (3-5 objectives)
-* Dream up metrics and key results for **each of these objectives**
+* Develop metrics and key results for **each of these objectives**
 
 What I'm suggesting we do:
 
@@ -157,3 +164,5 @@ Am I missing something?
 I first heard about this book in Cal Newport's
 [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
 which I also recommend.
+
+*Thanks to :mreid for his review and comments.*
