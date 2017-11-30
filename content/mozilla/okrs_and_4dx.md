@@ -1,6 +1,6 @@
 title: OKRs and 4DX
 slug: okrs_and_4dx
-date: 2017-11-09
+date: 2017-11-30
 
 I feel like I'm swimming in acronyms these days.
 
