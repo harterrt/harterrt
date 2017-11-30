@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 09 Nov 2017 00:00:00 -0800</lastBuildDate><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 30 Nov 2017 00:00:00 -0800</lastBuildDate><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
 &lt;p&gt;Earlier this year,
 my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.
 I had some prior experience with OKRs at Google,
-but I've never felt like I was fully taking advantage of the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 09 Nov 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-11-09:/okrs_and_4dx.html</guid></item><item><title>Evaluating New Tools</title><link>https://blog.harterrt.com/new_tools.html</link><description>&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+but I've never felt like I was fully taking advantage of the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 30 Nov 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-11-30:/okrs_and_4dx.html</guid></item><item><title>Evaluating New Tools</title><link>https://blog.harterrt.com/new_tools.html</link><description>&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
 As such, we're always evaluating new tools to improve our analysis workflow
 (&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
 or make our infrastructure more usable
