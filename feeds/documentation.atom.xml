@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - documentation</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+&lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
+It turns out the most painful part of using our data pipeline, is reading the documentation.
+I've been interesting in learning how to write …&lt;/p&gt;</summary><content type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
 I've been interesting in learning how to write great documentation for a while,
@@ -17,22 +20,14 @@ However, even though we have a great product, it's useless if our users don't un
 It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
 &lt;p&gt;If you have a data product or tool without documentation, it's more likely than not that someone is misusing your data.
 The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
-&lt;div class="toc"&gt;
-&lt;ul&gt;&lt;/ul&gt;
-&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#one-less-tool"&gt;One less tool&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#syncronization"&gt;Syncronization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#discoverability"&gt;Discoverability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;</content><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:/why-markdown.html</id><summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
+request&lt;/a&gt; that moved
+some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
+wiki&lt;/a&gt; to a &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md"&gt;github
+repository&lt;/a&gt;.
+It took a couple of hours of editing and toying with pandoc to get right, but
+when I was done, I realized the benefits were difficult to see.  So, I decided …&lt;/p&gt;</summary><content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
 request&lt;/a&gt; that moved
 some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
@@ -41,7 +36,7 @@ repository&lt;/a&gt;.
 It took a couple of hours of editing and toying with pandoc to get right, but
 when I was done, I realized the benefits were difficult to see.  So, I decided
 to write them out for posterity.&lt;/p&gt;
-&lt;h2 id="better-process"&gt;Better Process&lt;/h2&gt;
+&lt;h2&gt;Better Process&lt;/h2&gt;
 &lt;p&gt;The only way to edit our wiki is through the web front end which causes some
 major problems.&lt;/p&gt;
 &lt;p&gt;For one, You're always editing the production version and there's no way to get
@@ -52,21 +47,21 @@ locally.  Even worse, there's no good way to settle merge conflicts.&lt;/p&gt;
 &lt;p&gt;With markdown, I can develop my revisions over the course of weeks and preview
 them locally.  When it's time to publish I get review from my peers, which
 makes my documentation more readable and helps me improve as an engineer.&lt;/p&gt;
-&lt;h2 id="better-tools"&gt;Better Tools&lt;/h2&gt;
+&lt;h2&gt;Better Tools&lt;/h2&gt;
 &lt;p&gt;I have powerful tools for manipulating text so using a simple web form to edit
 technical documentation seems absurd to me.  With markdown, I get the joy of
 using my favorite text editor in my favorite development environment&lt;/p&gt;
-&lt;h3 id="one-less-tool"&gt;One less tool&lt;/h3&gt;
+&lt;h3&gt;One less tool&lt;/h3&gt;
 &lt;p&gt;Our team is already using Markdown for our README's and Github provides a much
 better UX for revison control.  By moving to Markdown for our user facing
 documentation, we have one less tool and syntax we need to depend on.&lt;/p&gt;
-&lt;h2 id="the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/h2&gt;
+&lt;h2&gt;The documentation sits next to the code&lt;/h2&gt;
 &lt;p&gt;Storing your documentation with your code has a lot of great benefits.&lt;/p&gt;
-&lt;h3 id="syncronization"&gt;Syncronization&lt;/h3&gt;
+&lt;h3&gt;Syncronization&lt;/h3&gt;
 &lt;p&gt;Pull requests can include simultanious changes to code and documentation, which
 makes it more likely they'll stay in sync. Both because you don't need to go
 edit them elsewhere and because it can become a review requirement.&lt;/p&gt;
-&lt;h3 id="discoverability"&gt;Discoverability&lt;/h3&gt;
+&lt;h3&gt;Discoverability&lt;/h3&gt;
 &lt;p&gt;Keeping the docs next to the code helps with discoverability. Your
 code and your documentation should supplement each other. Keeping them close
-together is only reasonable.&lt;/p&gt;</summary><category term="documentation"></category><category term="mozilla"></category></entry></feed>
+together is only reasonable.&lt;/p&gt;</content><category term="documentation"></category><category term="mozilla"></category></entry></feed>

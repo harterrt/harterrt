@@ -1,5 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-10-26T00:00:00-07:00</updated><entry><title>Evaluating New Tools</title><link href="https://blog.harterrt.com/new_tools.html" rel="alternate"></link><published>2017-10-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-10-26:new_tools.html</id><summary type="html">&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-11-09T00:00:00-08:00</updated><entry><title>OKRs and 4DX</title><link href="https://blog.harterrt.com/okrs_and_4dx.html" rel="alternate"></link><published>2017-11-09T00:00:00-08:00</published><updated>2017-11-09T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-11-09:/okrs_and_4dx.html</id><summary type="html">&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+&lt;p&gt;Earlier this year,
+my team started using Objectives and Key Results (OKRs) for our planning.
+It's been a learning process.
+I had some prior experience with OKRs at Google,
+but I've never felt like I was fully taking advantage of the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+&lt;p&gt;Earlier this year,
+my team started using Objectives and Key Results (OKRs) for our planning.
+It's been a learning process.
+I had some prior experience with OKRs at Google,
+but I've never felt like I was fully taking advantage of the tool.&lt;/p&gt;
+&lt;p&gt;I just recently started digging through 
+&lt;a href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1491517751"&gt;The 4 Disciplines of Execution&lt;/a&gt;
+(4DX)&lt;sup&gt;1&lt;/sup&gt;
+and, surprisingly, OKRs are starting to make a lot more sense.
+This post outlines some ideas I've picked up through my reading.&lt;/p&gt;
+&lt;h2&gt;Too many goals&lt;/h2&gt;
+&lt;p&gt;For the last few quarters, my team has had 4-5 Objectives.
+That's a little high, but it's within the recommended limits.
+I usually have some work to do on each of these OKRs every week.
+Some weeks I have a hard time prioritizing which objective I should work on.
+Do I work on experimentation or search?
+&lt;code&gt;¯\_(ツ)_/¯&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;When we set OKRs,
+it feels like we're scoping out what work we can get done in the next quarter.
+That leads to an OKR process that goes something like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List out all the project work we could do,
+  order by importance,
+  and &lt;strong&gt;pack the quarter/year&lt;/strong&gt; until it's full.&lt;/li&gt;
+&lt;li&gt;Group our project work into &lt;strong&gt;3-5 major themes&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Explain why&lt;/strong&gt; we're doing each class of project (Objectives)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Develop metrics&lt;/strong&gt; to describe "success" and set Key Results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It's a useful exercise.
+We can clearly communicate what we are and aren't working on
+and why certain projects were deprioritized.
+I like this process a lot and I think we should keep it,
+but I don't think it harnesses the true value of OKRs.&lt;/p&gt;
+&lt;p&gt;Specifically, I think it 
+&lt;strong&gt;encourages us to set goals for projects that don't need them&lt;/strong&gt;.
+For example, The last two quarters
+I've set OKRs for giving quick responses to client teams.
+In reality, I'm already responding quickly.
+In no world am I going to start ignoring questions because it's not in my OKRs.
+It's an obvious priority.
+This OKR isn't a good goal anymore, it's a placeholder for a time commitment.&lt;/p&gt;
+&lt;h2&gt;The Fix&lt;/h2&gt;
+&lt;p&gt;Instead, consider this process:
+&lt;strong&gt;Assume nothing changes in the next quarter&lt;/strong&gt;.
+We keep executing on our day-to-day tasks just like we have in the past.
+We answer questions, fix bugs, improve our tools.
+All of it.&lt;/p&gt;
+&lt;p&gt;Now, what &lt;strong&gt;one thing could we change&lt;/strong&gt; to have the biggest marginal impact on the business?
+That's our new objective.&lt;/p&gt;
+&lt;p&gt;This is totally different from before.
+We're &lt;strong&gt;not scoping out work&lt;/strong&gt; for the next quarter.
+We're identifying the &lt;strong&gt;one improvement we're going to protect&lt;/strong&gt;
+from the whirlwind of our daily work.
+That means your single OKR
+&lt;strong&gt;does not need to encompass all of the work you're going to do in a quarter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In 4DX, they call this objective a &lt;strong&gt;Wildly Important Goal&lt;/strong&gt; (WIG)&lt;/p&gt;
+&lt;h2&gt;The Benefits&lt;/h2&gt;
+&lt;p&gt;Emergencies flare up every now and then;
+it happens.
+But, I hate spending a week to put out a fire
+just to realize I didn't make any progress on my OKRs.
+I call these &lt;em&gt;Zero Weeks&lt;/em&gt;.
+In my experience, every week is crazy in it's own unique way,
+but it's &lt;strong&gt;usually easy to sneak in an hour of work for a long-term priority&lt;/strong&gt;.
+On the other hand,
+It's not easy to sneak in an hour of work for &lt;strong&gt;four&lt;/strong&gt; long term priorities.
+&lt;strong&gt;Focused objectives cut back on &lt;em&gt;Zero Weeks&lt;/em&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The most obvious benefit of focusing our goals
+is being able to &lt;strong&gt;build momentum behind important projects&lt;/strong&gt;.
+Sometimes, our projects lose steam near the finish line;
+The tool becomes "good enough" for day-to-day use or a stakeholder loses interest.
+Maybe the moment of urgency has passed.
+In any case, it feels like the project is drifting to completion.
+If we focus our team on one project, we'll be &lt;strong&gt;able to execute faster&lt;/strong&gt;.
+This means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share holders are less likely to lose interest&lt;/li&gt;
+&lt;li&gt;We'll have fewer &lt;em&gt;Zero Weeks&lt;/em&gt; so we'll be able to &lt;strong&gt;maintain context&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;We'll &lt;strong&gt;stay motivated&lt;/strong&gt; because the problem will be fresh in our minds
+  (Sometimes it's hard to remember why we're even working on a project)&lt;/li&gt;
+&lt;li&gt;We'll stay on task and notice drift more quickly (because we'll have more eyes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our team has a lot of projects going on at the same time 
+and we're distributed around the world.
+It's easy to feel disconnected from a teammate if you don't work on the same projects.
+&lt;strong&gt;Working towards the same goal will make us feel more connected&lt;/strong&gt; -
+even if someone's only contributing an hour or two that week.&lt;/p&gt;
+&lt;h2&gt;But what about all the other work?&lt;/h2&gt;
+&lt;p&gt;Remember, your single OKR
+&lt;strong&gt;does not need to encompass all of the work you're going to do in a quarter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In reality, we have dozens of responsibilities we have to execute on every day:
+code reviews, answering questions, meetings, interviews, actually coding...
+Setting a single wildly important goal
+can &lt;strong&gt;feel like you're ignoring all of the other important work&lt;/strong&gt; that needs to get done.
+I get that, and I'm still a little suspicious of this methodology for that reason.&lt;/p&gt;
+&lt;p&gt;However, I think I have a work-around for this.
+We should continue to end our quarters
+by prioritizing and packing the next quarter's work.
+That work should be called our &lt;strong&gt;"Deliverables" not our OKRs&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We should &lt;strong&gt;expect to get our deliverables done&lt;/strong&gt; every quarter
+(not 70% done, as recommended for OKRs).
+I think this is a much more useful and interesting metric for our partner teams.
+We have teams that depend on our work.
+I don't want them to have to 
+&lt;strong&gt;guess at which 30% of our goals isn't going to get done&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Of course,
+this isn't great because now we have two rounds of planning and reporting.
+It sounds like more busy work and more reporting.
+But, I think it's &lt;strong&gt;actually less work that what we're doing now&lt;/strong&gt;.
+Compare the two workflows.&lt;/p&gt;
+&lt;p&gt;Currently we:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List all possible projects, order by priority, and pack the next quarter&lt;/li&gt;
+&lt;li&gt;Group our project work into &lt;strong&gt;3-5 major themes&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Set objectives for &lt;strong&gt;each of these major themes&lt;/strong&gt; (3-5 objectives)&lt;/li&gt;
+&lt;li&gt;Develop metrics and key results for &lt;strong&gt;each of these objectives&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What I'm suggesting we do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List all possible projects, order by priority, and pack the next quarter
+  Call these our &lt;strong&gt;"deliverables"&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Step back and identify &lt;strong&gt;one wildly important objective&lt;/strong&gt; we're going to focus on&lt;/li&gt;
+&lt;li&gt;Set key results and metrics for that &lt;strong&gt;one objective&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead of setting 3-5 objectives and tens of key results,
+we're &lt;strong&gt;only setting one objective with a few key results&lt;/strong&gt;.
+Also, this &lt;strong&gt;makes workday deliverables useful&lt;/strong&gt;.
+If we're still required to add deliverables every quarter,
+we may as well get some use from them.&lt;/p&gt;
+&lt;p&gt;What do you think?
+Am I missing something?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;
+I first heard about this book in Cal Newport's
+&lt;a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692"&gt;Deep Work&lt;/a&gt;
+which I also recommend.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to :mreid for his review and comments.&lt;/em&gt;&lt;/p&gt;</content></entry><entry><title>Evaluating New Tools</title><link href="https://blog.harterrt.com/new_tools.html" rel="alternate"></link><published>2017-10-26T00:00:00-07:00</published><updated>2017-10-26T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-10-26:/new_tools.html</id><summary type="html">&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+As such, we're always evaluating new tools to improve our analysis workflow
+(&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
+or make our infrastructure more usable
+(our home-rolled &lt;a href="https://github.com/mozilla/telemetry-analysis-service"&gt;ATMO&lt;/a&gt;
+vs. &lt;a href="https://databricks.com/"&gt;databricks&lt;/a&gt;),
+or scale our knowledge
+(&lt;a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091"&gt;knoledge-repo&lt;/a&gt;.
+vs. &lt;a href="https://www.gitbook.com/"&gt;gitbook&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Most of these tools look like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
 As such, we're always evaluating new tools to improve our analysis workflow
 (&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
 or make our infrastructure more usable
@@ -19,7 +170,7 @@ At the same time,
 I have &lt;strong&gt;work due today&lt;/strong&gt; and an existing set of tools that are good enough.&lt;/p&gt;
 &lt;p&gt;What follows are some thoughts I have when deciding whether to adopt a new tool.
 Maybe they will help you (or future me) &lt;strong&gt;debug problems with adoption&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="what-am-i-taking-home"&gt;What am I taking home?&lt;/h2&gt;
+&lt;h2&gt;What am I taking home?&lt;/h2&gt;
 &lt;p&gt;If your new tool is internal-only, uncommon in the industry, or expensive
 I'm going to be less likely to adopt it.&lt;/p&gt;
 &lt;p&gt;In this case, anything I learn while adopting your tool
@@ -41,7 +192,7 @@ if they were internal-only?
 When you leave the company all of that skill becomes useless.
 By open-sourcing these technologies,
 you've just &lt;strong&gt;increased your employee compensation without spending a dollar&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="how-long-will-i-have-access"&gt;How long will I have access?&lt;/h2&gt;
+&lt;h2&gt;How long will I have access?&lt;/h2&gt;
 &lt;p&gt;If your tool is closed source or expensive,
 I'm going to hesitate before spending any time with it.
 I depend on my tools and it hurts to lose them.&lt;/p&gt;
@@ -49,7 +200,7 @@ I depend on my tools and it hurts to lose them.&lt;/p&gt;
 I can use my experience with Python or R build side projects
 that scratch my own itch.
 MATLAB is expensive, so I don't have that benefit.&lt;/p&gt;
-&lt;h2 id="how-long-will-it-be-relevant"&gt;How long will it be relevant?&lt;/h2&gt;
+&lt;h2&gt;How long will it be relevant?&lt;/h2&gt;
 &lt;p&gt;Even if the tool is open source,
 I want it to be configurable and composable.
 This ensures it can grow with me.
@@ -66,7 +217,7 @@ I'm much happier when I get to use my own tool chain.&lt;/p&gt;
 I'm working on a tool that will make it easy to develop
 python packages and Jupyter notebooks side-by-side.
 Hopefully, this will give us the best of both worlds.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;All this to say,
 I'm going to carefully gauge the lifetime value of any new tool I adopt.
 If your users are ignoring a new tool you've created,
@@ -76,13 +227,23 @@ if your tool solves a critical enough problem,
 I'll stand barefoot in the snow to use it.&lt;/p&gt;
 &lt;p&gt;Does this all make any sense?
 Am I missing something important?
-Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</summary><category term="tools"></category><category term="mozilla"></category></entry><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
+Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</content><category term="tools"></category><category term="mozilla"></category></entry><entry><title>Documentation Style Guide</title><link href="https://blog.harterrt.com/docs-style-guide.html" rel="alternate"></link><published>2017-08-24T00:00:00-07:00</published><updated>2017-08-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</id><summary type="html">&lt;p&gt;I just wrote up a style guide for our 
 &lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
 The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
 &lt;a href="https://github.com/mozilla/firefox-data-docs/pull/41"&gt;PR here&lt;/a&gt;
 but I figured it's worth sharing here as well.&lt;/p&gt;
-&lt;h2 id="style-guide"&gt;Style Guide&lt;/h2&gt;
+&lt;h2&gt;Style Guide&lt;/h2&gt;
+&lt;p&gt;Articles should be written in
+&lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;
+(not &lt;a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"&gt;AsciiDoc&lt;/a&gt;).
+Markdown is usually …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I just wrote up a style guide for our 
+&lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
+The documentation is rendered using Gitbook and hosted on Github Pages.
+You can find the 
+&lt;a href="https://github.com/mozilla/firefox-data-docs/pull/41"&gt;PR here&lt;/a&gt;
+but I figured it's worth sharing here as well.&lt;/p&gt;
+&lt;h2&gt;Style Guide&lt;/h2&gt;
 &lt;p&gt;Articles should be written in
 &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;
 (not &lt;a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"&gt;AsciiDoc&lt;/a&gt;).
@@ -98,9 +259,15 @@ so make it easy to identify important information&lt;/p&gt;
 Avoid long paragraphs.
 Short paragraphs that describe one concept each makes finding important information easier.&lt;/p&gt;
 &lt;p&gt;Please squash your changes  into meaningful commits  and follow these
-&lt;a href="https://chris.beams.io/posts/git-commit/"&gt;commit message guidelines&lt;/a&gt;.&lt;/p&gt;</summary><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>Beer and Probes</title><link href="https://blog.harterrt.com/probes.html" rel="alternate"></link><published>2017-08-23T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-23:probes.html</id><summary type="html">&lt;p&gt;Quick post to clear up some terminology.
+&lt;a href="https://chris.beams.io/posts/git-commit/"&gt;commit message guidelines&lt;/a&gt;.&lt;/p&gt;</content><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>Beer and Probes</title><link href="https://blog.harterrt.com/probes.html" rel="alternate"></link><published>2017-08-23T00:00:00-07:00</published><updated>2017-08-23T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-08-23:/probes.html</id><summary type="html">&lt;p&gt;Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:&lt;/p&gt;
-&lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
+&lt;h2&gt;Analogy&lt;/h2&gt;
+&lt;p&gt;Temperature control is a big part of brewing beer.
+Throughout the brewing process I use a thermometer
+to measure the temperature of the soon-to-be beer.
+Because I take several temperature readings throughout the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Quick post to clear up some terminology.
+But first, an analogy to clear up my thinking:&lt;/p&gt;
+&lt;h2&gt;Analogy&lt;/h2&gt;
 &lt;p&gt;Temperature control is a big part of brewing beer.
 Throughout the brewing process I use a thermometer
 to measure the temperature of the soon-to-be beer.
@@ -111,7 +278,7 @@ then a sparge temperature,
 then a fermentation temperature.
 The units on these measurements are always in Fahrenheit,
 but their interpretation is different.&lt;/p&gt;
-&lt;h2 id="the-rub"&gt;The Rub&lt;/h2&gt;
+&lt;h2&gt;The Rub&lt;/h2&gt;
 &lt;p&gt;In this example, I would call the thermometer a "probe".
 The set of all temperature readings share a "data type".
 Each temperature reading is a "measurement" which is stored in a given "field".&lt;/p&gt;
@@ -121,14 +288,19 @@ I haven't encountered this usage outside of Mozilla.&lt;/p&gt;
 &lt;p&gt;Instead, I'd suggest we call histograms and scalars "data types".
 A "probe" is a unit of client-side code that collects a measurement for us.
 A single "field" could be be a column in one of our datasets (like &lt;code&gt;normalized_channel&lt;/code&gt;).
-A measurement would be a value from a single field from a single ping (like the string "release").&lt;/p&gt;</summary></entry><entry><title>Bad Tools are Insidious</title><link href="https://blog.harterrt.com/bad-tools.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-06-15:bad-tools.html</id><summary type="html">&lt;p&gt;This is my first job making data tools that other people use.
+A measurement would be a value from a single field from a single ping (like the string "release").&lt;/p&gt;</content></entry><entry><title>Bad Tools are Insidious</title><link href="https://blog.harterrt.com/bad-tools.html" rel="alternate"></link><published>2017-06-15T00:00:00-07:00</published><updated>2017-06-15T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-06-15:/bad-tools.html</id><summary type="html">&lt;p&gt;This is my first job making data tools that other people use.
+In the past, I've always been a data scientist -
+a consumer of these tools.
+I'm learning a lot.&lt;/p&gt;
+&lt;p&gt;Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
+I sum this …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is my first job making data tools that other people use.
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.&lt;/p&gt;
 &lt;p&gt;Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
 I sum this up by saying that &lt;strong&gt;bad tools are insidious&lt;/strong&gt;.
 This may be &lt;a href="https://sivers.org/obvious"&gt;obvious to you&lt;/a&gt; but I'm excited by the insight.&lt;/p&gt;
-&lt;h2 id="bad-tools-are-hard-to-spot"&gt;Bad tools are hard to spot&lt;/h2&gt;
+&lt;h2&gt;Bad tools are hard to spot&lt;/h2&gt;
 &lt;p&gt;I spent some time working directly with analysts building ETL jobs.
 I found some big usability gaps with our tools
 and I was surprised I wasn't hearing about these problems from our analysts.&lt;/p&gt;
@@ -144,7 +316,7 @@ It was much easier to find workflow improvements this way.&lt;/p&gt;
 &lt;p&gt;In the &lt;a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"&gt;Design of Everyday Things&lt;/a&gt; 
 Donald notes that users tend to blame themselves when they have difficulty with tools.
 That's probably part of the issue here as well.&lt;/p&gt;
-&lt;h2 id="bad-tools-hurt"&gt;Bad tools hurt&lt;/h2&gt;
+&lt;h2&gt;Bad tools hurt&lt;/h2&gt;
 &lt;p&gt;If our users aren't complaining, is it really a problem that needs to get fixed?
 I think so.
 We all understand that bad tools hurt our productivity.
@@ -158,10 +330,16 @@ and another chance to fall out of flow.
 I'll bet a 5 minute distraction can easily end up costing me 20 minutes of productivity on a good day.&lt;/p&gt;
 &lt;p&gt;Your tools should be a joy to use.
 The better they work, the easier it is to stay in flow, be creative, and stay excited.&lt;/p&gt;
-&lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
+&lt;h1&gt;In Summary&lt;/h1&gt;
 &lt;p&gt;Don't expect your users to tell you how to improve your tools.
 You're probably going to need to
-&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Literature Review: Writing Great Documentation</title><link href="https://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
+&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Literature Review: Writing Great Documentation</title><link href="https://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><updated>2017-02-03T00:00:00-08:00</updated><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:/lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
+I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
+I haven&amp;#8217;t seen any great example for a data product, either.
+I don&amp;#8217;t have much experience in this area,
+so I decided to review …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
 I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
@@ -356,12 +534,15 @@ general consensus outside of the primary sources above:&lt;/p&gt;&lt;/div&gt;
 &lt;/ul&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>Is moving to the Bay Area worth it?</title><link href="https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html" rel="alternate"></link><published>2016-12-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-12-14:is-moving-to-the-bay-area-worth-it.html</id><summary type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
+</content><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>Is moving to the Bay Area worth it?</title><link href="https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html" rel="alternate"></link><published>2016-12-14T00:00:00-08:00</published><updated>2016-12-14T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-12-14:/is-moving-to-the-bay-area-worth-it.html</id><summary type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
+The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
+The author pulls together some interesting data to make their point,
+but I have major &lt;strong&gt;issues with …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
 but I have major &lt;strong&gt;issues with the analysis&lt;/strong&gt;.
 In fact, the data seem to be &lt;strong&gt;showing the opposite trend&lt;/strong&gt;,&lt;/p&gt;
-&lt;h2 id="summary-of-findings"&gt;Summary of findings&lt;/h2&gt;
+&lt;h2&gt;Summary of findings&lt;/h2&gt;
 &lt;p&gt;Here's the important information from the article:&lt;/p&gt;
 &lt;p&gt;The author reviews median tech worker salaries from the BLS, Indeed, and GlassDoor and finds:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -377,7 +558,7 @@ higher in the Bay Area than in the Seattle metro area&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;higher Bay Area salaries at least cover the costs of higher rents.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="taxes"&gt;Taxes&lt;/h2&gt;
+&lt;h2&gt;Taxes&lt;/h2&gt;
 &lt;p&gt;The most obvious error is that this analysis completely &lt;strong&gt;ignores all taxes&lt;/strong&gt;.
 I &lt;a href="https://news.ycombinator.com/item?id=13178880"&gt;pointed this out&lt;/a&gt; in the comments,
 but the conversation exclusively focused on the difference between WA and CA state taxes.
@@ -392,7 +573,7 @@ you'll also end up paying just a bit over $10k in state taxes.
 This drops the take home pay increase to $12k total.
 And, according to the data, this is at the high end of the scale!&lt;/p&gt;
 &lt;p&gt;In reality, there's no way we'll cover the $17k rent difference.&lt;/p&gt;
-&lt;h2 id="median-rental-price"&gt;Median Rental Price&lt;/h2&gt;
+&lt;h2&gt;Median Rental Price&lt;/h2&gt;
 &lt;p&gt;A few folks argued the use of a median isn't appropriate here.
 I agree to a point, but I think it's probably a good first approximation,
 especially since the author restricted their data to tech salaries in each market.&lt;/p&gt;
@@ -406,10 +587,14 @@ In economic terms, a consumer's demand for an apartment is not perfectly inelast
 Prices were generally higher than what I was used to, so I adapted by increasing my
 monthly rent, downsizing my apartment, and increasing my commute length.
 I also noticed more of my peers sharing apartments or houses who wouldn't do so in lower COL areas.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;After accounting for taxes and reviewing the metrics used for rental costs, the
 salary increase from moving to the Bay Area is &lt;strong&gt;very unlikely to cover the
-increase in housing costs&lt;/strong&gt;, especially for similar housing.&lt;/p&gt;</summary><category term="critique"></category></entry><entry><title>Announcing the Cross Sectional Dataset</title><link href="https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html" rel="alternate"></link><published>2016-11-14T00:00:00-08:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</id><summary type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+increase in housing costs&lt;/strong&gt;, especially for similar housing.&lt;/p&gt;</content><category term="critique"></category></entry><entry><title>Announcing the Cross Sectional Dataset</title><link href="https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html" rel="alternate"></link><published>2016-11-14T00:00:00-08:00</published><updated>2016-11-14T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-14:/announcing-the-cross-sectional-dataset.html</id><summary type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+&lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
+summary statistics for each client.  Like the Longitudinal table, there's one
+row for each client_id in a 1% sample of clients.  However, the Cross Sectional
+dataset simplifies your analysis …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
 &lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
@@ -420,7 +605,10 @@ summary statistics.&lt;/p&gt;
 more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
 documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</summary></entry><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+columns!&lt;/p&gt;</content></entry><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+&lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
+It turns out the most painful part of using our data pipeline, is reading the documentation.
+I've been interesting in learning how to write …&lt;/p&gt;</summary><content type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
 I've been interesting in learning how to write great documentation for a while,
@@ -438,22 +626,14 @@ However, even though we have a great product, it's useless if our users don't un
 It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
 &lt;p&gt;If you have a data product or tool without documentation, it's more likely than not that someone is misusing your data.
 The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
-&lt;div class="toc"&gt;
-&lt;ul&gt;&lt;/ul&gt;
-&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#one-less-tool"&gt;One less tool&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#syncronization"&gt;Syncronization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#discoverability"&gt;Discoverability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;</content><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:/why-markdown.html</id><summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
+request&lt;/a&gt; that moved
+some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
+wiki&lt;/a&gt; to a &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md"&gt;github
+repository&lt;/a&gt;.
+It took a couple of hours of editing and toying with pandoc to get right, but
+when I was done, I realized the benefits were difficult to see.  So, I decided …&lt;/p&gt;</summary><content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
 request&lt;/a&gt; that moved
 some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
@@ -462,7 +642,7 @@ repository&lt;/a&gt;.
 It took a couple of hours of editing and toying with pandoc to get right, but
 when I was done, I realized the benefits were difficult to see.  So, I decided
 to write them out for posterity.&lt;/p&gt;
-&lt;h2 id="better-process"&gt;Better Process&lt;/h2&gt;
+&lt;h2&gt;Better Process&lt;/h2&gt;
 &lt;p&gt;The only way to edit our wiki is through the web front end which causes some
 major problems.&lt;/p&gt;
 &lt;p&gt;For one, You're always editing the production version and there's no way to get
@@ -473,57 +653,51 @@ locally.  Even worse, there's no good way to settle merge conflicts.&lt;/p&gt;
 &lt;p&gt;With markdown, I can develop my revisions over the course of weeks and preview
 them locally.  When it's time to publish I get review from my peers, which
 makes my documentation more readable and helps me improve as an engineer.&lt;/p&gt;
-&lt;h2 id="better-tools"&gt;Better Tools&lt;/h2&gt;
+&lt;h2&gt;Better Tools&lt;/h2&gt;
 &lt;p&gt;I have powerful tools for manipulating text so using a simple web form to edit
 technical documentation seems absurd to me.  With markdown, I get the joy of
 using my favorite text editor in my favorite development environment&lt;/p&gt;
-&lt;h3 id="one-less-tool"&gt;One less tool&lt;/h3&gt;
+&lt;h3&gt;One less tool&lt;/h3&gt;
 &lt;p&gt;Our team is already using Markdown for our README's and Github provides a much
 better UX for revison control.  By moving to Markdown for our user facing
 documentation, we have one less tool and syntax we need to depend on.&lt;/p&gt;
-&lt;h2 id="the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/h2&gt;
+&lt;h2&gt;The documentation sits next to the code&lt;/h2&gt;
 &lt;p&gt;Storing your documentation with your code has a lot of great benefits.&lt;/p&gt;
-&lt;h3 id="syncronization"&gt;Syncronization&lt;/h3&gt;
+&lt;h3&gt;Syncronization&lt;/h3&gt;
 &lt;p&gt;Pull requests can include simultanious changes to code and documentation, which
 makes it more likely they'll stay in sync. Both because you don't need to go
 edit them elsewhere and because it can become a review requirement.&lt;/p&gt;
-&lt;h3 id="discoverability"&gt;Discoverability&lt;/h3&gt;
+&lt;h3&gt;Discoverability&lt;/h3&gt;
 &lt;p&gt;Keeping the docs next to the code helps with discoverability. Your
 code and your documentation should supplement each other. Keeping them close
-together is only reasonable.&lt;/p&gt;</summary><category term="documentation"></category><category term="mozilla"></category></entry><entry><title>Working over SSH</title><link href="https://blog.harterrt.com/working-over-ssh.html" rel="alternate"></link><published>2016-09-05T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#tools"&gt;Tools&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#tmux"&gt;tmux&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#session-persistence"&gt;Session Persistence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#multiplexing"&gt;Multiplexing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#homeshick"&gt;Homeshick&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+together is only reasonable.&lt;/p&gt;</content><category term="documentation"></category><category term="mozilla"></category></entry><entry><title>Working over SSH</title><link href="https://blog.harterrt.com/working-over-ssh.html" rel="alternate"></link><published>2016-09-05T00:00:00-07:00</published><updated>2016-09-05T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-09-05:/working-over-ssh.html</id><summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
 Using these tools will make it significantly easier / more fun to work with a remote linux system.&lt;/p&gt;
-&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
-&lt;h3 id="tmux"&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;h3&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For me, tmux is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Working over SSH can be impossibly frustrating if you're not using the right tools. 
+I promised my teammates a write-up how I work over ssh.
+Using these tools will make it significantly easier / more fun to work with a remote linux system.&lt;/p&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;h3&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;For me, tmux is the single tool most important getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.&lt;/p&gt;
-&lt;h4 id="session-persistence"&gt;Session Persistence&lt;/h4&gt;
+&lt;h4&gt;Session Persistence&lt;/h4&gt;
 &lt;p&gt;tmux sessions can be detached and reattached at will.
 That means you can &lt;strong&gt;execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running&lt;/strong&gt;.
 Later, you can reconnect to the cluster and session, it will be as if you hadn't left.
 So much nicer than cussing out your flaky WiFi connection.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Start a new session named &amp;quot;foo&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Start a new session named &amp;quot;foo&amp;quot;&lt;/span&gt;
 &lt;span class="c1"&gt;# Opens a new shell as a subprocess&lt;/span&gt;
 tmux new -s foo
 
 &lt;span class="c1"&gt;# Do stuff ...&lt;/span&gt;
-sleep 100
+sleep &lt;span class="m"&gt;100&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Kill the session, returning you to the original shell&lt;/span&gt;
 &lt;span class="c1"&gt;# with ctrl-b d&lt;/span&gt;
@@ -537,7 +711,7 @@ tmux at -dt foo
 
 &lt;p&gt;More often, I use tmux just to save my place when I need to wrap up for the day.
 Next morning, I can reattach my session and I'm already looking at the most relevant files for today's work.&lt;/p&gt;
-&lt;h4 id="multiplexing"&gt;Multiplexing&lt;/h4&gt;
+&lt;h4&gt;Multiplexing&lt;/h4&gt;
 &lt;p&gt;This is what tmux's was built to do. I think persistence is just a nice side effect.
 tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
@@ -547,7 +721,7 @@ Here's a screen shot of how I developed this blog post:&lt;/p&gt;
 On the left I have a process serving up drafts of this document and on the right I have my text editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
 For example, monitoring an &lt;code&gt;sbt ~test&lt;/code&gt; process on the left while making edits on the right.&lt;/p&gt;
-&lt;h3 id="homeshick"&gt;&lt;a href="https://github.com/andsens/homeshick"&gt;Homeshick&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href="https://github.com/andsens/homeshick"&gt;Homeshick&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Configuring a new machine is a PITA.
 For a while, I saw all configuration changes as a liability and refused to customize my environment.
 After all, I'd eventually have to redo all of these configs when I get a new machine.
@@ -556,19 +730,20 @@ But, your tools should be a joy to use, and Homeshick makes this a non-issue.&lt
 Now, I can &lt;strong&gt;setup a new Ubuntu machine within ~5 minutes&lt;/strong&gt; with all of my dotfiles intact.
 When I connect to a machine for the first time, I grab &lt;a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md"&gt;this snippet&lt;/a&gt; and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</summary><category term="tools"></category></entry><entry><title>Strange Spark Error</title><link href="https://blog.harterrt.com/strange-spark-error.html" rel="alternate"></link><published>2016-08-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-08-26:strange-spark-error.html</id><summary type="html">&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#the-bug"&gt;The Bug&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#fixes"&gt;Fixes?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</content><category term="tools"></category></entry><entry><title>Strange Spark Error</title><link href="https://blog.harterrt.com/strange-spark-error.html" rel="alternate"></link><published>2016-08-26T00:00:00-07:00</published><updated>2016-08-26T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-08-26:/strange-spark-error.html</id><summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.&lt;/p&gt;
-&lt;h1 id="the-bug"&gt;The Bug&lt;/h1&gt;
+&lt;h1&gt;The Bug&lt;/h1&gt;
 &lt;p&gt;I added the &lt;a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala"&gt;this very simple view&lt;/a&gt; to our &lt;a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views"&gt;batch views repository&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
+
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.&lt;/p&gt;
+&lt;h1&gt;The Bug&lt;/h1&gt;
+&lt;p&gt;I added the &lt;a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala"&gt;this very simple view&lt;/a&gt; to our &lt;a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views"&gt;batch views repository&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
 
 &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.sql.hive.HiveContext&lt;/span&gt;
@@ -607,37 +782,37 @@ Even better, the meaningful config changes I make on my work machine magically m
 
 
 &lt;p&gt;When I run this on an ATMO cluster, I observe the following error:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;Exception in thread &amp;quot;main&amp;quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.util.Utils&lt;/span&gt;&lt;span class="p"&gt;$.&lt;/span&gt;&lt;span class="nv"&gt;tryOrIOException&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;Utils.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1222&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast._value&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;lzycompute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;TorrentBroadcast.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.Task.run(Task.scala:89)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.executor.Executor&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TaskRunner&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;Executor.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;214&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)&lt;/span&gt;
-&lt;span class="x"&gt;    at java.util.concurrent.ThreadPoolExecutor&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;Worker&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;ThreadPoolExecutor.java&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;615&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at java.lang.Thread.run(Thread.java:745)&lt;/span&gt;
-&lt;span class="x"&gt;Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;apache&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;spark&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;broadcast&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;readBlocks&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;1&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;2.apply(TorrentBroadcast.scala:138)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;apache&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;spark&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;broadcast&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;readBlocks&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;1&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;2.apply(TorrentBroadcast.scala:138)&lt;/span&gt;
-&lt;span class="x"&gt;...&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Exception in thread &amp;quot;main&amp;quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2
+    at org.apache.spark.util.Utils$.tryOrIOException(Utils.scala:1222)
+    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)
+    at org.apache.spark.broadcast.TorrentBroadcast._value$lzycompute(TorrentBroadcast.scala:64)
+    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)
+    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)
+    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)
+    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)
+    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+    at org.apache.spark.scheduler.Task.run(Task.scala:89)
+    at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+    at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2
+    at org.apache.spark.broadcast.TorrentBroadcast$$anonfun$org$apache$spark$broadcast$TorrentBroadcast$$readBlocks$1$$anonfun$2.apply(TorrentBroadcast.scala:138)
+    at org.apache.spark.broadcast.TorrentBroadcast$$anonfun$org$apache$spark$broadcast$TorrentBroadcast$$readBlocks$1$$anonfun$2.apply(TorrentBroadcast.scala:138)
+...
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I don't get much information from this message, and searching for this error yields a variety of threads with half solved solutions.
 My hunch is this message pops up for a variety of issues.
 What's even more strange is that this function runs successfully when we read local data using a SQLContext.&lt;/p&gt;
-&lt;h1 id="fixes"&gt;Fixes?&lt;/h1&gt;
+&lt;h1&gt;Fixes?&lt;/h1&gt;
 &lt;p&gt;I dug in for a while and I found two possible solutions.&lt;/p&gt;
 &lt;p&gt;Instead of calling generateCrossSectional, we can just inline the meat of the function and everything works.
 This isn't a great solution, because this function is going to grow over the next month and I don't want to maintain the behemoth. &lt;/p&gt;
 &lt;p&gt;After a few refactors, I found that the function will run if I change the scope of the HiveContext val.
 Take a look at &lt;a href="https://github.com/harterrt/spark-failure/blob/master/fixed.scala"&gt;this solution&lt;/a&gt;, which successfully runs.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
 
 &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.sql.hive.HiveContext&lt;/span&gt;
@@ -675,7 +850,7 @@ Take a look at &lt;a href="https://github.com/harterrt/spark-failure/blob/master
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;This solution isn't totally gratifying since I'm still unclear on what's causing the error, but I'm stopping here.
 The cluster this was tested on is still running Spark 1.6, which apparently has some known issues.
-Once we upgrade to 2.0 I may take another look.&lt;/p&gt;</summary><category term="spark"></category><category term="scala"></category></entry></feed>
+Once we upgrade to 2.0 I may take another look.&lt;/p&gt;</content><category term="spark"></category><category term="scala"></category></entry></feed>
