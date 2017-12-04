@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-11-30T00:00:00-08:00</updated><entry><title>OKRs and 4DX</title><link href="https://blog.harterrt.com/okrs_and_4dx.html" rel="alternate"></link><published>2017-11-30T00:00:00-08:00</published><updated>2017-11-30T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-11-30:/okrs_and_4dx.html</id><summary type="html">&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-04T00:00:00-08:00</updated><entry><title>Submission Date vs Activity Date</title><link href="https://blog.harterrt.com/dates.html" rel="alternate"></link><published>2017-12-04T00:00:00-08:00</published><updated>2017-12-04T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-04:/dates.html</id><summary type="html">&lt;p&gt;My comments on
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
+started to get long,
+so I started untangling my thoughts here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;the bug&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We experimented with using &lt;code&gt;activity_date&lt;/code&gt; instead of &lt;code&gt;submission_date&lt;/code&gt;
+when developing the &lt;code&gt;clients_daily&lt;/code&gt; etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize against …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;My comments on
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
+started to get long,
+so I started untangling my thoughts here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;the bug&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We experimented with using &lt;code&gt;activity_date&lt;/code&gt; instead of &lt;code&gt;submission_date&lt;/code&gt;
+when developing the &lt;code&gt;clients_daily&lt;/code&gt; etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize against in the future. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Summary of the problem&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;activity_date&lt;/code&gt; is generally preferable to &lt;code&gt;submission_date&lt;/code&gt;
+because it's closer to what we actually want to measure.
+There's a delay between user activity and us receiving the data.
+:chutten has some
+great analysis&lt;a href="https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/"&gt;[1]&lt;/a&gt;
+on the empirical difference between submission and activity dates,
+if you want to read more.
+95% of pings are received within two days of the actual activity 
+&lt;a href="https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/"&gt;[2]&lt;/a&gt;,
+but that means using 
+&lt;strong&gt;&lt;code&gt;submission_date&lt;/code&gt; "smears" data between today and yesterday&lt;/strong&gt; (mostly).&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;&lt;code&gt;submission_date&lt;/code&gt; is much easier to work with computationally&lt;/strong&gt;.
+When we partition by &lt;code&gt;submission_date&lt;/code&gt;,
+most jobs only need to process one day of data at a time.
+This makes it much easier to continuously update datasets and backfill missing data.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;clients_daily&lt;/code&gt; is currently limited to 6 months of historical data
+because the &lt;strong&gt;entire dataset needs to be regenerated every day&lt;/strong&gt;.
+This is inconvenient and causes real limitations when using the dataset [3].
+The job takes between 90 and 120 minutes to run and currently finishes near 9:00 UTC.
+Adding more data to this job will push that completion time back,
+meaning the data will be unavailable for the first few working hours every day.
+Eew.&lt;/p&gt;
+&lt;h2&gt;Solutions&lt;/h2&gt;
+&lt;p&gt;I see three possible options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Standardize to &lt;code&gt;submission_date&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Standardize to &lt;code&gt;activity_date&lt;/code&gt; and try to mitigate the performance losses&lt;/li&gt;
+&lt;li&gt;Allow both, but provide guidance for when to use each configuration&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So far, the data engineering team has strongly recommended using &lt;code&gt;submission_date&lt;/code&gt;.
+The difference between &lt;code&gt;submission_date&lt;/code&gt; and &lt;code&gt;activity_date&lt;/code&gt;
+has become even smaller with our team's work on ping sender
+&lt;a href="https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/"&gt;[4]&lt;/a&gt;.
+Without a strong counter argument, I recommend continuing with &lt;code&gt;submission_date&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If we do have a strong reason to continue keying datasets by &lt;code&gt;activity_date&lt;/code&gt;,
+I recommend only using &lt;code&gt;activity_date&lt;/code&gt; on "small" datasets.
+These are datasets built over a sample of our data,
+build over a rarer type of ping (e.g. not main pings),
+or heavily aggregated (e.g. to country-day).
+Someone should provide documentation on when &lt;code&gt;activity_date&lt;/code&gt; is [un]necessary
+to be included in &lt;a href="https://docs.telemetry.mozilla.com"&gt;docs.tmo&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/&lt;/li&gt;
+&lt;li&gt;https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/&lt;/li&gt;
+&lt;li&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=1414044&lt;/li&gt;
+&lt;li&gt;https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/&lt;/li&gt;
+&lt;/ol&gt;</content></entry><entry><title>OKRs and 4DX</title><link href="https://blog.harterrt.com/okrs_and_4dx.html" rel="alternate"></link><published>2017-11-30T00:00:00-08:00</published><updated>2017-11-30T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-11-30:/okrs_and_4dx.html</id><summary type="html">&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
 &lt;p&gt;Earlier this year,
 my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.

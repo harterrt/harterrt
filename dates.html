@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; Submission Date vs Activity Date  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/dates.html">Submission Date vs Activity Date</a></h1>
+  </div>
+  <div class="article_text">
+    <p>My comments on
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">Bug 1422892</a>
+started to get long,
+so I started untangling my thoughts here.</p>
+<hr>
+<p>From
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">the bug</a>:</p>
+<blockquote>
+<p>We experimented with using <code>activity_date</code> instead of <code>submission_date</code>
+when developing the <code>clients_daily</code> etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize against in the future. </p>
+</blockquote>
+<h2>Summary of the problem</h2>
+<p><code>activity_date</code> is generally preferable to <code>submission_date</code>
+because it's closer to what we actually want to measure.
+There's a delay between user activity and us receiving the data.
+:chutten has some
+great analysis<a href="https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/">[1]</a>
+on the empirical difference between submission and activity dates,
+if you want to read more.
+95% of pings are received within two days of the actual activity 
+<a href="https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/">[2]</a>,
+but that means using 
+<strong><code>submission_date</code> "smears" data between today and yesterday</strong> (mostly).</p>
+<p>However, <strong><code>submission_date</code> is much easier to work with computationally</strong>.
+When we partition by <code>submission_date</code>,
+most jobs only need to process one day of data at a time.
+This makes it much easier to continuously update datasets and backfill missing data.</p>
+<p><code>clients_daily</code> is currently limited to 6 months of historical data
+because the <strong>entire dataset needs to be regenerated every day</strong>.
+This is inconvenient and causes real limitations when using the dataset [3].
+The job takes between 90 and 120 minutes to run and currently finishes near 9:00 UTC.
+Adding more data to this job will push that completion time back,
+meaning the data will be unavailable for the first few working hours every day.
+Eew.</p>
+<h2>Solutions</h2>
+<p>I see three possible options:</p>
+<ol>
+<li>Standardize to <code>submission_date</code></li>
+<li>Standardize to <code>activity_date</code> and try to mitigate the performance losses</li>
+<li>Allow both, but provide guidance for when to use each configuration</li>
+</ol>
+<p>So far, the data engineering team has strongly recommended using <code>submission_date</code>.
+The difference between <code>submission_date</code> and <code>activity_date</code>
+has become even smaller with our team's work on ping sender
+<a href="https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/">[4]</a>.
+Without a strong counter argument, I recommend continuing with <code>submission_date</code>.</p>
+<p>If we do have a strong reason to continue keying datasets by <code>activity_date</code>,
+I recommend only using <code>activity_date</code> on "small" datasets.
+These are datasets built over a sample of our data,
+build over a rarer type of ping (e.g. not main pings),
+or heavily aggregated (e.g. to country-day).
+Someone should provide documentation on when <code>activity_date</code> is [un]necessary
+to be included in <a href="https://docs.telemetry.mozilla.com">docs.tmo</a>.</p>
+<hr>
+<ol>
+<li>https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/</li>
+<li>https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/</li>
+<li>https://bugzilla.mozilla.org/show_bug.cgi?id=1414044</li>
+<li>https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/</li>
+</ol>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Mon 04 December 2017</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "dates.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

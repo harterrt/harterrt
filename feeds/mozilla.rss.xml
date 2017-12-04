@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 30 Nov 2017 00:00:00 -0800</lastBuildDate><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 04 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Submission Date vs Activity Date</title><link>https://blog.harterrt.com/dates.html</link><description>&lt;p&gt;My comments on
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
+started to get long,
+so I started untangling my thoughts here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;From
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;the bug&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We experimented with using &lt;code&gt;activity_date&lt;/code&gt; instead of &lt;code&gt;submission_date&lt;/code&gt;
+when developing the &lt;code&gt;clients_daily&lt;/code&gt; etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize against …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 04 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-04:/dates.html</guid></item><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
 &lt;p&gt;Earlier this year,
 my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.
