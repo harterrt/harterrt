@@ -34,7 +34,7 @@ Experiments are a **tool to make decisions easier** or less ambiguous.
 
 Sometimes, this isn't the way it works though.
 It's easy to let data confuse the situation.
-One way to avoid confusion is maintining a **curated set of decision metrics**.
+One way to avoid confusion is maintaining a **curated set of decision metrics**.
 These metrics will not be the only data you review,
 but they will give a high level understanding of how the experiment impacts the product.
 
@@ -83,31 +83,40 @@ if our decision metrics are uninterpretable.
 TODO: Post: We should probably step away from histograms for this reason. 
 -->
 
-## Archivable
+## Decision Reports
 
----
+Experiment results should be **easy to export in plain text**.
+This allows us to capture a snapshot from the experiment.
+Data doesn't always age well,
+so it's important to record what we were looking at when we made a decision.
+This will make it easier for us to overturn a decision if the data changes.
 
-<sup>1</sup> Source: https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007
+For the foreseeable future,
+experiment results will need review to be actionable.
+Accordingly, we should include our
+**interpretation with the experiment results**.
+This is another advantage of exporting results in plain text;
+Plain text is easy to annotate.
 
----
-For the forseeable future, experiments will need review to be actionable.
-Accordingly, **experiment results should be easy to annotate**.
+There will always be context not captured by the experiment.
+It's important that we 
+**capture all of the reasoning behind a decision in one place**.
+The final result of an experiment should be a **Decision Report**.
+The Decision Report should be immutable,
+though we may want to be able to append notes.
+Decision reports may summarize more than one experiment.
 
-The reasoning behind experimental decisions doesn't age well.
-It's possible that experiment results from today will not be consistent 5 years from now.
-We should be **able to revisit past decisions and why we made them**.
-
-
-**Experimental decisions should be consistent**.
+<!---
+TODO: post Experimental decisions should be consistent
 
 We need to look at a consistent set of metrics.
 
 E.g. the launch/unlaunch loop.
-Oscillating between two changes:
-one increases URIs
-one increases usage hours
 
-**Look for what shouldn't change**.
+Not included here because it's more of a culture thing
+when looked at as an addition to these changes.
+-->
+---
 
-Experiments are very similar to releases.
-We should have the same metrics available for both.
+<sup>1</sup> Source: https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007
+
