@@ -1,5 +1,5 @@
-title: Experimentation
-slug: experimentation
+title: Desirable features of experimentation tools
+slug: good_experiment_tools
 date: 2017-12-05
 tags: experimentation
 status: draft
@@ -12,7 +12,7 @@ we're quickly climbing up our
 [Data Science Hierarchy of Needs](https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png)
 <sup>1</sup>.
 I think the next big step for our data team
-is to **make experimentation feel natural** at Firefox.
+is to **make experimentation feel natural**.
 There are a few components to this (e.g. training or culture)
 but improving the **tooling is going to be important**.
 Today, running an experiment is possible but it's not easy.
@@ -43,6 +43,7 @@ Curating decision metrics:
 * limits the number of metrics you need to review
 * reduces false positives and increases experimental power
 * provides impact measures that are consistent between experiments
+* clarifies what's important to leadership
 
 <!---
 TODO: Post on curating decision metrics
@@ -85,7 +86,7 @@ TODO: Post: We should probably step away from histograms for this reason.
 
 ## Decision Reports
 
-Experiment results should be **easy to export in plain text**.
+Experiment results should be **easy to export to plain text**.
 This allows us to capture a snapshot from the experiment.
 Data doesn't always age well,
 so it's important to record what we were looking at when we made a decision.
