@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 04 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Submission Date vs Activity Date</title><link>https://blog.harterrt.com/dates.html</link><description>&lt;p&gt;My comments on
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 05 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;At Mozilla,
+we're quickly climbing up our
+&lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;
+&lt;sup&gt;1&lt;/sup&gt;.
+I think the next big step for our data team
+is to &lt;strong&gt;make experimentation feel natural&lt;/strong&gt;.
+There are a few components to this (e.g. training or culture)
+but improving the &lt;strong&gt;tooling is going to be …&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 05 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-05:/good_experiment_tools.html</guid><category>experimentation</category></item><item><title>Submission Date vs Activity Date</title><link>https://blog.harterrt.com/dates.html</link><description>&lt;p&gt;My comments on
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
 started to get long,
 so I started untangling my thoughts here.&lt;/p&gt;

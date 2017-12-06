@@ -1,5 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-04T00:00:00-08:00</updated><entry><title>Submission Date vs Activity Date</title><link href="https://blog.harterrt.com/dates.html" rel="alternate"></link><published>2017-12-04T00:00:00-08:00</published><updated>2017-12-04T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-04:/dates.html</id><summary type="html">&lt;p&gt;My comments on
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-05T00:00:00-08:00</updated><entry><title>Desirable features of experimentation tools</title><link href="https://blog.harterrt.com/good_experiment_tools.html" rel="alternate"></link><published>2017-12-05T00:00:00-08:00</published><updated>2017-12-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-05:/good_experiment_tools.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;At Mozilla,
+we're quickly climbing up our
+&lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;
+&lt;sup&gt;1&lt;/sup&gt;.
+I think the next big step for our data team
+is to &lt;strong&gt;make experimentation feel natural&lt;/strong&gt;.
+There are a few components to this (e.g. training or culture)
+but improving the &lt;strong&gt;tooling is going to be …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;At Mozilla,
+we're quickly climbing up our
+&lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;
+&lt;sup&gt;1&lt;/sup&gt;.
+I think the next big step for our data team
+is to &lt;strong&gt;make experimentation feel natural&lt;/strong&gt;.
+There are a few components to this (e.g. training or culture)
+but improving the &lt;strong&gt;tooling is going to be important&lt;/strong&gt;.
+Today, running an experiment is possible but it's not easy.&lt;/p&gt;
+&lt;p&gt;I want to spend a significant part of 2018 on this goal,
+so you'll probably see a bunch of
+&lt;a href="/tag/experimentation.html"&gt;posts on experimentation&lt;/a&gt;
+soon.&lt;/p&gt;
+&lt;p&gt;This article is meant to be an overview of
+a few principles I'd like to be reflected in our experimentation tools.
+&lt;strong&gt;I stopped myself from writing more&lt;/strong&gt; so I could get the article out.
+Send me a ping or an email if you're interested in more detail
+and I'll bump the priority.&lt;/p&gt;
+&lt;h2&gt;Decision Metrics&lt;/h2&gt;
+&lt;p&gt;An experiment is a &lt;strong&gt;tool to make decisions easier&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Sometimes, this isn't the way it works though.
+It's easy to let data confuse the situation.
+One way to avoid confusion is maintaining a &lt;strong&gt;curated set of decision metrics&lt;/strong&gt;.
+These metrics will not be the only data you review,
+but they will give a high level understanding of how the experiment impacts the product.&lt;/p&gt;
+&lt;p&gt;Curating decision metrics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;limits the number of metrics you need to review&lt;/li&gt;
+&lt;li&gt;reduces false positives and increases experimental power&lt;/li&gt;
+&lt;li&gt;provides impact measures that are consistent between experiments&lt;/li&gt;
+&lt;li&gt;clarifies what's important to leadership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I plan on explanding this section into its own post.&lt;/p&gt;
+&lt;!---
+TODO: Post on curating decision metrics
+
+Comment on the above bullets and how to use supplementary metrics.
+E.g. maybe URIs is neutral, but your custom metric shows big changes. That's fine
+--&gt;
+
+&lt;h2&gt;Interpretability&lt;/h2&gt;
+&lt;p&gt;We should &lt;strong&gt;value interpretability in our decision metrics&lt;/strong&gt;.
+This sounds obvious, but it's surprisingly hard to do.&lt;/p&gt;
+&lt;p&gt;When reviewing our results, we should &lt;strong&gt;always consider practical significance&lt;/strong&gt;.
+Patrick Riley explains this beautifully in
+&lt;a href="http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html"&gt;Practical advice for analysis of large, complex data sets&lt;/a&gt;
+:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With a large volume of data,
+ it can be tempting to focus solely on statistical significance
+ or to hone in on the details of every bit of data.
+ But you need to ask yourself,
+ “Even if it is true that value X is 0.1% more than value Y, does it matter?”&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;On the flip side, you sometimes have a small volume of data.
+ Many changes will not look statistically significant but that is different than claiming it is “neutral”.
+ You must ask yourself 
+ “How likely is it that there is still a practically significant change”? &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One of the major problems with p-values
+is that they do not report practical significance.
+Also note that practical significance is difficult to assess
+if our decision metrics are uninterpretable.&lt;/p&gt;
+&lt;p&gt;More on this coming soon.
+&lt;!---
+TODO: Post: We should probably step away from histograms for this reason. 
+--&gt;&lt;/p&gt;
+&lt;h2&gt;Decision Reports&lt;/h2&gt;
+&lt;p&gt;Experiment results should be &lt;strong&gt;easy to export to plain text&lt;/strong&gt;.
+This allows us to capture a snapshot from the experiment.
+Data doesn't always age well,
+so it's important to record what we were looking at when we made a decision.
+This will make it easier for us to overturn a decision if the data changes.&lt;/p&gt;
+&lt;p&gt;For the foreseeable future,
+experiment results will need review to be actionable.
+Accordingly, we should include our
+&lt;strong&gt;interpretation with the experiment results&lt;/strong&gt;.
+This is another advantage of exporting results in plain text;
+Plain text is easy to annotate.&lt;/p&gt;
+&lt;p&gt;There will always be context not captured by the experiment.
+It's important that we 
+&lt;strong&gt;capture all of the reasoning behind a decision in one place&lt;/strong&gt;.
+The final result of an experiment should be a &lt;strong&gt;Decision Report&lt;/strong&gt;.
+The Decision Report should be immutable,
+though we may want to be able to append notes.
+Decision reports may summarize more than one experiment.&lt;/p&gt;
+&lt;!---
+TODO: post Experimental decisions should be consistent
+
+We need to look at a consistent set of metrics.
+
+E.g. the launch/unlaunch loop.
+
+Not included here because it's more of a culture thing
+when looked at as an addition to these changes.
+--&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Source: https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007&lt;/p&gt;</content><category term="experimentation"></category></entry><entry><title>Submission Date vs Activity Date</title><link href="https://blog.harterrt.com/dates.html" rel="alternate"></link><published>2017-12-04T00:00:00-08:00</published><updated>2017-12-04T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-04:/dates.html</id><summary type="html">&lt;p&gt;My comments on
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
 started to get long,
 so I started untangling my thoughts here.&lt;/p&gt;
