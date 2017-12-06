@@ -30,7 +30,7 @@ and I'll bump the priority.
 
 ## Decision Metrics
 
-Experiments are a **tool to make decisions easier** or less ambiguous.
+An experiment is a **tool to make decisions easier**.
 
 Sometimes, this isn't the way it works though.
 It's easy to let data confuse the situation.
@@ -45,6 +45,8 @@ Curating decision metrics:
 * provides impact measures that are consistent between experiments
 * clarifies what's important to leadership
 
+I plan on explanding this section into its own post.
+
 <!---
 TODO: Post on curating decision metrics
 
@@ -54,7 +56,7 @@ E.g. maybe URIs is neutral, but your custom metric shows big changes. That's fin
 
 ## Interpretability
 
-We should heavily **value interpretability in our decision metrics**.
+We should **value interpretability in our decision metrics**.
 This sounds obvious, but it's surprisingly hard to do.
 
 When reviewing our results, we should **always consider practical significance**.
@@ -80,6 +82,7 @@ is that they do not report practical significance.
 Also note that practical significance is difficult to assess
 if our decision metrics are uninterpretable.
 
+More on this coming soon.
 <!---
 TODO: Post: We should probably step away from histograms for this reason. 
 -->
