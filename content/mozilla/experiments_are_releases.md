@@ -20,13 +20,13 @@ It's like pulling your hand away from a hot stove.
 This is different from the data we talk about when talking about experiments.
 With experiments, we **purposely avoid looking at early data** to avoid bias.
 Users behave differently on Monday and Friday.
-We don't want to base a decision on data from a holiday.
+We don't want to base a decision soley on data from a holiday.
 When we've gathered all of our data,
 we carefully consider metric movements then make a decision.
 
 Since these use cases are so different,
-we developed our experimentation tools separately from our release tools
-(Mission Control).
+we developed our release tools (Mission Control)
+separately from our experimentation tools.
 We have the [Experiments Viewer](https://github.com/mozilla/missioncontrol)
 and the associated ETL jobs.
 Now we're working on a new front-end called Test Tube.
@@ -42,16 +42,17 @@ Without these reactive metrics, it takes weeks to identify bugs.
 The more I think about it,
 the more it seems like experiments are actually a type of release.
 I can't think of one release metric I wouldn't want to see for an experiment.
+This makes me think we should expand our release tools to handle experiments as well.
 
-When I first started thinking about this,
-I proposed "all releases are a type of experiment".
-I'm no longer sure this is true, though.
+This does not mean all of our decision metrics need to be real-time.
+In fact, real time decision metrics is probably undesirable.
+We want some top-level vital signs - e.g. crashes and usage hours.
+
+When I first started thinking about this I proposed,
+"all releases are a type of experiment".
+I'm no longer sure this is true.
 I think we **could modify our releases to be experiments**,
 but our current release process doesn't look like an experiment to me.
 For example, we could keep a control branch while we roll-out a new release.
 This would allow us to catch regressions to our decision metrics
 (e.g. a drop in URI count).
-
-This does not mean all of our decision metrics need to be real-time.
-In fact, real time decision metrics is probably undesirable.
-We want some top-level vital signs - e.g. crashes and usage hours.
