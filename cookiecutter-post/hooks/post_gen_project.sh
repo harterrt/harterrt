@@ -1,3 +1,5 @@
 #!/bin/bash
 
-git checkout -b post-{{cookiecutter.slug}}
+branch="post-{{cookiecutter.slug}}" &&
+git checkout -b $branch &&
+git push -u origin $branch
