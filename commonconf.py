@@ -43,13 +43,16 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
-            ('Work Snippets', 'https://github.com/harterrt/snippets'),
-            ('Resume', 'resume.pdf'),
-        )
+    ('Work Snippets', 'https://github.com/harterrt/snippets'),
+    ('Resume', 'resume.pdf'),
+    ('Github', 'https://github.com/harterrt'),
+    ('Twitter', 'https://twitter.com/harterrt'),
+    ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
+)
 
 # Small links at the top of the page
 MENUITEMS = (
-            )
+)
 
 # PLUGINS:
 PLUGIN_PATHS = ['./plugins']
@@ -58,9 +61,6 @@ MD_EXTENSIONS = ['toc', 'codehilite','extra']
 
 # Social widget
 # SOCIAL = (
-#           ('github', 'https://github.com/harterrt'),
-#           ('twitter', 'https://twitter.com/harterrt'),
-#           ('linkedin', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
 #          )
 
 # ADD_THIS_ID = 'ra-77hh6723hhjd'
