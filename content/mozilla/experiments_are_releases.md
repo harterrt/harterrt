@@ -2,7 +2,6 @@ title: Experiments are releases
 slug: experiments_are_releases
 date: 2017-12-06
 tags: experimentation
-status: draft
 
 [Mission Control](https://github.com/mozilla/missioncontrol)
 was a major 2017 initiative for the Firefox Data team.
@@ -20,7 +19,7 @@ It's like pulling your hand away from a hot stove.
 This is different from the data we talk about when talking about experiments.
 With experiments, we **purposely avoid looking at early data** to avoid bias.
 Users behave differently on Monday and Friday.
-We don't want to base a decision soley on data from a holiday.
+We don't want to base a decision solely on data from a holiday.
 When we've gathered all of our data,
 we carefully consider metric movements then make a decision.
 
@@ -36,7 +35,7 @@ I've found **we need reactive metrics for experiments** as well.
 Currently, when we release an experiment
 we don't get any feedback on whether the branches are behaving as expected.
 The experiment could be crashing for unexpected reasons,
-or the experiment branch could be identical to control due to a bug.
+or the experiment branch could be identical to control (a null experiment) due to a bug.
 Without these reactive metrics, it takes weeks to identify bugs.
 
 The more I think about it,
@@ -45,7 +44,7 @@ I can't think of one release metric I wouldn't want to see for an experiment.
 This makes me think we should expand our release tools to handle experiments as well.
 
 This does not mean all of our decision metrics need to be real-time.
-In fact, real time decision metrics is probably undesirable.
+In fact, **real time decision metrics are probably undesirable**.
 We want some top-level vital signs - e.g. crashes and usage hours.
 
 When I first started thinking about this I proposed,
@@ -56,3 +55,5 @@ but our current release process doesn't look like an experiment to me.
 For example, we could keep a control branch while we roll-out a new release.
 This would allow us to catch regressions to our decision metrics
 (e.g. a drop in URI count).
+
+Shoot me an email if you think I'm a crazy person or if you think I'm on to something.
