@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 05 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 06 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+was a major 2017 initiative for the Firefox Data team.
+The goal is to provide release managers with near-real-time
+release-health metrics minutes after going public.
+Will has a
+&lt;a href="https://wlach.github.io/blog/2017/10/mission-control/"&gt;great write up here&lt;/a&gt;
+if you want to read more.&lt;/p&gt;
+&lt;p&gt;The key here is that the data has to be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 06 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-06:/experiments_are_releases.html</guid><category>experimentation</category></item><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;At Mozilla,
 we're quickly climbing up our
 &lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;

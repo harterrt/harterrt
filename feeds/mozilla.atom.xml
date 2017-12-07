@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-05T00:00:00-08:00</updated><entry><title>Desirable features of experimentation tools</title><link href="https://blog.harterrt.com/good_experiment_tools.html" rel="alternate"></link><published>2017-12-05T00:00:00-08:00</published><updated>2017-12-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-05:/good_experiment_tools.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-06T00:00:00-08:00</updated><entry><title>Experiments are releases</title><link href="https://blog.harterrt.com/experiments_are_releases.html" rel="alternate"></link><published>2017-12-06T00:00:00-08:00</published><updated>2017-12-06T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-06:/experiments_are_releases.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+was a major 2017 initiative for the Firefox Data team.
+The goal is to provide release managers with near-real-time
+release-health metrics minutes after going public.
+Will has a
+&lt;a href="https://wlach.github.io/blog/2017/10/mission-control/"&gt;great write up here&lt;/a&gt;
+if you want to read more.&lt;/p&gt;
+&lt;p&gt;The key here is that the data has to be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+was a major 2017 initiative for the Firefox Data team.
+The goal is to provide release managers with near-real-time
+release-health metrics minutes after going public.
+Will has a
+&lt;a href="https://wlach.github.io/blog/2017/10/mission-control/"&gt;great write up here&lt;/a&gt;
+if you want to read more.&lt;/p&gt;
+&lt;p&gt;The key here is that the data has to be updated quickly.
+We're trying to &lt;strong&gt;react&lt;/strong&gt; to bad releases so we can roll back the change.
+Once we've bought some time, we can step back and figure out what went wrong.
+It's like pulling your hand away from a hot stove.&lt;/p&gt;
+&lt;p&gt;This is different from the data we talk about when talking about experiments.
+With experiments, we &lt;strong&gt;purposely avoid looking at early data&lt;/strong&gt; to avoid bias.
+Users behave differently on Monday and Friday.
+We don't want to base a decision solely on data from a holiday.
+When we've gathered all of our data,
+we carefully consider metric movements then make a decision.&lt;/p&gt;
+&lt;p&gt;Since these use cases are so different,
+we developed our release tools (Mission Control)
+separately from our experimentation tools.
+We have the &lt;a href="https://github.com/mozilla/missioncontrol"&gt;Experiments Viewer&lt;/a&gt;
+and the associated ETL jobs.
+Now we're working on a new front-end called Test Tube.&lt;/p&gt;
+&lt;p&gt;However, after working with a few experiments,
+I've found &lt;strong&gt;we need reactive metrics for experiments&lt;/strong&gt; as well.
+Currently, when we release an experiment
+we don't get any feedback on whether the branches are behaving as expected.
+The experiment could be crashing for unexpected reasons,
+or the experiment branch could be identical to control (a null experiment) due to a bug.
+Without these reactive metrics, it takes weeks to identify bugs.&lt;/p&gt;
+&lt;p&gt;The more I think about it,
+the more it seems like experiments are actually a type of release.
+I can't think of one release metric I wouldn't want to see for an experiment.
+This makes me think we should expand our release tools to handle experiments as well.&lt;/p&gt;
+&lt;p&gt;This does not mean all of our decision metrics need to be real-time.
+In fact, &lt;strong&gt;real time decision metrics are probably undesirable&lt;/strong&gt;.
+We want some top-level vital signs - e.g. crashes and usage hours.&lt;/p&gt;
+&lt;p&gt;When I first started thinking about this I proposed,
+"all releases are a type of experiment".
+I'm no longer sure this is true.
+I think we &lt;strong&gt;could modify our releases to be experiments&lt;/strong&gt;,
+but our current release process doesn't look like an experiment to me.
+For example, we could keep a control branch while we roll-out a new release.
+This would allow us to catch regressions to our decision metrics
+(e.g. a drop in URI count).&lt;/p&gt;
+&lt;p&gt;Shoot me an email if you think I'm a crazy person or if you think I'm on to something.&lt;/p&gt;</content><category term="experimentation"></category></entry><entry><title>Desirable features of experimentation tools</title><link href="https://blog.harterrt.com/good_experiment_tools.html" rel="alternate"></link><published>2017-12-05T00:00:00-08:00</published><updated>2017-12-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-05:/good_experiment_tools.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;At Mozilla,
 we're quickly climbing up our
 &lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;

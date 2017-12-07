@@ -18,10 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
+<meta name="keywords" content="experimentation">
 
   <title>
     blog.harterrt.com
-&ndash; Tag: experimentation  </title>
+&ndash; Experiments are releases  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -58,7 +59,6 @@
       <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
-&gt; Tag: experimentation
       </p>
     </header>
 
@@ -74,32 +74,67 @@ release-health metrics minutes after going public.
 Will has a
 <a href="https://wlach.github.io/blog/2017/10/mission-control/">great write up here</a>
 if you want to read more.</p>
-<p>The key here is that the data has to be …</p>
+<p>The key here is that the data has to be updated quickly.
+We're trying to <strong>react</strong> to bad releases so we can roll back the change.
+Once we've bought some time, we can step back and figure out what went wrong.
+It's like pulling your hand away from a hot stove.</p>
+<p>This is different from the data we talk about when talking about experiments.
+With experiments, we <strong>purposely avoid looking at early data</strong> to avoid bias.
+Users behave differently on Monday and Friday.
+We don't want to base a decision solely on data from a holiday.
+When we've gathered all of our data,
+we carefully consider metric movements then make a decision.</p>
+<p>Since these use cases are so different,
+we developed our release tools (Mission Control)
+separately from our experimentation tools.
+We have the <a href="https://github.com/mozilla/missioncontrol">Experiments Viewer</a>
+and the associated ETL jobs.
+Now we're working on a new front-end called Test Tube.</p>
+<p>However, after working with a few experiments,
+I've found <strong>we need reactive metrics for experiments</strong> as well.
+Currently, when we release an experiment
+we don't get any feedback on whether the branches are behaving as expected.
+The experiment could be crashing for unexpected reasons,
+or the experiment branch could be identical to control (a null experiment) due to a bug.
+Without these reactive metrics, it takes weeks to identify bugs.</p>
+<p>The more I think about it,
+the more it seems like experiments are actually a type of release.
+I can't think of one release metric I wouldn't want to see for an experiment.
+This makes me think we should expand our release tools to handle experiments as well.</p>
+<p>This does not mean all of our decision metrics need to be real-time.
+In fact, <strong>real time decision metrics are probably undesirable</strong>.
+We want some top-level vital signs - e.g. crashes and usage hours.</p>
+<p>When I first started thinking about this I proposed,
+"all releases are a type of experiment".
+I'm no longer sure this is true.
+I think we <strong>could modify our releases to be experiments</strong>,
+but our current release process doesn't look like an experiment to me.
+For example, we could keep a control branch while we roll-out a new release.
+This would allow us to catch regressions to our decision metrics
+(e.g. a drop in URI count).</p>
+<p>Shoot me an email if you think I'm a crazy person or if you think I'm on to something.</p>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/good_experiment_tools.html">Desirable features of experimentation tools</a></h1>
+  <div class="article_meta">
+    <p>Posted on: Wed 06 December 2017</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+ &ndash; Tags:
+      <a href="https://blog.harterrt.com/tag/experimentation.html">experimentation</a>    </p>
   </div>
-  <div class="article_text">
-    <h2>Introduction</h2>
-<p>At Mozilla,
-we're quickly climbing up our
-<a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png">Data Science Hierarchy of Needs</a>
-<sup>1</sup>.
-I think the next big step for our data team
-is to <strong>make experimentation feel natural</strong>.
-There are a few components to this (e.g. training or culture)
-but improving the <strong>tooling is going to be …</strong></p>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "experiments_are_releases.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
   </div>
+
 </article>
 
-<footer>
-<div id="paginator">
-
-</div>
-</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
