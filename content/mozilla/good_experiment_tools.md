@@ -1,6 +1,6 @@
 title: Desirable features of experimentation tools
 slug: good_experiment_tools
-date: 2017-12-05
+date: 2017-12-06
 tags: experimentation
 
 

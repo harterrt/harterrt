@@ -1,6 +1,6 @@
 title: Experiments are releases
 slug: experiments_are_releases
-date: 2017-12-06
+date: 2017-12-07
 tags: experimentation
 
 [Mission Control](https://github.com/mozilla/missioncontrol)
