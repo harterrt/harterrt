@@ -4,6 +4,8 @@ date: 2017-12-08
 
 I finally got a chance to scratch an itch today.
 
+## Problem
+
 When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.
 I usually either step away from the computer
@@ -34,18 +36,26 @@ and in 10 seconds, I'll get a ping from `harterbot` on slack.
 Setting this up on a remote cluster would be trivially easy as well.
 You just need to be confident in storing a Slack API token.
 
+## Action
+
 Here's how I did this:
 
-1. Create a new bot: https://my.slack.com/services/new/bot
-2. Grab the API token for your new bot
-3. Install slack-cli with `pip install slack-cli`
-4. Instantiate your `slack-cli` installation by issuing a test command:
+1. [Create a new bot](https://my.slack.com/services/new/bot),
+   I called mine `harterbot`.
+   Save the API token for later.
+2. Install slack-cli with `pip install slack-cli`
+3. Instantiate your `slack-cli` installation by issuing a test command:
    `slack-cli -d {{YOUR USERNAME}} "Test message"`.
    This will ask for the API token from step 2.
-5. (Optional) Add a helper alias to your `.bashrc`:
+   You should see a new message from your bot.
+4. (Optional) Add a helper alias to your `.bashrc`:
    `slack="slack-cli -d {{YOUR USERNAME}} -- "`
 
 Boom, you should be good to go!
 
+Now I'm thinking we can generate an ATMO bot with shared credentials,
+then there's no need to instantiate a new machine with your credentials.
+
+For reference,
 Slack's bot documentation is here:
 [here](https://api.slack.com/bot-users),
