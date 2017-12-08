@@ -48,8 +48,14 @@ Here's how I did this:
    `slack-cli -d {{YOUR USERNAME}} "Test message"`.
    This will ask for the API token from step 2.
    You should see a new message from your bot.
-4. (Optional) Add a helper alias to your `.bashrc`:
-   `slack="slack-cli -d {{YOUR USERNAME}} -- "`
+4. (Optional) Add the following helper function to your `.bashrc`:
+
+```bash
+# Ping me with an alert on Slack
+slack () {
+    slack-cli -d {{YOUR SLACK HANDLE}} -- "$*";
+}
+```
 
 Boom, you should be good to go!
 
