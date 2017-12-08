@@ -44,9 +44,15 @@ You just need to be confident in storing a Slack API token.&lt;/p&gt;
    &lt;code&gt;slack-cli -d {{YOUR USERNAME}} "Test message"&lt;/code&gt;.
    This will ask for the API token from step 2.
    You should see a new message from your bot.&lt;/li&gt;
-&lt;li&gt;(Optional) Add a helper alias to your &lt;code&gt;.bashrc&lt;/code&gt;:
-   &lt;code&gt;slack="slack-cli -d {{YOUR USERNAME}} -- "&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;(Optional) Add the following helper function to your &lt;code&gt;.bashrc&lt;/code&gt;:&lt;/li&gt;
 &lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Ping me with an alert on Slack&lt;/span&gt;
+slack &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    slack-cli -d &lt;span class="o"&gt;{{&lt;/span&gt;YOUR SLACK HANDLE&lt;span class="o"&gt;}}&lt;/span&gt; -- &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$*&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Boom, you should be good to go!&lt;/p&gt;
 &lt;p&gt;Now I'm thinking we can generate an ATMO bot with shared credentials,
 then there's no need to instantiate a new machine with your credentials.&lt;/p&gt;
