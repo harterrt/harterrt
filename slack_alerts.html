@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; CLI for alerts via Slack  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/slack_alerts.html">CLI for alerts via Slack</a></h1>
+  </div>
+  <div class="article_text">
+    <p>I finally got a chance to scratch an itch today.</p>
+<h2>Problem</h2>
+<p>When working with bigger ETL jobs,
+I frequently run into jobs that take hours to run.
+I usually either step away from the computer
+or work on something less important while the job runs.
+I <strong>don't have a good way to get an alert when the job completes</strong>.
+So instead of going back to my important work,
+I keep toying with 
+<a href="http://news.ycombinator.com">whatever task I picked up</a> to fill the dead time.
+I only get back to my primary task after I remember to check on it.</p>
+<p>This is easier to fix when you're developing locally,
+but I'm frequently developing jobs on EC2 instances via ATMO.
+<strong>There's no good way to forward alerts to my local system</strong>.</p>
+<p>Even then, I frequently step away from the computer to take a break while the job runs.
+Sometimes the job stops after 10m instead of the usual execution of ~120m.
+That usually means I had a command line flag set wrong
+or that I fat-fingered a file name.
+It would be great to be able to 
+<strong>see this alert immediately, even if I'm not at my computer,</strong>
+instead of waiting an hour until I check on my machine again.</p>
+<p>The fix was crazy simple.
+I created a little slack bot, installed a slack-cli, and added a bash command.
+Now I can just issue a command like:
+<code>sleep 10; slack Your task just completed.</code>
+and in 10 seconds, I'll get a ping from <code>harterbot</code> on slack.
+Setting this up on a remote cluster would be trivially easy as well.
+You just need to be confident in storing a Slack API token.</p>
+<h2>Action</h2>
+<p>Here's how I did this:</p>
+<ol>
+<li><a href="https://my.slack.com/services/new/bot">Create a new bot</a>,
+   I called mine <code>harterbot</code>.
+   Save the API token for later.</li>
+<li>Install slack-cli with <code>pip install slack-cli</code></li>
+<li>Instantiate your <code>slack-cli</code> installation by issuing a test command:
+   <code>slack-cli -d {{YOUR USERNAME}} "Test message"</code>.
+   This will ask for the API token from step 2.
+   You should see a new message from your bot.</li>
+<li>(Optional) Add a helper alias to your <code>.bashrc</code>:
+   <code>slack="slack-cli -d {{YOUR USERNAME}} -- "</code></li>
+</ol>
+<p>Boom, you should be good to go!</p>
+<p>Now I'm thinking we can generate an ATMO bot with shared credentials,
+then there's no need to instantiate a new machine with your credentials.</p>
+<p>For reference,
+Slack's bot documentation is here:
+<a href="https://api.slack.com/bot-users">here</a>,</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Fri 08 December 2017</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+
+  <div id="article_comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "slack_alerts.html";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//blog-harterrt-com.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

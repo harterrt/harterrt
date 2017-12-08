@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 07 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;When working with bigger ETL jobs,
+I frequently run into jobs that take hours to run.
+I usually either step away from the computer
+or work on something less important while the job runs.
+I &lt;strong&gt;don't have a good …&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-08:/slack_alerts.html</guid></item><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
 was a major 2017 initiative for the Firefox Data team.
 The goal is to provide release managers with near-real-time
 release-health metrics minutes after going public.

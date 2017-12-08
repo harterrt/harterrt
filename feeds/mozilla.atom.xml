@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-07T00:00:00-08:00</updated><entry><title>Experiments are releases</title><link href="https://blog.harterrt.com/experiments_are_releases.html" rel="alternate"></link><published>2017-12-07T00:00:00-08:00</published><updated>2017-12-07T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-07:/experiments_are_releases.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-08T00:00:00-08:00</updated><entry><title>CLI for alerts via Slack</title><link href="https://blog.harterrt.com/slack_alerts.html" rel="alternate"></link><published>2017-12-08T00:00:00-08:00</published><updated>2017-12-08T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-08:/slack_alerts.html</id><summary type="html">&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;When working with bigger ETL jobs,
+I frequently run into jobs that take hours to run.
+I usually either step away from the computer
+or work on something less important while the job runs.
+I &lt;strong&gt;don't have a good …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;When working with bigger ETL jobs,
+I frequently run into jobs that take hours to run.
+I usually either step away from the computer
+or work on something less important while the job runs.
+I &lt;strong&gt;don't have a good way to get an alert when the job completes&lt;/strong&gt;.
+So instead of going back to my important work,
+I keep toying with 
+&lt;a href="http://news.ycombinator.com"&gt;whatever task I picked up&lt;/a&gt; to fill the dead time.
+I only get back to my primary task after I remember to check on it.&lt;/p&gt;
+&lt;p&gt;This is easier to fix when you're developing locally,
+but I'm frequently developing jobs on EC2 instances via ATMO.
+&lt;strong&gt;There's no good way to forward alerts to my local system&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Even then, I frequently step away from the computer to take a break while the job runs.
+Sometimes the job stops after 10m instead of the usual execution of ~120m.
+That usually means I had a command line flag set wrong
+or that I fat-fingered a file name.
+It would be great to be able to 
+&lt;strong&gt;see this alert immediately, even if I'm not at my computer,&lt;/strong&gt;
+instead of waiting an hour until I check on my machine again.&lt;/p&gt;
+&lt;p&gt;The fix was crazy simple.
+I created a little slack bot, installed a slack-cli, and added a bash command.
+Now I can just issue a command like:
+&lt;code&gt;sleep 10; slack Your task just completed.&lt;/code&gt;
+and in 10 seconds, I'll get a ping from &lt;code&gt;harterbot&lt;/code&gt; on slack.
+Setting this up on a remote cluster would be trivially easy as well.
+You just need to be confident in storing a Slack API token.&lt;/p&gt;
+&lt;h2&gt;Action&lt;/h2&gt;
+&lt;p&gt;Here's how I did this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://my.slack.com/services/new/bot"&gt;Create a new bot&lt;/a&gt;,
+   I called mine &lt;code&gt;harterbot&lt;/code&gt;.
+   Save the API token for later.&lt;/li&gt;
+&lt;li&gt;Install slack-cli with &lt;code&gt;pip install slack-cli&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instantiate your &lt;code&gt;slack-cli&lt;/code&gt; installation by issuing a test command:
+   &lt;code&gt;slack-cli -d {{YOUR USERNAME}} "Test message"&lt;/code&gt;.
+   This will ask for the API token from step 2.
+   You should see a new message from your bot.&lt;/li&gt;
+&lt;li&gt;(Optional) Add a helper alias to your &lt;code&gt;.bashrc&lt;/code&gt;:
+   &lt;code&gt;slack="slack-cli -d {{YOUR USERNAME}} -- "&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Boom, you should be good to go!&lt;/p&gt;
+&lt;p&gt;Now I'm thinking we can generate an ATMO bot with shared credentials,
+then there's no need to instantiate a new machine with your credentials.&lt;/p&gt;
+&lt;p&gt;For reference,
+Slack's bot documentation is here:
+&lt;a href="https://api.slack.com/bot-users"&gt;here&lt;/a&gt;,&lt;/p&gt;</content></entry><entry><title>Experiments are releases</title><link href="https://blog.harterrt.com/experiments_are_releases.html" rel="alternate"></link><published>2017-12-07T00:00:00-08:00</published><updated>2017-12-07T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-07:/experiments_are_releases.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
 was a major 2017 initiative for the Firefox Data team.
 The goal is to provide release managers with near-real-time
 release-health metrics minutes after going public.
