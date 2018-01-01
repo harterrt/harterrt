@@ -90,4 +90,6 @@ I could let my mind wander in ways that my focused workouts didn't allow.
 Convenience is still important,
 but **my exercise also needs to be refreshing**.
 
-### Expand beyond the 9-5
+### Expand my influence
+
+
