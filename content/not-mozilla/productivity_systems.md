@@ -1,7 +1,6 @@
 title: Productivity Systems for Stress Management
 slug: productivity_systems
 date: 2018-01-02
-status: draft
 
 Over the years, I've developed a pretty involved productivity system.
 It was originally based on [Getting Things Done],
