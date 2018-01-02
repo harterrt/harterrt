@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-12-08T00:00:00-08:00</updated><entry><title>CLI for alerts via Slack</title><link href="https://blog.harterrt.com/slack_alerts.html" rel="alternate"></link><published>2017-12-08T00:00:00-08:00</published><updated>2017-12-08T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-08:/slack_alerts.html</id><summary type="html">&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-01-02T00:00:00-08:00</updated><entry><title>Removing Disqus</title><link href="https://blog.harterrt.com/disqus.html" rel="alternate"></link><published>2018-01-02T00:00:00-08:00</published><updated>2018-01-02T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-02:/disqus.html</id><summary type="html">&lt;p&gt;I'm removing Disqus from this blog.
+Disqus allowed readers to post comments on articles.
+I added it because it was easy to do,
+but I no longer think it's worth keeping.&lt;/p&gt;
+&lt;p&gt;If you'd like to share your thoughts,
+feel free to shoot me an email at &lt;code&gt;harterrt&lt;/code&gt; on gmail.
+I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'm removing Disqus from this blog.
+Disqus allowed readers to post comments on articles.
+I added it because it was easy to do,
+but I no longer think it's worth keeping.&lt;/p&gt;
+&lt;p&gt;If you'd like to share your thoughts,
+feel free to shoot me an email at &lt;code&gt;harterrt&lt;/code&gt; on gmail.
+I try to respond to all of my email daily.&lt;/p&gt;
+&lt;h2&gt;Cons&lt;/h2&gt;
+&lt;p&gt;Disqus started showing a red notification symbol at the bottom of every post.
+The notification is just a distraction aimed at increasing engagement with the comments.
+It's ugly and I don't like the distraction is introduces to my posts.
+This is my primary complaint.&lt;/p&gt;
+&lt;p&gt;Beyond that, there are just small annoyances.
+E.g. I don't need another inbox to maintain
+and I think the UI is a little ugly.&lt;/p&gt;
+&lt;h2&gt;Pros&lt;/h2&gt;
+&lt;p&gt;There aren't many.
+I've only had one comment on this blog,
+and I'm confident I would have gotten that feedback through other channels
+had the comment system not been available.&lt;/p&gt;</content></entry><entry><title>CLI for alerts via Slack</title><link href="https://blog.harterrt.com/slack_alerts.html" rel="alternate"></link><published>2017-12-08T00:00:00-08:00</published><updated>2017-12-08T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-08:/slack_alerts.html</id><summary type="html">&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.

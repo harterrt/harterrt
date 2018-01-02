@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 08 Dec 2017 00:00:00 -0800</lastBuildDate><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 02 Jan 2018 00:00:00 -0800</lastBuildDate><item><title>Removing Disqus</title><link>https://blog.harterrt.com/disqus.html</link><description>&lt;p&gt;I'm removing Disqus from this blog.
+Disqus allowed readers to post comments on articles.
+I added it because it was easy to do,
+but I no longer think it's worth keeping.&lt;/p&gt;
+&lt;p&gt;If you'd like to share your thoughts,
+feel free to shoot me an email at &lt;code&gt;harterrt&lt;/code&gt; on gmail.
+I …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/disqus.html</guid></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.

@@ -101,6 +101,9 @@ main article div.article_text blockquote {
 main article div.gist {
   line-height: .875em;
 }
+main article div.article_footer {
+  color: #999999;
+}
 main article div.article_meta {
   font-size: .7rem;
   color: #999999;
