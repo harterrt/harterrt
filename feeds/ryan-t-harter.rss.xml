@@ -5,7 +5,12 @@ I added it because it was easy to do,
 but I no longer think it's worth keeping.&lt;/p&gt;
 &lt;p&gt;If you'd like to share your thoughts,
 feel free to shoot me an email at &lt;code&gt;harterrt&lt;/code&gt; on gmail.
-I …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/disqus.html</guid></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+I …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/disqus.html</guid></item><item><title>Productivity Systems for Stress Management</title><link>https://blog.harterrt.com/productivity_systems.html</link><description>&lt;p&gt;Over the years, I've developed a pretty involved productivity system.
+It was originally based on &lt;a href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/"&gt;Getting Things Done&lt;/a&gt;,
+but now it's grown to include the good bits from other systems.
+It's involved, but I love it.&lt;/p&gt;
+&lt;p&gt;I get a lot of comments,
+especially on the little black book I keep …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/productivity_systems.html</guid></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
 &lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.
