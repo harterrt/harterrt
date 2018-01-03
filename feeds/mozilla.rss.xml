@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 02 Jan 2018 00:00:00 -0800</lastBuildDate><item><title>Removing Disqus</title><link>https://blog.harterrt.com/disqus.html</link><description>&lt;p&gt;I'm removing Disqus from this blog.
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 03 Jan 2018 00:00:00 -0800</lastBuildDate><item><title>Managing Someday-Maybe Projects with a CLI</title><link>https://blog.harterrt.com/sdmb.html</link><description>&lt;p&gt;I have a problem managing projects I'm interested in but don't have time for.
+For example, the &lt;a href="/slack_alerts.html"&gt;CLI for generating slack alerts&lt;/a&gt; I posted about last year.
+Not really a priority, but helpful and not that complicated.
+I sat on that project for about a year before I could finally …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 03 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-03:/sdmb.html</guid></item><item><title>Removing Disqus</title><link>https://blog.harterrt.com/disqus.html</link><description>&lt;p&gt;I'm removing Disqus from this blog.
 Disqus allowed readers to post comments on articles.
 I added it because it was easy to do,
 but I no longer think it's worth keeping.&lt;/p&gt;

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; Managing Someday-Maybe Projects with a CLI  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/sdmb.html">Managing Someday-Maybe Projects with a CLI</a></h1>
+  </div>
+  <div class="article_text">
+    <p>I have a problem managing projects I'm interested in but don't have time for.
+For example, the <a href="/slack_alerts.html">CLI for generating slack alerts</a> I posted about last year.
+Not really a priority, but helpful and not that complicated.
+I sat on that project for about a year before I could finally execute on it.</p>
+<p>I want to be able to keep track of these projects for inspiration,
+but <strong>my TODO list get's overwhelming</strong>
+if I try to include all of these low-priority projects.
+Getting Things Done suggests keeping a "Someday-Maybe (SDMB)" folder
+that you review regularly.
+I tried this, but even the SDMB list gets unweildy so I dread reviewing it.</p>
+<p>I think I have a handle on it now, though <sup>1</sup>.
+I started a directory at <code>~/sdmb</code>
+with markdown files for each SDMB project.
+This is nice for two reasons:</p>
+<ol>
+<li>It doesn't clog up your task list with un-actionable tasks</li>
+<li>You can review a list of SDMB <em>projects</em>
+   without reviewing all of the associated <em>TODOs</em>.
+   The <strong>project list should be much shorter</strong> and
+   I can usually tell what's interesting by reviewing the project names.
+   I don't need to know the next action.</li>
+</ol>
+<p>Here's a bash snippet to make this feel natural.
+It creates a new command <code>sdmb</code> that either
+lists all projects in the SDMB folder
+or opens a given SDMB project file (with auto-complete!).</p>
+<p>I recommend reviewing the list of projects monthly.
+If any projects look interesting,
+review that project's notes and pull out a couple of TODOs.</p>
+<p>Here's the snippet:</p>
+<div class="highlight"><pre><span></span><span class="nv">dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/somedaymaybe&quot;</span>
+
+_list_sdmb_projects <span class="o">()</span> <span class="o">{</span>
+    ls -1 <span class="nv">$dir</span> <span class="p">|</span> cut -f <span class="m">1</span> -d <span class="s1">&#39;.&#39;</span>
+<span class="o">}</span>
+
+sdmb <span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">0</span> <span class="o">]</span>
+    <span class="k">then</span>
+        <span class="c1"># If no arguement provided, list available projects</span>
+        _list_sdmb_projects 
+    <span class="k">else</span>
+        <span class="c1"># Edit given project</span>
+        <span class="nb">local</span> <span class="nv">id</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+        <span class="nb">local</span> <span class="nv">file</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/</span><span class="nv">$id</span><span class="s2">.md&quot;</span>
+
+        vim <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="c1"># Bash auto-complete</span>
+_sdmbComplete<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">local</span> <span class="nv">cur</span><span class="o">=</span><span class="si">${</span><span class="nv">COMP_WORDS</span><span class="p">[COMP_CWORD]</span><span class="si">}</span>
+    <span class="nv">COMPREPLY</span><span class="o">=(</span> <span class="k">$(</span><span class="nb">compgen</span> -W <span class="s2">&quot;</span><span class="k">$(</span>_list_sdmb_projects<span class="k">)</span><span class="s2">&quot;</span> -- <span class="nv">$cur</span> <span class="k">)</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="nb">complete</span> -F _sdmbComplete sdmb
+</pre></div>
+
+
+<hr>
+<p><sup>1</sup>: Thanks to Tom's great post <a href="https://cs-syd.eu/posts/2016-02-21-return-to-taskwarrior">here</a> for inspiration:</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Wed 03 January 2018</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

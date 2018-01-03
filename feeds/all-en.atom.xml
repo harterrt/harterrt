@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-01-02T00:00:00-08:00</updated><entry><title>Removing Disqus</title><link href="https://blog.harterrt.com/disqus.html" rel="alternate"></link><published>2018-01-02T00:00:00-08:00</published><updated>2018-01-02T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-02:/disqus.html</id><summary type="html">&lt;p&gt;I'm removing Disqus from this blog.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-01-03T00:00:00-08:00</updated><entry><title>Managing Someday-Maybe Projects with a CLI</title><link href="https://blog.harterrt.com/sdmb.html" rel="alternate"></link><published>2018-01-03T00:00:00-08:00</published><updated>2018-01-03T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-03:/sdmb.html</id><summary type="html">&lt;p&gt;I have a problem managing projects I'm interested in but don't have time for.
+For example, the &lt;a href="/slack_alerts.html"&gt;CLI for generating slack alerts&lt;/a&gt; I posted about last year.
+Not really a priority, but helpful and not that complicated.
+I sat on that project for about a year before I could finally …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have a problem managing projects I'm interested in but don't have time for.
+For example, the &lt;a href="/slack_alerts.html"&gt;CLI for generating slack alerts&lt;/a&gt; I posted about last year.
+Not really a priority, but helpful and not that complicated.
+I sat on that project for about a year before I could finally execute on it.&lt;/p&gt;
+&lt;p&gt;I want to be able to keep track of these projects for inspiration,
+but &lt;strong&gt;my TODO list get's overwhelming&lt;/strong&gt;
+if I try to include all of these low-priority projects.
+Getting Things Done suggests keeping a "Someday-Maybe (SDMB)" folder
+that you review regularly.
+I tried this, but even the SDMB list gets unweildy so I dread reviewing it.&lt;/p&gt;
+&lt;p&gt;I think I have a handle on it now, though &lt;sup&gt;1&lt;/sup&gt;.
+I started a directory at &lt;code&gt;~/sdmb&lt;/code&gt;
+with markdown files for each SDMB project.
+This is nice for two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It doesn't clog up your task list with un-actionable tasks&lt;/li&gt;
+&lt;li&gt;You can review a list of SDMB &lt;em&gt;projects&lt;/em&gt;
+   without reviewing all of the associated &lt;em&gt;TODOs&lt;/em&gt;.
+   The &lt;strong&gt;project list should be much shorter&lt;/strong&gt; and
+   I can usually tell what's interesting by reviewing the project names.
+   I don't need to know the next action.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here's a bash snippet to make this feel natural.
+It creates a new command &lt;code&gt;sdmb&lt;/code&gt; that either
+lists all projects in the SDMB folder
+or opens a given SDMB project file (with auto-complete!).&lt;/p&gt;
+&lt;p&gt;I recommend reviewing the list of projects monthly.
+If any projects look interesting,
+review that project's notes and pull out a couple of TODOs.&lt;/p&gt;
+&lt;p&gt;Here's the snippet:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/somedaymaybe&amp;quot;&lt;/span&gt;
+
+_list_sdmb_projects &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    ls -1 &lt;span class="nv"&gt;$dir&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -f &lt;span class="m"&gt;1&lt;/span&gt; -d &lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+sdmb &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="c1"&gt;# If no arguement provided, list available projects&lt;/span&gt;
+        _list_sdmb_projects 
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="c1"&gt;# Edit given project&lt;/span&gt;
+        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$id&lt;/span&gt;&lt;span class="s2"&gt;.md&amp;quot;&lt;/span&gt;
+
+        vim &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Bash auto-complete&lt;/span&gt;
+_sdmbComplete&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;cur&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;COMP_WORDS&lt;/span&gt;&lt;span class="p"&gt;[COMP_CWORD]&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+    &lt;span class="nv"&gt;COMPREPLY&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;compgen&lt;/span&gt; -W &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;_list_sdmb_projects&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -- &lt;span class="nv"&gt;$cur&lt;/span&gt; &lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="nb"&gt;complete&lt;/span&gt; -F _sdmbComplete sdmb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;: Thanks to Tom's great post &lt;a href="https://cs-syd.eu/posts/2016-02-21-return-to-taskwarrior"&gt;here&lt;/a&gt; for inspiration:&lt;/p&gt;</content></entry><entry><title>Removing Disqus</title><link href="https://blog.harterrt.com/disqus.html" rel="alternate"></link><published>2018-01-02T00:00:00-08:00</published><updated>2018-01-02T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-02:/disqus.html</id><summary type="html">&lt;p&gt;I'm removing Disqus from this blog.
 Disqus allowed readers to post comments on articles.
 I added it because it was easy to do,
 but I no longer think it's worth keeping.&lt;/p&gt;
