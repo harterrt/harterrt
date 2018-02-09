@@ -18,11 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
-<meta name="keywords" content="documentation, mozilla">
+<meta name="keywords" content="">
 
   <title>
     blog.harterrt.com
-&ndash; Why Markdown?  </title>
+&ndash; Asking Questions, Media and Etiquette  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -67,66 +67,57 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/why-markdown.html">Why Markdown?</a></h1>
+    <h1><a href="https://blog.harterrt.com/preferred_media.html">Asking Questions, Media and Etiquette</a></h1>
   </div>
   <div class="article_text">
-    <div class="toc">
+    <p>Will posted a great article a couple weeks ago,
+<a href="https://wlach.github.io/blog/2018/01/giving-and-receiving-help-at-mozilla/">Giving and Receiving Help at Mozilla</a>.
+I have been meaning to write a similar article for a while now.
+His post finally pushed me over the edge. </p>
+<p>Be sure to read Will's post first.
+The rest of this article is an addendum to his post.</p>
+<h2 id="avoid-context-free-pings">Avoid Context Free Pings</h2>
+<p>Context free pings should be considered harmful.
+These are pings like <code>ping</code> or <code>hey</code>.
+The problem with context free pings are documented elsewhere
+(<a href="http://edunham.net/2017/10/05/saying_ping.html">1</a>,
+ <a href="https://blogs.gnome.org/markmc/2014/02/20/naked-pings/">2</a>,
+ <a href="http://www.nohello.com/2013/01/please-dont-say-just-hello-in-chat.html">3</a>)
+so I won't discuss them here.</p>
+<h2 id="pings-are-ephemeral">Pings are Ephemeral</h2>
+<p>IRC and Slack are nice because they generate notifications.
+If you need a quick response, IRC or Slack are the way to go.
+I get Slack and IRC notifications on my phone, so I'm likely to respond quickly.
+On the other hand, these notifications disappear easily,
+which makes it easy for me to lose your message.
+<strong>If you don't hear from me immediately, it's a good idea to send an email</strong>.</p>
+<p>Otherwise, I don't mind pings at all.
+Some folks worry about creating interruptions, but this isn't a problem for me.
+I limit the notifications I get so <strong>if I don't want to get your notification, I won't</strong>.
+If I'm looking at Slack, I'm already distracted.</p>
+<p>In short, consider these rules of thumb:</p>
 <ul>
-<li><a href="#better-process">Better Process</a></li>
-<li><a href="#better-tools">Better Tools</a><ul>
-<li><a href="#one-less-tool">One less tool</a></li>
+<li>If it will take me <strong>less</strong> than 2m to respond to you and it's urgent, ping me</li>
+<li>If it will take me <strong>more</strong> than 2m to respond to you and it's urgent, file a bug and ping me</li>
+<li>If it's not urgent just email me</li>
 </ul>
-</li>
-<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
-<li><a href="#syncronization">Syncronization</a></li>
-<li><a href="#discoverability">Discoverability</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
-request</a> that moved
-some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
-wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
-repository</a>.
-It took a couple of hours of editing and toying with pandoc to get right, but
-when I was done, I realized the benefits were difficult to see.  So, I decided
-to write them out for posterity.</p>
-<h2 id="better-process">Better Process</h2>
-<p>The only way to edit our wiki is through the web front end which causes some
-major problems.</p>
-<p>For one, You're always editing the production version and there's no way to get
-review before publishing. That's obviously not great.</p>
-<p>Second, your edits need to be submitted quickly - like within an hour, usually.
-Since you're editing in a web form there's no good way to save your edits
-locally.  Even worse, there's no good way to settle merge conflicts.</p>
-<p>With markdown, I can develop my revisions over the course of weeks and preview
-them locally.  When it's time to publish I get review from my peers, which
-makes my documentation more readable and helps me improve as an engineer.</p>
-<h2 id="better-tools">Better Tools</h2>
-<p>I have powerful tools for manipulating text so using a simple web form to edit
-technical documentation seems absurd to me.  With markdown, I get the joy of
-using my favorite text editor in my favorite development environment</p>
-<h3 id="one-less-tool">One less tool</h3>
-<p>Our team is already using Markdown for our README's and Github provides a much
-better UX for revison control.  By moving to Markdown for our user facing
-documentation, we have one less tool and syntax we need to depend on.</p>
-<h2 id="the-documentation-sits-next-to-the-code">The documentation sits next to the code</h2>
-<p>Storing your documentation with your code has a lot of great benefits.</p>
-<h3 id="syncronization">Syncronization</h3>
-<p>Pull requests can include simultanious changes to code and documentation, which
-makes it more likely they'll stay in sync. Both because you don't need to go
-edit them elsewhere and because it can become a review requirement.</p>
-<h3 id="discoverability">Discoverability</h3>
-<p>Keeping the docs next to the code helps with discoverability. Your
-code and your documentation should supplement each other. Keeping them close
-together is only reasonable.</p>
+<h2 id="prefer-open-channels">Prefer Open Channels</h2>
+<p>I've spent a lot of time on documentation at Mozilla.
+It's hard.
+Our tools are constantly under development and our needs are always changing
+so our documentation needs constant work.
+<strong>Asking questions in the open reduces our documentation burden</strong>.</p>
+<p><a href="http://www.bmannconsulting.com/archive/email-is-the-place-where-information-goes-to-die/">Email is where information goes to die</a>.
+If we discuss a problem in a bug, that conversation is open and discoverable.
+It's not always useful, but it's a huge win when it is.
+<strong>File a bug instead of writing an email</strong>.
+@mention me in on #fx-metrics instead of PM-ing me.
+CC an open mailing list if you need to use email.</p>
   </div>
   <div class="article_meta">
-    <p>Posted on: Thu 03 November 2016</p>
-    <p>Category: <a href="https://blog.harterrt.com/category/documentation.html">documentation</a>
- &ndash; Tags:
-      <a href="https://blog.harterrt.com/tag/documentation.html">documentation</a>,      <a href="https://blog.harterrt.com/tag/mozilla.html">mozilla</a>    </p>
+    <p>Posted on: Fri 09 February 2018</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
   </div>
   <hr>
   <div class="article_footer">

@@ -71,7 +71,7 @@
   </div>
   <div class="article_text">
     <p>I finally got a chance to scratch an itch today.</p>
-<h2>Problem</h2>
+<h2 id="problem">Problem</h2>
 <p>When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.
 I usually either step away from the computer
@@ -98,7 +98,7 @@ Now I can just issue a command like:
 and in 10 seconds, I'll get a ping from <code>harterbot</code> on slack.
 Setting this up on a remote cluster would be trivially easy as well.
 You just need to be confident in storing a Slack API token.</p>
-<h2>Action</h2>
+<h2 id="action">Action</h2>
 <p>Here's how I did this:</p>
 <ol>
 <li><a href="https://my.slack.com/services/new/bot">Create a new bot</a>,
@@ -111,7 +111,7 @@ You just need to be confident in storing a Slack API token.</p>
    You should see a new message from your bot.</li>
 <li>(Optional) Add the following helper function to your <code>.bashrc</code>:</li>
 </ol>
-<div class="highlight"><pre><span></span><span class="c1"># Ping me with an alert on Slack</span>
+<div class="codehilite"><pre><span></span><span class="c1"># Ping me with an alert on Slack</span>
 slack <span class="o">()</span> <span class="o">{</span>
     slack-cli -d <span class="o">{{</span>YOUR SLACK HANDLE<span class="o">}}</span> -- <span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span><span class="p">;</span>
 <span class="o">}</span>

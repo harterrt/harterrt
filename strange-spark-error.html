@@ -70,12 +70,19 @@
     <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
   </div>
   <div class="article_text">
-    <p>[TOC]</p>
-<h1>Introduction</h1>
+    <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-bug">The Bug</a></li>
+<li><a href="#fixes">Fixes?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1>The Bug</h1>
+<h1 id="the-bug">The Bug</h1>
 <p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
 <span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
 <span class="k">import</span> <span class="nn">org.apache.spark.sql.hive.HiveContext</span>
@@ -114,37 +121,37 @@
 
 
 <p>When I run this on an ATMO cluster, I observe the following error:</p>
-<div class="highlight"><pre><span></span>Exception in thread &quot;main&quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2
-    at org.apache.spark.util.Utils$.tryOrIOException(Utils.scala:1222)
-    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)
-    at org.apache.spark.broadcast.TorrentBroadcast._value$lzycompute(TorrentBroadcast.scala:64)
-    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)
-    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)
-    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)
-    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)
-    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
-    at org.apache.spark.scheduler.Task.run(Task.scala:89)
-    at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
-    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-    at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2
-    at org.apache.spark.broadcast.TorrentBroadcast$$anonfun$org$apache$spark$broadcast$TorrentBroadcast$$readBlocks$1$$anonfun$2.apply(TorrentBroadcast.scala:138)
-    at org.apache.spark.broadcast.TorrentBroadcast$$anonfun$org$apache$spark$broadcast$TorrentBroadcast$$readBlocks$1$$anonfun$2.apply(TorrentBroadcast.scala:138)
-...
+<div class="codehilite"><pre><span></span><span class="x">Exception in thread &quot;main&quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2</span>
+<span class="x">    at org.apache.spark.util.Utils</span><span class="p">$.</span><span class="nv">tryOrIOException</span><span class="p">(</span><span class="err">Utils.scala</span><span class="p">:</span><span class="m">1222</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast._value</span><span class="p">$</span><span class="nv">lzycompute</span><span class="p">(</span><span class="err">TorrentBroadcast.scala</span><span class="p">:</span><span class="m">64</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)</span>
+<span class="x">    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)</span>
+<span class="x">    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)</span>
+<span class="x">    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)</span>
+<span class="x">    at org.apache.spark.scheduler.Task.run(Task.scala:89)</span>
+<span class="x">    at org.apache.spark.executor.Executor</span><span class="p">$</span><span class="nv">TaskRunner</span><span class="p">.</span><span class="nv">run</span><span class="p">(</span><span class="err">Executor.scala</span><span class="p">:</span><span class="m">214</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)</span>
+<span class="x">    at java.util.concurrent.ThreadPoolExecutor</span><span class="p">$</span><span class="nv">Worker</span><span class="p">.</span><span class="nv">run</span><span class="p">(</span><span class="err">ThreadPoolExecutor.java</span><span class="p">:</span><span class="m">615</span><span class="p">)</span><span class="x"></span>
+<span class="x">    at java.lang.Thread.run(Thread.java:745)</span>
+<span class="x">Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="nv">org</span><span class="p">$</span><span class="nv">apache</span><span class="p">$</span><span class="nv">spark</span><span class="p">$</span><span class="nv">broadcast</span><span class="p">$</span><span class="nv">TorrentBroadcast</span><span class="p">$$</span><span class="nv">readBlocks</span><span class="p">$</span><span class="x">1</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="x">2.apply(TorrentBroadcast.scala:138)</span>
+<span class="x">    at org.apache.spark.broadcast.TorrentBroadcast</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="nv">org</span><span class="p">$</span><span class="nv">apache</span><span class="p">$</span><span class="nv">spark</span><span class="p">$</span><span class="nv">broadcast</span><span class="p">$</span><span class="nv">TorrentBroadcast</span><span class="p">$$</span><span class="nv">readBlocks</span><span class="p">$</span><span class="x">1</span><span class="p">$$</span><span class="nv">anonfun</span><span class="p">$</span><span class="x">2.apply(TorrentBroadcast.scala:138)</span>
+<span class="x">...</span>
 </pre></div>
 
 
 <p>I don't get much information from this message, and searching for this error yields a variety of threads with half solved solutions.
 My hunch is this message pops up for a variety of issues.
 What's even more strange is that this function runs successfully when we read local data using a SQLContext.</p>
-<h1>Fixes?</h1>
+<h1 id="fixes">Fixes?</h1>
 <p>I dug in for a while and I found two possible solutions.</p>
 <p>Instead of calling generateCrossSectional, we can just inline the meat of the function and everything works.
 This isn't a great solution, because this function is going to grow over the next month and I don't want to maintain the behemoth. </p>
 <p>After a few refactors, I found that the function will run if I change the scope of the HiveContext val.
 Take a look at <a href="https://github.com/harterrt/spark-failure/blob/master/fixed.scala">this solution</a>, which successfully runs.</p>
-<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
 <span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
 <span class="k">import</span> <span class="nn">org.apache.spark.sql.hive.HiveContext</span>
@@ -182,7 +189,7 @@ Take a look at <a href="https://github.com/harterrt/spark-failure/blob/master/fi
 </pre></div>
 
 
-<h1>Conclusion</h1>
+<h1 id="conclusion">Conclusion</h1>
 <p>This solution isn't totally gratifying since I'm still unclear on what's causing the error, but I'm stopping here.
 The cluster this was tested on is still running Spark 1.6, which apparently has some known issues.
 Once we upgrade to 2.0 I may take another look.</p>
