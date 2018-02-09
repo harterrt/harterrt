@@ -1,4 +1,4 @@
-title: Asking Questions, Media and Etiquette
+title: Asking Questions
 slug: preferred_media
 date: 2018-02-09
 
