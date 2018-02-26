@@ -110,7 +110,7 @@ but I usually run into significant issues with version control and collaboration
 ## Get Review
 
 Before sharing a report every analyst should have the chance to get their work reviewed.
-Getting review is a **critical feature of any quality data science team**.
+Getting review is a **critical feature of any data science team**.
 In fact, this is so important that
 I explicitly ask about review processes when interviewing with new companies.
 Review is how I learn from my peers.
