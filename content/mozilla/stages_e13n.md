@@ -4,8 +4,6 @@ date: 2018-02-26
 tags: experimentation
 status: draft
 
-# Intro
-
 I've been thinking about experimentation a lot recently.
 Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
 But what happens after the experiment's been run?
