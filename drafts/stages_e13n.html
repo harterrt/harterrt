@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="experimentation">
+
+  <title>
+    blog.harterrt.com
+&ndash; The 5 Stages of Experiment Analysis  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/drafts/stages_e13n.html">The 5 Stages of Experiment Analysis</a></h1>
+  </div>
+  <div class="article_text">
+    <h1>Intro</h1>
+<p>I've been thinking about experimentation a lot recently.
+Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
+But what happens after the experiment's been run?
+There's <strong>not a clear process for taking experimental data and turning it into a decision</strong>.</p>
+<p>I noted the importance of Decision Reports in 
+<a href="/good_experiment_tools.html">Desirable features for experimentation tools</a>.
+This post outlines the process needed to get to a solid decision report.
+I'm hoping that outlining this process
+will help us disambiguate what our tools are meant to do
+and identify gaps in our tooling.</p>
+<p>So, here are the 5 Stages of Experiment Analysis as I see them:</p>
+<h2>Build Intuition, Form an Opinion</h2>
+<p>When I begin reviewing an experiment,
+I need to <strong>get a feel for what's going on in the data</strong>.
+That means I need to explore hypoetheses quickly.
+Did the number of page loads unexpectedly increase? Why?
+Did the number of searches unexpectedly stay flat? What are the error bounds?</p>
+<p>Consequentially, <strong>I need tools that let me iterate quickly</strong>.
+This will help me develop the story I'm going to tell in the final report.
+Keep in mind,
+most of what I see during this investigation will not be included in the report;
+part of telling a good story is knowing what isn't important.</p>
+<p>These tools are what most folks imagine when talking about tools for experimentation.</p>
+<p>Prominent tools for this stage include the front ends for Google Analytics or Optimizely.
+Basically, I'm talking about any webpage that shows you statistics like this
+(from <a href="https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7">AirBnB's excellent blog</a>):</p>
+<p><img alt="(Example Report from AirBnB)" src="https://blog.harterrt.com/images/e13n-example-report.jpeg"></p>
+<p>Some of Mozilla's tools in this category include:</p>
+<ul>
+<li>Test Tube</li>
+<li>Mission Control</li>
+<li>re:dash</li>
+</ul>
+<h2>Generate Artifacts</h2>
+<p>Once I have an idea of what's happening in an experiment,
+I start gathering the important results into a report.
+It's <strong>important to freeze the results</strong> I'm seeing and include them in the report.
+Five years from now, I want to be able to test whether my decision still makes sense.
+Part of that is deciding whether the data are telling a different story now.</p>
+<p>Unfortunately, this process usually looks like
+copying and pasting tables into a Google Doc
+or taking a screenshot from re:dash.
+This works, but it's <strong>error prone and difficult to update</strong> as we get more data.</p>
+<p>The other way this gets done is loading up a Jupyter notebook
+and trying to reproduce the results yourself.
+This is nice because the output is generally in a more useful format,
+but this is clearly suboptimal.
+I'm <strong>duplicating effort</strong> by re-implementing our experiment summary tools
+and creating a second set of possibly <strong>inconsistent metrics</strong>.
+It's important that these artifacts are consistent with the live tools.</p>
+<p>We don't really have any tools that service this need at Mozilla.
+In fact, I haven't heard about them anywhere.
+This always seems to be done via a <strong>hodgepodge of custom scripts</strong>.</p>
+<p>It would be ideal if we had a tool for gathering experiment results from our live tools.
+For example, we could have one tool that:</p>
+<ul>
+<li>gathers experiment results from re:dash, testtube, etc</li>
+<li>dumps those results into a local (markdown or HTML formatted) text file</li>
+<li>helps a user generate a report with some standard scaffolding</li>
+</ul>
+<p>I've been calling this tool an "artifact generator"
+but it probably needs a better name.</p>
+<h2>Annotate and Explain</h2>
+<p>Now we've gathered the important data into a single place.
+We're not done yet, nobody will be able to make heads or tails of this report.
+<strong>We need to add context</strong>.
+What does this experiment represent?
+What do these numbers mean?
+Is this a big change or a small change? Do we just not know?
+Is this surprising or common?
+We should include answers to all these questions in the report,
+as best we can.</p>
+<p>This takes time and it takes revisions.
+Our tools should support this.
+For example, 
+it should be easy to update the tables generated by the artifact generator
+without a lot of copy-pasting.
+It should also be easy to make edits over the course of a week
+(i.e. don't use a wiki)</p>
+<p>The best tool I've seen in this area is <code>knitr</code>,
+which supports <code>Rmd</code> report generation.
+Jupyter is a prominent contender in this space,
+but I usually run into significant issues with version control and collaboration.
+<code>LaTeX</code> is a solid tool, but it's a real pain to learn.</p>
+<h2>Get Review</h2>
+<p>Before sharing a report every analyst should have the chance to get their work reviewed.
+Getting review is a <strong>critical feature of any quality data science team</strong>.
+In fact, this is so important that
+I explicitly ask about review processes when interviewing with new companies.
+Review is how I learn from my peers.
+More so, review <strong>removes the large majority of the stress from my daily work</strong>.
+I find my confidence in reviewed work is dramatically higher.</p>
+<p>Again, this portion of the toolchain is fairly well supported.
+Any code review tool will do a reasonably good job.
+Filing a PR on GitHub is the canonical way I get review.</p>
+<h2>Publish and Socialize</h2>
+<p>Finally, I need to share my final report.
+This should be simple, but I've found it to be difficult in practice.</p>
+<p>There's as many options for publishing reports as there are stars in the sky.
+Basically any content management system qualifies,
+but few work well for this task.
+I've seen companies use
+wikis, public folders on a server, ftp, Google Docs, emailed .docx files, ...
+All of these options make it <strong>difficult to get review</strong>.
+Most of these options are a <strong>discoverability nightmare</strong>.</p>
+<p>At Mozilla, we've been using AirBnB's
+<a href="https://github.com/airbnb/knowledge-repo">knowledge-repo</a>
+to generate <a href="http://reports.telemetry.mozilla.org/feed">RTMO</a>.
+It does a reasonably good job,
+but doesn't give the analyst enough control over the format of the final report.
+I'm working on a replacement now,
+called <a href="https://github.com/harterrt/docere">Docere</a>.</p>
+<h1>Where to go next</h1>
+<p>In summary, we already have pretty good tools for annotating reports and getting review.
+I think we at Mozilla need to work on tools for
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1426163">generating experiment artifacts</a>
+and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1436787">publishing reports</a>.
+I think we need to continue working on tools for building intuition,
+but we're already working on these tools and are on the right track.</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Mon 26 February 2018</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+ &ndash; Tags:
+      <a href="https://blog.harterrt.com/tag/experimentation.html">experimentation</a>    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

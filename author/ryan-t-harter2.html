@@ -76,11 +76,11 @@ The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
 <a href="https://github.com/mozilla/firefox-data-docs/pull/41">PR here</a>
 but I figured it's worth sharing here as well.</p>
-<h2 id="style-guide">Style Guide</h2>
+<h2>Style Guide</h2>
 <p>Articles should be written in
 <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
 (not <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">AsciiDoc</a>).
-Markdown ...</p>
+Markdown is usually …</p>
   </div>
 </article>
 <hr />
@@ -91,11 +91,11 @@ Markdown ...</p>
   <div class="article_text">
     <p>Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:</p>
-<h2 id="analogy">Analogy</h2>
+<h2>Analogy</h2>
 <p>Temperature control is a big part of brewing beer.
 Throughout the brewing process I use a thermometer
 to measure the temperature of the soon-to-be beer.
-Because I take several temperature readings throughout the ...</p>
+Because I take several temperature readings throughout the …</p>
   </div>
 </article>
 <hr />
@@ -108,7 +108,8 @@ Because I take several temperature readings throughout the ...</p>
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.</p>
-<p>Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity ...</p>
+<p>Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
+I sum this …</p>
   </div>
 </article>
 <hr />
@@ -120,7 +121,7 @@ I'm learning a lot.</p>
     <p>I came across <a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area">this article</a> on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
-but I have major <strong>issues with ...</strong></p>
+but I have major <strong>issues with …</strong></p>
   </div>
 </article>
 <hr />
@@ -133,7 +134,7 @@ but I have major <strong>issues with ...</strong></p>
 <p>The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies ...</p>
+dataset simplifies your analysis …</p>
   </div>
 </article>
 <hr />
@@ -145,7 +146,7 @@ dataset simplifies ...</p>
     <p>You'll see a lot of posts coming down the line on documentation.</p>
 <p>We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
-I've been interesting in learning how ...</p>
+I've been interesting in learning how to write …</p>
   </div>
 </article>
 <hr />
@@ -154,26 +155,14 @@ I've been interesting in learning how ...</p>
     <h1><a href="https://blog.harterrt.com/why-markdown.html">Why Markdown?</a></h1>
   </div>
   <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#better-process">Better Process</a></li>
-<li><a href="#better-tools">Better Tools</a><ul>
-<li><a href="#one-less-tool">One less tool</a></li>
-</ul>
-</li>
-<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
-<li><a href="#syncronization">Syncronization</a></li>
-<li><a href="#discoverability">Discoverability</a></li>
-</ul>
-</li>
-</ul>
-</div>
+    <p>[TOC]</p>
 <p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
 request</a> that moved
 some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
 wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
 repository</a>.
-It took a couple of hours of editing and toying with pandoc to get right ...</p>
+It took a couple of hours of editing and toying with pandoc to get right, but
+when I was done, I realized the benefits were difficult to see.  So, I decided …</p>
   </div>
 </article>
 <hr />
@@ -182,24 +171,14 @@ It took a couple of hours of editing and toying with pandoc to get right ...</p>
     <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
   </div>
   <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#tools">Tools</a><ul>
-<li><a href="#tmux">tmux</a><ul>
-<li><a href="#session-persistence">Session Persistence</a></li>
-<li><a href="#multiplexing">Multiplexing</a></li>
-</ul>
-</li>
-<li><a href="#homeshick">Homeshick</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="introduction">Introduction</h2>
+    <p>[TOC]</p>
+<h2>Introduction</h2>
 <p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux ...</p>
+Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
+<h2>Tools</h2>
+<h3><a href="https://tmux.github.io/">tmux</a></h3>
+<p>For me, tmux is …</p>
   </div>
 </article>
 <hr />
@@ -208,21 +187,15 @@ Using these tools will make it significantly easier / more fun to work with a re
     <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
   </div>
   <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#the-bug">The Bug</a></li>
-<li><a href="#fixes">Fixes?</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</div>
-<h1 id="introduction">Introduction</h1>
+    <p>[TOC]</p>
+<h1>Introduction</h1>
 <p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1 id="the-bug">The Bug</h1>
+<h1>The Bug</h1>
 <p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
-<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.apache.spark …</span></pre></div>
   </div>
 </article>
 

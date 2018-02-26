@@ -70,40 +70,27 @@
     <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
   </div>
   <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#tools">Tools</a><ul>
-<li><a href="#tmux">tmux</a><ul>
-<li><a href="#session-persistence">Session Persistence</a></li>
-<li><a href="#multiplexing">Multiplexing</a></li>
-</ul>
-</li>
-<li><a href="#homeshick">Homeshick</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="introduction">Introduction</h2>
+    <p>[TOC]</p>
+<h2>Introduction</h2>
 <p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
 Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
-<h2 id="tools">Tools</h2>
-<h3 id="tmux"><a href="https://tmux.github.io/">tmux</a></h3>
+<h2>Tools</h2>
+<h3><a href="https://tmux.github.io/">tmux</a></h3>
 <p>For me, tmux is the single tool most important getting work done over SSH.
 tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.</p>
-<h4 id="session-persistence">Session Persistence</h4>
+<h4>Session Persistence</h4>
 <p>tmux sessions can be detached and reattached at will.
 That means you can <strong>execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running</strong>.
 Later, you can reconnect to the cluster and session, it will be as if you hadn't left.
 So much nicer than cussing out your flaky WiFi connection.</p>
 <p>For example:</p>
-<div class="codehilite"><pre><span></span><span class="c1"># Start a new session named &quot;foo&quot;</span>
+<div class="highlight"><pre><span></span><span class="c1"># Start a new session named &quot;foo&quot;</span>
 <span class="c1"># Opens a new shell as a subprocess</span>
 tmux new -s foo
 
 <span class="c1"># Do stuff ...</span>
-sleep 100
+sleep <span class="m">100</span>
 
 <span class="c1"># Kill the session, returning you to the original shell</span>
 <span class="c1"># with ctrl-b d</span>
@@ -117,7 +104,7 @@ tmux at -dt foo
 
 <p>More often, I use tmux just to save my place when I need to wrap up for the day.
 Next morning, I can reattach my session and I'm already looking at the most relevant files for today's work.</p>
-<h4 id="multiplexing">Multiplexing</h4>
+<h4>Multiplexing</h4>
 <p>This is what tmux's was built to do. I think persistence is just a nice side effect.
 tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
@@ -127,7 +114,7 @@ Here's a screen shot of how I developed this blog post:</p>
 On the left I have a process serving up drafts of this document and on the right I have my text editor.
 The extra context is indispensable when trying to figure out WTF is going on with a failing job.
 For example, monitoring an <code>sbt ~test</code> process on the left while making edits on the right.</p>
-<h3 id="homeshick"><a href="https://github.com/andsens/homeshick">Homeshick</a></h3>
+<h3><a href="https://github.com/andsens/homeshick">Homeshick</a></h3>
 <p>Configuring a new machine is a PITA.
 For a while, I saw all configuration changes as a liability and refused to customize my environment.
 After all, I'd eventually have to redo all of these configs when I get a new machine.

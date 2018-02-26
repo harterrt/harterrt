@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-02-03T00:00:00-08:00</updated><entry><title>Literature Review: Writing Great Documentation</title><link href="https://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2017-02-03T00:00:00-08:00</updated><entry><title>Literature Review: Writing Great Documentation</title><link href="https://blog.harterrt.com/lit-review.html" rel="alternate"></link><published>2017-02-03T00:00:00-08:00</published><updated>2017-02-03T00:00:00-08:00</updated><author><name>Ryan Harter</name></author><id>tag:blog.harterrt.com,2017-02-03:/lit-review.html</id><summary type="html">&lt;div id="preamble"&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
+I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
+I haven&amp;#8217;t seen any great example for a data product, either.
+I don&amp;#8217;t have much experience in this area,
+so I decided to review …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
 I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
@@ -194,4 +200,4 @@ general consensus outside of the primary sources above:&lt;/p&gt;&lt;/div&gt;
 &lt;/ul&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="mozilla"></category><category term="documentation"></category></entry></feed>
+</content><category term="mozilla"></category><category term="documentation"></category></entry></feed>
