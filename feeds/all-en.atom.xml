@@ -1,5 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-02-09T00:00:00-08:00</updated><entry><title>Asking Questions</title><link href="https://blog.harterrt.com/preferred_media.html" rel="alternate"></link><published>2018-02-09T00:00:00-08:00</published><updated>2018-02-09T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-02-09:/preferred_media.html</id><summary type="html">&lt;p&gt;Will posted a great article a couple weeks ago,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-02-28T00:00:00-08:00</updated><entry><title>The 5 Stages of Experiment Analysis</title><link href="https://blog.harterrt.com/stages_e13n.html" rel="alternate"></link><published>2018-02-28T00:00:00-08:00</published><updated>2018-02-28T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-02-28:/stages_e13n.html</id><summary type="html">&lt;p&gt;I've been thinking about experimentation a lot recently.
+Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
+But what happens after the experiment's been run?
+There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I noted the importance …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've been thinking about experimentation a lot recently.
+Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
+But what happens after the experiment's been run?
+There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I noted the importance of Decision Reports in 
+&lt;a href="/good_experiment_tools.html"&gt;Desirable features for experimentation tools&lt;/a&gt;.
+This post outlines the process needed to get to a solid decision report.
+I'm hoping that outlining this process
+will help us disambiguate what our tools are meant to do
+and identify gaps in our tooling.&lt;/p&gt;
+&lt;p&gt;So, here are the 5 Stages of Experiment Analysis as I see them:&lt;/p&gt;
+&lt;h2&gt;Build Intuition, Form an Opinion&lt;/h2&gt;
+&lt;p&gt;When I begin reviewing an experiment,
+I need to &lt;strong&gt;get a feel for what's going on in the data&lt;/strong&gt;.
+That means I need to explore hypoetheses quickly.
+Did the number of page loads unexpectedly increase? Why?
+Did the number of searches unexpectedly stay flat? What are the error bounds?&lt;/p&gt;
+&lt;p&gt;Consequentially, &lt;strong&gt;I need tools that let me iterate quickly&lt;/strong&gt;.
+This will help me develop the story I'm going to tell in the final report.
+Keep in mind,
+most of what I see during this investigation will not be included in the report;
+part of telling a good story is knowing what isn't important.&lt;/p&gt;
+&lt;p&gt;These tools are what most folks imagine when talking about tools for experimentation.&lt;/p&gt;
+&lt;p&gt;Prominent tools for this stage include the front ends for Google Analytics or Optimizely.
+Basically, I'm talking about any webpage that shows you statistics like this
+(from &lt;a href="https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7"&gt;AirBnB's excellent blog&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="(Example Report from AirBnB)" src="https://blog.harterrt.com/images/e13n-example-report.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;Some of Mozilla's tools in this category include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Test Tube&lt;/li&gt;
+&lt;li&gt;Mission Control&lt;/li&gt;
+&lt;li&gt;re:dash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Generate Artifacts&lt;/h2&gt;
+&lt;p&gt;Once I have an idea of what's happening in an experiment,
+I start gathering the important results into a report.
+It's &lt;strong&gt;important to freeze the results&lt;/strong&gt; I'm seeing and include them in the report.
+Five years from now, I want to be able to test whether my decision still makes sense.
+Part of that is deciding whether the data are telling a different story now.&lt;/p&gt;
+&lt;p&gt;Unfortunately, this process usually looks like
+copying and pasting tables into a Google Doc
+or taking a screenshot from re:dash.
+This works, but it's &lt;strong&gt;error prone and difficult to update&lt;/strong&gt; as we get more data.&lt;/p&gt;
+&lt;p&gt;The other way this gets done is loading up a Jupyter notebook
+and trying to reproduce the results yourself.
+This is nice because the output is generally in a more useful format,
+but this is clearly suboptimal.
+I'm &lt;strong&gt;duplicating effort&lt;/strong&gt; by re-implementing our experiment summary tools
+and creating a second set of possibly &lt;strong&gt;inconsistent metrics&lt;/strong&gt;.
+It's important that these artifacts are consistent with the live tools.&lt;/p&gt;
+&lt;p&gt;We don't really have any tools that service this need at Mozilla.
+In fact, I haven't heard about them anywhere.
+This always seems to be done via a &lt;strong&gt;hodgepodge of custom scripts&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It would be ideal if we had a tool for gathering experiment results from our live tools.
+For example, we could have one tool that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gathers experiment results from re:dash, testtube, etc&lt;/li&gt;
+&lt;li&gt;dumps those results into a local (markdown or HTML formatted) text file&lt;/li&gt;
+&lt;li&gt;helps a user generate a report with some standard scaffolding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I've been calling this tool an "artifact generator"
+but it probably needs a better name.&lt;/p&gt;
+&lt;h2&gt;Annotate and Explain&lt;/h2&gt;
+&lt;p&gt;Now we've gathered the important data into a single place.
+We're not done yet, nobody will be able to make heads or tails of this report.
+&lt;strong&gt;We need to add context&lt;/strong&gt;.
+What does this experiment represent?
+What do these numbers mean?
+Is this a big change or a small change? Do we just not know?
+Is this surprising or common?
+We should include answers to all these questions in the report,
+as best we can.&lt;/p&gt;
+&lt;p&gt;This takes time and it takes revisions.
+Our tools should support this.
+For example, 
+it should be easy to update the tables generated by the artifact generator
+without a lot of copy-pasting.
+It should also be easy to make edits over the course of a week
+(i.e. don't use a wiki).&lt;/p&gt;
+&lt;p&gt;The best tool I've seen in this area is &lt;code&gt;knitr&lt;/code&gt;,
+which supports &lt;code&gt;Rmd&lt;/code&gt; report generation.
+Jupyter is a prominent contender in this space,
+but I usually run into significant issues with version control and collaboration.
+&lt;code&gt;LaTeX&lt;/code&gt; is a solid tool, but it's a real pain to learn.&lt;/p&gt;
+&lt;h2&gt;Get Review&lt;/h2&gt;
+&lt;p&gt;Before sharing a report every analyst should have the chance to get their work reviewed.
+Getting review is a &lt;strong&gt;critical feature of any data science team&lt;/strong&gt;.
+In fact, this is so important that
+I explicitly ask about review processes when interviewing with new companies.
+Review is how I learn from my peers.
+More so, review &lt;strong&gt;removes the large majority of the stress from my daily work&lt;/strong&gt;.
+I find my confidence in reviewed work is dramatically higher.&lt;/p&gt;
+&lt;p&gt;Again, this portion of the toolchain is fairly well supported.
+Any code review tool will do a reasonably good job.
+Filing a PR on GitHub is the canonical way I get review.&lt;/p&gt;
+&lt;h2&gt;Publish and Socialize&lt;/h2&gt;
+&lt;p&gt;Finally, I need to share my final report.
+This should be simple, but I've found it to be difficult in practice.&lt;/p&gt;
+&lt;p&gt;There's as many options for publishing reports as there are stars in the sky.
+Basically any content management system qualifies,
+but few work well for this task.
+I've seen companies use
+wikis, public folders on a server, ftp, Google Docs, emailed .docx files, ...
+All of these options make it &lt;strong&gt;difficult to get review&lt;/strong&gt;.
+Most of these options are a &lt;strong&gt;discoverability nightmare&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;At Mozilla, we've been using AirBnB's
+&lt;a href="https://github.com/airbnb/knowledge-repo"&gt;knowledge-repo&lt;/a&gt;
+to generate &lt;a href="http://reports.telemetry.mozilla.org/feed"&gt;RTMO&lt;/a&gt;.
+It does a reasonably good job,
+but doesn't give the analyst enough control over the format of the final report.
+I'm working on a replacement now,
+called &lt;a href="https://github.com/harterrt/docere"&gt;Docere&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Where to go next&lt;/h1&gt;
+&lt;p&gt;In summary, we already have pretty good tools for annotating reports and getting review.
+I think we at Mozilla need to work on tools for
+&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1426163"&gt;generating experiment artifacts&lt;/a&gt;
+and &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1436787"&gt;publishing reports&lt;/a&gt;.
+I think we need to continue working on tools for building intuition,
+but we're already working on these tools and are on the right track.&lt;/p&gt;
+&lt;p&gt;This doesn't solve the whole problem.
+For one,
+&lt;strong&gt;we still need a process for making a decision&lt;/strong&gt; from these decision reports.
+Having a well reasoned argument is only part of the decision.
+Who makes the final call?
+How do we guarantee we're our decision making is consistent?
+This process also ignores building a cohesive style for reports.
+Having consistent structure is important.
+It gives readers confidence in the results and reduces their cognitive load.&lt;/p&gt;
+&lt;p&gt;I think this is a good start though.&lt;/p&gt;</content><category term="experimentation"></category></entry><entry><title>Asking Questions</title><link href="https://blog.harterrt.com/preferred_media.html" rel="alternate"></link><published>2018-02-09T00:00:00-08:00</published><updated>2018-02-09T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-02-09:/preferred_media.html</id><summary type="html">&lt;p&gt;Will posted a great article a couple weeks ago,
 &lt;a href="https://wlach.github.io/blog/2018/01/giving-and-receiving-help-at-mozilla/"&gt;Giving and Receiving Help at Mozilla&lt;/a&gt;.
 I have been meaning to write a similar article for a while now.
 His post finally pushed me over the edge. &lt;/p&gt;

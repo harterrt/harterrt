@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 09 Feb 2018 00:00:00 -0800</lastBuildDate><item><title>Asking Questions</title><link>https://blog.harterrt.com/preferred_media.html</link><description>&lt;p&gt;Will posted a great article a couple weeks ago,
+<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 28 Feb 2018 00:00:00 -0800</lastBuildDate><item><title>The 5 Stages of Experiment Analysis</title><link>https://blog.harterrt.com/stages_e13n.html</link><description>&lt;p&gt;I've been thinking about experimentation a lot recently.
+Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
+But what happens after the experiment's been run?
+There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I noted the importance …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Feb 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-02-28:/stages_e13n.html</guid><category>experimentation</category></item><item><title>Asking Questions</title><link>https://blog.harterrt.com/preferred_media.html</link><description>&lt;p&gt;Will posted a great article a couple weeks ago,
 &lt;a href="https://wlach.github.io/blog/2018/01/giving-and-receiving-help-at-mozilla/"&gt;Giving and Receiving Help at Mozilla&lt;/a&gt;.
 I have been meaning to write a similar article for a while now.
 His post finally pushed me over the edge. &lt;/p&gt;
