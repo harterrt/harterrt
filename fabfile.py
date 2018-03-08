@@ -88,3 +88,16 @@ def new_post():
             'date': date.today().strftime('%Y-%m-%d')
         }
     )
+
+def reading_post():
+    date_str = date.today().strftime('%Y-%m-%d')
+    cookiecutter(
+        'cookiecutter-post',
+        overwrite_if_exists=True,
+        extra_context={
+            'dir': 'content/mozilla/reading_today',
+            'name': date_str,
+            'slug': date_str,
+            'date': date_str,
+        }
+    )
