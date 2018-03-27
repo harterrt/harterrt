@@ -146,6 +146,9 @@ and [ipymd](https://github.com/rossant/ipymd).
 
 All of these tools were built to help analysts build intuition quickly,
 which is a critical part of data science.
-However, most of these tools **compromise on composability**
-which makes it difficult to develop an exploratory analysis
-into a report in which I can be confident.
+However, most of these tools **compromise on composability**.
+Don't get me wrong, **these tools are all useful and necessary**,
+but [bad tools are insidious](/bad-tools.html).
+Be aware that these fast-iteration focused tools can get misused
+if there's not an obvious path for migrating to something more stable.
+
