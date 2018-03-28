@@ -1,6 +1,6 @@
 title: Don't make me code in your text box!
 slug: coding_in_textboxes
-date: 2018-03-08
+date: 2018-03-28
 
 Whenever I start a new data project,
 my first step is rooting out any false assumptions I have about the data.
