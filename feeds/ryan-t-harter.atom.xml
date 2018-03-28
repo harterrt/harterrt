@@ -1,5 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-02-28T00:00:00-08:00</updated><entry><title>The 5 Stages of Experiment Analysis</title><link href="https://blog.harterrt.com/stages_e13n.html" rel="alternate"></link><published>2018-02-28T00:00:00-08:00</published><updated>2018-02-28T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-02-28:/stages_e13n.html</id><summary type="html">&lt;p&gt;I've been thinking about experimentation a lot recently.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-03-28T00:00:00-07:00</updated><entry><title>Don't make me code in your text box!</title><link href="https://blog.harterrt.com/coding_in_textboxes.html" rel="alternate"></link><published>2018-03-28T00:00:00-07:00</published><updated>2018-03-28T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-03-28:/coding_in_textboxes.html</id><summary type="html">&lt;p&gt;Whenever I start a new data project,
+my first step is rooting out any false assumptions I have about the data.&lt;/p&gt;
+&lt;p&gt;The key here is iterating quickly.
+My workflow looks like this:
+Code a little, plot the data, what do you see?
+Ah, outliers.
+Code a little, plot the data …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Whenever I start a new data project,
+my first step is rooting out any false assumptions I have about the data.&lt;/p&gt;
+&lt;p&gt;The key here is iterating quickly.
+My workflow looks like this:
+Code a little, plot the data, what do you see?
+Ah, outliers.
+Code a little, plot the data, what do you see?
+Shoot, why are there so many NULL's in the dataset?&lt;/p&gt;
+&lt;p&gt;This is a critical part of working with data
+so we have a ton of tools tuned for fast iteration loops.
+These are the tools in the "Building Intuition"
+&lt;a href="/stages_e13n.html"&gt;stage of experimental analysis&lt;/a&gt;.
+Jupyter notebooks are a perfect example.
+Great way to explore a dataset quickly.&lt;/p&gt;
+&lt;p&gt;Once I'm done exploring,
+I need to distill what I've learned so I can share it and reference it later.
+This is where I run into problems.
+Often, these fast-iteration tools are really &lt;strong&gt;hard to escape&lt;/strong&gt;,
+and are a &lt;strong&gt;horrible way to store code&lt;/strong&gt;.
+As a result,
+these tools end up getting used for things they're not built to do.
+It's hard to spot if you're not looking out for it.&lt;/p&gt;
+&lt;p&gt;I've boiled this down to a rule: &lt;strong&gt;Don't make me code in your text box!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Examples&lt;/h2&gt;
+&lt;h3&gt;Re:dash&lt;/h3&gt;
+&lt;p&gt;We use &lt;a href="https://redash.io/"&gt;Re:dash&lt;/a&gt; extensively at Mozilla.
+For the unfamiliar,
+Re:dash provides an interactive SQL front-end
+where you can query and visualize your data.
+It's a great tool for getting quick answers to data questions.
+For example, what percentage of users are on Windows?
+How many times was Firefox asked to load a page yesterday?&lt;/p&gt;
+&lt;p&gt;Re:dash is great when you're iterating quickly,
+but it falls short when you want to share and maintain your queries.
+I've built a few dashboards in re:dash
+and I always get nervous when I hear they're getting used.
+The problem is that I &lt;strong&gt;can't get review or track changes&lt;/strong&gt; to my queries.
+I wouldn't tell others to rely on untested and unreviewed code,
+so it feels wrong to rely on untested queries.&lt;/p&gt;
+&lt;p&gt;I started building a tool to fix these problems.
+&lt;a href="https://github.com/mozilla/stmocli"&gt;St. Mocli&lt;/a&gt;
+allows you to store queries in a git repository
+and deploy the queries to re:dash.
+I've been using it for about a month now, and it's great.
+It's much easier to maintain queries and getting review is far less painful.&lt;/p&gt;
+&lt;p&gt;Even better there were a bunch of unexpected benefits.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's easier to consistently format our queries
+  since we're editing queries in modern text editors instead of a HTML text-box&lt;/li&gt;
+&lt;li&gt;We can lint our queries since the queries are now stored in text files&lt;/li&gt;
+&lt;li&gt;There's clear ownership for each query (&lt;code&gt;git blame&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;We have more control over what our consumers are looking at
+  now that we have a central repository of queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Wikis&lt;/h3&gt;
+&lt;p&gt;When I joined Mozilla's data team,
+our documentation was in rough shape.
+We had documentation, but it was a sprawling tangled mess.
+It was easy to forget to update the docs or even to forget where the docs were.
+Our documentation still isn't perfect,
+but it's much better since switched to 
+&lt;a href="https://docs.telemetry.mozilla.org/"&gt;docs.telemetry.mozilla.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What changed?
+We started using
+&lt;a href="https://www.gitbook.com/"&gt;Gitbook&lt;/a&gt; and 
+&lt;strong&gt;stopped using a Wiki for documentation&lt;/strong&gt;.
+Wikis are a horrible way to store technical documentation.
+In fact, I should probably write a whole article on this point,
+but here are some highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Writing long-form content in a wiki is painful&lt;/strong&gt;.
+  I either write the content elsewhere
+  and publish by copy-pasting into a text-box,
+  or (more commonly) I have to iteratively edit the document in the text box.
+  Editing in the wiki means my half-finished article
+  is indistinguishable from complete documentation.&lt;/li&gt;
+&lt;li&gt;It's &lt;strong&gt;impossible to get review&lt;/strong&gt;,
+  which makes it difficult to fix unclear writing.
+  Without review I can't tell when I'm being too terse or using a lot of jargon.&lt;/li&gt;
+&lt;li&gt;Writing in a wiki is thankless.
+  There's &lt;strong&gt;no artifact of your work&lt;/strong&gt;.
+  Sure, there's a new article in the wiki,
+  but everyone built the wiki; It's not clear who wrote what.&lt;/li&gt;
+&lt;li&gt;It's easy for documentation to get lost.
+  A wiki makes it easy to have a &lt;strong&gt;wandering chain of references&lt;/strong&gt;.
+  Most of the articles at the end of these chains are forgotten and out of date.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We've also discovered some unexpected advantages
+to storing our documentation in markdown.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It was easy to integrate &lt;a href="https://mermaidjs.github.io/"&gt;mermaid.js&lt;/a&gt;
+  for &lt;a href="https://docs.telemetry.mozilla.org/concepts/data_pipeline.html"&gt;a system diagram&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;We were able to add spell check CI,
+  which has the added benefit of highlighting jargon
+  and standardizing our terminology.&lt;/li&gt;
+&lt;li&gt;Soon we're going to add dead link CI as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Jupyter&lt;/h3&gt;
+&lt;p&gt;I already noted that Jupyter is a perfect example of a fast-iteration-loop tool.
+I love opening up a new notebook to explore a problem and test my assumptions.
+However, when it comes time to share my analysis,
+I start running into problems.&lt;/p&gt;
+&lt;p&gt;First of all, Jupyter notebooks are stored as JSON objects in a text file.
+This causes a whole host of problems.
+It's difficult to track changes to these files in git.
+Since the python code is stored as strings inside of a JSON object,
+small changes to the analysis cause big changes to the storage file.
+Also, it's impossible to lint or test any code stored in the &lt;code&gt;.ipynb&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;It's easy to export the code from a notebook to a python file, which is great,
+but I still want to use Jupyter to display my results.
+Ideally, I could have a python package where all the logic is stored
+and a Jupyter notebook that just displays the analysis results.
+This actually works well, but it's still difficult.
+There's no clear way to reload the development package in a live Jupyter notebook.&lt;/p&gt;
+&lt;p&gt;I don't have a great solution for this yet.
+There are a few projects trying to address this problem though.
+Mike outlines an interesting storage format
+&lt;a href="http://droettboom.com/blog/2018/01/18/diffable-jupyter-notebooks/"&gt;here&lt;/a&gt;
+There's also &lt;a href="https://github.com/aaren/notedown"&gt;notedown&lt;/a&gt;
+and &lt;a href="https://github.com/rossant/ipymd"&gt;ipymd&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;All of these tools were built to help analysts build intuition quickly,
+which is a critical part of data science.
+However, most of these tools &lt;strong&gt;compromise on composability&lt;/strong&gt;.
+Don't get me wrong, &lt;strong&gt;these tools are all useful and necessary&lt;/strong&gt;,
+but &lt;a href="/bad-tools.html"&gt;bad tools are insidious&lt;/a&gt;.
+Be aware that these fast-iteration focused tools can get misused
+if there's not an obvious path for migrating to something more stable.&lt;/p&gt;</content></entry><entry><title>The 5 Stages of Experiment Analysis</title><link href="https://blog.harterrt.com/stages_e13n.html" rel="alternate"></link><published>2018-02-28T00:00:00-08:00</published><updated>2018-02-28T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-02-28:/stages_e13n.html</id><summary type="html">&lt;p&gt;I've been thinking about experimentation a lot recently.
 Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
 But what happens after the experiment's been run?
 There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
