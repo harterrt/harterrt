@@ -83,6 +83,7 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/resume.pdf': {'path':'resume.pdf'},
 }
+ARTICLE_EXCLUDES = ['images']
 
 # EXTRA_PATH_METADATA = {
 #     'extra/custom.css': {'path': 'static/custom.css'},

@@ -1,10 +1,10 @@
 title: PSA: Don't use approximate counts for trends
-slug: dividing_hll
+slug: hll_trends
 date: 2018-04-24
 
 I got caught giving some bad advice this week,
 so I decided to share here as penance.
-TL;DR: approximate counts are approximate
+TL;DR: Probabilistic counts are great, but they're not great for everything.
 
 ---
 
@@ -56,7 +56,7 @@ if I'm building a dashboard to track year over year change.
 ## An example
 
 I put together an
-[example notebook]({filename}/images/probabilistic_counts.ipynb)
+[example notebook]({filename}/images/probabilistic_counts.html)
 to explore a little.
 I created a toy dataframe containing
 7 days of data and 1000 `client_id`'s per day.
