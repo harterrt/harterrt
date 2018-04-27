@@ -68,7 +68,7 @@ By default, pyspark's
 aggregator has a relative standard deviation (`rsd`) of 5%!
 The maximum error magnitude we see in this dataset is 7.5% (day 4).
 
-In my opionion, Spark's documentation obfuscates the real interpretation
+In my opinion, Spark's documentation obfuscates the real interpretation
 of this `rsd` value, calling it the: "maximum estimation error allowed".
 In reality, there is no "maximum error" allowed.
 The `rsd` is a standard deviation for an approximately normal distribution,
@@ -82,5 +82,9 @@ we see big day over day swings in the estimates.
 The largest swing occurs from day 6 to day 7 where the user count
 jumps by 13.7% (-6.8% to 6.9%)!
 
-
+So what's the take away.
+Probabilistic counts are still super useful tools,
+but it's important to consider what kind of error they're going to introduce.
+In particular, don't use probabilistic counts (like `approx_distinct`)
+when looking at year over year rates or plotting trend lines.
 
