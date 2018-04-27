@@ -56,7 +56,7 @@ if I'm building a dashboard to track year over year change.
 ## An example
 
 I put together an
-[example notebook](https://nbviewer.jupyter.org/urls/blog.harterrt.com/images/probabilistic_counts.ipynb)
+[example notebook]({filename}/images/probabilistic_counts.ipynb)
 to explore a little.
 I created a toy dataframe containing
 7 days of data and 1000 `client_id`'s per day.
