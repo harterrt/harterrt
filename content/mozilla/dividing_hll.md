@@ -53,8 +53,10 @@ those numbers are the same to me.
 However, **that noise becomes distracting**
 if I'm building a dashboard to track year over year change.
 
+## An example
+
 I put together an
-[example notebook]({filename}/images/probabilistic_counts.ipynb)
+[example notebook](https://nbviewer.jupyter.org/urls/blog.harterrt.com/images/probabilistic_counts.ipynb)
 to explore a little.
 I created a toy dataframe containing
 7 days of data and 1000 `client_id`'s per day.
@@ -82,7 +84,9 @@ we see big day over day swings in the estimates.
 The largest swing occurs from day 6 to day 7 where the user count
 jumps by 13.7% (-6.8% to 6.9%)!
 
-So what's the take away.
+## Conclusion 
+
+So what's the take away?
 Probabilistic counts are still super useful tools,
 but it's important to consider what kind of error they're going to introduce.
 In particular, don't use probabilistic counts (like `approx_distinct`)
