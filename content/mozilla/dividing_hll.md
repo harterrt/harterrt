@@ -71,8 +71,8 @@ The maximum error magnitude we see in this dataset is 7.5% (day 4).
 In my opinion, Spark's documentation obfuscates the real interpretation
 of this `rsd` value, calling it the: "maximum estimation error allowed".
 In reality, there is no "maximum error" allowed.
-The `rsd` is a standard deviation for an approximately normal distribution,
-so roughly one in three errors are going to be bigger than the `rsd`.
+The `rsd` is a standard deviation for an approximately normal distribution.
+Roughly one in three errors are going to be bigger than the `rsd`.
 
 What's worse is that this graph makes us think there's movement
 in this metric over time.
