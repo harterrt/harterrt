@@ -67,23 +67,6 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/dividing_hll.html">PSA: Don't use approximate counts for trends</a></h1>
-  </div>
-  <div class="article_text">
-    <p>I got caught giving some bad advice this week,
-so I decided to share here as penance.
-TL;DR: approximate counts are approximate</p>
-<hr />
-<p>Counting stuff is hard.
-We use probabilistic algorithms pretty frequently at Mozilla.
-For example, when trying to get user counts,
-we rely heavily on Presto's 
-<a href="https://prestodb.io/docs/current/functions/aggregate.html#approx_distinct">approx_distinct ...</a></p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
     <h1><a href="https://blog.harterrt.com/coding_in_textboxes.html">Don't make me code in your text box!</a></h1>
   </div>
   <div class="article_text">
@@ -209,6 +192,26 @@ I think the next big step for our data team
 is to <strong>make experimentation feel natural</strong>.
 There are a few components to this (e.g. training or culture)
 but improving the <strong>tooling is going to ...</strong></p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/dates.html">Submission Date vs Activity Date</a></h1>
+  </div>
+  <div class="article_text">
+    <p>My comments on
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">Bug 1422892</a>
+started to get long,
+so I started untangling my thoughts here.</p>
+<hr />
+<p>From
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">the bug</a>:</p>
+<blockquote>
+<p>We experimented with using <code>activity_date</code> instead of <code>submission_date</code>
+when developing the <code>clients_daily</code> etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize ...</p></blockquote>
   </div>
 </article>
 
