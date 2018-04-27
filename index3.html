@@ -66,17 +66,55 @@
 
 <article>
   <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/why-markdown.html">Why Markdown?</a></h1>
+  </div>
+  <div class="article_text">
+    <div class="toc">
+<ul>
+<li><a href="#better-process">Better Process</a></li>
+<li><a href="#better-tools">Better Tools</a><ul>
+<li><a href="#one-less-tool">One less tool</a></li>
+</ul>
+</li>
+<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
+<li><a href="#syncronization">Syncronization</a></li>
+<li><a href="#discoverability">Discoverability</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
+request</a> that moved
+some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
+wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
+repository</a>.
+It took a couple of hours of editing and toying with pandoc to get right ...</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
     <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
   </div>
   <div class="article_text">
-    <p>[TOC]</p>
-<h2>Introduction</h2>
+    <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#tmux">tmux</a><ul>
+<li><a href="#session-persistence">Session Persistence</a></li>
+<li><a href="#multiplexing">Multiplexing</a></li>
+</ul>
+</li>
+<li><a href="#homeshick">Homeshick</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="introduction">Introduction</h2>
 <p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
-<h2>Tools</h2>
-<h3><a href="https://tmux.github.io/">tmux</a></h3>
-<p>For me, tmux is …</p>
+Using these tools will make it significantly easier / more fun to work with a remote linux ...</p>
   </div>
 </article>
 <hr />
@@ -85,15 +123,21 @@ Using these tools will make it significantly easier / more fun to work with a re
     <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
   </div>
   <div class="article_text">
-    <p>[TOC]</p>
-<h1>Introduction</h1>
+    <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-bug">The Bug</a></li>
+<li><a href="#fixes">Fixes?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1>The Bug</h1>
+<h1 id="the-bug">The Bug</h1>
 <p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
-<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
-<span class="k">import</span> <span class="nn">org.apache.spark …</span></pre></div>
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
   </div>
 </article>
 

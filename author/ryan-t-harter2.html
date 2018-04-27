@@ -67,6 +67,26 @@
 
 <article>
   <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/dates.html">Submission Date vs Activity Date</a></h1>
+  </div>
+  <div class="article_text">
+    <p>My comments on
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">Bug 1422892</a>
+started to get long,
+so I started untangling my thoughts here.</p>
+<hr />
+<p>From
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">the bug</a>:</p>
+<blockquote>
+<p>We experimented with using <code>activity_date</code> instead of <code>submission_date</code>
+when developing the <code>clients_daily</code> etl job.
+We should summarize our findings and decide on 
+which of these measures we'd like to standardize ...</p></blockquote>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
     <h1><a href="https://blog.harterrt.com/okrs_and_4dx.html">OKRs and 4DX</a></h1>
   </div>
   <div class="article_text">
@@ -75,7 +95,7 @@
 my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.
 I had some prior experience with OKRs at Google,
-but I've never felt like I was fully taking advantage of the …</p>
+but I've never felt like I was fully taking ...</p>
   </div>
 </article>
 <hr />
@@ -93,7 +113,7 @@ vs. <a href="https://databricks.com/">databricks</a>),
 or scale our knowledge
 (<a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091">knoledge-repo</a>.
 vs. <a href="https://www.gitbook.com/">gitbook</a>)</p>
-<p>Most of these tools look like …</p>
+<p>Most of these tools ...</p>
   </div>
 </article>
 <hr />
@@ -108,11 +128,11 @@ The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
 <a href="https://github.com/mozilla/firefox-data-docs/pull/41">PR here</a>
 but I figured it's worth sharing here as well.</p>
-<h2>Style Guide</h2>
+<h2 id="style-guide">Style Guide</h2>
 <p>Articles should be written in
 <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
 (not <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/">AsciiDoc</a>).
-Markdown is usually …</p>
+Markdown ...</p>
   </div>
 </article>
 <hr />
@@ -123,11 +143,11 @@ Markdown is usually …</p>
   <div class="article_text">
     <p>Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:</p>
-<h2>Analogy</h2>
+<h2 id="analogy">Analogy</h2>
 <p>Temperature control is a big part of brewing beer.
 Throughout the brewing process I use a thermometer
 to measure the temperature of the soon-to-be beer.
-Because I take several temperature readings throughout the …</p>
+Because I take several temperature readings throughout the ...</p>
   </div>
 </article>
 <hr />
@@ -140,8 +160,7 @@ Because I take several temperature readings throughout the …</p>
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.</p>
-<p>Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
-I sum this …</p>
+<p>Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity ...</p>
   </div>
 </article>
 <hr />
@@ -153,7 +172,7 @@ I sum this …</p>
     <p>I came across <a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area">this article</a> on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
-but I have major <strong>issues with …</strong></p>
+but I have major <strong>issues with ...</strong></p>
   </div>
 </article>
 <hr />
@@ -166,7 +185,7 @@ but I have major <strong>issues with …</strong></p>
 <p>The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies your analysis …</p>
+dataset simplifies ...</p>
   </div>
 </article>
 <hr />
@@ -178,7 +197,7 @@ dataset simplifies your analysis …</p>
     <p>You'll see a lot of posts coming down the line on documentation.</p>
 <p>We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
-I've been interesting in learning how to write …</p>
+I've been interesting in learning how ...</p>
   </div>
 </article>
 <hr />
@@ -187,30 +206,26 @@ I've been interesting in learning how to write …</p>
     <h1><a href="https://blog.harterrt.com/why-markdown.html">Why Markdown?</a></h1>
   </div>
   <div class="article_text">
-    <p>[TOC]</p>
+    <div class="toc">
+<ul>
+<li><a href="#better-process">Better Process</a></li>
+<li><a href="#better-tools">Better Tools</a><ul>
+<li><a href="#one-less-tool">One less tool</a></li>
+</ul>
+</li>
+<li><a href="#the-documentation-sits-next-to-the-code">The documentation sits next to the code</a><ul>
+<li><a href="#syncronization">Syncronization</a></li>
+<li><a href="#discoverability">Discoverability</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>Last week I finished a <a href="https://github.com/mozilla/telemetry-batch-view/pull/128">pull
 request</a> that moved
 some documentation from <a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples">mozilla's
 wiki</a> to a <a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md">github
 repository</a>.
-It took a couple of hours of editing and toying with pandoc to get right, but
-when I was done, I realized the benefits were difficult to see.  So, I decided …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
-  </div>
-  <div class="article_text">
-    <p>[TOC]</p>
-<h2>Introduction</h2>
-<p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
-I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
-<h2>Tools</h2>
-<h3><a href="https://tmux.github.io/">tmux</a></h3>
-<p>For me, tmux is …</p>
+It took a couple of hours of editing and toying with pandoc to get right ...</p>
   </div>
 </article>
 

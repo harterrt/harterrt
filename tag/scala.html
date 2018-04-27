@@ -70,15 +70,21 @@
     <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
   </div>
   <div class="article_text">
-    <p>[TOC]</p>
-<h1>Introduction</h1>
+    <div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-bug">The Bug</a></li>
+<li><a href="#fixes">Fixes?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1>The Bug</h1>
+<h1 id="the-bug">The Bug</h1>
 <p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="highlight"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
+<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
-<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf</span><span class="o">,</span> <span class="nc">SparkContext</span><span class="o">}</span>
-<span class="k">import</span> <span class="nn">org.apache.spark …</span></pre></div>
+<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
   </div>
 </article>
 

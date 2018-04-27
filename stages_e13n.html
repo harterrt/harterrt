@@ -81,7 +81,7 @@ I'm hoping that outlining this process
 will help us disambiguate what our tools are meant to do
 and identify gaps in our tooling.</p>
 <p>So, here are the 5 Stages of Experiment Analysis as I see them:</p>
-<h2>Build Intuition, Form an Opinion</h2>
+<h2 id="build-intuition-form-an-opinion">Build Intuition, Form an Opinion</h2>
 <p>When I begin reviewing an experiment,
 I need to <strong>get a feel for what's going on in the data</strong>.
 That means I need to explore hypoetheses quickly.
@@ -96,14 +96,14 @@ part of telling a good story is knowing what isn't important.</p>
 <p>Prominent tools for this stage include the front ends for Google Analytics or Optimizely.
 Basically, I'm talking about any webpage that shows you statistics like this
 (from <a href="https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7">AirBnB's excellent blog</a>):</p>
-<p><img alt="(Example Report from AirBnB)" src="https://blog.harterrt.com/images/e13n-example-report.jpeg"></p>
+<p><img alt="(Example Report from AirBnB)" src="https://blog.harterrt.com/images/e13n-example-report.jpeg" /></p>
 <p>Some of Mozilla's tools in this category include:</p>
 <ul>
 <li>Test Tube</li>
 <li>Mission Control</li>
 <li>re:dash</li>
 </ul>
-<h2>Generate Artifacts</h2>
+<h2 id="generate-artifacts">Generate Artifacts</h2>
 <p>Once I have an idea of what's happening in an experiment,
 I start gathering the important results into a report.
 It's <strong>important to freeze the results</strong> I'm seeing and include them in the report.
@@ -132,7 +132,7 @@ For example, we could have one tool that:</p>
 </ul>
 <p>I've been calling this tool an "artifact generator"
 but it probably needs a better name.</p>
-<h2>Annotate and Explain</h2>
+<h2 id="annotate-and-explain">Annotate and Explain</h2>
 <p>Now we've gathered the important data into a single place.
 We're not done yet, nobody will be able to make heads or tails of this report.
 <strong>We need to add context</strong>.
@@ -154,7 +154,7 @@ which supports <code>Rmd</code> report generation.
 Jupyter is a prominent contender in this space,
 but I usually run into significant issues with version control and collaboration.
 <code>LaTeX</code> is a solid tool, but it's a real pain to learn.</p>
-<h2>Get Review</h2>
+<h2 id="get-review">Get Review</h2>
 <p>Before sharing a report every analyst should have the chance to get their work reviewed.
 Getting review is a <strong>critical feature of any data science team</strong>.
 In fact, this is so important that
@@ -165,7 +165,7 @@ I find my confidence in reviewed work is dramatically higher.</p>
 <p>Again, this portion of the toolchain is fairly well supported.
 Any code review tool will do a reasonably good job.
 Filing a PR on GitHub is the canonical way I get review.</p>
-<h2>Publish and Socialize</h2>
+<h2 id="publish-and-socialize">Publish and Socialize</h2>
 <p>Finally, I need to share my final report.
 This should be simple, but I've found it to be difficult in practice.</p>
 <p>There's as many options for publishing reports as there are stars in the sky.
@@ -182,7 +182,7 @@ It does a reasonably good job,
 but doesn't give the analyst enough control over the format of the final report.
 I'm working on a replacement now,
 called <a href="https://github.com/harterrt/docere">Docere</a>.</p>
-<h1>Where to go next</h1>
+<h1 id="where-to-go-next">Where to go next</h1>
 <p>In summary, we already have pretty good tools for annotating reports and getting review.
 I think we at Mozilla need to work on tools for
 <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1426163">generating experiment artifacts</a>
