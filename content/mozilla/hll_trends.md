@@ -4,7 +4,8 @@ date: 2018-04-24
 
 I got caught giving some bad advice this week,
 so I decided to share here as penance.
-TL;DR: Probabilistic counts are great, but they're not great for everything.
+TL;DR: Probabilistic counts are great,
+but they shouldn't be used everywhere.
 
 ---
 
