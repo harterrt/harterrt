@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 24 Apr 2018 00:00:00 -0700</lastBuildDate><item><title>PSA: Don't use approximate counts for trends</title><link>https://blog.harterrt.com/hll_trends.html</link><description>&lt;p&gt;I got caught giving some bad advice this week,
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 17 May 2018 00:00:00 -0700</lastBuildDate><item><title>SQL Style Guide</title><link>https://blog.harterrt.com/sql_style_guide.html</link><description>&lt;p&gt;I'm happy to announce, we now have a 
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;SQL style guide&lt;/a&gt;.
+Check it out!&lt;/p&gt;
+&lt;p&gt;If you have any suggestions,
+feel free to file a PR or issue in
+&lt;a href="https://github.com/mozilla/firefox-data-docs/blob/master/concepts/sql_style.md"&gt;the docs repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Many thanks to all who participated in the 
+&lt;a href="https://github.com/mozilla/stmocli/issues/9"&gt;St. Mocli conversation&lt;/a&gt;
+and @mreid for the review!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 17 May 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-17:sql_style_guide.html</guid></item><item><title>PSA: Don't use approximate counts for trends</title><link>https://blog.harterrt.com/hll_trends.html</link><description>&lt;p&gt;I got caught giving some bad advice this week,
 so I decided to share here as penance.
 TL;DR: Probabilistic counts are great,
 but they shouldn't be used everywhere.&lt;/p&gt;

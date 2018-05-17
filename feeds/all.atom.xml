@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-04-24T00:00:00-07:00</updated><entry><title>PSA: Don't use approximate counts for trends</title><link href="https://blog.harterrt.com/hll_trends.html" rel="alternate"></link><published>2018-04-24T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-04-24:hll_trends.html</id><summary type="html">&lt;p&gt;I got caught giving some bad advice this week,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-05-17T00:00:00-07:00</updated><entry><title>SQL Style Guide</title><link href="https://blog.harterrt.com/sql_style_guide.html" rel="alternate"></link><published>2018-05-17T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-05-17:sql_style_guide.html</id><summary type="html">&lt;p&gt;I'm happy to announce, we now have a 
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;SQL style guide&lt;/a&gt;.
+Check it out!&lt;/p&gt;
+&lt;p&gt;If you have any suggestions,
+feel free to file a PR or issue in
+&lt;a href="https://github.com/mozilla/firefox-data-docs/blob/master/concepts/sql_style.md"&gt;the docs repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Many thanks to all who participated in the 
+&lt;a href="https://github.com/mozilla/stmocli/issues/9"&gt;St. Mocli conversation&lt;/a&gt;
+and @mreid for the review!&lt;/p&gt;</summary></entry><entry><title>PSA: Don't use approximate counts for trends</title><link href="https://blog.harterrt.com/hll_trends.html" rel="alternate"></link><published>2018-04-24T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-04-24:hll_trends.html</id><summary type="html">&lt;p&gt;I got caught giving some bad advice this week,
 so I decided to share here as penance.
 TL;DR: Probabilistic counts are great,
 but they shouldn't be used everywhere.&lt;/p&gt;
