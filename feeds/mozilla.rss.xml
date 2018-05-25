@@ -1,5 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 17 May 2018 00:00:00 -0700</lastBuildDate><item><title>SQL Style Guide</title><link>https://blog.harterrt.com/sql_style_guide.html</link><description>&lt;p&gt;I'm happy to announce, we now have a 
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 25 May 2018 12:00:00 -0700</lastBuildDate><item><title>Why bootstrap?</title><link>https://blog.harterrt.com/why_bootstrap.html</link><description>&lt;p&gt;Over the next few quarters,
+I'm going to focus my attention on Mozilla's experimentation platform.
+One of the first questions we need to answer is
+how we're going to calculate and report the necessary measures of variance.
+Any experimentation platform needs to be able to
+ compare metrics between two groups.&lt;/p&gt;
+&lt;p&gt;For example, say we're looking at retention for a control and experiment group.
+Control shows a retention of 88.45% and experiment shows a retention of 90.11%.
+Did the experimental treatment cause a real increase in retention
+or did the experiment branch just get lucky when we assigned users?
+We need to calculate some measure of variance to be able to decide.&lt;/p&gt;
+&lt;p&gt;The two most common methods to do this calculation are the frequentist's
+&lt;a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm"&gt;two-sample t-test&lt;/a&gt;
+or some form of
+&lt;a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)"&gt;the bootstrap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In ye olden days, we'd be forced to use the two-sample t-test.
+The bootstrap requires a lot of compute power
+that just wasn't available until recently.
+As you can imagine, the bootstrap is all the rage in the Data Science world.
+Of course it is. We get to replace statistics with raw compute power!
+That's the dream!&lt;/p&gt;
+&lt;p&gt;Still, the bootstrap isn't perfect for every problem.
+Let's look at a few arguements for and against the bootstrap:&lt;/p&gt;
+&lt;h2 id="computational-efficiency"&gt;Computational Efficiency&lt;/h2&gt;
+&lt;p&gt;The bootstrap obviously requires more compute resources.
+Still, it's worth highlighting how 
+&lt;strong&gt;amazingly computationally efficient the t-test is&lt;/strong&gt;.
+You can calculate all you need for the t-test in a single pass through the data.
+For each branch of the experiment all you need to calculate is:
+a count, the sum of the data, and the sum of the square of the data
+(&lt;a href="https://en.wikipedia.org/wiki/Variance#Formulae_for_the_variance"&gt;to calculate the variance&lt;/a&gt;).
+All of these are easy to calculate in a map-reduce framework.
+On the other hand,
+the bootstrap is difficult to compute when your data do not fit in memory.&lt;/p&gt;
+&lt;h2 id="the-normality-assumption"&gt;The normality assumption&lt;/h2&gt;
+&lt;p&gt;T-tests feel arcane and make assumptions about the distribution of the data.
+Most notably, t-tests &lt;em&gt;require your metric to be normally distributed&lt;/em&gt;.
+Assuming normal distributions sets of alarms
+for anyone who's worked with real-world data.
+On the other hand,
+the bootstrap uses the sample distribution to describe the population's distribution
+which feels like a much smaller assumption to make.&lt;/p&gt;
+&lt;p&gt;In reality, the bootstrap method and t-tests actually
+make very similar assumptions about the underlying data.
+Since the t-test is comparing two &lt;em&gt;means&lt;/em&gt;,
+the t-test's normality assumption holds so long as 
+&lt;a href="https://en.wikipedia.org/wiki/Central_limit_theorem"&gt;the CLT&lt;/a&gt; holds.
+The CLT holds so long as
+(1) you have a lot of data and 
+(2) the data have finite variance.
+We generally have "a lot of data"
+but the finite variance bit can be a problem&lt;sup&gt;1&lt;/sup&gt;.
+However! The bootstrap also fails if the data have infinite variance&lt;sup&gt;2&lt;/sup&gt;.
+All that to say,
+&lt;strong&gt;if the t-test's normality assumption fails, the bootstrap is in trouble too&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;On the other hand,
+it can take a large sample for the CLT to make some datasets look normal
+(like, N &amp;gt; 5000).
+If you have a small, skewed data set, the bootstrap may be a better choice.
+However, this is rarely a problem when you're working with Big Data™.&lt;/p&gt;
+&lt;h2 id="weird-metrics"&gt;Weird metrics&lt;/h2&gt;
+&lt;p&gt;It becomes practically impossible to calculate a t-test
+if your metric isn't a mean.
+The classic example here is testing for a change in the median.
+What's the variance of a median?
+Is the median normally distributed?&lt;/p&gt;
+&lt;p&gt;¯\_(ツ)_/¯&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is where the bootstrap really shines!
+With the t-test, you only have your one sample to work with.
+With the bootstrap, you have as many samples as you want!
+You can calculate any metric you want and get a confidence interval.&lt;/p&gt;
+&lt;p&gt;Personally, I think calculating the median is a lame example.
+Percentiles, like the median, are notoriously hard to calculate over big data.
+Instead, consider this (nearly) real life example:&lt;/p&gt;
+&lt;p&gt;Firefox collects anonymized performance data on a daily basis.
+That data could look like this:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;&lt;code&gt;client&lt;/code&gt;&lt;/th&gt;
+&lt;th align="right"&gt;&lt;code&gt;day&lt;/code&gt;&lt;/th&gt;
+&lt;th align="right"&gt;&lt;code&gt;active_hours&lt;/code&gt;&lt;/th&gt;
+&lt;th align="right"&gt;&lt;code&gt;janky_loads&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;'aaa'&lt;/td&gt;
+&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
+&lt;td align="right"&gt;4.5&lt;/td&gt;
+&lt;td align="right"&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;'bbb'&lt;/td&gt;
+&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
+&lt;td align="right"&gt;9.2&lt;/td&gt;
+&lt;td align="right"&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;'ccc'&lt;/td&gt;
+&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
+&lt;td align="right"&gt;0.5&lt;/td&gt;
+&lt;td align="right"&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;...&lt;/td&gt;
+&lt;td align="right"&gt;...&lt;/td&gt;
+&lt;td align="right"&gt;...&lt;/td&gt;
+&lt;td align="right"&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Let's say we launch a new feature that is supposed to
+reduce the number of janky page loads a user sees per hour.
+There's no obvious way to calculate a t-test for
+&lt;code&gt;sum(janky_loads)/sum(active_hours)&lt;/code&gt;.
+What is the variance of that metric?
+Remember, we only get one observation per sample.
+The bootstrap handles this case trivially.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In summary, the bootstrap is awesome.
+We get to replace arcane formulas with intuitive simulations
+and we can calculate confidence intervals for any arbitrary metric.&lt;/p&gt;
+&lt;p&gt;On the other hand, the t-test is &lt;em&gt;much&lt;/em&gt; more computationally efficient.
+If you have really big data and you &lt;em&gt;know&lt;/em&gt; you're only going to compare means,
+the t-test may be a better choice.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li&gt;For example, a
+   &lt;a href="https://en.wikipedia.org/wiki/Power_law#Power-law_probability_distributions"&gt;power law distribution&lt;/a&gt;
+   can easily have infinite variance.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://projecteuclid.org/download/pdf_1/euclid.aos/1176350371"&gt;Bootstrap of the mean in the infinite variance case Athreya, K.B. Ann Stats vol 15 (2) 1987 724-731&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 25 May 2018 12:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-25:why_bootstrap.html</guid></item><item><title>SQL Style Guide</title><link>https://blog.harterrt.com/sql_style_guide.html</link><description>&lt;p&gt;I'm happy to announce, we now have a 
 &lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;SQL style guide&lt;/a&gt;.
 Check it out!&lt;/p&gt;
 &lt;p&gt;If you have any suggestions,

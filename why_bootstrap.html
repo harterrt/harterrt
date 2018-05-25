@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; Why bootstrap?  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Staff Data Engineer @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="https://github.com/harterrt/snippets" target="_blank">Work Snippets</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/why_bootstrap.html">Why bootstrap?</a></h1>
+  </div>
+  <div class="article_text">
+    <p>Over the next few quarters,
+I'm going to focus my attention on Mozilla's experimentation platform.
+One of the first questions we need to answer is
+how we're going to calculate and report the necessary measures of variance.
+Any experimentation platform needs to be able to
+ compare metrics between two groups.</p>
+<p>For example, say we're looking at retention for a control and experiment group.
+Control shows a retention of 88.45% and experiment shows a retention of 90.11%.
+Did the experimental treatment cause a real increase in retention
+or did the experiment branch just get lucky when we assigned users?
+We need to calculate some measure of variance to be able to decide.</p>
+<p>The two most common methods to do this calculation are the frequentist's
+<a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm">two-sample t-test</a>
+or some form of
+<a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">the bootstrap</a>.</p>
+<p>In ye olden days, we'd be forced to use the two-sample t-test.
+The bootstrap requires a lot of compute power
+that just wasn't available until recently.
+As you can imagine, the bootstrap is all the rage in the Data Science world.
+Of course it is. We get to replace statistics with raw compute power!
+That's the dream!</p>
+<p>Still, the bootstrap isn't perfect for every problem.
+Let's look at a few arguements for and against the bootstrap:</p>
+<h2 id="computational-efficiency">Computational Efficiency</h2>
+<p>The bootstrap obviously requires more compute resources.
+Still, it's worth highlighting how 
+<strong>amazingly computationally efficient the t-test is</strong>.
+You can calculate all you need for the t-test in a single pass through the data.
+For each branch of the experiment all you need to calculate is:
+a count, the sum of the data, and the sum of the square of the data
+(<a href="https://en.wikipedia.org/wiki/Variance#Formulae_for_the_variance">to calculate the variance</a>).
+All of these are easy to calculate in a map-reduce framework.
+On the other hand,
+the bootstrap is difficult to compute when your data do not fit in memory.</p>
+<h2 id="the-normality-assumption">The normality assumption</h2>
+<p>T-tests feel arcane and make assumptions about the distribution of the data.
+Most notably, t-tests <em>require your metric to be normally distributed</em>.
+Assuming normal distributions sets of alarms
+for anyone who's worked with real-world data.
+On the other hand,
+the bootstrap uses the sample distribution to describe the population's distribution
+which feels like a much smaller assumption to make.</p>
+<p>In reality, the bootstrap method and t-tests actually
+make very similar assumptions about the underlying data.
+Since the t-test is comparing two <em>means</em>,
+the t-test's normality assumption holds so long as 
+<a href="https://en.wikipedia.org/wiki/Central_limit_theorem">the CLT</a> holds.
+The CLT holds so long as
+(1) you have a lot of data and 
+(2) the data have finite variance.
+We generally have "a lot of data"
+but the finite variance bit can be a problem<sup>1</sup>.
+However! The bootstrap also fails if the data have infinite variance<sup>2</sup>.
+All that to say,
+<strong>if the t-test's normality assumption fails, the bootstrap is in trouble too</strong>.</p>
+<p>On the other hand,
+it can take a large sample for the CLT to make some datasets look normal
+(like, N &gt; 5000).
+If you have a small, skewed data set, the bootstrap may be a better choice.
+However, this is rarely a problem when you're working with Big Data™.</p>
+<h2 id="weird-metrics">Weird metrics</h2>
+<p>It becomes practically impossible to calculate a t-test
+if your metric isn't a mean.
+The classic example here is testing for a change in the median.
+What's the variance of a median?
+Is the median normally distributed?</p>
+<p>¯\_(ツ)_/¯</p>
+<p><em>This</em> is where the bootstrap really shines!
+With the t-test, you only have your one sample to work with.
+With the bootstrap, you have as many samples as you want!
+You can calculate any metric you want and get a confidence interval.</p>
+<p>Personally, I think calculating the median is a lame example.
+Percentiles, like the median, are notoriously hard to calculate over big data.
+Instead, consider this (nearly) real life example:</p>
+<p>Firefox collects anonymized performance data on a daily basis.
+That data could look like this:</p>
+<table>
+<thead>
+<tr>
+<th align="left"><code>client</code></th>
+<th align="right"><code>day</code></th>
+<th align="right"><code>active_hours</code></th>
+<th align="right"><code>janky_loads</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">'aaa'</td>
+<td align="right">2018-01-01</td>
+<td align="right">4.5</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">'bbb'</td>
+<td align="right">2018-01-01</td>
+<td align="right">9.2</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">'ccc'</td>
+<td align="right">2018-01-01</td>
+<td align="right">0.5</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+</tr>
+</tbody>
+</table>
+<p>Let's say we launch a new feature that is supposed to
+reduce the number of janky page loads a user sees per hour.
+There's no obvious way to calculate a t-test for
+<code>sum(janky_loads)/sum(active_hours)</code>.
+What is the variance of that metric?
+Remember, we only get one observation per sample.
+The bootstrap handles this case trivially.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In summary, the bootstrap is awesome.
+We get to replace arcane formulas with intuitive simulations
+and we can calculate confidence intervals for any arbitrary metric.</p>
+<p>On the other hand, the t-test is <em>much</em> more computationally efficient.
+If you have really big data and you <em>know</em> you're only going to compare means,
+the t-test may be a better choice.</p>
+<hr />
+<ol>
+<li>For example, a
+   <a href="https://en.wikipedia.org/wiki/Power_law#Power-law_probability_distributions">power law distribution</a>
+   can easily have infinite variance.</li>
+<li><a href="https://projecteuclid.org/download/pdf_1/euclid.aos/1176350371">Bootstrap of the mean in the infinite variance case Athreya, K.B. Ann Stats vol 15 (2) 1987 724-731</a></li>
+</ol>
+<hr />
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Fri 25 May 2018</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>
