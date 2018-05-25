@@ -47,9 +47,10 @@ the bootstrap is difficult to compute when your data do not fit in memory.
 
 T-tests feel arcane and make assumptions about the distribution of the data.
 Most notably, t-tests *require your metric to be normally distributed*.
-This starts to make analysts uneasy.
+Assuming normal distributions sets of alarms
+for anyone who's worked with real-world data.
 On the other hand,
-the bootstrap uses the sample distribution to describe the population
+the bootstrap uses the sample distribution to describe the population's distribution
 which feels like a much smaller assumption to make.
 
 In reality, the bootstrap method and t-tests actually
@@ -127,50 +128,3 @@ the t-test may be a better choice.
 2. [Bootstrap of the mean in the infinite variance case Athreya, K.B. Ann Stats vol 15 (2) 1987 724-731](https://projecteuclid.org/download/pdf_1/euclid.aos/1176350371)
 
 ---
-
-<!--
-Using the 
-Instead of plug-and-chugging through a set of mysterious formulas,
-we re-sample the data N times, calculate our metrics,
-and use the emprical distribution to describe the metric.
-Plus, we don't need to rely on a normality assumption
-since we're using the actual sample distribution.
-Woot!
-k
-
-
-# But wait...
-
-
-
-In reality, the bootstrap only works 
-
-
-
-Why am I thinking about this?
-
-Often, people think it doesn't rely on as many assumptions about the data.
-Usually when you do this type of calculation,
-folks use a paired t-test which feels arcane.
-Most importantly, that t-test depends on a normality assumption.
-This triggers alarms for a lot of folks.
-Back when I was consulting - this was our favorite nit to pick when reviewing models.
-Economists love to pick apart normality assumptions.
-
-However, the bootstrap relies on a normality assumption too!
-
-
-The classic way is ...
-
-
-
-The bootstrap doesn't depend on a magic incantation
-The bootstrap does rely on a normality assumption
-The bootstrap makes it easy to calculate odd metrics
-  Classically, percentiles like the median
-  More usefully, metrics missing a variance estimate. E.g. clicks/hour
-
-Notes:
-  Only applys for Big Data (TM)
-
--->
