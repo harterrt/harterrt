@@ -1,6 +1,6 @@
 title: Why bootstrap?
 slug: why_bootstrap
-date: 2018-05-24
+date: 2018-05-25 12:00
 
 Over the next few quarters,
 I'm going to focus my attention on Mozilla's experimentation platform.
@@ -110,7 +110,7 @@ What is the variance of that metric?
 Remember, we only get one observation per sample.
 The bootstrap handles this case trivially.
 
-# Conclusion
+## Conclusion
 
 In summary, the bootstrap is awesome.
 We get to replace arcane formulas with intuitive simulations
