@@ -47,7 +47,7 @@ the bootstrap is difficult to compute when your data do not fit in memory.
 
 T-tests feel arcane and make assumptions about the distribution of the data.
 Most notably, t-tests *require your metric to be normally distributed*.
-Assuming normal distributions sets of alarms
+Assuming normal distributions sets off alarms
 for anyone who's worked with real-world data.
 On the other hand,
 the bootstrap uses the sample distribution to describe the population's distribution
