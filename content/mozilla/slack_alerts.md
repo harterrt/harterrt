@@ -1,6 +1,7 @@
 title: CLI for alerts via Slack
 slug: slack_alerts
 date: 2017-12-08
+tags: tools
 
 I finally got a chance to scratch an itch today.
 
