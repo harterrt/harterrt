@@ -18,12 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
-<link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com mozilla Category Atom" />
-<link href="https://blog.harterrt.com/feeds/mozilla.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com mozilla Category RSS" />
+<meta name="keywords" content="">
 
   <title>
     blog.harterrt.com
-&ndash; Category: mozilla  </title>
+&ndash; Planning Data Science is hard: EDA  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -63,80 +62,56 @@
       <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
-&gt; Category: mozilla
-&brvbar; <a href="https://blog.harterrt.com/feeds/mozilla.atom.xml">Atom</a>
-&brvbar; <a href="https://blog.harterrt.com/feeds/mozilla.rss.xml">RSS</a>
       </p>
     </header>
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html">Announcing the Cross Sectional Dataset</a></h1>
+    <h1><a href="https://blog.harterrt.com/planning_eda.html">Planning Data Science is hard: EDA</a></h1>
   </div>
   <div class="article_text">
-    <p>I'm happy to announce a new telemetry dataset!</p>
-<p>The Cross Sectional dataset makes it easy to describe our users by providing
-summary statistics for each client.  Like the Longitudinal table, there's one
-row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies ...</p>
+    <p>Data science is weird.
+It looks a lot like software engineering
+but in practice the two are very different.
+I've been trying to pin down where these differences come from.</p>
+<p>Michael Kaminsky hit on a couple of key points
+in his series on Agile Management for Data Science
+on <a href="https://www.locallyoptimistic.com/">Locally Optimistic</a>.
+In <a href="https://www.locallyoptimistic.com/post/agile-analytics-p2/index.html#exploratory-data-analysis">Part II</a>
+Michael notes that Exploratory Data Analyses (EDA) are difficult to plan for:
+"The nature of exploratory data analysis means
+that the objectives of the analysis may change as you do the work." - Bingo!</p>
+<p>I've run into this problem a bunch of times when trying to set OKRs for major analyses.
+It's nearly impossible to scope a project
+if I haven't already done some exploratory analysis.
+<strong>I didn't have this problem when I was doing engineering work</strong>.
+If I had a rough idea of what pieces I needed to stitch together,
+I could at least come up with an order-of-magnitude estimate
+of how long a project would take to complete.
+Not so with Data Science:
+I have a hard time differentiating between
+analyses that are going to take two <strong>weeks</strong> and 
+analyses that are going to take two <strong>quarters</strong>.</p>
+<p>That's all. No deep insight.
+Just a +1 and a pointer to the folks who got there first.</p>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
+  <div class="article_meta">
+    <p>Posted on: Tue 26 June 2018</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
   </div>
-  <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#tools">Tools</a><ul>
-<li><a href="#tmux">tmux</a><ul>
-<li><a href="#session-persistence">Session Persistence</a></li>
-<li><a href="#multiplexing">Multiplexing</a></li>
-</ul>
-</li>
-<li><a href="#homeshick">Homeshick</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="introduction">Introduction</h2>
-<p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
-I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux ...</p>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/strange-spark-error.html">Strange Spark Error</a></h1>
-  </div>
-  <div class="article_text">
-    <div class="toc">
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#the-bug">The Bug</a></li>
-<li><a href="#fixes">Fixes?</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</div>
-<h1 id="introduction">Introduction</h1>
-<p>I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.</p>
-<h1 id="the-bug">The Bug</h1>
-<p>I added the <a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala">this very simple view</a> to our <a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views">batch views repository</a>.</p>
-<div class="codehilite"><pre><span></span><span class="k">package</span> <span class="nn">com.mozilla.telemetry.views</span>
 
-<span class="k">import</span> <span class="nn">org.apache.spark.</span><span class="o">{</span><span class="nc">SparkConf ...</span></pre></div>
-  </div>
+
 </article>
 
-<footer>
-<div id="paginator">
-
-<a href="https://blog.harterrt.com/category/mozilla2.html" class="button_accent">Newer Posts &rarr;</a>
-</div>
-</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>

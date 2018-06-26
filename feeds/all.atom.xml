@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-06-26T00:00:00-07:00</updated><entry><title>You can't do data science in a GUI</title><link href="https://blog.harterrt.com/ds_gui.html" rel="alternate"></link><published>2018-06-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-26:ds_gui.html</id><summary type="html">&lt;p&gt;I came across 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-06-26T17:19:00-07:00</updated><entry><title>Planning Data Science is hard: EDA</title><link href="https://blog.harterrt.com/planning_eda.html" rel="alternate"></link><published>2018-06-26T17:19:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-26:planning_eda.html</id><summary type="html">&lt;p&gt;Data science is weird.
+It looks a lot like software engineering
+but in practice the two are very different.
+I've been trying to pin down where these differences come from.&lt;/p&gt;
+&lt;p&gt;Michael Kaminsky hit on a couple of key points
+in his series on Agile Management for Data Science
+on &lt;a href="https://www.locallyoptimistic.com/"&gt;Locally Optimistic&lt;/a&gt;.
+In &lt;a href="https://www.locallyoptimistic.com/post/agile-analytics-p2/index.html#exploratory-data-analysis"&gt;Part II&lt;/a&gt;
+Michael notes that Exploratory Data Analyses (EDA) are difficult to plan for:
+"The nature of exploratory data analysis means
+that the objectives of the analysis may change as you do the work." - Bingo!&lt;/p&gt;
+&lt;p&gt;I've run into this problem a bunch of times when trying to set OKRs for major analyses.
+It's nearly impossible to scope a project
+if I haven't already done some exploratory analysis.
+&lt;strong&gt;I didn't have this problem when I was doing engineering work&lt;/strong&gt;.
+If I had a rough idea of what pieces I needed to stitch together,
+I could at least come up with an order-of-magnitude estimate
+of how long a project would take to complete.
+Not so with Data Science:
+I have a hard time differentiating between
+analyses that are going to take two &lt;strong&gt;weeks&lt;/strong&gt; and 
+analyses that are going to take two &lt;strong&gt;quarters&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;That's all. No deep insight.
+Just a +1 and a pointer to the folks who got there first.&lt;/p&gt;</summary></entry><entry><title>You can't do data science in a GUI</title><link href="https://blog.harterrt.com/ds_gui.html" rel="alternate"></link><published>2018-06-26T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-26:ds_gui.html</id><summary type="html">&lt;p&gt;I came across 
 &lt;a href="https://www.youtube.com/watch?v=cpbtcsGE0OA"&gt;You can't do data science in a GUI&lt;/a&gt;
 by Hadley Wickham a little while ago.
 He hits on a lot of the same problems I mentioned in
