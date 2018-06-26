@@ -1,6 +1,7 @@
 title: Bad Tools are Insidious
 slug: bad-tools
 date: 2017-06-15
+tags: tools
 
 This is my first job making data tools that other people use.
 In the past, I've always been a data scientist -
