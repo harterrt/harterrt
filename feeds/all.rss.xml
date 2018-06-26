@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 25 May 2018 12:00:00 -0700</lastBuildDate><item><title>Why bootstrap?</title><link>https://blog.harterrt.com/why_bootstrap.html</link><description>&lt;p&gt;Over the next few quarters,
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 26 Jun 2018 00:00:00 -0700</lastBuildDate><item><title>You can't do data science in a GUI</title><link>https://blog.harterrt.com/ds_gui.html</link><description>&lt;p&gt;I came across 
+&lt;a href="https://www.youtube.com/watch?v=cpbtcsGE0OA"&gt;You can't do data science in a GUI&lt;/a&gt;
+by Hadley Wickham a little while ago.
+He hits on a lot of the same problems I mentioned in
+&lt;a href="https://blog.harterrt.com/coding_in_textboxes.html"&gt;Don't make me code in your text box&lt;/a&gt;.
+Take a look if you have some time.
+In the first 15m he covers the arguement against coding in a GUI.
+After that he plugs for R and the tidyverse.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 26 Jun 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-26:ds_gui.html</guid><category>gui</category><category>tools</category></item><item><title>Why bootstrap?</title><link>https://blog.harterrt.com/why_bootstrap.html</link><description>&lt;p&gt;Over the next few quarters,
 I'm going to focus my attention on Mozilla's experimentation platform.
 One of the first questions we need to answer is
 how we're going to calculate and report the necessary measures of variance.
@@ -342,7 +349,7 @@ However, most of these tools &lt;strong&gt;compromise on composability&lt;/stron
 Don't get me wrong, &lt;strong&gt;these tools are all useful and necessary&lt;/strong&gt;,
 but &lt;a href="/bad-tools.html"&gt;bad tools are insidious&lt;/a&gt;.
 Be aware that these fast-iteration focused tools can get misused
-if there's not an obvious path for migrating to something more stable.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-03-28:coding_in_textboxes.html</guid></item><item><title>The 5 Stages of Experiment Analysis</title><link>https://blog.harterrt.com/stages_e13n.html</link><description>&lt;p&gt;I've been thinking about experimentation a lot recently.
+if there's not an obvious path for migrating to something more stable.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-03-28:coding_in_textboxes.html</guid><category>tools</category><category>gui</category></item><item><title>The 5 Stages of Experiment Analysis</title><link>https://blog.harterrt.com/stages_e13n.html</link><description>&lt;p&gt;I've been thinking about experimentation a lot recently.
 Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
 But what happens after the experiment's been run?
 There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
@@ -667,7 +674,7 @@ slack &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 then there's no need to instantiate a new machine with your credentials.&lt;/p&gt;
 &lt;p&gt;For reference,
 Slack's bot documentation is here:
-&lt;a href="https://api.slack.com/bot-users"&gt;here&lt;/a&gt;,&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-08:slack_alerts.html</guid></item><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+&lt;a href="https://api.slack.com/bot-users"&gt;here&lt;/a&gt;,&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-08:slack_alerts.html</guid><category>tools</category></item><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
 was a major 2017 initiative for the Firefox Data team.
 The goal is to provide release managers with near-real-time
 release-health metrics minutes after going public.
@@ -1171,7 +1178,7 @@ The better they work, the easier it is to stay in flow, be creative, and stay ex
 &lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
 &lt;p&gt;Don't expect your users to tell you how to improve your tools.
 You're probably going to need to
-&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description>&lt;div id="preamble"&gt;
+&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid><category>tools</category></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description>&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
 I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
