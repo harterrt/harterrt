@@ -1,6 +1,6 @@
 title: You can't do data science in a GUI
 slug: ds_gui
-date: 2018-04-17
+date: 2018-06-26
 tags: gui, tools
 
 I came across 
