@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-06-26T17:19:00-07:00</updated><entry><title>Planning Data Science is hard: EDA</title><link href="https://blog.harterrt.com/planning_eda.html" rel="alternate"></link><published>2018-06-26T17:19:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-26:planning_eda.html</id><summary type="html">&lt;p&gt;Data science is weird.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-06-27T14:21:00-07:00</updated><entry><title>If you can't do it in a day, you can't do it</title><link href="https://blog.harterrt.com/day_barrier.html" rel="alternate"></link><published>2018-06-27T14:21:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-27:day_barrier.html</id><summary type="html">&lt;p&gt;I was talking with Mark Reid
+about some of the problems with &lt;a href="coding_in_textboxes.html"&gt;Coding in a GUI&lt;/a&gt;.
+He nailed part of the problem with soundbite too good not to share:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"If you can't do it in a day, you can't do it."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a persistent problem with tools that make you code in a GUI.
+These tools are great for working on bite-sized problems,
+but the workflow becomes painful
+when the problem needs to be broken into pieces and attacked separately.&lt;/p&gt;
+&lt;p&gt;Part of the problem is that I can't test the code.
+That means I need to understand how each change will affect the entire code base.
+It's impossible to compartmentalize.&lt;/p&gt;
+&lt;p&gt;GUI's also make it difficult to split a problem across people.
+If I can't track changes easily
+it's impossible to tell whether my changes conflict with a peer's changes.&lt;/p&gt;
+&lt;p&gt;So look out, &lt;a href="bad-tools.html"&gt;bad tools are insidious&lt;/a&gt;!
+If you find yourself abandoning an analysis because it's hard to refactor,
+consider choosing a different toolchain next time.
+Especially if it's because there's no easy way to move your code out of a GUI!&lt;/p&gt;</summary><category term="tools"></category></entry><entry><title>Planning Data Science is hard: EDA</title><link href="https://blog.harterrt.com/planning_eda.html" rel="alternate"></link><published>2018-06-26T17:19:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-06-26:planning_eda.html</id><summary type="html">&lt;p&gt;Data science is weird.
 It looks a lot like software engineering
 but in practice the two are very different.
 I've been trying to pin down where these differences come from.&lt;/p&gt;
