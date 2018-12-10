@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/documentation.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2016-11-03T00:00:00-07:00</updated><entry><title>Meta Documentation</title><link href="https://blog.harterrt.com/meta-documentation.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:meta-documentation.html</id><summary type="html">&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
 I've been interesting in learning how to write great documentation for a while,
@@ -19,7 +19,7 @@ It's easier to do a one off analysis that is kind-of right.&lt;/p&gt;
 The hardest part of making data useful is understanding how it was collected and in what situations it is appropriate. &lt;/p&gt;
 &lt;div class="toc"&gt;
 &lt;ul&gt;&lt;/ul&gt;
-&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
+&lt;/div&gt;</summary><category term="documentation mozilla"></category></entry><entry><title>Why Markdown?</title><link href="https://blog.harterrt.com/why-markdown.html" rel="alternate"></link><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2016-11-03:why-markdown.html</id><summary type="html">&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;

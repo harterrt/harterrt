@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 27 Jun 2018 14:21:00 -0700</lastBuildDate><item><title>If you can't do it in a day, you can't do it</title><link>https://blog.harterrt.com/day_barrier.html</link><description>&lt;p&gt;I was talking with Mark Reid
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 10 Dec 2018 00:00:00 -0800</lastBuildDate><item><title>Slow to respond through 2018</title><link>https://blog.harterrt.com/2018_slow_to_respond.html</link><description>&lt;p&gt;I'm working on an urgent and high priority request for the next few weeks.
+To make sure I can finish this work in 2018
+I'm &lt;strong&gt;limiting my meetings and communications&lt;/strong&gt; for the remainder of the year.&lt;/p&gt;
+&lt;p&gt;Slack is good for getting my immediate attention,
+but if your request takes more than a one word response
+it's likely to get lost in the shuffle.
+If you need me to take some action 
+&lt;a href="https://bugzilla.mozilla.org/enter_bug.cgi?assigned_to=rharter%40mozilla.com&amp;amp;bug_file_loc=http%3A%2F%2F&amp;amp;bug_ignored=0&amp;amp;bug_severity=normal&amp;amp;bug_status=NEW&amp;amp;cf_fx_iteration=---&amp;amp;cf_fx_points=---&amp;amp;component=General&amp;amp;contenttypemethod=list&amp;amp;contenttypeselection=text%2Fplain&amp;amp;flag_type-4=X&amp;amp;flag_type-607=X&amp;amp;flag_type-800=X&amp;amp;flag_type-803=X&amp;amp;form_name=enter_bug&amp;amp;maketemplate=Remember%20values%20as%20bookmarkable%20template&amp;amp;op_sys=Mac%20OS%20X&amp;amp;priority=--&amp;amp;product=Data%20Science&amp;amp;rep_platform=x86_64&amp;amp;target_milestone=---&amp;amp;version=unspecified"&gt;filing a bug&lt;/a&gt;
+is your best bet.
+If you don't want to file a bug, email is fine.
+Keep in mind that my response time will be very slow during this time.&lt;/p&gt;
+&lt;p&gt;If you need immediate help, try the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If your question is about a search analysis or new search telemetry,
+   please contact bmiroglio AT mozilla.com&lt;/li&gt;
+&lt;li&gt;If your question is about search data, see the documentation here.
+   If that doesn't help, contact wlach AT mozilla.com&lt;/li&gt;
+&lt;li&gt;For general data science questions contact rweiss AT mozilla.com&lt;/li&gt;
+&lt;li&gt;For general telemetry questions,
+   ask #fx-metrics on Slack or #datapipeline on IRC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Otherwise, I'll get back to you as soon as I can!
+Thanks for your understanding.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 10 Dec 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-12-10:2018_slow_to_respond.html</guid></item><item><title>If you can't do it in a day, you can't do it</title><link>https://blog.harterrt.com/day_barrier.html</link><description>&lt;p&gt;I was talking with Mark Reid
 about some of the problems with &lt;a href="coding_in_textboxes.html"&gt;Coding in a GUI&lt;/a&gt;.
 He nailed part of the problem with soundbite too good not to share:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1220,202 +1242,7 @@ The better they work, the easier it is to stay in flow, be creative, and stay ex
 &lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
 &lt;p&gt;Don't expect your users to tell you how to improve your tools.
 You're probably going to need to
-&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid><category>tools</category></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description>&lt;div id="preamble"&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;m working on a big overhaul of my team&amp;#8217;s documentation.
-I&amp;#8217;ve noticed writing documentation is a difficult thing to get right.
-I haven&amp;#8217;t seen any great example for a data product, either.
-I don&amp;#8217;t have much experience in this area,
-so I decided to review what&amp;#8217;s already been written about creating great documentation.
-This is a summary of what I&amp;#8217;ve found,
-both for my own reference and to help others understand my thought process.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_findings"&gt;Findings&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;I should note, all the literature I could find focused on documenting software products.
-I am willing to bet that a data product is going to have different documentation needs than most software products.
-But, this is as good a place to start as any.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_structure_amp_what_to_write"&gt;Structure &amp;amp; What to Write&lt;/h3&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Most seem to agree that a &lt;strong&gt;README&lt;/strong&gt; is a critical piece of documentation.
-The README is usually comprised of two key parts:&lt;/p&gt;&lt;/div&gt;
-&lt;div class="olist arabic"&gt;&lt;ol class="arabic"&gt;
-&lt;li&gt;
-&lt;p&gt;
-A quick introduction explaining what this project is, why the reader should
-  care, and whether it&amp;#8217;s worth investing time to understand it better.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-A simple tutorial to get the reader started and give a feel for what the tool
-  actually does.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;If the reader decides they want to learn more,
-there should be a set of &lt;strong&gt;topical guides or tutorials&lt;/strong&gt; which comprise the bulk of the documentation.
-Think of each of these guides as a class focused on teaching your student (reader) a single skill.
-Reading all of these guides should take "someone who has never seen your product and make them an expert user". [&lt;a href="#TDT"&gt;TDT&lt;/a&gt;]
-With that in mind, make sure there&amp;#8217;s some sense of order to these lessons (easy to hard).&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;If your reader gets this far, they are now very comfortable with your product.
-From here, they need high-quality &lt;strong&gt;reference material&lt;/strong&gt;.
-In my experience, this is the most common documentation provided,
-but it is needed latest in the process and only by the most advanced users!&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;When I started this research,
-I was having a hard time figuring out how we were going to separate our
-prose documentation from our development notes.
-Now I see that these are just different stages in this learning process.
-First we explain what it is, then how to use it, and finally, how to extend it.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_style"&gt;Style&lt;/h3&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Most articles suggest adopting a style guide to make it easier for a user to read your documentation.
-The writing should pull you through the document and feel natural.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;If you want your documentation to read naturally, you should try to become a better writer.
-This comes as cold solace to most folks, since I need my documentation now
-and I can&amp;#8217;t wait 10,000 hours to become an expert writer, but it&amp;#8217;s worth mentioning.
-The overwhelming consensus is that the best way to become a better writer is to &lt;strong&gt;write a lot&lt;/strong&gt;.
-If you want to write great documentation, consider building habits that will make you a great writer.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;As with programming, maintaining a consistent style will help readers understand your documentation naturally.
-Note, the important word here is "consistent".
-&lt;strong&gt;Choose a style and stick with it&lt;/strong&gt;.
-This sounds obvious, but I rarely find corporate documentation with consistent style across tutorials.
-Have a style guide and enforce it.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;As you choose your style guide, be aware that most of the advice is focused on physical media.
-Your documentation is probably going to be read digitally,
-so your readers will have different expectations.
-Specifically, readers are going to skim your writing, so make it easy to identify important information.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Use &lt;strong&gt;visual markup&lt;/strong&gt; like bold text, code blocks, call-outs
-(e.g &lt;a href="http://www.methods.co.nz/asciidoc/chunked/ch16.html#X22"&gt;1&lt;/a&gt;,
-&lt;a href="http://getbootstrap.com/components/#alerts"&gt;2&lt;/a&gt;), and section headers.
-Similarly, avoid long paragraphs.
-Short paragraphs that describe one concept each makes finding important information easier.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Most guides suggest keeping a &lt;strong&gt;conversational tone&lt;/strong&gt;.
-This makes the guide more approachable and easier to read.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Everyone seems to agree that &lt;strong&gt;you should have an editor&lt;/strong&gt;.
-In fact, Jacob Kaplan-Moss dedicated an entire article to this point [&lt;a href="#YNAE"&gt;JKM 3&lt;/a&gt;].
-If you don&amp;#8217;t have access to an editor,
-review your own work thrice then ask for someone else&amp;#8217;s review before publishing.
-Try adjusting your margins to force the text to re-flow.
-It&amp;#8217;s a very effective way to catch spelling or grammatical mistakes.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_tools"&gt;Tools&lt;/h3&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;I&amp;#8217;ll start this section with a warning.
-Tools often receive an undue amount of attention, especially from programmers.
-With documentation, &lt;strong&gt;writing is the hard, important work&lt;/strong&gt;.
-It&amp;#8217;s important to use good tools, but make sure you&amp;#8217;re not
-&lt;a href="https://en.wikipedia.org/wiki/Law_of_triviality"&gt;bike shedding&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Your documentation should be stored in &lt;strong&gt;plain text and in version control&lt;/strong&gt;.
-Most of your documentation is going to be written by programmers,
-and programmers have powerful tools for manipulating text.
-Using anything besides plain text is a frustration that makes it less
-likely they&amp;#8217;ll enjoy writing documentation.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;You should have a &lt;strong&gt;process for reviewing changes&lt;/strong&gt; to the documentation.
-Review will help maintain a consistent voice across your documentation
-and will provide useful feedback to the writer.
-Think of how useful code reviews are for improving your programming.
-I&amp;#8217;d jump at the chance to get feedback from an expert writer.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;You &lt;strong&gt;should not use a wiki&lt;/strong&gt; for documentation.
-Wikis make documentation "everyone&amp;#8217;s responsibility",
-which really means it&amp;#8217;s nobody&amp;#8217;s responsibility.
-Without this responsibility, wikis tend to decay into a web of assorted links without any sense of order or importance.
-Wikis make it impossible to maintain a consistent voice throughout your documentation.
-Finally, it&amp;#8217;s difficult to get review for your work before publishing.&lt;/p&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Recognize that automatically-generated documentation isn&amp;#8217;t a replacement for hand-crafted prose.
-Remember that the bulk of your documentation should be tutorials meant to slowly ramp up your users to expert status.
-Docstrings have very little utility in this process.&lt;/p&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_resources"&gt;Resources&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;Most of what I&amp;#8217;ve summarized here came from very few sources.
-I highly recommend you read the following articles if you&amp;#8217;re interested in learning more:&lt;/p&gt;&lt;/div&gt;
-&lt;div class="ulist"&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a id="SL"&gt;&lt;/a&gt; [TDT]: &lt;a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/"&gt;Teach, Don&amp;#8217;t Tell&lt;/a&gt; (Steve Losh)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a id="JKM 1"&gt;&lt;/a&gt; [JKM 1]: &lt;a href="https://jacobian.org/writing/what-to-write/"&gt;What to Write&lt;/a&gt; (Jacob Kaplan Moss)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a id="JKM 2"&gt;&lt;/a&gt; [JKM 2]: &lt;a href="https://jacobian.org/writing/technical-style/"&gt;Technical Style&lt;/a&gt; (Jacob Kaplan Moss)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a id="JKM 3"&gt;&lt;/a&gt; [JKM 3]: &lt;a href="https://jacobian.org/writing/editors/"&gt;You Need an Editor&lt;/a&gt; (Jacob Kaplan Moss)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
-&lt;div class="paragraph"&gt;&lt;p&gt;For later reference, I also reviewed these articles to form opinions about
-general consensus outside of the primary sources above:&lt;/p&gt;&lt;/div&gt;
-&lt;div class="ulist"&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx"&gt;The Science of Scientific Writing&lt;/a&gt;
-  (George Gopen, Judith Swan): Good overview of how to structure a paper so
-  readers find information where they expect it to be
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="http://www.writethedocs.org/"&gt;WriteTheDocs.org&lt;/a&gt;, specifically
-  &lt;a href="http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/"&gt;A Beginner&amp;#8217;s Guide to Writing Docs&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="https://github.com/noffle/art-of-readme"&gt;Art of README&lt;/a&gt;: An arguement for
-  writing good READMEs and a template to help you get started
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="https://groups.google.com/forum/#!topic/scala-internals/r2GnzCFc3TY"&gt;Scala Documentation Discussion&lt;/a&gt;
-  A discussion of why Scala&amp;#8217;s official documentation is so bad
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="http://r-pkgs.had.co.nz/vignettes.html"&gt;Vignettes&lt;/a&gt; (Hadley Wickham): Hadley
-  is a rockstar in the R universe. This is an article from his style guide for
-  writing R package documentation. This is the closest I could come to finding
-  documentation advice for data products.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html"&gt;Programming&amp;#8217;s Dirtiest Little Secret&lt;/a&gt;
-  (Steve Yegge): Steve Yegge on why it&amp;#8217;s important to type well
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="https://byrslf.co/writing-great-documentation-44d90367115a#.nenvaqeng"&gt;Writing Great Documentation&lt;/a&gt;:
-  This article comments on documentation&amp;#8217;s propensity towards kippleization.
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href="https://www.gnu.org/prep/standards/standards.html#GNU-Manuals"&gt;GNU Manual Style Guide&lt;/a&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Harter</dc:creator><pubDate>Fri, 03 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-02-03:lit-review.html</guid><category>mozilla</category><category>documentation</category></item><item><title>Is moving to the Bay Area worth it?</title><link>https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html</link><description>&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
+&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid><category>tools</category></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Harter</dc:creator><pubDate>Fri, 03 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-02-03:lit-review.html</guid><category>mozilla</category><category>documentation</category></item><item><title>Is moving to the Bay Area worth it?</title><link>https://blog.harterrt.com/is-moving-to-the-bay-area-worth-it.html</link><description>&lt;p&gt;I came across &lt;a href="http://blog.triplebyte.com/does-it-make-sense-for-programmers-to-move-to-the-bay-area"&gt;this article&lt;/a&gt; on the front page of Hacker News yesterday.
 The author argues that Bay Area housing prices may be high, but the salary increase probably makes it worth while.
 The author pulls together some interesting data to make their point,
 but I have major &lt;strong&gt;issues with the analysis&lt;/strong&gt;.
@@ -1582,7 +1409,7 @@ So much nicer than cussing out your flaky WiFi connection.&lt;/p&gt;
 tmux new -s foo
 
 &lt;span class="c1"&gt;# Do stuff ...&lt;/span&gt;
-sleep 100
+sleep &lt;span class="m"&gt;100&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Kill the session, returning you to the original shell&lt;/span&gt;
 &lt;span class="c1"&gt;# with ctrl-b d&lt;/span&gt;
@@ -1615,126 +1442,4 @@ But, your tools should be a joy to use, and Homeshick makes this a non-issue.&lt
 Now, I can &lt;strong&gt;setup a new Ubuntu machine within ~5 minutes&lt;/strong&gt; with all of my dotfiles intact.
 When I connect to a machine for the first time, I grab &lt;a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md"&gt;this snippet&lt;/a&gt; and all of the initialization is done.
 Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</guid><category>tools</category></item><item><title>Strange Spark Error</title><link>https://blog.harterrt.com/strange-spark-error.html</link><description>&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#the-bug"&gt;The Bug&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#fixes"&gt;Fixes?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;I spend the better part of last week debugging a Spark error, so I figure it's worth writing up.&lt;/p&gt;
-&lt;h1 id="the-bug"&gt;The Bug&lt;/h1&gt;
-&lt;p&gt;I added the &lt;a href="https://github.com/harterrt/spark-failure/blob/master/failure.scala"&gt;this very simple view&lt;/a&gt; to our &lt;a href="https://github.com/mozilla/telemetry-batch-view/tree/master/src/main/scala/com/mozilla/telemetry/views"&gt;batch views repository&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
-
-&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.sql.hive.HiveContext&lt;/span&gt;
-
-&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Base&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
-    &lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;
-&lt;span class="o"&gt;)&lt;/span&gt;
-
-&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Target&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
-    &lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;
-&lt;span class="o"&gt;)&lt;/span&gt;
-
-&lt;span class="k"&gt;object&lt;/span&gt; &lt;span class="nc"&gt;FailingView&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;generateCrossSectional&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Base&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="nc"&gt;Target&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Array&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;String&lt;/span&gt;&lt;span class="o"&gt;])&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Unit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;sparkConf&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="n"&gt;setAppName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getClass&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getName&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setMaster&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;spark.master&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;local[*]&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;sc&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;hiveContext&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;HiveContext&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sc&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;hiveContext.implicits._&lt;/span&gt;
-
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;ds&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="n"&gt;hiveContext&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sql&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SELECT * FROM longitudinal&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;selectExpr&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;client_id&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;Base&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;generateCrossSectional&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-    &lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;\n&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;\n&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;When I run this on an ATMO cluster, I observe the following error:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;Exception in thread &amp;quot;main&amp;quot; org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 1.0 failed 4 times, most recent failure: Lost task 24.3 in stage 1.0 (TID 64, ip-172-31-8-250.us-west-2.compute.internal): java.io.IOException: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.util.Utils&lt;/span&gt;&lt;span class="p"&gt;$.&lt;/span&gt;&lt;span class="nv"&gt;tryOrIOException&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;Utils.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;1222&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast.readBroadcastBlock(TorrentBroadcast.scala:165)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast._value&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;lzycompute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;TorrentBroadcast.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast._value(TorrentBroadcast.scala:64)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast.getValue(TorrentBroadcast.scala:88)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.Broadcast.value(Broadcast.scala:70)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:65)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.scheduler.Task.run(Task.scala:89)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.executor.Executor&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TaskRunner&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;Executor.scala&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;214&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)&lt;/span&gt;
-&lt;span class="x"&gt;    at java.util.concurrent.ThreadPoolExecutor&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;Worker&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;ThreadPoolExecutor.java&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="m"&gt;615&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;span class="x"&gt;    at java.lang.Thread.run(Thread.java:745)&lt;/span&gt;
-&lt;span class="x"&gt;Caused by: org.apache.spark.SparkException: Failed to get broadcast_2_piece0 of broadcast_2&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;apache&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;spark&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;broadcast&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;readBlocks&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;1&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;2.apply(TorrentBroadcast.scala:138)&lt;/span&gt;
-&lt;span class="x"&gt;    at org.apache.spark.broadcast.TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;apache&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;spark&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;broadcast&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;TorrentBroadcast&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;readBlocks&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;1&lt;/span&gt;&lt;span class="p"&gt;$$&lt;/span&gt;&lt;span class="nv"&gt;anonfun&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="x"&gt;2.apply(TorrentBroadcast.scala:138)&lt;/span&gt;
-&lt;span class="x"&gt;...&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;I don't get much information from this message, and searching for this error yields a variety of threads with half solved solutions.
-My hunch is this message pops up for a variety of issues.
-What's even more strange is that this function runs successfully when we read local data using a SQLContext.&lt;/p&gt;
-&lt;h1 id="fixes"&gt;Fixes?&lt;/h1&gt;
-&lt;p&gt;I dug in for a while and I found two possible solutions.&lt;/p&gt;
-&lt;p&gt;Instead of calling generateCrossSectional, we can just inline the meat of the function and everything works.
-This isn't a great solution, because this function is going to grow over the next month and I don't want to maintain the behemoth. &lt;/p&gt;
-&lt;p&gt;After a few refactors, I found that the function will run if I change the scope of the HiveContext val.
-Take a look at &lt;a href="https://github.com/harterrt/spark-failure/blob/master/fixed.scala"&gt;this solution&lt;/a&gt;, which successfully runs.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.mozilla.telemetry.views&lt;/span&gt;
-
-&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.apache.spark.sql.hive.HiveContext&lt;/span&gt;
-
-&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Base&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
-    &lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;
-&lt;span class="o"&gt;)&lt;/span&gt;
-
-&lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Target&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
-    &lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;
-&lt;span class="o"&gt;)&lt;/span&gt;
-
-&lt;span class="k"&gt;object&lt;/span&gt; &lt;span class="nc"&gt;PassingView&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;generateCrossSectional&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Base&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="nc"&gt;Target&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;client_id&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Array&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;String&lt;/span&gt;&lt;span class="o"&gt;])&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Unit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;sparkConf&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;SparkConf&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="n"&gt;setAppName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getClass&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getName&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setMaster&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;spark.master&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;local[*]&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;sc&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;SparkContext&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sparkConf&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;hiveContext&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nc"&gt;HiveContext&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sc&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;hiveContext.implicits._&lt;/span&gt;
-
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;ds&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="n"&gt;hiveContext&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sql&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SELECT * FROM longitudinal&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;selectExpr&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;client_id&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;as&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;Base&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;val&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="k"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;generateCrossSectional&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-    &lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;\n&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;\n&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;This solution isn't totally gratifying since I'm still unclear on what's causing the error, but I'm stopping here.
-The cluster this was tested on is still running Spark 1.6, which apparently has some known issues.
-Once we upgrade to 2.0 I may take another look.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 26 Aug 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-08-26:strange-spark-error.html</guid><category>spark</category><category>scala</category></item></channel></rss>
+&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</guid><category>tools</category></item></channel></rss>
