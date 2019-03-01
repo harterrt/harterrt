@@ -4,6 +4,7 @@ import os
 import shutil
 import sys
 import SocketServer
+from livereload import Server
 from cookiecutter.main import cookiecutter
 from datetime import date
 
@@ -60,9 +61,10 @@ def serve():
     server.serve_forever()
 
 def reserve():
-    """`build`, then `serve`"""
-    build()
-    serve()
+    """Serve with autoreload"""
+    server = Server()
+    server.watch(DEPLOY_PATH)
+    server.serve(root=DEPLOY_PATH)
 
 def preview():
     """Build production version of site"""
