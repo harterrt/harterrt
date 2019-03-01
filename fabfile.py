@@ -4,7 +4,7 @@ import os
 import shutil
 import sys
 import SocketServer
-from livereload import Server
+from livereload import Server, shell
 from cookiecutter.main import cookiecutter
 from datetime import date
 
@@ -63,6 +63,14 @@ def serve():
 def reserve():
     """Serve with autoreload"""
     server = Server()
+    csspath = 'themes/harter/static/css/style.'
+    server.watch(csspath + 'less', shell(
+        'lessc '
+        + csspath
+        + 'less '
+        + csspath
+        + 'css'
+    ))
     server.watch(DEPLOY_PATH)
     server.serve(root=DEPLOY_PATH)
 
