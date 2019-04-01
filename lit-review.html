@@ -70,7 +70,134 @@
     <h1><a href="https://blog.harterrt.com/lit-review.html">Literature Review: Writing Great Documentation</a></h1>
   </div>
   <div class="article_text">
-    
+    <p>I'm working on a big overhaul of my team's documentation.
+I've noticed writing documentation is a difficult thing to get right.
+I haven't seen any great example for a data product, either.
+I don't have much experience in this area,
+so I decided to review what's already been written about creating great documentation.
+This is a summary of what I've found, 
+both for my own reference and to help others understand my thought process.</p>
+<h2 id="findings">Findings</h2>
+<p>I should note, all the literature I could find focused on documenting software products.
+I am willing to bet that a data product is going to have different documentation needs than most software products.
+But, this is as good a place to start as any.</p>
+<h3 id="structure-what-to-write">Structure &amp; What to Write</h3>
+<p>Most seem to agree that a <strong>README</strong> is a critical piece of documentation.
+The README is usually comprised of two key parts:</p>
+<ul>
+<li>A quick introduction explaining what this project is, why the reader should 
+  care, and whether it's worth investing time to understand it better.</li>
+<li>A simple tutorial to get the reader started and give a feel for what the tool
+  actually does.</li>
+</ul>
+<p>If the reader decides they want to learn more,
+there should be a set of <strong>topical guides or tutorials</strong> which comprise the bulk of the documentation.
+Think of each of these guides as a class focused on teaching your student (reader) a single skill.
+Reading all of these guides should take "someone who has never seen your product and make them an expert user". (<a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">TDT</a>)
+With that in mind, make sure there's some sense of order to these lessons (easy to hard).</p>
+<p>If your reader gets this far, they are now very comfortable with your product.
+From here, they need high-quality <strong>reference material</strong>.
+In my experience, this is the most common documentation provided,
+but it is needed latest in the process and only by the most advanced users!</p>
+<p>When I started this research, 
+I was having a hard time figuring out how we were going to separate our 
+prose documentation from our development notes.
+Now I see that these are just different stages in this learning process.
+First we explain what it is, then how to use it, and finally, how to extend it.</p>
+<h3 id="style">Style</h3>
+<p>Most articles suggest adopting a style guide to make it easier for a user to read your documentation.
+The writing should pull you through the document and feel natural.</p>
+<p>If you want your documentation to read naturally, you should try to become a better writer.
+This comes as cold solace to most folks, since I need my documentation now
+and I can't wait 10,000 hours to become an expert writer, but it's worth mentioning.
+The overwhelming consensus is that the best way to become a better writer is to <strong>write a lot</strong>.
+If you want to write great documentation, consider building habits that will make you a great writer.</p>
+<p>As with programming, maintaining a consistent style will help readers understand your documentation naturally.
+Note, the important word here is "consistent".
+<strong>Choose a style and stick with it</strong>.
+This sounds obvious, but I rarely find corporate documentation with consistent style across tutorials.
+Have a style guide and enforce it.</p>
+<p>As you choose your style guide, be aware that most of the advice is focused on physical media.
+Your documentation is probably going to be read digitally,
+so your readers will have different expectations.
+Specifically, readers are going to skim your writing, so make it easy to identify important information.</p>
+<p>Use <strong>visual markup</strong> like bold text, code blocks, call-outs
+(e.g [<a href="http://www.methods.co.nz/asciidoc/chunked/ch16.html#X22">1</a>],
+[<a href="http://getbootstrap.com/components/#alerts[2]">2</a>], and section headers.
+Similarly, avoid long paragraphs.
+Short paragraphs that describe one concept each makes finding important information easier.</p>
+<p>Most guides suggest keeping a <strong>conversational tone</strong>.
+This makes the guide more approachable and easier to read.</p>
+<p>Everyone seems to agree that <strong>you should have an editor</strong>.
+In fact, Jacob Kaplan-Moss dedicated an entire article to this point [<a href="https://jacobian.org/writing/editors/">YNAE</a>].
+If you don't have access to an editor,
+review your own work thrice then ask for someone else's review before publishing.
+Try adjusting your margins to force the text to re-flow.
+It's a very effective way to catch spelling or grammatical mistakes.</p>
+<h3 id="tools">Tools</h3>
+<p>I'll start this section with a warning.
+Tools often receive an undue amount of attention, especially from programmers.
+With documentation, <strong>writing is the hard, important work</strong>.
+It's important to use good tools, but make sure you're not 
+<a href="https://en.wikipedia.org/wiki/Law_of_triviality">bike shedding</a>.</p>
+<p>Your documentation should be stored in <strong>plain text and in version control</strong>.
+Most of your documentation is going to be written by programmers, 
+and programmers have powerful tools for manipulating text. 
+Using anything besides plain text is a frustration that makes it less
+likely they'll enjoy writing documentation.</p>
+<!--
+// TODO: This should be expanded upon. Version control is hugely useful for
+// figuring out who to contact if you have questions, identifying the health
+// of the documentation, and attributing credit for the hard, thankless work
+// of writing the documentation. Wiki's do a particularly horrible job of all
+// of these things. 
+-->
+
+<p>You should have a <strong>process for reviewing changes</strong> to the documentation.
+Review will help maintain a consistent voice across your documentation 
+and will provide useful feedback to the writer.
+Think of how useful code reviews are for improving your programming.
+I'd jump at the chance to get feedback from an expert writer.</p>
+<p>You <strong>should not use a wiki</strong> for documentation.
+Wikis make documentation "everyone's responsibility",
+which really means it's nobody's responsibility.
+Without this responsibility, wikis tend to decay into a web of assorted links without any sense of order or importance.
+Wikis make it impossible to maintain a consistent voice throughout your documentation.
+Finally, it's difficult to get review for your work before publishing.</p>
+<p>Recognize that automatically-generated documentation isn't a replacement for hand-crafted prose.
+Remember that the bulk of your documentation should be tutorials meant to slowly ramp up your users to expert status.
+Docstrings have very little utility in this process.</p>
+<h2 id="resources">Resources</h2>
+<p>Most of what I've summarized here came from very few sources.
+I highly recommend you read the following articles if you're interested in learning more:</p>
+<ul>
+<li><a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">[Teach, Don't Tell] (Steve Losh)</a></li>
+<li><a href="https://jacobian.org/writing/what-to-write/">[What to Write] (Jacob Kaplan Moss)</a></li>
+<li><a href="https://jacobian.org/writing/technical-style/">[Technical Style] (Jacob Kaplan Moss)</a></li>
+<li><a href="https://jacobian.org/writing/editors/">[You Need an Editor] (Jacob Kaplan Moss)</a></li>
+</ul>
+<p>For later reference, I also reviewed these articles to form opinions about
+general consensus outside of the primary sources above:</p>
+<ul>
+<li><a href="http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx">The Science of Scientific Writing</a>
+  (George Gopen, Judith Swan): Good overview of how to structure a paper so 
+  readers find information where they expect it to be</li>
+<li><a href="http://www.writethedocs.org/">WriteTheDocs.org</a>, specifically 
+  <a href="http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/">A Beginner's Guide to Writing Docs</a></li>
+<li><a href="https://github.com/noffle/art-of-readme">Art of README</a>: An arguement for 
+  writing good READMEs and a template to help you get started</li>
+<li><a href="https://groups.google.com/forum/#!topic/scala-internals/r2GnzCFc3TY">Scala Documentation Discussion</a>
+  A discussion of why Scala's official documentation is so bad</li>
+<li><a href="http://r-pkgs.had.co.nz/vignettes.html">Vignettes</a> (Hadley Wickham): Hadley
+  is a rockstar in the R universe. This is an article from his style guide for
+  writing R package documentation. This is the closest I could come to finding
+  documentation advice for data products.</li>
+<li><a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Programming's Dirtiest Little Secret</a>
+  (Steve Yegge): Steve Yegge on why it's important to type well</li>
+<li><a href="https://byrslf.co/writing-great-documentation-44d90367115a#.nenvaqeng">Writing Great Documentation</a>:
+  This article comments on documentation's propensity towards kippleization.</li>
+<li><a href="https://www.gnu.org/prep/standards/standards.html#GNU-Manuals">GNU Manual Style Guide</a></li>
+</ul>
   </div>
   <div class="article_meta">
     <p>Posted on: Fri 03 February 2017</p>
