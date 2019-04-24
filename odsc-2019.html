@@ -18,10 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
+<meta name="keywords" content="">
 
   <title>
     blog.harterrt.com
-&ndash; Categories  </title>
+&ndash; When the Bootstrap Breaks - ODSC 2019  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -65,14 +66,67 @@
     </header>
 
 <article>
-  <div class="article_text">
-    <ul>
-      <li><a href="https://blog.harterrt.com/category/documentation.html">documentation</a> (2)</li>
-      <li><a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a> (25)</li>
-      <li><a href="https://blog.harterrt.com/category/not-mozilla.html">not-mozilla</a> (1)</li>
-      <li><a href="https://blog.harterrt.com/category/random.html">random</a> (1)</li>
-    </ul>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/odsc-2019.html">When the Bootstrap Breaks - ODSC 2019</a></h1>
   </div>
+  <div class="article_text">
+    <p>I'm excited to announce that I'll be presenting at the
+<a href="https://odsc.com/boston">Open Data Science Conference</a>
+in Boston next week.
+My colleague <a href="https://www.linkedin.com/in/saptarshiguha/">Saptarshi</a>
+and I will be talking about
+<a href="https://odsc.com/training/portfolio/when-the-bootstrap-breaks">When the Bootstrap Breaks</a>.</p>
+<p>I've included the abstract below,
+but the high-level goal of this talk is to strip some varnish off the bootstrap.
+Folks often look to the bootstrap as a panacea for weird data,
+but all tools have their failure cases.
+We plan on highlighting some problems we ran into
+when trying to use the bootstrap for Firefox data
+and how we dealt with the issues, both in theory and in practice.</p>
+<h3 id="abstract">Abstract:</h3>
+<p>Resampling methods like the bootstrap are becoming increasingly common in modern data science.
+For good reason too;
+the bootstrap is incredibly powerful.
+Unlike t-statistics, the bootstrap doesn’t depend on a normality assumption
+nor require any arcane formulas.
+You’re no longer limited to working with well understood metrics like means.
+One can easily build tools that compute confidence for an arbitrary metric.
+What’s the standard error of a Median?
+Who cares! I used the bootstrap.</p>
+<p>With all of these benefits the bootstrap begins to look a little magical.
+That’s dangerous.
+To understand your tool you need to understand how it fails,
+how to spot the failure, and what to do when it does.
+As it turns out, methods like the bootstrap and the t-test
+struggle with very similar types of data.
+We’ll explore how these two methods compare on troublesome data sets
+and discuss when to use one over the other.</p>
+<p>In this talk we’ll explore what types to data the bootstrap has trouble with.
+Then we’ll discuss how to identify these problems in the wild
+and how to deal with the problematic data.
+We will explore simulated data and share the code to conduct the simulations yourself.
+However, this isn’t just a theoretical problem.
+We’ll also explore real Firefox data and discuss how Firefox’s data science team
+handles this data when analyzing experiments.</p>
+<p>At the end of this session you’ll leave with a firm understanding of the bootstrap.
+Even better, you’ll understand how to spot potential issues in your data
+and avoid false confidence in your results.</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Wed 24 April 2019</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
 </article>
 
 

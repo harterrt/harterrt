@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 10 Dec 2018 00:00:00 -0800</lastBuildDate><item><title>Slow to respond through 2018</title><link>https://blog.harterrt.com/2018_slow_to_respond.html</link><description>&lt;p&gt;I'm working on an urgent and high priority request for the next few weeks.
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 24 Apr 2019 00:00:00 -0700</lastBuildDate><item><title>When the Bootstrap Breaks - ODSC 2019</title><link>https://blog.harterrt.com/odsc-2019.html</link><description>&lt;p&gt;I'm excited to announce that I'll be presenting at the
+&lt;a href="https://odsc.com/boston"&gt;Open Data Science Conference&lt;/a&gt;
+in Boston next week.
+My colleague &lt;a href="https://www.linkedin.com/in/saptarshiguha/"&gt;Saptarshi&lt;/a&gt;
+and I will be talking about
+&lt;a href="https://odsc.com/training/portfolio/when-the-bootstrap-breaks"&gt;When the Bootstrap Breaks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I've included the abstract below,
+but the high-level goal of this talk is to strip some varnish off the bootstrap.
+Folks often look to the bootstrap as a panacea for weird data,
+but all tools have their failure cases.
+We plan on highlighting some problems we ran into
+when trying to use the bootstrap for Firefox data
+and how we dealt with the issues, both in theory and in practice.&lt;/p&gt;
+&lt;h3 id="abstract"&gt;Abstract:&lt;/h3&gt;
+&lt;p&gt;Resampling methods like the bootstrap are becoming increasingly common in modern data science.
+For good reason too;
+the bootstrap is incredibly powerful.
+Unlike t-statistics, the bootstrap doesn’t depend on a normality assumption
+nor require any arcane formulas.
+You’re no longer limited to working with well understood metrics like means.
+One can easily build tools that compute confidence for an arbitrary metric.
+What’s the standard error of a Median?
+Who cares! I used the bootstrap.&lt;/p&gt;
+&lt;p&gt;With all of these benefits the bootstrap begins to look a little magical.
+That’s dangerous.
+To understand your tool you need to understand how it fails,
+how to spot the failure, and what to do when it does.
+As it turns out, methods like the bootstrap and the t-test
+struggle with very similar types of data.
+We’ll explore how these two methods compare on troublesome data sets
+and discuss when to use one over the other.&lt;/p&gt;
+&lt;p&gt;In this talk we’ll explore what types to data the bootstrap has trouble with.
+Then we’ll discuss how to identify these problems in the wild
+and how to deal with the problematic data.
+We will explore simulated data and share the code to conduct the simulations yourself.
+However, this isn’t just a theoretical problem.
+We’ll also explore real Firefox data and discuss how Firefox’s data science team
+handles this data when analyzing experiments.&lt;/p&gt;
+&lt;p&gt;At the end of this session you’ll leave with a firm understanding of the bootstrap.
+Even better, you’ll understand how to spot potential issues in your data
+and avoid false confidence in your results.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 24 Apr 2019 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-04-24:odsc-2019.html</guid></item><item><title>Slow to respond through 2018</title><link>https://blog.harterrt.com/2018_slow_to_respond.html</link><description>&lt;p&gt;I'm working on an urgent and high priority request for the next few weeks.
 To make sure I can finish this work in 2018
 I'm &lt;strong&gt;limiting my meetings and communications&lt;/strong&gt; for the remainder of the year.&lt;/p&gt;
 &lt;p&gt;Slack is good for getting my immediate attention,
