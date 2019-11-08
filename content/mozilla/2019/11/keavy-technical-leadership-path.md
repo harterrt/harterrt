@@ -1,7 +1,7 @@
 title: Technical Leadership Paths
 slug: keavy-tech-leadership-path
 date: 2019-11-08
-category: mozilla
+category: leadership
 
 I found
 [this article](https://keavy.com/work/thriving-on-the-technical-leadership-path/)
