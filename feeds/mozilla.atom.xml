@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2019-04-24T00:00:00-07:00</updated><entry><title>When the Bootstrap Breaks - ODSC 2019</title><link href="https://blog.harterrt.com/odsc-2019.html" rel="alternate"></link><published>2019-04-24T00:00:00-07:00</published><updated>2019-04-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-04-24:odsc-2019.html</id><summary type="html">&lt;p&gt;I'm excited to announce that I'll be presenting at the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2019-11-08T00:00:00-08:00</updated><entry><title>Technical Leadership Paths</title><link href="https://blog.harterrt.com/keavy-tech-leadership-path.html" rel="alternate"></link><published>2019-11-08T00:00:00-08:00</published><updated>2019-11-08T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-11-08:keavy-tech-leadership-path.html</id><summary type="html">&lt;p&gt;I found
+&lt;a href="https://keavy.com/work/thriving-on-the-technical-leadership-path/"&gt;this article&lt;/a&gt;
+a few weeks ago and I really enjoyed the read.
+The author outlines what a role can look like for very senior ICs.
+It's the first in a (yet to be written) series about technical leadership
+and long term IC career paths.
+I'm excited to read more!&lt;/p&gt;
+&lt;p&gt;In particular, I am delighted to see her call out &lt;strong&gt;strategic work&lt;/strong&gt;
+as a way for a senior IC to deliver value.
+I think there's a lot of opportunity for senior ICs to deliver strategic work,
+but in my experience organizations tend to under-value this type of work
+(often unintentionally).&lt;/p&gt;
+&lt;p&gt;My favorite projects to work on are high impact and difficult to execute
+even if there not deeply technical.
+In fact, I've found that my most impactful projects
+tend to only have a small technical component.
+Instead, the real value tends to come from
+spanning a few different technical areas, tackling some cultural change,
+or taking time to deeply understand the problem before throwing a solution at it.
+Framing these projects as "strategic" help me
+put my thumb on the type of work I like doing.&lt;/p&gt;
+&lt;p&gt;Keavy also calls out &lt;strong&gt;strike teams&lt;/strong&gt; as a valuable way for ICs
+to work on high impact projects without moving into management.
+In my last three years at Mozilla,
+I've been fortunate to be a part of several strike teams
+and upon reflection I find that these are the projects I'm most proud of.&lt;/p&gt;
+&lt;p&gt;I'm fortunate that Mozilla has a well documented growth path for senior ICs.
+All the same, I am learning a lot from her framing.
+I'm excited to read more!&lt;/p&gt;</summary></entry><entry><title>When the Bootstrap Breaks - ODSC 2019</title><link href="https://blog.harterrt.com/odsc-2019.html" rel="alternate"></link><published>2019-04-24T00:00:00-07:00</published><updated>2019-04-24T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-04-24:odsc-2019.html</id><summary type="html">&lt;p&gt;I'm excited to announce that I'll be presenting at the
 &lt;a href="https://odsc.com/boston"&gt;Open Data Science Conference&lt;/a&gt;
 in Boston next week.
 My colleague &lt;a href="https://www.linkedin.com/in/saptarshiguha/"&gt;Saptarshi&lt;/a&gt;
