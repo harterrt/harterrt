@@ -82,7 +82,7 @@ when developing the <code>clients_daily</code> etl job.
 We should summarize our findings and decide on 
 which of these measures we'd like to standardize against in the future. </p>
 </blockquote>
-<h2 id="summary-of-the-problem">Summary of the problem</h2>
+<h2>Summary of the problem</h2>
 <p><code>activity_date</code> is generally preferable to <code>submission_date</code>
 because it's closer to what we actually want to measure.
 There's a delay between user activity and us receiving the data.
@@ -105,7 +105,7 @@ The job takes between 90 and 120 minutes to run and currently finishes near 9:00
 Adding more data to this job will push that completion time back,
 meaning the data will be unavailable for the first few working hours every day.
 Eew.</p>
-<h2 id="solutions">Solutions</h2>
+<h2>Solutions</h2>
 <p>I see three possible options:</p>
 <ol>
 <li>Standardize to <code>submission_date</code></li>

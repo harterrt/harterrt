@@ -1,277 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 08 Nov 2019 00:00:00 -0800</lastBuildDate><item><title>Technical Leadership Paths</title><link>https://blog.harterrt.com/keavy-tech-leadership-path.html</link><description>&lt;p&gt;I found
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 20 Nov 2019 00:00:00 -0800</lastBuildDate><item><title>Asking Questions</title><link>https://blog.harterrt.com/temp.html</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 20 Nov 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-11-20:/temp.html</guid><category>mozilla</category></item><item><title>Technical Leadership Paths</title><link>https://blog.harterrt.com/keavy-tech-leadership-path.html</link><description>&lt;p&gt;I found
 &lt;a href="https://keavy.com/work/thriving-on-the-technical-leadership-path/"&gt;this article&lt;/a&gt;
 a few weeks ago and I really enjoyed the read.
 The author outlines what a role can look like for very senior ICs.
 It's the first in a (yet to be written) series about technical leadership
 and long term IC career paths.
-I'm excited to read more!&lt;/p&gt;
-&lt;p&gt;In particular, I am delighted to see her call out &lt;strong&gt;strategic work&lt;/strong&gt;
-as a way for a senior IC to deliver value.
-I think there's a lot of opportunity for senior ICs to deliver strategic work,
-but in my experience organizations tend to under-value this type of work
-(often unintentionally).&lt;/p&gt;
-&lt;p&gt;My favorite projects to work on are high impact and difficult to execute
-even if there not deeply technical.
-In fact, I've found that my most impactful projects
-tend to only have a small technical component.
-Instead, the real value tends to come from
-spanning a few different technical areas, tackling some cultural change,
-or taking time to deeply understand the problem before throwing a solution at it.
-Framing these projects as "strategic" help me
-put my thumb on the type of work I like doing.&lt;/p&gt;
-&lt;p&gt;Keavy also calls out &lt;strong&gt;strike teams&lt;/strong&gt; as a valuable way for ICs
-to work on high impact projects without moving into management.
-In my last three years at Mozilla,
-I've been fortunate to be a part of several strike teams
-and upon reflection I find that these are the projects I'm most proud of.&lt;/p&gt;
-&lt;p&gt;I'm fortunate that Mozilla has a well documented growth path for senior ICs.
-All the same, I am learning a lot from her framing.
-I'm excited to read more!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Nov 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-11-08:keavy-tech-leadership-path.html</guid></item><item><title>When the Bootstrap Breaks - ODSC 2019</title><link>https://blog.harterrt.com/odsc-2019.html</link><description>&lt;p&gt;I'm excited to announce that I'll be presenting at the
+I'm excited to read …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Nov 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-11-08:/keavy-tech-leadership-path.html</guid><category>mozilla</category></item><item><title>When the Bootstrap Breaks - ODSC 2019</title><link>https://blog.harterrt.com/odsc-2019.html</link><description>&lt;p&gt;I'm excited to announce that I'll be presenting at the
 &lt;a href="https://odsc.com/boston"&gt;Open Data Science Conference&lt;/a&gt;
 in Boston next week.
 My colleague &lt;a href="https://www.linkedin.com/in/saptarshiguha/"&gt;Saptarshi&lt;/a&gt;
 and I will be talking about
 &lt;a href="https://odsc.com/training/portfolio/when-the-bootstrap-breaks"&gt;When the Bootstrap Breaks&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I've included the abstract below,
-but the high-level goal of this talk is to strip some varnish off the bootstrap.
-Folks often look to the bootstrap as a panacea for weird data,
-but all tools have their failure cases.
-We plan on highlighting some problems we ran into
-when trying to use the bootstrap for Firefox data
-and how we dealt with the issues, both in theory and in practice.&lt;/p&gt;
-&lt;h3 id="abstract"&gt;Abstract:&lt;/h3&gt;
-&lt;p&gt;Resampling methods like the bootstrap are becoming increasingly common in modern data science.
-For good reason too;
-the bootstrap is incredibly powerful.
-Unlike t-statistics, the bootstrap doesn’t depend on a normality assumption
-nor require any arcane formulas.
-You’re no longer limited to working with well understood metrics like means.
-One can easily build tools that compute confidence for an arbitrary metric.
-What’s the standard error of a Median?
-Who cares! I used the bootstrap.&lt;/p&gt;
-&lt;p&gt;With all of these benefits the bootstrap begins to look a little magical.
-That’s dangerous.
-To understand your tool you need to understand how it fails,
-how to spot the failure, and what to do when it does.
-As it turns out, methods like the bootstrap and the t-test
-struggle with very similar types of data.
-We’ll explore how these two methods compare on troublesome data sets
-and discuss when to use one over the other.&lt;/p&gt;
-&lt;p&gt;In this talk we’ll explore what types to data the bootstrap has trouble with.
-Then we’ll discuss how to identify these problems in the wild
-and how to deal with the problematic data.
-We will explore simulated data and share the code to conduct the simulations yourself.
-However, this isn’t just a theoretical problem.
-We’ll also explore real Firefox data and discuss how Firefox’s data science team
-handles this data when analyzing experiments.&lt;/p&gt;
-&lt;p&gt;At the end of this session you’ll leave with a firm understanding of the bootstrap.
-Even better, you’ll understand how to spot potential issues in your data
-and avoid false confidence in your results.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 24 Apr 2019 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-04-24:odsc-2019.html</guid></item><item><title>Slow to respond through 2018</title><link>https://blog.harterrt.com/2018_slow_to_respond.html</link><description>&lt;p&gt;I'm working on an urgent and high priority request for the next few weeks.
+but the high-level goal of this talk is to strip some varnish off the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 24 Apr 2019 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-04-24:/odsc-2019.html</guid><category>mozilla</category></item><item><title>Slow to respond through 2018</title><link>https://blog.harterrt.com/2018_slow_to_respond.html</link><description>&lt;p&gt;I'm working on an urgent and high priority request for the next few weeks.
 To make sure I can finish this work in 2018
 I'm &lt;strong&gt;limiting my meetings and communications&lt;/strong&gt; for the remainder of the year.&lt;/p&gt;
 &lt;p&gt;Slack is good for getting my immediate attention,
-but if your request takes more than a one word response
-it's likely to get lost in the shuffle.
-If you need me to take some action 
-&lt;a href="https://bugzilla.mozilla.org/enter_bug.cgi?assigned_to=rharter%40mozilla.com&amp;amp;bug_file_loc=http%3A%2F%2F&amp;amp;bug_ignored=0&amp;amp;bug_severity=normal&amp;amp;bug_status=NEW&amp;amp;cf_fx_iteration=---&amp;amp;cf_fx_points=---&amp;amp;component=General&amp;amp;contenttypemethod=list&amp;amp;contenttypeselection=text%2Fplain&amp;amp;flag_type-4=X&amp;amp;flag_type-607=X&amp;amp;flag_type-800=X&amp;amp;flag_type-803=X&amp;amp;form_name=enter_bug&amp;amp;maketemplate=Remember%20values%20as%20bookmarkable%20template&amp;amp;op_sys=Mac%20OS%20X&amp;amp;priority=--&amp;amp;product=Data%20Science&amp;amp;rep_platform=x86_64&amp;amp;target_milestone=---&amp;amp;version=unspecified"&gt;filing a bug&lt;/a&gt;
-is your best bet.
-If you don't want to file a bug, email is fine.
-Keep in mind that my response time will be very slow during this time.&lt;/p&gt;
-&lt;p&gt;If you need immediate help, try the following:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If your question is about a search analysis or new search telemetry,
-   please contact bmiroglio AT mozilla.com&lt;/li&gt;
-&lt;li&gt;If your question is about search data, see the documentation here.
-   If that doesn't help, contact wlach AT mozilla.com&lt;/li&gt;
-&lt;li&gt;For general data science questions contact rweiss AT mozilla.com&lt;/li&gt;
-&lt;li&gt;For general telemetry questions,
-   ask #fx-metrics on Slack or #datapipeline on IRC&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Otherwise, I'll get back to you as soon as I can!
-Thanks for your understanding.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 10 Dec 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-12-10:2018_slow_to_respond.html</guid></item><item><title>If you can't do it in a day, you can't do it</title><link>https://blog.harterrt.com/day_barrier.html</link><description>&lt;p&gt;I was talking with Mark Reid
+but if your request takes more …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 10 Dec 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-12-10:/2018_slow_to_respond.html</guid><category>mozilla</category></item><item><title>If you can't do it in a day, you can't do it</title><link>https://blog.harterrt.com/day_barrier.html</link><description>&lt;p&gt;I was talking with Mark Reid
 about some of the problems with &lt;a href="coding_in_textboxes.html"&gt;Coding in a GUI&lt;/a&gt;.
 He nailed part of the problem with soundbite too good not to share:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"If you can't do it in a day, you can't do it."&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;This is a persistent problem with tools that make you code in a GUI.
-These tools are great for working on bite-sized problems,
-but the workflow becomes painful
-when the problem needs to be broken into pieces and attacked separately.&lt;/p&gt;
-&lt;p&gt;Part of the problem is that I can't test the code.
-That means I need to understand how each change will affect the entire code base.
-It's impossible to compartmentalize.&lt;/p&gt;
-&lt;p&gt;GUI's also make it difficult to split a problem across people.
-If I can't track changes easily
-it's impossible to tell whether my changes conflict with a peer's changes.&lt;/p&gt;
-&lt;p&gt;So look out, &lt;a href="bad-tools.html"&gt;bad tools are insidious&lt;/a&gt;!
-If you find yourself abandoning an analysis because it's hard to refactor,
-consider choosing a different toolchain next time.
-Especially if it's because there's no easy way to move your code out of a GUI!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 27 Jun 2018 14:21:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-27:day_barrier.html</guid><category>tools</category></item><item><title>Planning Data Science is hard: EDA</title><link>https://blog.harterrt.com/planning_eda.html</link><description>&lt;p&gt;Data science is weird.
+&lt;p&gt;This is a persistent problem with tools that make …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 27 Jun 2018 14:21:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-27:/day_barrier.html</guid><category>mozilla</category><category>tools</category></item><item><title>Planning Data Science is hard: EDA</title><link>https://blog.harterrt.com/planning_eda.html</link><description>&lt;p&gt;Data science is weird.
 It looks a lot like software engineering
 but in practice the two are very different.
 I've been trying to pin down where these differences come from.&lt;/p&gt;
 &lt;p&gt;Michael Kaminsky hit on a couple of key points
 in his series on Agile Management for Data Science
-on &lt;a href="https://www.locallyoptimistic.com/"&gt;Locally Optimistic&lt;/a&gt;.
-In &lt;a href="https://www.locallyoptimistic.com/post/agile-analytics-p2/index.html#exploratory-data-analysis"&gt;Part II&lt;/a&gt;
-Michael notes that Exploratory Data Analyses (EDA) are difficult to plan for:
-"The nature of exploratory data analysis means
-that the objectives of the analysis may change as you do the work." - Bingo!&lt;/p&gt;
-&lt;p&gt;I've run into this problem a bunch of times when trying to set OKRs for major analyses.
-It's nearly impossible to scope a project
-if I haven't already done some exploratory analysis.
-&lt;strong&gt;I didn't have this problem when I was doing engineering work&lt;/strong&gt;.
-If I had a rough idea of what pieces I needed to stitch together,
-I could at least come up with an order-of-magnitude estimate
-of how long a project would take to complete.
-Not so with Data Science:
-I have a hard time differentiating between
-analyses that are going to take two &lt;strong&gt;weeks&lt;/strong&gt; and 
-analyses that are going to take two &lt;strong&gt;quarters&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;That's all. No deep insight.
-Just a +1 and a pointer to the folks who got there first.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 26 Jun 2018 17:19:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-26:planning_eda.html</guid></item><item><title>You can't do data science in a GUI</title><link>https://blog.harterrt.com/ds_gui.html</link><description>&lt;p&gt;I came across 
+on &lt;a href="https://www.locallyoptimistic.com/"&gt;Locally …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 26 Jun 2018 17:19:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-26:/planning_eda.html</guid><category>mozilla</category></item><item><title>You can't do data science in a GUI</title><link>https://blog.harterrt.com/ds_gui.html</link><description>&lt;p&gt;I came across 
 &lt;a href="https://www.youtube.com/watch?v=cpbtcsGE0OA"&gt;You can't do data science in a GUI&lt;/a&gt;
 by Hadley Wickham a little while ago.
 He hits on a lot of the same problems I mentioned in
 &lt;a href="https://blog.harterrt.com/coding_in_textboxes.html"&gt;Don't make me code in your text box&lt;/a&gt;.
 Take a look if you have some time.
-In the first 15m he covers the arguement against coding in a GUI.
-After that he plugs for R and the tidyverse.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 26 Jun 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-26:ds_gui.html</guid><category>gui</category><category>tools</category></item><item><title>Why bootstrap?</title><link>https://blog.harterrt.com/why_bootstrap.html</link><description>&lt;p&gt;Over the next few quarters,
+In the first 15m …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 26 Jun 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-06-26:/ds_gui.html</guid><category>mozilla</category><category>gui</category><category>tools</category></item><item><title>Why bootstrap?</title><link>https://blog.harterrt.com/why_bootstrap.html</link><description>&lt;p&gt;Over the next few quarters,
 I'm going to focus my attention on Mozilla's experimentation platform.
 One of the first questions we need to answer is
 how we're going to calculate and report the necessary measures of variance.
 Any experimentation platform needs to be able to
- compare metrics between two groups.&lt;/p&gt;
-&lt;p&gt;For example, say we're looking at retention for a control and experiment group.
-Control shows a retention of 88.45% and experiment shows a retention of 90.11%.
-Did the experimental treatment cause a real increase in retention
-or did the experiment branch just get lucky when we assigned users?
-We need to calculate some measure of variance to be able to decide.&lt;/p&gt;
-&lt;p&gt;The two most common methods to do this calculation are the frequentist's
-&lt;a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm"&gt;two-sample t-test&lt;/a&gt;
-or some form of
-&lt;a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)"&gt;the bootstrap&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In ye olden days, we'd be forced to use the two-sample t-test.
-The bootstrap requires a lot of compute power
-that just wasn't available until recently.
-As you can imagine, the bootstrap is all the rage in the Data Science world.
-Of course it is. We get to replace statistics with raw compute power!
-That's the dream!&lt;/p&gt;
-&lt;p&gt;Still, the bootstrap isn't perfect for every problem.
-Let's look at a few arguements for and against the bootstrap:&lt;/p&gt;
-&lt;h2 id="computational-efficiency"&gt;Computational Efficiency&lt;/h2&gt;
-&lt;p&gt;The bootstrap obviously requires more compute resources.
-Still, it's worth highlighting how 
-&lt;strong&gt;amazingly computationally efficient the t-test is&lt;/strong&gt;.
-You can calculate all you need for the t-test in a single pass through the data.
-For each branch of the experiment all you need to calculate is:
-a count, the sum of the data, and the sum of the square of the data
-(&lt;a href="https://en.wikipedia.org/wiki/Variance#Formulae_for_the_variance"&gt;to calculate the variance&lt;/a&gt;).
-All of these are easy to calculate in a map-reduce framework.
-On the other hand,
-the bootstrap is difficult to compute when your data do not fit in memory.&lt;/p&gt;
-&lt;h2 id="the-normality-assumption"&gt;The normality assumption&lt;/h2&gt;
-&lt;p&gt;T-tests feel arcane and make assumptions about the distribution of the data.
-Most notably, t-tests &lt;em&gt;require your metric to be normally distributed&lt;/em&gt;.
-Assuming normal distributions sets off alarms
-for anyone who's worked with real-world data.
-On the other hand,
-the bootstrap uses the sample distribution to describe the population's distribution
-which feels like a much smaller assumption to make.&lt;/p&gt;
-&lt;p&gt;In reality, the bootstrap method and t-tests actually
-make very similar assumptions about the underlying data.
-Since the t-test is comparing two &lt;em&gt;means&lt;/em&gt;,
-the t-test's normality assumption holds so long as 
-&lt;a href="https://en.wikipedia.org/wiki/Central_limit_theorem"&gt;the CLT&lt;/a&gt; holds.
-The CLT holds so long as
-(1) you have a lot of data and 
-(2) the data have finite variance.
-We generally have "a lot of data"
-but the finite variance bit can be a problem&lt;sup&gt;1&lt;/sup&gt;.
-However! The bootstrap also fails if the data have infinite variance&lt;sup&gt;2&lt;/sup&gt;.
-All that to say,
-&lt;strong&gt;if the t-test's normality assumption fails, the bootstrap is in trouble too&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;On the other hand,
-it can take a large sample for the CLT to make some datasets look normal
-(like, N &amp;gt; 5000).
-If you have a small, skewed data set, the bootstrap may be a better choice.
-However, this is rarely a problem when you're working with Big Data™.&lt;/p&gt;
-&lt;h2 id="weird-metrics"&gt;Weird metrics&lt;/h2&gt;
-&lt;p&gt;It becomes practically impossible to calculate a t-test
-if your metric isn't a mean.
-The classic example here is testing for a change in the median.
-What's the variance of a median?
-Is the median normally distributed?&lt;/p&gt;
-&lt;p&gt;¯\_(ツ)_/¯&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is where the bootstrap really shines!
-With the t-test, you only have your one sample to work with.
-With the bootstrap, you have as many samples as you want!
-You can calculate any metric you want and get a confidence interval.&lt;/p&gt;
-&lt;p&gt;Personally, I think calculating the median is a lame example.
-Percentiles, like the median, are notoriously hard to calculate over big data.
-Instead, consider this (nearly) real life example:&lt;/p&gt;
-&lt;p&gt;Firefox collects anonymized performance data on a daily basis.
-That data could look like this:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align="left"&gt;&lt;code&gt;client&lt;/code&gt;&lt;/th&gt;
-&lt;th align="right"&gt;&lt;code&gt;day&lt;/code&gt;&lt;/th&gt;
-&lt;th align="right"&gt;&lt;code&gt;active_hours&lt;/code&gt;&lt;/th&gt;
-&lt;th align="right"&gt;&lt;code&gt;janky_loads&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;'aaa'&lt;/td&gt;
-&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
-&lt;td align="right"&gt;4.5&lt;/td&gt;
-&lt;td align="right"&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;'bbb'&lt;/td&gt;
-&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
-&lt;td align="right"&gt;9.2&lt;/td&gt;
-&lt;td align="right"&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;'ccc'&lt;/td&gt;
-&lt;td align="right"&gt;2018-01-01&lt;/td&gt;
-&lt;td align="right"&gt;0.5&lt;/td&gt;
-&lt;td align="right"&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align="left"&gt;...&lt;/td&gt;
-&lt;td align="right"&gt;...&lt;/td&gt;
-&lt;td align="right"&gt;...&lt;/td&gt;
-&lt;td align="right"&gt;...&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Let's say we launch a new feature that is supposed to
-reduce the number of janky page loads a user sees per hour.
-There's no obvious way to calculate a t-test for
-&lt;code&gt;sum(janky_loads)/sum(active_hours)&lt;/code&gt;.
-What is the variance of that metric?
-Remember, we only get one observation per sample.
-The bootstrap handles this case trivially.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In summary, the bootstrap is awesome.
-We get to replace arcane formulas with intuitive simulations
-and we can calculate confidence intervals for any arbitrary metric.&lt;/p&gt;
-&lt;p&gt;On the other hand, the t-test is &lt;em&gt;much&lt;/em&gt; more computationally efficient.
-If you have really big data and you &lt;em&gt;know&lt;/em&gt; you're only going to compare means,
-the t-test may be a better choice.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li&gt;For example, a
-   &lt;a href="https://en.wikipedia.org/wiki/Power_law#Power-law_probability_distributions"&gt;power law distribution&lt;/a&gt;
-   can easily have infinite variance.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://projecteuclid.org/download/pdf_1/euclid.aos/1176350371"&gt;Bootstrap of the mean in the infinite variance case Athreya, K.B. Ann Stats vol 15 (2) 1987 724-731&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 25 May 2018 12:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-25:why_bootstrap.html</guid></item><item><title>SQL Style Guide</title><link>https://blog.harterrt.com/sql_style_guide.html</link><description>&lt;p&gt;I'm happy to announce, we now have a 
+ compare metrics between two groups …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 25 May 2018 12:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-25:/why_bootstrap.html</guid><category>mozilla</category></item><item><title>SQL Style Guide</title><link>https://blog.harterrt.com/sql_style_guide.html</link><description>&lt;p&gt;I'm happy to announce, we now have a 
 &lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;SQL style guide&lt;/a&gt;.
 Check it out!&lt;/p&gt;
 &lt;p&gt;If you have any suggestions,
@@ -279,7 +47,7 @@ feel free to file a PR or issue in
 &lt;a href="https://github.com/mozilla/firefox-data-docs/blob/master/concepts/sql_style.md"&gt;the docs repository&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Many thanks to all who participated in the 
 &lt;a href="https://github.com/mozilla/stmocli/issues/9"&gt;St. Mocli conversation&lt;/a&gt;
-and @mreid for the review!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 17 May 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-17:sql_style_guide.html</guid></item><item><title>PSA: Don't use approximate counts for trends</title><link>https://blog.harterrt.com/hll_trends.html</link><description>&lt;p&gt;I got caught giving some bad advice this week,
+and @mreid for the review!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 17 May 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-05-17:/sql_style_guide.html</guid><category>mozilla</category></item><item><title>PSA: Don't use approximate counts for trends</title><link>https://blog.harterrt.com/hll_trends.html</link><description>&lt;p&gt;I got caught giving some bad advice this week,
 so I decided to share here as penance.
 TL;DR: Probabilistic counts are great,
 but they shouldn't be used everywhere.&lt;/p&gt;
@@ -287,550 +55,44 @@ but they shouldn't be used everywhere.&lt;/p&gt;
 &lt;p&gt;Counting stuff is hard.
 We use probabilistic algorithms pretty frequently at Mozilla.
 For example, when trying to get user counts,
-we rely heavily on Presto's 
-&lt;a href="https://prestodb.io/docs/current/functions/aggregate.html#approx_distinct"&gt;approx_distinct&lt;/a&gt;
-aggregator.
-Roberto's even written a 
-&lt;a href="https://github.com/vitillo/presto-hyperloglog"&gt;Presto Plugin&lt;/a&gt;
-and a 
-&lt;a href="https://github.com/vitillo/spark-hyperloglog"&gt;Spark Package&lt;/a&gt;
-to allow us to include
-&lt;a href="https://en.wikipedia.org/wiki/HyperLogLog"&gt;HyperLogLog&lt;/a&gt;
-variables in datasets like
-&lt;a href="https://docs.telemetry.mozilla.org/datasets/batch_view/client_count_daily/reference.html"&gt;client_count_daily&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;These algorithms save a lot of compute power and analyst time,
-but it's important to remember that they do introduce some variance.&lt;/p&gt;
-&lt;p&gt;In fact, the error bars are substantial.
-By default, Presto's &lt;code&gt;approx_distinct&lt;/code&gt; is tuned to have a standard error of 2.3%,
-which means one out of every three &lt;code&gt;approx_distinct&lt;/code&gt; estimates
-will be off by more than 2.3%.
-I can set a tighter standard error by passing a second parameter,
-but it 
-&lt;a href="https://prestodb.io/docs/current/functions/aggregate.html#approx_distinct"&gt;looks like&lt;/a&gt;
-I can't request anything below 0.5%.
-For our HLL datasets, we set a
-&lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/src/main/scala/com/mozilla/telemetry/views/GenericCountView.scala#L45"&gt;default standard error&lt;/a&gt;
-of 1.63%, which is still significant.&lt;/p&gt;
-&lt;p&gt;Unfortunately, we can't get the standard error to be much smaller than 1%.
-Databricks has
-&lt;a href="https://databricks.com/blog/2016/05/19/approximate-algorithms-in-apache-spark-hyperloglog-and-quantiles.html"&gt;a writeup here&lt;/a&gt;
-which explains that the compute time for their probabilistic estimate
-starts to be greater than the compute time for an exact count
-somewhere between an error of 0.5% and 1.0%.&lt;/p&gt;
-&lt;p&gt;Most of the time, this isn't an issue.
-For example, if I'm trying to count how many clients used a 
-&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"&gt;Container Tab&lt;/a&gt;
-yesterday I don't care if it's 100mm or 105mm;
-those numbers are the same to me.
-However, &lt;strong&gt;that noise becomes distracting&lt;/strong&gt;
-if I'm building a dashboard to track year over year change.&lt;/p&gt;
-&lt;h2 id="an-example"&gt;An example&lt;/h2&gt;
-&lt;p&gt;I put together an
-&lt;a href="https://blog.harterrt.com/images/probabilistic_counts.html"&gt;example notebook&lt;/a&gt;
-to explore a little.
-I created a toy dataframe containing
-7 days of data and 1000 &lt;code&gt;client_id&lt;/code&gt;'s per day.
-Then I got an approximate count of the clients for each day.
-Here's what an arbitrary set of daily errors look like:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.harterrt.com/images/probabilistic_count_errors.png"&gt;&lt;/p&gt;
-&lt;p&gt;By default, pyspark's 
-&lt;a href="https://spark.apache.org/docs/2.0.2/api/java/org/apache/spark/sql/functions.html#approxCountDistinct(java.lang.String,%20double)"&gt;approxCountDistinct&lt;/a&gt;
-aggregator has a relative standard deviation (&lt;code&gt;rsd&lt;/code&gt;) of 5%!
-The maximum error magnitude we see in this dataset is 7.5% (day 4).&lt;/p&gt;
-&lt;p&gt;In my opinion, Spark's documentation obfuscates the real interpretation
-of this &lt;code&gt;rsd&lt;/code&gt; value, calling it the: "maximum estimation error allowed".
-In reality, there is no "maximum error" allowed.
-The &lt;code&gt;rsd&lt;/code&gt; is a standard deviation for an approximately normal distribution.
-Roughly one in three errors are going to be bigger than the &lt;code&gt;rsd&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;What's worse is that this graph makes us think there's movement
-in this metric over time.
-In reality, the user count is perfectly flat at 1000 users every day.
-Since these errors aren't correlated over time,
-we see big day over day swings in the estimates.
-The largest swing occurs from day 6 to day 7 where the user count
-jumps by 13.7% (-6.8% to 6.9%)!&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So what's the take away?
-Probabilistic counts are still super useful tools,
-but it's important to consider what kind of error they're going to introduce.
-In particular, don't use probabilistic counts (like &lt;code&gt;approx_distinct&lt;/code&gt;)
-when looking at year over year rates or plotting trend lines.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 24 Apr 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-04-24:hll_trends.html</guid></item><item><title>Don't make me code in your text box!</title><link>https://blog.harterrt.com/coding_in_textboxes.html</link><description>&lt;p&gt;Whenever I start a new data project,
+we …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 24 Apr 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-04-24:/hll_trends.html</guid><category>mozilla</category></item><item><title>Don't make me code in your text box!</title><link>https://blog.harterrt.com/coding_in_textboxes.html</link><description>&lt;p&gt;Whenever I start a new data project,
 my first step is rooting out any false assumptions I have about the data.&lt;/p&gt;
 &lt;p&gt;The key here is iterating quickly.
 My workflow looks like this:
 Code a little, plot the data, what do you see?
 Ah, outliers.
-Code a little, plot the data, what do you see?
-Shoot, why are there so many NULL's in the dataset?&lt;/p&gt;
-&lt;p&gt;This is a critical part of working with data
-so we have a ton of tools tuned for fast iteration loops.
-These are the tools in the "Building Intuition"
-&lt;a href="/stages_e13n.html"&gt;stage of experimental analysis&lt;/a&gt;.
-Jupyter notebooks are a perfect example.
-Great way to explore a dataset quickly.&lt;/p&gt;
-&lt;p&gt;Once I'm done exploring,
-I need to distill what I've learned so I can share it and reference it later.
-This is where I run into problems.
-Often, these fast-iteration tools are really &lt;strong&gt;hard to escape&lt;/strong&gt;,
-and are a &lt;strong&gt;horrible way to store code&lt;/strong&gt;.
-As a result,
-these tools end up getting used for things they're not built to do.
-It's hard to spot if you're not looking out for it.&lt;/p&gt;
-&lt;p&gt;I've boiled this down to a rule: &lt;strong&gt;Don't make me code in your text box!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
-&lt;h3 id="redash"&gt;Re:dash&lt;/h3&gt;
-&lt;p&gt;We use &lt;a href="https://redash.io/"&gt;Re:dash&lt;/a&gt; extensively at Mozilla.
-For the unfamiliar,
-Re:dash provides an interactive SQL front-end
-where you can query and visualize your data.
-It's a great tool for getting quick answers to data questions.
-For example, what percentage of users are on Windows?
-How many times was Firefox asked to load a page yesterday?&lt;/p&gt;
-&lt;p&gt;Re:dash is great when you're iterating quickly,
-but it falls short when you want to share and maintain your queries.
-I've built a few dashboards in re:dash
-and I always get nervous when I hear they're getting used.
-The problem is that I &lt;strong&gt;can't get review or track changes&lt;/strong&gt; to my queries.
-I wouldn't tell others to rely on untested and unreviewed code,
-so it feels wrong to rely on untested queries.&lt;/p&gt;
-&lt;p&gt;I started building a tool to fix these problems.
-&lt;a href="https://github.com/mozilla/stmocli"&gt;St. Mocli&lt;/a&gt;
-allows you to store queries in a git repository
-and deploy the queries to re:dash.
-I've been using it for about a month now, and it's great.
-It's much easier to maintain queries and getting review is far less painful.&lt;/p&gt;
-&lt;p&gt;Even better there were a bunch of unexpected benefits.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It's easier to consistently format our queries
-  since we're editing queries in modern text editors instead of a HTML text-box&lt;/li&gt;
-&lt;li&gt;We can lint our queries since the queries are now stored in text files&lt;/li&gt;
-&lt;li&gt;There's clear ownership for each query (&lt;code&gt;git blame&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;We have more control over what our consumers are looking at
-  now that we have a central repository of queries&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="wikis"&gt;Wikis&lt;/h3&gt;
-&lt;p&gt;When I joined Mozilla's data team,
-our documentation was in rough shape.
-We had documentation, but it was a sprawling tangled mess.
-It was easy to forget to update the docs or even to forget where the docs were.
-Our documentation still isn't perfect,
-but it's much better since switched to 
-&lt;a href="https://docs.telemetry.mozilla.org/"&gt;docs.telemetry.mozilla.org&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;What changed?
-We started using
-&lt;a href="https://www.gitbook.com/"&gt;Gitbook&lt;/a&gt; and 
-&lt;strong&gt;stopped using a Wiki for documentation&lt;/strong&gt;.
-Wikis are a horrible way to store technical documentation.
-In fact, I should probably write a whole article on this point,
-but here are some highlights:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Writing long-form content in a wiki is painful&lt;/strong&gt;.
-  I either write the content elsewhere
-  and publish by copy-pasting into a text-box,
-  or (more commonly) I have to iteratively edit the document in the text box.
-  Editing in the wiki means my half-finished article
-  is indistinguishable from complete documentation.&lt;/li&gt;
-&lt;li&gt;It's &lt;strong&gt;impossible to get review&lt;/strong&gt;,
-  which makes it difficult to fix unclear writing.
-  Without review I can't tell when I'm being too terse or using a lot of jargon.&lt;/li&gt;
-&lt;li&gt;Writing in a wiki is thankless.
-  There's &lt;strong&gt;no artifact of your work&lt;/strong&gt;.
-  Sure, there's a new article in the wiki,
-  but everyone built the wiki; It's not clear who wrote what.&lt;/li&gt;
-&lt;li&gt;It's easy for documentation to get lost.
-  A wiki makes it easy to have a &lt;strong&gt;wandering chain of references&lt;/strong&gt;.
-  Most of the articles at the end of these chains are forgotten and out of date.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We've also discovered some unexpected advantages
-to storing our documentation in markdown.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It was easy to integrate &lt;a href="https://mermaidjs.github.io/"&gt;mermaid.js&lt;/a&gt;
-  for &lt;a href="https://docs.telemetry.mozilla.org/concepts/data_pipeline.html"&gt;a system diagram&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;We were able to add spell check CI,
-  which has the added benefit of highlighting jargon
-  and standardizing our terminology.&lt;/li&gt;
-&lt;li&gt;Soon we're going to add dead link CI as well.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="jupyter"&gt;Jupyter&lt;/h3&gt;
-&lt;p&gt;I already noted that Jupyter is a perfect example of a fast-iteration-loop tool.
-I love opening up a new notebook to explore a problem and test my assumptions.
-However, when it comes time to share my analysis,
-I start running into problems.&lt;/p&gt;
-&lt;p&gt;First of all, Jupyter notebooks are stored as JSON objects in a text file.
-This causes a whole host of problems.
-It's difficult to track changes to these files in git.
-Since the python code is stored as strings inside of a JSON object,
-small changes to the analysis cause big changes to the storage file.
-Also, it's impossible to lint or test any code stored in the &lt;code&gt;.ipynb&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;It's easy to export the code from a notebook to a python file, which is great,
-but I still want to use Jupyter to display my results.
-Ideally, I could have a python package where all the logic is stored
-and a Jupyter notebook that just displays the analysis results.
-This actually works well, but it's still difficult.
-There's no clear way to reload the development package in a live Jupyter notebook.&lt;/p&gt;
-&lt;p&gt;I don't have a great solution for this yet.
-There are a few projects trying to address this problem though.
-Mike outlines an interesting storage format
-&lt;a href="http://droettboom.com/blog/2018/01/18/diffable-jupyter-notebooks/"&gt;here&lt;/a&gt;
-There's also &lt;a href="https://github.com/aaren/notedown"&gt;notedown&lt;/a&gt;
-and &lt;a href="https://github.com/rossant/ipymd"&gt;ipymd&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;All of these tools were built to help analysts build intuition quickly,
-which is a critical part of data science.
-However, most of these tools &lt;strong&gt;compromise on composability&lt;/strong&gt;.
-Don't get me wrong, &lt;strong&gt;these tools are all useful and necessary&lt;/strong&gt;,
-but &lt;a href="/bad-tools.html"&gt;bad tools are insidious&lt;/a&gt;.
-Be aware that these fast-iteration focused tools can get misused
-if there's not an obvious path for migrating to something more stable.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-03-28:coding_in_textboxes.html</guid><category>tools</category><category>gui</category></item><item><title>The 5 Stages of Experiment Analysis</title><link>https://blog.harterrt.com/stages_e13n.html</link><description>&lt;p&gt;I've been thinking about experimentation a lot recently.
+Code a little, plot the data …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Mar 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-03-28:/coding_in_textboxes.html</guid><category>mozilla</category><category>tools</category><category>gui</category></item><item><title>The 5 Stages of Experiment Analysis</title><link>https://blog.harterrt.com/stages_e13n.html</link><description>&lt;p&gt;I've been thinking about experimentation a lot recently.
 Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
 But what happens after the experiment's been run?
 There's &lt;strong&gt;not a clear process for taking experimental data and turning it into a decision&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;I noted the importance of Decision Reports in 
-&lt;a href="/good_experiment_tools.html"&gt;Desirable features for experimentation tools&lt;/a&gt;.
-This post outlines the process needed to get to a solid decision report.
-I'm hoping that outlining this process
-will help us disambiguate what our tools are meant to do
-and identify gaps in our tooling.&lt;/p&gt;
-&lt;p&gt;So, here are the 5 Stages of Experiment Analysis as I see them:&lt;/p&gt;
-&lt;h2 id="build-intuition-form-an-opinion"&gt;Build Intuition, Form an Opinion&lt;/h2&gt;
-&lt;p&gt;When I begin reviewing an experiment,
-I need to &lt;strong&gt;get a feel for what's going on in the data&lt;/strong&gt;.
-That means I need to explore hypoetheses quickly.
-Did the number of page loads unexpectedly increase? Why?
-Did the number of searches unexpectedly stay flat? What are the error bounds?&lt;/p&gt;
-&lt;p&gt;Consequentially, &lt;strong&gt;I need tools that let me iterate quickly&lt;/strong&gt;.
-This will help me develop the story I'm going to tell in the final report.
-Keep in mind,
-most of what I see during this investigation will not be included in the report;
-part of telling a good story is knowing what isn't important.&lt;/p&gt;
-&lt;p&gt;These tools are what most folks imagine when talking about tools for experimentation.&lt;/p&gt;
-&lt;p&gt;Prominent tools for this stage include the front ends for Google Analytics or Optimizely.
-Basically, I'm talking about any webpage that shows you statistics like this
-(from &lt;a href="https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7"&gt;AirBnB's excellent blog&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="(Example Report from AirBnB)" src="https://blog.harterrt.com/images/e13n-example-report.jpeg" /&gt;&lt;/p&gt;
-&lt;p&gt;Some of Mozilla's tools in this category include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Test Tube&lt;/li&gt;
-&lt;li&gt;Mission Control&lt;/li&gt;
-&lt;li&gt;re:dash&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="generate-artifacts"&gt;Generate Artifacts&lt;/h2&gt;
-&lt;p&gt;Once I have an idea of what's happening in an experiment,
-I start gathering the important results into a report.
-It's &lt;strong&gt;important to freeze the results&lt;/strong&gt; I'm seeing and include them in the report.
-Five years from now, I want to be able to test whether my decision still makes sense.
-Part of that is deciding whether the data are telling a different story now.&lt;/p&gt;
-&lt;p&gt;Unfortunately, this process usually looks like
-copying and pasting tables into a Google Doc
-or taking a screenshot from re:dash.
-This works, but it's &lt;strong&gt;error prone and difficult to update&lt;/strong&gt; as we get more data.&lt;/p&gt;
-&lt;p&gt;The other way this gets done is loading up a Jupyter notebook
-and trying to reproduce the results yourself.
-This is nice because the output is generally in a more useful format,
-but this is clearly suboptimal.
-I'm &lt;strong&gt;duplicating effort&lt;/strong&gt; by re-implementing our experiment summary tools
-and creating a second set of possibly &lt;strong&gt;inconsistent metrics&lt;/strong&gt;.
-It's important that these artifacts are consistent with the live tools.&lt;/p&gt;
-&lt;p&gt;We don't really have any tools that service this need at Mozilla.
-In fact, I haven't heard about them anywhere.
-This always seems to be done via a &lt;strong&gt;hodgepodge of custom scripts&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;It would be ideal if we had a tool for gathering experiment results from our live tools.
-For example, we could have one tool that:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;gathers experiment results from re:dash, testtube, etc&lt;/li&gt;
-&lt;li&gt;dumps those results into a local (markdown or HTML formatted) text file&lt;/li&gt;
-&lt;li&gt;helps a user generate a report with some standard scaffolding&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I've been calling this tool an "artifact generator"
-but it probably needs a better name.&lt;/p&gt;
-&lt;h2 id="annotate-and-explain"&gt;Annotate and Explain&lt;/h2&gt;
-&lt;p&gt;Now we've gathered the important data into a single place.
-We're not done yet, nobody will be able to make heads or tails of this report.
-&lt;strong&gt;We need to add context&lt;/strong&gt;.
-What does this experiment represent?
-What do these numbers mean?
-Is this a big change or a small change? Do we just not know?
-Is this surprising or common?
-We should include answers to all these questions in the report,
-as best we can.&lt;/p&gt;
-&lt;p&gt;This takes time and it takes revisions.
-Our tools should support this.
-For example, 
-it should be easy to update the tables generated by the artifact generator
-without a lot of copy-pasting.
-It should also be easy to make edits over the course of a week
-(i.e. don't use a wiki).&lt;/p&gt;
-&lt;p&gt;The best tool I've seen in this area is &lt;code&gt;knitr&lt;/code&gt;,
-which supports &lt;code&gt;Rmd&lt;/code&gt; report generation.
-Jupyter is a prominent contender in this space,
-but I usually run into significant issues with version control and collaboration.
-&lt;code&gt;LaTeX&lt;/code&gt; is a solid tool, but it's a real pain to learn.&lt;/p&gt;
-&lt;h2 id="get-review"&gt;Get Review&lt;/h2&gt;
-&lt;p&gt;Before sharing a report every analyst should have the chance to get their work reviewed.
-Getting review is a &lt;strong&gt;critical feature of any data science team&lt;/strong&gt;.
-In fact, this is so important that
-I explicitly ask about review processes when interviewing with new companies.
-Review is how I learn from my peers.
-More so, review &lt;strong&gt;removes the large majority of the stress from my daily work&lt;/strong&gt;.
-I find my confidence in reviewed work is dramatically higher.&lt;/p&gt;
-&lt;p&gt;Again, this portion of the toolchain is fairly well supported.
-Any code review tool will do a reasonably good job.
-Filing a PR on GitHub is the canonical way I get review.&lt;/p&gt;
-&lt;h2 id="publish-and-socialize"&gt;Publish and Socialize&lt;/h2&gt;
-&lt;p&gt;Finally, I need to share my final report.
-This should be simple, but I've found it to be difficult in practice.&lt;/p&gt;
-&lt;p&gt;There's as many options for publishing reports as there are stars in the sky.
-Basically any content management system qualifies,
-but few work well for this task.
-I've seen companies use
-wikis, public folders on a server, ftp, Google Docs, emailed .docx files, ...
-All of these options make it &lt;strong&gt;difficult to get review&lt;/strong&gt;.
-Most of these options are a &lt;strong&gt;discoverability nightmare&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;At Mozilla, we've been using AirBnB's
-&lt;a href="https://github.com/airbnb/knowledge-repo"&gt;knowledge-repo&lt;/a&gt;
-to generate &lt;a href="http://reports.telemetry.mozilla.org/feed"&gt;RTMO&lt;/a&gt;.
-It does a reasonably good job,
-but doesn't give the analyst enough control over the format of the final report.
-I'm working on a replacement now,
-called &lt;a href="https://github.com/harterrt/docere"&gt;Docere&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id="where-to-go-next"&gt;Where to go next&lt;/h1&gt;
-&lt;p&gt;In summary, we already have pretty good tools for annotating reports and getting review.
-I think we at Mozilla need to work on tools for
-&lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1426163"&gt;generating experiment artifacts&lt;/a&gt;
-and &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1436787"&gt;publishing reports&lt;/a&gt;.
-I think we need to continue working on tools for building intuition,
-but we're already working on these tools and are on the right track.&lt;/p&gt;
-&lt;p&gt;This doesn't solve the whole problem.
-For one,
-&lt;strong&gt;we still need a process for making a decision&lt;/strong&gt; from these decision reports.
-Having a well reasoned argument is only part of the decision.
-Who makes the final call?
-How do we guarantee we're our decision making is consistent?
-This process also ignores building a cohesive style for reports.
-Having consistent structure is important.
-It gives readers confidence in the results and reduces their cognitive load.&lt;/p&gt;
-&lt;p&gt;I think this is a good start though.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Feb 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-02-28:stages_e13n.html</guid><category>experimentation</category></item><item><title>Asking Questions</title><link>https://blog.harterrt.com/preferred_media.html</link><description>&lt;p&gt;Will posted a great article a couple weeks ago,
+&lt;p&gt;I noted the importance …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 28 Feb 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-02-28:/stages_e13n.html</guid><category>mozilla</category><category>experimentation</category></item><item><title>Asking Questions</title><link>https://blog.harterrt.com/preferred_media.html</link><description>&lt;p&gt;Will posted a great article a couple weeks ago,
 &lt;a href="https://wlach.github.io/blog/2018/01/giving-and-receiving-help-at-mozilla/"&gt;Giving and Receiving Help at Mozilla&lt;/a&gt;.
 I have been meaning to write a similar article for a while now.
 His post finally pushed me over the edge. &lt;/p&gt;
 &lt;p&gt;Be sure to read Will's post first.
-The rest of this article is an addendum to his post.&lt;/p&gt;
-&lt;h2 id="avoid-context-free-pings"&gt;Avoid Context Free Pings&lt;/h2&gt;
-&lt;p&gt;Context free pings should be considered harmful.
-These are pings like &lt;code&gt;ping&lt;/code&gt; or &lt;code&gt;hey&lt;/code&gt;.
-The problem with context free pings are documented elsewhere
-(&lt;a href="http://edunham.net/2017/10/05/saying_ping.html"&gt;1&lt;/a&gt;,
- &lt;a href="https://blogs.gnome.org/markmc/2014/02/20/naked-pings/"&gt;2&lt;/a&gt;,
- &lt;a href="http://www.nohello.com/2013/01/please-dont-say-just-hello-in-chat.html"&gt;3&lt;/a&gt;)
-so I won't discuss them here.&lt;/p&gt;
-&lt;h2 id="pings-are-ephemeral"&gt;Pings are Ephemeral&lt;/h2&gt;
-&lt;p&gt;IRC and Slack are nice because they generate notifications.
-If you need a quick response, IRC or Slack are the way to go.
-I get Slack and IRC notifications on my phone, so I'm likely to respond quickly.
-On the other hand, these notifications disappear easily,
-which makes it easy for me to lose your message.
-&lt;strong&gt;If you don't hear from me immediately, it's a good idea to send an email&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Otherwise, I don't mind pings at all.
-Some folks worry about creating interruptions, but this isn't a problem for me.
-I limit the notifications I get so &lt;strong&gt;if I don't want to get your notification, I won't&lt;/strong&gt;.
-If I'm looking at Slack, I'm already distracted.&lt;/p&gt;
-&lt;p&gt;In short, consider these rules of thumb:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;If it will take me &lt;strong&gt;less&lt;/strong&gt; than 2m to respond to you and it's urgent, ping me&lt;/li&gt;
-&lt;li&gt;If it will take me &lt;strong&gt;more&lt;/strong&gt; than 2m to respond to you and it's urgent, file a bug and ping me&lt;/li&gt;
-&lt;li&gt;If it's not urgent just email me&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="prefer-open-channels"&gt;Prefer Open Channels&lt;/h2&gt;
-&lt;p&gt;I've spent a lot of time on documentation at Mozilla.
-It's hard.
-Our tools are constantly under development and our needs are always changing
-so our documentation needs constant work.
-&lt;strong&gt;Asking questions in the open reduces our documentation burden&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.bmannconsulting.com/archive/email-is-the-place-where-information-goes-to-die/"&gt;Email is where information goes to die&lt;/a&gt;.
-If we discuss a problem in a bug, that conversation is open and discoverable.
-It's not always useful, but it's a huge win when it is.
-&lt;strong&gt;File a bug instead of writing an email&lt;/strong&gt;.
-@mention me in on #fx-metrics instead of PM-ing me.
-CC an open mailing list if you need to use email.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 09 Feb 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-02-09:preferred_media.html</guid></item><item><title>Managing Someday-Maybe Projects with a CLI</title><link>https://blog.harterrt.com/sdmb.html</link><description>&lt;p&gt;I have a problem managing projects I'm interested in but don't have time for.
+The rest of this article is an …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 09 Feb 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-02-09:/preferred_media.html</guid><category>mozilla</category></item><item><title>Managing Someday-Maybe Projects with a CLI</title><link>https://blog.harterrt.com/sdmb.html</link><description>&lt;p&gt;I have a problem managing projects I'm interested in but don't have time for.
 For example, the &lt;a href="/slack_alerts.html"&gt;CLI for generating slack alerts&lt;/a&gt; I posted about last year.
 Not really a priority, but helpful and not that complicated.
-I sat on that project for about a year before I could finally execute on it.&lt;/p&gt;
-&lt;p&gt;I want to be able to keep track of these projects for inspiration,
-but &lt;strong&gt;my TODO list get's overwhelming&lt;/strong&gt;
-if I try to include all of these low-priority projects.
-Getting Things Done suggests keeping a "Someday-Maybe (SDMB)" folder
-that you review regularly.
-I tried this, but even the SDMB list gets unweildy so I dread reviewing it.&lt;/p&gt;
-&lt;p&gt;I think I have a handle on it now, though &lt;sup&gt;1&lt;/sup&gt;.
-I started a directory at &lt;code&gt;~/sdmb&lt;/code&gt;
-with markdown files for each SDMB project.
-This is nice for two reasons:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;It doesn't clog up your task list with un-actionable tasks&lt;/li&gt;
-&lt;li&gt;You can review a list of SDMB &lt;em&gt;projects&lt;/em&gt;
-   without reviewing all of the associated &lt;em&gt;TODOs&lt;/em&gt;.
-   The &lt;strong&gt;project list should be much shorter&lt;/strong&gt; and
-   I can usually tell what's interesting by reviewing the project names.
-   I don't need to know the next action.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here's a bash snippet to make this feel natural.
-It creates a new command &lt;code&gt;sdmb&lt;/code&gt; that either
-lists all projects in the SDMB folder
-or opens a given SDMB project file (with auto-complete!).&lt;/p&gt;
-&lt;p&gt;I recommend reviewing the list of projects monthly.
-If any projects look interesting,
-review that project's notes and pull out a couple of TODOs.&lt;/p&gt;
-&lt;p&gt;Here's the snippet:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/somedaymaybe&amp;quot;&lt;/span&gt;
-
-_list_sdmb_projects &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    ls -1 &lt;span class="nv"&gt;$dir&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -f &lt;span class="m"&gt;1&lt;/span&gt; -d &lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-sdmb &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;then&lt;/span&gt;
-        &lt;span class="c1"&gt;# If no arguement provided, list available projects&lt;/span&gt;
-        _list_sdmb_projects 
-    &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="c1"&gt;# Edit given project&lt;/span&gt;
-        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
-        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$id&lt;/span&gt;&lt;span class="s2"&gt;.md&amp;quot;&lt;/span&gt;
-
-        vim &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
-    &lt;span class="k"&gt;fi&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Bash auto-complete&lt;/span&gt;
-_sdmbComplete&lt;span class="o"&gt;()&lt;/span&gt;
-&lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;cur&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;COMP_WORDS&lt;/span&gt;&lt;span class="p"&gt;[COMP_CWORD]&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
-    &lt;span class="nv"&gt;COMPREPLY&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;compgen&lt;/span&gt; -W &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;_list_sdmb_projects&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -- &lt;span class="nv"&gt;$cur&lt;/span&gt; &lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-&lt;span class="nb"&gt;complete&lt;/span&gt; -F _sdmbComplete sdmb
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;: Thanks to Tom's great post &lt;a href="https://cs-syd.eu/posts/2016-02-21-return-to-taskwarrior"&gt;here&lt;/a&gt; for inspiration:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 03 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-03:sdmb.html</guid></item><item><title>Removing Disqus</title><link>https://blog.harterrt.com/disqus.html</link><description>&lt;p&gt;I'm removing Disqus from this blog.
+I sat on that project for about a year before I could finally …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 03 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-03:/sdmb.html</guid><category>mozilla</category></item><item><title>Removing Disqus</title><link>https://blog.harterrt.com/disqus.html</link><description>&lt;p&gt;I'm removing Disqus from this blog.
 Disqus allowed readers to post comments on articles.
 I added it because it was easy to do,
 but I no longer think it's worth keeping.&lt;/p&gt;
 &lt;p&gt;If you'd like to share your thoughts,
 feel free to shoot me an email at &lt;code&gt;harterrt&lt;/code&gt; on gmail.
-I try to respond to all of my email daily.&lt;/p&gt;
-&lt;h2 id="cons"&gt;Cons&lt;/h2&gt;
-&lt;p&gt;Disqus started showing a red notification symbol at the bottom of every post.
-The notification is just a distraction aimed at increasing engagement with the comments.
-It's ugly and I don't like the distraction is introduces to my posts.
-This is my primary complaint.&lt;/p&gt;
-&lt;p&gt;Beyond that, there are just small annoyances.
-E.g. I don't need another inbox to maintain
-and I think the UI is a little ugly.&lt;/p&gt;
-&lt;h2 id="pros"&gt;Pros&lt;/h2&gt;
-&lt;p&gt;There aren't many.
-I've only had one comment on this blog,
-and I'm confident I would have gotten that feedback through other channels
-had the comment system not been available.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:disqus.html</guid></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
-&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+I …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/disqus.html</guid><category>mozilla</category></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
 &lt;p&gt;When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.
 I usually either step away from the computer
 or work on something less important while the job runs.
-I &lt;strong&gt;don't have a good way to get an alert when the job completes&lt;/strong&gt;.
-So instead of going back to my important work,
-I keep toying with 
-&lt;a href="http://news.ycombinator.com"&gt;whatever task I picked up&lt;/a&gt; to fill the dead time.
-I only get back to my primary task after I remember to check on it.&lt;/p&gt;
-&lt;p&gt;This is easier to fix when you're developing locally,
-but I'm frequently developing jobs on EC2 instances via ATMO.
-&lt;strong&gt;There's no good way to forward alerts to my local system&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Even then, I frequently step away from the computer to take a break while the job runs.
-Sometimes the job stops after 10m instead of the usual execution of ~120m.
-That usually means I had a command line flag set wrong
-or that I fat-fingered a file name.
-It would be great to be able to 
-&lt;strong&gt;see this alert immediately, even if I'm not at my computer,&lt;/strong&gt;
-instead of waiting an hour until I check on my machine again.&lt;/p&gt;
-&lt;p&gt;The fix was crazy simple.
-I created a little slack bot, installed a slack-cli, and added a bash command.
-Now I can just issue a command like:
-&lt;code&gt;sleep 10; slack Your task just completed.&lt;/code&gt;
-and in 10 seconds, I'll get a ping from &lt;code&gt;harterbot&lt;/code&gt; on slack.
-Setting this up on a remote cluster would be trivially easy as well.
-You just need to be confident in storing a Slack API token.&lt;/p&gt;
-&lt;h2 id="action"&gt;Action&lt;/h2&gt;
-&lt;p&gt;Here's how I did this:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://my.slack.com/services/new/bot"&gt;Create a new bot&lt;/a&gt;,
-   I called mine &lt;code&gt;harterbot&lt;/code&gt;.
-   Save the API token for later.&lt;/li&gt;
-&lt;li&gt;Install slack-cli with &lt;code&gt;pip install slack-cli&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Instantiate your &lt;code&gt;slack-cli&lt;/code&gt; installation by issuing a test command:
-   &lt;code&gt;slack-cli -d {{YOUR USERNAME}} "Test message"&lt;/code&gt;.
-   This will ask for the API token from step 2.
-   You should see a new message from your bot.&lt;/li&gt;
-&lt;li&gt;(Optional) Add the following helper function to your &lt;code&gt;.bashrc&lt;/code&gt;:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Ping me with an alert on Slack&lt;/span&gt;
-slack &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    slack-cli -d &lt;span class="o"&gt;{{&lt;/span&gt;YOUR SLACK HANDLE&lt;span class="o"&gt;}}&lt;/span&gt; -- &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$*&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Boom, you should be good to go!&lt;/p&gt;
-&lt;p&gt;Now I'm thinking we can generate an ATMO bot with shared credentials,
-then there's no need to instantiate a new machine with your credentials.&lt;/p&gt;
-&lt;p&gt;For reference,
-Slack's bot documentation is here:
-&lt;a href="https://api.slack.com/bot-users"&gt;here&lt;/a&gt;,&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-08:slack_alerts.html</guid><category>tools</category></item><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
+I &lt;strong&gt;don't have a good …&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 08 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-08:/slack_alerts.html</guid><category>mozilla</category><category>tools</category></item><item><title>Experiments are releases</title><link>https://blog.harterrt.com/experiments_are_releases.html</link><description>&lt;p&gt;&lt;a href="https://github.com/mozilla/missioncontrol"&gt;Mission Control&lt;/a&gt;
 was a major 2017 initiative for the Firefox Data team.
 The goal is to provide release managers with near-real-time
 release-health metrics minutes after going public.
 Will has a
 &lt;a href="https://wlach.github.io/blog/2017/10/mission-control/"&gt;great write up here&lt;/a&gt;
 if you want to read more.&lt;/p&gt;
-&lt;p&gt;The key here is that the data has to be updated quickly.
-We're trying to &lt;strong&gt;react&lt;/strong&gt; to bad releases so we can roll back the change.
-Once we've bought some time, we can step back and figure out what went wrong.
-It's like pulling your hand away from a hot stove.&lt;/p&gt;
-&lt;p&gt;This is different from the data we talk about when talking about experiments.
-With experiments, we &lt;strong&gt;purposely avoid looking at early data&lt;/strong&gt; to avoid bias.
-Users behave differently on Monday and Friday.
-We don't want to base a decision solely on data from a holiday.
-When we've gathered all of our data,
-we carefully consider metric movements then make a decision.&lt;/p&gt;
-&lt;p&gt;Since these use cases are so different,
-we developed our release tools (Mission Control)
-separately from our experimentation tools.
-We have the &lt;a href="https://github.com/mozilla/missioncontrol"&gt;Experiments Viewer&lt;/a&gt;
-and the associated ETL jobs.
-Now we're working on a new front-end called Test Tube.&lt;/p&gt;
-&lt;p&gt;However, after working with a few experiments,
-I've found &lt;strong&gt;we need reactive metrics for experiments&lt;/strong&gt; as well.
-Currently, when we release an experiment
-we don't get any feedback on whether the branches are behaving as expected.
-The experiment could be crashing for unexpected reasons,
-or the experiment branch could be identical to control (a null experiment) due to a bug.
-Without these reactive metrics, it takes weeks to identify bugs.&lt;/p&gt;
-&lt;p&gt;The more I think about it,
-the more it seems like experiments are actually a type of release.
-I can't think of one release metric I wouldn't want to see for an experiment.
-This makes me think we should expand our release tools to handle experiments as well.&lt;/p&gt;
-&lt;p&gt;This does not mean all of our decision metrics need to be real-time.
-In fact, &lt;strong&gt;real time decision metrics are probably undesirable&lt;/strong&gt;.
-We want some top-level vital signs - e.g. crashes and usage hours.&lt;/p&gt;
-&lt;p&gt;When I first started thinking about this I proposed,
-"all releases are a type of experiment".
-I'm no longer sure this is true.
-I think we &lt;strong&gt;could modify our releases to be experiments&lt;/strong&gt;,
-but our current release process doesn't look like an experiment to me.
-For example, we could keep a control branch while we roll-out a new release.
-This would allow us to catch regressions to our decision metrics
-(e.g. a drop in URI count).&lt;/p&gt;
-&lt;p&gt;Shoot me an email if you think I'm a crazy person or if you think I'm on to something.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-07:experiments_are_releases.html</guid><category>experimentation</category></item><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The key here is that the data has to be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-07:/experiments_are_releases.html</guid><category>mozilla</category><category>experimentation</category></item><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;At Mozilla,
 we're quickly climbing up our
 &lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;
@@ -838,98 +100,7 @@ we're quickly climbing up our
 I think the next big step for our data team
 is to &lt;strong&gt;make experimentation feel natural&lt;/strong&gt;.
 There are a few components to this (e.g. training or culture)
-but improving the &lt;strong&gt;tooling is going to be important&lt;/strong&gt;.
-Today, running an experiment is possible but it's not easy.&lt;/p&gt;
-&lt;p&gt;I want to spend a significant part of 2018 on this goal,
-so you'll probably see a bunch of
-&lt;a href="/tag/experimentation.html"&gt;posts on experimentation&lt;/a&gt;
-soon.&lt;/p&gt;
-&lt;p&gt;This article is meant to be an overview of
-a few principles I'd like to be reflected in our experimentation tools.
-&lt;strong&gt;I stopped myself from writing more&lt;/strong&gt; so I could get the article out.
-Send me a ping or an email if you're interested in more detail
-and I'll bump the priority.&lt;/p&gt;
-&lt;h2 id="decision-metrics"&gt;Decision Metrics&lt;/h2&gt;
-&lt;p&gt;An experiment is a &lt;strong&gt;tool to make decisions easier&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Sometimes, this isn't the way it works though.
-It's easy to let data confuse the situation.
-One way to avoid confusion is maintaining a &lt;strong&gt;curated set of decision metrics&lt;/strong&gt;.
-These metrics will not be the only data you review,
-but they will give a high level understanding of how the experiment impacts the product.&lt;/p&gt;
-&lt;p&gt;Curating decision metrics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;limits the number of metrics you need to review&lt;/li&gt;
-&lt;li&gt;reduces false positives and increases experimental power&lt;/li&gt;
-&lt;li&gt;provides impact measures that are consistent between experiments&lt;/li&gt;
-&lt;li&gt;clarifies what's important to leadership&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I plan on explanding this section into its own post.&lt;/p&gt;
-&lt;!---
-TODO: Post on curating decision metrics
-
-Comment on the above bullets and how to use supplementary metrics.
-E.g. maybe URIs is neutral, but your custom metric shows big changes. That's fine
---&gt;
-
-&lt;h2 id="interpretability"&gt;Interpretability&lt;/h2&gt;
-&lt;p&gt;We should &lt;strong&gt;value interpretability in our decision metrics&lt;/strong&gt;.
-This sounds obvious, but it's surprisingly hard to do.&lt;/p&gt;
-&lt;p&gt;When reviewing our results, we should &lt;strong&gt;always consider practical significance&lt;/strong&gt;.
-Patrick Riley explains this beautifully in
-&lt;a href="http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html"&gt;Practical advice for analysis of large, complex data sets&lt;/a&gt;
-:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;With a large volume of data,
- it can be tempting to focus solely on statistical significance
- or to hone in on the details of every bit of data.
- But you need to ask yourself,
- “Even if it is true that value X is 0.1% more than value Y, does it matter?”&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;On the flip side, you sometimes have a small volume of data.
- Many changes will not look statistically significant but that is different than claiming it is “neutral”.
- You must ask yourself 
- “How likely is it that there is still a practically significant change”? &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;One of the major problems with p-values
-is that they do not report practical significance.
-Also note that practical significance is difficult to assess
-if our decision metrics are uninterpretable.&lt;/p&gt;
-&lt;p&gt;More on this coming soon.
-&lt;!---
-TODO: Post: We should probably step away from histograms for this reason. 
---&gt;&lt;/p&gt;
-&lt;h2 id="decision-reports"&gt;Decision Reports&lt;/h2&gt;
-&lt;p&gt;Experiment results should be &lt;strong&gt;easy to export to plain text&lt;/strong&gt;.
-This allows us to capture a snapshot from the experiment.
-Data doesn't always age well,
-so it's important to record what we were looking at when we made a decision.
-This will make it easier for us to overturn a decision if the data changes.&lt;/p&gt;
-&lt;p&gt;For the foreseeable future,
-experiment results will need review to be actionable.
-Accordingly, we should include our
-&lt;strong&gt;interpretation with the experiment results&lt;/strong&gt;.
-This is another advantage of exporting results in plain text;
-Plain text is easy to annotate.&lt;/p&gt;
-&lt;p&gt;There will always be context not captured by the experiment.
-It's important that we 
-&lt;strong&gt;capture all of the reasoning behind a decision in one place&lt;/strong&gt;.
-The final result of an experiment should be a &lt;strong&gt;Decision Report&lt;/strong&gt;.
-The Decision Report should be immutable,
-though we may want to be able to append notes.
-Decision reports may summarize more than one experiment.&lt;/p&gt;
-&lt;!---
-TODO: post Experimental decisions should be consistent
-
-We need to look at a consistent set of metrics.
-
-E.g. the launch/unlaunch loop.
-
-Not included here because it's more of a culture thing
-when looked at as an addition to these changes.
---&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Source: https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 06 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-06:good_experiment_tools.html</guid><category>experimentation</category></item><item><title>Submission Date vs Activity Date</title><link>https://blog.harterrt.com/dates.html</link><description>&lt;p&gt;My comments on
+but improving the &lt;strong&gt;tooling is going to be …&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 06 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-06:/good_experiment_tools.html</guid><category>mozilla</category><category>experimentation</category></item><item><title>Submission Date vs Activity Date</title><link>https://blog.harterrt.com/dates.html</link><description>&lt;p&gt;My comments on
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
 started to get long,
 so I started untangling my thoughts here.&lt;/p&gt;
@@ -940,194 +111,12 @@ so I started untangling my thoughts here.&lt;/p&gt;
 &lt;p&gt;We experimented with using &lt;code&gt;activity_date&lt;/code&gt; instead of &lt;code&gt;submission_date&lt;/code&gt;
 when developing the &lt;code&gt;clients_daily&lt;/code&gt; etl job.
 We should summarize our findings and decide on 
-which of these measures we'd like to standardize against in the future. &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="summary-of-the-problem"&gt;Summary of the problem&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;activity_date&lt;/code&gt; is generally preferable to &lt;code&gt;submission_date&lt;/code&gt;
-because it's closer to what we actually want to measure.
-There's a delay between user activity and us receiving the data.
-:chutten has some
-great analysis&lt;a href="https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/"&gt;[1]&lt;/a&gt;
-on the empirical difference between submission and activity dates,
-if you want to read more.
-95% of pings are received within two days of the actual activity 
-&lt;a href="https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/"&gt;[2]&lt;/a&gt;,
-but that means using 
-&lt;strong&gt;&lt;code&gt;submission_date&lt;/code&gt; "smears" data between today and yesterday&lt;/strong&gt; (mostly).&lt;/p&gt;
-&lt;p&gt;However, &lt;strong&gt;&lt;code&gt;submission_date&lt;/code&gt; is much easier to work with computationally&lt;/strong&gt;.
-When we partition by &lt;code&gt;submission_date&lt;/code&gt;,
-most jobs only need to process one day of data at a time.
-This makes it much easier to continuously update datasets and backfill missing data.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;clients_daily&lt;/code&gt; is currently limited to 6 months of historical data
-because the &lt;strong&gt;entire dataset needs to be regenerated every day&lt;/strong&gt;.
-This is inconvenient and causes real limitations when using the dataset [3].
-The job takes between 90 and 120 minutes to run and currently finishes near 9:00 UTC.
-Adding more data to this job will push that completion time back,
-meaning the data will be unavailable for the first few working hours every day.
-Eew.&lt;/p&gt;
-&lt;h2 id="solutions"&gt;Solutions&lt;/h2&gt;
-&lt;p&gt;I see three possible options:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Standardize to &lt;code&gt;submission_date&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Standardize to &lt;code&gt;activity_date&lt;/code&gt; and try to mitigate the performance losses&lt;/li&gt;
-&lt;li&gt;Allow both, but provide guidance for when to use each configuration&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;So far, the data engineering team has strongly recommended using &lt;code&gt;submission_date&lt;/code&gt;.
-The difference between &lt;code&gt;submission_date&lt;/code&gt; and &lt;code&gt;activity_date&lt;/code&gt;
-has become even smaller with our team's work on ping sender
-&lt;a href="https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/"&gt;[4]&lt;/a&gt;.
-Without a strong counter argument, I recommend continuing with &lt;code&gt;submission_date&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If we do have a strong reason to continue keying datasets by &lt;code&gt;activity_date&lt;/code&gt;,
-I recommend only using &lt;code&gt;activity_date&lt;/code&gt; on "small" datasets.
-These are datasets built over a sample of our data,
-build over a rarer type of ping (e.g. not main pings),
-or heavily aggregated (e.g. to country-day).
-Someone should provide documentation on when &lt;code&gt;activity_date&lt;/code&gt; is [un]necessary
-to be included in &lt;a href="https://docs.telemetry.mozilla.com"&gt;docs.tmo&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li&gt;https://chuttenblog.wordpress.com/2017/02/09/data-science-is-hard-client-delays-for-crash-pings/&lt;/li&gt;
-&lt;li&gt;https://chuttenblog.wordpress.com/2017/09/12/two-days-or-how-long-until-the-data-is-in/&lt;/li&gt;
-&lt;li&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=1414044&lt;/li&gt;
-&lt;li&gt;https://chuttenblog.wordpress.com/2017/07/12/latency-improvements-or-yet-another-satisfying-graph/&lt;/li&gt;
-&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 04 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-04:dates.html</guid></item><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
+which of these measures we'd like to standardize against …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 04 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-04:/dates.html</guid><category>mozilla</category></item><item><title>OKRs and 4DX</title><link>https://blog.harterrt.com/okrs_and_4dx.html</link><description>&lt;p&gt;I feel like I'm swimming in acronyms these days.&lt;/p&gt;
 &lt;p&gt;Earlier this year,
 my team started using Objectives and Key Results (OKRs) for our planning.
 It's been a learning process.
 I had some prior experience with OKRs at Google,
-but I've never felt like I was fully taking advantage of the tool.&lt;/p&gt;
-&lt;p&gt;I just recently started digging through 
-&lt;a href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1491517751"&gt;The 4 Disciplines of Execution&lt;/a&gt;
-(4DX)&lt;sup&gt;1&lt;/sup&gt;
-and, surprisingly, OKRs are starting to make a lot more sense.
-This post outlines some ideas I've picked up through my reading.&lt;/p&gt;
-&lt;h2 id="too-many-goals"&gt;Too many goals&lt;/h2&gt;
-&lt;p&gt;For the last few quarters, my team has had 4-5 Objectives.
-That's a little high, but it's within the recommended limits.
-I usually have some work to do on each of these OKRs every week.
-Some weeks I have a hard time prioritizing which objective I should work on.
-Do I work on experimentation or search?
-&lt;code&gt;¯\_(ツ)_/¯&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;When we set OKRs,
-it feels like we're scoping out what work we can get done in the next quarter.
-That leads to an OKR process that goes something like this:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;List out all the project work we could do,
-  order by importance,
-  and &lt;strong&gt;pack the quarter/year&lt;/strong&gt; until it's full.&lt;/li&gt;
-&lt;li&gt;Group our project work into &lt;strong&gt;3-5 major themes&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Explain why&lt;/strong&gt; we're doing each class of project (Objectives)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Develop metrics&lt;/strong&gt; to describe "success" and set Key Results&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It's a useful exercise.
-We can clearly communicate what we are and aren't working on
-and why certain projects were deprioritized.
-I like this process a lot and I think we should keep it,
-but I don't think it harnesses the true value of OKRs.&lt;/p&gt;
-&lt;p&gt;Specifically, I think it 
-&lt;strong&gt;encourages us to set goals for projects that don't need them&lt;/strong&gt;.
-For example, The last two quarters
-I've set OKRs for giving quick responses to client teams.
-In reality, I'm already responding quickly.
-In no world am I going to start ignoring questions because it's not in my OKRs.
-It's an obvious priority.
-This OKR isn't a good goal anymore, it's a placeholder for a time commitment.&lt;/p&gt;
-&lt;h2 id="the-fix"&gt;The Fix&lt;/h2&gt;
-&lt;p&gt;Instead, consider this process:
-&lt;strong&gt;Assume nothing changes in the next quarter&lt;/strong&gt;.
-We keep executing on our day-to-day tasks just like we have in the past.
-We answer questions, fix bugs, improve our tools.
-All of it.&lt;/p&gt;
-&lt;p&gt;Now, what &lt;strong&gt;one thing could we change&lt;/strong&gt; to have the biggest marginal impact on the business?
-That's our new objective.&lt;/p&gt;
-&lt;p&gt;This is totally different from before.
-We're &lt;strong&gt;not scoping out work&lt;/strong&gt; for the next quarter.
-We're identifying the &lt;strong&gt;one improvement we're going to protect&lt;/strong&gt;
-from the whirlwind of our daily work.
-That means your single OKR
-&lt;strong&gt;does not need to encompass all of the work you're going to do in a quarter&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In 4DX, they call this objective a &lt;strong&gt;Wildly Important Goal&lt;/strong&gt; (WIG)&lt;/p&gt;
-&lt;h2 id="the-benefits"&gt;The Benefits&lt;/h2&gt;
-&lt;p&gt;Emergencies flare up every now and then;
-it happens.
-But, I hate spending a week to put out a fire
-just to realize I didn't make any progress on my OKRs.
-I call these &lt;em&gt;Zero Weeks&lt;/em&gt;.
-In my experience, every week is crazy in it's own unique way,
-but it's &lt;strong&gt;usually easy to sneak in an hour of work for a long-term priority&lt;/strong&gt;.
-On the other hand,
-It's not easy to sneak in an hour of work for &lt;strong&gt;four&lt;/strong&gt; long term priorities.
-&lt;strong&gt;Focused objectives cut back on &lt;em&gt;Zero Weeks&lt;/em&gt; &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The most obvious benefit of focusing our goals
-is being able to &lt;strong&gt;build momentum behind important projects&lt;/strong&gt;.
-Sometimes, our projects lose steam near the finish line;
-The tool becomes "good enough" for day-to-day use or a stakeholder loses interest.
-Maybe the moment of urgency has passed.
-In any case, it feels like the project is drifting to completion.
-If we focus our team on one project, we'll be &lt;strong&gt;able to execute faster&lt;/strong&gt;.
-This means:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Share holders are less likely to lose interest&lt;/li&gt;
-&lt;li&gt;We'll have fewer &lt;em&gt;Zero Weeks&lt;/em&gt; so we'll be able to &lt;strong&gt;maintain context&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;We'll &lt;strong&gt;stay motivated&lt;/strong&gt; because the problem will be fresh in our minds
-  (Sometimes it's hard to remember why we're even working on a project)&lt;/li&gt;
-&lt;li&gt;We'll stay on task and notice drift more quickly (because we'll have more eyes)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Our team has a lot of projects going on at the same time 
-and we're distributed around the world.
-It's easy to feel disconnected from a teammate if you don't work on the same projects.
-&lt;strong&gt;Working towards the same goal will make us feel more connected&lt;/strong&gt; -
-even if someone's only contributing an hour or two that week.&lt;/p&gt;
-&lt;h2 id="but-what-about-all-the-other-work"&gt;But what about all the other work?&lt;/h2&gt;
-&lt;p&gt;Remember, your single OKR
-&lt;strong&gt;does not need to encompass all of the work you're going to do in a quarter&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In reality, we have dozens of responsibilities we have to execute on every day:
-code reviews, answering questions, meetings, interviews, actually coding...
-Setting a single wildly important goal
-can &lt;strong&gt;feel like you're ignoring all of the other important work&lt;/strong&gt; that needs to get done.
-I get that, and I'm still a little suspicious of this methodology for that reason.&lt;/p&gt;
-&lt;p&gt;However, I think I have a work-around for this.
-We should continue to end our quarters
-by prioritizing and packing the next quarter's work.
-That work should be called our &lt;strong&gt;"Deliverables" not our OKRs&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;We should &lt;strong&gt;expect to get our deliverables done&lt;/strong&gt; every quarter
-(not 70% done, as recommended for OKRs).
-I think this is a much more useful and interesting metric for our partner teams.
-We have teams that depend on our work.
-I don't want them to have to 
-&lt;strong&gt;guess at which 30% of our goals isn't going to get done&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Of course,
-this isn't great because now we have two rounds of planning and reporting.
-It sounds like more busy work and more reporting.
-But, I think it's &lt;strong&gt;actually less work that what we're doing now&lt;/strong&gt;.
-Compare the two workflows.&lt;/p&gt;
-&lt;p&gt;Currently we:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;List all possible projects, order by priority, and pack the next quarter&lt;/li&gt;
-&lt;li&gt;Group our project work into &lt;strong&gt;3-5 major themes&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Set objectives for &lt;strong&gt;each of these major themes&lt;/strong&gt; (3-5 objectives)&lt;/li&gt;
-&lt;li&gt;Develop metrics and key results for &lt;strong&gt;each of these objectives&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What I'm suggesting we do:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;List all possible projects, order by priority, and pack the next quarter
-  Call these our &lt;strong&gt;"deliverables"&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Step back and identify &lt;strong&gt;one wildly important objective&lt;/strong&gt; we're going to focus on&lt;/li&gt;
-&lt;li&gt;Set key results and metrics for that &lt;strong&gt;one objective&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Instead of setting 3-5 objectives and tens of key results,
-we're &lt;strong&gt;only setting one objective with a few key results&lt;/strong&gt;.
-Also, this &lt;strong&gt;makes workday deliverables useful&lt;/strong&gt;.
-If we're still required to add deliverables every quarter,
-we may as well get some use from them.&lt;/p&gt;
-&lt;p&gt;What do you think?
-Am I missing something?&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;
-I first heard about this book in Cal Newport's
-&lt;a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692"&gt;Deep Work&lt;/a&gt;
-which I also recommend.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thanks to :mreid for his review and comments.&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 30 Nov 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-11-30:okrs_and_4dx.html</guid></item><item><title>Evaluating New Tools</title><link>https://blog.harterrt.com/new_tools.html</link><description>&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
+but I've never felt like I was fully taking advantage of the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 30 Nov 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-11-30:/okrs_and_4dx.html</guid><category>mozilla</category></item><item><title>Evaluating New Tools</title><link>https://blog.harterrt.com/new_tools.html</link><description>&lt;p&gt;At Mozilla, we're still relatively early in our data science journey.
 As such, we're always evaluating new tools to improve our analysis workflow
 (&lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; vs. &lt;a href="http://rmarkdown.rstudio.com/"&gt;Rmd&lt;/a&gt;),
 or make our infrastructure more usable
@@ -1136,361 +125,40 @@ vs. &lt;a href="https://databricks.com/"&gt;databricks&lt;/a&gt;),
 or scale our knowledge
 (&lt;a href="https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091"&gt;knoledge-repo&lt;/a&gt;.
 vs. &lt;a href="https://www.gitbook.com/"&gt;gitbook&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Most of these tools look like they have compelling wins over our existing solutions.
-But when we build a demo,
-our users ignore some tools and rave about others.
-Why?
-I think it's because some of &lt;strong&gt;the costs of adopting a new tool are subtle&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Unless your new tool is a perfect match for the problem at hand (very rare)
-I need to spend time learning, coding, or configuring the tool to work for me. 
-At the same time,
-I have &lt;strong&gt;work due today&lt;/strong&gt; and an existing set of tools that are good enough.&lt;/p&gt;
-&lt;p&gt;What follows are some thoughts I have when deciding whether to adopt a new tool.
-Maybe they will help you (or future me) &lt;strong&gt;debug problems with adoption&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="what-am-i-taking-home"&gt;What am I taking home?&lt;/h2&gt;
-&lt;p&gt;If your new tool is internal-only, uncommon in the industry, or expensive
-I'm going to be less likely to adopt it.&lt;/p&gt;
-&lt;p&gt;In this case, anything I learn while adopting your tool
-is &lt;strong&gt;unlikely&lt;/strong&gt; to be &lt;strong&gt;valuable to future employers&lt;/strong&gt;.
-I think of my 
-&lt;a href="https://esimoney.com/two-huge-reasons-why-your-career-matters/"&gt;career as an asset&lt;/a&gt;,
-so if I get to do work that builds &lt;strong&gt;transferable skills&lt;/strong&gt;,
-I count that as &lt;strong&gt;part of my compensation&lt;/strong&gt;.
-On the other hand,
-if I'm writing glue scripts to deal with idiosyncrasies in an internal tool,
-I'm missing out.&lt;/p&gt;
-&lt;p&gt;I think this is a major reason
-&lt;strong&gt;why large tech companies open source internal technologies&lt;/strong&gt;. 
-Consider 
-&lt;a href="https://code.facebook.com/projects/552007124892407/presto/"&gt;prestodb&lt;/a&gt;
-or &lt;a href="https://golang.org/"&gt;golang&lt;/a&gt;.
-How much would it suck to spend time learning these tools
-if they were internal-only?
-When you leave the company all of that skill becomes useless.
-By open-sourcing these technologies,
-you've just &lt;strong&gt;increased your employee compensation without spending a dollar&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id="how-long-will-i-have-access"&gt;How long will I have access?&lt;/h2&gt;
-&lt;p&gt;If your tool is closed source or expensive,
-I'm going to hesitate before spending any time with it.
-I depend on my tools and it hurts to lose them.&lt;/p&gt;
-&lt;p&gt;This is why I prefer Python or R to MATLAB.
-I can use my experience with Python or R build side projects
-that scratch my own itch.
-MATLAB is expensive, so I don't have that benefit.&lt;/p&gt;
-&lt;h2 id="how-long-will-it-be-relevant"&gt;How long will it be relevant?&lt;/h2&gt;
-&lt;p&gt;Even if the tool is open source,
-I want it to be configurable and composable.
-This ensures it can grow with me.
-I have no idea what the tech landscape will look like in 10 years,
-but I do know it will be different.
-&lt;strong&gt;I want your tool to play nicely with technology that doesn't exist yet&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Even better, if your tool is configurable and composable
-it is probably going to take me much less time to get comfortable with it.&lt;/p&gt;
-&lt;p&gt;Composability is one of my bigger complaints about Jupyter.
-Jupyter is a great tool for exploratory analysis,
-but I don't want to use your GUI for editing code.
-I'm much happier when I get to use my own tool chain.&lt;/p&gt;
-&lt;p&gt;However, Jupyter's saving grace is that it's configurable.
-I'm working on a tool that will make it easy to develop
-python packages and Jupyter notebooks side-by-side.
-Hopefully, this will give us the best of both worlds.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;All this to say,
-I'm going to carefully gauge the lifetime value of any new tool I adopt.
-If your users are ignoring a new tool you've created,
-&lt;strong&gt;look carefully for hidden restrictions to lifetime value&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;On the other hand,
-if your tool solves a critical enough problem,
-I'll stand barefoot in the snow to use it.&lt;/p&gt;
-&lt;p&gt;Does this all make any sense?
-Am I missing something important?
-Why do you roll your eyes when someone tries to sell you a new tool?&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-10-26:new_tools.html</guid><category>tools</category><category>mozilla</category></item><item><title>Documentation Style Guide</title><link>https://blog.harterrt.com/docs-style-guide.html</link><description>&lt;p&gt;I just wrote up a style guide for our 
+&lt;p&gt;Most of these tools look like …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 26 Oct 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-10-26:/new_tools.html</guid><category>mozilla</category><category>tools</category><category>mozilla</category></item><item><title>Documentation Style Guide</title><link>https://blog.harterrt.com/docs-style-guide.html</link><description>&lt;p&gt;I just wrote up a style guide for our 
 &lt;a href="https://docs.telemetry.mozilla.org"&gt;team's documentation&lt;/a&gt;.
 The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
 &lt;a href="https://github.com/mozilla/firefox-data-docs/pull/41"&gt;PR here&lt;/a&gt;
 but I figured it's worth sharing here as well.&lt;/p&gt;
-&lt;h2 id="style-guide"&gt;Style Guide&lt;/h2&gt;
+&lt;h2&gt;Style Guide&lt;/h2&gt;
 &lt;p&gt;Articles should be written in
 &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;
 (not &lt;a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"&gt;AsciiDoc&lt;/a&gt;).
-Markdown is usually powerful enough and is a more common technology than AsciiDoc.&lt;/p&gt;
-&lt;p&gt;Limit lines to &lt;strong&gt;100 characters&lt;/strong&gt; where possible.
-Try to split lines at the end of sentences.
-This makes it easier to reorganize your thoughts later.&lt;/p&gt;
-&lt;p&gt;This documentation is meant to be read digitally.
-Keep in mind that people read digital content much differently than other media.
-Specifically, readers are going to skim your writing,
-so make it easy to identify important information&lt;/p&gt;
-&lt;p&gt;Use &lt;strong&gt;visual markup&lt;/strong&gt; like &lt;strong&gt;bold text&lt;/strong&gt;, &lt;code&gt;code blocks&lt;/code&gt;, and section headers.
-Avoid long paragraphs.
-Short paragraphs that describe one concept each makes finding important information easier.&lt;/p&gt;
-&lt;p&gt;Please squash your changes  into meaningful commits  and follow these
-&lt;a href="https://chris.beams.io/posts/git-commit/"&gt;commit message guidelines&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 24 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-24:docs-style-guide.html</guid><category>mozilla</category><category>documentation</category></item><item><title>Beer and Probes</title><link>https://blog.harterrt.com/probes.html</link><description>&lt;p&gt;Quick post to clear up some terminology.
+Markdown is usually …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 24 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</guid><category>mozilla</category><category>mozilla</category><category>documentation</category></item><item><title>Beer and Probes</title><link>https://blog.harterrt.com/probes.html</link><description>&lt;p&gt;Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:&lt;/p&gt;
-&lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
+&lt;h2&gt;Analogy&lt;/h2&gt;
 &lt;p&gt;Temperature control is a big part of brewing beer.
 Throughout the brewing process I use a thermometer
 to measure the temperature of the soon-to-be beer.
-Because I take several temperature readings throughout the brewing process,
-one brew will result in a list of a half dozen temperature readings.
-For example, I take a mash temperature,
-then a sparge temperature,
-then a fermentation temperature.
-The units on these measurements are always in Fahrenheit,
-but their interpretation is different.&lt;/p&gt;
-&lt;h2 id="the-rub"&gt;The Rub&lt;/h2&gt;
-&lt;p&gt;In this example, I would call the thermometer a "probe".
-The set of all temperature readings share a "data type".
-Each temperature reading is a "measurement" which is stored in a given "field".&lt;/p&gt;
-&lt;p&gt;At the SFO workweek I uncovered some terminology I found confusing.
-Specifically, we use the word "probe" to refer to data we collect.
-I haven't encountered this usage outside of Mozilla.&lt;/p&gt;
-&lt;p&gt;Instead, I'd suggest we call histograms and scalars "data types".
-A "probe" is a unit of client-side code that collects a measurement for us.
-A single "field" could be be a column in one of our datasets (like &lt;code&gt;normalized_channel&lt;/code&gt;).
-A measurement would be a value from a single field from a single ping (like the string "release").&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 23 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-23:probes.html</guid></item><item><title>Bad Tools are Insidious</title><link>https://blog.harterrt.com/bad-tools.html</link><description>&lt;p&gt;This is my first job making data tools that other people use.
+Because I take several temperature readings throughout the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 23 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-23:/probes.html</guid><category>mozilla</category></item><item><title>Bad Tools are Insidious</title><link>https://blog.harterrt.com/bad-tools.html</link><description>&lt;p&gt;This is my first job making data tools that other people use.
 In the past, I've always been a data scientist -
 a consumer of these tools.
 I'm learning a lot.&lt;/p&gt;
 &lt;p&gt;Last quarter, I learned that bad tools are often hard to spot even when they're damaging productivity.
-I sum this up by saying that &lt;strong&gt;bad tools are insidious&lt;/strong&gt;.
-This may be &lt;a href="https://sivers.org/obvious"&gt;obvious to you&lt;/a&gt; but I'm excited by the insight.&lt;/p&gt;
-&lt;h2 id="bad-tools-are-hard-to-spot"&gt;Bad tools are hard to spot&lt;/h2&gt;
-&lt;p&gt;I spent some time working directly with analysts building ETL jobs.
-I found some big usability gaps with our tools
-and I was surprised I wasn't hearing about these problems from our analysts.&lt;/p&gt;
-&lt;p&gt;I looked back to previous jobs where I was on the other side of this equation.
-I remember being totally engrossed in a problem and excited to finding a solution.
-All I wanted were tools good enough to get the job done.
-I didn't care to reflect on how I could make the process smoother.
-I wanted to explore and interate.&lt;/p&gt;
-&lt;p&gt;When I dug into analyses this quarter, I had a different perspective.
-I was working with the intention of improving our tools
-and the analysis was secondary.
-It was much easier to find workflow improvements this way.&lt;/p&gt;
-&lt;p&gt;In the &lt;a href="https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"&gt;Design of Everyday Things&lt;/a&gt; 
-Donald notes that users tend to blame themselves when they have difficulty with tools.
-That's probably part of the issue here as well.&lt;/p&gt;
-&lt;h2 id="bad-tools-hurt"&gt;Bad tools hurt&lt;/h2&gt;
-&lt;p&gt;If our users aren't complaining, is it really a problem that needs to get fixed?
-I think so.
-We all understand that bad tools hurt our productivity.
-However, I think we tend to underestimate the value of good tools when we do our mental accounting.&lt;/p&gt;
-&lt;p&gt;Say I'm working on a new ETL job that takes ~5 minutes to test by hand
-but ~1 minute to test programatically.
-By default, I'd value implementing good tests at 4 minutes per test run.&lt;/p&gt;
-&lt;p&gt;This is a huge underestimate!
-Testing by hand introduces a context shift, another chance to get distracted,
-and another chance to fall out of flow.
-I'll bet a 5 minute distraction can easily end up costing me 20 minutes of productivity on a good day.&lt;/p&gt;
-&lt;p&gt;Your tools should be a joy to use.
-The better they work, the easier it is to stay in flow, be creative, and stay excited.&lt;/p&gt;
-&lt;h1 id="in-summary"&gt;In Summary&lt;/h1&gt;
-&lt;p&gt;Don't expect your users to tell you how to improve your tools.
-You're probably going to need to
-&lt;a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food"&gt;eat your own dogfood&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:bad-tools.html</guid><category>tools</category></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description>&lt;p&gt;I'm working on a big overhaul of my team's documentation.
+I sum this …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 15 Jun 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-06-15:/bad-tools.html</guid><category>mozilla</category><category>tools</category></item><item><title>Literature Review: Writing Great Documentation</title><link>https://blog.harterrt.com/lit-review.html</link><description>&lt;p&gt;I'm working on a big overhaul of my team's documentation.
 I've noticed writing documentation is a difficult thing to get right.
 I haven't seen any great example for a data product, either.
 I don't have much experience in this area,
-so I decided to review what's already been written about creating great documentation.
-This is a summary of what I've found, 
-both for my own reference and to help others understand my thought process.&lt;/p&gt;
-&lt;h2 id="findings"&gt;Findings&lt;/h2&gt;
-&lt;p&gt;I should note, all the literature I could find focused on documenting software products.
-I am willing to bet that a data product is going to have different documentation needs than most software products.
-But, this is as good a place to start as any.&lt;/p&gt;
-&lt;h3 id="structure-what-to-write"&gt;Structure &amp;amp; What to Write&lt;/h3&gt;
-&lt;p&gt;Most seem to agree that a &lt;strong&gt;README&lt;/strong&gt; is a critical piece of documentation.
-The README is usually comprised of two key parts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A quick introduction explaining what this project is, why the reader should 
-  care, and whether it's worth investing time to understand it better.&lt;/li&gt;
-&lt;li&gt;A simple tutorial to get the reader started and give a feel for what the tool
-  actually does.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If the reader decides they want to learn more,
-there should be a set of &lt;strong&gt;topical guides or tutorials&lt;/strong&gt; which comprise the bulk of the documentation.
-Think of each of these guides as a class focused on teaching your student (reader) a single skill.
-Reading all of these guides should take "someone who has never seen your product and make them an expert user". (&lt;a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/"&gt;TDT&lt;/a&gt;)
-With that in mind, make sure there's some sense of order to these lessons (easy to hard).&lt;/p&gt;
-&lt;p&gt;If your reader gets this far, they are now very comfortable with your product.
-From here, they need high-quality &lt;strong&gt;reference material&lt;/strong&gt;.
-In my experience, this is the most common documentation provided,
-but it is needed latest in the process and only by the most advanced users!&lt;/p&gt;
-&lt;p&gt;When I started this research, 
-I was having a hard time figuring out how we were going to separate our 
-prose documentation from our development notes.
-Now I see that these are just different stages in this learning process.
-First we explain what it is, then how to use it, and finally, how to extend it.&lt;/p&gt;
-&lt;h3 id="style"&gt;Style&lt;/h3&gt;
-&lt;p&gt;Most articles suggest adopting a style guide to make it easier for a user to read your documentation.
-The writing should pull you through the document and feel natural.&lt;/p&gt;
-&lt;p&gt;If you want your documentation to read naturally, you should try to become a better writer.
-This comes as cold solace to most folks, since I need my documentation now
-and I can't wait 10,000 hours to become an expert writer, but it's worth mentioning.
-The overwhelming consensus is that the best way to become a better writer is to &lt;strong&gt;write a lot&lt;/strong&gt;.
-If you want to write great documentation, consider building habits that will make you a great writer.&lt;/p&gt;
-&lt;p&gt;As with programming, maintaining a consistent style will help readers understand your documentation naturally.
-Note, the important word here is "consistent".
-&lt;strong&gt;Choose a style and stick with it&lt;/strong&gt;.
-This sounds obvious, but I rarely find corporate documentation with consistent style across tutorials.
-Have a style guide and enforce it.&lt;/p&gt;
-&lt;p&gt;As you choose your style guide, be aware that most of the advice is focused on physical media.
-Your documentation is probably going to be read digitally,
-so your readers will have different expectations.
-Specifically, readers are going to skim your writing, so make it easy to identify important information.&lt;/p&gt;
-&lt;p&gt;Use &lt;strong&gt;visual markup&lt;/strong&gt; like bold text, code blocks, call-outs
-(e.g [&lt;a href="http://www.methods.co.nz/asciidoc/chunked/ch16.html#X22"&gt;1&lt;/a&gt;],
-[&lt;a href="http://getbootstrap.com/components/#alerts[2]"&gt;2&lt;/a&gt;], and section headers.
-Similarly, avoid long paragraphs.
-Short paragraphs that describe one concept each makes finding important information easier.&lt;/p&gt;
-&lt;p&gt;Most guides suggest keeping a &lt;strong&gt;conversational tone&lt;/strong&gt;.
-This makes the guide more approachable and easier to read.&lt;/p&gt;
-&lt;p&gt;Everyone seems to agree that &lt;strong&gt;you should have an editor&lt;/strong&gt;.
-In fact, Jacob Kaplan-Moss dedicated an entire article to this point [&lt;a href="https://jacobian.org/writing/editors/"&gt;YNAE&lt;/a&gt;].
-If you don't have access to an editor,
-review your own work thrice then ask for someone else's review before publishing.
-Try adjusting your margins to force the text to re-flow.
-It's a very effective way to catch spelling or grammatical mistakes.&lt;/p&gt;
-&lt;h3 id="tools"&gt;Tools&lt;/h3&gt;
-&lt;p&gt;I'll start this section with a warning.
-Tools often receive an undue amount of attention, especially from programmers.
-With documentation, &lt;strong&gt;writing is the hard, important work&lt;/strong&gt;.
-It's important to use good tools, but make sure you're not 
-&lt;a href="https://en.wikipedia.org/wiki/Law_of_triviality"&gt;bike shedding&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your documentation should be stored in &lt;strong&gt;plain text and in version control&lt;/strong&gt;.
-Most of your documentation is going to be written by programmers, 
-and programmers have powerful tools for manipulating text. 
-Using anything besides plain text is a frustration that makes it less
-likely they'll enjoy writing documentation.&lt;/p&gt;
-&lt;!--
-// TODO: This should be expanded upon. Version control is hugely useful for
-// figuring out who to contact if you have questions, identifying the health
-// of the documentation, and attributing credit for the hard, thankless work
-// of writing the documentation. Wiki's do a particularly horrible job of all
-// of these things. 
---&gt;
-
-&lt;p&gt;You should have a &lt;strong&gt;process for reviewing changes&lt;/strong&gt; to the documentation.
-Review will help maintain a consistent voice across your documentation 
-and will provide useful feedback to the writer.
-Think of how useful code reviews are for improving your programming.
-I'd jump at the chance to get feedback from an expert writer.&lt;/p&gt;
-&lt;p&gt;You &lt;strong&gt;should not use a wiki&lt;/strong&gt; for documentation.
-Wikis make documentation "everyone's responsibility",
-which really means it's nobody's responsibility.
-Without this responsibility, wikis tend to decay into a web of assorted links without any sense of order or importance.
-Wikis make it impossible to maintain a consistent voice throughout your documentation.
-Finally, it's difficult to get review for your work before publishing.&lt;/p&gt;
-&lt;p&gt;Recognize that automatically-generated documentation isn't a replacement for hand-crafted prose.
-Remember that the bulk of your documentation should be tutorials meant to slowly ramp up your users to expert status.
-Docstrings have very little utility in this process.&lt;/p&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
-&lt;p&gt;Most of what I've summarized here came from very few sources.
-I highly recommend you read the following articles if you're interested in learning more:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/"&gt;[Teach, Don't Tell] (Steve Losh)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://jacobian.org/writing/what-to-write/"&gt;[What to Write] (Jacob Kaplan Moss)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://jacobian.org/writing/technical-style/"&gt;[Technical Style] (Jacob Kaplan Moss)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://jacobian.org/writing/editors/"&gt;[You Need an Editor] (Jacob Kaplan Moss)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For later reference, I also reviewed these articles to form opinions about
-general consensus outside of the primary sources above:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx"&gt;The Science of Scientific Writing&lt;/a&gt;
-  (George Gopen, Judith Swan): Good overview of how to structure a paper so 
-  readers find information where they expect it to be&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.writethedocs.org/"&gt;WriteTheDocs.org&lt;/a&gt;, specifically 
-  &lt;a href="http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/"&gt;A Beginner's Guide to Writing Docs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/noffle/art-of-readme"&gt;Art of README&lt;/a&gt;: An arguement for 
-  writing good READMEs and a template to help you get started&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://groups.google.com/forum/#!topic/scala-internals/r2GnzCFc3TY"&gt;Scala Documentation Discussion&lt;/a&gt;
-  A discussion of why Scala's official documentation is so bad&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://r-pkgs.had.co.nz/vignettes.html"&gt;Vignettes&lt;/a&gt; (Hadley Wickham): Hadley
-  is a rockstar in the R universe. This is an article from his style guide for
-  writing R package documentation. This is the closest I could come to finding
-  documentation advice for data products.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html"&gt;Programming's Dirtiest Little Secret&lt;/a&gt;
-  (Steve Yegge): Steve Yegge on why it's important to type well&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://byrslf.co/writing-great-documentation-44d90367115a#.nenvaqeng"&gt;Writing Great Documentation&lt;/a&gt;:
-  This article comments on documentation's propensity towards kippleization.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gnu.org/prep/standards/standards.html#GNU-Manuals"&gt;GNU Manual Style Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Harter</dc:creator><pubDate>Fri, 03 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-02-03:lit-review.html</guid><category>mozilla</category><category>documentation</category></item><item><title>Announcing the Cross Sectional Dataset</title><link>https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html</link><description>&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
+so I decided to review what's already been written about …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan Harter</dc:creator><pubDate>Fri, 03 Feb 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-02-03:/lit-review.html</guid><category>mozilla</category><category>mozilla</category><category>documentation</category></item><item><title>Announcing the Cross Sectional Dataset</title><link>https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html</link><description>&lt;p&gt;I'm happy to announce a new telemetry dataset!&lt;/p&gt;
 &lt;p&gt;The Cross Sectional dataset makes it easy to describe our users by providing
 summary statistics for each client.  Like the Longitudinal table, there's one
 row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies your analysis by replacing the longitudinal arrays with
-summary statistics.&lt;/p&gt;
-&lt;p&gt;The dataset is now available in
-&lt;a href="https://sql.telemetry.mozilla.org/queries/1669/source"&gt;STMO&lt;/a&gt;.  You can find
-more information in &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/choosing_a_dataset.md#cross-sectional"&gt;the
-documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Take a look and let me know if you have any question or suggestions for new
-columns!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:announcing-the-cross-sectional-dataset.html</guid></item><item><title>Working over SSH</title><link>https://blog.harterrt.com/working-over-ssh.html</link><description>&lt;div class="toc"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#tools"&gt;Tools&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#tmux"&gt;tmux&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#session-persistence"&gt;Session Persistence&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#multiplexing"&gt;Multiplexing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#homeshick"&gt;Homeshick&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+dataset simplifies your analysis …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:/announcing-the-cross-sectional-dataset.html</guid><category>mozilla</category></item><item><title>Working over SSH</title><link>https://blog.harterrt.com/working-over-ssh.html</link><description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
 Using these tools will make it significantly easier / more fun to work with a remote linux system.&lt;/p&gt;
-&lt;h2 id="tools"&gt;Tools&lt;/h2&gt;
-&lt;h3 id="tmux"&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;For me, tmux is the single tool most important getting work done over SSH.
-tmux does a lot of really cool things, but the most relevant feature to this discussion is session persistence.&lt;/p&gt;
-&lt;h4 id="session-persistence"&gt;Session Persistence&lt;/h4&gt;
-&lt;p&gt;tmux sessions can be detached and reattached at will.
-That means you can &lt;strong&gt;execute some long running command on an AWS cluster, kill the ssh session, and the command will keep running&lt;/strong&gt;.
-Later, you can reconnect to the cluster and session, it will be as if you hadn't left.
-So much nicer than cussing out your flaky WiFi connection.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Start a new session named &amp;quot;foo&amp;quot;&lt;/span&gt;
-&lt;span class="c1"&gt;# Opens a new shell as a subprocess&lt;/span&gt;
-tmux new -s foo
-
-&lt;span class="c1"&gt;# Do stuff ...&lt;/span&gt;
-sleep &lt;span class="m"&gt;100&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Kill the session, returning you to the original shell&lt;/span&gt;
-&lt;span class="c1"&gt;# with ctrl-b d&lt;/span&gt;
-
-&lt;span class="c1"&gt;# Reconnect to the tmux session&lt;/span&gt;
-tmux at -dt foo
-
-&lt;span class="c1"&gt;# Still waiting!!&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;More often, I use tmux just to save my place when I need to wrap up for the day.
-Next morning, I can reattach my session and I'm already looking at the most relevant files for today's work.&lt;/p&gt;
-&lt;h4 id="multiplexing"&gt;Multiplexing&lt;/h4&gt;
-&lt;p&gt;This is what tmux's was built to do. I think persistence is just a nice side effect.
-tmux allows you to open a bunch of terminals in a single ssh connection.
-Think of tmux as a tiling window manager for the terminal.
-Here's a screen shot of how I developed this blog post:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.harterrt.com/images/example-tmux-session.png"&gt;&lt;/p&gt;
-&lt;p&gt;That's all in one terminal window.
-On the left I have a process serving up drafts of this document and on the right I have my text editor.
-The extra context is indispensable when trying to figure out WTF is going on with a failing job.
-For example, monitoring an &lt;code&gt;sbt ~test&lt;/code&gt; process on the left while making edits on the right.&lt;/p&gt;
-&lt;h3 id="homeshick"&gt;&lt;a href="https://github.com/andsens/homeshick"&gt;Homeshick&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Configuring a new machine is a PITA.
-For a while, I saw all configuration changes as a liability and refused to customize my environment.
-After all, I'd eventually have to redo all of these configs when I get a new machine.
-But, your tools should be a joy to use, and Homeshick makes this a non-issue.&lt;/p&gt;
-&lt;p&gt;Homeshick pulls all of your dotfiles into a central git repository and handles linking these files to the right location.
-Now, I can &lt;strong&gt;setup a new Ubuntu machine within ~5 minutes&lt;/strong&gt; with all of my dotfiles intact.
-When I connect to a machine for the first time, I grab &lt;a href="https://github.com/harterrt/TIL/blob/master/linux/new-machine.md"&gt;this snippet&lt;/a&gt; and all of the initialization is done.
-Even better, the meaningful config changes I make on my work machine magically materialize on my personal machine and VPS with a simple &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://github.com/andsens/homeshick"&gt;README&lt;/a&gt; is pretty good and it shouldn't take longer than ~15 minutes to set up.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:working-over-ssh.html</guid><category>tools</category></item></channel></rss>
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;h3&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For me, tmux is …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:/working-over-ssh.html</guid><category>mozilla</category><category>tools</category></item></channel></rss>

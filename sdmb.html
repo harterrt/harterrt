@@ -98,38 +98,33 @@ or opens a given SDMB project file (with auto-complete!).</p>
 <p>I recommend reviewing the list of projects monthly.
 If any projects look interesting,
 review that project's notes and pull out a couple of TODOs.</p>
-<p>Here's the snippet:</p>
-<div class="codehilite"><pre><span></span><span class="nv">dir</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/somedaymaybe&quot;</span>
-
-_list_sdmb_projects <span class="o">()</span> <span class="o">{</span>
-    ls -1 <span class="nv">$dir</span> <span class="p">|</span> cut -f <span class="m">1</span> -d <span class="s1">&#39;.&#39;</span>
-<span class="o">}</span>
-
-sdmb <span class="o">()</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">0</span> <span class="o">]</span>
-    <span class="k">then</span>
-        <span class="c1"># If no arguement provided, list available projects</span>
+<p>Here's the snippet:
+```bash
+dir="$HOME/somedaymaybe"</p>
+<p>_list_sdmb_projects () {
+    ls -1 $dir | cut -f 1 -d '.'
+}</p>
+<p>sdmb () {
+    if [ $# -eq 0 ]
+    then
+        # If no arguement provided, list available projects
         _list_sdmb_projects 
-    <span class="k">else</span>
-        <span class="c1"># Edit given project</span>
-        <span class="nb">local</span> <span class="nv">id</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
-        <span class="nb">local</span> <span class="nv">file</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/</span><span class="nv">$id</span><span class="s2">.md&quot;</span>
-
-        vim <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span>
-    <span class="k">fi</span>
-<span class="o">}</span>
-
-<span class="c1"># Bash auto-complete</span>
-_sdmbComplete<span class="o">()</span>
-<span class="o">{</span>
-    <span class="nb">local</span> <span class="nv">cur</span><span class="o">=</span><span class="si">${</span><span class="nv">COMP_WORDS</span><span class="p">[COMP_CWORD]</span><span class="si">}</span>
-    <span class="nv">COMPREPLY</span><span class="o">=(</span> <span class="k">$(</span><span class="nb">compgen</span> -W <span class="s2">&quot;</span><span class="k">$(</span>_list_sdmb_projects<span class="k">)</span><span class="s2">&quot;</span> -- <span class="nv">$cur</span> <span class="k">)</span><span class="o">)</span>
-<span class="o">}</span>
-
-<span class="nb">complete</span> -F _sdmbComplete sdmb
-</pre></div>
-
-
+    else
+        # Edit given project
+        local id="$1"
+        local file="$dir/$id.md"</p>
+<pre><code>    vim "$file"
+fi
+</code></pre>
+<p>}</p>
+<h1>Bash auto-complete</h1>
+<p>_sdmbComplete()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(_list_sdmb_projects)" -- $cur ))
+}</p>
+<p>complete -F _sdmbComplete sdmb
+```</p>
 <hr />
 <p><sup>1</sup>: Thanks to Tom's great post <a href="https://cs-syd.eu/posts/2016-02-21-return-to-taskwarrior">here</a> for inspiration:</p>
   </div>

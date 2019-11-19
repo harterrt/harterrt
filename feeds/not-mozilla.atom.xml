@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/not-mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-01-02T00:00:00-08:00</updated><entry><title>Productivity Systems for Stress Management</title><link href="https://blog.harterrt.com/productivity_systems.html" rel="alternate"></link><published>2018-01-02T00:00:00-08:00</published><updated>2018-01-02T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-02:productivity_systems.html</id><summary type="html">&lt;p&gt;Over the years, I've developed a pretty involved productivity system.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - not-mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/not-mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2018-01-02T00:00:00-08:00</updated><entry><title>Productivity Systems for Stress Management</title><link href="https://blog.harterrt.com/productivity_systems.html" rel="alternate"></link><published>2018-01-02T00:00:00-08:00</published><updated>2018-01-02T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2018-01-02:/productivity_systems.html</id><summary type="html">&lt;p&gt;Over the years, I've developed a pretty involved productivity system.
+It was originally based on &lt;a href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/"&gt;Getting Things Done&lt;/a&gt;,
+but now it's grown to include the good bits from other systems.
+It's involved, but I love it.&lt;/p&gt;
+&lt;p&gt;I get a lot of comments,
+especially on the little black book I keep …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the years, I've developed a pretty involved productivity system.
 It was originally based on &lt;a href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/"&gt;Getting Things Done&lt;/a&gt;,
 but now it's grown to include the good bits from other systems.
 It's involved, but I love it.&lt;/p&gt;
@@ -20,4 +25,4 @@ Then all you need to do is set up a few habits to remind you to look at your sys
 &lt;p&gt;For the past few years, my main goal has been increasing how much I enjoy my work.
 &lt;strong&gt;Cutting the stress out of my workday was a huge improvement to my work satisfaction&lt;/strong&gt;.
 If you're feeling stressed or burnt out,
-I highly recommend looking at whether a productivity system would help.&lt;/p&gt;</summary></entry></feed>
+I highly recommend looking at whether a productivity system would help.&lt;/p&gt;</content><category term="not-mozilla"></category></entry></feed>
