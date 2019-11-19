@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 import os
 import sys
 sys.path.append(os.curdir)
@@ -26,7 +24,7 @@ ROUND_USER_LOGO = True
 BROWSER_COLOR = '#333'
 
 MAIN_MENU = True
-COPYRIGHT_YEAR = 2016
+COPYRIGHT_YEAR = 2019
 
 ROBOTS = 'index, follow'
 
@@ -34,12 +32,6 @@ ROBOTS = 'index, follow'
 ############
 # External #
 ############
-
-# Blogroll
-# LINKS = (('Pelican', 'http://getpelican.com/'),
-#          ('Python.org', 'http://python.org/'),
-#          ('Jinja2', 'http://jinja.pocoo.org/'),
-#          ('You can modify those links in your config file', '#'),)
 
 # Links on the side panel
 LINKS = (
@@ -55,19 +47,14 @@ MENUITEMS = (
 
 # PLUGINS:
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['asciidoc_reader']
-MD_EXTENSIONS = ['toc', 'codehilite','extra']
+PLUGINS = []
+MARKDOWN = {
+    'markdown.extensions.codehilite': {},
+    'markdown.extensions.toc': {},
+    'markdown.extensions.extra': {},
+}
 
-# Social widget
-# SOCIAL = (
-#          )
-
-# ADD_THIS_ID = 'ra-77hh6723hhjd'
-# DISQUS_SITENAME = 'blog-harterrt-com'
 GOOGLE_ANALYTICS = 'UA-83638505-1'
-# GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
-# STATUSCAKE = { 'trackid': 'your-id', 'days': 7, 'rumid': 1234 }
-
 
 #########
 # Admin #
@@ -83,8 +70,3 @@ EXTRA_PATH_METADATA = {
     'extra/resume.pdf': {'path':'resume.pdf'},
 }
 ARTICLE_EXCLUDES = ['images']
-
-# EXTRA_PATH_METADATA = {
-#     'extra/custom.css': {'path': 'static/custom.css'},
-# }
-# CUSTOM_CSS = 'static/custom.css'

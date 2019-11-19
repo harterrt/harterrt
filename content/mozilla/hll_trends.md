@@ -57,14 +57,14 @@ if I'm building a dashboard to track year over year change.
 ## An example
 
 I put together an
-[example notebook]({filename}/images/probabilistic_counts.html)
+[example notebook]({static}/images/probabilistic_counts.html)
 to explore a little.
 I created a toy dataframe containing
 7 days of data and 1000 `client_id`'s per day.
 Then I got an approximate count of the clients for each day.
 Here's what an arbitrary set of daily errors look like:
 
-<img src="{filename}/images/probabilistic_count_errors.png">
+<img src="{static}/images/probabilistic_count_errors.png">
 
 By default, pyspark's 
 [approxCountDistinct](https://spark.apache.org/docs/2.0.2/api/java/org/apache/spark/sql/functions.html#approxCountDistinct(java.lang.String,%20double))

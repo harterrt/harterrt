@@ -1,9 +1,0 @@
-[submodule "themes"]
-	path = themes
-	url = git@github.com:getpelican/pelican-themes.git
-[submodule "plugins"]
-	path = plugins
-	url = https://github.com/getpelican/pelican-plugins.git
-[submodule "content/mozilla/spark-failure"]
-	path = content/mozilla/spark-failure
-	url = git@github.com:harterrt/spark-failure.git
