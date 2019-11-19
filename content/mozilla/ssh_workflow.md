@@ -49,7 +49,7 @@ tmux allows you to open a bunch of terminals in a single ssh connection.
 Think of tmux as a tiling window manager for the terminal.
 Here's a screen shot of how I developed this blog post:
 
-<img src="{filename}/images/example-tmux-session.png">
+<img src="{static}/images/example-tmux-session.png">
 
 That's all in one terminal window.
 On the left I have a process serving up drafts of this document and on the right I have my text editor.

@@ -37,7 +37,7 @@ Prominent tools for this stage include the front ends for Google Analytics or Op
 Basically, I'm talking about any webpage that shows you statistics like this
 (from [AirBnB's excellent blog](https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7)):
 
-![(Example Report from AirBnB)]({filename}/images/e13n-example-report.jpeg)
+![(Example Report from AirBnB)]({static}/images/e13n-example-report.jpeg)
 
 Some of Mozilla's tools in this category include:
 
