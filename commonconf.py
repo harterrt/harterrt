@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 import os
 import sys
 sys.path.append(os.curdir)
@@ -49,8 +47,12 @@ MENUITEMS = (
 
 # PLUGINS:
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['asciidoc_reader']
-MD_EXTENSIONS = ['toc', 'codehilite','extra']
+PLUGINS = []
+MARKDOWN = {
+    'markdown.extensions.codehilite': {},
+    'markdown.extensions.toc': {},
+    'markdown.extensions.extra': {},
+}
 
 GOOGLE_ANALYTICS = 'UA-83638505-1'
 
