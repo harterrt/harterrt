@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2019-12-12T00:00:00-08:00</updated><entry><title>Analysis Maturation Plan</title><link href="https://blog.harterrt.com/analysis_maturation.html" rel="alternate"></link><published>2019-12-12T00:00:00-08:00</published><updated>2019-12-12T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-12-12:/analysis_maturation.html</id><summary type="html">&lt;p&gt;I was talking about tooling with Mark Reid a few weeks ago.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2019-12-13T00:00:00-08:00</updated><entry><title>Pub True</title><link href="https://blog.harterrt.com/pub-true.html" rel="alternate"></link><published>2019-12-13T00:00:00-08:00</published><updated>2019-12-13T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-12-13:/pub-true.html</id><summary type="html">&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
+Right now I'm trying to build some context quickly.
+For example, what's our monthly retention? How about our annual retention?
+There's a bunch of interesting and nuanced measurement questions
+that we'll eventually have to answer,
+but for now …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
+Right now I'm trying to build some context quickly.
+For example, what's our monthly retention? How about our annual retention?
+There's a bunch of interesting and nuanced measurement questions
+that we'll eventually have to answer,
+but for now I'm just interested in getting some quick back-of-the-envelope numbers.&lt;/p&gt;
+&lt;p&gt;There's a conflict here though.
+I get a lot of value from having loose and squishy estimates.
+But, if I share these numbers the results often get passed around
+via word-of-mouth and the numbers start to look more solid than they are
+(a second cousin to &lt;a href="https://xkcd.com/978/"&gt;citogenesis&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;It's easier to express uncertainty in person than it is in writing.
+In person, I can shrug my shoulders and rock my hand back and forth
+signaling, "Kinda, sorta, maybe...".
+In writing, caveats take up a lot of space and often confuse muddy my point.&lt;/p&gt;
+&lt;p&gt;Instead, &lt;strong&gt;I've started describing these soft-and-squishy numbers
+as "pub true"&lt;/strong&gt; or "true enough".
+Basically, the idea is that they'd hold up in a bar conversation
+but they're not meant to be used for much else.
+It get's you into the ballpark
+but you probably shouldn't bet the business on them.&lt;/p&gt;
+&lt;p&gt;I'm happy with the results so far.
+Folks seem to register that we're having a casual discussion of the numbers.
+It feels like "pub true" status gets passed along with the results.
+It's a nice and succinct description.&lt;/p&gt;
+&lt;h3&gt;An Order of Magnitude&lt;/h3&gt;
+&lt;p&gt;In particular, I use I use "pub true" numbers
+to unblock some early stage conversations.
+When I'm starting a new project
+&lt;strong&gt;conversations are often stilted by trying to be too accurate&lt;/strong&gt;.
+Folks are reticent to share numbers if they don't have exact numbers.&lt;/p&gt;
+&lt;p&gt;For example, I might ask someone "How many releases do we do a year?".
+In a formal environment, they might think for a bit and come up with "I don't know"
+even though I know they have more context than I do.&lt;/p&gt;
+&lt;p&gt;In their head, my peer's thinking,
+"We usually release monthly but we had some bug-fix releases last year,
+so it could be as many as 15."
+The problem is, I know next to nothing so any new context is useful.&lt;/p&gt;
+&lt;p&gt;I find that re-framing the conversation to something casual gets better results.
+If I throw out some ridiculous numbers I can usually get a reasonable estimate back.
+For example, I might say "So like 100 releases or 50?".
+Pretty often folks come back with a quick and informal, 
+"Oh, no - nothing like that. Maybe, like 12. Definitely no more than 20."&lt;/p&gt;
+&lt;p&gt;Great. Pub true. Hand wavy, quick and effective.&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Analysis Maturation Plan</title><link href="https://blog.harterrt.com/analysis_maturation.html" rel="alternate"></link><published>2019-12-12T00:00:00-08:00</published><updated>2019-12-12T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-12-12:/analysis_maturation.html</id><summary type="html">&lt;p&gt;I was talking about tooling with Mark Reid a few weeks ago.
 I've been trying to find a way to simplify sharing analyses throughout the company.
 This is an old problem at Mozilla that I've tried to address a couple of times
 but I haven't found the silver bullet yet …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was talking about tooling with Mark Reid a few weeks ago.

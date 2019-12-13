@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 12 Dec 2019 00:00:00 -0800</lastBuildDate><item><title>Analysis Maturation Plan</title><link>https://blog.harterrt.com/analysis_maturation.html</link><description>&lt;p&gt;I was talking about tooling with Mark Reid a few weeks ago.
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 13 Dec 2019 00:00:00 -0800</lastBuildDate><item><title>Pub True</title><link>https://blog.harterrt.com/pub-true.html</link><description>&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
+Right now I'm trying to build some context quickly.
+For example, what's our monthly retention? How about our annual retention?
+There's a bunch of interesting and nuanced measurement questions
+that we'll eventually have to answer,
+but for now …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 13 Dec 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-12-13:/pub-true.html</guid><category>mozilla</category></item><item><title>Analysis Maturation Plan</title><link>https://blog.harterrt.com/analysis_maturation.html</link><description>&lt;p&gt;I was talking about tooling with Mark Reid a few weeks ago.
 I've been trying to find a way to simplify sharing analyses throughout the company.
 This is an old problem at Mozilla that I've tried to address a couple of times
 but I haven't found the silver bullet yet …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 12 Dec 2019 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2019-12-12:/analysis_maturation.html</guid><category>mozilla</category></item><item><title>Technical Leadership Paths</title><link>https://blog.harterrt.com/keavy-tech-leadership-path.html</link><description>&lt;p&gt;I found
