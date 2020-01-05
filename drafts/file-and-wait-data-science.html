@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; File and Wait Data Science  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Senior Staff Data Scientist @ Mozilla</p>
+      <ul>
+        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/drafts/file-and-wait-data-science.html">File and Wait Data Science</a></h1>
+  </div>
+  <div class="article_text">
+    <p>File and wait
+Our primary goal is fixing the organizational consternation we have over our retention metrics.</p>
+<p>Originally, this project was started by Shani with the goal of “Find[ing] a 2% increase in retention”. However, because this is a Data Science project it makes more sense for this goal to be something like “Enable Product to find a 2% increase in retention”. </p>
+<p>Mozilla often has a dark pattern of dispatching data questions to data scientists, even for small investigations. In the ideal world product would do most of their exploration individually. Data science would be available to debug data problems, handle longer term research projects, and making it easier for product to work with the relevant data.</p>
+<p>This doesn’t work and is frustrating for both parties. Data scientists are inundated with small requests that require a lot of context switching. Product teams are constantly delayed waiting on answers to small questions. More so, understanding data is iterative which means product often gets more questions with each response!</p>
+<p>Part of this issue is context. As you work with data you start to build a gut-feeling about the data. What looks right and what looks off. This context helps the researcher hypothesize about explanations for data oddities and helps them formulate hypotheses about where to look next and what is important to understand. When teams follow the file-and-wait approach the data scientists build context but the product team issues direction. This is no good! Data science wants product to be issuing the direction, but the person with the most context is the most capable of issuing direction.</p>
+<p>This leads to frustration. Most context is never documented or written down. This isn’t laziness, it’s just the nature of the work. When you explore data you get an understanding of what’s reasonable and what is not. Three days ago your DS looked at a graph that suggests your new direction doesn’t make sense. The product manager isn’t convinced (rightfully so) and the data scientist is frustrated to chase down a lead that doesn’t exists (rightfully so).</p>
+<p>Hillary Mason summarizes this phenomenon: “Data leave scars”. You want this accumulated knowledge to sit with the product team.</p>
+<hr />
+<p>There’s still a problem though. In new areas, product often doesn’t know where to begin.</p>
+<p>File-and-wait iteration happens a lot in the beginning of a research project. It can be difficult and overwhelming to start research into a new area. It’s best if data scientists start the investigation, build up some context and guardrails, and hand the scoped problem space over to product.</p>
+<hr />
+<p>Think of the data scientist as a woodshop manager. They are available for questions and advice on difficult projects. They maintain the equipment so that they’re safe and usable. In general, they don’t interfere with your project unless they see something unsafe happening.</p>
+<p>This avoids most of the risks evoked when we think about “home dentistry”.</p>
+<p>We often talk about self-serve data tools or democratized data. On the other hand, we have a history of “home dentistry” when it comes to data.</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Tue 01 January 2019</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

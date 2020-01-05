@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2019-12-13T00:00:00-08:00</updated><entry><title>Pub True</title><link href="https://blog.harterrt.com/pub-true.html" rel="alternate"></link><published>2019-12-13T00:00:00-08:00</published><updated>2019-12-13T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-12-13:/pub-true.html</id><summary type="html">&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-01-05T00:00:00-08:00</updated><entry><title>Syncthing and Open Source Data Collection</title><link href="https://blog.harterrt.com/syncthing_data.html" rel="alternate"></link><published>2020-01-05T00:00:00-08:00</published><updated>2020-01-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-01-05:/syncthing_data.html</id><summary type="html">&lt;p&gt;I don't see many open source packages collecting telemetry,
+so when &lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt; asked me to opt-in to telemetry
+I was intrigued.&lt;/p&gt;
+&lt;p&gt;I see a lot of similarities between how Syncthing and Firefox collects data.
+Both collect daily pings and make it easy to view the data you're submitting
+(in Firefox …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I don't see many open source packages collecting telemetry,
+so when &lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt; asked me to opt-in to telemetry
+I was intrigued.&lt;/p&gt;
+&lt;p&gt;I see a lot of similarities between how Syncthing and Firefox collects data.
+Both collect daily pings and make it easy to view the data you're submitting
+(in Firefox, go to about:telemetry to see your pings).&lt;/p&gt;
+&lt;p&gt;All of the data they're collecting looks relevant and innocuous.
+For example, there's no content about &lt;em&gt;what&lt;/em&gt; files are being sync-ed in Syncthing.
+They just collect high level data like what version of the software is installed.
+Well done!&lt;/p&gt;
+&lt;p&gt;Syncthing even has a &lt;a href="https://data.syncthing.net/"&gt;public data report&lt;/a&gt;
+similar to the &lt;a href="https://data.firefox.com/"&gt;Firefox Public Data Report&lt;/a&gt;.
+This is a great way to make it clear what data is being collected
+and share some data back with the users who generated it.&lt;/p&gt;
+&lt;p&gt;Interesting to see someone else doing open-source data collection in the wild!&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Syncthing</title><link href="https://blog.harterrt.com/try_syncthing.html" rel="alternate"></link><published>2020-01-05T00:00:00-08:00</published><updated>2020-01-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-01-05:/try_syncthing.html</id><summary type="html">&lt;p&gt;I did a lot of reading and exploring over my holiday break.
+One of the things I'm most excited about is finding 
+&lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt;.
+If you haven't seen it yet, take a look.
+It's like and open-source decentralized Dropbox.&lt;/p&gt;
+&lt;p&gt;It works everywhere, which for me means Linux and Android.
+Google Drive …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I did a lot of reading and exploring over my holiday break.
+One of the things I'm most excited about is finding 
+&lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt;.
+If you haven't seen it yet, take a look.
+It's like and open-source decentralized Dropbox.&lt;/p&gt;
+&lt;p&gt;It works everywhere, which for me means Linux and Android.
+Google Drive famously has no official Linux client which is a big PITA.
+Even the install on my ARM-based raspberry pi was simple.&lt;/p&gt;
+&lt;p&gt;Right now I'm using it to sync photos from my phone to my laptop.
+That sounds trivial, but it's turning out to be a game changer.
+It's really cool to snap a picture on my phone
+and have it show up moments later on my laptop.
+That instant transfer makes it really &lt;strong&gt;easy to bridge the digital-analog gap&lt;/strong&gt;.
+For example, I can scribble down a drawing, snap a photo,
+and incorporate it into a blog post near instantly.
+Because there's no third party server involved
+I have complete control over my data
+and the file transfers happen over my local network (which is really fast).&lt;/p&gt;
+&lt;p&gt;If you need to sync with machines outside your local network
+you can use a relay server.
+All of your data is encrypted in-flight so you're still in control of your data.
+I'm going to keep playing with it and see how well it works for &lt;strong&gt;team collaboration&lt;/strong&gt;.
+For example, wouldn't it be cool to share a folder with a remote teammate
+so they can keep up with what you're working on?
+In terms of the &lt;a href="/analysis_maturation.html"&gt;Analysis Maturity Plan&lt;/a&gt;
+Syncthing would be great for distributing "indexed analyses".&lt;/p&gt;
+&lt;p&gt;If you add a centralized server (that you trust and maintain)
+and some bash scripts
+it feels like this workflow could support a collaborative 
+&lt;a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/"&gt;digital garden&lt;/a&gt;
+without all of the overhead and review.&lt;/p&gt;
+&lt;p&gt;Anyway, maybe this is old news to you
+but Syncthing feels like a new super power to me.&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Pub True</title><link href="https://blog.harterrt.com/pub-true.html" rel="alternate"></link><published>2019-12-13T00:00:00-08:00</published><updated>2019-12-13T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2019-12-13:/pub-true.html</id><summary type="html">&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
 Right now I'm trying to build some context quickly.
 For example, what's our monthly retention? How about our annual retention?
 There's a bunch of interesting and nuanced measurement questions

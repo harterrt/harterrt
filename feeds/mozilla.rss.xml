@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 13 Dec 2019 00:00:00 -0800</lastBuildDate><item><title>Pub True</title><link>https://blog.harterrt.com/pub-true.html</link><description>&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Sun, 05 Jan 2020 00:00:00 -0800</lastBuildDate><item><title>Syncthing and Open Source Data Collection</title><link>https://blog.harterrt.com/syncthing_data.html</link><description>&lt;p&gt;I don't see many open source packages collecting telemetry,
+so when &lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt; asked me to opt-in to telemetry
+I was intrigued.&lt;/p&gt;
+&lt;p&gt;I see a lot of similarities between how Syncthing and Firefox collects data.
+Both collect daily pings and make it easy to view the data you're submitting
+(in Firefox …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Sun, 05 Jan 2020 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-01-05:/syncthing_data.html</guid><category>mozilla</category></item><item><title>Syncthing</title><link>https://blog.harterrt.com/try_syncthing.html</link><description>&lt;p&gt;I did a lot of reading and exploring over my holiday break.
+One of the things I'm most excited about is finding 
+&lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt;.
+If you haven't seen it yet, take a look.
+It's like and open-source decentralized Dropbox.&lt;/p&gt;
+&lt;p&gt;It works everywhere, which for me means Linux and Android.
+Google Drive …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Sun, 05 Jan 2020 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-01-05:/try_syncthing.html</guid><category>mozilla</category></item><item><title>Pub True</title><link>https://blog.harterrt.com/pub-true.html</link><description>&lt;p&gt;I'm ramping up on a project to understand how Firefox retains users.
 Right now I'm trying to build some context quickly.
 For example, what's our monthly retention? How about our annual retention?
 There's a bunch of interesting and nuanced measurement questions
