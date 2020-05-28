@@ -1,6 +1,7 @@
 title: The Problem with Democratizing Data
 slug: prob_with_data_democ
 date: 2019-12-26
+status: draft
 
 There's this principle called data democratization.
 The goal is to enable everyone in the company
