@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-06-16T00:00:00-07:00</updated><entry><title>Daily Writing and the "Notebook" Category</title><link href="https://blog.harterrt.com/notebook/2020-06-16.html" rel="alternate"></link><published>2020-06-16T00:00:00-07:00</published><updated>2020-06-16T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-16:/notebook/2020-06-16.html</id><summary type="html">&lt;p&gt;This past weekend I found 
-&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaclver's post&lt;/a&gt;
+&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaciver's post&lt;/a&gt;
 on starting a daily writing practice.
 I like the idea and I'm going to give it a try.&lt;/p&gt;
 &lt;p&gt;The content on this blog has never been all that polished,
 but I do expect these daily posts will be less consistent 
 in quality and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This past weekend I found 
-&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaclver's post&lt;/a&gt;
+&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaciver's post&lt;/a&gt;
 on starting a daily writing practice.
 I like the idea and I'm going to give it a try.&lt;/p&gt;
 &lt;p&gt;The content on this blog has never been all that polished,
@@ -19,7 +19,7 @@ Writing daily supports both of those goals.&lt;/p&gt;
 &lt;p&gt;I do, however, want folks to be able to opt-out
 of my quantity-over-quality writing.
 To that end, I've started a new category for my daily writing
-called "Notebook" (per drmaclver's suggestion).
+called "Notebook" (per drmaciver's suggestion).
 If you don't want to see these notebook entries,
 I recommend subscribing to the 
 &lt;a href="/feeds/mozilla.rss.xml"&gt;Mozilla RSS feed&lt;/a&gt;
