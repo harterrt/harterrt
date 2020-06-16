@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-05-28T00:00:00-07:00</updated><entry><title>Writing inside organizations</title><link href="https://blog.harterrt.com/writing_inside_organizations.html" rel="alternate"></link><published>2020-05-28T00:00:00-07:00</published><updated>2020-05-28T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-05-28:/writing_inside_organizations.html</id><summary type="html">&lt;p&gt;Tom Critchlow has a 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-06-16T00:00:00-07:00</updated><entry><title>Introducing: "Notebook"</title><link href="https://blog.harterrt.com/notebooks.html" rel="alternate"></link><published>2020-06-16T00:00:00-07:00</published><updated>2020-06-16T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-16:/notebooks.html</id><summary type="html">&lt;p&gt;This past weekend I found 
+&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaclver's post&lt;/a&gt;
+on starting a daily writing practice.
+I like the idea and I'm going to give it a try.&lt;/p&gt;
+&lt;p&gt;The content on this blog has never been all that polished,
+but I do expect these daily posts will be less consistent quality-wise.
+I'm fine …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This past weekend I found 
+&lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaclver's post&lt;/a&gt;
+on starting a daily writing practice.
+I like the idea and I'm going to give it a try.&lt;/p&gt;
+&lt;p&gt;The content on this blog has never been all that polished,
+but I do expect these daily posts will be less consistent quality-wise.
+I'm fine with that.
+My goal for this blog has always been to (1) become a better writer.
+and (2) share context with my peers or anyone interested.
+Writing daily supports both of those goals.&lt;/p&gt;
+&lt;p&gt;I do however want folks to be able to opt-out
+of my quantity-over-quality writing.
+To that end, I've started a new category for my daily writing
+called "Notebook", per drmaclver's suggestion.
+If you don't want to see these notebook entries,
+I recommend subscribing to the "Mozilla" RSS feed&lt;/p&gt;
+&lt;p&gt;If this is successful,
+there are going to be a lot more posts coming through this blog.
+I also expect that the topics and quality my posts
+are going to be less consistent.
+To avoid spamming people, I started a new category for my daily writing&lt;/p&gt;
+&lt;p&gt;I'm trying to write more.
+To that end, I'm trying to find a way to write every day.&lt;/p&gt;
+&lt;p&gt;Most of the posts on this blog were finished on the same day they were started&lt;/p&gt;</content><category term="notebook"></category></entry><entry><title>KPIs and OKRs</title><link href="https://blog.harterrt.com/kpis_and_okrs.html" rel="alternate"></link><published>2020-06-05T00:00:00-07:00</published><updated>2020-06-05T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-05:/kpis_and_okrs.html</id><content type="html"></content><category term="mozilla"></category></entry><entry><title>Writing inside organizations</title><link href="https://blog.harterrt.com/writing_inside_organizations.html" rel="alternate"></link><published>2020-05-28T00:00:00-07:00</published><updated>2020-05-28T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-05-28:/writing_inside_organizations.html</id><summary type="html">&lt;p&gt;Tom Critchlow has a 
 &lt;a href="https://tomcritchlow.com/2020/05/27/filtered-for-org-writing/"&gt;great post here&lt;/a&gt;
 outlining some points on how important writing is for an organization.&lt;/p&gt;
 &lt;p&gt;I'm still working through the links,
