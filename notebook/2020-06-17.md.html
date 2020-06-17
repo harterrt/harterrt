@@ -18,12 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
-<link href="https://blog.harterrt.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com notebook Category Atom" />
-<link href="https://blog.harterrt.com/feeds/{slug}.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com notebook Category RSS" />
+<meta name="keywords" content="">
 
   <title>
     blog.harterrt.com
-&ndash; Category: notebook  </title>
+&ndash; Post hoc ergo propter hoc  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -62,9 +61,6 @@
       <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
-&gt; Category: notebook
-&brvbar; <a href="https://blog.harterrt.com/feeds/{slug}.atom.xml">Atom</a>
-&brvbar; <a href="https://blog.harterrt.com/feeds/{slug}.rss.xml">RSS</a>
       </p>
     </header>
 
@@ -83,30 +79,48 @@ status: draft
 <blockquote>
 <p>A tenant moves into an apartment
 and the building's furnace develops a fault.
-The manager blames the tenant's …</p></blockquote>
+The manager blames the tenant's arrival for the malfunction.
+One event merely followed the other, in the absence of causality.
+(<a href="https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc">link</a>).</p>
+</blockquote>
+<p>In tech this might manifest as part of a feature launch.
+Say we launch a feature on a Monday
+and on Tuesday our retention goes way up.
+We're tempted to think that our feature launch 
+<em>caused</em> the increase in retention.</p>
+<p>This might be a fine assumption if our metrics are generally constant 
+but more often than not this is just another case
+of <strong>correlation not meaning causation</strong>.
+Just because these events happened together (albeit with a lag)
+doesn't mean that they were causally linked.</p>
+<p>With how volatile the world has been this year, this is even more relevant.
+Our metrics are moving up and down
+for reasons totally unrelated to our individual actions.</p>
+<p>Usually, I'd deal with this type of risk by <strong>running a controlled experiment</strong>.
+We randomly split some users into two equal groups
+and give them different product experiences. 
+If the users behave differently,
+then we <em>know</em> that the difference is caused
+by the difference in the product experience
+and not some arbitrary outside force.</p>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/notebook/2020-06-16.html">Daily Writing and the "Notebook" Category</a></h1>
+  <div class="article_meta">
+    <p>Posted on: Wed 17 June 2020</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/notebook.html">notebook</a>
+    </p>
   </div>
-  <div class="article_text">
-    <p>This past weekend I found 
-<a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html">drmaciver's post</a>
-on starting a daily writing practice.
-I like the idea and I'm going to give it a try.</p>
-<p>The content on this blog has never been all that polished,
-but I do expect these daily posts will be less consistent 
-in quality and …</p>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
   </div>
+
+
 </article>
 
-<footer>
-<div id="paginator">
-
-</div>
-</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>

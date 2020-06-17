@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-06-16T00:00:00-07:00</updated><entry><title>Daily Writing and the "Notebook" Category</title><link href="https://blog.harterrt.com/notebook/2020-06-16.html" rel="alternate"></link><published>2020-06-16T00:00:00-07:00</published><updated>2020-06-16T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-16:/notebook/2020-06-16.html</id><summary type="html">&lt;p&gt;This past weekend I found 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-06-17T00:00:00-07:00</updated><entry><title>Post hoc ergo propter hoc</title><link href="https://blog.harterrt.com/notebook/2020-06-17.md.html" rel="alternate"></link><published>2020-06-17T00:00:00-07:00</published><updated>2020-06-17T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-17:/notebook/2020-06-17.md.html</id><summary type="html">&lt;!---
+status: draft
+---&gt;
+
+&lt;p&gt;Economists have a handy phrase to describe a fairly common fallacy:
+"Post hoc ergo propter hoc" meaning "After, therefore because".&lt;/p&gt;
+&lt;p&gt;Wikipedia has an example of how this might look in the wild:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A tenant moves into an apartment
+and the building's furnace develops a fault.
+The manager blames the tenant's …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;!---
+status: draft
+---&gt;
+
+&lt;p&gt;Economists have a handy phrase to describe a fairly common fallacy:
+"Post hoc ergo propter hoc" meaning "After, therefore because".&lt;/p&gt;
+&lt;p&gt;Wikipedia has an example of how this might look in the wild:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A tenant moves into an apartment
+and the building's furnace develops a fault.
+The manager blames the tenant's arrival for the malfunction.
+One event merely followed the other, in the absence of causality.
+(&lt;a href="https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc"&gt;link&lt;/a&gt;).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In tech this might manifest as part of a feature launch.
+Say we launch a feature on a Monday
+and on Tuesday our retention goes way up.
+We're tempted to think that our feature launch 
+&lt;em&gt;caused&lt;/em&gt; the increase in retention.&lt;/p&gt;
+&lt;p&gt;This might be a fine assumption if our metrics are generally constant 
+but more often than not this is just another case
+of &lt;strong&gt;correlation not meaning causation&lt;/strong&gt;.
+Just because these events happened together (albeit with a lag)
+doesn't mean that they were causally linked.&lt;/p&gt;
+&lt;p&gt;With how volatile the world has been this year, this is even more relevant.
+Our metrics are moving up and down
+for reasons totally unrelated to our individual actions.&lt;/p&gt;
+&lt;p&gt;Usually, I'd deal with this type of risk by &lt;strong&gt;running a controlled experiment&lt;/strong&gt;.
+We randomly split some users into two equal groups
+and give them different product experiences. 
+If the users behave differently,
+then we &lt;em&gt;know&lt;/em&gt; that the difference is caused
+by the difference in the product experience
+and not some arbitrary outside force.&lt;/p&gt;</content><category term="notebook"></category></entry><entry><title>Daily Writing and the "Notebook" Category</title><link href="https://blog.harterrt.com/notebook/2020-06-16.html" rel="alternate"></link><published>2020-06-16T00:00:00-07:00</published><updated>2020-06-16T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-06-16:/notebook/2020-06-16.html</id><summary type="html">&lt;p&gt;This past weekend I found 
 &lt;a href="https://notebook.drmaciver.com/posts/2020-06-08-10:11.html"&gt;drmaciver's post&lt;/a&gt;
 on starting a daily writing practice.
 I like the idea and I'm going to give it a try.&lt;/p&gt;
