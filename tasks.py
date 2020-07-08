@@ -105,3 +105,14 @@ def publish(c):
     c.run("ghp-import -b gh-pages {deploy_path}".format(**CONFIG))
     c.run("git push origin gh-pages")
 
+@task
+def new(c, name):
+    """Start a new post"""
+    filename = f'content/mozilla/{name}.md'
+    if os.path.isfile(filename):
+        print('Post already exists!')
+    else:
+        shutil.copyfile('template/post.md', f'content/mozilla/{name}.md')
+        print(f'Started post in {filename}')
+
+
