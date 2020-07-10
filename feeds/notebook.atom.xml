@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - notebook</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/notebook.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-07-08T00:00:00-07:00</updated><entry><title>Keeping a Journal</title><link href="https://blog.harterrt.com/notebook/2020-07-08.html" rel="alternate"></link><published>2020-07-08T00:00:00-07:00</published><updated>2020-07-08T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-07-08:/notebook/2020-07-08.html</id><summary type="html">&lt;p&gt;There was a discussion of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - notebook</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/notebook.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-07-10T00:00:00-07:00</updated><entry><title>What do you take home?</title><link href="https://blog.harterrt.com/'notebook/2020-07-10'.html" rel="alternate"></link><published>2020-07-10T00:00:00-07:00</published><updated>2020-07-10T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-07-10:/'notebook/2020-07-10'.html</id><summary type="html">&lt;p&gt;Every other week,
+I go through my todo list and decide where I should focus my attention.
+I review a list of prompts that help me choose important work.
+One of the oldest prompts on my list is:
+"&lt;strong&gt;What will you take home at the end of the week?&lt;/strong&gt;".&lt;/p&gt;
+&lt;p&gt;I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Every other week,
+I go through my todo list and decide where I should focus my attention.
+I review a list of prompts that help me choose important work.
+One of the oldest prompts on my list is:
+"&lt;strong&gt;What will you take home at the end of the week?&lt;/strong&gt;".&lt;/p&gt;
+&lt;p&gt;I mentioned this a while ago in 
+&lt;a href="https://blog.harterrt.com/new_tools.html"&gt;this post&lt;/a&gt;
+about evaluating new tools.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I think of my &lt;a href="https://esimoney.com/two-huge-reasons-why-your-career-matters/"&gt;career as an asset&lt;/a&gt;,
+so if I get to do work that builds transferable skills,
+I count that as part of my compensation.
+On the other hand,
+if I'm writing glue scripts to deal with idiosyncrasies in an internal tool,
+I'm missing out.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In short, the type of work I do today
+affects how valuable my career is in the long term.
+I take this into account when choosing my work.&lt;/p&gt;
+&lt;p&gt;Mozilla is really strong in this dimension.
+We're an open company
+which means I get to work in the open,
+work with open-source tools,
+and blog about my work.&lt;/p&gt;
+&lt;p&gt;Writing is a great example of taking something home.
+The obvious benefit is that I'll be able to reference my public writing forever.
+Maybe a bigger benefit is the career capital I build by practicing writing 
+and broadening my network.&lt;/p&gt;
+&lt;p&gt;For a long time, blogging was only a small part of how I worked in the open.
+I got to write a bunch of code and prose on
+&lt;a href="https://github.com/harterrt"&gt;Github&lt;/a&gt;.
+I reviewed PR's in the open and commented on public bugs.
+I'll be able to point to that work for a long time.&lt;/p&gt;
+&lt;p&gt;For the manager, this can be a great incentive for you reports.
+I know working in the open played a part in my decision to work at Mozilla.
+As I noted in &lt;a href="https://blog.harterrt.com/new_tools.html"&gt;New Tools&lt;/a&gt;,
+you can help your reports take something home by using open source tools internally.
+These things are like instant raises that don't cost the company a dime.&lt;/p&gt;</content><category term="notebook"></category></entry><entry><title>Keeping a Journal</title><link href="https://blog.harterrt.com/notebook/2020-07-08.html" rel="alternate"></link><published>2020-07-08T00:00:00-07:00</published><updated>2020-07-08T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-07-08:/notebook/2020-07-08.html</id><summary type="html">&lt;p&gt;There was a discussion of
 &lt;a href="https://hbr.org/2017/07/the-more-senior-your-job-title-the-more-you-need-to-keep-a-journal"&gt;this HBR article&lt;/a&gt;
 ("The More Senior Your Job Title, the More You Need to Keep a Journal")
 &lt;a href="https://news.ycombinator.com/item?id=23768624"&gt;on HN&lt;/a&gt; today.&lt;/p&gt;
