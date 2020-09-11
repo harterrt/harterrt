@@ -3,7 +3,7 @@ Title: About
 ## Hi, I'm Ryan
 
 If you care about my technical expertise or credentials, you should refer to my
-[resume](http://ryantharter.com/resume.pdf) or
+[resume](http://blog.harterrt.com/resume.pdf) or
 [LinkedIn](http://www.linkedin.com/pub/ryan-harter/11/a24/a21).
 
 Email is the best way to contact me.
