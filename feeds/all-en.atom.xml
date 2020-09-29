@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-07-10T00:00:00-07:00</updated><entry><title>What do you take home?</title><link href="https://blog.harterrt.com/notebook/2020-07-10.html" rel="alternate"></link><published>2020-07-10T00:00:00-07:00</published><updated>2020-07-10T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-07-10:/notebook/2020-07-10.html</id><summary type="html">&lt;p&gt;Every other week,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-09-29T00:00:00-07:00</updated><entry><title>Intentional Documentation</title><link href="https://blog.harterrt.com/randy_au_d11n.html" rel="alternate"></link><published>2020-09-29T00:00:00-07:00</published><updated>2020-09-29T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-09-29:/randy_au_d11n.html</id><summary type="html">&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
+&lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Let's get intentional about documentation&lt;/a&gt;.
+Take a look, it's worth a read.&lt;/p&gt;
+&lt;p&gt;I've been able to find some decent guides for writing documentation
+but they're usually targeted at engineers.
+That's a shame. 
+Data scientists have significantly different 
+constraints …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
+&lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Let's get intentional about documentation&lt;/a&gt;.
+Take a look, it's worth a read.&lt;/p&gt;
+&lt;p&gt;I've been able to find some decent guides for writing documentation
+but they're usually targeted at engineers.
+That's a shame. 
+Data scientists have significantly different 
+constraints and needs when writing documentation.&lt;/p&gt;
+&lt;p&gt;I really like Randy's suggestion to &lt;strong&gt;focus on keeping good work records
+instead of focusing on writing complete documentation&lt;/strong&gt;.
+Writing "good documentation" is a huge task
+and it's hard to predict &lt;em&gt;what&lt;/em&gt; documentation will be useful.
+Instead of guessing, &lt;strong&gt;make it easy to backfill documentation later&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Keeping good records might look like 
+tracking your work in tickets or publishing weekly snippets.
+I talked about how these records can be personally useful in
+&lt;a href="writing_inside_organizations.html"&gt;this post&lt;/a&gt;.
+As an added bonus, good records make it much easier to backfill documentation
+once you identify what documentation is missing.&lt;/p&gt;
+&lt;p&gt;I mentioned earlier that documenting data science work
+is significantly different than documenting engineering work.
+One of they key differences is that 
+data scientists tend to do more once-and-done work than engineers.
+&lt;strong&gt;Data science is a race against irrelevance&lt;/strong&gt;.
+The world is changing around us 
+and we need to deliver insights before our findings go stale.&lt;/p&gt;
+&lt;p&gt;It's impossible and inefficient to try to document all of this one-off work.
+Only a small portion of the resulting documentation would ever be used.
+Even worse, the useful documentation will be hidden in a sea of useless noise.&lt;/p&gt;
+&lt;p&gt;Instead, data scientists should focus on keeping good work records,
+contextualizing their analyses,
+and preparing themselves to backfill documentation later.&lt;/p&gt;
+&lt;p&gt;Finally, this quote is a gem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;... [Documentation] is a MASSIVE, continent-sized, topic.
+Sadly, I’m not informed enough to tackle the entire continent 
+and I’ve only got a few thousand words of to use in a post.
+To cope, I’m gonna employ the time-honored move
+of harrowed data scientists everywhere — 
+reduce scope by fiat and attempt to dazzle the audience 
+with “directional” findings until I can form a strong case later on.&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="mozilla"></category><category term="documentation"></category></entry><entry><title>What do you take home?</title><link href="https://blog.harterrt.com/notebook/2020-07-10.html" rel="alternate"></link><published>2020-07-10T00:00:00-07:00</published><updated>2020-07-10T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-07-10:/notebook/2020-07-10.html</id><summary type="html">&lt;p&gt;Every other week,
 I go through my todo list and decide where I should focus my attention.
 I review a list of prompts that help me choose important work.
 One of the oldest prompts on my list is:

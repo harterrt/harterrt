@@ -18,12 +18,11 @@
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
 
-<link href="https://blog.harterrt.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com mozilla Category Atom" />
-<link href="https://blog.harterrt.com/feeds/{slug}.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com mozilla Category RSS" />
+<meta name="keywords" content="documentation">
 
   <title>
     blog.harterrt.com
-&ndash; Category: mozilla  </title>
+&ndash; Intentional Documentation  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -62,47 +61,75 @@
       <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
       &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
-&gt; Category: mozilla
-&brvbar; <a href="https://blog.harterrt.com/feeds/{slug}.atom.xml">Atom</a>
-&brvbar; <a href="https://blog.harterrt.com/feeds/{slug}.rss.xml">RSS</a>
       </p>
     </header>
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/announcing-the-cross-sectional-dataset.html">Announcing the Cross Sectional Dataset</a></h1>
+    <h1><a href="https://blog.harterrt.com/randy_au_d11n.html">Intentional Documentation</a></h1>
   </div>
   <div class="article_text">
-    <p>I'm happy to announce a new telemetry dataset!</p>
-<p>The Cross Sectional dataset makes it easy to describe our users by providing
-summary statistics for each client.  Like the Longitudinal table, there's one
-row for each client_id in a 1% sample of clients.  However, the Cross Sectional
-dataset simplifies your analysis …</p>
+    <p>Randy Au has a great post on documentation for data scientists here:
+<a href="https://counting.substack.com/p/lets-get-intentional-about-documentation">Let's get intentional about documentation</a>.
+Take a look, it's worth a read.</p>
+<p>I've been able to find some decent guides for writing documentation
+but they're usually targeted at engineers.
+That's a shame. 
+Data scientists have significantly different 
+constraints and needs when writing documentation.</p>
+<p>I really like Randy's suggestion to <strong>focus on keeping good work records
+instead of focusing on writing complete documentation</strong>.
+Writing "good documentation" is a huge task
+and it's hard to predict <em>what</em> documentation will be useful.
+Instead of guessing, <strong>make it easy to backfill documentation later</strong>.</p>
+<p>Keeping good records might look like 
+tracking your work in tickets or publishing weekly snippets.
+I talked about how these records can be personally useful in
+<a href="writing_inside_organizations.html">this post</a>.
+As an added bonus, good records make it much easier to backfill documentation
+once you identify what documentation is missing.</p>
+<p>I mentioned earlier that documenting data science work
+is significantly different than documenting engineering work.
+One of they key differences is that 
+data scientists tend to do more once-and-done work than engineers.
+<strong>Data science is a race against irrelevance</strong>.
+The world is changing around us 
+and we need to deliver insights before our findings go stale.</p>
+<p>It's impossible and inefficient to try to document all of this one-off work.
+Only a small portion of the resulting documentation would ever be used.
+Even worse, the useful documentation will be hidden in a sea of useless noise.</p>
+<p>Instead, data scientists should focus on keeping good work records,
+contextualizing their analyses,
+and preparing themselves to backfill documentation later.</p>
+<p>Finally, this quote is a gem:</p>
+<blockquote>
+<p>... [Documentation] is a MASSIVE, continent-sized, topic.
+Sadly, I’m not informed enough to tackle the entire continent 
+and I’ve only got a few thousand words of to use in a post.
+To cope, I’m gonna employ the time-honored move
+of harrowed data scientists everywhere — 
+reduce scope by fiat and attempt to dazzle the audience 
+with “directional” findings until I can form a strong case later on.</p>
+</blockquote>
   </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
+  <div class="article_meta">
+    <p>Posted on: Tue 29 September 2020</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+ &ndash; Tags:
+      <a href="https://blog.harterrt.com/tag/documentation.html">documentation</a>    </p>
   </div>
-  <div class="article_text">
-    <p>[TOC]</p>
-<h2>Introduction</h2>
-<p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
-I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
-<h2>Tools</h2>
-<h3><a href="https://tmux.github.io/">tmux</a></h3>
-<p>For me, tmux is …</p>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
   </div>
+
+
 </article>
 
-<footer>
-<div id="paginator">
-
-<a href="https://blog.harterrt.com/category/mozilla3.html" class="button_accent">Newer Posts &rarr;</a>
-</div>
-</footer>
 
     <div id="ending_message">
       <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 10 Jul 2020 00:00:00 -0700</lastBuildDate><item><title>What do you take home?</title><link>https://blog.harterrt.com/notebook/2020-07-10.html</link><description>&lt;p&gt;Every other week,
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 29 Sep 2020 00:00:00 -0700</lastBuildDate><item><title>Intentional Documentation</title><link>https://blog.harterrt.com/randy_au_d11n.html</link><description>&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
+&lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Let's get intentional about documentation&lt;/a&gt;.
+Take a look, it's worth a read.&lt;/p&gt;
+&lt;p&gt;I've been able to find some decent guides for writing documentation
+but they're usually targeted at engineers.
+That's a shame. 
+Data scientists have significantly different 
+constraints …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 29 Sep 2020 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-09-29:/randy_au_d11n.html</guid><category>mozilla</category><category>documentation</category></item><item><title>What do you take home?</title><link>https://blog.harterrt.com/notebook/2020-07-10.html</link><description>&lt;p&gt;Every other week,
 I go through my todo list and decide where I should focus my attention.
 I review a list of prompts that help me choose important work.
 One of the oldest prompts on my list is:
