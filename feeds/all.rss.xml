@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 29 Sep 2020 00:00:00 -0700</lastBuildDate><item><title>Intentional Documentation</title><link>https://blog.harterrt.com/randy_au_d11n.html</link><description>&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 07 Oct 2020 00:00:00 -0700</lastBuildDate><item><title>Surrogation</title><link>https://blog.harterrt.com/surrogation.html</link><description>&lt;p&gt;A year or so ago, I read
+&lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
+about how Wells Fargo ended up in such a mess.
+If you don't remember,
+Wells Fargo was opening accounts in their clients' name without their consent
+and ended up paying a few hundred million dollars in fines.&lt;/p&gt;
+&lt;p&gt;Long story short, a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 07 Oct 2020 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-10-07:/surrogation.html</guid><category>mozilla</category></item><item><title>Intentional Documentation</title><link>https://blog.harterrt.com/randy_au_d11n.html</link><description>&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
 &lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Let's get intentional about documentation&lt;/a&gt;.
 Take a look, it's worth a read.&lt;/p&gt;
 &lt;p&gt;I've been able to find some decent guides for writing documentation

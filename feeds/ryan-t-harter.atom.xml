@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-09-29T00:00:00-07:00</updated><entry><title>Intentional Documentation</title><link href="https://blog.harterrt.com/randy_au_d11n.html" rel="alternate"></link><published>2020-09-29T00:00:00-07:00</published><updated>2020-09-29T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-09-29:/randy_au_d11n.html</id><summary type="html">&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-07T00:00:00-07:00</updated><entry><title>Surrogation</title><link href="https://blog.harterrt.com/surrogation.html" rel="alternate"></link><published>2020-10-07T00:00:00-07:00</published><updated>2020-10-07T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-07:/surrogation.html</id><summary type="html">&lt;p&gt;A year or so ago, I read
+&lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
+about how Wells Fargo ended up in such a mess.
+If you don't remember,
+Wells Fargo was opening accounts in their clients' name without their consent
+and ended up paying a few hundred million dollars in fines.&lt;/p&gt;
+&lt;p&gt;Long story short, a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;A year or so ago, I read
+&lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
+about how Wells Fargo ended up in such a mess.
+If you don't remember,
+Wells Fargo was opening accounts in their clients' name without their consent
+and ended up paying a few hundred million dollars in fines.&lt;/p&gt;
+&lt;p&gt;Long story short, a big part of the problem
+was that WF set a few metrics to guide the company,
+set strong incentives to optimize those metrics,
+and blindly let the machine get to work.
+The company did a great job of optimizing the metrics
+but lost sight of the strategy the metrics were meant to represent.&lt;/p&gt;
+&lt;p&gt;This tendency to confuse metrics for a strategy is called &lt;strong&gt;Surrogation&lt;/strong&gt;
+(I keep forgetting this word, which is half of why I'm posting this here).
+When I'm talking to other data scientists
+I usually hear this put like, 
+"When a measure becomes a target, it ceases to be a good measure"
+(&lt;a href="https://en.wikipedia.org/wiki/Goodhart%27s_law"&gt;Goodhardt's Law&lt;/a&gt;).&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Intentional Documentation</title><link href="https://blog.harterrt.com/randy_au_d11n.html" rel="alternate"></link><published>2020-09-29T00:00:00-07:00</published><updated>2020-09-29T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-09-29:/randy_au_d11n.html</id><summary type="html">&lt;p&gt;Randy Au has a great post on documentation for data scientists here:
 &lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Let's get intentional about documentation&lt;/a&gt;.
 Take a look, it's worth a read.&lt;/p&gt;
 &lt;p&gt;I've been able to find some decent guides for writing documentation
