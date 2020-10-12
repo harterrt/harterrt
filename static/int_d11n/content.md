@@ -21,7 +21,7 @@ Presented to DS Internal, October 2020
 
 * Needs maintenance
 * Hard to navigate
-* Hard to ugess what's useful
+* Hard to guess what's useful
 
 Documentation often *feels* useless
 
@@ -73,7 +73,7 @@ Documentation often *feels* useless
   * Make it easier to review snippets later
   * Make snippets intrinsically useful
 * Consider writing more proposals
-* Make it easy to exfiltrate context from Slack
+* Make it easy to ex-filtrate context from Slack
 
 ---
 

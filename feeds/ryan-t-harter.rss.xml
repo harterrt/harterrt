@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 07 Oct 2020 00:00:00 -0700</lastBuildDate><item><title>Surrogation</title><link>https://blog.harterrt.com/surrogation.html</link><description>&lt;p&gt;A year or so ago, I read
+<rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 12 Oct 2020 00:00:00 -0700</lastBuildDate><item><title>Follow up: Intentional Documentation</title><link>https://blog.harterrt.com/int_d11n_preso.html</link><description>&lt;p&gt;Last week I presented the idea of 
+&lt;a href="https://blog.harterrt.com/randy_au_d11n.html"&gt;Intentional Documentation&lt;/a&gt;
+to Mozilla's data science team.
+Here's a &lt;a href="/static/int_d11n/"&gt;link to the slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The rest of this post is a transcription of what I shared with the team
+(give or take).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In Q4, I'm trying to build a set of trainings
+to help …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 12 Oct 2020 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-10-12:/int_d11n_preso.html</guid><category>mozilla</category></item><item><title>Surrogation</title><link>https://blog.harterrt.com/surrogation.html</link><description>&lt;p&gt;A year or so ago, I read
 &lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
 about how Wells Fargo ended up in such a mess.
 If you don't remember,

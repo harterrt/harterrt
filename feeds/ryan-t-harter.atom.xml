@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-07T00:00:00-07:00</updated><entry><title>Surrogation</title><link href="https://blog.harterrt.com/surrogation.html" rel="alternate"></link><published>2020-10-07T00:00:00-07:00</published><updated>2020-10-07T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-07:/surrogation.html</id><summary type="html">&lt;p&gt;A year or so ago, I read
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-12T00:00:00-07:00</updated><entry><title>Follow up: Intentional Documentation</title><link href="https://blog.harterrt.com/int_d11n_preso.html" rel="alternate"></link><published>2020-10-12T00:00:00-07:00</published><updated>2020-10-12T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-12:/int_d11n_preso.html</id><summary type="html">&lt;p&gt;Last week I presented the idea of 
+&lt;a href="https://blog.harterrt.com/randy_au_d11n.html"&gt;Intentional Documentation&lt;/a&gt;
+to Mozilla's data science team.
+Here's a &lt;a href="/static/int_d11n/"&gt;link to the slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The rest of this post is a transcription of what I shared with the team
+(give or take).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In Q4, I'm trying to build a set of trainings
+to help …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last week I presented the idea of 
+&lt;a href="https://blog.harterrt.com/randy_au_d11n.html"&gt;Intentional Documentation&lt;/a&gt;
+to Mozilla's data science team.
+Here's a &lt;a href="/static/int_d11n/"&gt;link to the slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The rest of this post is a transcription of what I shared with the team
+(give or take).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In Q4, I'm trying to build a set of trainings
+to help Mozillians build data intuition.
+Last week, I was building a proposal for the project
+and I thought to myself, "Why don't these trainings already exist?"&lt;/p&gt;
+&lt;p&gt;I spent the first half of 2020 working with Mozilla's product team 
+to help build an understanding of our data and metrics.
+This feels like it would have been 
+the perfect opportunity to create some scalable documentation.
+I've already invested a lot of time and energy into explaining our metrics.
+Why didn't I think to document the work as I went?&lt;/p&gt;
+&lt;p&gt;My first thought was that writing documentation is &lt;em&gt;hard&lt;/em&gt;.
+Writing is difficult. Editing is difficult.
+Even figuring out &lt;em&gt;what to write&lt;/em&gt; is difficult.
+But this wasn't convincing. Most of my work is hard.
+What's so special about documentation?
+Hell, I'm writing right now. I don't need to do this.&lt;/p&gt;
+&lt;p&gt;In reality, I think the problem is that documentation often &lt;em&gt;feels&lt;/em&gt; useless.
+It requires hard work up-front and I often don't get to see the downstream benefits.
+In the best case, documentation reduces questions.
+I don't get to see the questions not asked.
+Even worse, if I write a lot of documentation 
+all of those articles need to be maintained and organized somewhere.
+Writing documentation takes work and creates maintenance!&lt;/p&gt;
+&lt;p&gt;Randy Au's post about 
+&lt;a href="https://counting.substack.com/p/lets-get-intentional-about-documentation"&gt;Intentional Documentation&lt;/a&gt;
+helped break this open for me. 
+Once I started thinking about documentation as a liability
+everything became more clear.
+Just like with software, we're better off if we can get by with fewer lines-of-code.&lt;/p&gt;
+&lt;p&gt;This is especially true at Mozilla.
+The company is constantly exploring new areas so our problem-space keeps shifting.
+This is in part because we're still new to working with data
+and in part because the company is trying to find a way to grow.&lt;/p&gt;
+&lt;p&gt;I also think data science is harder to document than other areas (like engineering).
+Data scientists are often working on a tighter time-scale.
+We're trying to answer a question that becomes irrelevant in a few weeks.
+There's no need to write long-lasting documentation for these investigations.
+Nobody's going to read it in a month.&lt;/p&gt;
+&lt;h2&gt;Proposal&lt;/h2&gt;
+&lt;p&gt;So how to we adjust?
+I think we should shift our focus away from writing documentation
+and towards being &lt;strong&gt;prepared to backfill documentation&lt;/strong&gt;.
+Instead of writing documentation that might not be useful in the future,
+let's wait to see what documentation we need.
+In the mean time, let's prepare so we can backfill our documentation later.&lt;/p&gt;
+&lt;p&gt;This &lt;em&gt;should&lt;/em&gt; make writing documentation easier 
+just because we'll be writing less documentation.
+Even better, the documentation we do write is very likely to be used,
+which is much more motivating that writing for a black hole.&lt;/p&gt;
+&lt;p&gt;We can make this even easier if we set up some useful habits.
+If we focus on keeping lots of context in our tickets and weekly snippets
+it will be much easier to distill that information into documentation later.
+When starting a new project, writing a proposal helps me document my intentions
+which helps contextualize documentation later.&lt;/p&gt;
+&lt;p&gt;Our ticketing system is working well.
+I get a lot of day-to-day value from keeping my tickets up to date
+(read: I get bugged less frequently when everything is up to date).&lt;/p&gt;
+&lt;p&gt;Snippets are sorta-kinda working. I alluded to this in 
+&lt;a href="/writing_inside_organizations.html"&gt;writing inside organizations&lt;/a&gt;
+but I don't really enjoy writing snippets.
+That's a sign to me that something's busted in the tooling.
+When I'm doing useful work I tend to enjoy myself.&lt;/p&gt;
+&lt;p&gt;Finally, Slack is horrible for backfilling documentation.
+By default, we only keep Slack messages for 6 months,
+so unless you're confident your work will be irrelevant in 6 months from now
+consider documenting elsewhere.&lt;/p&gt;
+&lt;h2&gt;Caveats&lt;/h2&gt;
+&lt;p&gt;This does put some additional pressure on our real-time media (i.e. Slack).
+This isn't great. Answering questions in Slack takes time and is repetitive.
+But keep in mind that over-documenting has the same effect.
+Unless documentation is maintained and organized,
+it's just as confusing as having no documentation.
+Think about how frustrating it is to find documentation that looks authoritative
+but misleads because it's out of date. &lt;/p&gt;
+&lt;p&gt;Intentional Documentation isn't a panacea.
+We still need to figure out how to maintain the documentation we do write.
+We still need to figure out when to delete unused documents.
+But it does make this process easier.&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Surrogation</title><link href="https://blog.harterrt.com/surrogation.html" rel="alternate"></link><published>2020-10-07T00:00:00-07:00</published><updated>2020-10-07T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-07:/surrogation.html</id><summary type="html">&lt;p&gt;A year or so ago, I read
 &lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
 about how Wells Fargo ended up in such a mess.
 If you don't remember,
