@@ -29,15 +29,13 @@ COPYRIGHT_YEAR = dt.date.today().year
 
 ROBOTS = 'index, follow'
 
-
 ############
 # External #
 ############
 
 # Links on the side panel
 LINKS = (
-    ('About', '/pages/about.html'),
-    ('Resume', 'resume.pdf'),
+    ('Resume', '/resume.pdf'),
     ('Github', 'https://github.com/harterrt'),
     ('Twitter', 'https://twitter.com/harterrt'),
     ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
@@ -45,6 +43,7 @@ LINKS = (
 
 # Small links at the top of the page
 MENUITEMS = (
+    ('About', '/pages/about.html'),
 )
 
 DISPLAY_PAGES_ON_MENU = False
