@@ -45,8 +45,8 @@
       <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
       <p>Principal Data Scientist @ Mozilla</p>
       <ul>
-        <li><a href="https://blog.harterrt.com/pages/about.html">About</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/resume.pdf" target="_blank">Resume</a></li>
         <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
         <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
         <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
@@ -65,158 +65,22 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/coding_in_textboxes.html">Don't make me code in your text box!</a></h1>
+    <h1><a href="https://blog.harterrt.com/working-over-ssh.html">Working over SSH</a></h1>
   </div>
   <div class="article_text">
-    <p>Whenever I start a new data project,
-my first step is rooting out any false assumptions I have about the data.</p>
-<p>The key here is iterating quickly.
-My workflow looks like this:
-Code a little, plot the data, what do you see?
-Ah, outliers.
-Code a little, plot the data …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/stages_e13n.html">The 5 Stages of Experiment Analysis</a></h1>
-  </div>
-  <div class="article_text">
-    <p>I've been thinking about experimentation a lot recently.
-Our team is spending a lot of effort trying to make Firefox experimentation feel easy.
-But what happens after the experiment's been run?
-There's <strong>not a clear process for taking experimental data and turning it into a decision</strong>.</p>
-<p>I noted the importance …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/preferred_media.html">Asking Questions</a></h1>
-  </div>
-  <div class="article_text">
-    <p>Will posted a great article a couple weeks ago,
-<a href="https://wlach.github.io/blog/2018/01/giving-and-receiving-help-at-mozilla/">Giving and Receiving Help at Mozilla</a>.
-I have been meaning to write a similar article for a while now.
-His post finally pushed me over the edge. </p>
-<p>Be sure to read Will's post first.
-The rest of this article is an …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/sdmb.html">Managing Someday-Maybe Projects with a CLI</a></h1>
-  </div>
-  <div class="article_text">
-    <p>I have a problem managing projects I'm interested in but don't have time for.
-For example, the <a href="/slack_alerts.html">CLI for generating slack alerts</a> I posted about last year.
-Not really a priority, but helpful and not that complicated.
-I sat on that project for about a year before I could finally …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/disqus.html">Removing Disqus</a></h1>
-  </div>
-  <div class="article_text">
-    <p>I'm removing Disqus from this blog.
-Disqus allowed readers to post comments on articles.
-I added it because it was easy to do,
-but I no longer think it's worth keeping.</p>
-<p>If you'd like to share your thoughts,
-feel free to shoot me an email at <code>harterrt</code> on gmail.
-I …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/productivity_systems.html">Productivity Systems for Stress Management</a></h1>
-  </div>
-  <div class="article_text">
-    <p>Over the years, I've developed a pretty involved productivity system.
-It was originally based on <a href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/">Getting Things Done</a>,
-but now it's grown to include the good bits from other systems.
-It's involved, but I love it.</p>
-<p>I get a lot of comments,
-especially on the little black book I keep …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/slack_alerts.html">CLI for alerts via Slack</a></h1>
-  </div>
-  <div class="article_text">
-    <p>I finally got a chance to scratch an itch today.</p>
-<h2>Problem</h2>
-<p>When working with bigger ETL jobs,
-I frequently run into jobs that take hours to run.
-I usually either step away from the computer
-or work on something less important while the job runs.
-I <strong>don't have a good …</strong></p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/experiments_are_releases.html">Experiments are releases</a></h1>
-  </div>
-  <div class="article_text">
-    <p><a href="https://github.com/mozilla/missioncontrol">Mission Control</a>
-was a major 2017 initiative for the Firefox Data team.
-The goal is to provide release managers with near-real-time
-release-health metrics minutes after going public.
-Will has a
-<a href="https://wlach.github.io/blog/2017/10/mission-control/">great write up here</a>
-if you want to read more.</p>
-<p>The key here is that the data has to be …</p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/good_experiment_tools.html">Desirable features of experimentation tools</a></h1>
-  </div>
-  <div class="article_text">
-    <h2>Introduction</h2>
-<p>At Mozilla,
-we're quickly climbing up our
-<a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png">Data Science Hierarchy of Needs</a>
-<sup>1</sup>.
-I think the next big step for our data team
-is to <strong>make experimentation feel natural</strong>.
-There are a few components to this (e.g. training or culture)
-but improving the <strong>tooling is going to be …</strong></p>
-  </div>
-</article>
-<hr />
-<article>
-  <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/dates.html">Submission Date vs Activity Date</a></h1>
-  </div>
-  <div class="article_text">
-    <p>My comments on
-<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">Bug 1422892</a>
-started to get long,
-so I started untangling my thoughts here.</p>
-<hr />
-<p>From
-<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892">the bug</a>:</p>
-<blockquote>
-<p>We experimented with using <code>activity_date</code> instead of <code>submission_date</code>
-when developing the <code>clients_daily</code> etl job.
-We should summarize our findings and decide on 
-which of these measures we'd like to standardize against …</p></blockquote>
+    <p>[TOC]</p>
+<h2>Introduction</h2>
+<p>Working over SSH can be impossibly frustrating if you're not using the right tools. 
+I promised my teammates a write-up how I work over ssh.
+Using these tools will make it significantly easier / more fun to work with a remote linux system.</p>
+<h2>Tools</h2>
+<h3><a href="https://tmux.github.io/">tmux</a></h3>
+<p>For me, tmux is …</p>
   </div>
 </article>
 
 <footer>
 <div id="paginator">
-<a href="https://blog.harterrt.com/index4.html" class="button_accent">&larr; Older Posts</a>
 
 <a href="https://blog.harterrt.com/index2.html" class="button_accent">Newer Posts &rarr;</a>
 </div>
