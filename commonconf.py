@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
+import datetime as dt
 sys.path.append(os.curdir)
 
 PATH = 'content'
@@ -24,7 +25,7 @@ ROUND_USER_LOGO = True
 BROWSER_COLOR = '#333'
 
 MAIN_MENU = True
-COPYRIGHT_YEAR = 2019
+COPYRIGHT_YEAR = dt.date.today().year
 
 ROBOTS = 'index, follow'
 
@@ -35,6 +36,7 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
+    ('About', '/pages/about.html'),
     ('Resume', 'resume.pdf'),
     ('Github', 'https://github.com/harterrt'),
     ('Twitter', 'https://twitter.com/harterrt'),
@@ -44,6 +46,8 @@ LINKS = (
 # Small links at the top of the page
 MENUITEMS = (
 )
+
+DISPLAY_PAGES_ON_MENU = False
 
 # PLUGINS:
 PLUGIN_PATHS = ['./plugins']
@@ -61,12 +65,12 @@ GOOGLE_ANALYTICS = 'UA-83638505-1'
 #########
 
 IGNORE_FILES = ['.*', 'README.*']
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 20
 
 # Copy the CNAME into root dir for GitHub
-STATIC_PATHS = ['images', 'extra/CNAME', 'extra/resume.pdf']
+STATIC_PATHS = ['images', 'static', 'extra/CNAME', 'extra/resume.pdf']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/resume.pdf': {'path':'resume.pdf'},
 }
-ARTICLE_EXCLUDES = ['images']
+ARTICLE_EXCLUDES = ['images', 'static']
