@@ -5,6 +5,8 @@ class: center, middle, title
 .highlight[Ryan Harter] - 
 Principal Data Scientist, Mozilla
 
+Prepared for ODSC East 2020
+
 ---
 
 # Format
@@ -13,6 +15,8 @@ Principal Data Scientist, Mozilla
 * ~30m of Q&A
   * Questions in Slack
   * Any other questions - harterrt@gmail.com
+  * Slides and analysis are [available here](https://github.com/harterrt/when_the_bootstrap_breaks)
+  * Past recording [here](https://drive.google.com/file/d/1VZDGVMFWCNclkXHFnkBOzwfpGmKy6KYe/view?usp=sharing)
 
 ---
 
