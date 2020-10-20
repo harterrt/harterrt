@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-19T00:00:00-07:00</updated><entry><title>Defining Data Intuition</title><link href="https://blog.harterrt.com/data_intuition.html" rel="alternate"></link><published>2020-10-19T00:00:00-07:00</published><updated>2020-10-19T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-19:/data_intuition.html</id><summary type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-20T00:00:00-07:00</updated><entry><title>Defining Data Intuition</title><link href="https://blog.harterrt.com/data_intuition.html" rel="alternate"></link><published>2020-10-20T00:00:00-07:00</published><updated>2020-10-20T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-20:/data_intuition.html</id><summary type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
 and I realized I really didn't have a good definition.
 That's a problem! I refer to data intuition all the time!&lt;/p&gt;
 &lt;p&gt;Data intuition is one of the three skills I interview new data scientists …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
@@ -78,7 +78,7 @@ A lot of times, that means deciding new incoming data are inconsistent
 and need more investigating before we can trust them.
 But other times, it means changing our opinions in the face of new data
 that are more authoritative than our existing body of knowledge.&lt;/p&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;h2&gt;What do you think?&lt;/h2&gt;
 &lt;p&gt;I want to hear your thoughts on this.
 I'm posting this definition publicly in part because I want to invoke
 &lt;a href="https://meta.wikimedia.org/wiki/Cunningham%27s_Law"&gt;Cunningham's Law&lt;/a&gt;.
