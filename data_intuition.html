@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Posts and writings by Ryan T. Harter">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; Defining Data Intuition  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Principal Data Scientist @ Mozilla</p>
+      <ul>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="https://blog.harterrt.com">Index</a> &brvbar; <a href="https://blog.harterrt.com/archives.html">Archives</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.atom.xml">Atom</a>
+      &brvbar; <a href="https://blog.harterrt.com/feeds/all.rss.xml">RSS</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/data_intuition.html">Defining Data Intuition</a></h1>
+  </div>
+  <div class="article_text">
+    <p>Last week, one of my peers asked me to explain what I meant by "Data Intuition",
+and I realized I really didn't have a good definition.
+That's a problem! I refer to data intuition all the time!</p>
+<p>Data intuition is one of the three skills I interview new data scientists for
+(along with statistics and technical skills).
+In fact, I just spent the first nine months of 2020
+building Mozilla's data intuition.
+I'm really surprised to realize I can't point to
+a good explanation of what I'm trying to cultivate.</p>
+<p>So - I'll make one up. I propose the following definition for Data Intuition:</p>
+<blockquote>
+<p><strong>Data Intuition is a resilience to misleading data and analyses.</strong></p>
+</blockquote>
+<p>In other words, it's harder to mislead someone with data
+if they have strong data intuition.
+Think of this as <strong>a defense against the dark data arts</strong>.</p>
+<p>So what does that look like in practice?</p>
+<h2>Data Stink</h2>
+<p>Someone with strong data intuition can quickly spot "data-stink"
+(a close cousin to "<a href="https://en.wikipedia.org/wiki/Code_smell">code smell</a>").
+These are data issues that don't necessarily invalidate an analysis,
+but certainly draw suspicion on the results.
+For example:</p>
+<ul>
+<li>An analysis prominently reports a seemingly <strong>arbitrary metric</strong> -
+  4-day retention increased by 0.5%!
+  Where did 4-day retention come from? Don't we usually track 7-day retention?
+  This needs more attention before I trust the results.</li>
+<li>An analysis reports <strong>extraordinary results</strong> where nominal results are expected -
+  this feature increased retention by 10%!
+  But, past efforts were trying to increase retention by 0.5% - 
+  and isn't retention already 90%? How'd we get and increase of 10%?</li>
+</ul>
+<p>These are extreme examples. 
+Usually the problems are more subtle
+and result in a general sense of uneasiness with the results
+(that's why it's called "intuition").</p>
+<p>It's clear to me that data intuition is <em>related</em> to product intuition,
+though these <em>are</em> different skills.
+Product intuition can contextualize our results
+and make it easier to identify extraordinary claims in analyses.
+To know a 10% gain in retention is ridiculous
+we need to know that users retain pretty well already.</p>
+<h2>Methods issues</h2>
+<p>Strong data intuition can also help you 
+spot issues with how the analysis was designed.
+Things like: how did the author collect data? Is it a representative sample?
+Do they need to have an experiment to establish causation?</p>
+<p>Here's an example -
+say an analysis reports that Firefox users who create a Firefox account
+retain 10% higher than users who don't.
+By default, a lot of folks interpret this to mean that
+if we invest some time in helping users open accounts
+we'll see an increase in retention.
+Folks with stronger data intuition will instead 
+recognize these results are just correlational (not causational).</p>
+<p>Users who use the product a lot tend to stick around longer.
+Users who open an account are more active users, thus they retain better.
+Users who <em>crash</em> Firefox are more active users, and also retain <em>better</em>.</p>
+<p>I think this intuition is more than just understanding statistics well.
+A strong stats background can help me identify issues
+when reading the <em>methods section of a white paper</em>.
+Strong data intuition helps me determine how much I trust
+results I hear about in a <em>news headline</em>.
+Data intuition helps me establish whether results are
+<a href="/pub-true.html">true-enough</a>.</p>
+<h2>More than Skepticism</h2>
+<p>I almost defined data intuition as a type of skepticism,
+but I think this is a bad characterization.
+Skepticism over-focuses on disregarding results.</p>
+<p>Intuition is more than being skeptical.
+It's <strong>incorporating new data as part of a body of existing knowledge</strong>.
+A lot of times, that means deciding new incoming data are inconsistent
+and need more investigating before we can trust them.
+But other times, it means changing our opinions in the face of new data
+that are more authoritative than our existing body of knowledge.</p>
+<h2>Conclusion</h2>
+<p>I want to hear your thoughts on this.
+I'm posting this definition publicly in part because I want to invoke
+<a href="https://meta.wikimedia.org/wiki/Cunningham%27s_Law">Cunningham's Law</a>.
+The best way to get to the right answer is to post the wrong answer!</p>
+<p>Does this definition for data intuition resonate with you?
+Am I missing something important? Let me know! 
+My email is at the bottom of this page.</p>
+<p>I'm spending the next few month building some self-service trainings
+to help non-data people at Mozilla build data intuition.
+I'd rather be wrong now than next year!</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Mon 19 October 2020</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>harterrt</code> on gmail.
+        Look forward to hearing from you!
+    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>
