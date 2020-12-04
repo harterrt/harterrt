@@ -5,7 +5,7 @@ status: draft
 
 It's surprisingly hard to lead a company with data.
 There's a lot written about how to set good goals
-and how to avoid common pitfalls (like surrogation)
+and how to avoid common pitfalls (like [Surrogation](/surrogation.html))
 but I haven't seen much written about the practicalities
 of taking action on these metrics.
 
@@ -74,8 +74,8 @@ but we have narrowed the scope a bit.
 ## Leading vs Lagging Metrics
 
 We have two metrics in this case study, MAU and Retention.
-Retention is called a **leading** metric
-and MAU is called a **lagging** metric.
+I'd call Retention a **leading** metric
+and MAU a **lagging** metric.
 
 Our main goal is to improve MAU,
 but to make the goal more manageable 
@@ -89,7 +89,7 @@ so I won't go too deep into it here <sup>1</sup>.
 The important point is that this is a **very powerful pattern**.
 In the ideal case, 
 employees can see consistent progress against our leading metric.
-This is encouraging!
+That's encouraging!
 If we fail to set good leading metrics,
 employess can get discouraged trying to make progress
 against a metric that just won't budge.
@@ -97,6 +97,11 @@ against a metric that just won't budge.
 I came across a particularly elegant explaination of this pattern in 
 (of all places) East of Eden:
 
+<!-- 
+> In human affairs of danger and delicacy 
+> successful conclusion is sharply limited by hurry.
+-->
+> So often men trip by being in a rush.
 > If one were properly to perform a difficult and subtle act,
 > he should first inspect the end to be achieved and then,
 > once he had accepted the end as desirable,
@@ -116,13 +121,21 @@ Put another way: plan the work, then work the plan.
 
 There's a plot hole in this story though.
 Increasing retention is still a very difficult goal to achieve.
+<!--
+This reminds me of [Milo](https://en.wikipedia.org/wiki/Milo_of_Croton)
+who carried a calf on his back every day until he could lift a bull
+4 years later!
+The thing is, a 3 month calf already weights ~250#
+-->
 A individual team *might* be able to improve Firefox retention,
 but most won't be able to.
 Our leading metric didn't do enough to make our lagging metric tractable.
 
-Sometimes, one leading metric isn't enough.
-We need to break this goal down further.
-This is where Cascading Metrics come in.
+This is where Cascading Metrics can help.
+When creating cascading metrics, we repeatedly apply this pattern of
+breaking down difficult to move metrics into easier to move metrics
+until we have a tractable project for an individual team.
+Let's look at an example:
 
 Let's say Alice is a senior leader at Firefox 
 and is responsible for improving MAU.
@@ -130,26 +143,27 @@ Alice identifies retention as the leading metric she wants to focus on improving
 Alice can then delegate responsibility for improving retention to Bob.
 So far, nothing's changed.
 
-Bob now has the goal of improving retention.
+Now Bob has the goal of improving retention.
 He thinks that new users will be more likely to keep using Firefox
 if we make the browser faster.
 Accordingly, he identifies a leading metric to measure
 how quickly Firefox loads websites on average.
 
+
 In this example, Alice's leading metric becomes Bob's lagging metric.
 This pattern can continue as needed until we have a tractable goal
 and our strategy has become a tactic.
-I call this pattern **Cascading Metrics**.
+
+Here's a visual of what this flow might look like:
+
+<img src="https://via.placeholder.com/600x300">
+
 
 At each level of delegation,
 there's a chance to **match an employee's responsibility with their influence**.
 For example, increasing MAU might be a fine goal for a C-Suite executive,
 but it would be an unachievable goal for a single manager with only a few reports.
 Similarly, an executive shouldn't be setting goals for individual teams.
-
-Here's a visual of what this flow might look like:
-
-<img src="https://via.placeholder.com/600x300">
 
 ## Developing Leading Metrics
 
@@ -186,19 +200,7 @@ by testing their intuition against the data
 and by helping them develop a leading metric to describe their strategy.
 
 
-
-
 ----
-
-The issue with having goals that are too big - 
-Engineers look, it's intractible, and they disregard it.
-How am *I* going to stop global warming?
-
-Of course, when leading with metrics
-it's important to be clear about *why* any particular metric is important
-to avoid [Surrogation](/surrogation.html)
-
----
 
 ## Footnotes
 
