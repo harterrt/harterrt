@@ -156,7 +156,8 @@ and our strategy has become a tactic.
 
 Here's a visual of what this flow might look like:
 
-<img src="https://via.placeholder.com/600x300">
+<img src="/images/cascading_metrics_example.svg">
+<!-- <img src="/images/cascading_metrics_leadvlag.svg"> -->
 
 
 At each level of delegation,
