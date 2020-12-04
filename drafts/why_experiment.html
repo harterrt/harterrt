@@ -22,7 +22,7 @@
 
   <title>
     blog.harterrt.com
-&ndash; KPIs and OKRs  </title>
+&ndash; Why Run Controlled Experiments?  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -66,13 +66,50 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/drafts/kpis_and_okrs.html">KPIs and OKRs</a></h1>
+    <h1><a href="https://blog.harterrt.com/drafts/why_experiment.html">Why Run Controlled Experiments?</a></h1>
   </div>
   <div class="article_text">
-    
+    <p>I spent some time earlier this year orchestrating 
+a massive experiment for Firefox.
+We were planning to push a bunch of new features out with Firefox 80.
+My goal was to understand how much these new features improved our metrics.</p>
+<p>In the process, I ended up talking to a lot of Firefox engineers
+and explaining why we need to run a controlled experiment.
+There were a few questions that got repeated a lot,
+so I figure it's worth anwering them here.
+Hopefully this is useful to future-me or my peers.</p>
+<h2>What <em>is</em> a controlled experiment?</h2>
+<p>A controlled experiment is a tool to help us establish <em>causation</em>.
+We want to measure what <strong>effect</strong> a change to the browser has on the world.
+For example, we recently launched improvements to 
+<a href="https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer">Firefox's PDF Viewer</a>.
+A controlled experiment would help us measure whether this feature
+caused users to open more PDFs in Firefox.</p>
+<p>To run a controlled experiment, 
+we take a group of users and randomly assign them to one of two subgroups,
+called "branches".
+We show users in one branch the improved version of Firefox
+(this is the "treatment" branch).
+We show users in the other branch an unimproved version of Firefox
+(called the "control" branch).
+This gives us a before and after group running at the same time.
+When we compare data from the two branches
+we get a very reliable understanding of what effect the feature had.</p>
+<p>This is still surprisingly difficult to do with Firefox.
+To experiment against a feature
+we need to be able to switch it on or off remotely.
+This adds a lot of complexity when building and releasing the feature.
+Folks are understandibly curious about why we're going through this rigamorole.</p>
+<p>Let's consider some simpler options (and why they don't actually work)</p>
+<h2>Why not just look at usage?</h2>
+<hr />
+<p>We ran a huge controlled experiment for Desktop Firefox over most of October.</p>
+<p>Part of the issue is that Firefox is installed on other peoples computer.
+When Facebook experiments against a new version of their website,
+they deploy the experiment to servers they own.</p>
   </div>
   <div class="article_meta">
-    <p>Posted on: Fri 05 June 2020</p>
+    <p>Posted on: Thu 05 November 2020</p>
     <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
     </p>
   </div>
