@@ -3,22 +3,43 @@ slug: cascading_metrics
 date: 2020-11-05
 status: draft
 
-Leading a company is difficult.
+It's surprisingly hard to lead a company with data.
+There's a lot written about how to set good goals
+and how to avoid common pitfalls (like surrogation)
+but I haven't seen much written about the practicalities
+of taking action on these metrics.
+
+I spend most of this year working with our executive team
+to understand our corporate goals
+and to track our progress against these goals.
+I found that setting rock-solid goals **didn't do much good
+if individual employees didn't know how they could contribute**.
+
+The big and audatious goals we set for our company as a whole
+can be overwhelming to a single employee.
+It's hard to know where to start,
+so instead overwhelmed employees
+go back to whatever they were working on before.
+**We have to do more** if we want to create behavior change
+and get everyone working towards the same goal.
+
+This article **introduces a new framework** for breaking down corporate goals
+into metrics that are relevant and tractable for individual teams.
+I call it **Cascading Metrics**.
 
 Let's start with a case study to illustrate.
 
 ## An Example: 2020 Firefox Goals 
 
 Firefox is losing users. We have been for a while.
-
-We obviously want to turn this around.
+Obviously, we want to turn this around.
 We started by setting a goal for 2020:
 Slow the loss of Firefox users.
 
 This is vague,
-so we decided on metrics to track our progress
-and set targets that we wanted to hit by end of year.
-At the end of the year we want to have 238 million
+so we decided on a metric to track our progress
+and set targets that we wanted to hit by the end of the year.
+Specifically, at the end of the year we want to have 238 million
 [Monthly Active Users (MAU)](https://data.firefox.com/dashboard/user-activity).
 
 That's a good start.
@@ -52,7 +73,7 @@ but we have narrowed the scope a bit.
 
 ## Leading vs Lagging Metrics
 
-We have two metrics in this example, MAU and Retention.
+We have two metrics in this case study, MAU and Retention.
 Retention is called a **leading** metric
 and MAU is called a **lagging** metric.
 
@@ -64,26 +85,50 @@ Our hope is that improving retention will in-turn improve MAU.
 I've seen this concept of leading and lagging metrics
 discussed pretty often in leadership literature,
 so I won't go too deep into it here <sup>1</sup>.
-The important point is that this is a **very powerful pattern**.
-Ideally, we can see constant improvements in our leading metrics,
-which motivates the company and gives employees a positive feedback loop.
 
-Alternatively, **working against goals that are too big is demoralizing**.
-When faced with an obviously over-sized goal,
-some respond by ignoring the new goal
-and going back to what they were working on before.
+The important point is that this is a **very powerful pattern**.
+In the ideal case, 
+employees can see consistent progress against our leading metric.
+This is encouraging!
+If we fail to set good leading metrics,
+employess can get discouraged trying to make progress
+against a metric that just won't budge.
+
+I came across a particularly elegant explaination of this pattern in 
+(of all places) East of Eden:
+
+> If one were properly to perform a difficult and subtle act,
+> he should first inspect the end to be achieved and then,
+> once he had accepted the end as desirable,
+> he should forget it completely and concentrate soley on the means.
+> By this method he would not be moved to false action
+> by anxiety or hurry or fear.
+> Very few people learn this.
+> 
+>   \- John Steinbeck, East of Eden
+<!-- First paragraph of chapter 21 -->
+
+Here, our lagging metric would describe the "end"
+and our leading metric the "means".
+Put another way: plan the work, then work the plan.
 
 ## Cascading Metrics
 
-Sometimes, setting a leading metric isn't enough to make a goal tractable.
-In this example, our lead metric (improving retention)
-is still very difficult to achieve for any one team at Mozilla.
+There's a plot hole in this story though.
+Increasing retention is still a very difficult goal to achieve.
+A individual team *might* be able to improve Firefox retention,
+but most won't be able to.
+Our leading metric didn't do enough to make our lagging metric tractable.
+
+Sometimes, one leading metric isn't enough.
 We need to break this goal down further.
+This is where Cascading Metrics come in.
 
 Let's say Alice is a senior leader at Firefox 
 and is responsible for improving MAU.
 Alice identifies retention as the leading metric she wants to focus on improving.
 Alice can then delegate responsibility for improving retention to Bob.
+So far, nothing's changed.
 
 Bob now has the goal of improving retention.
 He thinks that new users will be more likely to keep using Firefox
@@ -92,7 +137,8 @@ Accordingly, he identifies a leading metric to measure
 how quickly Firefox loads websites on average.
 
 In this example, Alice's leading metric becomes Bob's lagging metric.
-This pattern can continue as needed to match the complexity of the goal.
+This pattern can continue as needed until we have a tractable goal
+and our strategy has become a tactic.
 I call this pattern **Cascading Metrics**.
 
 At each level of delegation,
@@ -107,19 +153,46 @@ Here's a visual of what this flow might look like:
 
 ## Developing Leading Metrics
 
-One particular advantage of this framework is that 
+Something I really like about this framework is that
 it's explicit about where these leading metrics come from.
+The leading metrics **describe a product strategy**.
 
+We've looked at a goal, thought deeply about the product,
+and decided on a strategy that will help us acheive that goal.
+This decision making process should be informed by data,
+but it's probably not *driven* by data.
+It's **driven by product intuition**.
 
+A very common failure case is to skip over the "strategy" part of this process
+and hope our leading metric will just out of the data.
+We focus on finding analytical solutions to increasing our metric.
+Maybe we run some broad machine learning exploration to identify a leading metric.
 
+These approaches are only occasionally successful.
+More often than not, we end up finding obvious truths:
+"Users who use the product frequently retain better!
+We should get people to use the product more!".
+If we do find a meaningful way to move our lagging metric,
+it's very often something we don't have agency to change,
+which limits its value as a leading metric.
 
-
-
+We're almost always better off 
+if we lean on our product experts to lead the way.
+They can combine all of the tools at our disposal to find a way forward:
+data science, user research, and their own product intuition.
+Data science can support the product manager 
+by testing their intuition against the data
+(do we have enough users in Germany to focus all of our efforts in one country?)
+and by helping them develop a leading metric to describe their strategy.
 
 
 
 
 ----
+
+The issue with having goals that are too big - 
+Engineers look, it's intractible, and they disregard it.
+How am *I* going to stop global warming?
 
 Of course, when leading with metrics
 it's important to be clear about *why* any particular metric is important
