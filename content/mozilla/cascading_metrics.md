@@ -9,19 +9,19 @@ and how to avoid common pitfalls (like [Surrogation](/surrogation.html))
 but I haven't seen much written about the practicalities
 of taking action on these metrics.
 
-I spend most of this year working with our executive team
+I spent most of this year working with our executive team
 to understand our corporate goals
 and to track our progress against these goals.
 I found that setting rock-solid goals **didn't do much good
 if individual employees didn't know how they could contribute**.
 
-The big and audatious goals we set for our company as a whole
+The big and ambitious goals we set for our company as a whole
 can be overwhelming to a single employee.
 It's hard to know where to start,
-so instead overwhelmed employees
+so instead, overwhelmed employees
 go back to whatever they were working on before.
 **We have to do more** if we want to create behavior change
-and get everyone working towards the same goal.
+and get everyone working toward the same goal.
 
 This article **introduces a new framework** for breaking down corporate goals
 into metrics that are relevant and tractable for individual teams.
@@ -64,7 +64,7 @@ We decided to track this goal by measuring
 At a high level, this metric measures:
 of the people using Firefox for the first time today,
 what portion use Firefox again next week?
-Currently, it sits around 45-50% 
+Currently, it sits around 45-50%,
 meaning a little more than half of new users don't return in the following week.
 
 This is a more manageable goal.
@@ -80,7 +80,7 @@ and MAU a **lagging** metric.
 Our main goal is to improve MAU,
 but to make the goal more manageable 
 we focused our strategy on improving retention.
-Our hope is that improving retention will in-turn improve MAU.
+Our hope is that improving retention will, in-turn, improve MAU.
 
 I've seen this concept of leading and lagging metrics
 discussed pretty often in leadership literature,
@@ -91,11 +91,11 @@ In the ideal case,
 employees can see consistent progress against our leading metric.
 That's encouraging!
 If we fail to set good leading metrics,
-employess can get discouraged trying to make progress
+employees can get discouraged trying to make progress
 against a metric that just won't budge.
 
-I came across a particularly elegant explaination of this pattern in 
-(of all places) East of Eden:
+I came across a particularly elegant explanation of this pattern in 
+a Steinbeck novel (of all places):
 
 <!-- 
 > In human affairs of danger and delicacy 
@@ -117,6 +117,11 @@ Here, our lagging metric would describe the "end"
 and our leading metric the "means".
 Put another way: plan the work, then work the plan.
 
+Here's a quick summary of leading and lagging metrics:
+
+<img src="/images/cascading_metrics_leadvlag.svg">
+
+
 ## Cascading Metrics
 
 There's a plot hole in this story though.
@@ -134,7 +139,7 @@ Our leading metric didn't do enough to make our lagging metric tractable.
 This is where Cascading Metrics can help.
 When creating cascading metrics, we repeatedly apply this pattern of
 breaking down difficult to move metrics into easier to move metrics
-until we have a tractable project for an individual team.
+until we have an appropriately-sized project for an individual team.
 Let's look at an example:
 
 Let's say Alice is a senior leader at Firefox 
@@ -151,13 +156,12 @@ how quickly Firefox loads websites on average.
 
 
 In this example, Alice's leading metric becomes Bob's lagging metric.
-This pattern can continue as needed until we have a tractable goal
+This pattern can continue as needed until we have an achievable goal
 and our strategy has become a tactic.
 
 Here's a visual of what this flow might look like:
 
 <img src="/images/cascading_metrics_example.svg">
-<!-- <img src="/images/cascading_metrics_leadvlag.svg"> -->
 
 
 At each level of delegation,
@@ -173,14 +177,14 @@ it's explicit about where these leading metrics come from.
 The leading metrics **describe a product strategy**.
 
 We've looked at a goal, thought deeply about the product,
-and decided on a strategy that will help us acheive that goal.
-This decision making process should be informed by data,
+and decided on a strategy that will help us achieve that goal.
+This decision-making process should be informed by data,
 but it's probably not *driven* by data.
 It's **driven by product intuition**.
 
 A very common failure case is to skip over the "strategy" part of this process
-and hope our leading metric will just out of the data.
-We focus on finding analytical solutions to increasing our metric.
+and hope our leading metric will just fall out of the data.
+We focus on finding analytical solutions for increasing our metric.
 Maybe we run some broad machine learning exploration to identify a leading metric.
 
 These approaches are only occasionally successful.
@@ -195,11 +199,26 @@ We're almost always better off
 if we lean on our product experts to lead the way.
 They can combine all of the tools at our disposal to find a way forward:
 data science, user research, and their own product intuition.
-Data science can support the product manager 
-by testing their intuition against the data
-(do we have enough users in Germany to focus all of our efforts in one country?)
-and by helping them develop a leading metric to describe their strategy.
 
+Data science can support product in a couple of ways.
+In the early stages of developing a strategy,
+data science can help with opportunity sizing
+and helping product test their intuition against the data
+(e.g. do we have enough users in Germany
+to focus all of our efforts in one country?)
+Later in the process, data can help product
+develop a leading metric to describe their strategy.
+
+
+## Conclusion
+
+Setting numeric goals is a great way to give a company direction.
+However, these ambitious corporate goals often
+fail to create any real behavior change in practice.
+If we want people to change their behavior
+we have to make our goals relevant to individual teams.
+Cascading metrics gives us a framework for turning our big corporate goals
+into something relevant to front-line engineers.
 
 ----
 
@@ -209,3 +228,5 @@ and by helping them develop a leading metric to describe their strategy.
 [The 4 Disciplines of Execution](https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1451627068/)
 which is referenced heavily in 
 [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/).
+
+*Thanks to Dan McKinley for reading a draft of this post*
