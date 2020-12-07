@@ -229,4 +229,4 @@ into something relevant to front-line engineers.
 which is referenced heavily in 
 [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/).
 
-*Thanks to Dan McKinley for reading a draft of this post*
+*Thanks to Dan McKinley and Audra Harter for reading a draft of this post*
