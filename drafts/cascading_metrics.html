@@ -74,18 +74,18 @@ There's a lot written about how to set good goals
 and how to avoid common pitfalls (like <a href="/surrogation.html">Surrogation</a>)
 but I haven't seen much written about the practicalities
 of taking action on these metrics.</p>
-<p>I spend most of this year working with our executive team
+<p>I spent most of this year working with our executive team
 to understand our corporate goals
 and to track our progress against these goals.
 I found that setting rock-solid goals <strong>didn't do much good
 if individual employees didn't know how they could contribute</strong>.</p>
-<p>The big and audatious goals we set for our company as a whole
+<p>The big and ambitious goals we set for our company as a whole
 can be overwhelming to a single employee.
 It's hard to know where to start,
-so instead overwhelmed employees
+so instead, overwhelmed employees
 go back to whatever they were working on before.
 <strong>We have to do more</strong> if we want to create behavior change
-and get everyone working towards the same goal.</p>
+and get everyone working toward the same goal.</p>
 <p>This article <strong>introduces a new framework</strong> for breaking down corporate goals
 into metrics that are relevant and tractable for individual teams.
 I call it <strong>Cascading Metrics</strong>.</p>
@@ -120,7 +120,7 @@ We decided to track this goal by measuring
 At a high level, this metric measures:
 of the people using Firefox for the first time today,
 what portion use Firefox again next week?
-Currently, it sits around 45-50% 
+Currently, it sits around 45-50%,
 meaning a little more than half of new users don't return in the following week.</p>
 <p>This is a more manageable goal.
 Increasing retention is still a big undertaking,
@@ -132,7 +132,7 @@ and MAU a <strong>lagging</strong> metric.</p>
 <p>Our main goal is to improve MAU,
 but to make the goal more manageable 
 we focused our strategy on improving retention.
-Our hope is that improving retention will in-turn improve MAU.</p>
+Our hope is that improving retention will, in-turn, improve MAU.</p>
 <p>I've seen this concept of leading and lagging metrics
 discussed pretty often in leadership literature,
 so I won't go too deep into it here <sup>1</sup>.</p>
@@ -141,10 +141,10 @@ In the ideal case,
 employees can see consistent progress against our leading metric.
 That's encouraging!
 If we fail to set good leading metrics,
-employess can get discouraged trying to make progress
+employees can get discouraged trying to make progress
 against a metric that just won't budge.</p>
-<p>I came across a particularly elegant explaination of this pattern in 
-(of all places) East of Eden:</p>
+<p>I came across a particularly elegant explanation of this pattern in 
+a Steinbeck novel (of all places):</p>
 <!-- 
 > In human affairs of danger and delicacy 
 > successful conclusion is sharply limited by hurry.
@@ -165,6 +165,8 @@ Very few people learn this.</p>
 <p>Here, our lagging metric would describe the "end"
 and our leading metric the "means".
 Put another way: plan the work, then work the plan.</p>
+<p>Here's a quick summary of leading and lagging metrics:</p>
+<p><img src="/images/cascading_metrics_leadvlag.svg"></p>
 <h2>Cascading Metrics</h2>
 <p>There's a plot hole in this story though.
 Increasing retention is still a very difficult goal to achieve.
@@ -180,7 +182,7 @@ Our leading metric didn't do enough to make our lagging metric tractable.</p>
 <p>This is where Cascading Metrics can help.
 When creating cascading metrics, we repeatedly apply this pattern of
 breaking down difficult to move metrics into easier to move metrics
-until we have a tractable project for an individual team.
+until we have an appropriately-sized project for an individual team.
 Let's look at an example:</p>
 <p>Let's say Alice is a senior leader at Firefox 
 and is responsible for improving MAU.
@@ -193,11 +195,10 @@ if we make the browser faster.
 Accordingly, he identifies a leading metric to measure
 how quickly Firefox loads websites on average.</p>
 <p>In this example, Alice's leading metric becomes Bob's lagging metric.
-This pattern can continue as needed until we have a tractable goal
+This pattern can continue as needed until we have an achievable goal
 and our strategy has become a tactic.</p>
 <p>Here's a visual of what this flow might look like:</p>
-<p><img src="/images/cascading_metrics_example.svg">
-<!-- <img src="/images/cascading_metrics_leadvlag.svg"> --></p>
+<p><img src="/images/cascading_metrics_example.svg"></p>
 <p>At each level of delegation,
 there's a chance to <strong>match an employee's responsibility with their influence</strong>.
 For example, increasing MAU might be a fine goal for a C-Suite executive,
@@ -208,13 +209,13 @@ Similarly, an executive shouldn't be setting goals for individual teams.</p>
 it's explicit about where these leading metrics come from.
 The leading metrics <strong>describe a product strategy</strong>.</p>
 <p>We've looked at a goal, thought deeply about the product,
-and decided on a strategy that will help us acheive that goal.
-This decision making process should be informed by data,
+and decided on a strategy that will help us achieve that goal.
+This decision-making process should be informed by data,
 but it's probably not <em>driven</em> by data.
 It's <strong>driven by product intuition</strong>.</p>
 <p>A very common failure case is to skip over the "strategy" part of this process
-and hope our leading metric will just out of the data.
-We focus on finding analytical solutions to increasing our metric.
+and hope our leading metric will just fall out of the data.
+We focus on finding analytical solutions for increasing our metric.
 Maybe we run some broad machine learning exploration to identify a leading metric.</p>
 <p>These approaches are only occasionally successful.
 More often than not, we end up finding obvious truths:
@@ -226,17 +227,30 @@ which limits its value as a leading metric.</p>
 <p>We're almost always better off 
 if we lean on our product experts to lead the way.
 They can combine all of the tools at our disposal to find a way forward:
-data science, user research, and their own product intuition.
-Data science can support the product manager 
-by testing their intuition against the data
-(do we have enough users in Germany to focus all of our efforts in one country?)
-and by helping them develop a leading metric to describe their strategy.</p>
+data science, user research, and their own product intuition.</p>
+<p>Data science can support product in a couple of ways.
+In the early stages of developing a strategy,
+data science can help with opportunity sizing
+and helping product test their intuition against the data
+(e.g. do we have enough users in Germany
+to focus all of our efforts in one country?)
+Later in the process, data can help product
+develop a leading metric to describe their strategy.</p>
+<h2>Conclusion</h2>
+<p>Setting numeric goals is a great way to give a company direction.
+However, these ambitious corporate goals often
+fail to create any real behavior change in practice.
+If we want people to change their behavior
+we have to make our goals relevant to individual teams.
+Cascading metrics gives us a framework for turning our big corporate goals
+into something relevant to front-line engineers.</p>
 <hr />
 <h2>Footnotes</h2>
 <p>[1] If you want to read more, I can recommend 
 <a href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1451627068/">The 4 Disciplines of Execution</a>
 which is referenced heavily in 
 <a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/">Deep Work</a>.</p>
+<p><em>Thanks to Dan McKinley for reading a draft of this post</em></p>
   </div>
   <div class="article_meta">
     <p>Posted on: Thu 05 November 2020</p>
