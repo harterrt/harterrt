@@ -119,7 +119,7 @@ Put another way: plan the work, then work the plan.
 
 Here's a quick summary of leading and lagging metrics:
 
-<img src="/images/cascading_metrics_leadvlag.svg">
+<center><img width="75%" src="/images/cascading_metrics_leadvlag.svg"></center>
 
 
 ## Cascading Metrics
@@ -229,4 +229,4 @@ into something relevant to front-line engineers.
 which is referenced heavily in 
 [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/).
 
-*Thanks to Dan McKinley and Audra Harter for reading a draft of this post*
+*Thanks to Dan McKinley and Audra Harter for reading drafts of this post*
