@@ -1,7 +1,6 @@
 title: Leading with Data - Cascading Metrics
 slug: cascading_metrics
-date: 2020-11-05
-status: draft
+date: 2020-12-09
 
 It's surprisingly hard to lead a company with data.
 There's a lot written about how to set good goals
