@@ -116,10 +116,11 @@ Here, our lagging metric would describe the "end"
 and our leading metric the "means".
 Put another way: plan the work, then work the plan.
 
+<!--
 Here's a quick summary of leading and lagging metrics:
 
 <center><img width="75%" src="/images/cascading_metrics_leadvlag.svg"></center>
-
+-->
 
 ## Cascading Metrics
 
