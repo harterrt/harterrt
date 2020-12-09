@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 20 Oct 2020 00:00:00 -0700</lastBuildDate><item><title>Defining Data Intuition</title><link>https://blog.harterrt.com/data_intuition.html</link><description>&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
+<rss version="2.0"><channel><title>blog.harterrt.com - mozilla</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 09 Dec 2020 00:00:00 -0800</lastBuildDate><item><title>Leading with Data - Cascading Metrics</title><link>https://blog.harterrt.com/cascading_metrics.html</link><description>&lt;p&gt;It's surprisingly hard to lead a company with data.
+There's a lot written about how to set good goals
+and how to avoid common pitfalls (like &lt;a href="/surrogation.html"&gt;Surrogation&lt;/a&gt;)
+but I haven't seen much written about the practicalities
+of taking action on these metrics.&lt;/p&gt;
+&lt;p&gt;I spent most of this year working with …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 09 Dec 2020 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-12-09:/cascading_metrics.html</guid><category>mozilla</category></item><item><title>Defining Data Intuition</title><link>https://blog.harterrt.com/data_intuition.html</link><description>&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
 and I realized I really didn't have a good definition.
 That's a problem! I refer to data intuition all the time!&lt;/p&gt;
 &lt;p&gt;Data intuition is one of the three skills I interview new data scientists …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 20 Oct 2020 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-10-20:/data_intuition.html</guid><category>mozilla</category></item><item><title>Follow up: Intentional Documentation</title><link>https://blog.harterrt.com/int_d11n_preso.html</link><description>&lt;p&gt;Last week I presented the idea of 

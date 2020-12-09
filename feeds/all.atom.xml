@@ -1,5 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-10-20T00:00:00-07:00</updated><entry><title>Defining Data Intuition</title><link href="https://blog.harterrt.com/data_intuition.html" rel="alternate"></link><published>2020-10-20T00:00:00-07:00</published><updated>2020-10-20T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-20:/data_intuition.html</id><summary type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2020-12-09T00:00:00-08:00</updated><entry><title>Leading with Data - Cascading Metrics</title><link href="https://blog.harterrt.com/cascading_metrics.html" rel="alternate"></link><published>2020-12-09T00:00:00-08:00</published><updated>2020-12-09T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-12-09:/cascading_metrics.html</id><summary type="html">&lt;p&gt;It's surprisingly hard to lead a company with data.
+There's a lot written about how to set good goals
+and how to avoid common pitfalls (like &lt;a href="/surrogation.html"&gt;Surrogation&lt;/a&gt;)
+but I haven't seen much written about the practicalities
+of taking action on these metrics.&lt;/p&gt;
+&lt;p&gt;I spent most of this year working with …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's surprisingly hard to lead a company with data.
+There's a lot written about how to set good goals
+and how to avoid common pitfalls (like &lt;a href="/surrogation.html"&gt;Surrogation&lt;/a&gt;)
+but I haven't seen much written about the practicalities
+of taking action on these metrics.&lt;/p&gt;
+&lt;p&gt;I spent most of this year working with our executive team
+to understand our corporate goals
+and to track our progress against these goals.
+I found that setting rock-solid goals &lt;strong&gt;didn't do much good
+if individual employees didn't know how they could contribute&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The big and ambitious goals we set for our company as a whole
+can be overwhelming to a single employee.
+It's hard to know where to start,
+so instead, overwhelmed employees
+go back to whatever they were working on before.
+&lt;strong&gt;We have to do more&lt;/strong&gt; if we want to create behavior change
+and get everyone working toward the same goal.&lt;/p&gt;
+&lt;p&gt;This article &lt;strong&gt;introduces a new framework&lt;/strong&gt; for breaking down corporate goals
+into metrics that are relevant and tractable for individual teams.
+I call it &lt;strong&gt;Cascading Metrics&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let's start with a case study to illustrate.&lt;/p&gt;
+&lt;h2&gt;An Example: 2020 Firefox Goals&lt;/h2&gt;
+&lt;p&gt;Firefox is losing users. We have been for a while.
+Obviously, we want to turn this around.
+We started by setting a goal for 2020:
+Slow the loss of Firefox users.&lt;/p&gt;
+&lt;p&gt;This is vague,
+so we decided on a metric to track our progress
+and set targets that we wanted to hit by the end of the year.
+Specifically, at the end of the year we want to have 238 million
+&lt;a href="https://data.firefox.com/dashboard/user-activity"&gt;Monthly Active Users (MAU)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;That's a good start.
+By specifying a metric and a target we've made the goal 
+specific, measurable, and time-bound.
+Slowing the loss of Firefox users is obviously relevant.
+In the &lt;a href="https://en.wikipedia.org/wiki/SMART_criteria"&gt;SMART framework&lt;/a&gt;
+we're almost there.
+The only &lt;strong&gt;remaining question is whether this goal is attainable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Increasing MAU is a &lt;em&gt;huge&lt;/em&gt; undertaking.
+It's unwieldy.
+It's hard to decide where to start on such a massive project.
+To make this simpler, our leadership set a strategy to narrow the scope.
+The team decided we're going to improve MAU
+by finding a way to keep our new users around longer.&lt;/p&gt;
+&lt;p&gt;New Firefox users are at high risk of
+installing Firefox and never returning again.
+We decided to track this goal by measuring 
+&lt;a href="https://docs.telemetry.mozilla.org/cookbooks/retention.html"&gt;New User 1-Week Retention&lt;/a&gt;.
+At a high level, this metric measures:
+of the people using Firefox for the first time today,
+what portion use Firefox again next week?
+Currently, it sits around 45-50%,
+meaning a little more than half of new users don't return in the following week.&lt;/p&gt;
+&lt;p&gt;This is a more manageable goal.
+Increasing retention is still a big undertaking,
+but we have narrowed the scope a bit.&lt;/p&gt;
+&lt;h2&gt;Leading vs Lagging Metrics&lt;/h2&gt;
+&lt;p&gt;We have two metrics in this case study, MAU and Retention.
+I'd call Retention a &lt;strong&gt;leading&lt;/strong&gt; metric
+and MAU a &lt;strong&gt;lagging&lt;/strong&gt; metric.&lt;/p&gt;
+&lt;p&gt;Our main goal is to improve MAU,
+but to make the goal more manageable 
+we focused our strategy on improving retention.
+Our hope is that improving retention will, in-turn, improve MAU.&lt;/p&gt;
+&lt;p&gt;I've seen this concept of leading and lagging metrics
+discussed pretty often in leadership literature,
+so I won't go too deep into it here &lt;sup&gt;1&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The important point is that this is a &lt;strong&gt;very powerful pattern&lt;/strong&gt;.
+In the ideal case, 
+employees can see consistent progress against our leading metric.
+That's encouraging!
+If we fail to set good leading metrics,
+employees can get discouraged trying to make progress
+against a metric that just won't budge.&lt;/p&gt;
+&lt;p&gt;I came across a particularly elegant explanation of this pattern in 
+a Steinbeck novel (of all places):&lt;/p&gt;
+&lt;!-- 
+&gt; In human affairs of danger and delicacy 
+&gt; successful conclusion is sharply limited by hurry.
+--&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So often men trip by being in a rush.
+If one were properly to perform a difficult and subtle act,
+he should first inspect the end to be achieved and then,
+once he had accepted the end as desirable,
+he should forget it completely and concentrate soley on the means.
+By this method he would not be moved to false action
+by anxiety or hurry or fear.
+Very few people learn this.&lt;/p&gt;
+&lt;p&gt;- John Steinbeck, East of Eden
+&lt;!-- First paragraph of chapter 21 --&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here, our lagging metric would describe the "end"
+and our leading metric the "means".
+Put another way: plan the work, then work the plan.&lt;/p&gt;
+&lt;!--
+Here's a quick summary of leading and lagging metrics:
+
+&lt;center&gt;&lt;img width="75%" src="/images/cascading_metrics_leadvlag.svg"&gt;&lt;/center&gt;
+--&gt;
+
+&lt;h2&gt;Cascading Metrics&lt;/h2&gt;
+&lt;p&gt;There's a plot hole in this story though.
+Increasing retention is still a very difficult goal to achieve.
+&lt;!--
+This reminds me of &lt;a href="https://en.wikipedia.org/wiki/Milo_of_Croton"&gt;Milo&lt;/a&gt;
+who carried a calf on his back every day until he could lift a bull
+4 years later!
+The thing is, a 3 month calf already weights ~250#
+--&gt;
+A individual team &lt;em&gt;might&lt;/em&gt; be able to improve Firefox retention,
+but most won't be able to.
+Our leading metric didn't do enough to make our lagging metric tractable.&lt;/p&gt;
+&lt;p&gt;This is where Cascading Metrics can help.
+When creating cascading metrics, we repeatedly apply this pattern of
+breaking down difficult to move metrics into easier to move metrics
+until we have an appropriately-sized project for an individual team.
+Let's look at an example:&lt;/p&gt;
+&lt;p&gt;Let's say Alice is a senior leader at Firefox 
+and is responsible for improving MAU.
+Alice identifies retention as the leading metric she wants to focus on improving.
+Alice can then delegate responsibility for improving retention to Bob.
+So far, nothing's changed.&lt;/p&gt;
+&lt;p&gt;Now Bob has the goal of improving retention.
+He thinks that new users will be more likely to keep using Firefox
+if we make the browser faster.
+Accordingly, he identifies a leading metric to measure
+how quickly Firefox loads websites on average.&lt;/p&gt;
+&lt;p&gt;In this example, Alice's leading metric becomes Bob's lagging metric.
+This pattern can continue as needed until we have an achievable goal
+and our strategy has become a tactic.&lt;/p&gt;
+&lt;p&gt;Here's a visual of what this flow might look like:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/cascading_metrics_example.svg"&gt;&lt;/p&gt;
+&lt;p&gt;At each level of delegation,
+there's a chance to &lt;strong&gt;match an employee's responsibility with their influence&lt;/strong&gt;.
+For example, increasing MAU might be a fine goal for a C-Suite executive,
+but it would be an unachievable goal for a single manager with only a few reports.
+Similarly, an executive shouldn't be setting goals for individual teams.&lt;/p&gt;
+&lt;h2&gt;Developing Leading Metrics&lt;/h2&gt;
+&lt;p&gt;Something I really like about this framework is that
+it's explicit about where these leading metrics come from.
+The leading metrics &lt;strong&gt;describe a product strategy&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We've looked at a goal, thought deeply about the product,
+and decided on a strategy that will help us achieve that goal.
+This decision-making process should be informed by data,
+but it's probably not &lt;em&gt;driven&lt;/em&gt; by data.
+It's &lt;strong&gt;driven by product intuition&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A very common failure case is to skip over the "strategy" part of this process
+and hope our leading metric will just fall out of the data.
+We focus on finding analytical solutions for increasing our metric.
+Maybe we run some broad machine learning exploration to identify a leading metric.&lt;/p&gt;
+&lt;p&gt;These approaches are only occasionally successful.
+More often than not, we end up finding obvious truths:
+"Users who use the product frequently retain better!
+We should get people to use the product more!".
+If we do find a meaningful way to move our lagging metric,
+it's very often something we don't have agency to change,
+which limits its value as a leading metric.&lt;/p&gt;
+&lt;p&gt;We're almost always better off 
+if we lean on our product experts to lead the way.
+They can combine all of the tools at our disposal to find a way forward:
+data science, user research, and their own product intuition.&lt;/p&gt;
+&lt;p&gt;Data science can support product in a couple of ways.
+In the early stages of developing a strategy,
+data science can help with opportunity sizing
+and helping product test their intuition against the data
+(e.g. do we have enough users in Germany
+to focus all of our efforts in one country?)
+Later in the process, data can help product
+develop a leading metric to describe their strategy.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Setting numeric goals is a great way to give a company direction.
+However, these ambitious corporate goals often
+fail to create any real behavior change in practice.
+If we want people to change their behavior
+we have to make our goals relevant to individual teams.
+Cascading metrics gives us a framework for turning our big corporate goals
+into something relevant to front-line engineers.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;[1] If you want to read more, I can recommend 
+&lt;a href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/1451627068/"&gt;The 4 Disciplines of Execution&lt;/a&gt;
+which is referenced heavily in 
+&lt;a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/"&gt;Deep Work&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Dan McKinley and Audra Harter for reading drafts of this post&lt;/em&gt;&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Defining Data Intuition</title><link href="https://blog.harterrt.com/data_intuition.html" rel="alternate"></link><published>2020-10-20T00:00:00-07:00</published><updated>2020-10-20T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2020-10-20:/data_intuition.html</id><summary type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
 and I realized I really didn't have a good definition.
 That's a problem! I refer to data intuition all the time!&lt;/p&gt;
 &lt;p&gt;Data intuition is one of the three skills I interview new data scientists …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last week, one of my peers asked me to explain what I meant by "Data Intuition",
