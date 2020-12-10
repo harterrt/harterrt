@@ -217,9 +217,10 @@ But, by then we're focused on the next big release.
 Here's what that might look like in practice:
 
 <img src="/images/why-expt/rollout-ex.png"></img>
-
-
-
+<img src="/images/why-expt/rollout-users.png"></img>
+<img src="/images/why-expt/rollout-branches.png"></img>
+<img src="/images/why-expt/rollout-branches-ideal.png"></img>
+<img src="/images/why-expt/rollout-branches-actual.png"></img>
 
 
 
