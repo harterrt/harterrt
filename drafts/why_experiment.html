@@ -78,30 +78,128 @@ and explaining why we need to run a controlled experiment.
 There were a few questions that got repeated a lot,
 so I figure it's worth anwering them here.
 Hopefully this is useful to future-me or my peers.</p>
-<h2>What <em>is</em> a controlled experiment?</h2>
-<p>A controlled experiment is a tool to help us establish <em>causation</em>.
-We want to measure what <strong>effect</strong> a change to the browser has on the world.
-For example, we recently launched improvements to 
-<a href="https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer">Firefox's PDF Viewer</a>.
-A controlled experiment would help us measure whether this feature
-caused users to open more PDFs in Firefox.</p>
-<p>To run a controlled experiment, 
-we take a group of users and randomly assign them to one of two subgroups,
-called "branches".
-We show users in one branch the improved version of Firefox
-(this is the "treatment" branch).
-We show users in the other branch an unimproved version of Firefox
-(called the "control" branch).
-This gives us a before and after group running at the same time.
+<h2>What is an <em>experiment</em>?</h2>
+<p>In a very general sense, 
+we conduct an experiment if we:
+(1) create a situation
+(2) where we don't know what's going to happen
+(3) so that we can observe the result.</p>
+<p>The best example of an experiment I can think of is Ben Franklin
+flying a kite during a lightening storm 
+(<a href="https://www.fi.edu/benjamin-franklin/kite-key-experiment">context</a>).
+He didn't <em>know</em> what was going to happen when he flew the kite
+so he went and found out.</p>
+<p>In practice, this is a very liberal definition of experimentation.
+By this definition, playing slots isn't gambling, it's an experiment!
+When data scientists talk about "experimentation"
+we're usually talking about "controlled experiments"
+instead of this type of hold-my-beer type of experimentation..</p>
+<h2>What is a <em>controlled</em> experiment?</h2>
+<p>When we run a <em>controlled</em> experiment,
+we engineer two identical experiments,
+make a small change to one of the experiments,
+and observe how this change affects each of the two outcomes.</p>
+<p>It might be clearer if I explain how we do this for Firefox:</p>
+<ul>
+<li>We start by launching a new feature behind a preference (or "pref").
+  This allows us to remotely toggle a feature on and off for a particular user.</li>
+<li>Then we take a sample of users
+  and randomly assign them into one of two groups, called "branches". 
+  We leave the feature toggled off for one group of users (the "control" branch)
+  and toggle the feature on for the other group (the "treatment" branch).</li>
+</ul>
+<p>This gives us a before and after group running at the same time.
 When we compare data from the two branches
-we get a very reliable understanding of what effect the feature had.</p>
-<p>This is still surprisingly difficult to do with Firefox.
-To experiment against a feature
-we need to be able to switch it on or off remotely.
-This adds a lot of complexity when building and releasing the feature.
-Folks are understandibly curious about why we're going through this rigamorole.</p>
-<p>Let's consider some simpler options (and why they don't actually work)</p>
+we get a very reliable understanding 
+of what effect the feature had on user behavior.</p>
+<p>Here's a doodle-explaination of what this looks like:</p>
+<!--<center><img width="75%" src="/images/why-expt/Experiment overview.svg"></img></center>-->
+
+<!--<center><img width="75%" src="/images/why-expt/experiment-overview.jpg"></img></center>-->
+
+<p><center><img width="75%" src="/images/why-expt/experiment-overview.png"></img></center></p>
+<p>A controlled experiment is a tool to help us establish <em>causation</em>.
+We want separate the effect our new feature has 
+from all of the random noise that affects our metrics day-to-day.</p>
+<p>For context, this is still surprisingly difficult to do with Firefox.
+Getting a feature behind a pref so we can switch it on and off remotely
+adds a lot of complexity.
+Folks are understandibly curious about why we're going through such a rigamorole.</p>
+<p>Let's consider some simpler options (and why they don't actually work).</p>
 <h2>Why not just look at usage?</h2>
+<p>If we want to understand what effect our new feature has on usage,
+why not compare users that engage with our feature to users who don't?</p>
+<p>For example, we recently launched improvements to 
+<a href="https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer">Firefox's PDF Viewer</a>.
+We're interested in knowing whether these improvements 
+increased user retention.
+It seems obvious to start by comparing retention 
+between users who opened PDFs in Firefox and users who did not open PDFs.</p>
+<p>Here's what that might look like:</p>
+<p><center><img src="/images/why-expt/usage.png"></img></center></p>
+<p>In this example we found that users who interacted with the PDF viewer
+retained at 80% week-over-week while non-PDF users only retained at 45%.
+That's a HUGE difference!</p>
+<p>Unfortunately, this effect isn't real.
+As it turns out, "interacts with the PDF viewer"
+is a decent proxy for "uses Firefox a lot".
+Users who "use Firefox a lot" tend to retain well.</p>
+<p>The critical problem here is that
+users get to self-select into one of the two groups.
+Active users tend to self-select into our "Uses PDF" group
+and inflate our results.
+This is the classic problem of <strong>correlation not meaning causation</strong>.</p>
+<p>To drive this home, 
+I ran a similar analysis for users who encounter errors when using Firefox.
+Errors are bad things, so we'd assume users who encounter errors would retain worse.
+However, we find that users who encounter errors
+retain <em>better</em> than users who encounter no-errors.
+How can that be? Encountering an error is, again,
+a good proxy for "Uses Firefox a lot".
+Users who don't use Firefox at all encounter no errors!</p>
+<h2>What if we compare before and after the launch?</h2>
+<p>OK - so we can't compare active users to inactive users.
+What if we just launch the feature to 100% of our users
+and compare behavior before and after the launch?
+This way we're comparing roughly the same set of users
+just over different time periods.</p>
+<p>If we monitor our retention metric over time,
+we hope to see a nice bump shortly after the launch.
+That graph might look something like this:</p>
+<p><img src="/images/why-expt/before-after.png"></img></p>
+<p>If we do see something like this,
+then it's pretty clear what effect our launch had.
+However, this is a very optimistic case.</p>
+<p>Usually, our metric is much more volatile than this
+and our effect is much smaller.
+For context, Firefox New Profile retention
+regularly bounces ~5%-points within a week.
+In any one experiment, we would be thrilled with a 1%-point movement.
+Most metrics also have a strong seasonality.</p>
+<p>All of this together means we're more likely to see a graph that looks like this:</p>
+<p><img width="75%" src="/images/why-expt/before-after-really.png"></img></p>
+<p>This graph <em>creates</em> a lot of new questions.
+It looks like retention is decreasing after the launch.
+Is that because retention was weirdly high before the launch or did we break something?
+Maybe we're just seeing annual seasonality?
+Let's look at year-over-year changes to adjust:</p>
+<p><img width="75%" src="/images/why-expt/before-after-adjusted.png"></img></p>
+<p>And on, and on, and on.
+This is the beginning of a long chain of what-if analyses 
+that will a while to resolve and leave us under-confident in our results.
+It's possible that we'll come to a resolution and find a real effect in the data,
+but we're just as likely to come up with a spurious correlation
+after slicing the data enough times
+(i.e. p-hacking or 
+<a href="https://xkcd.com/882/">the green jelly bean problem</a>).</p>
+<p>What if we ran a controlled experiment instead?
+Well, then we'd get a graph like this:</p>
+<p><img width="75%" src="/images/why-expt/before-after-expt.png"></img></p>
+<p>Now it's much clearer what's going on.
+There's definitely some noise,
+but we can clearly see that the treatment branch
+is doing better than the control branch.
+That's the benefit of having two branches running at once.</p>
 <hr />
 <p>We ran a huge controlled experiment for Desktop Firefox over most of October.</p>
 <p>Part of the issue is that Firefox is installed on other peoples computer.
