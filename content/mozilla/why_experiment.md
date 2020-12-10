@@ -14,35 +14,218 @@ There were a few questions that got repeated a lot,
 so I figure it's worth anwering them here.
 Hopefully this is useful to future-me or my peers.
 
-## What *is* a controlled experiment?
+## What is an *experiment*?
 
-A controlled experiment is a tool to help us establish *causation*.
-We want to measure what **effect** a change to the browser has on the world.
-For example, we recently launched improvements to 
-[Firefox's PDF Viewer](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer).
-A controlled experiment would help us measure whether this feature
-caused users to open more PDFs in Firefox.
+In a very general sense, 
+we conduct an experiment if we:
+(1) create a situation
+(2) where we don't know what's going to happen
+(3) so that we can observe the result.
 
-To run a controlled experiment, 
-we take a group of users and randomly assign them to one of two subgroups,
-called "branches".
-We show users in one branch the improved version of Firefox
-(this is the "treatment" branch).
-We show users in the other branch an unimproved version of Firefox
-(called the "control" branch).
+The best example of an experiment I can think of is Ben Franklin
+flying a kite during a lightening storm 
+([context](https://www.fi.edu/benjamin-franklin/kite-key-experiment)).
+He didn't *know* what was going to happen when he flew the kite
+so he went and found out.
+
+In practice, this is a very liberal definition of experimentation.
+By this definition, playing slots isn't gambling, it's an experiment!
+When data scientists talk about "experimentation"
+we're usually talking about "controlled experiments"
+instead of this type of hold-my-beer type of experimentation..
+
+## What is a *controlled* experiment?
+
+When we run a *controlled* experiment,
+we engineer two identical experiments,
+make a small change to one of the experiments,
+and observe how this change affects each of the two outcomes.
+
+It might be clearer if I explain how we do this for Firefox:
+
+* We start by launching a new feature behind a preference (or "pref").
+  This allows us to remotely toggle a feature on and off for a particular user.
+* Then we take a sample of users
+  and randomly assign them into one of two groups, called "branches". 
+  We leave the feature toggled off for one group of users (the "control" branch)
+  and toggle the feature on for the other group (the "treatment" branch).
+
 This gives us a before and after group running at the same time.
 When we compare data from the two branches
-we get a very reliable understanding of what effect the feature had.
+we get a very reliable understanding 
+of what effect the feature had on user behavior.
 
-This is still surprisingly difficult to do with Firefox.
-To experiment against a feature
-we need to be able to switch it on or off remotely.
-This adds a lot of complexity when building and releasing the feature.
-Folks are understandibly curious about why we're going through this rigamorole.
+Here's a doodle-explaination of what this looks like:
 
-Let's consider some simpler options (and why they don't actually work)
+<!--<center><img width="75%" src="/images/why-expt/Experiment overview.svg"></img></center>-->
+<!--<center><img width="75%" src="/images/why-expt/experiment-overview.jpg"></img></center>-->
+<center><img width="75%" src="/images/why-expt/experiment-overview.png"></img></center>
+
+A controlled experiment is a tool to help us establish *causation*.
+We want separate the effect our new feature has 
+from all of the random noise that affects our metrics day-to-day.
+
+For context, this is still surprisingly difficult to do with Firefox.
+Getting a feature behind a pref so we can switch it on and off remotely
+adds a lot of complexity.
+Folks are understandibly curious about why we're going through such a rigamorole.
+
+Let's consider some simpler options (and why they don't actually work).
 
 ## Why not just look at usage?
+
+If we want to understand what effect our new feature has on usage,
+why not compare users that engage with our feature to users who don't?
+
+For example, we recently launched improvements to 
+[Firefox's PDF Viewer](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer).
+We're interested in knowing whether these improvements 
+increased user retention.
+It seems obvious to start by comparing retention 
+between users who opened PDFs in Firefox and users who did not open PDFs.
+
+Here's what that might look like:
+
+<center><img src="/images/why-expt/usage.png"></img></center>
+
+In this example we found that users who interacted with the PDF viewer
+retained at 80% week-over-week while non-PDF users only retained at 45%.
+That's a HUGE difference!
+
+Unfortunately, this effect isn't real.
+As it turns out, "interacts with the PDF viewer"
+is a decent proxy for "uses Firefox a lot".
+Users who "use Firefox a lot" tend to retain well.
+
+The critical problem here is that
+users get to self-select into one of the two groups.
+Active users tend to self-select into our "Uses PDF" group
+and inflate our results.
+This is the classic problem of **correlation not meaning causation**.
+
+To drive this home, 
+I ran a similar analysis for users who encounter errors when using Firefox.
+Errors are bad things, so we'd assume users who encounter errors would retain worse.
+However, we find that users who encounter errors
+retain *better* than users who encounter no-errors.
+How can that be? Encountering an error is, again,
+a good proxy for "Uses Firefox a lot".
+Users who don't use Firefox at all encounter no errors!
+
+## What if we compare before and after the launch?
+
+OK - so we can't compare active users to inactive users.
+What if we just launch the feature to 100% of our users
+and compare behavior before and after the launch?
+This way we're comparing roughly the same set of users
+just over different time periods.
+
+If we monitor our retention metric over time,
+we hope to see a nice bump shortly after the launch.
+That graph might look something like this:
+
+<img src="/images/why-expt/before-after.png"></img>
+
+If we do see something like this,
+then it's pretty clear what effect our launch had.
+However, this is a very optimistic case.
+
+Usually, our metric is much more volatile than this
+and our effect is much smaller.
+For context, Firefox New Profile retention
+regularly bounces ~5%-points within a week.
+In any one experiment, we would be thrilled with a 1%-point movement.
+Most metrics also have a strong seasonality.
+
+All of this together means we're more likely to see a graph that looks like this:
+
+<img width="75%" src="/images/why-expt/before-after-really.png"></img>
+
+This graph creates a lot of new questions.
+It looks like retention is decreasing after the launch.
+Is that because of annual seasonality or did we break something?
+Let's look at year-over-year changes to adjust:
+
+<img width="75%" src="/images/why-expt/before-after-adjusted.png"></img>
+
+And on, and on, and on.
+This is the beginning of a long chain of what-if analyses 
+that will a while to resolve and leave us under-confident in our results.
+It's possible that we'll come to a resolution and find a real effect in the data,
+but we're just as likely to come up with a spurious correlation
+after slicing the data enough times
+(i.e. p-hacking or 
+[the green jelly bean problem](https://xkcd.com/882/)).
+
+What if we ran a controlled experiment instead?
+Well, then we'd get a graph like this:
+
+<img width="75%" src="/images/why-expt/before-after-expt.png"></img>
+
+Now it's much clearer what's going on.
+We can clearly see that the treatment branch
+is doing better than the control branch
+even though there's plenty of noise and retention is declining overall.
+That's the benefit of having two branches running at once.
+
+This is even more important for Firefox.
+it takes a while for Firefox releases to rollout - usually about a week.
+After that we need to wait a couple of weeks to be able to observe retention.
+That's a lot of time for the world to change under our feet.
+If something odd happens during that three-week-observation period,
+it will be very hard to separate our effect from the odd-event's effect.
+And here's a secret - there's always something odd going on.
+
+## OK, what if we throttle the rollout?
+
+Instead of pushing the release to 100% of our users at once,
+we have the option of slowing the release
+so only a portion of our users can upgrade.
+Then we can compare upgraded users (treatment) to non-upgraded users (control).
+
+Since *we're* deciding whether the user gets to upgrade or not,
+we shouldn't have the self-selection bias we discussed above.
+Throttling the rollout is also simpler operationally
+because we don't need to remotely toggle features on and off.
+
+This seems like a solid plan on the surface,
+and it *would* work for a lot of technology companies.
+Unfortunately, it doesn't work for Firefox.
+
+For every Firefox release there's a portion of users
+who delay upgrading or never upgrade to the new version.
+Before Firefox can check for an update,
+the user needs to open their laptop and start Firefox.
+Effectively, a user needs to choose to use Firefox 
+before they can be enrolled in the treatment branch,
+but we don't have a similar filter for the control branch.
+
+This subtle difference is enough to bias our results.
+It's an insidious little problem too because it stokes our ego.
+You see, in the first few days of every release
+we get a flurry of very active users who try to upgrade.
+**For the first few days of the rollout
+these are the only users who can join the treatment branch.**
+
+Since these users are super active our metrics look great!
+We pop champagne and celebrate releasing
+another great improvement to our user experience.
+As time goes on,
+the careful observer sees our metrics slowly revert to old levels.
+But, by then we're focused on the next big release.
+
+Here's what that might look like in practice:
+
+<img src="/images/why-expt/rollout-ex.png"></img>
+
+
+
+
+
+
+
+
+
 
 
 ---
