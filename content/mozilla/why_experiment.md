@@ -2,6 +2,7 @@ title: Why Run Controlled Experiments?
 slug: why_experiment
 date: 2020-11-05
 status: draft
+tags: data-intuition
 
 I spent some time earlier this year orchestrating 
 a massive experiment for Firefox.
@@ -11,8 +12,14 @@ My goal was to understand how much these new features improved our metrics.
 In the process, I ended up talking to a lot of Firefox engineers
 and explaining why we need to run a controlled experiment.
 There were a few questions that got repeated a lot,
-so I figure it's worth anwering them here.
-Hopefully this is useful to future-me or my peers.
+so I figure it's worth answering them here.
+
+This article is the first in a series I'm writing on building
+[data intuition](/data_intuition.html).
+This article is targeted at new data scientists 
+or engineers interested in data,
+but I also hope this becomes a useful resource 
+for data scientists to point their clients to.
 
 ## What is an *experiment*?
 
@@ -55,7 +62,7 @@ When we compare data from the two branches
 we get a very reliable understanding 
 of what effect the feature had on user behavior.
 
-Here's a doodle-explaination of what this looks like:
+Here's a doodle-explanation of what this looks like:
 
 <!--<center><img width="75%" src="/images/why-expt/Experiment overview.svg"></img></center>-->
 <!--<center><img width="75%" src="/images/why-expt/experiment-overview.jpg"></img></center>-->
@@ -68,7 +75,7 @@ from all of the random noise that affects our metrics day-to-day.
 For context, this is still surprisingly difficult to do with Firefox.
 Getting a feature behind a pref so we can switch it on and off remotely
 adds a lot of complexity.
-Folks are understandibly curious about why we're going through such a rigamorole.
+Folks are understandably curious about why we're going through such a rigmarole.
 
 Let's consider some simpler options (and why they don't actually work).
 
@@ -169,7 +176,7 @@ even though there's plenty of noise and retention is declining overall.
 That's the benefit of having two branches running at once.
 
 This is even more important for Firefox.
-it takes a while for Firefox releases to rollout - usually about a week.
+It takes a while for Firefox releases to rollout - usually about a week.
 After that we need to wait a couple of weeks to be able to observe retention.
 That's a lot of time for the world to change under our feet.
 If something odd happens during that three-week-observation period,
@@ -181,7 +188,13 @@ And here's a secret - there's always something odd going on.
 Instead of pushing the release to 100% of our users at once,
 we have the option of slowing the release
 so only a portion of our users can upgrade.
-Then we can compare upgraded users (treatment) to non-upgraded users (control).
+Then we can compare upgraded users (treatment) to 
+the users we held back from upgrading (control).
+
+Here's what that might look like in the ideal case:
+
+<!--<img width="75%" src="/images/why-expt/rollout-branches.png"></img>-->
+<img src="/images/why-expt/rollout-branches-ideal.png"></img>
 
 Since *we're* deciding whether the user gets to upgrade or not,
 we shouldn't have the self-selection bias we discussed above.
@@ -196,9 +209,17 @@ For every Firefox release there's a portion of users
 who delay upgrading or never upgrade to the new version.
 Before Firefox can check for an update,
 the user needs to open their laptop and start Firefox.
+Unfortunately, we can't differentiate between
+inactive users and users who tried to upgrade and were held back.
 Effectively, a user needs to choose to use Firefox 
-before they can be enrolled in the treatment branch,
-but we don't have a similar filter for the control branch.
+before they can be enrolled in the treatment branch.
+
+Here's what the treatment and control branches actually end up looking like:
+
+<img src="/images/why-expt/rollout-branches-actual.png"></img>
+
+In this example, the inactive users who haven't opened Firefox
+overwhelm the held back users.
 
 This subtle difference is enough to bias our results.
 It's an insidious little problem too because it stokes our ego.
@@ -207,32 +228,56 @@ we get a flurry of very active users who try to upgrade.
 **For the first few days of the rollout
 these are the only users who can join the treatment branch.**
 
-Since these users are super active our metrics look great!
-We pop champagne and celebrate releasing
+Since these users are super active **our metrics look great**!
+We can pop some champagne and celebrate releasing
 another great improvement to our user experience.
 As time goes on,
 the careful observer sees our metrics slowly revert to old levels.
 But, by then we're focused on the next big release.
 
-Here's what that might look like in practice:
+Here's an example of what we might see if we looked at 
+retention over time for users on the most recent version of Firefox:
+
 
 <img src="/images/why-expt/rollout-ex.png"></img>
+
+If you look at the number of users on the most recent release version,
+this pattern starts to make sense:
+
 <img src="/images/why-expt/rollout-users.png"></img>
-<img src="/images/why-expt/rollout-branches.png"></img>
-<img src="/images/why-expt/rollout-branches-ideal.png"></img>
-<img src="/images/why-expt/rollout-branches-actual.png"></img>
 
 
+If we were to treat this like an experiment,
+where users who upgraded are in "treatment"
+and users who haven't upgraded are in "control",
+we'd see something like this:
 
+<img src="/images/why-expt/rollout-expt-bad.png"></img>
 
+Again, the problem here is that there are few active users
+included in the "treatment" branch 
+while "control" is weighted down by inactive users.
 
+If we ran a real experiment, this is what we'd expect to see:
 
+<img src="/images/why-expt/rollout-expt-good.png"></img>
 
+There's still an initial spike in the metrics,
+but it's reflected in both the control and treatment branches.
+We're also reassured by the user counts graph.
+Instead of moving in opposite directions like the throttled rollout,
+each branch has roughly the same number of users enrolled.
 
----
+## Conclusion
 
-We ran a huge controlled experiment for Desktop Firefox over most of October.
+Often, running a controlled experiment is the only way
+to confidently measure what effect we've had on the world.
+Hopefully these examples clarify why experimentation is so popular.
+At the very least I hope this article
+prevents others from making some of the mistakes I've made
+when trying to establish causation!
 
-Part of the issue is that Firefox is installed on other peoples computer.
-When Facebook experiments against a new version of their website,
-they deploy the experiment to servers they own.
+This article is part of a series I'm writing on building 
+[data intuition](/data_intuition.html).
+I'd love feedback on what to write next.
+Shoot me an email if you have ideas!

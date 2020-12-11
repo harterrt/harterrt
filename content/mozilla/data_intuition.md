@@ -1,6 +1,7 @@
 title: Defining Data Intuition
 slug: data_intuition
 date: 2020-10-20
+tags: data-intuition
 
 Last week, one of my peers asked me to explain what I meant by "Data Intuition",
 and I realized I really didn't have a good definition.
