@@ -1,15 +1,19 @@
-title: Why Run Controlled Experiments?
+title: Controlled Experiments - Why Bother?
 slug: why_experiment
-date: 2020-11-05
+date: 2020-12-18
 status: draft
 tags: data-intuition
 
+<!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit -->
+<!-- tweets: I wrote down some notes about why we spend so much energy running controlled experiments at Mozilla -->
+<!-- tweets: In this post I compare A/B tests to hold-my-beer-type experiments like flying a kite in a thunderstorm -->
+
 I spent some time earlier this year orchestrating 
 a massive experiment for Firefox.
-We were planning to push a bunch of new features out with Firefox 80.
-My goal was to understand how much these new features improved our metrics.
+We launched a bunch of new features with Firefox 80
+and we wanted to understand whether these new features improved our metrics.
 
-In the process, I ended up talking to a lot of Firefox engineers
+In the process, I ended up talking with a lot of Firefox engineers
 and explaining why we need to run a controlled experiment.
 There were a few questions that got repeated a lot,
 so I figure it's worth answering them here.
@@ -19,7 +23,7 @@ This article is the first in a series I'm writing on building
 This article is targeted at new data scientists 
 or engineers interested in data,
 but I also hope this becomes a useful resource 
-for data scientists to point their clients to.
+for data scientists to point their stake-holders to.
 
 ## What is an *experiment*?
 
@@ -43,10 +47,16 @@ instead of this type of hold-my-beer type of experimentation..
 
 ## What is a *controlled* experiment?
 
-When we run a *controlled* experiment,
-we engineer two identical experiments,
-make a small change to one of the experiments,
-and observe how this change affects each of the two outcomes.
+Controlled experiments are often called A/B tests
+because we create two almost-identical hold-my-beer experiments
+and look for differences in the outcomes.
+If we do spot a difference in the results,
+we know that it was caused by the 
+small differences between experiments.
+
+Controlled experiments are more difficult to setup
+but can help us spot effects more subtle
+than *literally being struck by lightening*.
 
 It might be clearer if I explain how we do this for Firefox:
 
@@ -56,13 +66,14 @@ It might be clearer if I explain how we do this for Firefox:
   and randomly assign them into one of two groups, called "branches". 
   We leave the feature toggled off for one group of users (the "control" branch)
   and toggle the feature on for the other group (the "treatment" branch).
+* Then we look at whether users behave differently between groups.
 
 This gives us a before and after group running at the same time.
 When we compare data from the two branches
 we get a very reliable understanding 
 of what effect the feature had on user behavior.
 
-Here's a doodle-explanation of what this looks like:
+Here's a doodle of what this looks like:
 
 <!--<center><img width="75%" src="/images/why-expt/Experiment overview.svg"></img></center>-->
 <!--<center><img width="75%" src="/images/why-expt/experiment-overview.jpg"></img></center>-->
@@ -71,6 +82,9 @@ Here's a doodle-explanation of what this looks like:
 A controlled experiment is a tool to help us establish *causation*.
 We want separate the effect our new feature has 
 from all of the random noise that affects our metrics day-to-day.
+Because these experiments happened at the same time
+and the only difference between the two branches was our new feature
+we know that any change in the results is caused by the addition of our feature.
 
 This is still surprisingly difficult to do with Firefox.
 Getting a feature behind a pref so we can switch it on and off remotely
@@ -89,7 +103,7 @@ For example, we recently launched improvements to
 We're interested in knowing whether these improvements 
 increased user retention.
 It seems obvious to start by comparing retention 
-between users who opened PDFs in Firefox and users who did not open PDFs.
+between users (1) who opened PDFs in Firefox and (2) users who did not open PDFs.
 
 Here's what that might look like:
 
@@ -113,11 +127,13 @@ This is the classic problem of **correlation not meaning causation**.
 To drive this home, 
 I ran a similar analysis for users who encounter errors when using Firefox.
 Errors are bad things, so we'd assume users who encounter errors would retain worse.
-However, we find that users who encounter errors
-retain *better* than users who encounter no-errors.
-How can that be? Encountering an error is, again,
+The problem is, we find that users who encounter errors
+actually retain *better* than users who encounter no-errors.
+How can that be? Well, encountering an error is
 a good proxy for "Uses Firefox a lot".
 Users who don't use Firefox at all encounter no errors!
+
+We need to find a better experiment.
 
 ## What if we compare before and after the launch?
 
@@ -135,16 +151,19 @@ That graph might look something like this:
 
 If we do see something like this,
 then it's pretty clear what effect our launch had.
-However, this is a very optimistic case.
+In reality, this is a very optimistic case.
+Seeing such a clear effect is the equivalent of being struck by lightening.
+It's a big effect and *you know* when it happens.
 
-Usually, our metric is much more volatile than this
+More often, our metric is much more volatile than this
 and our effect is much smaller.
 For context, Firefox New Profile retention
-regularly bounces ~5%-points within a week.
+regularly bounces between 35% and 40% within a week.
 In any one experiment, we would be thrilled with a 1%-point movement.
 Most metrics also have a strong seasonality.
+Our signal is dwarfed by the noise.
 
-All of this together means we're more likely to see a graph that looks like this:
+This means we're more likely to see a graph that looks like this:
 
 <img width="75%" src="/images/why-expt/before-after-really.png"></img>
 
@@ -157,10 +176,10 @@ Let's look at year-over-year changes to adjust:
 
 And on, and on, and on.
 This is the beginning of a long chain of what-if analyses 
-that will a while to resolve and leave us under-confident in our results.
+that will take forever to resolve and leave us under-confident in our results.
 It's possible that we'll come to a resolution and find a real effect in the data,
 but we're just as likely to come up with a spurious correlation
-after slicing the data enough times
+after slicing the data too many times
 (i.e. p-hacking or 
 [the green jelly bean problem](https://xkcd.com/882/)).
 
@@ -171,8 +190,9 @@ Well, then we'd get a graph like this:
 
 Now it's much clearer what's going on.
 We can clearly see that the treatment branch
-is doing better than the control branch
-even though there's plenty of noise and retention is declining overall.
+is doing better than the control branch.
+We see this even though 
+there's plenty of noise and retention is declining overall.
 That's the benefit of having two branches running at once.
 
 This is even more important for Firefox.
@@ -181,7 +201,7 @@ After that we need to wait a couple of weeks to be able to observe retention.
 That's a lot of time for the world to change under our feet.
 If something odd happens during that three-week-observation period,
 it will be very hard to separate our effect from the odd-event's effect.
-And here's a secret - there's always something odd going on.
+And here's a secret - **there's always something odd going on**.
 
 ## OK, what if we throttle the rollout?
 
@@ -226,7 +246,7 @@ It's an insidious little problem too because it stokes our ego.
 You see, in the first few days of every release
 we get a flurry of very active users who try to upgrade.
 **For the first few days of the rollout
-these are the only users who can join the treatment branch.**
+these very active users are the only users who can join the treatment branch.**
 
 Since these users are super active **our metrics look great**!
 We can pop some champagne and celebrate releasing
@@ -270,8 +290,13 @@ each branch has roughly the same number of users enrolled.
 
 ## Conclusion
 
-Often, running a controlled experiment is the only way
-to confidently measure what effect we've had on the world.
+Don't let me kill your enthusiasm.
+There's still plenty of room for
+hold-my-beer kites-in-a-storm type experimentation,
+Especially early in a feature's lifecycle.
+But, if we want to be able to spot subtle changes to our products
+we need to run conrolled experiments.
+
 Hopefully these examples clarify why experimentation is so popular.
 At the very least I hope this article
 prevents others from making some of the mistakes I've made
@@ -279,5 +304,9 @@ when trying to establish causation!
 
 This article is part of a series I'm writing on building 
 [data intuition](/data_intuition.html).
+In my next post I want to highlight some scenarios
+where uncontrolled experiments make more sense
+and how this all fits together in a feature's lifecycle.
+
 I'd love feedback on what to write next.
 Shoot me an email if you have ideas!
