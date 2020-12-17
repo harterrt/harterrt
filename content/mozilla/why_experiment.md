@@ -310,3 +310,6 @@ and how this all fits together in a feature's lifecycle.
 
 I'd love feedback on what to write next.
 Shoot me an email if you have ideas!
+
+---
+*Thanks to Dan McKinley and Marissa Gorlick for reading drafts of this article*
