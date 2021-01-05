@@ -13,7 +13,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ryan T. Harter">
-  <meta name="description" content="Ryan T. Harter writing about data>
+  <meta name="description" content="Ryan T. Harter writes about data">
 
   <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
   <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
@@ -66,7 +66,7 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/drafts/why_experiment.html">Controlled Experiments - Why Bother?</a></h1>
+    <h1><a href="https://blog.harterrt.com/why_experiment.html">Controlled Experiments - Why Bother?</a></h1>
   </div>
   <div class="article_text">
     <!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit -->
@@ -79,16 +79,16 @@
 a massive experiment for Firefox.
 We launched a bunch of new features with Firefox 80
 and we wanted to understand whether these new features improved our metrics.</p>
-<p>In the process, I ended up talking with a lot of Firefox engineers
+<p>In the process, I ended up talking with a bunch of Firefox engineers
 and explaining why we need to run a controlled experiment.
 There were a few questions that got repeated a lot,
 so I figure it's worth answering them here.</p>
 <p>This article is the first in a series I'm writing on building
 <a href="/data_intuition.html">data intuition</a>.
 This article is targeted at new data scientists 
-or engineers interested in data,
-but I also hope this becomes a useful resource 
-for data scientists to point their stake-holders to.</p>
+or engineers interested in data.
+I also hope this becomes a useful resource for data scientists,
+so they can point their stake-holders to this resource.</p>
 <h2>What is an <em>experiment</em>?</h2>
 <p>In a very general sense, 
 we conduct an experiment if we:
@@ -104,7 +104,7 @@ so he went and found out.</p>
 By this definition, playing slots isn't gambling, it's an experiment!
 When data scientists talk about "experimentation"
 we're usually talking about "controlled experiments"
-instead of this type of hold-my-beer type of experimentation..</p>
+instead of this type of hold-my-beer type of experimentation.</p>
 <h2>What is a <em>controlled</em> experiment?</h2>
 <p>Controlled experiments are often called A/B tests
 because we create two almost-identical hold-my-beer experiments
@@ -136,20 +136,21 @@ of what effect the feature had on user behavior.</p>
 
 <p><center><img width="75%" src="/images/why-expt/experiment-overview.png"></img></center></p>
 <p>A controlled experiment is a tool to help us establish <em>causation</em>.
-We want separate the effect our new feature has 
+We want to separate the effect our new feature has 
 from all of the random noise that affects our metrics day-to-day.
 Because these experiments happened at the same time
-and the only difference between the two branches was our new feature
+and the only difference between the two branches was our new feature,
 we know that any change in the results is caused by the addition of our feature.</p>
 <p>This is still surprisingly difficult to do with Firefox.
-Getting a feature behind a pref so we can switch it on and off remotely
+Getting a feature behind a pref
+(so we can switch it on and off remotely)
 adds a lot of complexity.
 Folks are understandably curious about why we're going through such a rigmarole.</p>
 <p>Let's consider some simpler options (and why they don't actually work).</p>
 <h2>Why not just look at usage?</h2>
 <p>If we want to understand what effect our new feature has on usage,
 why not compare users that engage with our feature to users who don't?</p>
-<p>For example, we recently launched improvements to 
+<p>For example, we recently launched improvements to
 <a href="https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer">Firefox's PDF Viewer</a>.
 We're interested in knowing whether these improvements 
 increased user retention.
@@ -299,7 +300,7 @@ There's still plenty of room for
 hold-my-beer kites-in-a-storm type experimentation,
 Especially early in a feature's lifecycle.
 But, if we want to be able to spot subtle changes to our products
-we need to run conrolled experiments.</p>
+we need to run controlled experiments.</p>
 <p>Hopefully these examples clarify why experimentation is so popular.
 At the very least I hope this article
 prevents others from making some of the mistakes I've made
@@ -311,9 +312,11 @@ where uncontrolled experiments make more sense
 and how this all fits together in a feature's lifecycle.</p>
 <p>I'd love feedback on what to write next.
 Shoot me an email if you have ideas!</p>
+<hr />
+<p><em>Thanks to Dan McKinley and Audra Harter for reading drafts of this article</em></p>
   </div>
   <div class="article_meta">
-    <p>Posted on: Fri 18 December 2020</p>
+    <p>Posted on: Tue 05 January 2021</p>
     <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
  &ndash; Tags:
       <a href="https://blog.harterrt.com/tag/data-intuition.html">data-intuition</a>    </p>
@@ -322,7 +325,7 @@ Shoot me an email if you have ideas!</p>
   <div class="article_footer">
     <p>
         Feel free to share any feedback via email!
-        You can reach me at <code>harterrt</code> on gmail.
+        You can reach me at <code>blog@harterrt.com</code>.
         Look forward to hearing from you!
     </p>
   </div>
