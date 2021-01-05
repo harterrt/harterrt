@@ -1,7 +1,6 @@
 title: Controlled Experiments - Why Bother?
 slug: why_experiment
 date: 2021-01-05
-status: draft
 tags: data-intuition
 
 <!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit -->
@@ -154,8 +153,7 @@ If we do see something like this,
 then it's pretty clear what effect our launch had.
 In reality, this is a very optimistic case.
 Seeing such a clear effect is the equivalent of being struck by lightening.
-It's a big effect and *you know* when it happens
-([relevant xkcd]( https://xkcd.com/2400/)).
+It's a big effect and *you know* when it happens.
 
 More often, our metric is much more volatile than this
 and our effect is much smaller.
