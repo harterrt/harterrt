@@ -1,6 +1,6 @@
 title: Controlled Experiments - Why Bother?
 slug: why_experiment
-date: 2020-12-18
+date: 2021-01-05
 status: draft
 tags: data-intuition
 
@@ -13,7 +13,7 @@ a massive experiment for Firefox.
 We launched a bunch of new features with Firefox 80
 and we wanted to understand whether these new features improved our metrics.
 
-In the process, I ended up talking with a lot of Firefox engineers
+In the process, I ended up talking with a bunch of Firefox engineers
 and explaining why we need to run a controlled experiment.
 There were a few questions that got repeated a lot,
 so I figure it's worth answering them here.
@@ -21,9 +21,9 @@ so I figure it's worth answering them here.
 This article is the first in a series I'm writing on building
 [data intuition](/data_intuition.html).
 This article is targeted at new data scientists 
-or engineers interested in data,
-but I also hope this becomes a useful resource 
-for data scientists to point their stake-holders to.
+or engineers interested in data.
+I also hope this becomes a useful resource for data scientists,
+so they can point their stake-holders to this resource.
 
 ## What is an *experiment*?
 
@@ -43,7 +43,7 @@ In practice, this is a very liberal definition of experimentation.
 By this definition, playing slots isn't gambling, it's an experiment!
 When data scientists talk about "experimentation"
 we're usually talking about "controlled experiments"
-instead of this type of hold-my-beer type of experimentation..
+instead of this type of hold-my-beer type of experimentation.
 
 ## What is a *controlled* experiment?
 
@@ -80,14 +80,15 @@ Here's a doodle of what this looks like:
 <center><img width="75%" src="/images/why-expt/experiment-overview.png"></img></center>
 
 A controlled experiment is a tool to help us establish *causation*.
-We want separate the effect our new feature has 
+We want to separate the effect our new feature has 
 from all of the random noise that affects our metrics day-to-day.
 Because these experiments happened at the same time
-and the only difference between the two branches was our new feature
+and the only difference between the two branches was our new feature,
 we know that any change in the results is caused by the addition of our feature.
 
 This is still surprisingly difficult to do with Firefox.
-Getting a feature behind a pref so we can switch it on and off remotely
+Getting a feature behind a pref
+(so we can switch it on and off remotely)
 adds a lot of complexity.
 Folks are understandably curious about why we're going through such a rigmarole.
 
@@ -98,7 +99,7 @@ Let's consider some simpler options (and why they don't actually work).
 If we want to understand what effect our new feature has on usage,
 why not compare users that engage with our feature to users who don't?
 
-For example, we recently launched improvements to 
+For example, we recently launched improvements to
 [Firefox's PDF Viewer](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer).
 We're interested in knowing whether these improvements 
 increased user retention.
@@ -153,7 +154,8 @@ If we do see something like this,
 then it's pretty clear what effect our launch had.
 In reality, this is a very optimistic case.
 Seeing such a clear effect is the equivalent of being struck by lightening.
-It's a big effect and *you know* when it happens.
+It's a big effect and *you know* when it happens
+([relevant xkcd]( https://xkcd.com/2400/)).
 
 More often, our metric is much more volatile than this
 and our effect is much smaller.
@@ -295,7 +297,7 @@ There's still plenty of room for
 hold-my-beer kites-in-a-storm type experimentation,
 Especially early in a feature's lifecycle.
 But, if we want to be able to spot subtle changes to our products
-we need to run conrolled experiments.
+we need to run controlled experiments.
 
 Hopefully these examples clarify why experimentation is so popular.
 At the very least I hope this article
@@ -312,4 +314,4 @@ I'd love feedback on what to write next.
 Shoot me an email if you have ideas!
 
 ---
-*Thanks to Dan McKinley and Marissa Gorlick for reading drafts of this article*
+*Thanks to Dan McKinley and Audra Harter for reading drafts of this article*
