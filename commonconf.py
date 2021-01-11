@@ -35,14 +35,16 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
-    ('Resume', '/resume.pdf'),
-    ('Github', 'https://github.com/harterrt'),
     ('Twitter', 'https://twitter.com/harterrt'),
     ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
+    ('Resume', '/resume.pdf'),
+    ('Github', 'https://github.com/harterrt'),
 )
 
 # Small links at the top of the page
 MENUITEMS = (
+    ('Home', '/'),
+    ('Newsletter', 'https://harterrt.substack.com/'),
     ('About', '/pages/about.html'),
 )
 
@@ -67,9 +69,11 @@ IGNORE_FILES = ['.*', 'README.*']
 DEFAULT_PAGINATION = 20
 
 # Copy the CNAME into root dir for GitHub
-STATIC_PATHS = ['images', 'static', 'extra/CNAME', 'extra/resume.pdf']
+STATIC_PATHS = ['images', 'static', 'extra/CNAME', 'extra/resume.pdf',
+                'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/resume.pdf': {'path':'resume.pdf'},
+    'extra/favicon.ico': {'path':'favicon.ico'},
 }
 ARTICLE_EXCLUDES = ['images', 'static']
