@@ -33,7 +33,7 @@ we conduct an experiment if we:
 (3) so that we can observe the result.
 
 The best example of an experiment I can think of is Ben Franklin
-flying a kite during a lightening storm 
+flying a kite during a lightning storm 
 ([context](https://www.fi.edu/benjamin-franklin/kite-key-experiment)).
 He didn't *know* what was going to happen when he flew the kite
 so he went and found out.
@@ -55,7 +55,7 @@ small differences between experiments.
 
 Controlled experiments are more difficult to setup
 but can help us spot effects more subtle
-than *literally being struck by lightening*.
+than *literally being struck by lightning*.
 
 It might be clearer if I explain how we do this for Firefox:
 
@@ -152,7 +152,7 @@ That graph might look something like this:
 If we do see something like this,
 then it's pretty clear what effect our launch had.
 In reality, this is a very optimistic case.
-Seeing such a clear effect is the equivalent of being struck by lightening.
+Seeing such a clear effect is the equivalent of being struck by lightning.
 It's a big effect and *you know* when it happens.
 
 More often, our metric is much more volatile than this
