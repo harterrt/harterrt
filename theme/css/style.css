@@ -41,6 +41,9 @@ aside div#user_meta ul {
   font-size: .9rem;
   list-style-type: none;
 }
+aside hr {
+  width: 300px;
+}
 aside div#user_meta ul li {
   display: inline;
   line-height: 3em;
@@ -151,6 +154,9 @@ main div#ending_message {
   aside div#user_meta {
     max-width: 192px;
     text-align: right;
+  }
+  aside hr {
+    width: 100%;
   }
   aside div#user_meta ul li {
     display: block;

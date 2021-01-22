@@ -37,7 +37,7 @@ we conduct an experiment if we:
 (2) where we don't know what's going to happen
 (3) so that we can observe the result.&lt;/p&gt;
 &lt;p&gt;The best example of an experiment I can think of is Ben Franklin
-flying a kite during a lightening storm 
+flying a kite during a lightning storm 
 (&lt;a href="https://www.fi.edu/benjamin-franklin/kite-key-experiment"&gt;context&lt;/a&gt;).
 He didn't &lt;em&gt;know&lt;/em&gt; what was going to happen when he flew the kite
 so he went and found out.&lt;/p&gt;
@@ -55,7 +55,7 @@ we know that it was caused by the
 small differences between experiments.&lt;/p&gt;
 &lt;p&gt;Controlled experiments are more difficult to setup
 but can help us spot effects more subtle
-than &lt;em&gt;literally being struck by lightening&lt;/em&gt;.&lt;/p&gt;
+than &lt;em&gt;literally being struck by lightning&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It might be clearer if I explain how we do this for Firefox:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We start by launching a new feature behind a preference (or "pref").
@@ -133,7 +133,7 @@ That graph might look something like this:&lt;/p&gt;
 &lt;p&gt;If we do see something like this,
 then it's pretty clear what effect our launch had.
 In reality, this is a very optimistic case.
-Seeing such a clear effect is the equivalent of being struck by lightening.
+Seeing such a clear effect is the equivalent of being struck by lightning.
 It's a big effect and &lt;em&gt;you know&lt;/em&gt; when it happens.&lt;/p&gt;
 &lt;p&gt;More often, our metric is much more volatile than this
 and our effect is much smaller.
