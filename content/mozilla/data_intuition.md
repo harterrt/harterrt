@@ -67,7 +67,7 @@ By default, a lot of folks interpret this to mean that
 if we invest some time in helping users open accounts
 we'll see an increase in retention.
 Folks with stronger data intuition will instead 
-recognize these results are just correlational (not causational).
+recognize these results are just correlational (not causal).
 
 Users who use the product a lot tend to stick around longer.
 Users who open an account are more active users, thus they retain better.
