@@ -58,7 +58,6 @@ to prove I really do want them to take my comments as optional.
 
 ---
 
-
 <sub>
 [1] I'm focusing on reviewing prose here
 because that's where I spend the most time reviewing.
@@ -66,3 +65,5 @@ Most of my peers are at the level where their analyses are expected to be solid
 and prose is the most impactful part of their work.
 Even so, there are pretty clear corollaries to code review.
 </sub>
+
+*Thanks to [Hamilton Ulmer](https://hamiltonulmer.com/) for reviewing a draft of this post!*
