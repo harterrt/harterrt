@@ -48,7 +48,7 @@ will at least consider whether they should have another cup of coffee
 to improve their health.
 
 "Drinking coffee decreases the risk of prostate cancer"
-is a *causational* statement.
+is a *causal* statement.
 We're saying that drinking coffee *causes* some change in our health.
 However, this paper does not establish causation.
 It is a correlational study, and we all know,
