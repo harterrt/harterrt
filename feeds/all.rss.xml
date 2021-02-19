@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Tue, 05 Jan 2021 00:00:00 -0800</lastBuildDate><item><title>Controlled Experiments - Why Bother?</title><link>https://blog.harterrt.com/why_experiment.html</link><description>&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 21 Jan 2021 00:00:00 -0800</lastBuildDate><item><title>Optional Comments</title><link>https://blog.harterrt.com/opt_comments.html</link><description>&lt;p&gt;I spend a lot of my time at Mozilla reviewing my peers' work.
+It's a joy, but it's hard to do well.
+Review can be a great opportunity for mentorship and growth,
+but it's also an opportunity to be overbearing.
+Striking the right tone is a struggle.&lt;/p&gt;
+&lt;p&gt;Part of the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 21 Jan 2021 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2021-01-21:/opt_comments.html</guid><category>mozilla</category></item><item><title>Controlled Experiments - Why Bother?</title><link>https://blog.harterrt.com/why_experiment.html</link><description>&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
 
 &lt;!-- tweets: I wrote down some notes about why we spend so much energy running controlled experiments at Mozilla --&gt;
 

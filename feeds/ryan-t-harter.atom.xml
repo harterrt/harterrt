@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2021-01-05T00:00:00-08:00</updated><entry><title>Controlled Experiments - Why Bother?</title><link href="https://blog.harterrt.com/why_experiment.html" rel="alternate"></link><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-01-05:/why_experiment.html</id><summary type="html">&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2021-01-21T00:00:00-08:00</updated><entry><title>Optional Comments</title><link href="https://blog.harterrt.com/opt_comments.html" rel="alternate"></link><published>2021-01-21T00:00:00-08:00</published><updated>2021-01-21T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-01-21:/opt_comments.html</id><summary type="html">&lt;p&gt;I spend a lot of my time at Mozilla reviewing my peers' work.
+It's a joy, but it's hard to do well.
+Review can be a great opportunity for mentorship and growth,
+but it's also an opportunity to be overbearing.
+Striking the right tone is a struggle.&lt;/p&gt;
+&lt;p&gt;Part of the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I spend a lot of my time at Mozilla reviewing my peers' work.
+It's a joy, but it's hard to do well.
+Review can be a great opportunity for mentorship and growth,
+but it's also an opportunity to be overbearing.
+Striking the right tone is a struggle.&lt;/p&gt;
+&lt;p&gt;Part of the problem is this implicit push
+for the author to incorporate every review comment into the document [1].
+For example, comments must be marked as "resolved"
+which suggests the author took some action.
+I see this reflected in our culture too.
+Consider this &lt;a href="https://hbswk.hbs.edu/item/ignore-this-advice-at-your-own-peril"&gt;HBR article&lt;/a&gt;
+that highlights the risk of jilting peers by ignoring their advice.&lt;/p&gt;
+&lt;p&gt;This bums me out.
+I don't want the author to feel beholden to my comments.
+My goal is to give the author as much context as I can.
+Often that means my comments won't require any changes to the document.&lt;/p&gt;
+&lt;h3&gt;Examples&lt;/h3&gt;
+&lt;p&gt;For example, when reviewing a project document I might note
+that someone else has some related prior art.
+There's no need to incorporate this into the document.
+I'm arming the author with context 
+in case it comes up in a future conversation.&lt;/p&gt;
+&lt;p&gt;In another example, 
+I might be reviewing an analysis that has already passed its peak relevance.
+It may not make sense to make edits if the document is already going stale.
+Data scientists are in a constant race against irrelevance.
+It's better to focus on the next piece of work.
+&lt;!--We need to get results to stakeholders before the opportunity passes.--&gt;&lt;/p&gt;
+&lt;p&gt;In this situation I still want to leave lots of comments
+if my comments can improve future analyses.
+Some comments might look like: 
+"Heads up, we have helper functions in another library 
+to automatically do this transformation".
+There's no need to refactor the already complete analysis,
+but the tip is still useful to the author.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;I don't have a silver bullet for this problem.
+I can only recommend talking with your peers
+about what kind of feedback they want to receive.
+I find folks are usually happy to get more feedback
+so long as they understand my intent.&lt;/p&gt;
+&lt;p&gt;Hopefully I can point folks to this post in the future
+to prove I really do want them to take my comments as optional.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;sub&gt;
+[1] I'm focusing on reviewing prose here
+because that's where I spend the most time reviewing.
+Most of my peers are at the level where their analyses are expected to be solid
+and prose is the most impactful part of their work.
+Even so, there are pretty clear corollaries to code review.
+&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to &lt;a href="https://hamiltonulmer.com/"&gt;Hamilton Ulmer&lt;/a&gt; 
+and &lt;a href="https://marissagorlick.org/#!/posts"&gt;Marissa Gorlick&lt;/a&gt;
+for reviewing drafts of this post!&lt;/em&gt;&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Controlled Experiments - Why Bother?</title><link href="https://blog.harterrt.com/why_experiment.html" rel="alternate"></link><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-01-05:/why_experiment.html</id><summary type="html">&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
 
 &lt;!-- tweets: I wrote down some notes about why we spend so much energy running controlled experiments at Mozilla --&gt;
 
@@ -502,7 +560,7 @@ By default, a lot of folks interpret this to mean that
 if we invest some time in helping users open accounts
 we'll see an increase in retention.
 Folks with stronger data intuition will instead 
-recognize these results are just correlational (not causational).&lt;/p&gt;
+recognize these results are just correlational (not causal).&lt;/p&gt;
 &lt;p&gt;Users who use the product a lot tend to stick around longer.
 Users who open an account are more active users, thus they retain better.
 Users who &lt;em&gt;crash&lt;/em&gt; Firefox are more active users, and also retain &lt;em&gt;better&lt;/em&gt;.&lt;/p&gt;

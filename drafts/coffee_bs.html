@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Harter writes about data">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="data-intuition, coffee">
+
+  <title>
+    blog.harterrt.com
+&ndash; Data Intuition Case Study: Coffee Consumption  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Principal Data Scientist @ Mozilla</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://harterrt.substack.com/">Newsletter</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <hr>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+        <li><a href="/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/drafts/coffee_bs.html">Data Intuition Case Study: Coffee Consumption</a></h1>
+  </div>
+  <div class="article_text">
+    <p>I found this whitepaper on the front page of Hacker News a few weeks ago:
+<a href="https://bmjopen.bmj.com/content/11/2/e038902">Coffee consumption and risk of prostate cancer</a>.</p>
+<p>My data intuition started raising alarms immediately.
+So much so that I expect 
+most data professionals immediately write this study off as bullshit.
+To verify, I sent the paper to some of my peers and got similar feedback.</p>
+<p>This is a great opportunity to work through the paper 
+and demonstrate where my intuition triggers.
+Think of this as a case study on <a href="/data_intuition.html">data intuition</a>.
+I hope to write a few of these case studies.
+Hopefully folks will be able to use these case studies to 
+develop their intuition and spot common data problems.</p>
+<p>The paper is pretty easy to read. 
+It's only 8 pages long with a lot of graphics.
+I encourage you to give it a skim and form your own opinions.
+Keep in mind, there's nothing <em>wrong</em> with this paper.
+I'm not calling for a retraction.
+It's just at risk of being misinterpreted.</p>
+<p>We're going to be discussing health-related topics,
+so I find it necessary to note that this is not medical advice.
+I am not a doctor, which means I am not <em>your</em> doctor.
+This is an article on data <em>intuition</em>,
+which means I didn't even read this paper all that carefully.
+Caveat lector.</p>
+<p>With that out of the way, let's dig in!</p>
+<h2>Correlation != Causation</h2>
+<p>This is the first alarm that went off in my head,
+so it's our first topic.</p>
+<p>The authors are careful to never state this directly,
+but the paper begs to be read as,
+"Drinking coffee decreases the risk of prostate cancer".
+I expect most people who read this paper 
+will at least consider whether they should have another cup of coffee
+to improve their health.</p>
+<p>"Drinking coffee decreases the risk of prostate cancer"
+is a <em>causal</em> statement.
+We're saying that drinking coffee <em>causes</em> some change in our health.
+However, this paper does not establish causation.
+It is a correlational study, and we all know,
+"Correlation does not imply causation"</p>
+<p>I've harped on this before in <a href="/why_experiment.html">this piece</a> on experimentation.
+I want to give this point extra attention,
+because lot's of people seem to know catch phrase
+but don't apply it in practice.
+To establish causation, we'd need something like a controlled experiment.</p>
+<p>The logical jump from correlation to causation <em>feels</em> natural.
+We <em>want</em> to extend the pattern.
+I encourage you to resist this urge. 
+More often than not, this instinct is faulty.
+A careful skepticism will serve you well when working with data.</p>
+<p>Don't get me wrong, there certainly <em>could</em> be a causal relationship here.
+We just haven't looked hard enough to know.</p>
+<p>This isn't a free pass to throw away the research.
+Gordon Shotwell has a great quote to this point
+in his post on Vitamin D and COVID-19:</p>
+<blockquote>
+<p>"There’s a particular type of person on the internet 
+who sees a graph like this 
+and reaches deep into their data science boot-camp memories 
+to exclaim 'Correlation doesn't imply causation!'"</p>
+<p>-- Gordon Shotwell, <a href="https://shotwell.ca/posts/supplment_vitamin_d/">Vitamin D and Covid: We don't need to wait for more data</a></p>
+</blockquote>
+<p>As always, there's also a relevant XKCD:</p>
+<blockquote>
+<p>Correlation doesn't imply causation, 
+but it does waggle its eyebrows [...] while mouthing "look over there" 
+<a href="https://xkcd.com/552/">https://xkcd.com/552/</a></p>
+</blockquote>
+<p>Data intuition is a balance of championing data while remaining a skeptic.
+Let's review the particulars of the paper
+and decide whether we believe the results.</p>
+<h2>... The highest category of coffee consumption</h2>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Sun 31 January 2021</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+ &ndash; Tags:
+      <a href="https://blog.harterrt.com/tag/data-intuition.html">data-intuition</a>,      <a href="https://blog.harterrt.com/tag/coffee.html">coffee</a>    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>blog@harterrt.com</code>.
+        Look forward to hearing from you!
+    <p>
+        Want to get notified next time I publish something?
+        Sign up for 
+        <a href="https://harterrt.substack.com/">my newsletter here</a>.
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

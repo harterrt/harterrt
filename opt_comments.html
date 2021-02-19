@@ -62,7 +62,7 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="https://blog.harterrt.com/drafts/opt_comments.html">Optional Comments</a></h1>
+    <h1><a href="https://blog.harterrt.com/opt_comments.html">Optional Comments</a></h1>
   </div>
   <div class="article_text">
     <p>I spend a lot of my time at Mozilla reviewing my peers' work.
@@ -80,12 +80,35 @@ that highlights the risk of jilting peers by ignoring their advice.</p>
 <p>This bums me out.
 I don't want the author to feel beholden to my comments.
 My goal is to give the author as much context as I can.
-Often that means my comments won't <em>require</em> any changes to the document.</p>
+Often that means my comments won't require any changes to the document.</p>
+<h3>Examples</h3>
 <p>For example, when reviewing a project document I might note
 that someone else has some related prior art.
-There's no need to incorporate this into the document,
-but it's useful for the author to know that the past work exists
-in case it comes up in conversation.</p>
+There's no need to incorporate this into the document.
+I'm arming the author with context 
+in case it comes up in a future conversation.</p>
+<p>In another example, 
+I might be reviewing an analysis that has already passed its peak relevance.
+It may not make sense to make edits if the document is already going stale.
+Data scientists are in a constant race against irrelevance.
+It's better to focus on the next piece of work.
+<!--We need to get results to stakeholders before the opportunity passes.--></p>
+<p>In this situation I still want to leave lots of comments
+if my comments can improve future analyses.
+Some comments might look like: 
+"Heads up, we have helper functions in another library 
+to automatically do this transformation".
+There's no need to refactor the already complete analysis,
+but the tip is still useful to the author.</p>
+<h3>Conclusion</h3>
+<p>I don't have a silver bullet for this problem.
+I can only recommend talking with your peers
+about what kind of feedback they want to receive.
+I find folks are usually happy to get more feedback
+so long as they understand my intent.</p>
+<p>Hopefully I can point folks to this post in the future
+to prove I really do want them to take my comments as optional.</p>
+<hr />
 <p><sub>
 [1] I'm focusing on reviewing prose here
 because that's where I spend the most time reviewing.
@@ -93,6 +116,9 @@ Most of my peers are at the level where their analyses are expected to be solid
 and prose is the most impactful part of their work.
 Even so, there are pretty clear corollaries to code review.
 </sub></p>
+<p><em>Thanks to <a href="https://hamiltonulmer.com/">Hamilton Ulmer</a> 
+and <a href="https://marissagorlick.org/#!/posts">Marissa Gorlick</a>
+for reviewing drafts of this post!</em></p>
   </div>
   <div class="article_meta">
     <p>Posted on: Thu 21 January 2021</p>
