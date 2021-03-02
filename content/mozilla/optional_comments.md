@@ -1,7 +1,6 @@
 title: Optional Comments
 date: 2021-01-21
 slug: opt_comments
-status: draft
 
 I spend a lot of my time at Mozilla reviewing my peers' work.
 It's a joy, but it's hard to do well.
@@ -66,4 +65,6 @@ and prose is the most impactful part of their work.
 Even so, there are pretty clear corollaries to code review.
 </sub>
 
-*Thanks to [Hamilton Ulmer](https://hamiltonulmer.com/) for reviewing a draft of this post!*
+*Thanks to [Hamilton Ulmer](https://hamiltonulmer.com/) 
+and [Marissa Gorlick](https://marissagorlick.org/#!/posts)
+for reviewing drafts of this post!*
