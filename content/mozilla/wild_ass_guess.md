@@ -4,12 +4,9 @@ date: 2021-02-20
 status: draft
 
 My peers are currently running workshops on *opportunity sizing*.
-If you're unfamiliar, 
-opportunity sizing is when you take some broad guesses 
-at how impactful some new piece of work might be
-before writing any code.
-
-Why? Our immediate goal is discaring projects that aren't worth the effort.
+We're encouraging our peers to take educated guesses
+about how impactful a new project may be
+before dedicating any work.
 We want to **make sure the juice is worth the squeeze**
 before we do any work.
 
@@ -61,97 +58,6 @@ Your 10th opp sizing will be better than your first.
 
 I _am_ wrong. It doesn't matter.
 
----
-
-My peers are currently running workshops on *opportunity sizing*.
-If you're unfamiliar, 
-opportunity sizing is when you take some broad guesses 
-at how impactful some new piece of work might be.
-
-Why spend the time guessing?
-Our immediate goal is discaring projects that aren't worth the effort
-*before we write any code*.
-We want to make sure the juice is worth the squeeze.
-
-Last year we were surprised by the results of 
-a big A/B test we ran
-(I mentioned [this experiment before](/why_experiment.html)).
-Unfortunately, we didn't see the impact we were hoping for.
-It was pretty clear *why* we weren't seeing that impact
-once we did some back-of-the-napkin math.
-Our feature just didn't affect enough users.
-
-At this point it was too late; we'd already done the work.
-Now we're trying to build the habit of doing this back-of-the-napkin math
-earlier in the product lifecycle.
-
-## An example
-
-Let me share a great example of applying opportunity sizing
-that my collegue [Marissa](https://marissagorlick.org/) found.
-
-We were considering whether to promote 
-[Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/)
-on our mobile browser, 
-[Fenix](https://play.google.com/store/apps/details?id=org.mozilla.firefox).
-We know that users who sign into a Firefox account 
-tend to retain better than users who don't.
-The idea is that if we can get more users to sign up for accounts
-they'll be happier with the browser and stick around longer.
-There's a lot of fuzzy logic there,
-but stick with me [1].
-
-Before we do any real work,
-let's take a very high-level look at some data
-to see what type of upside this promotion might give us
-in the best-case scenario.
-
-The following table report the number of usrs,
-and Week over Week (WoW) retention for Fenix users,
-stratified by whether the user is signed into a Sync account:
-
-<table width=400em>
-  <tr>
-    <th align='left'>Group</th>
-    <th align='right'>Weekly Users</th>
-    <th align='right'>WoW Retention</th>
-  <tr>
-  <tr>
-    <td align='left'>Not Using Sync</td>
-    <td align='right'>3,082,979</td>
-    <td align='right'>30.45%</td>
-  <tr>
-  <tr>
-    <td align='left'>Using Sync</td>
-    <td align='right'>6,622</td>
-    <td align='right'>39.95%</td>
-  <tr>
-</table>
-
-At first glance, this looks like a big opportunity.
-There's a 9% difference in WoW Retention, which is _huge_.
-We'd be thrilled if we could cause a 1% increase in retention.
-
-There are also a lot of eligible users.
-We wouldn't have as much upside if all of our users were already using Sync.
-Fortunately(?), it appears that almost none of our users are signed into Sync.
-
-
-
-
-
-
----
-
-
-
-Right off the bat, we can see that Sync is a reletively rare feature on Fenix.
-Just ~0.2% of users are signed in.
-But, there _is_ a sizable difference in retention: ~9%.
-
-The proposed promotion would effectively show users a notification
-encouraging the user to sign up for a Sync account.
-In the past 
  
 ---
 
