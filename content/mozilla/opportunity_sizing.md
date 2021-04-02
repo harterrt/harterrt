@@ -1,4 +1,4 @@
-title: Is the Juice Worth the Squeeze?
+title: Opportunity Sizing: Is the Juice Worth the Squeeze?
 slug: opportunity_sizing
 date: 2021-03-26
 status: draft
