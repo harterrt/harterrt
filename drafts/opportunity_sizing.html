@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Harter writes about data">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; Opportunity Sizing: Is the Juice Worth the Squeeze?  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Principal Data Scientist @ Mozilla</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://harterrt.substack.com/">Newsletter</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <hr>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+        <li><a href="/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/drafts/opportunity_sizing.html">Opportunity Sizing: Is the Juice Worth the Squeeze?</a></h1>
+  </div>
+  <div class="article_text">
+    <p>My peers at Mozilla are running workshops on <em>opportunity sizing</em>.
+If you're unfamiliar, 
+opportunity sizing is when you take some broad guesses 
+at how impactful some new project might be before writing any code.
+This gives you a rough estimate of what the upside for this work might be.</p>
+<p>The goal here is to <strong>discard projects that aren't worth the effort</strong>.
+We want to make sure the juice is worth the squeeze
+<em>before we do any work</em>.</p>
+<p>If this sounds simple, it is. If it sounds less-than-scientific, it is!
+There's a lot of confusion around why we do opportunity sizing,
+so here's a blog post.</p>
+<h2>The Motivation</h2>
+<p>Last year we ran a huge A/B test over a full Firefox release
+(I mentioned <a href="/why_experiment.html">this experiment before</a>).
+Unfortunately, we didn't see the impact we were hoping for
+when we reviewed the results.</p>
+<p>It was clear <em>why</em> we weren't seeing that impact
+once we did some back-of-the-napkin math.
+Our features just didn't affect a broad enough set of users.</p>
+<p>I've fallen into this trap myself.
+I've developed a pretty good sense of how much effort
+a piece of technical work will take.
+However, I find I don't have a great intuition
+about how <em>impactful</em> a project will be.</p>
+<p>Instead, my brain seems to group all new projects into one of two categories:
+"Good thing to do" and "Pain in the a**" (PITA).
+A feature is generally a "good thing to do" 
+if it would improve the product.
+On the other hand, it's a PITA if we're trying to 
+contort the product into doing something it isn't meant to do.</p>
+<p>Here's a doodle-graph to summarize.
+Each dot is a project:</p>
+<p><center>
+  <img width="75%" src="/images/opp_sizing/good_or_pita.png" alt="Good thing to do or PITA?">
+  </img>
+</center></p>
+<p>On the surface this may seem fine, but it's a pretty bad heuristic in practice.</p>
+<p>I'm not concerned about ignoring projects that look like a PITA.
+This isn't great, but usually someone will make some noise 
+if I'm ignoring an important project.</p>
+<p>On the other hand, <strong>projects in the "good thing to do" bucket are <em>dangerous</em>.</strong>
+Sure, this bucket has some good projects,
+but there are usually even <em>more</em> projects that aren't worth the effort.
+These are the projects that are "nice-to-haves" and hard to say "no" to.
+If you work on one of these projects,
+nobody's going to tell you you're wasting your time.</p>
+<p>When choosing our work, we need to set the bar higher than "good thing to do".
+A feature needs to be designed, built, and released.
+If we're not careful, these costs can far outweigh any possible upside.
+There's also the opportunity cost—
+all the time we spend working on a "good thing to do"
+keeps us from working on more important projects.</p>
+<p>Instead of just looking at whether a project has <em>some</em> value,
+we need to <strong>make sure the value is greater than the cost</strong>.
+On our graph that would look like this:</p>
+<p><center>
+  <img width="100%" src="/images/opp_sizing/worth_it_full.png" alt="Is it actually worth the squeeze?">
+  </img>
+</center></p>
+<p>Only some of the "good things to do" are actually worth doing.
+The rest have <em>some</em> value, 
+but would take too much effort to make it worth while.</p>
+<p>This also means we can't just work on 
+whatever project has the most upside.
+Sometimes, all of the available projects 
+are below the line (not worth the squeeze).
+In that case, it can be better to focus on finding more opportunities.</p>
+<p>In short, picking arbitrary projects that are "good things to do"
+is a great way to waste a lot of time.</p>
+<h2>A Framework for Mozilla</h2>
+<p>Opportunity sizing helps us break free from this default heuristic
+and think about our projects with more structure.
+The framework seems too simple to yield any real insight,
+but I'm consistently surprised at how helpful it can be.</p>
+<p>In this way, opportunity sizing is like a checklist in its
+<a href="https://www.nytimes.com/2009/12/24/books/24book.html">unreasonable effectiveness</a>.</p>
+<p>The framework we use at Mozilla 
+needs three basic ingredients to size an opportunity:</p>
+<ol>
+<li>How many users could this project affect?</li>
+<li>What percent of users are going to change?</li>
+<li>How will those users change?</li>
+</ol>
+<p>We usually have pretty solid data for #1 
+(How many users could this affect?).
+For numbers 2 and 3 we're looking for guesses
+that do a good job of communicating our assumptions.
+These guesses are informed by data, but are usually less-than-scientific.</p>
+<p>Multiplying 1x2x3 gets us to a place where we can have a conversation.</p>
+<h1>But isn't that subjective?</h1>
+<p>Yup. But subjective analyses can still be useful.</p>
+<p>To start, guessing at the opportunity size helps clarify our assumptions
+and identify weak assumptions early-on.
+Even better, this framework is a <strong>useful communication tool</strong>.
+"We don't have data, but this feels right"
+is good enough at this stage.</p>
+<p>It <em>does</em> have to <em>feel</em> right though.
+Hopefully you're sharing these results with your peers.
+They can gut-check your work and you can together build a shared opinion.
+If your numbers are outrageous,
+you'll need to be able to defend them.</p>
+<p>There's often concern that ambitious coworkers are going to
+oversell their opportunity to prioritize their pet-project.
+In my experience, there's not much incentive to do this.
+Eventually we either recognize over-hyped numbers and redirect the project
+or get underwhelming results from the launch and learn our lesson the hard way.</p>
+<h1>But what if you're wrong?</h1>
+<p>I <em>am</em> wrong. It doesn't matter.</p>
+<p>First, this analysis should <em>not</em> be the entirety of our decision making process.
+It's a tool to break through some common biases when choosing work.</p>
+<p>Second, these analyses can (and should) 
+grow with our commitment to the project.</p>
+<p>When we're early in the product life-cycle, we can make very rough estimates.
+As the project matures and we learn more,
+these analyses should mature as well.
+When we're deciding whether to commit 20 engineers for 6 months,
+we should have more confidence in our estimates.</p>
+<p>We'll get better at this as we build more intuition.
+Our tenth opportunity sizing will be better than our first.</p>
+<hr />
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Fri 09 April 2021</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/mozilla.html">mozilla</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>blog@harterrt.com</code>.
+        Look forward to hearing from you!
+    <p>
+        Want to get notified next time I publish something?
+        Sign up for 
+        <a href="https://harterrt.substack.com/">my newsletter here</a>.
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>
