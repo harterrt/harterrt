@@ -1,6 +1,6 @@
 title: Opportunity Sizing: Is the Juice Worth the Squeeze?
 slug: opportunity_sizing
-date: 2021-03-26
+date: 2021-04-09
 status: draft
 
 My peers at Mozilla are running workshops on *opportunity sizing*.
@@ -62,10 +62,10 @@ These are the projects that are "nice-to-haves" and hard to say "no" to.
 If you work on one of these projects,
 nobody's going to tell you you're wasting your time.
 
-The cut-off for "good thing to do" is just too low.
+When choosing our work, we need to set the bar higher than "good thing to do".
 A feature needs to be designed, built, and released.
-That cost often dwarfs any possible upside.
-There's also the opportunity cost -
+If we're not careful, these costs can far outweigh any possible upside.
+There's also the opportunity cost—
 all the time we spend working on a "good thing to do"
 keeps us from working on more important projects.
 
@@ -94,9 +94,9 @@ is a great way to waste a lot of time.
 ## A Framework for Mozilla
 
 Opportunity sizing helps us break free from this default heuristic
-and think about our projects more objectively.
+and think about our projects with more structure.
 The framework seems too simple to yield any real insight,
-but I'm consistently surprised with how helpful it can be.
+but I'm consistently surprised at how helpful it can be.
 
 In this way, opportunity sizing is like a checklist in its
 [unreasonable effectiveness](https://www.nytimes.com/2009/12/24/books/24book.html).
@@ -145,7 +145,7 @@ I _am_ wrong. It doesn't matter.
 First, this analysis should *not* be the entirety of our decision making process.
 It's a tool to break through some common biases when choosing work.
 
-Second, these analysis can (and should) 
+Second, these analyses can (and should) 
 grow with our commitment to the project.
 
 When we're early in the product life-cycle, we can make very rough estimates.
@@ -155,7 +155,7 @@ When we're deciding whether to commit 20 engineers for 6 months,
 we should have more confidence in our estimates.
 
 We'll get better at this as we build more intuition.
-Our 10th opporunity sizing will be better than our first.
+Our tenth opportunity sizing will be better than our first.
 
 ---
 
