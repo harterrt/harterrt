@@ -28,79 +28,112 @@ It was clear *why* we weren't seeing that impact
 once we did some back-of-the-napkin math.
 Our features just didn't affect a broad enough set of users.
 
-This is a trap I've fallen into before too.
+I've fallen into this trap myself.
 I've developed a pretty good sense of how much effort
 a piece of technical work will take.
 However, I find I don't have a great intuition
 about how *impactful* a project will be.
 
 Instead, my brain seems to group all new projects into one of two categories:
-"Good thing to do" and "Pain in the a**".
+"Good thing to do" and "Pain in the a**" (PITA).
 A feature is generally a "good thing to do" 
 if it would improve the product.
 On the other hand, it's a PITA if we're trying to 
 contort the product into doing something it isn't meant to do.
 
+Here's a doodle-graph to summarize.
+Each dot is a project:
+
+<center>
+  <img width="75%" src="/images/opp_sizing/good_or_pita.png" alt="Good thing to do or PITA?">
+  </img>
+</center>
+
 On the surface this may seem fine, but it's a pretty bad heuristic in practice.
-Surprisingly, the "good think to do" bucket is more dangerous.
-While there are some great projects in this bucket,
-it's primarily filled with features 
-that are nice-to-have and hard to say "No" to.
-These nice-to-have features are usually not worth the effort.
+
+I'm not concerned about ignoring projects that look like a PITA.
+This isn't great, but usually someone will make some noise 
+if I'm ignoring an important project.
+
+On the other hand, **projects in the "good thing to do" bucket are *dangerous*.**
+Sure, this bucket has some good projects,
+but there are usually even *more* projects that aren't worth the effort.
+These are the projects that are "nice-to-haves" and hard to say "no" to.
+If you work on one of these projects,
+nobody's going to tell you you're wasting your time.
 
 The cut-off for "good thing to do" is just too low.
-To start, a feature needs to be designed, built, and released.
-That significant cost often dwarfs the possible upside.
-There's also the opportunity cost.
-All the time we spend working on an arbitrary "good thing to do"
-detracts from our ability to work on more important projects [1].
+A feature needs to be designed, built, and released.
+That cost often dwarfs any possible upside.
+There's also the opportunity cost -
+all the time we spend working on a "good thing to do"
+keeps us from working on more important projects.
 
-In short, picking arbitrary projects
-from the projects that are "good things to do"
+Instead of just looking at whether a project has *some* value,
+we need to **make sure the value is greater than the cost**.
+On our graph that would look like this:
+
+<center>
+  <img width="100%" src="/images/opp_sizing/worth_it_full.png" alt="Is it actually worth the squeeze?">
+  </img>
+</center>
+
+Only some of the "good things to do" are actually worth doing.
+The rest have *some* value, 
+but would take too much effort to make it worth while.
+
+This also means we can't just work on 
+whatever project has the most upside.
+Sometimes, all of the available projects 
+are below the line (not worth the squeeze).
+In that case, it can be better to focus on finding more opportunities.
+
+In short, picking arbitrary projects that are "good things to do"
 is a great way to waste a lot of time.
 
 ## A Framework for Mozilla
 
-Opportunity sizing helps us break free from our default heuristic
-and think about projects more objectively.
+Opportunity sizing helps us break free from this default heuristic
+and think about our projects more objectively.
 The framework seems too simple to yield any real insight,
 but I'm consistently surprised with how helpful it can be.
-In this way, opportunity sizing is like a checklist in its
-[unreasonably effectiveness](https://www.nytimes.com/2009/12/24/books/24book.html).
 
-For the framework my peers developed,
-there are three basic incredients we need to size an opportunity:
+In this way, opportunity sizing is like a checklist in its
+[unreasonable effectiveness](https://www.nytimes.com/2009/12/24/books/24book.html).
+
+The framework we use at Mozilla 
+needs three basic ingredients to size an opportunity:
 
 1. How many users could this project affect?
-2. How many users are going to change?
+2. What percent of users are going to change?
 3. How will those users change?
 
-At Mozilla, we usually have pretty solid data for #1 
+We usually have pretty solid data for #1 
 (How many users could this affect?).
 For numbers 2 and 3 we're looking for guesses
-that do a good job of communicating our assumptions about the project.
-These guesses are informed by data, but are less than scientific.
+that do a good job of communicating our assumptions.
+These guesses are informed by data, but are usually less-than-scientific.
 
-Multiplying 1*2*3 gets us to a place where we can have a conversation.
+Multiplying 1x2x3 gets us to a place where we can have a conversation.
 
 # But isn't that subjective?
 
 Yup. But subjective analyses can still be useful.
 
 To start, guessing at the opportunity size helps clarify our assumptions
-and identify weak assumptions early.
-Even better, this framework is a **usefull communication tool**.
+and identify weak assumptions early-on.
+Even better, this framework is a **useful communication tool**.
 "We don't have data, but this feels right"
 is good enough at this stage.
 
-It _does_ have to _feel right_ though.
-Hopefully you're sharing these results with peers.
+It _does_ have to _feel_ right though.
+Hopefully you're sharing these results with your peers.
 They can gut-check your work and you can together build a shared opinion.
 If your numbers are outrageous,
 you'll need to be able to defend them.
 
 There's often concern that ambitious coworkers are going to
-oversell their opportunity to prioritize their pet project.
+oversell their opportunity to prioritize their pet-project.
 In my experience, there's not much incentive to do this.
 Eventually we either recognize over-hyped numbers and redirect the project
 or get underwhelming results from the launch and learn our lesson the hard way.
@@ -110,12 +143,12 @@ or get underwhelming results from the launch and learn our lesson the hard way.
 I _am_ wrong. It doesn't matter.
 
 First, this analysis should *not* be the entirety of our decision making process.
-It's a tool to break through some common biases when choosing project work.
+It's a tool to break through some common biases when choosing work.
 
 Second, these analysis can (and should) 
 grow with our commitment to the project.
 
-When we're early in the product lifecycle, we can make very rough estimates.
+When we're early in the product life-cycle, we can make very rough estimates.
 As the project matures and we learn more,
 these analyses should mature as well.
 When we're deciding whether to commit 20 engineers for 6 months,
@@ -126,7 +159,3 @@ Our 10th opporunity sizing will be better than our first.
 
 ---
 
-<sup>1</sup> This does *not* mean we should sort all known problems 
-by opportunity and commit to working on the projects at the top of the stack.
-Sometimes, all of the available projects are below the line (not worth the squeeze).
-In that case, it can be better to focus on finding more opportunities.
