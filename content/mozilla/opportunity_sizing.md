@@ -1,7 +1,6 @@
 title: Opportunity Sizing: Is the Juice Worth the Squeeze?
 slug: opportunity_sizing
-date: 2021-04-09
-status: draft
+date: 2021-04-15 13:00
 
 My peers at Mozilla are running workshops on *opportunity sizing*.
 If you're unfamiliar, 
