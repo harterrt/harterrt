@@ -1,8 +1,36 @@
 title: Data Intuition Case Study: Coffee Consumption
 date:2021-01-31
 slug: coffee_bs
-tags: data-intuition,coffee
+tags: data-intuition,coffee,case-study
 status: draft
+
+
+I'm working on a set of trainings that will help non-data-practitioners
+build [data intuition](/data_intuition.html).
+This is a hard thing to do.
+Most data professionals build their intuition the hard way.
+By working with lots of messy and misleading data.
+Over time they build a muscle that helps them guide analyses to success
+and avoid past pitfalls.
+
+But how do you bootstrap that skill?
+Most folks can't afford to constantly make mistakes at work.
+We want to build these skills without risking our jobs.
+
+Getting started is *hard*.
+Making continued mistakes is frustrating.
+At first, you don't make any progress. It's all errors.
+Like walking through a dark room filled with coffee tables.
+
+We can make this easier.
+
+Current programs focus on building hard skills like statistics or programming.
+
+
+
+
+
+---
 
 I found this whitepaper on the front page of Hacker News a few weeks ago:
 [Coffee consumption and risk of prostate cancer](https://bmjopen.bmj.com/content/11/2/e038902).
