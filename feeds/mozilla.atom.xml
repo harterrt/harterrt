@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2021-04-15T13:00:00-07:00</updated><entry><title>Opportunity Sizing: Is the Juice Worth the Squeeze?</title><link href="https://blog.harterrt.com/opportunity_sizing.html" rel="alternate"></link><published>2021-04-15T13:00:00-07:00</published><updated>2021-04-15T13:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-04-15:/opportunity_sizing.html</id><summary type="html">&lt;p&gt;My peers at Mozilla are running workshops on &lt;em&gt;opportunity sizing&lt;/em&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - mozilla</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/mozilla.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2021-06-03T00:00:00-07:00</updated><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/invisible-work.html" rel="alternate"></link><published>2021-06-03T00:00:00-07:00</published><updated>2021-06-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-06-03:/invisible-work.html</id><summary type="html">&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
+on "Getting Credit for Invisible Work".
+The csv,conf organizers just published a 
+&lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;recording of the talk&lt;/a&gt;.
+(&lt;a href="https://blog.harterrt.com/static/invisible_work_preso/#p1"&gt;slides here&lt;/a&gt;).
+Give it a watch! It's only 20m long (including the Q&amp;amp;A).&lt;/p&gt;
+&lt;p&gt;Invisible work is a concept I've been trying to pin …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
+on "Getting Credit for Invisible Work".
+The csv,conf organizers just published a 
+&lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;recording of the talk&lt;/a&gt;.
+(&lt;a href="https://blog.harterrt.com/static/invisible_work_preso/#p1"&gt;slides here&lt;/a&gt;).
+Give it a watch! It's only 20m long (including the Q&amp;amp;A).&lt;/p&gt;
+&lt;p&gt;Invisible work is a concept I've been trying to pin down for a while.
+I've found that a lot of the hard important work 
+that goes into producing good data analysis is &lt;em&gt;invisible&lt;/em&gt;.
+Nobody ever sees the hypotheses we discard when doing EDA.
+Nobody ever sees the problems we avoid with our intuition.&lt;/p&gt;
+&lt;p&gt;We explore complex data, so we can distill our findings into a simple narrative.
+If we’re doing it right, we make our work look simple.
+This is super valuable, 
+but can cause problems when we try to demonstrate our value.
+This talk covers some strategies for getting credit
+for this super valuable but invisible work.&lt;/p&gt;
+&lt;p&gt;Here's a link to &lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;the recording&lt;/a&gt;.
+I have a copy of
+&lt;a href="https://blog.harterrt.com/static/invisible_work_preso/#p1"&gt;my slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Opportunity Sizing: Is the Juice Worth the Squeeze?</title><link href="https://blog.harterrt.com/opportunity_sizing.html" rel="alternate"></link><published>2021-04-15T13:00:00-07:00</published><updated>2021-04-15T13:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-04-15:/opportunity_sizing.html</id><summary type="html">&lt;p&gt;My peers at Mozilla are running workshops on &lt;em&gt;opportunity sizing&lt;/em&gt;.
 If you're unfamiliar, 
 opportunity sizing is when you take some broad guesses 
 at how impactful some new project might be before writing any code.

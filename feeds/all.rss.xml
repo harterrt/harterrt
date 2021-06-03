@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 15 Apr 2021 13:00:00 -0700</lastBuildDate><item><title>Opportunity Sizing: Is the Juice Worth the Squeeze?</title><link>https://blog.harterrt.com/opportunity_sizing.html</link><description>&lt;p&gt;My peers at Mozilla are running workshops on &lt;em&gt;opportunity sizing&lt;/em&gt;.
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Jun 2021 00:00:00 -0700</lastBuildDate><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/invisible-work.html</link><description>&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
+on "Getting Credit for Invisible Work".
+The csv,conf organizers just published a 
+&lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;recording of the talk&lt;/a&gt;.
+(&lt;a href="https://blog.harterrt.com/static/invisible_work_preso/#p1"&gt;slides here&lt;/a&gt;).
+Give it a watch! It's only 20m long (including the Q&amp;amp;A).&lt;/p&gt;
+&lt;p&gt;Invisible work is a concept I've been trying to pin …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Jun 2021 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2021-06-03:/invisible-work.html</guid><category>mozilla</category></item><item><title>Opportunity Sizing: Is the Juice Worth the Squeeze?</title><link>https://blog.harterrt.com/opportunity_sizing.html</link><description>&lt;p&gt;My peers at Mozilla are running workshops on &lt;em&gt;opportunity sizing&lt;/em&gt;.
 If you're unfamiliar, 
 opportunity sizing is when you take some broad guesses 
 at how impactful some new project might be before writing any code.
