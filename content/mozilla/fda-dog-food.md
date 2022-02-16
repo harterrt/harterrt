@@ -3,8 +3,6 @@ slug: fda-dog-food
 date: 2022-02-17
 status: draft
 
-# Case Study: Grain-free Dog Food
-
 My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
 Cardiomyopathy (DCM). This set off my bullshit detector, so I decided to dig
@@ -44,10 +42,10 @@ dogs are almost uniformly eating grain-free. Maybe it's that simple?
 
 ## But how, though?
 
-It doesn't look that simple though. The FDA says DCM is usually either genetic
+It doesn't look that simple. The FDA says DCM is usually either genetic
 or caused by a taurine deficiency. The FDA's tests show the grain-free dog
 foods aren't missing any important nutrients. Even weirder, Google says taurine
-comes primarily from _meat_ and definitely _not_ from grain. How could
+comes primarily from _meat_ and definitely not from grain. How could
 _removing_ grain cause a taurine deficiency? The opposite seems more likely.
 
 It sounds like the current hypothesis is that replacing corn and wheat with
@@ -105,7 +103,7 @@ buy expensive dog food". Maybe I'll call this an "Affluence Bias".
 Zooming out, this looks to be a rare disease. The FDA announced they were
 investigating grain-free dog food in July 2018. Up to April 2019 the FDA
 received 515 reports of canine DCM and they estimate there are 77 million pet
-dogs in the US. That's \~0.0007% of dogs per year.
+dogs in the US. That's ~0.0007% of dogs per year.
 
 Even if the real case count is 100x bigger than the reported case count, that's
 still less than a tenth of a percent of all dogs. I think it's safe to call
