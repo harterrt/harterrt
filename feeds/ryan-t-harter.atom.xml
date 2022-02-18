@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2021-06-03T00:00:00-07:00</updated><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/invisible-work.html" rel="alternate"></link><published>2021-06-03T00:00:00-07:00</published><updated>2021-06-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-06-03:/invisible-work.html</id><summary type="html">&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2022-02-18T00:00:00-08:00</updated><entry><title>Data Intuition Case Study: Grain-free Dog Food</title><link href="https://blog.harterrt.com/fda-dog-food.html" rel="alternate"></link><published>2022-02-18T00:00:00-08:00</published><updated>2022-02-18T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</id><summary type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
+grain-free dog food is linked with a heart condition called Dilated
+Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;bullshit detector&lt;/a&gt;,
+so I decided to dig deeper.&lt;/p&gt;
+&lt;p&gt;The FDA has a great document explaining their investigation
+&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here&lt;/a&gt;.
+It's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
+grain-free dog food is linked with a heart condition called Dilated
+Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;bullshit detector&lt;/a&gt;,
+so I decided to dig deeper.&lt;/p&gt;
+&lt;p&gt;The FDA has a great document explaining their investigation
+&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here&lt;/a&gt;.
+It's very approachable. I encourage you to give it a read. But to save you some
+time, here's their summary of their investigation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In July 2018, the FDA announced that it had begun investigating reports of
+canine dilated cardiomyopathy (DCM) in dogs eating certain pet foods, many
+labeled as "grain-free," which contained a high proportion of peas, lentils,
+other legume seeds (pulses), and/or potatoes in various forms (whole, flour,
+protein, etc.) as main ingredients [...]. Many of these case reports included
+breeds of dogs not previously known to have a genetic predisposition to the
+disease.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In short: we heard more dogs are being diagnosed with DCM. Dogs who are
+diagnosed with DCM are mostly eating grain-free dog food, which is odd, so
+we're digging in deeper.&lt;/p&gt;
+&lt;p&gt;Let's review the data they present.&lt;/p&gt;
+&lt;h2&gt;Evidence&lt;/h2&gt;
+&lt;p&gt;The FDA started looking into the link between DCM and grain-free dog food in
+July 2018. By April 2019 they had 515 reports of canine DCM. Interestingly, 91%
+of the dogs reported with DCM were eating a grain-free diet:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ingredient prevalence for dogs with reported
+DCM" src="https://i.snap.as/9G30pk6U.png" /&gt;&lt;/p&gt;
+&lt;p&gt;That's definitely suspicious. I don't have any data to back this up, but I
+suspect &lt;em&gt;most&lt;/em&gt; dogs are not eating a grain-free diet. It's strange that these
+dogs are almost uniformly eating grain-free. Maybe it's that simple? &lt;/p&gt;
+&lt;h2&gt;But how, though?&lt;/h2&gt;
+&lt;p&gt;It doesn't look that simple. The FDA says DCM is usually either genetic
+or caused by a taurine deficiency. The FDA's tests show the grain-free dog
+foods aren't missing any important nutrients. Even weirder, Google says taurine
+comes primarily from &lt;em&gt;meat&lt;/em&gt; and definitely not from grain. How could
+&lt;em&gt;removing&lt;/em&gt; grain cause a taurine deficiency? The opposite seems more likely.&lt;/p&gt;
+&lt;p&gt;It sounds like the current hypothesis is that replacing corn and wheat with
+peas and lentils somehow interferes with how the dog digests the food. Even
+that hypothesis doesn't make much sense given the data. Only about half of the
+dogs tested for taurine deficiency actually &lt;em&gt;had&lt;/em&gt; a taurine deficiency
+(&lt;a href="https://www.fda.gov/animal-veterinary/science-research/vet-lirn-update-investigation-dilated-cardiomyopathy"&gt;source&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;Overall, it sounds like we don't really know how grain-free dog food could
+cause DCM. But hey, that doesn't mean it isn't happening. So far, this still
+feels worthy of further investigation.&lt;/p&gt;
+&lt;h2&gt;Another interpretation&lt;/h2&gt;
+&lt;p&gt;I have a different hypothesis for what's going on here. I suspect this link
+between grain-free dog food and DCM is entirely caused by a good old-fashioned
+sampling bias.&lt;/p&gt;
+&lt;p&gt;The FDA notes: "We suspect that cases are underreported because animals are
+typically treated symptomatically, and &lt;strong&gt;diagnostic testing and treatment can
+be complex and costly to owners&lt;/strong&gt;." (bolding mine). &lt;/p&gt;
+&lt;p&gt;Aha! Cases are being &lt;em&gt;underreported&lt;/em&gt;, but they're also being &lt;em&gt;selectively&lt;/em&gt;
+reported. The FDA notes many of these reports include: "echocardiogram results,
+cardiology/veterinary records, and detailed diet histories". Sounds expensive.
+I wouldn't be surprised if most dog owners say, "Nah, just treat the dog. No
+need to call the FDA."&lt;/p&gt;
+&lt;p&gt;And there's the bias. We're only seeing dogs that belong to owners with enough
+free time and money to go through the rigamarole of getting their dog diagnosed
+with DCM. It's no surprise to me that these dogs are more likely to be eating a
+(more expensive) grain-free diet.&lt;/p&gt;
+&lt;p&gt;So far, this is just a theory. I can see &lt;em&gt;some&lt;/em&gt; evidence for my theory in this
+chart, though:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="brand prevalence for dogs with reported DCM" src="https://i.snap.as/CepgxknW.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I don't know much about dog food, but I know Acana is expensive. Acana's
+website suggests their dog food is not-quite-human-grade, but is made with
+human-grade ingredients. Look... humans should definitely &lt;em&gt;not&lt;/em&gt; eat dog food,
+but the fact that Acana needs to set the record straight tells me this is some
+gourmet shit. I've probably eaten cans of Progresso with worse ingredients.&lt;/p&gt;
+&lt;p&gt;It's strange that an expensive food like Acana is the most commonly reported
+dog-food brand. I'd expect that a less expensive and more accessible dog food
+(like Blue Buffalo) would be more common in practice. &lt;/p&gt;
+&lt;p&gt;Maybe the pattern we're seeing isn't "grain-free dog food is associated with
+DCM" and is instead "dog owners willing to pursue a DCM diagnosis also tend to
+buy expensive dog food". Maybe I'll call this an "Affluence Bias".&lt;/p&gt;
+&lt;h2&gt;Prevalence&lt;/h2&gt;
+&lt;p&gt;Zooming out, this looks to be a rare disease. The FDA announced they were
+investigating grain-free dog food in July 2018. Up to April 2019 the FDA
+received 515 reports of canine DCM and they estimate there are 77 million pet
+dogs in the US. That's ~0.0007% of dogs per year.&lt;/p&gt;
+&lt;p&gt;Even if the real case count is 100x bigger than the reported case count, that's
+still less than a tenth of a percent of all dogs. I think it's safe to call
+that "rare".&lt;/p&gt;
+&lt;h2&gt;In Summary&lt;/h2&gt;
+&lt;p&gt;I don't plan on changing my dog's food - at least not given these data.&lt;/p&gt;
+&lt;p&gt;It looks like the FDA is demonstrating an abundance of caution by investigating
+this link. From what I understand, &lt;a href="https://astralcodexten.substack.com/p/adumbrations-of-aducanumab"&gt;that's what the FDA
+does&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;However, my vet shouldn't cite these results as fact given this level of
+evidence. Vets probably shouldn't cite this relationship &lt;em&gt;at all&lt;/em&gt; given the
+effect size of 0.0007% of dogs per year. We've got bigger things to worry
+about.&lt;/p&gt;
+&lt;p&gt;When all is said and done, I expect we'll all be left with a vague sense that
+grain-free dog food causes DCM. In reality, I suspect it's just a quirk of the
+data collection.&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/invisible-work.html" rel="alternate"></link><published>2021-06-03T00:00:00-07:00</published><updated>2021-06-03T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-06-03:/invisible-work.html</id><summary type="html">&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
 on "Getting Credit for Invisible Work".
 The (amazing) csv,conf organizers just published a 
 &lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;recording of the talk&lt;/a&gt;.
