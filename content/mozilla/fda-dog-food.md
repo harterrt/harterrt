@@ -1,12 +1,11 @@
 title: Data Intuition Case Study: Grain-free Dog Food
 slug: fda-dog-food
-date: 2022-02-17
-status: draft
+date: 2022-02-18
 
 My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
-Cardiomyopathy (DCM). This set off my bullshit detector, so I decided to dig
-deeper.
+Cardiomyopathy (DCM). This set off my [bullshit detector](/data_intuition.html),
+so I decided to dig deeper.
 
 The FDA has a great document explaining their investigation
 [here](https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy).
