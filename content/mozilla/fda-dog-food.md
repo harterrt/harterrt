@@ -111,14 +111,14 @@ that "rare".
 
 ## In Summary
 
-I don't plan on changing my dog's food.
+I don't plan on changing my dog's food - at least not given these data.
 
 It looks like the FDA is demonstrating an abundance of caution by investigating
 this link. From what I understand, [that's what the FDA
 does](https://astralcodexten.substack.com/p/adumbrations-of-aducanumab). 
 
 However, my vet shouldn't cite these results as fact given this level of
-evidence. She probably shouldn't cite this relationship _at all_ given the
+evidence. Vets probably shouldn't cite this relationship _at all_ given the
 effect size of 0.0007% of dogs per year. We've got bigger things to worry
 about.
 
