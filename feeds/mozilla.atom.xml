@@ -281,8 +281,9 @@ in case it comes up in a future conversation.&lt;/p&gt;
 I might be reviewing an analysis that has already passed its peak relevance.
 It may not make sense to make edits if the document is already going stale.
 Data scientists are in a constant race against irrelevance.
-It's better to focus on the next piece of work.
-&lt;!--We need to get results to stakeholders before the opportunity passes.--&gt;&lt;/p&gt;
+It's better to focus on the next piece of work.&lt;/p&gt;
+&lt;!--We need to get results to stakeholders before the opportunity passes.--&gt;
+
 &lt;p&gt;In this situation I still want to leave lots of comments
 if my comments can improve future analyses.
 Some comments might look like: 
@@ -309,9 +310,7 @@ Even so, there are pretty clear corollaries to code review.
 &lt;p&gt;&lt;em&gt;Thanks to &lt;a href="https://hamiltonulmer.com/"&gt;Hamilton Ulmer&lt;/a&gt; 
 and &lt;a href="https://marissagorlick.org/#!/posts"&gt;Marissa Gorlick&lt;/a&gt;
 for reviewing drafts of this post!&lt;/em&gt;&lt;/p&gt;</content><category term="mozilla"></category></entry><entry><title>Controlled Experiments - Why Bother?</title><link href="https://blog.harterrt.com/why_experiment.html" rel="alternate"></link><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2021-01-05:/why_experiment.html</id><summary type="html">&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
-
 &lt;!-- tweets: I wrote down some notes about why we spend so much energy running controlled experiments at Mozilla --&gt;
-
 &lt;!-- tweets: In this post I compare A/B tests to hold-my-beer-type experiments like flying a kite in a thunderstorm --&gt;
 
 &lt;p&gt;I spent some time earlier this year orchestrating 
@@ -320,9 +319,7 @@ We launched a bunch of new features with Firefox 80
 and we wanted to understand whether these new features improved our metrics.&lt;/p&gt;
 &lt;p&gt;In the process, I ended up talking with a bunch of Firefox engineers
 and explaining …&lt;/p&gt;</summary><content type="html">&lt;!-- tweets: I guess Ben Franklin was the first person to lick a 9volt battery in spirit --&gt;
-
 &lt;!-- tweets: I wrote down some notes about why we spend so much energy running controlled experiments at Mozilla --&gt;
-
 &lt;!-- tweets: In this post I compare A/B tests to hold-my-beer-type experiments like flying a kite in a thunderstorm --&gt;
 
 &lt;p&gt;I spent some time earlier this year orchestrating 
@@ -381,9 +378,7 @@ we get a very reliable understanding
 of what effect the feature had on user behavior.&lt;/p&gt;
 &lt;p&gt;Here's a doodle of what this looks like:&lt;/p&gt;
 &lt;!--&lt;center&gt;&lt;img width="75%" src="/images/why-expt/Experiment overview.svg"&gt;&lt;/img&gt;&lt;/center&gt;--&gt;
-
 &lt;!--&lt;center&gt;&lt;img width="75%" src="/images/why-expt/experiment-overview.jpg"&gt;&lt;/img&gt;&lt;/center&gt;--&gt;
-
 &lt;p&gt;&lt;center&gt;&lt;img width="75%" src="/images/why-expt/experiment-overview.png"&gt;&lt;/img&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;A controlled experiment is a tool to help us establish &lt;em&gt;causation&lt;/em&gt;.
 We want to separate the effect our new feature has 
@@ -490,7 +485,6 @@ Then we can compare upgraded users (treatment) to
 the users we held back from upgrading (control).&lt;/p&gt;
 &lt;p&gt;Here's what that might look like in the ideal case:&lt;/p&gt;
 &lt;!--&lt;img width="75%" src="/images/why-expt/rollout-branches.png"&gt;&lt;/img&gt;--&gt;
-
 &lt;p&gt;&lt;img src="/images/why-expt/rollout-branches-ideal.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;Since &lt;em&gt;we're&lt;/em&gt; deciding whether the user gets to upgrade or not,
 we shouldn't have the self-selection bias we discussed above.
@@ -648,7 +642,6 @@ a Steinbeck novel (of all places):&lt;/p&gt;
 &gt; In human affairs of danger and delicacy 
 &gt; successful conclusion is sharply limited by hurry.
 --&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;So often men trip by being in a rush.
 If one were properly to perform a difficult and subtle act,
@@ -658,9 +651,10 @@ he should forget it completely and concentrate soley on the means.
 By this method he would not be moved to false action
 by anxiety or hurry or fear.
 Very few people learn this.&lt;/p&gt;
-&lt;p&gt;- John Steinbeck, East of Eden
-&lt;!-- First paragraph of chapter 21 --&gt;&lt;/p&gt;
+&lt;p&gt;- John Steinbeck, East of Eden&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;!-- First paragraph of chapter 21 --&gt;
+
 &lt;p&gt;Here, our lagging metric would describe the "end"
 and our leading metric the "means".
 Put another way: plan the work, then work the plan.&lt;/p&gt;
@@ -672,14 +666,14 @@ Here's a quick summary of leading and lagging metrics:
 
 &lt;h2&gt;Cascading Metrics&lt;/h2&gt;
 &lt;p&gt;There's a plot hole in this story though.
-Increasing retention is still a very difficult goal to achieve.
+Increasing retention is still a very difficult goal to achieve.&lt;/p&gt;
 &lt;!--
-This reminds me of &lt;a href="https://en.wikipedia.org/wiki/Milo_of_Croton"&gt;Milo&lt;/a&gt;
+This reminds me of [Milo](https://en.wikipedia.org/wiki/Milo_of_Croton)
 who carried a calf on his back every day until he could lift a bull
 4 years later!
 The thing is, a 3 month calf already weights ~250#
 --&gt;
-A individual team &lt;em&gt;might&lt;/em&gt; be able to improve Firefox retention,
+&lt;p&gt;A individual team &lt;em&gt;might&lt;/em&gt; be able to improve Firefox retention,
 but most won't be able to.
 Our leading metric didn't do enough to make our lagging metric tractable.&lt;/p&gt;
 &lt;p&gt;This is where Cascading Metrics can help.
@@ -2225,10 +2219,11 @@ Patrick Riley explains this beautifully in
 is that they do not report practical significance.
 Also note that practical significance is difficult to assess
 if our decision metrics are uninterpretable.&lt;/p&gt;
-&lt;p&gt;More on this coming soon.
+&lt;p&gt;More on this coming soon.&lt;/p&gt;
 &lt;!---
 TODO: Post: We should probably step away from histograms for this reason. 
---&gt;&lt;/p&gt;
+--&gt;
+
 &lt;h2&gt;Decision Reports&lt;/h2&gt;
 &lt;p&gt;Experiment results should be &lt;strong&gt;easy to export to plain text&lt;/strong&gt;.
 This allows us to capture a snapshot from the experiment.
@@ -2258,7 +2253,6 @@ E.g. the launch/unlaunch loop.
 Not included here because it's more of a culture thing
 when looked at as an addition to these changes.
 --&gt;
-
 &lt;hr /&gt;
 &lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Source: https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007&lt;/p&gt;</content><category term="mozilla"></category><category term="experimentation"></category></entry><entry><title>Submission Date vs Activity Date</title><link href="https://blog.harterrt.com/dates.html" rel="alternate"></link><published>2017-12-04T00:00:00-08:00</published><updated>2017-12-04T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2017-12-04:/dates.html</id><summary type="html">&lt;p&gt;My comments on
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
