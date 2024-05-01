@@ -23,6 +23,7 @@ SITEDESCRIPTION = 'Weblog for Ryan T. Harter'
 USER_LOGO_URL = 'https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69'
 ROUND_USER_LOGO = True
 BROWSER_COLOR = '#333'
+INDEX_SAVE_AS = 'chrono.html'
 
 MAIN_MENU = True
 COPYRIGHT_YEAR = dt.date.today().year
@@ -37,15 +38,15 @@ ROBOTS = 'index, follow'
 LINKS = (
     ('Twitter', 'https://twitter.com/harterrt'),
     ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
-    ('Resume', '/resume.pdf'),
     ('Github', 'https://github.com/harterrt'),
+    ('Resume', '/resume.pdf'),
 )
 
 # Small links at the top of the page
 MENUITEMS = (
-    ('Home', '/'),
-    ('Newsletter', 'https://harterrt.substack.com/'),
+    ('Archive', '/chrono.html'),
     ('About', '/pages/about.html'),
+    ('Newsletter', 'https://harterrt.substack.com/'),
 )
 
 DISPLAY_PAGES_ON_MENU = False
@@ -66,7 +67,7 @@ GOOGLE_ANALYTICS = 'UA-83638505-1'
 #########
 
 IGNORE_FILES = ['.*', 'README.*']
-DEFAULT_PAGINATION = 20
+DEFAULT_PAGINATION = False
 
 # Copy the CNAME into root dir for GitHub
 STATIC_PATHS = ['images', 'static', 'extra/CNAME', 'extra/resume.pdf',
