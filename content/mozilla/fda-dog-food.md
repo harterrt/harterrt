@@ -4,7 +4,7 @@ date: 2022-02-18
 
 My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
-Cardiomyopathy (DCM). This set off my [bullshit detector](/data_intuition.html),
+Cardiomyopathy (DCM). This set off my [data intuition alarms](/data_intuition.html),
 so I decided to dig deeper.
 
 The FDA has a great document explaining their investigation
@@ -37,7 +37,7 @@ DCM](https://i.snap.as/9G30pk6U.png)
 
 That's definitely suspicious. I don't have any data to back this up, but I
 suspect _most_ dogs are not eating a grain-free diet. It's strange that these
-dogs are almost uniformly eating grain-free. Maybe it's that simple? 
+dogs with DCM are almost uniformly eating grain-free. Maybe it's that simple? 
 
 ## But how, though?
 
