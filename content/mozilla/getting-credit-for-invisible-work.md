@@ -1,11 +1,10 @@
 title: Getting Credit for Invisible Work
 slug: getting-credit-for-invisible-work
 date: 2022-07-01
-status:draft
 
 
-As I moved up my company’s career ladder from senior to staff engineer, and
-from staff to principal, my job description became more ambiguous.
+As I moved up my company’s career ladder,
+my job description became more ambiguous.
 
 I stepped back to take a look at my work, and I was surprised to find that my
 biggest wins hadn’t come from technical feats or shipped code. Instead, I
@@ -84,7 +83,7 @@ It’s reassuring.
 
 In reality though, a lot of the work that’s critical to my success no longer
 matches that description. This became even _more_ true as I moved up the IC
-pladder. Now stuff like making sure I’m solving the _right problem_ is at the
+ladder. Now stuff like making sure I’m solving the _right problem_ is at the
 core
 of my work.
 
@@ -159,7 +158,11 @@ is hard, they’re going to be grateful to you for making them look smart.
 
 ---
 
-I wrote this article in collaboration with 
-[StaffPlus](https://leaddev.com/staffplus/getting-credit-invisible-work-staff-level).
-I'm replublishing it here for my records, and for you, dear reader. 
+P.S.:
+I originally wrote this article for
+[StaffPlus](https://leaddev.com/staffplus/getting-credit-invisible-work-staff-level)
+and I'm just now getting around to sharing it here.
+
+P.P.S.:
+Tanya Reilly quoted this piece in "The Staff Engineer's Path" 🎉
 
