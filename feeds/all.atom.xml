@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2022-02-18T00:00:00-08:00</updated><entry><title>Data Intuition Case Study: Grain-free Dog Food</title><link href="https://blog.harterrt.com/fda-dog-food.html" rel="alternate"></link><published>2022-02-18T00:00:00-08:00</published><updated>2022-02-18T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</id><summary type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
-Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;bullshit detector&lt;/a&gt;,
+Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;data intuition alarms&lt;/a&gt;,
 so I decided to dig deeper.&lt;/p&gt;
 &lt;p&gt;The FDA has a great document explaining their investigation
-&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here&lt;/a&gt;.
-It's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
+&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
-Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;bullshit detector&lt;/a&gt;,
+Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;data intuition alarms&lt;/a&gt;,
 so I decided to dig deeper.&lt;/p&gt;
 &lt;p&gt;The FDA has a great document explaining their investigation
 &lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here&lt;/a&gt;.
@@ -34,7 +33,7 @@ of the dogs reported with DCM were eating a grain-free diet:&lt;/p&gt;
 DCM" src="https://i.snap.as/9G30pk6U.png" /&gt;&lt;/p&gt;
 &lt;p&gt;That's definitely suspicious. I don't have any data to back this up, but I
 suspect &lt;em&gt;most&lt;/em&gt; dogs are not eating a grain-free diet. It's strange that these
-dogs are almost uniformly eating grain-free. Maybe it's that simple? &lt;/p&gt;
+dogs with DCM are almost uniformly eating grain-free. Maybe it's that simple? &lt;/p&gt;
 &lt;h2&gt;But how, though?&lt;/h2&gt;
 &lt;p&gt;It doesn't look that simple. The FDA says DCM is usually either genetic
 or caused by a taurine deficiency. The FDA's tests show the grain-free dog

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>blog.harterrt.com - Ryan T. Harter</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 18 Feb 2022 00:00:00 -0800</lastBuildDate><item><title>Data Intuition Case Study: Grain-free Dog Food</title><link>https://blog.harterrt.com/fda-dog-food.html</link><description>&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
-Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;bullshit detector&lt;/a&gt;,
+Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;data intuition alarms&lt;/a&gt;,
 so I decided to dig deeper.&lt;/p&gt;
 &lt;p&gt;The FDA has a great document explaining their investigation
-&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here&lt;/a&gt;.
-It's …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 18 Feb 2022 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</guid><category>mozilla</category></item><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/invisible-work.html</link><description>&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
+&lt;a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy"&gt;here …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 18 Feb 2022 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</guid><category>mozilla</category></item><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/invisible-work.html</link><description>&lt;p&gt;Last month I gave a talk at &lt;a href="https://csvconf.com/speakers/#ryan-harter"&gt;csv,conf&lt;/a&gt;
 on "Getting Credit for Invisible Work".
 The (amazing) csv,conf organizers just published a 
 &lt;a href="https://www.youtube.com/watch?v=W7zT-GRDSCw"&gt;recording of the talk&lt;/a&gt;.
