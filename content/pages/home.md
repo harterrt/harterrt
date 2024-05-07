@@ -8,7 +8,7 @@ both as a data scientist and data engineer.
 
 I use this blog to clarify my thinking around how I practice data science.
 The best data work is easy to understand,
-but it takes a lot of work to get to a clear explaination.
+but it takes a lot of work to get to a clear explanation.
 
 Here are some of my favorite pieces:
 
