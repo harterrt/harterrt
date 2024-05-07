@@ -1,5 +1,6 @@
 title:Strategies for focusing on the Most Important Thing
 date:2024-05-01
+status:draft
 
 This post is derived from a talk I gave at StaffPlus NYC in 2022.
 
