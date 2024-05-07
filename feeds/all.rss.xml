@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 18 Feb 2022 00:00:00 -0800</lastBuildDate><item><title>Data Intuition Case Study: Grain-free Dog Food</title><link>https://blog.harterrt.com/fda-dog-food.html</link><description>&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Fri, 01 Jul 2022 00:00:00 -0700</lastBuildDate><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/getting-credit-for-invisible-work.html</link><description>&lt;p&gt;As I moved up my company’s career ladder,
+my job description became more ambiguous.&lt;/p&gt;
+&lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my
+biggest wins hadn’t come from technical feats or shipped code. Instead, I
+realized that most of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Fri, 01 Jul 2022 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2022-07-01:/getting-credit-for-invisible-work.html</guid><category>2024</category></item><item><title>Data Intuition Case Study: Grain-free Dog Food</title><link>https://blog.harterrt.com/fda-dog-food.html</link><description>&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
 Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;data intuition alarms&lt;/a&gt;,
 so I decided to dig deeper.&lt;/p&gt;

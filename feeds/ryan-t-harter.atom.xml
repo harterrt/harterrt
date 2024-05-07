@@ -1,5 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2022-02-18T00:00:00-08:00</updated><entry><title>Data Intuition Case Study: Grain-free Dog Food</title><link href="https://blog.harterrt.com/fda-dog-food.html" rel="alternate"></link><published>2022-02-18T00:00:00-08:00</published><updated>2022-02-18T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</id><summary type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2022-07-01T00:00:00-07:00</updated><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/getting-credit-for-invisible-work.html" rel="alternate"></link><published>2022-07-01T00:00:00-07:00</published><updated>2022-07-01T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-07-01:/getting-credit-for-invisible-work.html</id><summary type="html">&lt;p&gt;As I moved up my company’s career ladder,
+my job description became more ambiguous.&lt;/p&gt;
+&lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my
+biggest wins hadn’t come from technical feats or shipped code. Instead, I
+realized that most of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As I moved up my company’s career ladder,
+my job description became more ambiguous.&lt;/p&gt;
+&lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my
+biggest wins hadn’t come from technical feats or shipped code. Instead, I
+realized that most of my success could be attributed to more subtle decisions
+that were never shared with my stakeholders.&lt;/p&gt;
+&lt;p&gt;This work was hard to sell to my management chain and largely went
+unrecognized. Fortunately, a few close colleagues noticed that projects went
+more smoothly when I was onboard.&lt;/p&gt;
+&lt;p&gt;It’s easy to get recognition for fighting fires, but it’s hard to get
+recognized for &lt;em&gt;preventing&lt;/em&gt; fires.&lt;/p&gt;
+&lt;p&gt;This article covers some strategies for making these Staff+ superpowers
+understandable to the company, both so we can get rewarded for this work and
+demystify some of what reaching Staff+ level looks like.&lt;/p&gt;
+&lt;h2&gt;What is invisible work?&lt;/h2&gt;
+&lt;p&gt;To start, I’ll define invisible work to make sure we’re all on the same page.
+Invisible work is work that is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Critical to your success&lt;/li&gt;
+&lt;li&gt;Takes skill to do well&lt;/li&gt;
+&lt;li&gt;Is never shown to stakeholders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My background is in data science. I can confidently say that almost all of my
+work is invisible. Good analysis is a process of 
+developing hypotheses &lt;em&gt;and then discarding them&lt;/em&gt;.
+My client only sees my final product, polished up and ready
+for the showroom. I never show the pile of cracked and discarded hypotheses
+hidden in my workshop.&lt;/p&gt;
+&lt;p&gt;This is a good thing! I dig into a problem, understand it deeply, then simplify
+my understanding for my peers. If I’m doing my job well, I’m making it look
+easy. This can cause problems when going for promotion though.&lt;/p&gt;
+&lt;p&gt;Invisible work is by no means limited to data work. I’ve saved the company
+months of effort by taking an afternoon to sit on my couch and carefully write
+a project spec – only to decide the project isn’t worth pursuing after all.
+This is a triumph even if it doesn’t lead to an exciting launch.&lt;/p&gt;
+&lt;p&gt;In 
+&lt;em&gt;The Mythical Man-Month&lt;/em&gt; , Fred Brooks tells us to plan on 
+&lt;a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_pilot_system"&gt;throwing one away&lt;/a&gt;.
+This sacrificial prototype is important (but invisible) work.&lt;/p&gt;
+&lt;p&gt;This article is no exception. There are at least two drafts that will
+(thankfully) never see the light of day. I’ve also had countless conversations
+with mentors and peers to help develop the idea of invisible work. This
+pre-work is critical and underappreciated.&lt;/p&gt;
+&lt;h2&gt;Why’s that a problem?&lt;/h2&gt;
+&lt;p&gt;At one of my previous gigs, I got a performance review that effectively said,
+‘We want to see you demonstrate more complexity in your work.’&lt;/p&gt;
+&lt;p&gt;On the surface that might sound fine, but this thinking is backward and too
+common in the industry. Really, what we should want are 
+&lt;em&gt;simple solutions to complex problems&lt;/em&gt;.
+The complexity of our work is a cost to bear, not something to maximize!&lt;/p&gt;
+&lt;p&gt;I’ve seen this type of pro-complexity thinking cause all sorts of dysfunctions.
+I’ve seen folks slip machine learning into places it doesn’t belong to get a
+flashy launch. Occasionally folks build long-winded and boring reports
+documenting every possible bit of complexity to prove how hard the problem was.&lt;/p&gt;
+&lt;p&gt;In both of these cases, we’re incentivizing complexity. In the end, you’re
+going to get more of what you incentivize.&lt;/p&gt;
+&lt;h2&gt;Telling a good story&lt;/h2&gt;
+&lt;p&gt;Deep down, most people feel like my job is cranking out technical code. I’m
+guilty of this myself. When I have my hands on a keyboard it &lt;em&gt;feels&lt;/em&gt; like work.
+It’s reassuring.&lt;/p&gt;
+&lt;p&gt;In reality though, a lot of the work that’s critical to my success no longer
+matches that description. This became even &lt;em&gt;more&lt;/em&gt; true as I moved up the IC
+ladder. Now stuff like making sure I’m solving the &lt;em&gt;right problem&lt;/em&gt; is at the
+core
+of my work.&lt;/p&gt;
+&lt;p&gt;I had to convince myself and others that the core of my work changed. I found
+the best way to do that was by &lt;strong&gt;creating a clear and memorable story&lt;/strong&gt; about
+what I do and why it’s hard. Once I understood this well, I was able to make
+better decisions about my work and convince others that it was important.&lt;/p&gt;
+&lt;p&gt;The key here was to &lt;strong&gt;focus on what was actually hard about my work&lt;/strong&gt;.
+Sometimes it was a technical piece, but more often, it wasn’t. Was the hardest
+part of your last project writing the code? Or was it framing the problem well,
+getting buy-in, and getting a budget?&lt;/p&gt;
+&lt;p&gt;Once you have a story, &lt;strong&gt;focus on what outcomes you created&lt;/strong&gt;. Don’t focus on
+the code you pumped out or the report you wrote. Focus on how your work changed
+the company. Maybe you found a team that was angry and stressed - but then you
+jumped in, gave direction, and left that team feeling happy and relieved.
+That’s awesome! You should do more of that!&lt;/p&gt;
+&lt;p&gt;I have three practical tips to help you build this story:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fight recency bias with snippets&lt;/li&gt;
+&lt;li&gt;Keep a brag doc&lt;/li&gt;
+&lt;li&gt;Practice your story until it’s smooth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fight recency bias (with snippets)&lt;/h2&gt;
+&lt;p&gt;Snippets are a habit I picked up at Google. The key here is to make a habit of
+summarizing your work at regular intervals. I do this every other week but some
+prefer to do it weekly.&lt;/p&gt;
+&lt;p&gt;Snippets are a way to collect data on yourself. Try to be specific. Include
+links to artifacts if you can. Try to document where you’re spending your time
+and energy, not just the stuff that’s obviously work.&lt;/p&gt;
+&lt;p&gt;I find that once a problem is well-framed, there’s usually an obvious solution.
+The hard part is getting to a well-framed problem. &lt;/p&gt;
+&lt;p&gt;However, when I look back on my work I only see the solution I came up with,
+not the work that went into framing the problem well. Snippets make it easy to
+remember where the hard and important work actually happened.&lt;/p&gt;
+&lt;h2&gt;Keep a brag document&lt;/h2&gt;
+&lt;p&gt;This is common advice – but that’s because it’s useful!&lt;/p&gt;
+&lt;p&gt;I keep a list of my professional successes in a Google Doc. Every time I’m
+excited about a project going well, I try to make a quick note of it.&lt;/p&gt;
+&lt;p&gt;This is a nice ego boost, but it’s useful too. This excitement fades quickly
+and it becomes hard to remember what I was excited about even a month later.
+When I look at my brag doc it serves as an index to my weekly snippets, showing
+me where to look for important work. Plus it’s a nice dopamine hit.&lt;/p&gt;
+&lt;h2&gt;Work the story until it’s smooth&lt;/h2&gt;
+&lt;p&gt;The first time you try telling your story, it’s going to be clunky. The only
+way to get past this is practice. Work your story over until it’s smooth. In
+the ideal case, you want this story to be able to spread by word of mouth.&lt;/p&gt;
+&lt;p&gt;I like practicing my story in my 1:1s. Usually someone asks me what I’ve been
+up to. This is a great chance to share what you think was &lt;em&gt;actually difficult&lt;/em&gt;
+about your work this week. Replacing the usual small talk with commentary on my
+invisible work has sparked some great conversations with my coworkers. Pretty
+often there’s a flash of recognition where they realize that – yeah, that &lt;em&gt;is&lt;/em&gt;
+really hard!&lt;/p&gt;
+&lt;p&gt;You’ll want to share your story with your manager too. Your manager is
+eventually going to be in a room with their peers arguing for why you need a
+promotion. If you’ve armed your manager with a great story about why your work
+is hard, they’re going to be grateful to you for making them look smart.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;P.S.:
+I originally wrote this article for
+&lt;a href="https://leaddev.com/staffplus/getting-credit-invisible-work-staff-level"&gt;StaffPlus&lt;/a&gt;
+and I'm just now getting around to sharing it here.&lt;/p&gt;
+&lt;p&gt;P.P.S.:
+Tanya Reilly quoted this piece in "The Staff Engineer's Path" 🎉&lt;/p&gt;</content><category term="2024"></category></entry><entry><title>Data Intuition Case Study: Grain-free Dog Food</title><link href="https://blog.harterrt.com/fda-dog-food.html" rel="alternate"></link><published>2022-02-18T00:00:00-08:00</published><updated>2022-02-18T00:00:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-02-18:/fda-dog-food.html</id><summary type="html">&lt;p&gt;My vet told me I should stop feeding my dog grain-free dog food. Apparently,
 grain-free dog food is linked with a heart condition called Dilated
 Cardiomyopathy (DCM). This set off my &lt;a href="/data_intuition.html"&gt;data intuition alarms&lt;/a&gt;,
 so I decided to dig deeper.&lt;/p&gt;
