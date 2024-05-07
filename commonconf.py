@@ -36,17 +36,18 @@ ROBOTS = 'index, follow'
 
 # Links on the side panel
 LINKS = (
-    ('Twitter', 'https://twitter.com/harterrt'),
-    ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
+    ('Newsletter', 'https://harterrt.substack.com/'),
     ('Github', 'https://github.com/harterrt'),
     ('Resume', '/resume.pdf'),
+    ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
+    ('Twitter', 'https://twitter.com/harterrt'),
 )
 
 # Small links at the top of the page
 MENUITEMS = (
-    ('Archive', '/chrono.html'),
+    ('Writing', '/chrono.html'),
     ('About', '/pages/about.html'),
-    ('Newsletter', 'https://harterrt.substack.com/'),
+    ('Talks', '/pages/talks.html'),
 )
 
 DISPLAY_PAGES_ON_MENU = False
