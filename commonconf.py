@@ -38,7 +38,6 @@ ROBOTS = 'index, follow'
 LINKS = (
     ('Newsletter', 'https://harterrt.substack.com/'),
     ('Github', 'https://github.com/harterrt'),
-    ('Resume', '/resume.pdf'),
     ('LinkedIn', 'http://www.linkedin.com/pub/ryan-harter/11/a24/a21'),
     ('Twitter', 'https://twitter.com/harterrt'),
 )
@@ -48,6 +47,7 @@ MENUITEMS = (
     ('Writing', '/chrono.html'),
     ('About', '/pages/about.html'),
     ('Talks', '/pages/talks.html'),
+    ('Resume', '/resume.pdf'),
 )
 
 DISPLAY_PAGES_ON_MENU = False
