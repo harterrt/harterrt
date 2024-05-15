@@ -121,4 +121,9 @@ def new(c, name):
         shutil.copyfile('template/post.md', f'content/mozilla/{name}.md')
         print(f'Started post in {filename}')
 
+@task
+def deploy(c):
+    """Alias for publish"""
+    publish(c)
+
 
