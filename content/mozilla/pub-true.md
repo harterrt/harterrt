@@ -25,7 +25,7 @@ Instead, **I've started describing these soft-and-squishy numbers
 as "pub true"** or "true enough".
 Basically, the idea is that they'd hold up in a bar conversation
 but they're not meant to be used for much else.
-It get's you into the ballpark
+It gets you into the ballpark
 but you probably shouldn't bet the business on them.
 
 I'm happy with the results so far.
