@@ -56,10 +56,14 @@ DISPLAY_PAGES_ON_MENU = False
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = []
 MARKDOWN = {
-    'markdown.extensions.codehilite': {},
-    'markdown.extensions.toc': {},
-    'markdown.extensions.extra': {},
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
 }
+
 
 GOOGLE_ANALYTICS = 'UA-83638505-1'
 
