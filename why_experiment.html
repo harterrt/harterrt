@@ -84,7 +84,7 @@ This article is targeted at new data scientists
 or engineers interested in data.
 I also hope this becomes a useful resource for data scientists,
 so they can point their stake-holders to this resource.</p>
-<h2>What is an <em>experiment</em>?</h2>
+<h2 id="what-is-an-experiment">What is an <em>experiment</em>?</h2>
 <p>In a very general sense, 
 we conduct an experiment if we:
 (1) create a situation
@@ -100,7 +100,7 @@ By this definition, playing slots isn't gambling, it's an experiment!
 When data scientists talk about "experimentation"
 we're usually talking about "controlled experiments"
 instead of this type of hold-my-beer type of experimentation.</p>
-<h2>What is a <em>controlled</em> experiment?</h2>
+<h2 id="what-is-a-controlled-experiment">What is a <em>controlled</em> experiment?</h2>
 <p>Controlled experiments are often called A/B tests
 because we create two almost-identical hold-my-beer experiments
 and look for differences in the outcomes.
@@ -140,7 +140,7 @@ Getting a feature behind a pref
 adds a lot of complexity.
 Folks are understandably curious about why we're going through such a rigmarole.</p>
 <p>Let's consider some simpler options (and why they don't actually work).</p>
-<h2>Why not just look at usage?</h2>
+<h2 id="why-not-just-look-at-usage">Why not just look at usage?</h2>
 <p>If we want to understand what effect our new feature has on usage,
 why not compare users that engage with our feature to users who don't?</p>
 <p>For example, we recently launched improvements to
@@ -172,7 +172,7 @@ How can that be? Well, encountering an error is
 a good proxy for "Uses Firefox a lot".
 Users who don't use Firefox at all encounter no errors!</p>
 <p>We need to find a better experiment.</p>
-<h2>What if we compare before and after the launch?</h2>
+<h2 id="what-if-we-compare-before-and-after-the-launch">What if we compare before and after the launch?</h2>
 <p>OK - so we can't compare active users to inactive users.
 What if we just launch the feature to 100% of our users
 and compare behavior before and after the launch?
@@ -225,7 +225,7 @@ That's a lot of time for the world to change under our feet.
 If something odd happens during that three-week-observation period,
 it will be very hard to separate our effect from the odd-event's effect.
 And here's a secret - <strong>there's always something odd going on</strong>.</p>
-<h2>OK, what if we throttle the rollout?</h2>
+<h2 id="ok-what-if-we-throttle-the-rollout">OK, what if we throttle the rollout?</h2>
 <p>Instead of pushing the release to 100% of our users at once,
 we have the option of slowing the release
 so only a portion of our users can upgrade.
@@ -286,7 +286,7 @@ but it's reflected in both the control and treatment branches.
 We're also reassured by the user counts graph.
 Instead of moving in opposite directions like the throttled rollout,
 each branch has roughly the same number of users enrolled.</p>
-<h2>Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>Don't let me kill your enthusiasm.
 There's still plenty of room for
 hold-my-beer kites-in-a-storm type experimentation,
@@ -304,7 +304,7 @@ where uncontrolled experiments make more sense
 and how this all fits together in a feature's lifecycle.</p>
 <p>I'd love feedback on what to write next.
 Shoot me an email if you have ideas!</p>
-<hr />
+<hr>
 <p><em>Thanks to Dan McKinley and Audra Harter for reading drafts of this article</em></p>
   </div>
   <div class="article_meta">

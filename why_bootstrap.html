@@ -89,7 +89,7 @@ Of course it is. We get to replace statistics with raw compute power!
 That's the dream!</p>
 <p>Still, the bootstrap isn't perfect for every problem.
 Let's look at a few arguements for and against the bootstrap:</p>
-<h2>Computational Efficiency</h2>
+<h2 id="computational-efficiency">Computational Efficiency</h2>
 <p>The bootstrap obviously requires more compute resources.
 Still, it's worth highlighting how 
 <strong>amazingly computationally efficient the t-test is</strong>.
@@ -100,7 +100,7 @@ a count, the sum of the data, and the sum of the square of the data
 All of these are easy to calculate in a map-reduce framework.
 On the other hand,
 the bootstrap is difficult to compute when your data do not fit in memory.</p>
-<h2>The normality assumption</h2>
+<h2 id="the-normality-assumption">The normality assumption</h2>
 <p>T-tests feel arcane and make assumptions about the distribution of the data.
 Most notably, t-tests <em>require your metric to be normally distributed</em>.
 Assuming normal distributions sets off alarms
@@ -126,7 +126,7 @@ it can take a large sample for the CLT to make some datasets look normal
 (like, N &gt; 5000).
 If you have a small, skewed data set, the bootstrap may be a better choice.
 However, this is rarely a problem when you're working with Big Data™.</p>
-<h2>Weird metrics</h2>
+<h2 id="weird-metrics">Weird metrics</h2>
 <p>It becomes practically impossible to calculate a t-test
 if your metric isn't a mean.
 The classic example here is testing for a change in the median.
@@ -142,12 +142,42 @@ Percentiles, like the median, are notoriously hard to calculate over big data.
 Instead, consider this (nearly) real life example:</p>
 <p>Firefox collects anonymized performance data on a daily basis.
 That data could look like this:</p>
-<p>| <code>client</code> |        <code>day</code> | <code>active_hours</code> | <code>janky_loads</code> |
-|:---------|-------------:|---------------:|--------------:|
-| 'aaa'    | 2018-01-01   | 4.5            | 0             |
-| 'bbb'    | 2018-01-01   | 9.2            | 3             |
-| 'ccc'    | 2018-01-01   | 0.5            | 1             |
-| ...      | ...          | ...            | ...           |</p>
+<table>
+<thead>
+<tr>
+<th align="left"><code>client</code></th>
+<th align="right"><code>day</code></th>
+<th align="right"><code>active_hours</code></th>
+<th align="right"><code>janky_loads</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">'aaa'</td>
+<td align="right">2018-01-01</td>
+<td align="right">4.5</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">'bbb'</td>
+<td align="right">2018-01-01</td>
+<td align="right">9.2</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">'ccc'</td>
+<td align="right">2018-01-01</td>
+<td align="right">0.5</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+</tr>
+</tbody>
+</table>
 <p>Let's say we launch a new feature that is supposed to
 reduce the number of janky page loads a user sees per hour.
 There's no obvious way to calculate a t-test for
@@ -155,21 +185,21 @@ There's no obvious way to calculate a t-test for
 What is the variance of that metric?
 Remember, we only get one observation per sample.
 The bootstrap handles this case trivially.</p>
-<h2>Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>In summary, the bootstrap is awesome.
 We get to replace arcane formulas with intuitive simulations
 and we can calculate confidence intervals for any arbitrary metric.</p>
 <p>On the other hand, the t-test is <em>much</em> more computationally efficient.
 If you have really big data and you <em>know</em> you're only going to compare means,
 the t-test may be a better choice.</p>
-<hr />
+<hr>
 <ol>
 <li>For example, a
    <a href="https://en.wikipedia.org/wiki/Power_law#Power-law_probability_distributions">power law distribution</a>
    can easily have infinite variance.</li>
 <li><a href="https://projecteuclid.org/download/pdf_1/euclid.aos/1176350371">Bootstrap of the mean in the infinite variance case Athreya, K.B. Ann Stats vol 15 (2) 1987 724-731</a></li>
 </ol>
-<hr />
+<hr>
   </div>
   <div class="article_meta">
     <p>Posted on: Fri 25 May 2018</p>

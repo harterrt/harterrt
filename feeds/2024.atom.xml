@@ -1,14 +1,271 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - 2024</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/2024.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-06-05T00:00:00-07:00</updated><entry><title>Talk: Practical Strategies for Data Storytelling</title><link href="https://blog.harterrt.com/storytelling-odsc-2024.html" rel="alternate"></link><published>2024-06-05T00:00:00-07:00</published><updated>2024-06-05T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-06-05:/storytelling-odsc-2024.html</id><summary type="html">&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - 2024</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/2024.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-06-05T20:45:00-07:00</updated><entry><title>SQL style - where do the commas go?</title><link href="https://blog.harterrt.com/commas-sql-style.html" rel="alternate"></link><published>2024-06-05T20:45:00-07:00</published><updated>2024-06-05T20:45:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-06-05:/commas-sql-style.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+but I recommend using trailing commas for consistency.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We didn't take an opinionated stance on comma placement when writing
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's SQL Style Guide&lt;/a&gt;
+probably to avoid a quagmire.
+I'm trying to figure out where I stand now, so I wrote it …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+but I recommend using trailing commas for consistency.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We didn't take an opinionated stance on comma placement when writing
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's SQL Style Guide&lt;/a&gt;
+probably to avoid a quagmire.
+I'm trying to figure out where I stand now, so I wrote it out here.&lt;/p&gt;
+&lt;p&gt;Here's an example query so we can talk concretely:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_c&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This query uses &lt;strong&gt;trailing commas&lt;/strong&gt; -
+where there's a comma, it's the last character on the line.
+This is by far the most common style of writing queries.&lt;/p&gt;
+&lt;p&gt;On the other side, there are folks that prefer &lt;strong&gt;leading commas&lt;/strong&gt;, like so:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_c&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a less common style, but is fervently loved by its proponents.
+Leading comma proponents will argue that this style is easier to work with
+and makes git commits more readable.&lt;/p&gt;
+&lt;p&gt;Similarly, there are fervent proponents of trailing commas.
+They'll argue that trailing commas are convention by overwhelming majority
+and leading commas are jarringly ugly.&lt;/p&gt;
+&lt;p&gt;In reality, most analysts don't care either way.
+They tend to use trailing commas by default.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI"&gt;spaces-vs-tabs&lt;/a&gt;
+absurdity of this argument is not lost on me.
+But, I &lt;em&gt;do&lt;/em&gt; care about SQL style, so here I am.&lt;/p&gt;
+&lt;h2 id="consistency-is-paramount"&gt;Consistency is paramount&lt;/h2&gt;
+&lt;p&gt;Like &lt;a href="https://peps.python.org/pep-0008/"&gt;PEP8&lt;/a&gt;, 
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's SQL Style Guide&lt;/a&gt;
+aims to make queries 
+consistent in service of readability.&lt;/p&gt;
+&lt;p&gt;Trailing commas are by far the most common pattern.
+For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's Style Guide&lt;/a&gt;
+  uniformly uses trailing commas in examples
+  despite not making an explicit recommendation on comma format.&lt;/li&gt;
+&lt;li&gt;BigQuery's documentation uses trailing commas 
+  (&lt;a href="https://cloud.google.com/bigquery/docs/running-queries"&gt;e.g.&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Simon Holywell's SQL Style Guide (&lt;a href="https://www.sqlstyle.guide/"&gt;sqlstyle.guide&lt;/a&gt;)
+  uniformly uses trailing commas&lt;/li&gt;
+&lt;li&gt;SQLFluff's &lt;a href="https://docs.sqlfluff.com/en/stable/rules.html#rule-layout.commas"&gt;&lt;code&gt;Rule_L019&lt;/code&gt;&lt;/a&gt;
+  defaults to trailing commas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But the most convincing source I found is Ben Stancil's 
+&lt;a href="https://mode.com/blog/should-sql-queries-use-trailing-or-leading-commas"&gt;analysis of queries in Mode&lt;/a&gt;. 
+He found that ~80% of sufficiently-complex queries use trailing commas.
+Only ~15% of query authors frequently use leading commas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Trailing commas are clearly the dominant convention&lt;/strong&gt;.
+Style guides are about consistency.
+This is enough evidence for me to recommend trailing commas
+as the right default.&lt;/p&gt;
+&lt;p&gt;That said, there &lt;em&gt;are&lt;/em&gt; some motivating reasons to use leading commas.&lt;/p&gt;
+&lt;h2 id="ergonomics"&gt;Ergonomics&lt;/h2&gt;
+&lt;p&gt;The most common argument I see for leading commas is that 
+it's easier to edit queries - especially when prototyping an analysis.&lt;/p&gt;
+&lt;p&gt;Until recently, the following SQL would produce an error in most SQL engines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;-- column_c&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That &lt;strong&gt;hanging comma&lt;/strong&gt; after &lt;code&gt;column_b&lt;/code&gt; is invalid.&lt;/p&gt;
+&lt;p&gt;This can be very annoying when hacking on a query.
+Commenting out a column creates an error. Yuck.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I suspect this is why folks started using leading commas in the first place&lt;/strong&gt;.
+We can just comment out the line if we're using leading commas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;-- , column_c -- this line in commented out&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is nice, but in practice,
+many modern SQL engines have stopped throwing this error.&lt;/p&gt;
+&lt;p&gt;We owe a debt of gratitude to &lt;a href="https://duckdb.org/"&gt;DuckDB&lt;/a&gt;
+for pushing the industry forward here.
+Their &lt;a href="https://duckdb.org/2022/05/04/friendlier-sql.html"&gt;Friendly SQL&lt;/a&gt;
+created some great quality-of-life improvements
+that are quickly being adopted by competitors.
+BigQuery, for example.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the progress is incomplete.
+Most query engines, like Presto or SQLite,
+will still throw hanging comma errors.&lt;/p&gt;
+&lt;p&gt;Even more frustrating, 
+this isn't consistently enforced even &lt;em&gt;within&lt;/em&gt; a single query.
+Take this failing BigQuery query for example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;-- valid hanging comma&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;WHERE&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;IN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;first&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;second&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;third&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;-- invalid hanging comma, causes an error&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;SQLFluff addresses this pattern in their rule CV03, 
+&lt;a href="https://docs.sqlfluff.com/en/stable/rules.html#trailing-commas-within-select-clause"&gt;Trailing commas within select clause&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In their own works:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For many database backends this is allowed. For some users this may be
+something they wish to enforce (in line with Python best practice). Many
+database backends regard this as a syntax error, and as such the SQLFluff
+default is to forbid trailing commas in the select clause.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I agree with the default of forbidding trailing commas.
+I'll take it a step further:
+allowing trailing commas 
+&lt;strong&gt;creates inconsistency within a query and should be forbidden&lt;/strong&gt;,
+even where the query engine allows it.&lt;/p&gt;
+&lt;p&gt;It's fine to use leading commas or hanging commas
+while hacking on an ad hoc query. They're convenient. I use them too.
+But these conveniences should be cleaned up 
+before committing the query to a code base.&lt;/p&gt;
+&lt;h2 id="cleaner-git-commit-messages"&gt;Cleaner git commit messages&lt;/h2&gt;
+&lt;p&gt;A corollary to the above argument 
+is that leading commas create cleaner commit messages.&lt;/p&gt;
+&lt;p&gt;We need to touch two lines to delete a column using leading commas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;-- remove a comma from this line&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;-- column_c -- delete this line&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We can contain our changes to one line if we use leading commas&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;-- , column_c -- only need to delete this line&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I &lt;em&gt;guess&lt;/em&gt; this is a benefit, but I don't find it motivating.&lt;/p&gt;
+&lt;p&gt;Style guides exist because code is read far more often than it's written.
+A commit message is read less frequently than the code -
+probably by an order of magnitude.&lt;/p&gt;
+&lt;p&gt;Making a trivial improvement to the git diff 
+is not worth breaking convention.&lt;/p&gt;
+&lt;h2 id="commas-are-load-bearing"&gt;Commas are load bearing&lt;/h2&gt;
+&lt;p&gt;The best argument I've seen is that 
+commas kinda look like keywords if you squint hard enough.
+We &lt;em&gt;do&lt;/em&gt; require keywords to be at the beginning of the line.
+We &lt;em&gt;also&lt;/em&gt; require Boolean operators to be at the beginning of a line.&lt;/p&gt;
+&lt;p&gt;For example, if commas &lt;em&gt;were&lt;/em&gt; keywords 
+it would be obvious that they should be at the beginning of the line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;COMMA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;COMMA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_c&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The consistency win becomes even more clear if we add a join 
+and some Boolean operators:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;COMMA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;COMMA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_c&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;LEFT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;JOIN&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_b&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;USING&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;joint_key&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;WHERE&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;column_b&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;AND&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;column_c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bbb&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Commas are load bearing.
+They carry meaning but are easily missed at the end of a line.&lt;/p&gt;
+&lt;p&gt;This is pretty esoteric though. 
+Also, commas are not actually keywords, soooo...&lt;/p&gt;
+&lt;h2 id="spotting-errors"&gt;Spotting errors&lt;/h2&gt;
+&lt;p&gt;Another reasonable argument for leading commas 
+is that it makes it easier to spot a particular type of error.&lt;/p&gt;
+&lt;p&gt;Take this query for example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;first_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;second_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;another_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;final_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It looks like the resulting table will have four columns,
+but in reality it will only have three columns.&lt;/p&gt;
+&lt;p&gt;There's a missing comma after &lt;code&gt;column_b&lt;/code&gt;.
+Most SQL interpreters will interpret this query to mean:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;first_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;second_column&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;AS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;another_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;final_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The error is more obvious if we use leading commas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;first_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;second_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;another_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;final_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The solution to this problem is fairly simple: Use a code linter and formatter.
+Probably &lt;a href="https://sqlfluff.com/"&gt;SQLFluff&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The linter will make the error even &lt;em&gt;more&lt;/em&gt; obvious than leading commas would:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;first_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;second_column&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;AS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;another_column&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;final_column&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;FROM&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;table_a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There &lt;em&gt;are&lt;/em&gt; good arguments for using leading commas.
+If I were coding in a vacuum,
+I might recommending standardizing around leading commas.&lt;/p&gt;
+&lt;p&gt;However, that's not the case.
+Trailing commas are the dominant convention by a long shot.
+The battle is lost.&lt;/p&gt;
+&lt;p&gt;Use trailing commas.&lt;/p&gt;</content><category term="2024"></category></entry><entry><title>Talk: Practical Strategies for Data Storytelling</title><link href="https://blog.harterrt.com/storytelling-odsc-2024.html" rel="alternate"></link><published>2024-06-05T00:00:00-07:00</published><updated>2024-06-05T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-06-05:/storytelling-odsc-2024.html</id><summary type="html">&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
 &lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
 I have more to say on the subject, but in the meantime you can see my 
 &lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;For the last two years, I've hosted a biweekly …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
 &lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
 I have more to say on the subject, but in the meantime you can see my 
 &lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;For the last two years, I've hosted a biweekly data storytelling workshop
 for my peers at Shopify.
 This talk is an attempt to share some of my experience more broadly.&lt;/p&gt;
@@ -137,7 +394,7 @@ recognized for &lt;em&gt;preventing&lt;/em&gt; fires.&lt;/p&gt;
 &lt;p&gt;This article covers some strategies for making these Staff+ superpowers
 understandable to the company, both so we can get rewarded for this work and
 demystify some of what reaching Staff+ level looks like.&lt;/p&gt;
-&lt;h2&gt;What is invisible work?&lt;/h2&gt;
+&lt;h2 id="what-is-invisible-work"&gt;What is invisible work?&lt;/h2&gt;
 &lt;p&gt;To start, I’ll define invisible work to make sure we’re all on the same page.
 Invisible work is work that is:&lt;/p&gt;
 &lt;ul&gt;
@@ -166,7 +423,7 @@ This sacrificial prototype is important (but invisible) work.&lt;/p&gt;
 (thankfully) never see the light of day. I’ve also had countless conversations
 with mentors and peers to help develop the idea of invisible work. This
 pre-work is critical and underappreciated.&lt;/p&gt;
-&lt;h2&gt;Why’s that a problem?&lt;/h2&gt;
+&lt;h2 id="whys-that-a-problem"&gt;Why’s that a problem?&lt;/h2&gt;
 &lt;p&gt;At one of my previous gigs, I got a performance review that effectively said,
 ‘We want to see you demonstrate more complexity in your work.’&lt;/p&gt;
 &lt;p&gt;On the surface that might sound fine, but this thinking is backward and too
@@ -179,7 +436,7 @@ flashy launch. Occasionally folks build long-winded and boring reports
 documenting every possible bit of complexity to prove how hard the problem was.&lt;/p&gt;
 &lt;p&gt;In both of these cases, we’re incentivizing complexity. In the end, you’re
 going to get more of what you incentivize.&lt;/p&gt;
-&lt;h2&gt;Telling a good story&lt;/h2&gt;
+&lt;h2 id="telling-a-good-story"&gt;Telling a good story&lt;/h2&gt;
 &lt;p&gt;Deep down, most people feel like my job is cranking out technical code. I’m
 guilty of this myself. When I have my hands on a keyboard it &lt;em&gt;feels&lt;/em&gt; like work.
 It’s reassuring.&lt;/p&gt;
@@ -207,7 +464,7 @@ That’s awesome! You should do more of that!&lt;/p&gt;
 &lt;li&gt;Keep a brag doc&lt;/li&gt;
 &lt;li&gt;Practice your story until it’s smooth&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Fight recency bias (with snippets)&lt;/h2&gt;
+&lt;h2 id="fight-recency-bias-with-snippets"&gt;Fight recency bias (with snippets)&lt;/h2&gt;
 &lt;p&gt;Snippets are a habit I picked up at Google. The key here is to make a habit of
 summarizing your work at regular intervals. I do this every other week but some
 prefer to do it weekly.&lt;/p&gt;
@@ -219,7 +476,7 @@ The hard part is getting to a well-framed problem. &lt;/p&gt;
 &lt;p&gt;However, when I look back on my work I only see the solution I came up with,
 not the work that went into framing the problem well. Snippets make it easy to
 remember where the hard and important work actually happened.&lt;/p&gt;
-&lt;h2&gt;Keep a brag document&lt;/h2&gt;
+&lt;h2 id="keep-a-brag-document"&gt;Keep a brag document&lt;/h2&gt;
 &lt;p&gt;This is common advice – but that’s because it’s useful!&lt;/p&gt;
 &lt;p&gt;I keep a list of my professional successes in a Google Doc. Every time I’m
 excited about a project going well, I try to make a quick note of it.&lt;/p&gt;
@@ -227,7 +484,7 @@ excited about a project going well, I try to make a quick note of it.&lt;/p&gt;
 and it becomes hard to remember what I was excited about even a month later.
 When I look at my brag doc it serves as an index to my weekly snippets, showing
 me where to look for important work. Plus it’s a nice dopamine hit.&lt;/p&gt;
-&lt;h2&gt;Work the story until it’s smooth&lt;/h2&gt;
+&lt;h2 id="work-the-story-until-its-smooth"&gt;Work the story until it’s smooth&lt;/h2&gt;
 &lt;p&gt;The first time you try telling your story, it’s going to be clunky. The only
 way to get past this is practice. Work your story over until it’s smooth. In
 the ideal case, you want this story to be able to spread by word of mouth.&lt;/p&gt;
@@ -241,7 +498,7 @@ really hard!&lt;/p&gt;
 eventually going to be in a room with their peers arguing for why you need a
 promotion. If you’ve armed your manager with a great story about why your work
 is hard, they’re going to be grateful to you for making them look smart.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;P.S.:
 I originally wrote this article for
 &lt;a href="https://leaddev.com/staffplus/getting-credit-invisible-work-staff-level"&gt;StaffPlus&lt;/a&gt;

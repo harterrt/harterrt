@@ -2,11 +2,23 @@
 <rss version="2.0"><channel><title>blog.harterrt.com - documentation</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Thu, 03 Nov 2016 00:00:00 -0700</lastBuildDate><item><title>Meta Documentation</title><link>https://blog.harterrt.com/meta-documentation.html</link><description>&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
-I've been interesting in learning how to write …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</guid><category>documentation</category><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>https://blog.harterrt.com/why-markdown.html</link><description>&lt;p&gt;[TOC]&lt;/p&gt;
+I've been interesting in learning how to write …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</guid><category>documentation</category><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>https://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#one-less-tool"&gt;One less tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#syncronization"&gt;Syncronization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#discoverability"&gt;Discoverability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
 request&lt;/a&gt; that moved
 some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
 wiki&lt;/a&gt; to a &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md"&gt;github
 repository&lt;/a&gt;.
-It took a couple of hours of editing and toying with pandoc to get right, but
-when I was done, I realized the benefits were difficult to see.  So, I decided …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/why-markdown.html</guid><category>documentation</category><category>documentation</category><category>mozilla</category></item></channel></rss>
+It took a couple of hours of editing and toying with pandoc to get right, but …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/why-markdown.html</guid><category>documentation</category><category>documentation</category><category>mozilla</category></item></channel></rss>

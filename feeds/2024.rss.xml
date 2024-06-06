@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - 2024</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 05 Jun 2024 00:00:00 -0700</lastBuildDate><item><title>Talk: Practical Strategies for Data Storytelling</title><link>https://blog.harterrt.com/storytelling-odsc-2024.html</link><description>&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
+<rss version="2.0"><channel><title>blog.harterrt.com - 2024</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 05 Jun 2024 20:45:00 -0700</lastBuildDate><item><title>SQL style - where do the commas go?</title><link>https://blog.harterrt.com/commas-sql-style.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+but I recommend using trailing commas for consistency.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We didn't take an opinionated stance on comma placement when writing
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's SQL Style Guide&lt;/a&gt;
+probably to avoid a quagmire.
+I'm trying to figure out where I stand now, so I wrote it …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 05 Jun 2024 20:45:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-06-05:/commas-sql-style.html</guid><category>2024</category></item><item><title>Talk: Practical Strategies for Data Storytelling</title><link>https://blog.harterrt.com/storytelling-odsc-2024.html</link><description>&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
 &lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
 I have more to say on the subject, but in the meantime you can see my 
 &lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;For the last two years, I've hosted a biweekly …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 05 Jun 2024 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-06-05:/storytelling-odsc-2024.html</guid><category>2024</category></item><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/getting-credit-for-invisible-work.html</link><description>&lt;p&gt;As I moved up my company’s career ladder,
 my job description became more ambiguous.&lt;/p&gt;
 &lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my

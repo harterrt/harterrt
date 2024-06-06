@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 05 Jun 2024 00:00:00 -0700</lastBuildDate><item><title>Talk: Practical Strategies for Data Storytelling</title><link>https://blog.harterrt.com/storytelling-odsc-2024.html</link><description>&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 05 Jun 2024 20:45:00 -0700</lastBuildDate><item><title>SQL style - where do the commas go?</title><link>https://blog.harterrt.com/commas-sql-style.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+but I recommend using trailing commas for consistency.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We didn't take an opinionated stance on comma placement when writing
+&lt;a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html"&gt;Mozilla's SQL Style Guide&lt;/a&gt;
+probably to avoid a quagmire.
+I'm trying to figure out where I stand now, so I wrote it …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 05 Jun 2024 20:45:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-06-05:/commas-sql-style.html</guid><category>2024</category></item><item><title>Talk: Practical Strategies for Data Storytelling</title><link>https://blog.harterrt.com/storytelling-odsc-2024.html</link><description>&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
 &lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
 I have more to say on the subject, but in the meantime you can see my 
 &lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;For the last two years, I've hosted a biweekly …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Wed, 05 Jun 2024 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-06-05:/storytelling-odsc-2024.html</guid><category>2024</category></item><item><title>Getting Credit for Invisible Work</title><link>https://blog.harterrt.com/getting-credit-for-invisible-work.html</link><description>&lt;p&gt;As I moved up my company’s career ladder,
 my job description became more ambiguous.&lt;/p&gt;
 &lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my
@@ -52,7 +58,7 @@ to Mozilla's data science team.
 Here's a &lt;a href="/static/int_d11n/"&gt;link to the slides&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The rest of this post is a transcription of what I shared with the team
 (give or take).&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;In Q4, I'm trying to build a set of trainings
 to help …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 12 Oct 2020 18:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-10-12:/int_d11n_preso.html</guid><category>mozilla</category></item><item><title>Surrogation</title><link>https://blog.harterrt.com/surrogation.html</link><description>&lt;p&gt;A year or so ago, I read
 &lt;a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business"&gt;this article&lt;/a&gt;
@@ -102,7 +108,7 @@ outlining some points on how important writing is for an organization.&lt;/p&gt;
 but his post already sparked some ideas.
 In particular,
 I'm very interested in the idea of an internal blog for sharing context.&lt;/p&gt;
-&lt;h2&gt;Snippets&lt;/h2&gt;
+&lt;h2 id="snippets"&gt;Snippets&lt;/h2&gt;
 &lt;p&gt;My team keeps …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 28 May 2020 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2020-05-28:/writing_inside_organizations.html</guid><category>mozilla</category></item><item><title>Syncthing and Open Source Data Collection</title><link>https://blog.harterrt.com/syncthing_data.html</link><description>&lt;p&gt;I don't see many open source packages collecting telemetry,
 so when &lt;a href="https://syncthing.net/"&gt;Syncthing&lt;/a&gt; asked me to opt-in to telemetry
 I was intrigued.&lt;/p&gt;
@@ -174,7 +180,7 @@ and @mreid for the review!&lt;/p&gt;</description><dc:creator xmlns:dc="http://p
 so I decided to share here as penance.
 TL;DR: Probabilistic counts are great,
 but they shouldn't be used everywhere.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;Counting stuff is hard.
 We use probabilistic algorithms pretty frequently at Mozilla.
 For example, when trying to get user counts,
@@ -208,7 +214,7 @@ but now it's grown to include the good bits from other systems.
 It's involved, but I love it.&lt;/p&gt;
 &lt;p&gt;I get a lot of comments,
 especially on the little black book I keep …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2018-01-02:/productivity_systems.html</guid><category>not-mozilla</category></item><item><title>CLI for alerts via Slack</title><link>https://blog.harterrt.com/slack_alerts.html</link><description>&lt;p&gt;I finally got a chance to scratch an itch today.&lt;/p&gt;
-&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;When working with bigger ETL jobs,
 I frequently run into jobs that take hours to run.
 I usually either step away from the computer
@@ -220,7 +226,7 @@ release-health metrics minutes after going public.
 Will has a
 &lt;a href="https://wlach.github.io/blog/2017/10/mission-control/"&gt;great write up here&lt;/a&gt;
 if you want to read more.&lt;/p&gt;
-&lt;p&gt;The key here is that the data has to be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-07:/experiments_are_releases.html</guid><category>mozilla</category><category>experimentation</category></item><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The key here is that the data has to be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 07 Dec 2017 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-12-07:/experiments_are_releases.html</guid><category>mozilla</category><category>experimentation</category></item><item><title>Desirable features of experimentation tools</title><link>https://blog.harterrt.com/good_experiment_tools.html</link><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;At Mozilla,
 we're quickly climbing up our
 &lt;a href="https://cdn-images-1.medium.com/max/1600/1*7IMev5xslc9FLxr9hHhpFw.png"&gt;Data Science Hierarchy of Needs&lt;/a&gt;
@@ -232,7 +238,7 @@ but improving the &lt;strong&gt;tooling is going to be …&lt;/strong&gt;&lt;/p&
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;Bug 1422892&lt;/a&gt;
 started to get long,
 so I started untangling my thoughts here.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p&gt;From
 &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1422892"&gt;the bug&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -259,13 +265,13 @@ The documentation is rendered using Gitbook and hosted on Github Pages.
 You can find the 
 &lt;a href="https://github.com/mozilla/firefox-data-docs/pull/41"&gt;PR here&lt;/a&gt;
 but I figured it's worth sharing here as well.&lt;/p&gt;
-&lt;h2&gt;Style Guide&lt;/h2&gt;
+&lt;h2 id="style-guide"&gt;Style Guide&lt;/h2&gt;
 &lt;p&gt;Articles should be written in
 &lt;a href="https://daringfireball.net/projects/markdown/syntax"&gt;Markdown&lt;/a&gt;
 (not &lt;a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/"&gt;AsciiDoc&lt;/a&gt;).
 Markdown is usually …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 24 Aug 2017 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2017-08-24:/docs-style-guide.html</guid><category>mozilla</category><category>mozilla</category><category>documentation</category></item><item><title>Beer and Probes</title><link>https://blog.harterrt.com/probes.html</link><description>&lt;p&gt;Quick post to clear up some terminology.
 But first, an analogy to clear up my thinking:&lt;/p&gt;
-&lt;h2&gt;Analogy&lt;/h2&gt;
+&lt;h2 id="analogy"&gt;Analogy&lt;/h2&gt;
 &lt;p&gt;Temperature control is a big part of brewing beer.
 Throughout the brewing process I use a thermometer
 to measure the temperature of the soon-to-be beer.
@@ -288,18 +294,40 @@ row for each client_id in a 1% sample of clients.  However, the Cross Sectional
 dataset simplifies your analysis …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Nov 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-14:/announcing-the-cross-sectional-dataset.html</guid><category>mozilla</category></item><item><title>Meta Documentation</title><link>https://blog.harterrt.com/meta-documentation.html</link><description>&lt;p&gt;You'll see a lot of posts coming down the line on documentation.&lt;/p&gt;
 &lt;p&gt;We surveyed our customers last quarter and asked where our data pipeline was lacking.
 It turns out the most painful part of using our data pipeline, is reading the documentation.
-I've been interesting in learning how to write …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</guid><category>documentation</category><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>https://blog.harterrt.com/why-markdown.html</link><description>&lt;p&gt;[TOC]&lt;/p&gt;
+I've been interesting in learning how to write …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/meta-documentation.html</guid><category>documentation</category><category>documentation mozilla</category></item><item><title>Why Markdown?</title><link>https://blog.harterrt.com/why-markdown.html</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#better-process"&gt;Better Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#better-tools"&gt;Better Tools&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#one-less-tool"&gt;One less tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-documentation-sits-next-to-the-code"&gt;The documentation sits next to the code&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#syncronization"&gt;Syncronization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#discoverability"&gt;Discoverability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;p&gt;Last week I finished a &lt;a href="https://github.com/mozilla/telemetry-batch-view/pull/128"&gt;pull
 request&lt;/a&gt; that moved
 some documentation from &lt;a href="https://wiki.mozilla.org/Telemetry/LongitudinalExamples"&gt;mozilla's
 wiki&lt;/a&gt; to a &lt;a href="https://github.com/mozilla/telemetry-batch-view/blob/master/docs/longitudinal_examples.md"&gt;github
 repository&lt;/a&gt;.
-It took a couple of hours of editing and toying with pandoc to get right, but
-when I was done, I realized the benefits were difficult to see.  So, I decided …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/why-markdown.html</guid><category>documentation</category><category>documentation</category><category>mozilla</category></item><item><title>Working over SSH</title><link>https://blog.harterrt.com/working-over-ssh.html</link><description>&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
+It took a couple of hours of editing and toying with pandoc to get right, but …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Thu, 03 Nov 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-11-03:/why-markdown.html</guid><category>documentation</category><category>documentation</category><category>mozilla</category></item><item><title>Working over SSH</title><link>https://blog.harterrt.com/working-over-ssh.html</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#tools"&gt;Tools&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#tmux"&gt;tmux&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="#session-persistence"&gt;Session Persistence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#multiplexing"&gt;Multiplexing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#homeshick"&gt;Homeshick&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Working over SSH can be impossibly frustrating if you're not using the right tools. 
 I promised my teammates a write-up how I work over ssh.
-Using these tools will make it significantly easier / more fun to work with a remote linux system.&lt;/p&gt;
-&lt;h2&gt;Tools&lt;/h2&gt;
-&lt;h3&gt;&lt;a href="https://tmux.github.io/"&gt;tmux&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;For me, tmux is …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:/working-over-ssh.html</guid><category>mozilla</category><category>tools</category></item></channel></rss>
+Using these tools will make it significantly easier / more fun to work with a remote linux system …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 05 Sep 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2016-09-05:/working-over-ssh.html</guid><category>mozilla</category><category>tools</category></item></channel></rss>

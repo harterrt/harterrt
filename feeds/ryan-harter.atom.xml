@@ -10,11 +10,11 @@ I don't have much experience in this area,
 so I decided to review what's already been written about creating great documentation.
 This is a summary of what I've found, 
 both for my own reference and to help others understand my thought process.&lt;/p&gt;
-&lt;h2&gt;Findings&lt;/h2&gt;
+&lt;h2 id="findings"&gt;Findings&lt;/h2&gt;
 &lt;p&gt;I should note, all the literature I could find focused on documenting software products.
 I am willing to bet that a data product is going to have different documentation needs than most software products.
 But, this is as good a place to start as any.&lt;/p&gt;
-&lt;h3&gt;Structure &amp;amp; What to Write&lt;/h3&gt;
+&lt;h3 id="structure-what-to-write"&gt;Structure &amp;amp; What to Write&lt;/h3&gt;
 &lt;p&gt;Most seem to agree that a &lt;strong&gt;README&lt;/strong&gt; is a critical piece of documentation.
 The README is usually comprised of two key parts:&lt;/p&gt;
 &lt;ul&gt;
@@ -37,7 +37,7 @@ I was having a hard time figuring out how we were going to separate our
 prose documentation from our development notes.
 Now I see that these are just different stages in this learning process.
 First we explain what it is, then how to use it, and finally, how to extend it.&lt;/p&gt;
-&lt;h3&gt;Style&lt;/h3&gt;
+&lt;h3 id="style"&gt;Style&lt;/h3&gt;
 &lt;p&gt;Most articles suggest adopting a style guide to make it easier for a user to read your documentation.
 The writing should pull you through the document and feel natural.&lt;/p&gt;
 &lt;p&gt;If you want your documentation to read naturally, you should try to become a better writer.
@@ -67,7 +67,7 @@ If you don't have access to an editor,
 review your own work thrice then ask for someone else's review before publishing.
 Try adjusting your margins to force the text to re-flow.
 It's a very effective way to catch spelling or grammatical mistakes.&lt;/p&gt;
-&lt;h3&gt;Tools&lt;/h3&gt;
+&lt;h3 id="tools"&gt;Tools&lt;/h3&gt;
 &lt;p&gt;I'll start this section with a warning.
 Tools often receive an undue amount of attention, especially from programmers.
 With documentation, &lt;strong&gt;writing is the hard, important work&lt;/strong&gt;.
@@ -100,7 +100,7 @@ Finally, it's difficult to get review for your work before publishing.&lt;/p&gt;
 &lt;p&gt;Recognize that automatically-generated documentation isn't a replacement for hand-crafted prose.
 Remember that the bulk of your documentation should be tutorials meant to slowly ramp up your users to expert status.
 Docstrings have very little utility in this process.&lt;/p&gt;
-&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
 &lt;p&gt;Most of what I've summarized here came from very few sources.
 I highly recommend you read the following articles if you're interested in learning more:&lt;/p&gt;
 &lt;ul&gt;

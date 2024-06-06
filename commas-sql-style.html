@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="https://blog.harterrt.com/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://blog.harterrt.com/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryan T. Harter">
+  <meta name="description" content="Harter writes about data">
+
+  <link href="https://blog.harterrt.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.harterrt.com Atom" />
+  <link href="https://blog.harterrt.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.harterrt.com RSS" />
+
+<meta name="keywords" content="">
+
+  <title>
+    blog.harterrt.com
+&ndash; SQL style - where do the commas go?  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83638505-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="https://blog.harterrt.com">
+        <img src="https://www.gravatar.com/avatar/8259d4073ed8ba5f61f5d60c978b0e69" alt="logo" class="round-img">
+      </a>
+      <h2><a href="https://blog.harterrt.com">Ryan T. Harter</a></h2>
+      <p>Senior Staff Data Scientist @Shopify</p>
+      <ul>
+        <li><a href="/chrono.html">Writing</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/talks.html">Talks</a></li>
+        <li><a href="/resume.pdf">Resume</a></li>
+        <hr>
+        <li><a href="https://harterrt.substack.com/" target="_blank">Newsletter</a></li>
+        <li><a href="https://github.com/harterrt" target="_blank">Github</a></li>
+        <li><a href="http://www.linkedin.com/pub/ryan-harter/11/a24/a21" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com/harterrt" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+<article>
+  <div class="article_title">
+    <h1><a href="https://blog.harterrt.com/commas-sql-style.html">SQL style - where do the commas go?</a></h1>
+  </div>
+  <div class="article_text">
+    <p><strong>TL;DR:</strong> there are good arguments for leading commas,
+but I recommend using trailing commas for consistency.</p>
+<hr>
+<p>We didn't take an opinionated stance on comma placement when writing
+<a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html">Mozilla's SQL Style Guide</a>
+probably to avoid a quagmire.
+I'm trying to figure out where I stand now, so I wrote it out here.</p>
+<p>Here's an example query so we can talk concretely:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_b</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_c</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>This query uses <strong>trailing commas</strong> -
+where there's a comma, it's the last character on the line.
+This is by far the most common style of writing queries.</p>
+<p>On the other side, there are folks that prefer <strong>leading commas</strong>, like so:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">column_b</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">column_c</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>This is a less common style, but is fervently loved by its proponents.
+Leading comma proponents will argue that this style is easier to work with
+and makes git commits more readable.</p>
+<p>Similarly, there are fervent proponents of trailing commas.
+They'll argue that trailing commas are convention by overwhelming majority
+and leading commas are jarringly ugly.</p>
+<p>In reality, most analysts don't care either way.
+They tend to use trailing commas by default.</p>
+<p>The <a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI">spaces-vs-tabs</a>
+absurdity of this argument is not lost on me.
+But, I <em>do</em> care about SQL style, so here I am.</p>
+<h2 id="consistency-is-paramount">Consistency is paramount</h2>
+<p>Like <a href="https://peps.python.org/pep-0008/">PEP8</a>, 
+<a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html">Mozilla's SQL Style Guide</a>
+aims to make queries 
+consistent in service of readability.</p>
+<p>Trailing commas are by far the most common pattern.
+For example:</p>
+<ul>
+<li><a href="https://docs.telemetry.mozilla.org/concepts/sql_style.html">Mozilla's Style Guide</a>
+  uniformly uses trailing commas in examples
+  despite not making an explicit recommendation on comma format.</li>
+<li>BigQuery's documentation uses trailing commas 
+  (<a href="https://cloud.google.com/bigquery/docs/running-queries">e.g.</a>)</li>
+<li>Simon Holywell's SQL Style Guide (<a href="https://www.sqlstyle.guide/">sqlstyle.guide</a>)
+  uniformly uses trailing commas</li>
+<li>SQLFluff's <a href="https://docs.sqlfluff.com/en/stable/rules.html#rule-layout.commas"><code>Rule_L019</code></a>
+  defaults to trailing commas.</li>
+</ul>
+<p>But the most convincing source I found is Ben Stancil's 
+<a href="https://mode.com/blog/should-sql-queries-use-trailing-or-leading-commas">analysis of queries in Mode</a>. 
+He found that ~80% of sufficiently-complex queries use trailing commas.
+Only ~15% of query authors frequently use leading commas.</p>
+<p><strong>Trailing commas are clearly the dominant convention</strong>.
+Style guides are about consistency.
+This is enough evidence for me to recommend trailing commas
+as the right default.</p>
+<p>That said, there <em>are</em> some motivating reasons to use leading commas.</p>
+<h2 id="ergonomics">Ergonomics</h2>
+<p>The most common argument I see for leading commas is that 
+it's easier to edit queries - especially when prototyping an analysis.</p>
+<p>Until recently, the following SQL would produce an error in most SQL engines:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_b</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="c1">-- column_c</span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>That <strong>hanging comma</strong> after <code>column_b</code> is invalid.</p>
+<p>This can be very annoying when hacking on a query.
+Commenting out a column creates an error. Yuck.</p>
+<p><strong>I suspect this is why folks started using leading commas in the first place</strong>.
+We can just comment out the line if we're using leading commas:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">column_b</span><span class="w"></span>
+<span class="w">  </span><span class="c1">-- , column_c -- this line in commented out</span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>This is nice, but in practice,
+many modern SQL engines have stopped throwing this error.</p>
+<p>We owe a debt of gratitude to <a href="https://duckdb.org/">DuckDB</a>
+for pushing the industry forward here.
+Their <a href="https://duckdb.org/2022/05/04/friendlier-sql.html">Friendly SQL</a>
+created some great quality-of-life improvements
+that are quickly being adopted by competitors.
+BigQuery, for example.</p>
+<p>Unfortunately, the progress is incomplete.
+Most query engines, like Presto or SQLite,
+will still throw hanging comma errors.</p>
+<p>Even more frustrating, 
+this isn't consistently enforced even <em>within</em> a single query.
+Take this failing BigQuery query for example:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_b</span><span class="p">,</span><span class="w"> </span><span class="c1">-- valid hanging comma</span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+<span class="k">WHERE</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;first&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;second&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;third&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- invalid hanging comma, causes an error</span>
+<span class="w">  </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>SQLFluff addresses this pattern in their rule CV03, 
+<a href="https://docs.sqlfluff.com/en/stable/rules.html#trailing-commas-within-select-clause">Trailing commas within select clause</a>.</p>
+<p>In their own works:</p>
+<blockquote>
+<p>For many database backends this is allowed. For some users this may be
+something they wish to enforce (in line with Python best practice). Many
+database backends regard this as a syntax error, and as such the SQLFluff
+default is to forbid trailing commas in the select clause.</p>
+</blockquote>
+<p>I agree with the default of forbidding trailing commas.
+I'll take it a step further:
+allowing trailing commas 
+<strong>creates inconsistency within a query and should be forbidden</strong>,
+even where the query engine allows it.</p>
+<p>It's fine to use leading commas or hanging commas
+while hacking on an ad hoc query. They're convenient. I use them too.
+But these conveniences should be cleaned up 
+before committing the query to a code base.</p>
+<h2 id="cleaner-git-commit-messages">Cleaner git commit messages</h2>
+<p>A corollary to the above argument 
+is that leading commas create cleaner commit messages.</p>
+<p>We need to touch two lines to delete a column using leading commas:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_b</span><span class="w">    </span><span class="c1">-- remove a comma from this line</span>
+<span class="w">  </span><span class="c1">-- column_c -- delete this line</span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>We can contain our changes to one line if we use leading commas</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">column_b</span><span class="w"></span>
+<span class="w">  </span><span class="c1">-- , column_c -- only need to delete this line</span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>I <em>guess</em> this is a benefit, but I don't find it motivating.</p>
+<p>Style guides exist because code is read far more often than it's written.
+A commit message is read less frequently than the code -
+probably by an order of magnitude.</p>
+<p>Making a trivial improvement to the git diff 
+is not worth breaking convention.</p>
+<h2 id="commas-are-load-bearing">Commas are load bearing</h2>
+<p>The best argument I've seen is that 
+commas kinda look like keywords if you squint hard enough.
+We <em>do</em> require keywords to be at the beginning of the line.
+We <em>also</em> require Boolean operators to be at the beginning of a line.</p>
+<p>For example, if commas <em>were</em> keywords 
+it would be obvious that they should be at the beginning of the line:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"></span>
+<span class="w">  </span><span class="n">COMMA</span><span class="w"> </span><span class="n">column_b</span><span class="w"></span>
+<span class="w">  </span><span class="n">COMMA</span><span class="w"> </span><span class="n">column_c</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>The consistency win becomes even more clear if we add a join 
+and some Boolean operators:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_a</span><span class="w"></span>
+<span class="w">  </span><span class="n">COMMA</span><span class="w"> </span><span class="n">column_b</span><span class="w"></span>
+<span class="w">  </span><span class="n">COMMA</span><span class="w"> </span><span class="n">column_c</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+<span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_b</span><span class="w"></span>
+<span class="w">  </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">joint_key</span><span class="p">)</span><span class="w"></span>
+<span class="k">WHERE</span><span class="w"></span>
+<span class="w">  </span><span class="n">column_b</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">column_c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;bbb&#39;</span><span class="w"></span>
+</code></pre></div>
+
+<p>Commas are load bearing.
+They carry meaning but are easily missed at the end of a line.</p>
+<p>This is pretty esoteric though. 
+Also, commas are not actually keywords, soooo...</p>
+<h2 id="spotting-errors">Spotting errors</h2>
+<p>Another reasonable argument for leading commas 
+is that it makes it easier to spot a particular type of error.</p>
+<p>Take this query for example:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">first_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">second_column</span><span class="w"></span>
+<span class="w">  </span><span class="n">another_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">final_column</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>It looks like the resulting table will have four columns,
+but in reality it will only have three columns.</p>
+<p>There's a missing comma after <code>column_b</code>.
+Most SQL interpreters will interpret this query to mean:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">first_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">second_column</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">another_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">final_column</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>The error is more obvious if we use leading commas:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">first_column</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">second_column</span><span class="w"></span>
+<span class="w">    </span><span class="n">another_column</span><span class="w"></span>
+<span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">final_column</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<p>The solution to this problem is fairly simple: Use a code linter and formatter.
+Probably <a href="https://sqlfluff.com/">SQLFluff</a>.</p>
+<p>The linter will make the error even <em>more</em> obvious than leading commas would:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">first_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">second_column</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">another_column</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">final_column</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"></span>
+<span class="w">  </span><span class="n">table_a</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>There <em>are</em> good arguments for using leading commas.
+If I were coding in a vacuum,
+I might recommending standardizing around leading commas.</p>
+<p>However, that's not the case.
+Trailing commas are the dominant convention by a long shot.
+The battle is lost.</p>
+<p>Use trailing commas.</p>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Wed 05 June 2024</p>
+    <p>Category: <a href="https://blog.harterrt.com/category/2024.html">2024</a>
+    </p>
+  </div>
+  <hr>
+  <div class="article_footer">
+    <p>
+        Feel free to share any feedback via email!
+        You can reach me at <code>blog@harterrt.com</code>.
+        Look forward to hearing from you!
+    <p>
+        Want to get notified next time I publish something?
+        Sign up for 
+        <a href="https://harterrt.substack.com/">my newsletter here</a>.
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; Ryan T. Harter. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>
