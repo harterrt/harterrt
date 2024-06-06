@@ -1,5 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2022-07-01T00:00:00-07:00</updated><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/getting-credit-for-invisible-work.html" rel="alternate"></link><published>2022-07-01T00:00:00-07:00</published><updated>2022-07-01T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-07-01:/getting-credit-for-invisible-work.html</id><summary type="html">&lt;p&gt;As I moved up my company’s career ladder,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com - Ryan T. Harter</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/ryan-t-harter.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-05-14T00:00:00-07:00</updated><entry><title>Talk: Practical Strategies for Data Storytelling</title><link href="https://blog.harterrt.com/storytelling-odsc-2024.html" rel="alternate"></link><published>2024-05-14T00:00:00-07:00</published><updated>2024-05-14T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-05-14:/storytelling-odsc-2024.html</id><summary type="html">&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
+&lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
+I have more to say on the subject, but in the meantime you can see my 
+&lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;For the last two years, I've hosted a biweekly …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I gave a talk at the Open Data Science Conference a few weeks ago titled: 
+&lt;a href="https://odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;Practical Strategies for Data Storytelling&lt;/a&gt;.
+I have more to say on the subject, but in the meantime you can see my 
+&lt;a href="/static/odsc2024/index.html#p1"&gt;slides and speaker notes here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;For the last two years, I've hosted a biweekly data storytelling workshop
+for my peers at Shopify.
+This talk is an attempt to share some of my experience more broadly.&lt;/p&gt;
+&lt;!-- Maybe include the slide and intro blurb here instead --&gt;
+
+&lt;p&gt;I was surprised by the turnout we had -
+a lot of data folks want to improve their storytelling.
+A lot of these folks also don't know where to start.&lt;/p&gt;
+&lt;p&gt;That's not surprising.
+Storytelling is the vaguest part of most data science job ladders.
+Many of the folks trying to improve their storytelling
+don't know what data storytelling &lt;em&gt;is&lt;/em&gt;.
+No wonder it's so hard to improve.&lt;/p&gt;
+&lt;p&gt;The other big problem I see 
+is that folks don't know how to start their storytelling &lt;em&gt;practice&lt;/em&gt;.
+They know they want to improve - 
+but at a very tactical level, they don't know what exercises to do.&lt;/p&gt;
+&lt;p&gt;I try to address both of these in my talk.&lt;/p&gt;
+&lt;p&gt;I have a lot more to say, but I don't have time right now.
+The internet is littered with promises of another essay coming soon.
+I won't make any promises here.
+Fingers crossed - I hope to expand on this talk soon.&lt;/p&gt;
+&lt;!--
+----
+
+## Appendix
+
+
+
+
+
+When folks get stuck trying to improve their data storytelling, 
+there's usually two problems:
+
+1. They don't know what data storytelling _is_,
+   though they usually have some idea about why it's important
+2. They don't know how to jump start their storytelling practice. 
+   They don't have a useful feedback loop.
+
+
+
+
+
+
+It's not hard to imagine. 
+There's not a ton of writing on _how_ to do good data storytelling.
+"Storytelling with data" is a good start, but over indexes on making graphics.
+Graphs are only a small part of telling a good story.
+
+
+
+----
+
+and doesn't do much to explain what storytelling _is_. 
+
+This can be very frustrating.
+
+More often than not, 
+when someone is told they need to improve their storytelling
+they don't really know what good storytelling _is_.
+
+Usually, when someone is struggling with storytelling
+it's because they don't know what good storytelling _is_.
+
+Folks usually get stuck for one of a few reasons:
+
+* They don't understand what data storytelling _is_
+* They don't feel comfortable being opinionated
+* They don't understand their audience
+
+One problem is that folks don't know what good storytelling _is_.
+
+Most of the time, the issue is that it's not clear what good storytelling _is_.
+
+but don't know how to get started.
+
+Often the problem is that they don't know what good storytelling looks like.
+They only know that they need to improve.
+
+Part of the problem is that there's no good 
+
+We had a great turnout for this talk.
+Unfortunately some attendees couldn't attend due to seating capacity.
+I wish the talk had been recorded.
+
+I've found that lots of data folks want to improve their storytelling,
+but they don't know how to get started.
+
+Most of the time, the blocker is that they don't understand 
+what good data storytelling _is_.
+
+Most importantly, a lot of folks are confused about what good storytelling _is_.
+
+We're not doing ourselves any favors with the mysticism around storytelling.
+
+The first is that data storytelling is poorly understood.
+
+---
+
+This talk came because it's necessary.
+
+Standing room only. Lots of interest.
+
+Most vague part of a job ladder.
+
+This talk came out of _practice_.
+I've hosted a data storytelling workshop at Shopify for the last two years.
+
+I've hosted a fortnightly workshop on data storytelling at Shopify for the last two years.
+
+--&gt;</content><category term="2024"></category></entry><entry><title>Getting Credit for Invisible Work</title><link href="https://blog.harterrt.com/getting-credit-for-invisible-work.html" rel="alternate"></link><published>2022-07-01T00:00:00-07:00</published><updated>2022-07-01T00:00:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2022-07-01:/getting-credit-for-invisible-work.html</id><summary type="html">&lt;p&gt;As I moved up my company’s career ladder,
 my job description became more ambiguous.&lt;/p&gt;
 &lt;p&gt;I stepped back to take a look at my work, and I was surprised to find that my
 biggest wins hadn’t come from technical feats or shipped code. Instead, I
