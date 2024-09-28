@@ -65,8 +65,6 @@ MARKDOWN = {
 }
 
 
-GOOGLE_ANALYTICS = 'UA-83638505-1'
-
 #########
 # Admin #
 #########
