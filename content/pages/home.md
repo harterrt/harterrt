@@ -22,4 +22,9 @@ If you want to see _everything_, here's a
 [chronological index of all my writing](/chrono.html).
 
 If you want to learn more about my background,
-here's my [about page](/pages/about.html)
+here's my [about page](/pages/about.html).
+
+<!--
+If you want to find other folks writing about data,
+check out the [webring here](/pages/webring.html).
+-->
