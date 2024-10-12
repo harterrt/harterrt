@@ -24,7 +24,5 @@ If you want to see _everything_, here's a
 If you want to learn more about my background,
 here's my [about page](/pages/about.html).
 
-<!--
 If you want to find other folks writing about data,
-check out the [webring here](/pages/webring.html).
--->
+check out the [data people webring here](/pages/webring.html).

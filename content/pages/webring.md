@@ -1,6 +1,8 @@
 title: Data people writing stuff
 slug: webring
 
+<link rel="stylesheet" href="https://randyau.github.io/datawebring/onionring.css">
+
 [Randy Au](https://www.randyau.com/) curates a list of data folks writing on the open web.
 I like that, so I've linked to [the webring](https://github.com/randyau/datawebring) here:
 
