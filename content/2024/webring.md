@@ -1,9 +1,11 @@
-title: Data Writers Webring
-slug: webring
+---
+title: A webring
+date: 2024-10-14T15:20:00
+slug: data-webring
+---
 
-
-[Randy Au](https://www.randyau.com/) curates a list of data folks writing on the open web.
-Here's [the webring](https://github.com/randyau/datawebring):
+I added this blog to Randy Au's [webring for data writers](https://www.counting-stuff.com/its-2024-lets-have-a-webring/).
+Take a [look here](/pages/webring.html), or below:
 
 ---
 <div id='data-ring-dot-list'>
@@ -44,4 +46,5 @@ I've enjoyed reading a couple of blogs from his webring too.
 
 I don't know that webrings are the cure,
 but a different set of incentives are welcome.
+
 
