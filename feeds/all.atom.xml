@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-06-05T20:45:00-07:00</updated><entry><title>SQL style - where do the commas go?</title><link href="https://blog.harterrt.com/commas-sql-style.html" rel="alternate"></link><published>2024-06-05T20:45:00-07:00</published><updated>2024-06-05T20:45:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-06-05:/commas-sql-style.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-10-14T15:20:00-07:00</updated><entry><title>A webring</title><link href="https://blog.harterrt.com/data-webring.html" rel="alternate"></link><published>2024-10-14T15:20:00-07:00</published><updated>2024-10-14T15:20:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-10-14:/data-webring.html</id><summary type="html">&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
+Take a &lt;a href="/pages/webring.html"&gt;look here&lt;/a&gt;, or below:&lt;/p&gt;
+&lt;hr&gt;
+&lt;div id='data-ring-dot-list'&gt;
+&lt;link rel="stylesheet" href="https://randyau.github.io/datawebring/onionring.css"&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-variables.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-widget.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;I'm struggling to describe why I think this is so interesting.&lt;/p&gt;
+&lt;p&gt;Most of the writing I've seen about doing data work is misleading.
+It misrepresents what data work actually looks like.&lt;/p&gt;
+&lt;p&gt;Everyone writing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
+Take a &lt;a href="/pages/webring.html"&gt;look here&lt;/a&gt;, or below:&lt;/p&gt;
+&lt;hr&gt;
+&lt;div id='data-ring-dot-list'&gt;
+&lt;link rel="stylesheet" href="https://randyau.github.io/datawebring/onionring.css"&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-variables.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-widget.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;I'm struggling to describe why I think this is so interesting.&lt;/p&gt;
+&lt;p&gt;Most of the writing I've seen about doing data work is misleading.
+It misrepresents what data work actually looks like.&lt;/p&gt;
+&lt;p&gt;Everyone writing online wants someone to read their work.
+Social media give powerful hits of attention when they favor your work.
+It's easy and natural to start writing for an algorithm.&lt;/p&gt;
+&lt;p&gt;But that produces a very particular type of writing.
+Folks rehash the same threadbare topics - 
+responding to what novice readers &lt;em&gt;think&lt;/em&gt; they need to know
+(should I learn python or R in 2024?).
+Folks write hyper-technical or academic content because it's prestigious,
+it's concrete, and our employers are less likely to care that we're sharing it.
+Now, LLMs are churning out surface-level content too.&lt;/p&gt;
+&lt;p&gt;In all, there's a distorted image of what good data work looks like.
+That image is so strong that it actually changes the reality of data work.
+Hiring managers start to require skills that they &lt;em&gt;think&lt;/em&gt; should be common.
+Executives start to expect magic ML solutions from small data teams.
+Novice data scientists train for hyper-technical (but fictitious) jobs.
+This backwards pattern was stronger five years ago, but it's still around now.&lt;/p&gt;
+&lt;p&gt;Instead, what I want to find is a few authors I trust
+to discuss the realities of doing data work.
+Randy does a great job here.
+I've enjoyed reading a couple of blogs from his webring too.&lt;/p&gt;
+&lt;p&gt;I don't know that webrings are the cure,
+but a different set of incentives are welcome.&lt;/p&gt;</content><category term="2024"></category></entry><entry><title>SQL style - where do the commas go?</title><link href="https://blog.harterrt.com/commas-sql-style.html" rel="alternate"></link><published>2024-06-05T20:45:00-07:00</published><updated>2024-06-05T20:45:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-06-05:/commas-sql-style.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
 but I recommend using trailing commas for consistency.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;We didn't take an opinionated stance on comma placement when writing

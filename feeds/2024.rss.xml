@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com - 2024</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Wed, 05 Jun 2024 20:45:00 -0700</lastBuildDate><item><title>SQL style - where do the commas go?</title><link>https://blog.harterrt.com/commas-sql-style.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
+<rss version="2.0"><channel><title>blog.harterrt.com - 2024</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 14 Oct 2024 15:20:00 -0700</lastBuildDate><item><title>A webring</title><link>https://blog.harterrt.com/data-webring.html</link><description>&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
+Take a &lt;a href="/pages/webring.html"&gt;look here&lt;/a&gt;, or below:&lt;/p&gt;
+&lt;hr&gt;
+&lt;div id='data-ring-dot-list'&gt;
+&lt;link rel="stylesheet" href="https://randyau.github.io/datawebring/onionring.css"&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-variables.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://randyau.github.io/datawebring/onionring-widget.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;I'm struggling to describe why I think this is so interesting.&lt;/p&gt;
+&lt;p&gt;Most of the writing I've seen about doing data work is misleading.
+It misrepresents what data work actually looks like.&lt;/p&gt;
+&lt;p&gt;Everyone writing …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Mon, 14 Oct 2024 15:20:00 -0700</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-10-14:/data-webring.html</guid><category>2024</category></item><item><title>SQL style - where do the commas go?</title><link>https://blog.harterrt.com/commas-sql-style.html</link><description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; there are good arguments for leading commas,
 but I recommend using trailing commas for consistency.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;We didn't take an opinionated stance on comma placement when writing
