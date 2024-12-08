@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Mon, 14 Oct 2024 15:20:00 -0700</lastBuildDate><item><title>A webring</title><link>https://blog.harterrt.com/data-webring.html</link><description>&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
+<rss version="2.0"><channel><title>blog.harterrt.com</title><link>https://blog.harterrt.com/</link><description></description><lastBuildDate>Sat, 07 Dec 2024 17:24:00 -0800</lastBuildDate><item><title>Humidity and ratios</title><link>https://blog.harterrt.com/humidity.html</link><description>&lt;p&gt;My house gets super dry in the winter and I didn't understand why.&lt;/p&gt;
+&lt;p&gt;My weather station says it's drier inside than outside,
+which didn't make a ton of sense. 
+I'm cooking, and sweating, and showering inside.
+It should be &lt;em&gt;more&lt;/em&gt; humid.&lt;/p&gt;
+&lt;p&gt;I had a suspicion that my forced hot air …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ryan T. Harter</dc:creator><pubDate>Sat, 07 Dec 2024 17:24:00 -0800</pubDate><guid isPermaLink="false">tag:blog.harterrt.com,2024-12-07:/humidity.html</guid><category>2024</category></item><item><title>A webring</title><link>https://blog.harterrt.com/data-webring.html</link><description>&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
 Take a &lt;a href="/pages/webring.html"&gt;look here&lt;/a&gt;, or below:&lt;/p&gt;
 &lt;hr&gt;
 &lt;div id='data-ring-dot-list'&gt;

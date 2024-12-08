@@ -1,5 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-10-14T15:20:00-07:00</updated><entry><title>A webring</title><link href="https://blog.harterrt.com/data-webring.html" rel="alternate"></link><published>2024-10-14T15:20:00-07:00</published><updated>2024-10-14T15:20:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-10-14:/data-webring.html</id><summary type="html">&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-12-07T17:24:00-08:00</updated><entry><title>Humidity and ratios</title><link href="https://blog.harterrt.com/humidity.html" rel="alternate"></link><published>2024-12-07T17:24:00-08:00</published><updated>2024-12-07T17:24:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-12-07:/humidity.html</id><summary type="html">&lt;p&gt;My house gets super dry in the winter and I didn't understand why.&lt;/p&gt;
+&lt;p&gt;My weather station says it's drier inside than outside,
+which didn't make a ton of sense. 
+I'm cooking, and sweating, and showering inside.
+It should be &lt;em&gt;more&lt;/em&gt; humid.&lt;/p&gt;
+&lt;p&gt;I had a suspicion that my forced hot air …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My house gets super dry in the winter and I didn't understand why.&lt;/p&gt;
+&lt;p&gt;My weather station says it's drier inside than outside,
+which didn't make a ton of sense. 
+I'm cooking, and sweating, and showering inside.
+It should be &lt;em&gt;more&lt;/em&gt; humid.&lt;/p&gt;
+&lt;p&gt;I had a suspicion that my forced hot air system was to blame,
+but I didn't understand the mechanism.
+&lt;em&gt;Cooling&lt;/em&gt; air makes it drier, but &lt;em&gt;heating&lt;/em&gt; shouldn't remove any water.
+Like - I know my A/C has a drain on it, but my furnace definitely doesn't.&lt;/p&gt;
+&lt;h1 id="relative-humidity"&gt;&lt;em&gt;Relative&lt;/em&gt; humidity&lt;/h1&gt;
+&lt;p&gt;As it turns out, I didn't understand my metric.
+My weather station reports &lt;em&gt;relative&lt;/em&gt; humidity,
+and I guess I always just ignored the "relative" part?&lt;/p&gt;
+&lt;!-- 
+I assumed 60% humidity meant that there was more water in the air 
+than at 30% humidity,
+which is not necessarily true.
+--&gt;
+
+&lt;p&gt;Relative humidity is how close we are to the maximum humidity
+&lt;em&gt;at a given temperature&lt;/em&gt;.
+Hot air can hold a lot of water, cold air holds very little water.
+The difference is huge - air at 68°F can hold ~4x more water than at 32°F
+(at least that's what I understand from skimming this 
+&lt;a href="https://en.wikipedia.org/wiki/Vapour_pressure_of_water"&gt;wikipedia article&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;So when I opened my windows to let in the 60% humidity 32° air,
+the relative humidity dropped to 15% after heating it to 68°.
+Mystery solved.&lt;/p&gt;
+&lt;h1 id="beware-shifting-denominators"&gt;Beware shifting denominators&lt;/h1&gt;
+&lt;p&gt;When a ratio moves, people tend to think it's because the numerator shifted.
+It can be very misleading when the denominator changes instead.&lt;/p&gt;
+&lt;p&gt;For example: 
+the percent of users buying a product after visiting your store
+increases by from 25% to 50%! 
+That's great! Unless you just lost a bunch of traffic to your store:&lt;/p&gt;
+&lt;style&gt;
+    table {
+            border-collapse: collapse; /* Removes extra spacing between cells */
+            margin: 20px 0;
+            font-size: 16px;
+      text-align: right;
+    }
+    th, td {
+            padding: 10px;
+            border: 1px solid #ddd; /* Adds a light border */
+    }
+    th {
+            background-color: #f4f4f4; /* Adds a subtle background for headers */
+            font-weight: bold;
+    }
+    tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternating row colors */
+    }
+    tr:hover {
+            background-color: #f1f1f1; /* Highlight rows on hover */
+    }
+  th:first-child, td:first-child {
+      text-align: left; /* Align the first column to the left */
+  }
+&lt;/style&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt; Date &lt;/th&gt;&lt;th&gt; Purchases &lt;/th&gt;&lt;th&gt; Visits &lt;/th&gt;&lt;th&gt; Purchase Rate&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt; Yesterday &lt;/td&gt;&lt;td&gt; 20 &lt;/td&gt;&lt;td&gt; 80 &lt;/td&gt;&lt;td&gt; 25% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt; Today &lt;/td&gt;&lt;td&gt; 15 &lt;/td&gt;&lt;td&gt; 30 &lt;/td&gt;&lt;td&gt; 50% &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Sure your purchase rate increased, but you made fewer sales overall.
+Damn the denominator!&lt;/p&gt;
+&lt;p&gt;"Be skeptical of ratios" is pretty good advice -
+at least make sure you understand how the denominator moves.&lt;/p&gt;
+&lt;h1 id="its-still-useful"&gt;It's still useful&lt;/h1&gt;
+&lt;p&gt;Some folks take this skepticism of ratios to an extreme
+and say you shouldn't use ratios when reporting data.
+&lt;strong&gt;That's a mistake&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You shouldn't make your reader work harder than they need to.
+A ratio is often the easiest way to describe what's happening in the data.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You&lt;/em&gt; have a responsibility to make sure the data aren't misleading,
+but hopefully your reader trusts you to guide them to the right conclusion.
+This is &lt;strong&gt;critical to good data storytelling&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Relative humidity wasn't useful for understanding &lt;em&gt;why&lt;/em&gt; my house was dry.
+It &lt;em&gt;is&lt;/em&gt; useful for measuring how dry the air feels.
+It would be maddening to report absolute humidity 
+next to a saturation vapor pressure table instead.&lt;/p&gt;
+&lt;!--
+When reporting data it's best to make the ratio, numerator, and denominator all available separately.
+
+So like, as a metric, 
+relative humidity is not very useful for figuring out why my house is so dry.
+
+My gut reaction is to say it's a stupid metric.
+Report absolute humidity instead.
+Then we have a constant denominator.
+
+"Don't use ratios" is pretty common advice for data work.
+Being skeptical of ratios is data intuition 101.
+
+
+----
+
+I tried cycling the air in the house - 
+opening windows and doors to let some of the humid outdoor air inside.
+That didn't seem to improve the humidity at all
+
+--&gt;</content><category term="2024"></category></entry><entry><title>A webring</title><link href="https://blog.harterrt.com/data-webring.html" rel="alternate"></link><published>2024-10-14T15:20:00-07:00</published><updated>2024-10-14T15:20:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-10-14:/data-webring.html</id><summary type="html">&lt;p&gt;I added this blog to Randy Au's &lt;a href="https://www.counting-stuff.com/its-2024-lets-have-a-webring/"&gt;webring for data writers&lt;/a&gt;.
 Take a &lt;a href="/pages/webring.html"&gt;look here&lt;/a&gt;, or below:&lt;/p&gt;
 &lt;hr&gt;
 &lt;div id='data-ring-dot-list'&gt;
