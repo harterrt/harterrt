@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2024-12-07T17:24:00-08:00</updated><entry><title>Humidity and ratios</title><link href="https://blog.harterrt.com/humidity.html" rel="alternate"></link><published>2024-12-07T17:24:00-08:00</published><updated>2024-12-07T17:24:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-12-07:/humidity.html</id><summary type="html">&lt;p&gt;My house gets super dry in the winter and I didn't understand why.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.harterrt.com</title><link href="https://blog.harterrt.com/" rel="alternate"></link><link href="https://blog.harterrt.com/feeds/all-en.atom.xml" rel="self"></link><id>https://blog.harterrt.com/</id><updated>2025-08-04T07:54:00-07:00</updated><entry><title>Data storytelling mistakes</title><link href="https://blog.harterrt.com/2025-08-04.html" rel="alternate"></link><published>2025-08-04T07:54:00-07:00</published><updated>2025-08-04T07:54:00-07:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2025-08-04:/2025-08-04.html</id><summary type="html">&lt;p&gt;Almost a decade ago, I started this blog when I decided to get really good at writing documentation. I like testing how far I can push improvements to these under-appreciated soft skills. It's easy to make these skills a superpower. Nobody else seems to know they can be trained.&lt;/p&gt;
+&lt;p&gt;Four …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Almost a decade ago, I started this blog when I decided to get really good at writing documentation. I like testing how far I can push improvements to these under-appreciated soft skills. It's easy to make these skills a superpower. Nobody else seems to know they can be trained.&lt;/p&gt;
+&lt;p&gt;Four years ago when I joined Shopify, I inherited a "Data Storytelling" workshop. Every week, I'd hang out in a video call and talk to ICs who wanted to improve how they delivered their analyses. It was mostly data scientists, but about a third of the folks who came were outside the data org.&lt;/p&gt;
+&lt;p&gt;It's been a great opportunity to hone my own skills. In college I worked for the university tutoring center. I always say I learned more math from tutoring than from class.&lt;/p&gt;
+&lt;p&gt;I noticed the same problems repeat over and over through these workshops. Unfortunately there aren't great resources readily available to improve data storytelling - even though storytelling has part of every Data Science job ladder I've ever seen. So, I'll share them here. Maybe they'll help.&lt;/p&gt;
+&lt;h2 id="academic-style"&gt;Academic style&lt;/h2&gt;
+&lt;p&gt;This is the most common problem I see.&lt;/p&gt;
+&lt;p&gt;We learned this obtuse genre in school and expect all "serious" writing to follow this format: introduction, background, methods, results, conclusion. 
+That's a horrible format for business writing. &lt;/p&gt;
+&lt;p&gt;The academic style assumes you have a focused and dedicated reader. This is rarely the case. In practice, our stakeholders are &lt;strong&gt;busy, tired, and distracted&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Instead, get to the point, stop burying the lede. Summarize your results in one or two short sentences. Then, make it easy for the reader to get more context &lt;em&gt;if it's relevant for them&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="no-silver-bullets"&gt;No silver bullets&lt;/h2&gt;
+&lt;p&gt;Folks often ask: "What do I do if I need to present to a mixed audience of technical and non-technical readers?"&lt;/p&gt;
+&lt;p&gt;Put more bluntly: &lt;strong&gt;I want &lt;em&gt;one&lt;/em&gt; document that will work for &lt;em&gt;all&lt;/em&gt; of my audiences&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I understand the desire, but &lt;strong&gt;this is an impossible task&lt;/strong&gt;. A good story is tuned to an audience. Writers will tell you to "know your audience". As a corollary, you need to &lt;em&gt;pick&lt;/em&gt; your audience.&lt;/p&gt;
+&lt;!-- cut it here? --&gt;
+&lt;!--
+When sharing an analysis with my team I can rely on shared context. They understand the methods I'm using. They probably know what problems I tend to work on.
+
+In fact - I _need_ to account for that shared context for the presentation to be engaging. I'll lose my audience if I start explaining what a controlled experiment is. Similarly, I'll distract them if I _don't_ mention that the experiment was controlled.
+
+The Head of Product doesn't care as much about the methods. It's my responsibility to make sure the numbers are valid. They assume I'm doing my job. It's annoying to muster your attention just to have it wasted on irrelevant details.
+
+The Head of Product _does_ care about impact. Maybe my team knows a `0.9% (0.95, 0.83)` increase in retention is worth popping champagne over. The Head of Product needs me to frame this as a 20% increase to our user base every year.
+
+The central tension here is **what do you share in your stakeholders limited attention span**? Everyone cares about something different. Everyone has a different opinion about [what's obvious and what's amazing](https://sive.rs/obvious).
+--&gt;
+&lt;p&gt;Trying to make one story work for every audience is &lt;strong&gt;guaranteed to bore everybody&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It's a bitter truth, but you'll probably have to present the same analysis many different ways. This is deeply annoying to technologists who hate &lt;a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"&gt;repetetive code&lt;/a&gt; and embody the &lt;a href="https://wiki.c2.com/?LazinessImpatienceHubris"&gt;virtue of laziness&lt;/a&gt;, but it honestly makes everything easier. I get a horrible writers block when I try to write for too many audiences. Focusing my writing often makes the writing effortless.&lt;/p&gt;
+&lt;h2 id="showing-your-work"&gt;Showing your work&lt;/h2&gt;
+&lt;p&gt;Data folks often want the data to speak for itself. This is a mistake.&lt;/p&gt;
+&lt;p&gt;The data don't speak. By the time you're presenting your analysis, you've already spent a bunch of time and energy interpreting the data. Don't make your reader repeat this effort. It's wasteful.&lt;/p&gt;
+&lt;p&gt;Annotate aggressively. Offer interpretation.&lt;/p&gt;
+&lt;p&gt;Recursive detail - start high level, allow others to dig deeper if they want to. A whitepaper is useful. It's not a story.&lt;/p&gt;
+&lt;p&gt;Add to academic: can be useful, for your team, not for an executive.
+Add to silver bullet: do your whitepaper, have another genre for marketing your work.
+Add here: Make it easy to dig deeper, but elide in you marketing piece.&lt;/p&gt;
+&lt;p&gt;Then outline: Complete writeup, small pieces relevant to different audiences. Limit detail and include lots of links and references.&lt;/p&gt;
+&lt;h2 id="make-it-easy-to-bail"&gt;Make it easy to bail?&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h1 id="spare-parts"&gt;Spare parts&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;The central tension here is what you share in your stakeholders limited attention span. Everyone cares about something different. Everyone has a different opinion about what's exceptional and what's boring. &lt;/p&gt;
+&lt;p&gt;Everyone has a different level of energy they can devote to your analysis. Your analysis has different importance to everyone.&lt;/p&gt;
+&lt;p&gt;This is largely unsolvable and does produce duplicate work.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Going to have to get into: shed your audience, make it easy to bail, choose your own adventure, progressive resolution. Maybe this is another section though.&lt;/p&gt;
+&lt;p&gt;Cheaper options: Lots of different documents built from the same reference document. Different genres of writing.&lt;/p&gt;
+&lt;p&gt;Progressive resolution takes work. We're always optimizing against speed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Engaging. Information dense. Useful.
+Accessible. 
+Short.&lt;/p&gt;
+&lt;p&gt;This happens all the time, so I understand the desire. We want the story to be accessible and engaging to &lt;em&gt;all&lt;/em&gt; of our readers. I don't know who's going to read my analysis or watch my presentation!&lt;/p&gt;
+&lt;p&gt;Trying to write for everyone is a fools errand. &lt;/p&gt;
+&lt;h2 id="find-your-audience"&gt;Find your audience&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;The post is good to this point. Maybe just move on? Here's some more content that you're trying to fit in.&lt;/p&gt;
+&lt;p&gt;Giving the reader options is powerful. Most readers are inundated.
+They have an inbox full of emails and a dozen slack notifications demanding their attention.
+Make it easy for them to decide whether your work is relevant to their needs.
+Summarizing your work so the reader can bail if it's irrelevant will likely &lt;em&gt;increase&lt;/em&gt; your reader count.&lt;/p&gt;
+&lt;p&gt;Your reader is likely inundated. Their Slack is red with DMs, their email inbox is overflowing. Why is your research the most important thing they should read? A broad introduction to the problem and a careful discussion of methods &lt;em&gt;is not relevant to their needs&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Might need to talk about the pattern of finding your reader here. Your peers are going to read your work. They're collaborators. The problem is that your stakeholders aren't going to read your work and that's where the impact lies.&lt;/p&gt;
+&lt;p&gt;Maybe you're getting distracted. Don't let this linger until you don't care about the piece any more. You can write, publish and iterate if you want to.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Instead, get to the point. Your reader likely only cares about results. Make the results obvious and allow the reader to continue reading if it's important to them.&lt;/p&gt;
+&lt;!-- TODO: Examples for each of these points - collapsed beneath? --&gt;
+&lt;!-- inundated with information. Why is your information relevant? Null results are important, but they're not important to _everybody_. --&gt;
+
+&lt;!-- Also assumes the reader is a collaborator, not a client. Who cares about your methods? --&gt;
+
+&lt;p&gt;buries the lede&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fuck.&lt;/p&gt;
+&lt;p&gt;I've talked about storytelling at work for years now. I gavea  talk with lost of speaker notes here. &lt;!-- TODO --&gt; &lt;/p&gt;
+&lt;p&gt;But it's time to write these tips down. Here's my first.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;No silver bullets.&lt;/p&gt;
+&lt;p&gt;Common storyteling problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Academic style.&lt;/li&gt;
+&lt;li&gt;Silver bullets.&lt;/li&gt;
+&lt;li&gt;Showing your work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Progressive render&lt;/li&gt;
+&lt;li&gt;1, 5, 15m rule&lt;/li&gt;
+&lt;li&gt;New audience --&amp;gt; new story&lt;/li&gt;
+&lt;li&gt;Trust&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;In college, I worked for the university tutoring center. 
+Tutoring is what made me a good mathematician. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I've given a few talks about storytelling - most recently at &lt;a href="odsc.com/speakers/practical-strategies-for-data-storytelling/"&gt;ODSC 2024&lt;/a&gt; (&lt;a href="/static/odsc2024/#1"&gt;slides here&lt;/a&gt;). &lt;/p&gt;</content><category term="2025"></category></entry><entry><title>Humidity and ratios</title><link href="https://blog.harterrt.com/humidity.html" rel="alternate"></link><published>2024-12-07T17:24:00-08:00</published><updated>2024-12-07T17:24:00-08:00</updated><author><name>Ryan T. Harter</name></author><id>tag:blog.harterrt.com,2024-12-07:/humidity.html</id><summary type="html">&lt;p&gt;My house gets super dry in the winter and I didn't understand why.&lt;/p&gt;
 &lt;p&gt;My weather station says it's drier inside than outside,
 which didn't make a ton of sense. 
 I'm cooking, and sweating, and showering inside.

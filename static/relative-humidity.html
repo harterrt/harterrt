@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relative Humidity Explorer</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #232734;
+    --border: #2e3347;
+    --text: #e2e4ed;
+    --text-dim: #8b90a5;
+    --accent: #5eead4;
+    --accent-dim: rgba(94, 234, 212, 0.15);
+    --warm: #f59e0b;
+    --warm-dim: rgba(245, 158, 11, 0.15);
+    --red: #f87171;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.4rem;
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .control-group {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .control-group label {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.6rem;
+  }
+
+  .input-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input[type="number"] {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    width: 100px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input[type="number"]:focus {
+    border-color: var(--accent);
+  }
+
+  .unit {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+
+  .result-badge {
+    background: var(--warm-dim);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--warm);
+    margin-top: 0.5rem;
+    display: none;
+    line-height: 1.4;
+  }
+
+  .result-badge.visible { display: block; }
+
+  .chart-wrapper {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Billboard.js theme overrides */
+  .bb svg { font-family: 'IBM Plex Mono', monospace !important; }
+  .bb line, .bb path.domain { stroke: var(--border) !important; }
+  .bb text { fill: var(--text-dim) !important; font-size: 11px !important; }
+  .bb-tooltip {
+    background: var(--surface2) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 12px !important;
+    color: var(--text) !important;
+  }
+  .bb-tooltip th {
+    background: var(--surface) !important;
+    color: var(--text-dim) !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid var(--border) !important;
+    padding: 6px 10px !important;
+  }
+  .bb-tooltip td {
+    color: var(--text) !important;
+    border-color: transparent !important;
+    padding: 4px 10px !important;
+  }
+  .bb-tooltip td span {
+    border-radius: 3px !important;
+  }
+  .bb-grid line { stroke: var(--border) !important; stroke-dasharray: 3 3 !important; }
+  .bb-axis-y .tick line { display: none; }
+  .bb-axis-x .tick line { display: none; }
+
+  .explanation {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+  }
+
+  .explanation strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .explanation code {
+    font-family: 'IBM Plex Mono', monospace;
+    background: var(--surface2);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--accent);
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 1rem; }
+    .controls { flex-direction: column; }
+    .control-group { min-width: unset; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>▲ Relative Humidity Explorer</h1>
+    <p class="subtitle">Start with saturated air (100% RH) at a given temperature, then see how relative humidity drops as you heat it — the moisture stays constant, but warmer air can hold more.</p>
+  </header>
+
+  <div class="chart-wrapper">
+    <div id="chart"></div>
+  </div>
+
+  <div class="controls">
+    <div class="control-group">
+      <label>Starting Temperature (saturated air)</label>
+      <div class="input-row">
+        <input type="number" id="startTemp" value="32" min="-40" max="120" step="1">
+        <span class="unit">°F</span>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>Target Relative Humidity</label>
+      <div class="input-row">
+        <input type="number" id="targetRH" value="30" min="1" max="99" step="1">
+        <span class="unit">%</span>
+      </div>
+      <div class="result-badge" id="targetResult"></div>
+    </div>
+  </div>
+
+  <div class="explanation">
+    <strong>How it works:</strong> The Magnus formula estimates saturation vapor pressure at a given temperature: <code>eₛ(T) = 6.112 × exp(17.67T / (T + 243.5))</code> where T is in °C. When you heat air without adding moisture, the actual vapor pressure stays at <code>eₛ(T₀)</code> (the saturation pressure at the starting temp). Relative humidity becomes <code>eₛ(T₀) / eₛ(T) × 100%</code>. This is why winter air feels so dry indoors — cold outside air at 100% RH plummets to ~20% when heated to room temperature.
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+<script>
+// Magnus formula: saturation vapor pressure in hPa given temp in °C
+function satVaporPressure(tempC) {
+  return 6.112 * Math.exp((17.67 * tempC) / (tempC + 243.5));
+}
+
+function fToC(f) { return (f - 32) * 5 / 9; }
+function cToF(c) { return c * 9 / 5 + 32; }
+
+// Given starting temp (°F, 100% RH), compute RH at a warmer temp (°F)
+function computeRH(startF, currentF) {
+  const startC = fToC(startF);
+  const currentC = fToC(currentF);
+  const eStart = satVaporPressure(startC);
+  const eCurrent = satVaporPressure(currentC);
+  return Math.min(100, (eStart / eCurrent) * 100);
+}
+
+// Find the temp (°F) where RH hits a target, given saturated start temp
+function findTempForRH(startF, targetRH) {
+  if (targetRH >= 100) return startF;
+  // eₛ(T₀)/eₛ(T) = targetRH/100
+  // eₛ(T) = eₛ(T₀) * 100 / targetRH
+  // Invert Magnus: T = 243.5 * ln(e/6.112) / (17.67 - ln(e/6.112))
+  const startC = fToC(startF);
+  const eStart = satVaporPressure(startC);
+  const eTarget = eStart * 100 / targetRH;
+  const lnRatio = Math.log(eTarget / 6.112);
+  const tempC = (243.5 * lnRatio) / (17.67 - lnRatio);
+  return cToF(tempC);
+}
+
+let chart;
+
+function update() {
+  const startF = parseFloat(document.getElementById('startTemp').value) || 40;
+  const targetRH = parseFloat(document.getElementById('targetRH').value) || 40;
+
+  // Generate data from startTemp to startTemp + 80°F
+  const maxF = startF + 80;
+  const step = 1;
+  const temps = [];
+  const rhs = [];
+  const targetLine = [];
+
+  for (let t = startF; t <= maxF; t += step) {
+    temps.push(t);
+    rhs.push(Math.round(computeRH(startF, t) * 10) / 10);
+    targetLine.push(targetRH);
+  }
+
+  const columns = [
+    ['x', ...temps],
+    ['Relative Humidity', ...rhs],
+    ['Target RH', ...targetLine],
+  ];
+
+  if (chart) {
+    chart.load({ columns });
+  } else {
+    chart = bb.generate({
+      data: {
+        x: 'x',
+        columns,
+        types: {
+          'Relative Humidity': 'area-spline',
+          'Target RH': 'line',
+        },
+        colors: {
+          'Relative Humidity': '#5eead4',
+          'Target RH': '#f59e0b',
+        },
+      },
+      area: {
+        linearGradient: {
+          x: [0, 0],
+          y: [0, 1],
+          stops: [
+            [0, '#5eead4', 0.3],
+            [1, '#5eead4', 0.02],
+          ]
+        }
+      },
+      axis: {
+        x: {
+          label: { text: 'Temperature (°F)', position: 'outer-center' },
+          tick: { count: 10, format: d => Math.round(d) + '°' },
+        },
+        y: {
+          label: { text: 'Relative Humidity (%)', position: 'outer-middle' },
+          min: 0,
+          max: 105,
+          padding: { top: 5, bottom: 0 },
+          tick: { values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] },
+        }
+      },
+      grid: {
+        y: { show: true },
+      },
+      point: { show: false },
+      line: {
+        classes: ['rh-line', 'target-line'],
+      },
+      legend: { show: true },
+      tooltip: {
+        format: {
+          title: v => `${Math.round(v)}°F`,
+          value: (v, ratio, id) => `${v}%`,
+        }
+      },
+      padding: { right: 20, top: 10 },
+      bindto: '#chart',
+    });
+  }
+
+  // Compute target result
+  const badge = document.getElementById('targetResult');
+  if (targetRH > 0 && targetRH < 100) {
+    const tempNeeded = findTempForRH(startF, targetRH);
+    if (tempNeeded > startF) {
+      badge.textContent = `Heat to ${tempNeeded.toFixed(1)}°F to reach ${targetRH}% RH`;
+      badge.classList.add('visible');
+    } else {
+      badge.textContent = `Already at or below ${targetRH}% RH at starting temp`;
+      badge.classList.add('visible');
+    }
+  } else {
+    badge.classList.remove('visible');
+  }
+}
+
+document.getElementById('startTemp').addEventListener('input', update);
+document.getElementById('targetRH').addEventListener('input', update);
+
+update();
+</script>
+</body>
+</html>
