@@ -113,21 +113,6 @@
     color: var(--text-dim);
   }
 
-  .result-badge {
-    background: var(--warm-dim);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    border-radius: 8px;
-    padding: 0.6rem 1rem;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.85rem;
-    color: var(--warm);
-    margin-top: 0.5rem;
-    display: none;
-    line-height: 1.4;
-  }
-
-  .result-badge.visible { display: block; }
-
   .chart-wrapper {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -140,6 +125,11 @@
   .bb svg { font-family: 'IBM Plex Mono', monospace !important; }
   .bb line, .bb path.domain { stroke: var(--border) !important; }
   .bb text { fill: var(--text-dim) !important; font-size: 11px !important; }
+  .bb-legend-item-Relative-Humidity text { fill: #5eead4 !important; }
+  .bb-legend-item-Relative-Humidity line { stroke: #5eead4 !important; }
+  .bb-legend-item-Critical-RH text { fill: #f59e0b !important; }
+  .bb-legend-item-Critical-RH line { stroke: #f59e0b !important; }
+  .bb-line-Critical-RH { stroke-dasharray: 4 4 !important; }
   .bb-tooltip {
     background: var(--surface2) !important;
     border: 1px solid var(--border) !important;
@@ -203,7 +193,7 @@
 <div class="container">
   <header>
     <h1>▲ Relative Humidity Explorer</h1>
-    <p class="subtitle">Start with saturated air (100% RH) at a given temperature, then see how relative humidity drops as you heat it — the moisture stays constant, but warmer air can hold more.</p>
+    <p class="subtitle">Start with air at a given temperature and humidity, then see how relative humidity drops as you heat it - the moisture stays constant, but warmer air feels dryer.</p>
   </header>
 
   <div class="chart-wrapper">
@@ -212,7 +202,7 @@
 
   <div class="controls">
     <div class="control-group">
-      <label>Starting Temperature (saturated air)</label>
+      <label>Starting Temperature</label>
       <div class="input-row">
         <input type="number" id="startTemp" value="32" min="-40" max="120" step="1">
         <span class="unit">°F</span>
@@ -220,17 +210,24 @@
     </div>
 
     <div class="control-group">
-      <label>Target Relative Humidity</label>
+      <label>Starting Relative Humidity</label>
       <div class="input-row">
-        <input type="number" id="targetRH" value="30" min="1" max="99" step="1">
+        <input type="number" id="startRH" value="100" min="1" max="100" step="1">
         <span class="unit">%</span>
       </div>
-      <div class="result-badge" id="targetResult"></div>
+    </div>
+
+    <div class="control-group">
+      <label>Critical Relative Humidity</label>
+      <div class="input-row">
+        <input type="number" id="criticalRH" value="30" min="1" max="99" step="1">
+        <span class="unit">%</span>
+      </div>
     </div>
   </div>
 
   <div class="explanation">
-    <strong>How it works:</strong> The Magnus formula estimates saturation vapor pressure at a given temperature: <code>eₛ(T) = 6.112 × exp(17.67T / (T + 243.5))</code> where T is in °C. When you heat air without adding moisture, the actual vapor pressure stays at <code>eₛ(T₀)</code> (the saturation pressure at the starting temp). Relative humidity becomes <code>eₛ(T₀) / eₛ(T) × 100%</code>. This is why winter air feels so dry indoors — cold outside air at 100% RH plummets to ~20% when heated to room temperature.
+    <strong>How it works:</strong> The Magnus formula estimates saturation vapor pressure at a given temperature: <code>eₛ(T) = 6.112 × exp(17.67T / (T + 243.5))</code> where T is in °C. When you heat air without adding moisture, the actual vapor pressure stays at <code>eₛ(T₀)</code> (the saturation pressure at the starting temp). Relative humidity becomes <code>eₛ(T₀) / eₛ(T) × 100%</code>. This is why winter air feels so dry indoors - cold outside air at 100% RH plummets to ~20% when heated to room temperature.
   </div>
 </div>
 
@@ -245,24 +242,25 @@ function satVaporPressure(tempC) {
 function fToC(f) { return (f - 32) * 5 / 9; }
 function cToF(c) { return c * 9 / 5 + 32; }
 
-// Given starting temp (°F, 100% RH), compute RH at a warmer temp (°F)
-function computeRH(startF, currentF) {
+// Given starting temp (°F) and starting RH (%), compute RH at a warmer temp (°F)
+function computeRH(startF, startRH, currentF) {
   const startC = fToC(startF);
   const currentC = fToC(currentF);
-  const eStart = satVaporPressure(startC);
+  const eStart = satVaporPressure(startC) * (startRH / 100);
   const eCurrent = satVaporPressure(currentC);
   return Math.min(100, (eStart / eCurrent) * 100);
 }
 
-// Find the temp (°F) where RH hits a target, given saturated start temp
-function findTempForRH(startF, targetRH) {
-  if (targetRH >= 100) return startF;
-  // eₛ(T₀)/eₛ(T) = targetRH/100
-  // eₛ(T) = eₛ(T₀) * 100 / targetRH
+// Find the temp (°F) where RH hits a target, given start temp and RH
+function findTempForRH(startF, startRH, criticalRH) {
+  if (criticalRH >= startRH) return startF;
+  // actual vapor pressure = eₛ(T₀) * startRH/100
+  // at target: actual / eₛ(T) = criticalRH/100
+  // eₛ(T) = actual * 100 / criticalRH
   // Invert Magnus: T = 243.5 * ln(e/6.112) / (17.67 - ln(e/6.112))
   const startC = fToC(startF);
-  const eStart = satVaporPressure(startC);
-  const eTarget = eStart * 100 / targetRH;
+  const actualVaporPressure = satVaporPressure(startC) * (startRH / 100);
+  const eTarget = actualVaporPressure * 100 / criticalRH;
   const lnRatio = Math.log(eTarget / 6.112);
   const tempC = (243.5 * lnRatio) / (17.67 - lnRatio);
   return cToF(tempC);
@@ -272,103 +270,122 @@ let chart;
 
 function update() {
   const startF = parseFloat(document.getElementById('startTemp').value) || 40;
-  const targetRH = parseFloat(document.getElementById('targetRH').value) || 40;
+  const startRH = parseFloat(document.getElementById('startRH').value) || 100;
+  const criticalRH = parseFloat(document.getElementById('criticalRH').value) || 40;
 
   // Generate data from startTemp to startTemp + 80°F
   const maxF = startF + 80;
   const step = 1;
   const temps = [];
   const rhs = [];
-  const targetLine = [];
+  const criticalLine = [];
 
   for (let t = startF; t <= maxF; t += step) {
     temps.push(t);
-    rhs.push(Math.round(computeRH(startF, t) * 10) / 10);
-    targetLine.push(targetRH);
+    rhs.push(Math.round(computeRH(startF, startRH, t) * 10) / 10);
+    criticalLine.push(criticalRH);
   }
 
   const columns = [
     ['x', ...temps],
     ['Relative Humidity', ...rhs],
-    ['Target RH', ...targetLine],
+    ['Critical RH', ...criticalLine],
   ];
+
+  const chartConfig = {
+    data: {
+      x: 'x',
+      columns,
+      types: {
+        'Relative Humidity': 'area-spline',
+        'Critical RH': 'line',
+      },
+      colors: {
+        'Relative Humidity': '#5eead4',
+        'Critical RH': '#f59e0b',
+      },
+    },
+    area: {
+      linearGradient: {
+        x: [0, 0],
+        y: [0, 1],
+        stops: [
+          [0, '#5eead4', 0.3],
+          [1, '#5eead4', 0.02],
+        ]
+      }
+    },
+    axis: {
+      x: {
+        label: { text: 'Temperature (°F)', position: 'outer-center' },
+        tick: { count: 10, format: d => Math.round(d) + '°' },
+      },
+      y: {
+        label: { text: 'Relative Humidity (%)', position: 'outer-middle' },
+        min: 0,
+        max: 105,
+        padding: { top: 5, bottom: 0 },
+        tick: { values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] },
+      }
+    },
+    grid: {
+      y: { show: true },
+    },
+    point: { show: false },
+    line: {
+      classes: ['rh-line', 'target-line'],
+    },
+    legend: { show: true },
+    tooltip: {
+      format: {
+        title: v => `${Math.round(v)}°F`,
+        value: (v, ratio, id) => `${v}%`,
+      }
+    },
+    padding: { right: 20, top: 10 },
+    bindto: '#chart',
+  };
 
   if (chart) {
     chart.load({ columns });
   } else {
-    chart = bb.generate({
-      data: {
-        x: 'x',
-        columns,
-        types: {
-          'Relative Humidity': 'area-spline',
-          'Target RH': 'line',
-        },
-        colors: {
-          'Relative Humidity': '#5eead4',
-          'Target RH': '#f59e0b',
-        },
-      },
-      area: {
-        linearGradient: {
-          x: [0, 0],
-          y: [0, 1],
-          stops: [
-            [0, '#5eead4', 0.3],
-            [1, '#5eead4', 0.02],
-          ]
-        }
-      },
-      axis: {
-        x: {
-          label: { text: 'Temperature (°F)', position: 'outer-center' },
-          tick: { count: 10, format: d => Math.round(d) + '°' },
-        },
-        y: {
-          label: { text: 'Relative Humidity (%)', position: 'outer-middle' },
-          min: 0,
-          max: 105,
-          padding: { top: 5, bottom: 0 },
-          tick: { values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] },
-        }
-      },
-      grid: {
-        y: { show: true },
-      },
-      point: { show: false },
-      line: {
-        classes: ['rh-line', 'target-line'],
-      },
-      legend: { show: true },
-      tooltip: {
-        format: {
-          title: v => `${Math.round(v)}°F`,
-          value: (v, ratio, id) => `${v}%`,
-        }
-      },
-      padding: { right: 20, top: 10 },
-      bindto: '#chart',
-    });
+    chart = bb.generate(chartConfig);
   }
 
-  // Compute target result
-  const badge = document.getElementById('targetResult');
-  if (targetRH > 0 && targetRH < 100) {
-    const tempNeeded = findTempForRH(startF, targetRH);
-    if (tempNeeded > startF) {
-      badge.textContent = `Heat to ${tempNeeded.toFixed(1)}°F to reach ${targetRH}% RH`;
-      badge.classList.add('visible');
-    } else {
-      badge.textContent = `Already at or below ${targetRH}% RH at starting temp`;
-      badge.classList.add('visible');
+  // Add annotation on the target line
+  updateAnnotation(startF, startRH, criticalRH);
+}
+
+function updateAnnotation(startF, startRH, criticalRH) {
+  // Remove existing annotation
+  d3.select('#chart .target-annotation').remove();
+
+  if (criticalRH > 0 && criticalRH < startRH) {
+    const tempNeeded = findTempForRH(startF, startRH, criticalRH);
+    const maxF = startF + 80;
+
+    if (tempNeeded > startF && tempNeeded <= maxF) {
+      const xScale = chart.internal.scale.x;
+      const yScale = chart.internal.scale.y;
+      const xPos = xScale(tempNeeded);
+      const yPos = yScale(criticalRH);
+
+      d3.select('#chart .bb-chart')
+        .append('text')
+        .attr('class', 'target-annotation')
+        .attr('x', xPos + 8)
+        .attr('y', yPos - 8)
+        .attr('fill', '#f59e0b')
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('font-size', '11px')
+        .text(`${Math.round(tempNeeded)}°F`);
     }
-  } else {
-    badge.classList.remove('visible');
   }
 }
 
 document.getElementById('startTemp').addEventListener('input', update);
-document.getElementById('targetRH').addEventListener('input', update);
+document.getElementById('startRH').addEventListener('input', update);
+document.getElementById('criticalRH').addEventListener('input', update);
 
 update();
 </script>
