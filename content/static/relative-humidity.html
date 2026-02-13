@@ -130,6 +130,9 @@
   .bb-legend-item-Critical-RH text { fill: #f59e0b !important; }
   .bb-legend-item-Critical-RH line { stroke: #f59e0b !important; }
   .bb-line-Critical-RH { stroke-dasharray: 4 4 !important; }
+  .bb-legend-item-Target-Temp text { fill: #f87171 !important; }
+  .bb-legend-item-Target-Temp line { stroke: #f87171 !important; }
+  .bb-line-Target-Temp { stroke-dasharray: 4 4 !important; }
   .bb-tooltip {
     background: var(--surface2) !important;
     border: 1px solid var(--border) !important;
@@ -224,6 +227,14 @@
         <span class="unit">%</span>
       </div>
     </div>
+
+    <div class="control-group">
+      <label>Target Temperature</label>
+      <div class="input-row">
+        <input type="number" id="targetTemp" value="72" min="-40" max="200" step="1">
+        <span class="unit">°F</span>
+      </div>
+    </div>
   </div>
 
   <div class="explanation">
@@ -272,6 +283,7 @@ function update() {
   const startF = parseFloat(document.getElementById('startTemp').value) || 40;
   const startRH = parseFloat(document.getElementById('startRH').value) || 100;
   const criticalRH = parseFloat(document.getElementById('criticalRH').value) || 40;
+  const targetTemp = parseFloat(document.getElementById('targetTemp').value) || 72;
 
   // Generate data from startTemp to startTemp + 80°F
   const maxF = startF + 80;
@@ -290,19 +302,27 @@ function update() {
     ['x', ...temps],
     ['Relative Humidity', ...rhs],
     ['Critical RH', ...criticalLine],
+    ['x_target', targetTemp, targetTemp],
+    ['Target Temp', 0, 105],
   ];
 
   const chartConfig = {
     data: {
-      x: 'x',
+      xs: {
+        'Relative Humidity': 'x',
+        'Critical RH': 'x',
+        'Target Temp': 'x_target',
+      },
       columns,
       types: {
         'Relative Humidity': 'area-spline',
         'Critical RH': 'line',
+        'Target Temp': 'line',
       },
       colors: {
         'Relative Humidity': '#5eead4',
         'Critical RH': '#f59e0b',
+        'Target Temp': '#f87171',
       },
     },
     area: {
@@ -352,27 +372,29 @@ function update() {
     chart = bb.generate(chartConfig);
   }
 
-  // Add annotation on the target line
-  updateAnnotation(startF, startRH, criticalRH);
+  // Add annotations
+  updateAnnotations(startF, startRH, criticalRH, targetTemp, maxF);
 }
 
-function updateAnnotation(startF, startRH, criticalRH) {
-  // Remove existing annotation
-  d3.select('#chart .target-annotation').remove();
+function updateAnnotations(startF, startRH, criticalRH, targetTemp, maxF) {
+  // Remove existing annotations
+  d3.select('#chart .critical-annotation').remove();
+  d3.select('#chart .target-temp-annotation').remove();
 
+  const xScale = chart.internal.scale.x;
+  const yScale = chart.internal.scale.y;
+
+  // Annotation for critical RH line (shows temperature)
   if (criticalRH > 0 && criticalRH < startRH) {
     const tempNeeded = findTempForRH(startF, startRH, criticalRH);
-    const maxF = startF + 80;
 
     if (tempNeeded > startF && tempNeeded <= maxF) {
-      const xScale = chart.internal.scale.x;
-      const yScale = chart.internal.scale.y;
       const xPos = xScale(tempNeeded);
       const yPos = yScale(criticalRH);
 
       d3.select('#chart .bb-chart')
         .append('text')
-        .attr('class', 'target-annotation')
+        .attr('class', 'critical-annotation')
         .attr('x', xPos + 8)
         .attr('y', yPos - 8)
         .attr('fill', '#f59e0b')
@@ -381,11 +403,29 @@ function updateAnnotation(startF, startRH, criticalRH) {
         .text(`${Math.round(tempNeeded)}°F`);
     }
   }
+
+  // Annotation for target temp line (shows RH)
+  if (targetTemp >= startF && targetTemp <= maxF) {
+    const rhAtTarget = computeRH(startF, startRH, targetTemp);
+    const xPos = xScale(targetTemp);
+    const yPos = yScale(90); // Position near top of chart
+
+    d3.select('#chart .bb-chart')
+      .append('text')
+      .attr('class', 'target-temp-annotation')
+      .attr('x', xPos + 8)
+      .attr('y', yPos)
+      .attr('fill', '#f87171')
+      .attr('font-family', 'IBM Plex Mono, monospace')
+      .attr('font-size', '11px')
+      .text(`${Math.round(rhAtTarget)}%`);
+  }
 }
 
 document.getElementById('startTemp').addEventListener('input', update);
 document.getElementById('startRH').addEventListener('input', update);
 document.getElementById('criticalRH').addEventListener('input', update);
+document.getElementById('targetTemp').addEventListener('input', update);
 
 update();
 </script>
